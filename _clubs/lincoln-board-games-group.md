@@ -10,9 +10,9 @@ location:
   lat: 53.2343
   lng: -0.5386
 cost: "Free"
-age_restriction: ""
+age_restriction: "Pub venue so minors on premises after 8:30pm"
 image: ""
-website: "https://lincolnboardgames.org.uk/"
+website: "http://lincolnboardgames.org.uk/"
 facebook: "https://www.facebook.com/groups/lincolnboardgames/"
 discord: ""
 bgg: ""
