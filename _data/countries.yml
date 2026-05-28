@@ -337,6 +337,81 @@ cz:
   currency_symbol: "Kč"
   geocode_country_code: "CZ"
 
+lv:
+  code: "LV"
+  name_en: "Latvia"
+  name_de: "Lettland"
+  name_it: "Lettonia"
+  name_fr: "Lettonie"
+  name_es: "Letonia"
+  name_pl: "Łotwa"
+  url_prefix: "/lv"
+  map_center: [56.9, 24.6]
+  map_zoom: 7
+  bounds:
+    lat: [55.6, 58.1]
+    lng: [20.9, 28.3]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^(LV-)?\\d{4}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "EUR"
+  currency_symbol: "€"
+  geocode_country_code: "LV"
+
+ee:
+  code: "EE"
+  name_en: "Estonia"
+  name_de: "Estland"
+  name_it: "Estonia"
+  name_fr: "Estonie"
+  name_es: "Estonia"
+  name_pl: "Estonia"
+  url_prefix: "/ee"
+  map_center: [58.6, 25.5]
+  map_zoom: 7
+  bounds:
+    lat: [57.5, 59.7]
+    lng: [21.7, 28.2]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{5}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "EUR"
+  currency_symbol: "€"
+  geocode_country_code: "EE"
+
+lt:
+  code: "LT"
+  name_en: "Lithuania"
+  name_de: "Litauen"
+  name_it: "Lituania"
+  name_fr: "Lituanie"
+  name_es: "Lituania"
+  name_pl: "Litwa"
+  url_prefix: "/lt"
+  map_center: [55.2, 23.9]
+  map_zoom: 7
+  bounds:
+    lat: [53.8, 56.5]
+    lng: [20.9, 26.9]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^(LT-)?\\d{5}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "EUR"
+  currency_symbol: "€"
+  geocode_country_code: "LT"
+
 ie:
   code: "IE"
   name_en: "Ireland"

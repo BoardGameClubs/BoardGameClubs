@@ -172,6 +172,30 @@ country_cz:
   es: "Chequia"
   pl: "Czechy"
 
+country_lv:
+  en: "Latvia"
+  de: "Lettland"
+  it: "Lettonia"
+  fr: "Lettonie"
+  es: "Letonia"
+  pl: "Łotwa"
+
+country_ee:
+  en: "Estonia"
+  de: "Estland"
+  it: "Estonia"
+  fr: "Estonie"
+  es: "Estonia"
+  pl: "Estonia"
+
+country_lt:
+  en: "Lithuania"
+  de: "Litauen"
+  it: "Lituania"
+  fr: "Lituanie"
+  es: "Lituania"
+  pl: "Litwa"
+
 footer_other_countries:
   en: "Other countries:"
   de: "Andere Länder:"
