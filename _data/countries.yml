@@ -312,6 +312,31 @@ pt:
   currency_symbol: "€"
   geocode_country_code: "PT"
 
+cz:
+  code: "CZ"
+  name_en: "Czechia"
+  name_de: "Tschechien"
+  name_it: "Cechia"
+  name_fr: "Tchéquie"
+  name_es: "Chequia"
+  name_pl: "Czechy"
+  url_prefix: "/cz"
+  map_center: [49.8, 15.5]
+  map_zoom: 7
+  bounds:
+    lat: [48.5, 51.1]
+    lng: [12.0, 18.9]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{3} ?\\d{2}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "CZK"
+  currency_symbol: "Kč"
+  geocode_country_code: "CZ"
+
 ie:
   code: "IE"
   name_en: "Ireland"

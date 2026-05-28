@@ -164,6 +164,14 @@ country_ie:
   es: "Irlanda"
   pl: "Irlandia"
 
+country_cz:
+  en: "Czechia"
+  de: "Tschechien"
+  it: "Cechia"
+  fr: "Tchéquie"
+  es: "Chequia"
+  pl: "Czechy"
+
 footer_other_countries:
   en: "Other countries:"
   de: "Andere Länder:"
