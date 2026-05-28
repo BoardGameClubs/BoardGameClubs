@@ -6,10 +6,10 @@ days: ["Tuesday", "Wednesday", "Sunday"]
 time: "19:45 Uhr"
 frequency: "Weekly"
 location:
-  name: "Augsburg"
-  address: "86156 Augsburg"
-  lat: 48.3920947
-  lng: 10.8553557
+  name: "Pfarrsaal Heilige Dreifaltigkeit"
+  address: "Ulmer Straße 195A, 86156 Augsburg"
+  lat: 48.3796752
+  lng: 10.8528247
 cost: ""
 image: ""
 website: "https://spielespieler.de/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Spielen in Augsburg! Brettspiele, Tabletops, RPG Pen&Paper, Kartenspiele. Jeden Dienstag Tabletop ab 19:45 Uhr, jeden Mittwoch Brettspiele, TT , RPG ab 19 Uhr und jeden 2. & 4. Sonntag im Monat Brettspiele, TT , RPG ab 13 Uhr
+  Everyone warmly invited — bring your own games. Tabletop role-players should register in advance by email for a pre-generated character and group. Game nights every Wednesday from 7 pm and every second and fourth Sunday from about 1 pm; tabletop Tuesdays from 7:45 pm.
 ---

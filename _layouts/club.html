@@ -144,7 +144,7 @@ they're language-by-URL.{% endcomment %}
   </dl>
 
   <div class="club-description">
-    <p>{{ page.description }}</p>
+    {{ page.description | markdownify }}
     {{ content }}
   </div>
 

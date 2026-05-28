@@ -6,10 +6,10 @@ days: ["Friday"]
 time: ""
 frequency: "Weekly"
 location:
-  name: "Mülheim"
-  address: "45481 Mülheim"
-  lat: 51.3882662
-  lng: 6.8566061
+  name: "Evangelisches Gemeindehaus Holunderstraße"
+  address: "Holunderstraße 5, 45481 Mülheim an der Ruhr"
+  lat: 51.4040045
+  lng: 6.8783188
 cost: ""
 image: ""
 website: "https://poeppelhoppers.de/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Die Pöppelhoppers Saarn treffen sich jeden 1., 3. und 5. Freitag im Monat (außerhalb der NRW-Ferien) ab 19 Uhr im Evangelischen Gemeindehaus Holunderstraße (Holunderstr. 5, 45481 Mülheim an der Ruhr). Wir sind ein Spieletreff für Vielspieler, aber auch für alle, die es werden wollen. Gerne erklären wir Neulingen Spiele oder entdecken gemeinsam neue Spiele. Bei unseren Treffen sind wir zwischen 15 und 30 Spielebegeisterte zwischen 10 und 75 Jahren. Es sind über 200 Spiele vorhanden. Wer mag, kann aber auch gerne ein eigenes Spiel mitbringen. Um 19 Uhr, wenn wir uns treffen, schauen wir, wer…
+  Meets every 1st, 3rd and 5th Friday of the month (except NRW school holidays) from 7 pm at the community centre. 15 to 30 players aged 10 to 75 — strategy, connoisseur and expert games. New players welcome. Also organises rhein-ruhr-con, Reformation spielen! and Pöppelhoppers Saarn On Tour.
 ---

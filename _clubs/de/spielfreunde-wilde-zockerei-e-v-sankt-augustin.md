@@ -6,10 +6,10 @@ days: ["Thursday"]
 time: ""
 frequency: "Weekly"
 location:
-  name: "Troisdorf"
-  address: "53842 Troisdorf"
-  lat: 50.844413
-  lng: 7.170546499999999
+  name: "AWO Troisdorf-Oberlar"
+  address: "Sieglarer Straße 66-68, 53842 Troisdorf"
+  lat: 50.8108613
+  lng: 7.1410655
 cost: ""
 image: ""
 website: "https://wilde-zockerei.de/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Unser Verein lädt zu geselligen Brettspielrunden und ein paar schönen gemeinsamen Spielestunden ein. Der Verein spielt nun nicht mehr in Sankt Augustin, sondern in Troisdorf. Jeden Donnerstag ab 19 Uhr in der Geschäftsstelle AWO Troisdorf-Oberlar e.V. Sieglarer Str. 66-68 53842 Troisdorf
+  Members and guests share a common hobby — playing board and card games in Bonn and Troisdorf. Discover new and familiar board games together. The club now meets in Troisdorf rather than Sankt Augustin, every Thursday from 7 pm at the AWO Troisdorf-Oberlar office.
 ---

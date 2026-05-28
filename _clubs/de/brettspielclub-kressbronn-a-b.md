@@ -7,9 +7,9 @@ time: ""
 frequency: "Weekly"
 location:
   name: "Kressbronn am Bodensee"
-  address: "88079 Kressbronn am Bodensee"
-  lat: 47.5968864
-  lng: 9.5982209
+  address: "Hemigkofener Straße 11, 88079 Kressbronn am Bodensee"
+  lat: 47.5962004
+  lng: 9.6009444
 cost: ""
 image: ""
 website: "https://www.kressbronn.de/veranstaltungen/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Im Frühjahr 2019 wurde der Brettspielclub Kressbronn a. B. ins Leben gerufen. 20 bis 30 Freunde von Brett-, Karten- und Würfelspielen treffen sich seither jeden ersten Mittwoch im Monat ab 19 Uhr in der Gemeindebücherei. Die Kommunikation und der Spaß stehen im Vordergrund. Man kann viele neue Leute kennenlernen und bei den unterschiedlichen Spielen vielleicht sogar sein Hirn ein wenig trainieren. Inzwischen kann der Club eine Sammlung von rund 50 Spielen zur Verfügung stellen. Oft bringen die Teilnehmer auch ihre eigenen Spiele mit. Gäste sind immer willkommen.
+  Meets on the first Wednesday of every month with around 25 people of all ages — easy beginner games, card and family games as well as more advanced fare. Hosted 'Stadt Land Spielt' twice. Socially engaged: €1,000 from raffle proceeds went to social projects in Kressbronn in 2022 and 2023.
 ---

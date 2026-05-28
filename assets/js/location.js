@@ -92,34 +92,63 @@
         }
 
         var matchingProfile = self.detectCountryFromQuery(query);
-        if (!matchingProfile) {
-          self.hideSuggestionsEl(suggestionsEl);
-          return;
-        }
-
-        var activeCode = window.GameClubCountry && window.GameClubCountry.getActiveCode();
+        var isPostcode = !!matchingProfile;
 
         // If the typed query matches a different country's postcode, switch.
         // The country-change callback in app.js re-initialises us with the
         // new profile; we then run the lookup against the new service.
-        if (matchingProfile.code !== activeCode) {
-          window.GameClubCountry.setActive(matchingProfile.code, {
-            persist: false,        // don't clobber the user's saved choice
-            updateUrl: true,
-            replaceUrl: false
-          });
-          // setCountry has been called via the change callback; schedule
-          // the lookup using the *new* debounce.
+        if (isPostcode) {
+          var activeCode = window.GameClubCountry && window.GameClubCountry.getActiveCode();
+          if (matchingProfile.code !== activeCode) {
+            window.GameClubCountry.setActive(matchingProfile.code, {
+              persist: false,        // don't clobber the user's saved choice
+              updateUrl: true,
+              replaceUrl: false
+            });
+          }
         }
 
+        // Non-postcode queries (e.g. "Berlin") use the Nominatim place-name
+        // path against the active country so users still get a location pin
+        // and distance-to-club ordering.
+        if (!isPostcode && !self.isPlaceLikeQuery(query)) {
+          self.hideSuggestionsEl(suggestionsEl);
+          return;
+        }
+
+        var delay = isPostcode ? self.debounceMs : 1100; // Nominatim ~1 req/s
         self.debounceTimer = setTimeout(function () {
-          self.fetchSuggestionsFor(query, suggestionsEl, input);
-        }, self.debounceMs);
+          if (isPostcode) {
+            self.fetchSuggestionsFor(query, suggestionsEl, input);
+          } else {
+            self.fetchPlaceName(query, suggestionsEl, input);
+          }
+        }, delay);
       });
 
       input.addEventListener("keydown", function (e) {
         if (e.key === "Escape") {
           self.hideSuggestionsEl(suggestionsEl);
+          return;
+        }
+        if (e.key === "Enter") {
+          var query = input.value.trim();
+          if (!query) return;
+          // If the dropdown already has suggestions, pick the first one.
+          var firstBtn = suggestionsEl.querySelector(".location-suggestion");
+          if (firstBtn) {
+            e.preventDefault();
+            firstBtn.click();
+            return;
+          }
+          // Otherwise force a place-name lookup so typing "Berlin"+Enter
+          // sets a location even if no dropdown was shown yet (e.g. the
+          // user hit Enter inside the debounce window).
+          if (!self.detectCountryFromQuery(query) && self.isPlaceLikeQuery(query)) {
+            e.preventDefault();
+            clearTimeout(self.debounceTimer);
+            self.fetchPlaceName(query, suggestionsEl, input);
+          }
         }
       });
 
@@ -180,6 +209,81 @@
           } else {
             self.hideSuggestionsEl(suggestionsEl);
           }
+        })
+        .catch(function () {
+          self.hideSuggestionsEl(suggestionsEl);
+        });
+    },
+
+    // Heuristic: query is a plausible place name — has a letter and is long
+    // enough to be worth a geocoder hit. Avoids triggering on "1", "ab", etc.
+    isPlaceLikeQuery: function (query) {
+      if (!query || query.length < 3) return false;
+      return /[A-Za-zÀ-ÿ]/.test(query);
+    },
+
+    // Country codes (upper-case) we have datasets for. Used to filter
+    // place-name results so we don't suggest cities with no clubs.
+    supportedCountryCodes: function () {
+      var codes = [];
+      var countries = window.GameClubCountries || {};
+      for (var k in countries) {
+        if (countries[k] && countries[k].geocode_country_code) {
+          codes.push(countries[k].geocode_country_code.toUpperCase());
+        }
+      }
+      return codes;
+    },
+
+    fetchPlaceName: function (query, suggestionsEl, input) {
+      var self = this;
+      // Nominatim rejects 'q' combined with structured filters like 'country',
+      // so don't pre-filter by country — drop unsupported countries client-side
+      // and let selection switch the active country if needed.
+      var url = "https://nominatim.openstreetmap.org/search" +
+        "?q=" + encodeURIComponent(query) +
+        "&format=json&limit=8&addressdetails=1";
+      fetch(url, {
+        headers: { "Accept": "application/json" }
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (results) {
+          if (!Array.isArray(results) || results.length === 0) {
+            self.hideSuggestionsEl(suggestionsEl);
+            return;
+          }
+          var supported = self.supportedCountryCodes();
+          var seen = {};
+          var suggestions = [];
+          for (var i = 0; i < results.length; i++) {
+            var r = results[i];
+            var lat = parseFloat(r.lat);
+            var lng = parseFloat(r.lon);
+            if (isNaN(lat) || isNaN(lng)) continue;
+            var addr = r.address || {};
+            var country = (addr.country_code || "").toUpperCase();
+            if (supported.length && supported.indexOf(country) === -1) continue;
+            var place = addr.city || addr.town || addr.village ||
+                        addr.municipality || addr.county || "";
+            var region = addr.state || addr.region || "";
+            var label = place || (r.display_name || "").split(",")[0];
+            if (region && region !== label) label += ", " + region;
+            if (country) label += " (" + country + ")";
+            if (!label || seen[label]) continue;
+            seen[label] = true;
+            suggestions.push({
+              label: label,
+              lookup: null,
+              lat: lat,
+              lng: lng,
+              countryCode: country
+            });
+          }
+          if (suggestions.length === 0) {
+            self.hideSuggestionsEl(suggestionsEl);
+            return;
+          }
+          self.showSuggestionsIn(suggestions, suggestionsEl, input);
         })
         .catch(function () {
           self.hideSuggestionsEl(suggestionsEl);
@@ -266,6 +370,19 @@
       this.hideAllSuggestions();
 
       if (suggestion.lat !== undefined && suggestion.lng !== undefined && suggestion.lat !== null) {
+        // If the picked place is in a different supported country, switch
+        // active country first so the resulting distance list is meaningful.
+        if (suggestion.countryCode && window.GameClubCountry) {
+          var activeCode = window.GameClubCountry.getActiveCode &&
+                           window.GameClubCountry.getActiveCode();
+          if (activeCode && suggestion.countryCode !== activeCode) {
+            window.GameClubCountry.setActive(suggestion.countryCode, {
+              persist: false,
+              updateUrl: true,
+              replaceUrl: false
+            });
+          }
+        }
         self.setActive(suggestion.label);
         if (self.onLocationSet) {
           self.onLocationSet(suggestion.lat, suggestion.lng, suggestion.label);

@@ -6,10 +6,10 @@ days: ["Wednesday"]
 time: "19:00 Uhr"
 frequency: "Weekly"
 location:
-  name: "Köln"
-  address: "50733 Köln"
-  lat: 50.96482710000001
-  lng: 6.9538234
+  name: "Bürgerzentrum Nippes - Altenberger Hof"
+  address: "Mauenheimer Straße 92, 50733 Köln"
+  lat: 50.96850689999999
+  lng: 6.9489915
 cost: ""
 image: ""
 website: "https://www.ali-baba-spieleclub.de/koeln/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Der Kölner Regionalverband wurde 2010 ins Leben gerufen und erfreut sich seitdem stetig steigender Mitgliedszahlen. Aktuell ist der Kölner Regionalverband mit fast 200 Mitgliedern der zweitgrößte Verband im Ali Baba Spieleclub. Der Ali Baba Spielelcub Köln trifft sich jeden Mittwoch ab 19.00 Uhr im Altenberger Hof Bürgerzentrum Nippes Mauenheimer Straße 92 50733 Köln
+  The Cologne regional chapter of the Ali Baba Spieleclub — Germany's largest board game association of its kind, with 11 regional associations. In Cologne, over 240 active members meet weekly on Wednesdays from 7 pm at the Altenberger Hof Bürgerzentrum Nippes.
 ---

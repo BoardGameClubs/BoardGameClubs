@@ -6,10 +6,10 @@ days: ["Friday"]
 time: "19:00 Uhr"
 frequency: "Weekly"
 location:
-  name: "Lorch"
-  address: "73547 Lorch"
-  lat: 48.8072283
-  lng: 9.6704159
+  name: "Familienzentrum Schorndorf"
+  address: "Karlstraße, 73614 Schorndorf"
+  lat: 48.8066616
+  lng: 9.529632
 cost: ""
 image: ""
 website: "http://www.brettspieltreff-schorndorf.de/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Wir sind ein offener Spieletreff in Lorch und Schorndorf für Viel- und Gelegenheitsspieler und treffen uns mehr oder weniger regelmäßig abwechselnd wöchentlich zum Brettspielen. Freitags ca. alle zwei Wochen spielen wir ab 19:00 Uhr im Familienzentrum Lorch und in den Wochen dazwischen im Familienzentrum Schorndorf ab 19:00 Uhr. Die Räumlichkeiten bieten Tische und Versorgungsmöglichkeiten und eine Küche mit Getränken. Jeder, der Lust hat, kann mitspielen. Einfach am Freitagabend im Familienzentrum vorbeikommen. Gespielt werden alle möglichen Brett- und Kartenspiele, aktuelle und Klassiker,…
+  An open game night in Lorch and Schorndorf for frequent and casual gamers, meeting roughly every other week — alternating Fridays from 7 pm at the Lorch Familienzentrum and the Schorndorf Familienzentrum. Everything from current releases and classics to simple beginner games and nerdy strategy.
 ---

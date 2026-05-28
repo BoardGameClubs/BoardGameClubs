@@ -7,9 +7,9 @@ time: ""
 frequency: "Weekly"
 location:
   name: "Fantasy-Spiele Würzburg Vereinsheim"
-  address: "97074 Würzburg"
-  lat: 49.7801362
-  lng: 9.964734799999999
+  address: "Textorstraße 14, 97072 Würzburg"
+  lat: 49.7969495
+  lng: 9.9350009
 cost: ""
 image: ""
 website: "https://fswue.de/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Wir bieten euch täglich die Möglichkeit an einer Vielzahl von Events teilzunehmen: Wo? In unserem Vereinsheim. Erthalstraße 20, 97074 Würzburg, [Haus in 2. Reihe] Wann? Unsere Veranstaltungen findest du im Kalender. Was? Wir bieten diverse Events aus den Abteilungen Brettspiele, Rollenspiele, Tabletop und Trading Card Games an. Wer? Unsere Veranstaltungen stehen sowohl Mitgliedern unseres Vereins als auch Nichtmitgliedern offen. Warum? Bei uns findest du viele nette Menschen, tolle Möglichkeiten, deinem Hobby nachzugehen oder ein neues zu finden, und vor allem viel Spaß am Spielen.Wie? Komm…
+  A non-profit offering daily opportunities to play analog games together — board and card games, pen-and-paper RPGs, tabletop and TCGs (especially Magic: The Gathering). Open to members and non-members. A great way to meet new people in Würzburg, make friends or find a new hobby.
 ---

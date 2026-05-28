@@ -5,8 +5,9 @@
 {% else %}
   {% assign url_prefix = "" %}
 {% endif %}
+{% assign club_count = site.clubs | size %}
+{% assign count_label = i18n.footer_club_count[lang] | replace: "%COUNT%", club_count %}
 <footer class="site-footer">
-  <p>{{ i18n.footer_tagline[lang] }}</p>
   <p class="footer-legal">&copy; {{ site.time | date: "%Y" }} {{ i18n.footer_copyright[lang] }} &middot; {{ i18n.footer_source_under[lang] }} <a href="{{ url_prefix | append: '/licence/' | relative_url }}">MIT + Commons Clause</a></p>
   <p class="footer-links">
     <a href="{{ url_prefix | append: '/about/' | relative_url }}">{{ i18n.footer_about[lang] }}</a>
@@ -15,9 +16,5 @@
     <a href="{{ url_prefix | append: '/licence/' | relative_url }}">{{ i18n.footer_licence[lang] }}</a>
     {% if site.repository %}<a href="https://github.com/{{ site.repository }}">GitHub</a>{% endif %}
   </p>
-  <p class="footer-countries">
-    <span>{{ i18n.footer_other_countries[lang] }}</span>
-    {% if lang != "en" %}<a href="{{ '/' | absolute_url }}" hreflang="en-GB">{{ i18n.country_gb[lang] }}</a>{% endif %}
-    {% if lang != "de" %}<a href="{{ '/de/' | absolute_url }}" hreflang="de-DE">{{ i18n.country_de[lang] }}</a>{% endif %}
-  </p>
+  <p class="footer-count"><a href="{{ url_prefix | append: '/' | relative_url }}">{{ count_label }}</a></p>
 </footer>

@@ -6,10 +6,10 @@ days: ["Monday", "Thursday", "Sunday"]
 time: ""
 frequency: "Weekly"
 location:
-  name: "Düren"
-  address: "52349 Düren"
-  lat: 50.804453
-  lng: 6.4701808
+  name: "KOMM Kulturzentrum"
+  address: "August-Klotz-Straße 21, 52349 Düren"
+  lat: 50.8010934
+  lng: 6.4788281
 cost: ""
 image: ""
 website: "http://www.mister-x.de"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Regelmäßige Spieleabende in den Wochen, wechselnd montags und donnerstags von 19-23h Darüber hinaus : Spiele-Brunch alle 8-10 Wochen sonntags, Deutsche Meisterschaftsturniere, Lange Spielenacht als großes frei zusammengestelltes Turnier, Tag des Spiels als große öffentliche lokale Veranstaltung seit über 25 Jahren, Vereinswochenende in der Eifel mit sehr viel Zeit für sehr viele Spiele und natürlich zusätzliche private Runden KOMM Kulturzentrum (2.OG Raum 204) August-Klotz-Straße 21 52349 Düren
+  One of the oldest clubs in North Rhine-Westphalia, around since 1990. Meets weekly for family and strategy games (and the occasional less-strategic title) at KOMM Kulturzentrum. Annual 'Tag der Spiele' in November at Burgau Castle, plus games brunches, championship tournaments and long game nights.
 ---

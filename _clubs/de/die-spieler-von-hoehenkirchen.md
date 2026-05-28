@@ -6,10 +6,10 @@ days: ["Friday"]
 time: ""
 frequency: "Weekly"
 location:
-  name: "Höhenkirchen-Siegertsbrunn"
-  address: "85635 Höhenkirchen-Siegertsbrunn"
-  lat: 48.0259882
-  lng: 11.7528383
+  name: "Taverna Ammos"
+  address: "Sportplatzstraße 11, 85635 Höhenkirchen-Siegertsbrunn"
+  lat: 48.0257721
+  lng: 11.7006217
 cost: ""
 image: ""
 website: "http://www.diespieler.cheopsstein.de/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Wir sind ein Freundeskreis im Alter von 25 bis 70 Jahren, der sich seit 2009 in Höhenkirchen zum gemeinsamen Spielen trifft. Wer ebenfalls Spaß an Spielen in einem Freundeskreis hat, ist uns gerne willkommen. Die Treffen sind am 1. und 3. sowie gegebenfalls der 5. Freitag im Monat ab 19 Uhr in der Ammos Taverna in Höhenkirchen-Siegertsbrunn
+  A group of friends aged 25 to 70 meeting in Höhenkirchen since 2009. Sessions on the 1st, 3rd and occasionally 5th Friday of the month from 7 pm at the Taverna Ammos.
 ---

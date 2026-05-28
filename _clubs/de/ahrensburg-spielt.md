@@ -6,10 +6,10 @@ days: ["Various"]
 time: ""
 frequency: "Weekly"
 location:
-  name: "Ahrensburg"
-  address: "22926 Ahrensburg"
-  lat: 53.6744402
-  lng: 10.2353838
+  name: "Eric-Kandel-Gymnasium"
+  address: "Reesenbüttler Redder 4-10, 22926 Ahrensburg"
+  lat: 53.68028
+  lng: 10.2192
 cost: ""
 image: ""
 website: "https://www.ahrensburg-spielt.de/spielen-in-ahrensburg/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Wir sind eine (nicht mehr kleine) Gruppe von Spielebegeisterten Personen gemischten Alters. Der vorwiegende Teil der Besucher unserer öffentlichen Spieleabende (in der Regel so um die 40-80 Besucher) kommt als Stammgast oder wird über die Zeitung auf uns aufmerksam. Das Spieler-Spektrum reicht von Gelegenheitsspielern über Familienspieler bis zu Vielspielern. Entsprechend findet in der Regel jeder eine Gruppe, die für Spielevorschläge aller Art offen ist. Das Alter der Besucher spannt sich in der Regel von 12 bis 73. Wir haben als Verantaltungsorte das Eric-Kandel-Gymnasium (Reesenbüttler…
+  A mixed-age group of game enthusiasts in Ahrensburg. Public game nights usually draw 40 to 80 people — casual gamers, families and serious gamers. Rules explained on request. Potluck buffet; contributions welcome. Anyone can join or leave at any time and game nights typically wrap up around midnight.
 ---

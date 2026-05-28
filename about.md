@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "About Board Game Clubs"
-description: "Board Game Clubs is a free, community-maintained directory helping you find board game clubs near you across the UK and Germany."
+description: "Board Game Clubs is a free, community-maintained directory helping you find board game clubs near you across Europe."
 permalink: /about/
 ---
 
@@ -9,7 +9,7 @@ permalink: /about/
 
 # About Board Game Clubs
 
-Board Game Clubs is a free, community-maintained directory of board game clubs. The UK directory lives at the site root; German clubs are listed at [boardgameclubs.org/de/]({{ "/de/" | relative_url }}). We connect people with local clubs, making it easy to discover where and when groups meet near you.
+Board Game Clubs is a free, community-maintained directory of board game clubs across Europe. The site is bilingual: English at the root and German at [boardgameclubs.org/de/]({{ "/de/" | relative_url }}). Use the country switcher in the top nav to change which country's clubs you see on the map. We connect people with local clubs, making it easy to discover where and when groups meet near you.
 
 ## How It Works
 

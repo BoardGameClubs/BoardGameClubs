@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Über Board Game Clubs"
-description: "Board Game Clubs ist ein kostenloses, von der Community gepflegtes Verzeichnis, das dir hilft, Brettspielclubs in deiner Nähe in Deutschland und Großbritannien zu finden."
+description: "Board Game Clubs ist ein kostenloses, von der Community gepflegtes Verzeichnis, das dir hilft, Brettspielclubs in deiner Nähe in ganz Europa zu finden."
 permalink: /de/about/
 ---
 
@@ -9,7 +9,7 @@ permalink: /de/about/
 
 # Über Board Game Clubs
 
-Board Game Clubs ist ein kostenloses, von der Community gepflegtes Verzeichnis von Brettspielclubs. Das deutsche Verzeichnis findest du hier; britische Clubs sind unter [boardgameclubs.org]({{ "/" | absolute_url }}) gelistet. Wir verbinden Menschen mit lokalen Clubs, damit du leicht herausfinden kannst, wo und wann sich Gruppen in deiner Nähe treffen.
+Board Game Clubs ist ein kostenloses, von der Community gepflegtes Verzeichnis von Brettspielclubs in ganz Europa. Die Seite ist zweisprachig: Englisch unter [boardgameclubs.org]({{ "/" | absolute_url }}) und Deutsch hier. Mit dem Länderschalter oben in der Navigation kannst du wechseln, welches Land auf der Karte angezeigt wird. Wir verbinden Menschen mit lokalen Clubs, damit du leicht herausfinden kannst, wo und wann sich Gruppen in deiner Nähe treffen.
 
 ## So funktioniert es
 

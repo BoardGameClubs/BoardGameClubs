@@ -12,7 +12,7 @@
 <nav class="site-nav">
   <a href="{{ home_path | relative_url }}">{{ i18n.nav_map[lang] }}</a>
   <a href="{{ about_path | relative_url }}">{{ i18n.nav_about[lang] }}</a>
-  <a href="{{ contribute_path | relative_url }}" class="nav-cta">{{ i18n.nav_contribute[lang] }}</a>
+  <a href="{{ contribute_path | relative_url }}" class="nav-cta"><span class="nav-cta-full">{{ i18n.nav_contribute[lang] }}</span><span class="nav-cta-short">+ Add</span></a>
   <div class="nav-country" id="nav-country" data-label-country="{{ i18n.nav_country[lang] }}">
     <button type="button" class="nav-country-toggle" id="nav-country-toggle" aria-haspopup="listbox" aria-expanded="false" title="{{ i18n.nav_country[lang] }}">
       <i data-lucide="globe"></i>
@@ -20,6 +20,27 @@
       <i data-lucide="chevron-down" class="nav-country-caret"></i>
     </button>
     <div class="nav-country-menu" role="listbox" aria-label="{{ i18n.nav_country[lang] }}">
+      {% comment %}
+        Build language-swap URLs that stay on the equivalent page.
+        Strip any leading "/de" from page.url to get a language-neutral path,
+        then prefix with the target language.
+        Falls back to the homepage when there is no equivalent (e.g. club
+        detail pages live under a single language).
+      {% endcomment %}
+      {% assign neutral_path = page.url | remove_first: "/de" %}
+      {% if neutral_path == "" %}{% assign neutral_path = "/" %}{% endif %}
+      {% if page.layout == "club" %}
+        {% assign en_url = "/" %}
+        {% assign de_url = "/de/" %}
+      {% else %}
+        {% assign en_url = neutral_path %}
+        {% capture de_url %}/de{{ neutral_path }}{% endcapture %}
+      {% endif %}
+      <div class="nav-lang-row" role="group" aria-label="{{ i18n.footer_language[lang] }}">
+        <span class="nav-lang-label">{{ i18n.footer_language[lang] }}</span>
+        <a href="{{ en_url | relative_url }}" class="nav-lang-option{% if lang == 'en' %} is-active{% endif %}" hreflang="en">EN</a>
+        <a href="{{ de_url | relative_url }}" class="nav-lang-option{% if lang == 'de' %} is-active{% endif %}" hreflang="de">DE</a>
+      </div>
       <button type="button" role="option" data-country="GB" class="nav-country-option" data-label="GB">
         <span class="nav-country-code">GB</span>
         <span class="nav-country-name">{{ i18n.country_gb[lang] }}</span>
@@ -27,6 +48,42 @@
       <button type="button" role="option" data-country="DE" class="nav-country-option" data-label="DE">
         <span class="nav-country-code">DE</span>
         <span class="nav-country-name">{{ i18n.country_de[lang] }}</span>
+      </button>
+      <button type="button" role="option" data-country="AT" class="nav-country-option" data-label="AT">
+        <span class="nav-country-code">AT</span>
+        <span class="nav-country-name">{{ i18n.country_at[lang] }}</span>
+      </button>
+      <button type="button" role="option" data-country="CH" class="nav-country-option" data-label="CH">
+        <span class="nav-country-code">CH</span>
+        <span class="nav-country-name">{{ i18n.country_ch[lang] }}</span>
+      </button>
+      <button type="button" role="option" data-country="IT" class="nav-country-option" data-label="IT">
+        <span class="nav-country-code">IT</span>
+        <span class="nav-country-name">{{ i18n.country_it[lang] }}</span>
+      </button>
+      <button type="button" role="option" data-country="PL" class="nav-country-option" data-label="PL">
+        <span class="nav-country-code">PL</span>
+        <span class="nav-country-name">{{ i18n.country_pl[lang] }}</span>
+      </button>
+      <button type="button" role="option" data-country="NL" class="nav-country-option" data-label="NL">
+        <span class="nav-country-code">NL</span>
+        <span class="nav-country-name">{{ i18n.country_nl[lang] }}</span>
+      </button>
+      <button type="button" role="option" data-country="BE" class="nav-country-option" data-label="BE">
+        <span class="nav-country-code">BE</span>
+        <span class="nav-country-name">{{ i18n.country_be[lang] }}</span>
+      </button>
+      <button type="button" role="option" data-country="FR" class="nav-country-option" data-label="FR">
+        <span class="nav-country-code">FR</span>
+        <span class="nav-country-name">{{ i18n.country_fr[lang] }}</span>
+      </button>
+      <button type="button" role="option" data-country="DK" class="nav-country-option" data-label="DK">
+        <span class="nav-country-code">DK</span>
+        <span class="nav-country-name">{{ i18n.country_dk[lang] }}</span>
+      </button>
+      <button type="button" role="option" data-country="ES" class="nav-country-option" data-label="ES">
+        <span class="nav-country-code">ES</span>
+        <span class="nav-country-name">{{ i18n.country_es[lang] }}</span>
       </button>
     </div>
   </div>

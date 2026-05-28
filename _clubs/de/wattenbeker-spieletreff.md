@@ -6,10 +6,10 @@ days: ["Saturday"]
 time: ""
 frequency: "Weekly"
 location:
-  name: "Schalthaus Wattenbek, Reesdorfer Straße 4, 24582 Wattenbek bei Bordesholm"
-  address: "Schalthaus Wattenbek, Reesdorfer Straße 4, 24582 Wattenbek bei Bordesholm, 24582 Wattenbek"
-  lat: 54.17549349999999
-  lng: 10.0533956
+  name: "Schalthaus Wattenbek"
+  address: "Reesdorfer Weg 4b, 24582 Wattenbek"
+  lat: 54.1755113
+  lng: 10.0538124
 cost: ""
 image: ""
 website: "http://rkspiele.de/wattenbeker_spieletreff/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Der Wattenbeker Spieletreff ist ein öffentlicher Spieletreff für spielbegeisterte Jugendliche, Sie, Er, Mama, Papa, Oma und Opa . Alleine oder als Gruppe, jede/r ist Willkommen im Alter von 15 bis 130 Jahren. Aber auch Familien mit jüngeren Kindern sind gern gesehene Gäste. Ort: Schalthaus Wattenbek, Reesdorfer Straße 4, 24582 Wattenbek bei Bordesholm Datum: Jeden 2. Samstag eines jeden Monats (siehe auch "Kalender") Uhrzeit: ab 17 Uhr
+  A public game night for everyone aged 14 and up, plus families with younger children. Always 300+ games available including current releases — bring your own if you like. Bring your own non-alcoholic drinks and snacks. Free admission; meets the second Saturday of each month from 5 pm.
 ---

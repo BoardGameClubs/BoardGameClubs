@@ -6,10 +6,10 @@ days: ["Monday"]
 time: "19:00 Uhr"
 frequency: "Weekly"
 location:
-  name: "Hankensbüttel"
-  address: "29386 Hankensbüttel"
-  lat: 52.730674
-  lng: 10.6024106
+  name: "Ludwig-Harms-Haus"
+  address: "Karl-Söhle-Weg 2, 29386 Hankensbüttel"
+  lat: 52.7313661
+  lng: 10.6024499
 cost: ""
 image: ""
 website: "https://www.diespielkameraden.de/veranstaltungen/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Wir sind eine lockere Gruppe von SpielerInnen zwischen 10 und 50 Jahren aus der Region rund um Hankensbüttel in der südlichen Lüneburger Heide (d.h. Raum Celle, Uelzen, Gifhorn, Braunschweig, Wolfsburg). Wer kann, kommt vorbei und spielt mit. Wir treffen uns jedem Montag ab 19:00 Uhr im Kubus in Hankensbüttel (Wittinger Str. 33, 29386 Hankensbüttel). Der Kubus ist das Jugendkulturzentrum der Gemeinde Hankensbüttel und kann von uns genutzt werden. Gespielt werden meistens moderne Brett- und Kartenspiele. Gelegentlich kommt auch mal ein „Pen and Paper“ Rollenspiel auf den Tisch. Die Bandbreite…
+  The Hankensbüttel gaming group meets every Monday at the Ludwig-Harms-Haus. Mostly modern board and card games, occasionally pen-and-paper RPGs. Also organises free role-playing days, the 'Hankau spielt' event and various other gatherings.
 ---

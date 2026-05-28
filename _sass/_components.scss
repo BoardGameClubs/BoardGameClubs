@@ -786,6 +786,42 @@
     p {
       margin-bottom: 1rem;
     }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul, ol {
+      margin: 0 0 1rem 0;
+      padding-left: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.35rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    ul ul, ul ol, ol ul, ol ol {
+      margin-top: 0.35rem;
+      margin-bottom: 0;
+    }
+
+    a {
+      color: $color-accent;
+      text-decoration: underline;
+      text-decoration-color: rgba($color-accent, 0.4);
+
+      &:hover {
+        text-decoration-color: currentColor;
+      }
+    }
+
+    strong {
+      font-weight: 600;
+    }
   }
 
   .club-links {

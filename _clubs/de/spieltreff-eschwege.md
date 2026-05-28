@@ -6,10 +6,10 @@ days: ["Wednesday"]
 time: ""
 frequency: "Weekly"
 location:
-  name: "Eschwege"
-  address: "37269 Eschwege"
-  lat: 51.1876662
-  lng: 10.0397725
+  name: "AMIKARO (AWO-Begegnungszentrum)"
+  address: "Hospitalplatz 1, 37269 Eschwege"
+  lat: 51.185876
+  lng: 10.0568269
 cost: ""
 image: ""
 website: "https://spieltreff-eschwege.de/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Der Spieltreff Eschwege triff sich in den ungeraden Kalenderwochen am Mittwoch um 19 Uhr im AMIKARO, dem Begegnungszentrum der AWO, Hospitalplatz 1, 37269 Eschwege. Wir haben einen kleinen Fundus und manche bringen Spiele mit. Gespielt wird das worauf die Anwesenden Lust haben.
+  Regular game nights on Wednesdays (odd-numbered weeks) from 7 pm at AMIKARO, the AWO community centre. Games afternoon on the second Friday of every month from 3:30 pm and almost monthly 'long night of games' from 3:30 pm running past midnight.
 ---

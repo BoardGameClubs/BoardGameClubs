@@ -36,9 +36,53 @@ country_de:
   en: "Germany"
   de: "Deutschland"
 
+country_ch:
+  en: "Switzerland"
+  de: "Schweiz"
+
+country_at:
+  en: "Austria"
+  de: "Österreich"
+
+country_it:
+  en: "Italy"
+  de: "Italien"
+
+country_pl:
+  en: "Poland"
+  de: "Polen"
+
+country_nl:
+  en: "Netherlands"
+  de: "Niederlande"
+
+country_be:
+  en: "Belgium"
+  de: "Belgien"
+
+country_fr:
+  en: "France"
+  de: "Frankreich"
+
+country_dk:
+  en: "Denmark"
+  de: "Dänemark"
+
+country_es:
+  en: "Spain"
+  de: "Spanien"
+
 footer_other_countries:
   en: "Other countries:"
   de: "Andere Länder:"
+
+footer_language:
+  en: "Language:"
+  de: "Sprache:"
+
+footer_club_count:
+  en: "%COUNT% clubs listed"
+  de: "%COUNT% Clubs gelistet"
 
 lang_banner_de:
   en: "Looking for clubs in Germany? Visit the German site →"
@@ -83,7 +127,7 @@ days_selected:
 
 use_my_location:
   en: "Use my location"
-  de: "Meinen Standort verwenden"
+  de: "Standort"
 
 # --- Day names (used in filter dropdown labels and tags) ---
 day_monday:

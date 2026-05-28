@@ -6,10 +6,10 @@ days: ["Friday"]
 time: "19:00 - 23:00 Uhr"
 frequency: "Weekly"
 location:
-  name: "Hattenhofen"
-  address: "73110 Hattenhofen"
-  lat: 48.6691464
-  lng: 9.565006499999999
+  name: "Kath. Gemeindehaus"
+  address: "Zeller Straße 5, 73110 Hattenhofen"
+  lat: 48.66565550000001
+  lng: 9.574897
 cost: ""
 image: ""
 website: "https://spieletreff-hattenhofen.de/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Entdecke den Spieletreff Hattenhofen, einen offenen Treffpunkt für alle Brett- und Kartenspiel-Enthusiasten. Ohne Anmeldung können Jung und Alt teilnehmen und in die Welt der Spiele eintauchen. Selbst ohne Vorkenntnisse könnt Ihr direkt loslegen. Erlebt bei uns gemeinschaftlichen Spielspaß in gemütlicher Atmosphäre. Jeden letzten Freitag im Monat: 19-23 Uhr im Kath. Gemeindehaus Zeller Str. 5, 73110 Hattenhofen
+  An open game night for young and old, beginners and experienced players, at the Catholic parish hall. Every last Friday of the month from 7 pm to 11 pm. No registration needed.
 ---

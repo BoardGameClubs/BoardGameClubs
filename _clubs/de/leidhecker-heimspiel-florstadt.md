@@ -6,10 +6,10 @@ days: ["Saturday"]
 time: "19:00 Uhr"
 frequency: "Weekly"
 location:
-  name: "Florstadt"
-  address: "61197 Florstadt"
-  lat: 50.3203904
-  lng: 8.8665959
+  name: "SV Germania Leidhecken"
+  address: "Reichelsheimer Weg, 61197 Florstadt"
+  lat: 50.3483208
+  lng: 8.8958945
 cost: ""
 image: ""
 website: "http://leidhecker-heim-spiel.de/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Wir treffen uns jeden 1. Samstag im Monat ab 19:00 Uhr im Sportheim des SV Germania Leidhecken. SV Germania Leidhecken, Reichelsheimer Weg 11, 61197 Florstadt
+  Founded September 2012 by Marcus, Angelika, Uschy and Steffi (MAUS), renamed HeimSpiel as it meets at the SV Germania Leidhecken clubhouse. First Saturday of the month from 7 pm; occasional Sunday game days from 10 am. Also takes part in Pegasus Spieletage.
 ---

@@ -6,10 +6,10 @@ days: ["Sunday"]
 time: "16:00 Uhr"
 frequency: "Weekly"
 location:
-  name: "Essen"
-  address: "45147 Essen"
-  lat: 51.4371895
-  lng: 6.9883403
+  name: "Fahrschule P1 GmbH"
+  address: "Rembrandtstraße 2, 45139 Essen"
+  lat: 51.4387136
+  lng: 6.9875437
 cost: ""
 image: ""
 website: "https://www.essener-spielenacht.de/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Wir treffen uns einmal im Monat m eistens am 1. Sonntag. Unser Spieletreff findet in den Räumlichkeiten der Fahrschule P1 in der Rembrandtstrasse 2 in 45147 Essen-Holsterhausen statt. Wir starten ab 16.00 Uhr, das Ende ist offen.
+  A group of gaming enthusiasts aged 16 to 65 who meet once a month at Fahrschule P1 in Essen for all kinds of board and card games, with plenty of snacks and drinks. Everyone welcome. Starts 4 pm, finishes whenever.
 ---

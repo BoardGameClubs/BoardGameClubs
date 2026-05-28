@@ -6,8 +6,8 @@ days: ["Tuesday"]
 time: "19:00 Uhr"
 frequency: "Fortnightly"
 location:
-  name: "Westfälischer Hof, Emsstrasse 1, 48282 Emsdetten"
-  address: "Westfälischer Hof, Emsstrasse 1, 48282 Emsdetten, 48282 Emsdetten"
+  name: "Westfälischer Hof"
+  address: "Emsstraße 1, 48282 Emsdetten"
   lat: 52.1753916
   lng: 7.5288862
 cost: ""
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Termin: alle zwei Wochen (gerade KW), dienstags ab 19.00 Uhr. Ort: Westfälischer Hof, Emsstrasse 1, 48282 Emsdetten
+  Meets every two weeks in Emsdetten to play connoisseur, family and party games in a friendly atmosphere. The venue is a pub so things can get a bit noisy. Unlimited food and drinks available. Tuesdays of even-numbered calendar weeks from 7 pm.
 ---

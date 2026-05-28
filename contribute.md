@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Add Your Board Game Club to Our Directory"
-description: "Submit your board game club to Board Game Clubs. Our free, community-maintained directory helps people find board game clubs near them across the UK and Germany."
+description: "Submit your board game club to Board Game Clubs. Our free, community-maintained directory helps people find board game clubs near them across Europe."
 permalink: /contribute/
 ---
 
@@ -26,15 +26,16 @@ If you're comfortable with GitHub, you can add a club directly:
 
 ### 1. Create a new file
 
-[Create a new file](https://github.com/BoardGameClubs/BoardGameClubs_Web/new/main/_clubs) in the `_clubs/` folder on GitHub. Name it using the format `your-club-name.md` (lowercase, hyphens instead of spaces). For German clubs, use ASCII-folded names: `ä→ae`, `ö→oe`, `ü→ue`, `ß→ss` (e.g. `spieletreff-muenchen.md`).
+[Create a new file](https://github.com/BoardGameClubs/BoardGameClubs_Web/new/main/_clubs) in the `_clubs/<country>/` folder on GitHub, where `<country>` is your ISO 3166-1 alpha-2 code in lowercase (`gb`, `de`, `at`, `ch`, `nl`, `be`, `it`, `pl`, `fr`, `dk`, `es`). Name the file using the format `your-club-name.md` (lowercase, hyphens instead of spaces). For names with diacritics, use ASCII-folded versions: `ä→ae`, `ö→oe`, `ü→ue`, `ß→ss`, `é→e`, etc. (e.g. `spieletreff-muenchen.md`).
 
 ### 2. Copy this template
 
-Paste the following into your new file and fill in the details. UK clubs omit the `permalink:` line; German clubs include it.
+Paste the following into your new file and fill in the details. Set `country` and `permalink` to match the folder.
 
 ```yaml
 ---
-country: "UK"          # "UK" or "DE"
+country: "GB"          # ISO 3166-1 alpha-2: GB, DE, AT, CH, NL, BE, IT, PL, FR, DK, ES
+permalink: /clubs/your-club-slug/   # For non-GB: /<country-lowercase>/clubs/your-club-slug/
 name: "Your Club Name"
 type: ["Board Games"]
 days: ["Thursday"]
@@ -59,24 +60,21 @@ description: >-
 ---
 ```
 
-For a German club, also add:
-
-```yaml
-permalink: /de/clubs/your-club-slug/
-```
+UK clubs use `permalink: /clubs/your-club-slug/`. Clubs in every other country use `/<country>/clubs/your-club-slug/`, e.g. `/de/clubs/...`, `/nl/clubs/...`, `/fr/clubs/...`.
 
 ### 3. Fill in the details
 
 | Field | Description |
 |-------|-------------|
-| `country` | `"UK"` or `"DE"` (ISO 3166-1 alpha-2) |
+| `country` | ISO 3166-1 alpha-2 code: `GB`, `DE`, `AT`, `CH`, `NL`, `BE`, `IT`, `PL`, `FR`, `DK`, `ES` |
+| `permalink` | `/clubs/your-club-slug/` for GB; `/<country>/clubs/your-club-slug/` for everywhere else |
 | `name` | Your club's full name |
 | `type` | Array of types, e.g. `["Board Games"]`. Options: "Board Games", "RPG", "Wargames", "TCG", "BOTC" |
 | `days` | Array of days you meet, e.g. `["Thursday"]` or `["Monday", "Friday"]` |
 | `time` | When you meet, e.g. "7:00pm - 10:00pm" |
 | `frequency` | "Weekly", "Fortnightly", "Monthly", or "Ad-hoc" |
-| `location` | Venue name, full address (with postcode/PLZ), and coordinates |
-| `cost` | "Free" or a money amount, e.g. "£2", "€3", "£5 (First Session Free)" |
+| `location` | Venue name, full address (with postcode), and coordinates |
+| `cost` | "Free" or a money amount in your local currency, e.g. "£2", "€3", "CHF 5", "kr 20", "zł 10", "£5 (First Session Free)" |
 | `age_restriction` | Any age restriction, e.g. "18+". Leave empty if none |
 | `image` | A URL or filename in `assets/images/clubs/` (see [step 5](#5-adding-a-logo) below) |
 | `website` | Link to your club's website |
@@ -84,6 +82,25 @@ permalink: /de/clubs/your-club-slug/
 | `facebook` | Link to your club's Facebook page or group |
 | `discord` | Discord invite link |
 | `bgg` | BoardGameGeek guild or group link |
+| `description` | Free text. Basic Markdown is supported — blank lines split paragraphs, and lines starting with `-` become a bulleted list. See examples below. |
+
+### Formatting the description
+
+The `description` field is rendered as Markdown, so you can use paragraphs and bulleted lists. Keep the YAML block-scalar indentation (two spaces) on every line — that's what keeps Jekyll happy.
+
+```yaml
+description: |
+  We're a friendly group meeting in central Leeds. Newcomers are always
+  welcome and rules are explained.
+
+  Typical evening includes:
+
+  - A medium-weight Euro to kick things off
+  - Lighter card or party games later
+  - Plenty of breaks and chat
+```
+
+The `>-` style from the template collapses line breaks into one paragraph — useful for a single short description. Switch to `|` (as above) when you want to keep paragraph breaks and lists.
 
 ### 4. Find your coordinates
 
@@ -106,6 +123,10 @@ Alternatively, you can use a direct URL to an image hosted elsewhere, e.g. `imag
 ### 6. Submit a pull request
 
 Commit your file and [open a pull request](https://github.com/BoardGameClubs/BoardGameClubs_Web/pulls). We'll review it and merge it in.
+
+## Don't see your country?
+
+We currently list clubs in the United Kingdom, Germany, Austria, Switzerland, the Netherlands, Belgium, Italy, Poland, France, Denmark, and Spain. If your club is somewhere else, [open an issue](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new) — adding a new country is a small change and we're happy to do it.
 
 ## Updating an Existing Club
 

@@ -140,32 +140,14 @@
     font-size: 0.88rem;
     font-weight: 500;
     background: transparent;
-    border-radius: 0;
+    border-radius: $border-radius-sm;
     letter-spacing: 0.02em;
-    transition: color 0.15s ease;
-
-    // Animated underline for menu-style links
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0.9rem;
-      right: 0.9rem;
-      bottom: 0.3rem;
-      height: 2px;
-      background: #fff;
-      transform: scaleX(0);
-      transform-origin: left center;
-      transition: transform 0.2s ease;
-    }
+    transition: background 0.15s ease, color 0.15s ease;
 
     &:hover {
       color: #fff;
-      background: transparent;
+      background: rgba(#fff, 0.15);
       text-decoration: none;
-
-      &::after {
-        transform: scaleX(1);
-      }
     }
 
     &.nav-cta {
@@ -177,13 +159,22 @@
       border-radius: $border-radius-sm;
       box-shadow: none;
 
-      &::after {
-        display: none;
-      }
-
       &:hover {
         background: rgba(#fff, 0.92);
         color: $color-accent;
+      }
+
+      .nav-cta-short {
+        display: none;
+      }
+
+      @media (max-width: $bp-md - 1) {
+        .nav-cta-full {
+          display: none;
+        }
+        .nav-cta-short {
+          display: inline;
+        }
       }
     }
 
@@ -202,10 +193,6 @@
     color: #fff;
     border-radius: $border-radius-sm;
 
-    &::after {
-      display: none;
-    }
-
     svg {
       width: 18px;
       height: 18px;
@@ -221,7 +208,7 @@
   // Sized to match the .nav-cta "+ Add a Club" pill (height & vertical rhythm).
   .nav-country {
     position: relative;
-    margin-left: 0.4rem;
+    margin-left: 0.25rem;
     display: inline-flex;
     align-items: center;
   }
@@ -281,6 +268,44 @@
 
   .nav-country.is-open .nav-country-menu {
     display: block;
+  }
+
+  .nav-lang-row {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.55rem 0.9rem;
+    background: rgba($color-accent, 0.04);
+    border-bottom: 1px solid rgba(#000, 0.06);
+
+    .nav-lang-label {
+      flex: 1;
+      font-size: 0.75rem;
+      color: $color-text-light;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-lang-option {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      padding: 0.2rem 0.5rem;
+      border-radius: $border-radius-sm;
+      color: $color-text;
+      background: transparent;
+      text-decoration: none;
+      transition: background 0.12s ease, color 0.12s ease;
+
+      &:hover {
+        background: rgba($color-accent, 0.12);
+        color: $color-accent;
+      }
+
+      &.is-active {
+        background: $color-accent;
+        color: #fff;
+      }
+    }
   }
 
   .nav-country-option {
@@ -439,11 +464,6 @@
         margin: 0;
       }
 
-      // Hide the tagline on the home page — keep just links + legal
-      > p:first-child {
-        display: none;
-      }
-
       .footer-links {
         gap: 1rem;
         margin-top: 0;
@@ -451,6 +471,10 @@
 
       .footer-legal {
         color: $color-text-light;
+      }
+
+      .footer-count {
+        font-size: 0.72rem;
       }
     }
   }
@@ -471,8 +495,23 @@
     }
   }
 
+  .footer-count {
+    font-size: 0.78rem;
+    color: $color-accent;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   p {
-    margin-bottom: 0.4rem;
+    margin: 0 0 0.7rem 0;
 
     &:last-child {
       margin-bottom: 0;
@@ -483,21 +522,6 @@
     display: flex;
     justify-content: center;
     gap: 1.25rem;
-    margin-top: 0.85rem;
-  }
-
-  .footer-countries {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.85rem;
-    margin-top: 0.6rem;
-    font-size: 0.78rem;
-    opacity: 0.75;
-
-    span {
-      color: $color-primary-light;
-    }
   }
 
   a {

@@ -7,9 +7,9 @@ time: "18:00 Uhr"
 frequency: "Weekly"
 location:
   name: "Altenburg"
-  address: "04600 Altenburg"
-  lat: 50.9888921
-  lng: 12.429075
+  address: "Zeitzer Straße 39, 04600 Altenburg"
+  lat: 50.9900513
+  lng: 12.4263993
 cost: ""
 image: ""
 website: "http://www.altenburger-spieletage.de/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  An jedem letzten Freitag im Monat treffen wir uns ab 18.00 Uhr zum gemeinsamen Essen und Spielen. Etwa 50-100 Spiele, angepasst an die aktuellen Trends der Besucher, werden jedes Mal neu zusammengestellt. Der Abend findet im Ev.-Freikirchl. Gemeindezentrum (hinterer Eingang) statt.
+  A regular game meet-up at Zeitzer Straße 39 in Altenburg. Also travels with a mobile games café (a van full of games) to events at other locations.
 ---

@@ -7,9 +7,9 @@ time: ""
 frequency: "Weekly"
 location:
   name: "Dresden"
-  address: "01277 Dresden"
-  lat: 51.0374106
-  lng: 13.7964562
+  address: "Holbeinstraße 68, 01307 Dresden"
+  lat: 51.048821
+  lng: 13.7712971
 cost: ""
 image: ""
 website: "https://brettspielhelden-dresden.de/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Zitiert von Über uns - Brettspielhelden Dresden : "Wir sind ein seit 2004 eingetragener Verein von derzeit ca. 20 Mitgliedern, der es sich zur Aufgabe gemacht hat, dass Kulturgut Spiel zu fördern. Uns ist es wichtig, den Spaß an Gesellschaftsspielen zu leben und weiterzugeben. Spielen verbindet Menschen, fördert die eigenen Fähigkeiten wie z. B. Kommunikations-, Team- und Problemlösefähigkeiten und bereitet einfach sehr viel Freude. Neben unseren regelmäßigen Spieletreffs – wobei man kein Vereinsmitglied sein muss, um mitzuspielen – nehmen wir jährlich an mindestens 3 großen Veranstaltungen…
+  A board game club in Dresden that meets twice a week to play and organises dozens of events throughout the year, with 'Dresden spielt!' in November being the biggest. Runs a game library at its premises that's free to everyone — no costs to join.
 ---

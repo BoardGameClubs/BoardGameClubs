@@ -7,9 +7,9 @@ time: ""
 frequency: "Weekly"
 location:
   name: "Dettingen an der Erms"
-  address: "72581 Dettingen an der Erms"
-  lat: 48.5306773
-  lng: 9.345136100000001
+  address: "Schneckenhofengasse 1, 72581 Dettingen an der Erms"
+  lat: 48.5283076
+  lng: 9.3484812
 cost: ""
 image: ""
 website: "http://www.fritzelsspielerei.de/"
@@ -17,5 +17,5 @@ facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  FritZel ist ein offener Spielertreff für Gesellschaftsspiele in Dettingen an der Erms. Wir treffen uns bereits seit dem 24. Januar 2011. Bei uns kommen einmal im Monat Brettspiele, Kartenspiele und Würfelspiele auf den Tisch. Ob Familienspiel, Strategiespiel, Glücksspiel, Bluffspiel oder Geschicklichkeitsspiel – bei uns finden Sie immer einen Spielpartner. Regeln können gerne vom Team erklärt werden. Das erspart das oft mühsame Regellesen. Gespielt wird am ersten Samstag im Monat ab 15 Uhr im Gemeinschaftsraum (Sorglos Wohnen) Bahnhofstraße 10 72581 Dettingen an der Erms
+  An open meeting place for casual and avid gamers offering a diverse selection in accessible premises. Running since January 2011, non-profit since 2019. Regular board, card and dice games — family, strategy and games of chance — with rules explained by the team. Collection of over 1,400 games, with 30 to 40 players per evening. Also a senior citizens' meeting every two weeks and a games library for members.
 ---
