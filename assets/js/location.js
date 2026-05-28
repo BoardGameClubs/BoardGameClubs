@@ -1,9 +1,6 @@
 (function () {
   "use strict";
 
-  // Matches partial UK postcodes: "SW1", "LS6 3", "EC2A 1NT", etc.
-  var POSTCODE_RE = /^[A-Z]{1,2}\d/i;
-
   var GameClubLocation = {
     input: null,
     inputMobile: null,
@@ -19,9 +16,19 @@
     onLocationClear: null,
     activeLabel: null,
 
+    // Country-driven; populated by setCountry().
+    postcodeRegex: /^[A-Z]{1,2}\d/i,
+    postcodeService: "postcodes_io",
+    geocodeCountryCode: "GB",
+    debounceMs: 300,
+
     init: function (onLocationSet, onLocationClear) {
       this.onLocationSet = onLocationSet;
       this.onLocationClear = onLocationClear;
+
+      var profile = (window.GameClubCountry && window.GameClubCountry.getActive()) || {};
+      this.setCountry(profile);
+
       this.input = document.getElementById("search-input");
       this.inputMobile = document.getElementById("search-input-mobile");
       this.suggestions = document.getElementById("location-suggestions");
@@ -38,6 +45,40 @@
       return this;
     },
 
+    setCountry: function (profile) {
+      if (!profile) return;
+      if (profile.postcode) {
+        if (profile.postcode.regex) {
+          try {
+            this.postcodeRegex = new RegExp(profile.postcode.regex, "i");
+          } catch (e) {}
+        }
+        if (profile.postcode.service) {
+          this.postcodeService = profile.postcode.service;
+        }
+      }
+      if (profile.geocode_country_code) {
+        this.geocodeCountryCode = profile.geocode_country_code;
+      }
+      // Nominatim usage policy: ~1 req/sec. Bump the debounce on its path.
+      this.debounceMs = this.postcodeService === "nominatim" ? 1100 : 300;
+    },
+
+    // Given a user-typed string, return the country profile whose postcode
+    // regex matches it — or null. Lets us auto-switch country (e.g. UK user
+    // types "10115" on / and we should look it up against DE/Nominatim).
+    detectCountryFromQuery: function (query) {
+      var countries = window.GameClubCountries || {};
+      for (var k in countries) {
+        var p = countries[k];
+        if (!p || !p.postcode || !p.postcode.regex) continue;
+        try {
+          if (new RegExp(p.postcode.regex, "i").test(query)) return p;
+        } catch (e) {}
+      }
+      return null;
+    },
+
     bindInputEvents: function (input, suggestionsEl) {
       var self = this;
       if (!input || !suggestionsEl) return;
@@ -45,14 +86,35 @@
       input.addEventListener("input", function () {
         clearTimeout(self.debounceTimer);
         var query = input.value.trim();
-
-        if (query.length >= 2 && POSTCODE_RE.test(query)) {
-          self.debounceTimer = setTimeout(function () {
-            self.fetchSuggestionsFor(query, suggestionsEl, input);
-          }, 300);
-        } else {
+        if (query.length < 2) {
           self.hideSuggestionsEl(suggestionsEl);
+          return;
         }
+
+        var matchingProfile = self.detectCountryFromQuery(query);
+        if (!matchingProfile) {
+          self.hideSuggestionsEl(suggestionsEl);
+          return;
+        }
+
+        var activeCode = window.GameClubCountry && window.GameClubCountry.getActiveCode();
+
+        // If the typed query matches a different country's postcode, switch.
+        // The country-change callback in app.js re-initialises us with the
+        // new profile; we then run the lookup against the new service.
+        if (matchingProfile.code !== activeCode) {
+          window.GameClubCountry.setActive(matchingProfile.code, {
+            persist: false,        // don't clobber the user's saved choice
+            updateUrl: true,
+            replaceUrl: false
+          });
+          // setCountry has been called via the change callback; schedule
+          // the lookup using the *new* debounce.
+        }
+
+        self.debounceTimer = setTimeout(function () {
+          self.fetchSuggestionsFor(query, suggestionsEl, input);
+        }, self.debounceMs);
       });
 
       input.addEventListener("keydown", function (e) {
@@ -98,13 +160,23 @@
     },
 
     fetchSuggestionsFor: function (query, suggestionsEl, input) {
-      var self = this;
+      if (this.postcodeService === "nominatim") {
+        this.fetchNominatim(query, suggestionsEl, input);
+      } else {
+        this.fetchPostcodesIo(query, suggestionsEl, input);
+      }
+    },
 
+    fetchPostcodesIo: function (query, suggestionsEl, input) {
+      var self = this;
       fetch("https://api.postcodes.io/postcodes/" + encodeURIComponent(query) + "/autocomplete")
         .then(function (res) { return res.json(); })
         .then(function (data) {
           if (data.result && data.result.length > 0) {
-            self.showSuggestionsIn(data.result, suggestionsEl, input);
+            var suggestions = data.result.map(function (pc) {
+              return { label: pc, lookup: pc };
+            });
+            self.showSuggestionsIn(suggestions, suggestionsEl, input);
           } else {
             self.hideSuggestionsEl(suggestionsEl);
           }
@@ -114,13 +186,51 @@
         });
     },
 
-    showSuggestionsIn: function (postcodes, suggestionsEl, input) {
+    fetchNominatim: function (query, suggestionsEl, input) {
       var self = this;
-      suggestionsEl.innerHTML = postcodes
-        .map(function (pc) {
-          return '<button class="location-suggestion" type="button" data-postcode="' + pc + '">' +
+      var url = "https://nominatim.openstreetmap.org/search" +
+        "?postalcode=" + encodeURIComponent(query) +
+        "&country=" + encodeURIComponent(self.geocodeCountryCode) +
+        "&format=json&limit=5&addressdetails=1";
+      fetch(url, {
+        headers: { "Accept": "application/json" }
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (results) {
+          if (!Array.isArray(results) || results.length === 0) {
+            self.hideSuggestionsEl(suggestionsEl);
+            return;
+          }
+          var seen = {};
+          var suggestions = [];
+          for (var i = 0; i < results.length; i++) {
+            var r = results[i];
+            var place = (r.address && (r.address.city || r.address.town ||
+                          r.address.village || r.address.municipality)) || "";
+            var label = query + (place ? " · " + place : "");
+            if (seen[label]) continue;
+            seen[label] = true;
+            suggestions.push({
+              label: label,
+              lookup: null,
+              lat: parseFloat(r.lat),
+              lng: parseFloat(r.lon)
+            });
+          }
+          self.showSuggestionsIn(suggestions, suggestionsEl, input);
+        })
+        .catch(function () {
+          self.hideSuggestionsEl(suggestionsEl);
+        });
+    },
+
+    showSuggestionsIn: function (suggestions, suggestionsEl, input) {
+      var self = this;
+      suggestionsEl.innerHTML = suggestions
+        .map(function (s, i) {
+          return '<button class="location-suggestion" type="button" data-idx="' + i + '">' +
             '<i data-lucide="map-pin" style="width:14px;height:14px;"></i>' +
-            pc + '</button>';
+            self.escapeHtml(s.label) + '</button>';
         })
         .join("");
 
@@ -130,9 +240,11 @@
 
       var buttons = suggestionsEl.querySelectorAll(".location-suggestion");
       for (var i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener("click", function () {
-          self.selectPostcode(this.getAttribute("data-postcode"));
-        });
+        (function (idx) {
+          buttons[idx].addEventListener("click", function () {
+            self.selectSuggestion(suggestions[idx]);
+          });
+        })(i);
       }
     },
 
@@ -147,19 +259,27 @@
       this.hideSuggestionsEl(this.suggestionsMobile);
     },
 
-    selectPostcode: function (postcode) {
+    selectSuggestion: function (suggestion) {
       var self = this;
       if (this.input) this.input.value = "";
       if (this.inputMobile) this.inputMobile.value = "";
       this.hideAllSuggestions();
 
-      fetch("https://api.postcodes.io/postcodes/" + encodeURIComponent(postcode))
+      if (suggestion.lat !== undefined && suggestion.lng !== undefined && suggestion.lat !== null) {
+        self.setActive(suggestion.label);
+        if (self.onLocationSet) {
+          self.onLocationSet(suggestion.lat, suggestion.lng, suggestion.label);
+        }
+        return;
+      }
+
+      fetch("https://api.postcodes.io/postcodes/" + encodeURIComponent(suggestion.lookup))
         .then(function (res) { return res.json(); })
         .then(function (data) {
           if (data.result) {
-            self.setActive(postcode);
+            self.setActive(suggestion.label);
             if (self.onLocationSet) {
-              self.onLocationSet(data.result.latitude, data.result.longitude, postcode);
+              self.onLocationSet(data.result.latitude, data.result.longitude, suggestion.label);
             }
           }
         })
@@ -175,9 +295,10 @@
 
     geolocate: function () {
       var self = this;
+      var i18n = window.GameClubI18n || {};
 
       if (!navigator.geolocation) {
-        alert("Geolocation is not supported by your browser.");
+        alert(i18n.geolocation_unsupported || "Geolocation is not supported by your browser.");
         return;
       }
 
@@ -187,16 +308,17 @@
         function (pos) {
           var lat = pos.coords.latitude;
           var lng = pos.coords.longitude;
-          self.setActive("My location");
+          var label = i18n.my_location || "My location";
+          self.setActive(label);
           self.setLocateBtnsDisabled(false);
 
           if (self.onLocationSet) {
-            self.onLocationSet(lat, lng, "My location");
+            self.onLocationSet(lat, lng, label);
           }
         },
         function () {
           self.setLocateBtnsDisabled(false);
-          alert("Unable to retrieve your location.");
+          alert(i18n.geolocation_failed || "Unable to retrieve your location.");
         }
       );
     },
@@ -214,7 +336,6 @@
       if (this.pill) {
         this.pill.style.display = "none";
       }
-      // Focus whichever input is visible
       var focusTarget = this.input && this.input.offsetParent !== null ? this.input : this.inputMobile;
       if (focusTarget) focusTarget.focus();
       if (this.onLocationClear) {
@@ -224,6 +345,13 @@
 
     getActiveLabel: function () {
       return this.activeLabel;
+    },
+
+    escapeHtml: function (text) {
+      if (!text) return "";
+      var div = document.createElement("div");
+      div.appendChild(document.createTextNode(text));
+      return div.innerHTML;
     },
   };
 

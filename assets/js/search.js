@@ -9,10 +9,27 @@
     maxDistance: 0,
     userLat: null,
     userLng: null,
+    earthRadius: 3959,
 
-    init: function (clubs) {
+    init: function (clubs, countryProfile) {
       this.allClubs = clubs;
+      var profile = countryProfile || (window.GameClubCountry && window.GameClubCountry.getActive()) || {};
+      this.earthRadius = profile.earth_radius || 3959;
       return this;
+    },
+
+    setCountry: function (profile) {
+      if (!profile) return;
+      this.earthRadius = profile.earth_radius || this.earthRadius;
+      // Recompute distances since the radius changed (if a user location is set).
+      if (this.userLat !== null && this.userLng !== null) {
+        var self = this;
+        this.allClubs.forEach(function (club) {
+          if (club.location && club.location.lat != null && club.location.lng != null) {
+            club._distance = self.haversine(self.userLat, self.userLng, club.location.lat, club.location.lng);
+          }
+        });
+      }
     },
 
     setQuery: function (query) {
@@ -45,8 +62,8 @@
       }
     },
 
-    setMaxDistance: function (miles) {
-      this.maxDistance = miles ? parseFloat(miles) : 0;
+    setMaxDistance: function (distance) {
+      this.maxDistance = distance ? parseFloat(distance) : 0;
     },
 
     setUserLocation: function (lat, lng) {
@@ -62,23 +79,40 @@
       });
     },
 
+    // Active-country result set used by the sidebar list — applies all
+    // filters (text, type, day, distance) and sorts by distance.
     getFiltered: function () {
+      return this.filterClubs(this.allClubs, { applyDistance: true, sortByDistance: true });
+    },
+
+    // Cross-country pass for the map: same text/type/day filters, but
+    // distance filter and distance sort intentionally skipped so off-country
+    // markers stay visible even when the user has set a location in the
+    // active country.
+    getMapPins: function (allClubsGlobal) {
+      return this.filterClubs(allClubsGlobal, { applyDistance: false, sortByDistance: false });
+    },
+
+    filterClubs: function (clubs, options) {
+      options = options || {};
       var self = this;
 
-      // Compute distances first if location is set (needed for distance filter)
-      if (self.userLat !== null && self.userLng !== null) {
-        self.allClubs.forEach(function (club) {
-          club._distance = self.haversine(
-            self.userLat,
-            self.userLng,
-            club.location.lat,
-            club.location.lng
-          );
+      // Compute distances on the provided set only when distance is in play
+      // (and only for the active-country list; the map version skips this).
+      if (options.applyDistance && self.userLat !== null && self.userLng !== null) {
+        clubs.forEach(function (club) {
+          if (club.location && club.location.lat != null && club.location.lng != null) {
+            club._distance = self.haversine(
+              self.userLat,
+              self.userLng,
+              club.location.lat,
+              club.location.lng
+            );
+          }
         });
       }
 
-      var results = this.allClubs.filter(function (club) {
-        // Text search
+      var results = clubs.filter(function (club) {
         if (self.searchQuery) {
           var haystack = [
             club.name,
@@ -94,7 +128,6 @@
           if (haystack.indexOf(self.searchQuery) === -1) return false;
         }
 
-        // Type filter (OR logic: club passes if it matches any selected type)
         if (self.typeFilters.length > 0) {
           var clubTypes = club.type || ["Board Games"];
           var matchesType = false;
@@ -107,7 +140,6 @@
           if (!matchesType) return false;
         }
 
-        // Day filter (OR logic: club passes if it matches any selected day)
         if (self.dayFilters.length > 0) {
           var matchesDay = false;
           for (var i = 0; i < self.dayFilters.length; i++) {
@@ -119,16 +151,14 @@
           if (!matchesDay) return false;
         }
 
-        // Distance filter (only when location is set)
-        if (self.maxDistance > 0 && club._distance !== undefined) {
+        if (options.applyDistance && self.maxDistance > 0 && club._distance !== undefined) {
           if (club._distance > self.maxDistance) return false;
         }
 
         return true;
       });
 
-      // Sort by distance if user location is known
-      if (self.userLat !== null && self.userLng !== null) {
+      if (options.sortByDistance && self.userLat !== null && self.userLng !== null) {
         results.sort(function (a, b) {
           return a._distance - b._distance;
         });
@@ -138,7 +168,7 @@
     },
 
     haversine: function (lat1, lng1, lat2, lng2) {
-      var R = 3959; // miles
+      var R = this.earthRadius;
       var dLat = this.toRad(lat2 - lat1);
       var dLng = this.toRad(lng2 - lng1);
       var a =

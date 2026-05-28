@@ -9,17 +9,11 @@
     "TCG": "#f59e0b"
   };
 
-  // Lucide icon SVG inner elements (24x24 viewBox, white stroke)
   var typeIcons = {
-    // lucide:dices
     "Board Games": '<rect width="12" height="12" x="2" y="10" rx="2" ry="2"/><path d="m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6"/><path d="M6 18h.01"/><path d="M10 14h.01"/><path d="M15 6h.01"/><path d="M18 9h.01"/>',
-    // lucide:swords
     "RPG": '<polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/><line x1="13" x2="19" y1="19" y2="13"/><line x1="16" x2="20" y1="16" y2="20"/><line x1="19" x2="21" y1="21" y2="19"/><polyline points="14.5 6.5 18 3 21 3 21 6 17.5 9.5"/><line x1="5" x2="9" y1="14" y2="18"/><line x1="7" x2="4" y1="17" y2="20"/><line x1="3" x2="5" y1="19" y2="21"/>',
-    // lucide:shield
     "Wargames": '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>',
-    // lucide:skull
     "BOTC": '<path d="m12.5 17-.5-1-.5 1h1z"/><path d="M15 22a1 1 0 0 0 1-1v-1a2 2 0 0 0 1.56-3.25 8 8 0 1 0-11.12 0A2 2 0 0 0 8 20v1a1 1 0 0 0 1 1z"/><circle cx="15" cy="12" r="1"/><circle cx="9" cy="12" r="1"/>',
-    // lucide:layers
     "TCG": '<path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/>'
   };
 
@@ -53,8 +47,12 @@
     markerMap: {},
     userMarker: null,
 
-    init: function () {
-      this.map = L.map("map").setView([53.8, -1.58], 9);
+    init: function (countryProfile) {
+      var profile = countryProfile || (window.GameClubCountry && window.GameClubCountry.getActive()) || {};
+      var center = profile.map_center || [53.8, -1.58];
+      var zoom = profile.map_zoom || 9;
+
+      this.map = L.map("map").setView(center, zoom);
 
       L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
         attribution:
@@ -71,12 +69,17 @@
 
       this.map.addLayer(this.markers);
 
-      // Re-render Lucide icons inside popups when they open
       this.map.on("popupopen", function () {
         if (window.lucide) lucide.createIcons();
       });
 
       return this;
+    },
+
+    // Recentre to a country profile (e.g. after the user switches country).
+    recenterToCountry: function (profile) {
+      if (!this.map || !profile) return;
+      this.map.setView(profile.map_center, profile.map_zoom, { animate: true });
     },
 
     addClubs: function (clubs) {
@@ -113,7 +116,7 @@
 
         var daysText = club.days.join(", ");
         if (club.frequency && club.frequency !== "Weekly") {
-          daysText += " \u00b7 " + club.frequency;
+          daysText += " · " + club.frequency;
         }
         var daysLine = '<div class="popup-days"><i data-lucide="calendar"></i><span>' + self.escapeHtml(daysText) + '</span></div>';
 
@@ -150,6 +153,26 @@
       }
     },
 
+    // Frame the map around a specific subset of clubs (e.g. just the active
+    // country's clubs) even when the marker layer contains more. Falls back
+    // to country defaults when the subset is empty.
+    fitToBounds: function (clubs) {
+      var coords = [];
+      for (var i = 0; i < clubs.length; i++) {
+        var c = clubs[i];
+        if (c && c.location && c.location.lat != null && c.location.lng != null) {
+          coords.push([c.location.lat, c.location.lng]);
+        }
+      }
+      if (coords.length === 0) {
+        // No clubs to fit to — fall back to active-country defaults.
+        var profile = (window.GameClubCountry && window.GameClubCountry.getActive()) || null;
+        if (profile) this.recenterToCountry(profile);
+        return;
+      }
+      this.map.fitBounds(L.latLngBounds(coords), { padding: [30, 30] });
+    },
+
     removeUserLocation: function () {
       if (this.userMarker) {
         this.map.removeLayer(this.userMarker);
@@ -174,7 +197,6 @@
         .addTo(this.map)
         .bindPopup("You are here");
 
-      // Fit bounds to include user and all visible markers
       var bounds = this.markers.getBounds();
       if (bounds.isValid()) {
         bounds.extend([lat, lng]);

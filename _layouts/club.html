@@ -1,6 +1,27 @@
 ---
 layout: default
 ---
+{% assign country_key = page.country | default: "GB" | downcase %}
+{% assign country = site.data.countries[country_key] %}
+{% comment %}Club detail pages take their UI language from the club's country
+(German clubs in German, UK clubs in English). The home pages are different —
+they're language-by-URL.{% endcomment %}
+{% if page.country == "DE" %}
+  {% assign lang = "de" %}
+{% else %}
+  {% assign lang = "en" %}
+{% endif %}
+{% assign i18n = site.data.i18n %}
+
+{% assign club_type_label = i18n.club_type_board_games[lang] %}
+{% if page.type %}
+  {% assign first_type = page.type | first %}
+  {% if first_type == "RPG" %}{% assign club_type_label = i18n.club_type_rpg[lang] %}
+  {% elsif first_type == "Wargames" %}{% assign club_type_label = i18n.club_type_wargames[lang] %}
+  {% elsif first_type == "BOTC" %}{% assign club_type_label = i18n.club_type_botc[lang] %}
+  {% elsif first_type == "TCG" %}{% assign club_type_label = i18n.club_type_tcg[lang] %}
+  {% endif %}
+{% endif %}
 
 <script type="application/ld+json">
 {
@@ -8,7 +29,7 @@ layout: default
   "@type": "Organization",
   "name": {{ page.name | jsonify }},
   {% if page.description %}"description": {{ page.description | jsonify }},{% endif %}
-  "keywords": "{% if page.type %}{{ page.type | join: ', ' }}{% else %}Board Games{% endif %}, tabletop gaming, game club, UK",
+  "keywords": "{% if page.type %}{{ page.type | join: ', ' }}{% else %}Board Games{% endif %}, tabletop gaming, game club, {{ country.code }}",
   {% if page.website and page.website != "" %}"url": {{ page.website | jsonify }},{% endif %}
   "sameAs": [{% if page.facebook and page.facebook != "" %}{{ page.facebook | jsonify }}{% endif %}{% if page.discord and page.discord != "" %}{% if page.facebook and page.facebook != "" %},{% endif %}{{ page.discord | jsonify }}{% endif %}{% if page.bgg and page.bgg != "" %}{% if page.facebook and page.facebook != "" or page.discord and page.discord != "" %},{% endif %}{{ page.bgg | jsonify }}{% endif %}{% if page.meetup and page.meetup != "" %}{% if page.facebook and page.facebook != "" or page.discord and page.discord != "" or page.bgg and page.bgg != "" %},{% endif %}{{ page.meetup | jsonify }}{% endif %}],
   "location": {
@@ -17,7 +38,7 @@ layout: default
     "address": {
       "@type": "PostalAddress",
       "streetAddress": {{ page.location.address | jsonify }},
-      "addressCountry": "GB"
+      "addressCountry": "{{ country.code }}"
     }{% if page.location.lat and page.location.lng %},
     "geo": {
       "@type": "GeoCoordinates",
@@ -41,7 +62,7 @@ layout: default
     "offers": {
       "@type": "Offer",
       "price": {{ page.cost | jsonify }},
-      "priceCurrency": "GBP"
+      "priceCurrency": "{{ country.currency }}"
     }{% endif %}
   }{% endif %}
 }
@@ -59,8 +80,7 @@ layout: default
     </div>
     {% endif %}
     <div class="club-detail-heading-text">
-      {% assign club_type_label = "Board Game" %}{% if page.type %}{% assign first_type = page.type | first %}{% if first_type == "RPG" %}{% assign club_type_label = "RPG" %}{% elsif first_type == "Wargames" %}{% assign club_type_label = "Wargaming" %}{% elsif first_type == "BOTC" %}{% assign club_type_label = "Blood on the Clocktower" %}{% elsif first_type == "TCG" %}{% assign club_type_label = "TCG" %}{% endif %}{% endif %}
-      <h1>{{ page.name }} <span class="club-location-subtitle">{{ club_type_label }} Club in {{ page.location.address }}</span></h1>
+      <h1>{{ page.name }} <span class="club-location-subtitle">{{ i18n.club_detail_subtitle[lang] | replace: "%TYPE%", club_type_label | replace: "%ADDRESS%", page.location.address }}</span></h1>
       <div class="club-detail-meta">
         {% assign club_types = page.type | default: nil %}
         {% if club_types %}
@@ -72,12 +92,13 @@ layout: default
           <span class="tag tag-type tag-type-board-games">Board Games</span>
         {% endif %}
         {% for d in page.days %}
-          <span class="tag tag-day">{{ d }}</span>
+          {% assign day_key = "day_" | append: d | downcase %}
+          <span class="tag tag-day">{{ i18n[day_key][lang] | default: d }}</span>
         {% endfor %}
         {% if page.frequency and page.frequency != "Weekly" %}
           <span class="tag">{{ page.frequency }}</span>
         {% endif %}
-        {% if page.cost %}
+        {% if page.cost and page.cost != "" %}
           <span class="tag tag-cost">{{ page.cost }}</span>
         {% endif %}
       </div>
@@ -89,35 +110,35 @@ layout: default
   {% endif %}
 
   <dl class="detail-info">
-    <dt>Type</dt>
+    <dt>{{ i18n.label_type[lang] }}</dt>
     <dd>{% if page.type %}{{ page.type | join: ", " }}{% else %}Board Games{% endif %}</dd>
 
-    <dt>Venue</dt>
+    <dt>{{ i18n.label_venue[lang] }}</dt>
     <dd>{{ page.location.name }}</dd>
 
-    <dt>Address</dt>
-    <dd>{{ page.location.address }} {% if page.location.lat and page.location.lng %}<a href="https://www.google.com/maps/dir/?api=1&destination={{ page.location.lat }},{{ page.location.lng }}" target="_blank" rel="noopener" class="directions-link"><i data-lucide="navigation" style="width:13px;height:13px;"></i> Directions</a>{% endif %}</dd>
+    <dt>{{ i18n.label_address[lang] }}</dt>
+    <dd>{{ page.location.address }} {% if page.location.lat and page.location.lng %}<a href="https://www.google.com/maps/dir/?api=1&destination={{ page.location.lat }},{{ page.location.lng }}" target="_blank" rel="noopener" class="directions-link"><i data-lucide="navigation" style="width:13px;height:13px;"></i> {{ i18n.directions[lang] }}</a>{% endif %}</dd>
 
-    <dt>{% if page.days.size > 1 %}Days{% else %}Day{% endif %}</dt>
-    <dd>{{ page.days | join: ", " }}</dd>
+    <dt>{% if page.days.size > 1 %}{{ i18n.label_days[lang] }}{% else %}{{ i18n.label_day[lang] }}{% endif %}</dt>
+    <dd>{% assign translated_days = "" %}{% for d in page.days %}{% assign day_key = "day_" | append: d | downcase %}{% capture translated_day %}{{ i18n[day_key][lang] | default: d }}{% endcapture %}{% if forloop.first %}{% assign translated_days = translated_day %}{% else %}{% assign translated_days = translated_days | append: ", " | append: translated_day %}{% endif %}{% endfor %}{{ translated_days }}</dd>
 
     {% if page.time %}
-    <dt>Time</dt>
+    <dt>{{ i18n.label_time[lang] }}</dt>
     <dd>{{ page.time }}</dd>
     {% endif %}
 
     {% if page.frequency %}
-    <dt>Frequency</dt>
+    <dt>{{ i18n.label_frequency[lang] }}</dt>
     <dd>{{ page.frequency }}</dd>
     {% endif %}
 
-    {% if page.cost %}
-    <dt>Cost</dt>
+    {% if page.cost and page.cost != "" %}
+    <dt>{{ i18n.label_cost[lang] }}</dt>
     <dd>{{ page.cost }}</dd>
     {% endif %}
 
     {% if page.age_restriction and page.age_restriction != "" %}
-    <dt>Age Restriction</dt>
+    <dt>{{ i18n.label_age_restriction[lang] }}</dt>
     <dd>{{ page.age_restriction }}</dd>
     {% endif %}
   </dl>
@@ -146,7 +167,7 @@ layout: default
   </div>
 
   <div class="club-suggest-edit">
-    <a href="https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new?template=edit-club.yml&title=Edit:+{{ page.name | url_encode }}" target="_blank" rel="noopener"><i data-lucide="pencil" style="width:14px;height:14px;"></i> Suggest an edit</a>
+    <a href="https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new?template=edit-club.yml&title=Edit:+{{ page.name | url_encode }}" target="_blank" rel="noopener"><i data-lucide="pencil" style="width:14px;height:14px;"></i> {{ i18n.suggest_edit[lang] }}</a>
   </div>
 </div>
 

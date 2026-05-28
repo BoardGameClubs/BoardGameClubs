@@ -1,11 +1,23 @@
+{% assign lang = page.language | default: "en" %}
+{% assign i18n = site.data.i18n %}
+{% if lang == "de" %}
+  {% assign url_prefix = "/de" %}
+{% else %}
+  {% assign url_prefix = "" %}
+{% endif %}
 <footer class="site-footer">
-  <p>Board Game Clubs UK &mdash; a free, community-maintained directory.</p>
-  <p class="footer-legal">&copy; {{ site.time | date: "%Y" }} Board Game Clubs UK &middot; Source under <a href="{{ '/licence' | relative_url }}">MIT + Commons Clause</a></p>
+  <p>{{ i18n.footer_tagline[lang] }}</p>
+  <p class="footer-legal">&copy; {{ site.time | date: "%Y" }} {{ i18n.footer_copyright[lang] }} &middot; {{ i18n.footer_source_under[lang] }} <a href="{{ url_prefix | append: '/licence/' | relative_url }}">MIT + Commons Clause</a></p>
   <p class="footer-links">
-    <a href="{{ '/about' | relative_url }}">About</a>
-    <a href="{{ '/contribute' | relative_url }}">Add a club</a>
-    <a href="{{ '/privacy' | relative_url }}">Privacy</a>
-    <a href="{{ '/licence' | relative_url }}">Licence</a>
+    <a href="{{ url_prefix | append: '/about/' | relative_url }}">{{ i18n.footer_about[lang] }}</a>
+    <a href="{{ url_prefix | append: '/contribute/' | relative_url }}">{{ i18n.footer_contribute[lang] }}</a>
+    <a href="{{ url_prefix | append: '/privacy/' | relative_url }}">{{ i18n.footer_privacy[lang] }}</a>
+    <a href="{{ url_prefix | append: '/licence/' | relative_url }}">{{ i18n.footer_licence[lang] }}</a>
     {% if site.repository %}<a href="https://github.com/{{ site.repository }}">GitHub</a>{% endif %}
+  </p>
+  <p class="footer-countries">
+    <span>{{ i18n.footer_other_countries[lang] }}</span>
+    {% if lang != "en" %}<a href="{{ '/' | absolute_url }}" hreflang="en-GB">{{ i18n.country_gb[lang] }}</a>{% endif %}
+    {% if lang != "de" %}<a href="{{ '/de/' | absolute_url }}" hreflang="de-DE">{{ i18n.country_de[lang] }}</a>{% endif %}
   </p>
 </footer>

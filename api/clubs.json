@@ -7,6 +7,7 @@ layout: null
     "name": {{ club.name | jsonify }},
     "slug": {{ club.slug | jsonify }},
     "url": {{ club.url | relative_url | jsonify }},
+    "country": {{ club.country | jsonify }},
     "days": {{ club.days | jsonify }},
     "time": {{ club.time | jsonify }},
     "frequency": {{ club.frequency | jsonify }},

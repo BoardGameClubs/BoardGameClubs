@@ -15,7 +15,7 @@
     {% else %}
       <span class="tag tag-type tag-type-board-games">Board Games</span>
     {% endif %}
-    {% if club.cost %}
+    {% if club.cost and club.cost != "" %}
       <span class="tag tag-cost">{{ club.cost }}</span>
     {% endif %}
   </div>

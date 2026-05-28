@@ -1,17 +1,14 @@
+{% assign lang = include.lang %}
+{% assign i18n = site.data.i18n %}
 <header class="site-header">
   <div class="header-inner">
-    <a href="{{ '/' | relative_url }}" class="site-brand">
+    <a href="{% if lang == 'de' %}{{ '/de/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" class="site-brand">
       <img src="{{ '/assets/meeple-map-icon.svg' | relative_url }}" alt="" class="site-logo">
       <div class="site-brand-text">
-        <span class="site-title">BoardGameClubs<span class="site-title-tld">.uk</span></span>
-        <span class="site-tagline">Community-built. Open source. Find your table.</span>
+        <span class="site-title">BoardGameClubs<span class="site-title-tld">{{ i18n.brand_suffix[lang] }}</span></span>
+        <span class="site-tagline">{{ i18n.tagline[lang] }}</span>
       </div>
     </a>
-    <nav>
-      <a href="{{ '/' | relative_url }}">Map</a>
-      <a href="{{ '/about' | relative_url }}">About</a>
-      <a href="{{ '/contribute' | relative_url }}" class="nav-cta">+ Add a Club</a>
-      <a href="https://github.com/BoardGameClubs/BoardGameClubs_Web" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub"><i data-lucide="github"></i></a>
-    </nav>
+    {% include nav-links.html lang=lang %}
   </div>
 </header>

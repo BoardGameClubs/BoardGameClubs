@@ -1,0 +1,34 @@
+{% assign lang = include.lang %}
+{% assign i18n = site.data.i18n %}
+{% if lang == "de" %}
+  {% assign about_path = "/de/about/" %}
+  {% assign contribute_path = "/de/contribute/" %}
+  {% assign home_path = "/de/" %}
+{% else %}
+  {% assign about_path = "/about/" %}
+  {% assign contribute_path = "/contribute/" %}
+  {% assign home_path = "/" %}
+{% endif %}
+<nav class="site-nav">
+  <a href="{{ home_path | relative_url }}">{{ i18n.nav_map[lang] }}</a>
+  <a href="{{ about_path | relative_url }}">{{ i18n.nav_about[lang] }}</a>
+  <a href="{{ contribute_path | relative_url }}" class="nav-cta">{{ i18n.nav_contribute[lang] }}</a>
+  <div class="nav-country" id="nav-country" data-label-country="{{ i18n.nav_country[lang] }}">
+    <button type="button" class="nav-country-toggle" id="nav-country-toggle" aria-haspopup="listbox" aria-expanded="false" title="{{ i18n.nav_country[lang] }}">
+      <i data-lucide="globe"></i>
+      <span class="nav-country-current" id="nav-country-current">GB</span>
+      <i data-lucide="chevron-down" class="nav-country-caret"></i>
+    </button>
+    <div class="nav-country-menu" role="listbox" aria-label="{{ i18n.nav_country[lang] }}">
+      <button type="button" role="option" data-country="GB" class="nav-country-option" data-label="GB">
+        <span class="nav-country-code">GB</span>
+        <span class="nav-country-name">{{ i18n.country_gb[lang] }}</span>
+      </button>
+      <button type="button" role="option" data-country="DE" class="nav-country-option" data-label="DE">
+        <span class="nav-country-code">DE</span>
+        <span class="nav-country-name">{{ i18n.country_de[lang] }}</span>
+      </button>
+    </div>
+  </div>
+  <a href="https://github.com/BoardGameClubs/BoardGameClubs_Web" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub"><i data-lucide="github"></i></a>
+</nav>

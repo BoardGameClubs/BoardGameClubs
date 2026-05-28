@@ -1,10 +1,9 @@
-title: Board Game Clubs UK
+title: Board Game Clubs
 description: >-
   Find your nearest board game, RPG, wargaming, Blood on the Clocktower, and TCG
-  club in the UK. A free, community-maintained directory of tabletop gaming clubs
-  with an interactive map.
-url: "https://boardgameclubs.uk"
-locale: "en_GB"
+  club. A free, community-maintained directory of tabletop gaming clubs with
+  interactive maps for the UK and Germany.
+url: "https://boardgameclubs.org"
 baseurl: ""
 repository: "BoardGameClubs/BoardGameClubs_Web"
 og_image: /assets/og.png
@@ -20,6 +19,24 @@ defaults:
       type: "clubs"
     values:
       layout: "club"
+      language: "en"
+      default_country: "GB"
+  - scope:
+      path: ""
+    values:
+      language: "en"
+      default_country: "GB"
+  - scope:
+      path: "de"
+    values:
+      language: "de"
+      default_country: "DE"
+  - scope:
+      path: "_clubs"
+      type: "clubs"
+    values:
+      language: "en"
+      default_country: "GB"
 
 plugins:
   - jekyll-seo-tag
@@ -34,3 +51,4 @@ exclude:
   - vendor
   - node_modules
   - scripts
+  - _clubs_drafts

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Add Your Board Game Club to Our UK Directory"
-description: "Submit your board game club to Board Game Clubs UK. Our free, community-maintained directory helps people find board game clubs near them across the UK."
+title: "Add Your Board Game Club to Our Directory"
+description: "Submit your board game club to Board Game Clubs. Our free, community-maintained directory helps people find board game clubs near them across the UK and Germany."
 permalink: /contribute/
 ---
 
@@ -9,7 +9,7 @@ permalink: /contribute/
 
 # Add Your Board Game Club
 
-Board Game Clubs UK is community-maintained and hosted on GitHub. Anyone can add a new club or update existing information.
+Board Game Clubs is community-maintained and hosted on GitHub. Anyone can add a new club or update existing information.
 
 ## Submit via our form
 
@@ -26,14 +26,15 @@ If you're comfortable with GitHub, you can add a club directly:
 
 ### 1. Create a new file
 
-[Create a new file](https://github.com/BoardGameClubs/BoardGameClubs_Web/new/main/_clubs) in the `_clubs/` folder on GitHub. Name it using the format `your-club-name.md` (lowercase, hyphens instead of spaces).
+[Create a new file](https://github.com/BoardGameClubs/BoardGameClubs_Web/new/main/_clubs) in the `_clubs/` folder on GitHub. Name it using the format `your-club-name.md` (lowercase, hyphens instead of spaces). For German clubs, use ASCII-folded names: `ä→ae`, `ö→oe`, `ü→ue`, `ß→ss` (e.g. `spieletreff-muenchen.md`).
 
 ### 2. Copy this template
 
-Paste the following into your new file and fill in the details:
+Paste the following into your new file and fill in the details. UK clubs omit the `permalink:` line; German clubs include it.
 
 ```yaml
 ---
+country: "UK"          # "UK" or "DE"
 name: "Your Club Name"
 type: ["Board Games"]
 days: ["Thursday"]
@@ -58,17 +59,24 @@ description: >-
 ---
 ```
 
+For a German club, also add:
+
+```yaml
+permalink: /de/clubs/your-club-slug/
+```
+
 ### 3. Fill in the details
 
 | Field | Description |
 |-------|-------------|
+| `country` | `"UK"` or `"DE"` (ISO 3166-1 alpha-2) |
 | `name` | Your club's full name |
 | `type` | Array of types, e.g. `["Board Games"]`. Options: "Board Games", "RPG", "Wargames", "TCG", "BOTC" |
 | `days` | Array of days you meet, e.g. `["Thursday"]` or `["Monday", "Friday"]` |
 | `time` | When you meet, e.g. "7:00pm - 10:00pm" |
 | `frequency` | "Weekly", "Fortnightly", "Monthly", or "Ad-hoc" |
-| `location` | Venue name, full address, and coordinates |
-| `cost` | "Free" or a money amount, e.g. "£2", "£5 (First Session Free)" |
+| `location` | Venue name, full address (with postcode/PLZ), and coordinates |
+| `cost` | "Free" or a money amount, e.g. "£2", "€3", "£5 (First Session Free)" |
 | `age_restriction` | Any age restriction, e.g. "18+". Leave empty if none |
 | `image` | A URL or filename in `assets/images/clubs/` (see [step 5](#5-adding-a-logo) below) |
 | `website` | Link to your club's website |

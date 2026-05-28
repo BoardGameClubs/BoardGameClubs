@@ -2,26 +2,105 @@
   "use strict";
 
   var baseurl = window.GameClub ? window.GameClub.baseurl : "";
+  var i18n = window.GameClubI18n || {};
+
+  // All clubs across all countries (global JSON). Country filtering happens
+  // in JS based on the active country.
+  var ALL_CLUBS = [];
+  var activeCountry = null;
   var map;
   var search;
   var debounceTimer;
+  var initialised = false;
+
+  function getActiveCountry() {
+    if (window.GameClubCountry) return window.GameClubCountry.getActive();
+    return activeCountry;
+  }
+
+  function clubsForCountry(code) {
+    return ALL_CLUBS.filter(function (c) { return c.country === code; });
+  }
 
   function init() {
-    map = window.GameClubMap.init();
+    activeCountry = getActiveCountry();
+    map = window.GameClubMap.init(activeCountry);
 
     fetch(baseurl + "/api/clubs.json")
-      .then(function (res) {
-        return res.json();
-      })
+      .then(function (res) { return res.json(); })
       .then(function (clubs) {
-        search = window.GameClubSearch.init(clubs);
+        ALL_CLUBS = clubs;
+        var scoped = clubsForCountry(activeCountry.code);
+        search = window.GameClubSearch.init(scoped, activeCountry);
+        populateDistanceOptions(activeCountry);
         restoreFromUrl();
         update();
         bindEvents();
+        initialised = true;
+        if (window.GameClubCountry) {
+          window.GameClubCountry.onChange(handleCountryChange);
+        }
       })
       .catch(function (err) {
         console.error("Failed to load clubs:", err);
       });
+  }
+
+  function handleCountryChange(profile) {
+    if (!initialised || !profile) return;
+    activeCountry = profile;
+    var scoped = clubsForCountry(profile.code);
+
+    // Re-init search with the new dataset + earth radius.
+    search.allClubs = scoped;
+    search.setCountry(profile);
+
+    // Tell location.js about the new postcode service / debounce.
+    if (window.GameClubLocation && window.GameClubLocation.setCountry) {
+      window.GameClubLocation.setCountry(profile);
+    }
+    updateSearchPlaceholder(profile);
+
+    // Distance dropdown ranges change between countries.
+    populateDistanceOptions(profile);
+
+    // update() will call map.fitToMarkers() to frame the new country's clubs
+    // — that gives a tighter, more useful view than the static map_center +
+    // map_zoom defaults. The defaults are only used as a fallback when no
+    // clubs are visible (e.g. an empty result set).
+    update();
+  }
+
+  function populateDistanceOptions(profile) {
+    var distanceFilter = document.getElementById("distance-filter");
+    if (!distanceFilter) return;
+    var unit = profile.unit_label || "mi";
+    var options = profile.distance_options || [5, 10, 25, 50];
+    var template = i18n.filter_within_distance || "Within %N% %UNIT%";
+    var currentValue = distanceFilter.value;
+    var html = '<option value="">' + escapeHtml(i18n.filter_any_distance || "Any distance") + "</option>";
+    options.forEach(function (n) {
+      html += '<option value="' + n + '">' +
+        escapeHtml(template.replace("%N%", n).replace("%UNIT%", unit)) +
+        "</option>";
+    });
+    distanceFilter.innerHTML = html;
+    // If the previous value is still valid in the new set, keep it.
+    if (currentValue && options.indexOf(parseInt(currentValue, 10)) !== -1) {
+      distanceFilter.value = currentValue;
+    }
+  }
+
+  function updateSearchPlaceholder(profile) {
+    // Placeholder lives at the search input. The current label depends on
+    // the active postcode service: keep the localised string but make it
+    // clear what format is expected.
+    var placeholder = i18n.search_placeholder || "";
+    var inputs = [
+      document.getElementById("search-input"),
+      document.getElementById("search-input-mobile")
+    ];
+    inputs.forEach(function (el) { if (el) el.placeholder = placeholder; });
   }
 
   function restoreFromUrl() {
@@ -47,7 +126,6 @@
     }
     if (params.days && params.days.length > 0) {
       search.setDayFilters(params.days);
-      // Check matching checkboxes in multi-select
       var checkboxes = document.querySelectorAll("#day-filter input[type='checkbox']");
       for (var i = 0; i < checkboxes.length; i++) {
         if (params.days.indexOf(checkboxes[i].value) !== -1) {
@@ -65,7 +143,6 @@
   function readUrlParams() {
     var params = new URLSearchParams(window.location.search);
     var daysStr = params.get("days") || "";
-    // Backward compat: support old ?day= single param
     if (!daysStr) {
       var singleDay = params.get("day") || "";
       if (singleDay) daysStr = singleDay;
@@ -85,7 +162,12 @@
     var searchInput = document.getElementById("search-input");
     var distanceFilter = document.getElementById("distance-filter");
 
-    var params = new URLSearchParams();
+    var params = new URLSearchParams(window.location.search);
+    // Preserve `country` if present (set by the country-selector module).
+    var preservedCountry = params.get("country");
+    params = new URLSearchParams();
+    if (preservedCountry) params.set("country", preservedCountry);
+
     var q = searchInput ? searchInput.value.trim() : "";
     var days = search.dayFilters.join(",");
     var types = search.typeFilters.join(",");
@@ -101,15 +183,20 @@
   }
 
   function update() {
-    var filtered = search.getFiltered();
-    map.addClubs(filtered);
-    // Skip fitToMarkers when user location is active — showUserLocation already
-    // sets appropriate bounds that include the user marker.
+    var filteredForList = search.getFiltered();
+    // Map shows pins from every country (same text/type/day filters applied,
+    // distance filter intentionally skipped) so users browsing one country
+    // still see clubs in others. The sidebar list stays scoped to the active
+    // country to keep units/sort/postcode-search behaviour coherent.
+    var pinsForMap = search.getMapPins(ALL_CLUBS);
+    map.addClubs(pinsForMap);
     if (!map.userMarker) {
-      map.fitToMarkers();
+      // Fit to the active country's clubs, not the global pins — otherwise
+      // the map would zoom out to span the whole continent on first load.
+      map.fitToBounds(filteredForList);
     }
-    renderCards(filtered);
-    updateResultCount(filtered.length, search.allClubs.length);
+    renderCards(filteredForList);
+    updateResultCount(filteredForList.length, search.allClubs.length);
     writeUrlParams();
   }
 
@@ -118,10 +205,14 @@
     if (!container) return;
 
     if (clubs.length === 0) {
+      var noResults = i18n.no_results || "No clubs match your search. Try a different filter or search term.";
       container.innerHTML =
-        '<p style="color:#555;text-align:center;padding:2rem 0;">No clubs match your search. Try a different filter or search term.</p>';
+        '<p style="color:#555;text-align:center;padding:2rem 0;">' + escapeHtml(noResults) + '</p>';
       return;
     }
+
+    var profile = getActiveCountry() || {};
+    var unitLabel = profile.unit_label || "mi";
 
     var html = clubs
       .map(function (club) {
@@ -140,8 +231,8 @@
         if (club._distance !== undefined) {
           distanceBadge =
             '<span class="club-distance">' +
-            club._distance.toFixed(1) +
-            " mi</span>";
+            club._distance.toFixed(1) + " " + escapeHtml(unitLabel) +
+            "</span>";
         }
 
         var icon = "";
@@ -158,7 +249,7 @@
 
         var daysText = club.days.join(", ");
         if (club.frequency && club.frequency !== "Weekly") {
-          daysText += " \u00b7 " + club.frequency;
+          daysText += " · " + club.frequency;
         }
         var daysLine = '<div class="club-days"><i data-lucide="calendar"></i><span>' + escapeHtml(daysText) + "</span></div>";
 
@@ -198,9 +289,10 @@
 
     var text;
     if (shown === total) {
-      text = "Showing " + total + " clubs";
+      text = (i18n.showing_n_clubs || "Showing %N% clubs").replace("%N%", total);
     } else {
-      text = "Showing " + shown + " of " + total + " clubs";
+      text = (i18n.showing_n_of_m || "Showing %N% of %M% clubs")
+        .replace("%N%", shown).replace("%M%", total);
     }
 
     var locationLabel = window.GameClubLocation && window.GameClubLocation.getActiveLabel
@@ -208,7 +300,8 @@
       : null;
 
     if (locationLabel) {
-      text += " \u00b7 sorted by nearest to " + locationLabel;
+      text += " · " + (i18n.sorted_by_nearest || "sorted by nearest to %LOCATION%")
+        .replace("%LOCATION%", locationLabel);
     }
 
     el.textContent = text;
@@ -219,11 +312,11 @@
     if (!label) return;
     var days = search.dayFilters;
     if (days.length === 0) {
-      label.textContent = "All days";
+      label.textContent = i18n.filter_all_days || "All days";
     } else if (days.length === 1) {
       label.textContent = days[0];
     } else {
-      label.textContent = days.length + " days selected";
+      label.textContent = (i18n.days_selected || "%N% days selected").replace("%N%", days.length);
     }
   }
 
@@ -232,11 +325,11 @@
     if (!label) return;
     var types = search.typeFilters;
     if (types.length === 0) {
-      label.textContent = "All types";
+      label.textContent = i18n.filter_all_types || "All types";
     } else if (types.length === 1) {
       label.textContent = types[0];
     } else {
-      label.textContent = types.length + " types selected";
+      label.textContent = (i18n.types_selected || "%N% types selected").replace("%N%", types.length);
     }
   }
 
@@ -251,7 +344,6 @@
     var dayCheckboxes = dayFilterEl ? dayFilterEl.querySelectorAll("input[type='checkbox']") : [];
     var distanceFilter = document.getElementById("distance-filter");
 
-    // Sync both search inputs
     function onSearchInput(source, other) {
       clearTimeout(debounceTimer);
       debounceTimer = setTimeout(function () {
@@ -272,11 +364,9 @@
       });
     }
 
-    // Type filter multi-select dropdown
     if (typeToggle) {
       typeToggle.addEventListener("click", function (e) {
         e.stopPropagation();
-        // Close day dropdown
         if (dayFilterEl) {
           dayFilterEl.classList.remove("is-open");
           if (dayToggle) dayToggle.setAttribute("aria-expanded", "false");
@@ -294,11 +384,9 @@
       });
     }
 
-    // Day filter multi-select dropdown
     if (dayToggle) {
       dayToggle.addEventListener("click", function (e) {
         e.stopPropagation();
-        // Close type dropdown
         if (typeFilterEl) {
           typeFilterEl.classList.remove("is-open");
           if (typeToggle) typeToggle.setAttribute("aria-expanded", "false");
@@ -316,7 +404,6 @@
       });
     }
 
-    // Close dropdowns when clicking outside
     document.addEventListener("click", function (e) {
       if (typeFilterEl && !typeFilterEl.contains(e.target)) {
         typeFilterEl.classList.remove("is-open");
@@ -328,7 +415,6 @@
       }
     });
 
-    // Distance filter
     if (distanceFilter) {
       distanceFilter.addEventListener("change", function () {
         search.setMaxDistance(distanceFilter.value);
@@ -336,16 +422,13 @@
       });
     }
 
-    // Location autocomplete + geolocation
     window.GameClubLocation.init(
       function (lat, lng, label) {
-        // Clear text search when a location is selected via postcode
         search.setQuery("");
         if (searchInput) searchInput.value = "";
         if (searchInputMobile) searchInputMobile.value = "";
         search.setUserLocation(lat, lng);
         map.showUserLocation(lat, lng);
-        // Enable distance filter
         if (distanceFilter) distanceFilter.disabled = false;
         update();
       },
@@ -353,7 +436,6 @@
         search.clearUserLocation();
         search.setMaxDistance(0);
         map.removeUserLocation();
-        // Reset and disable distance filter
         if (distanceFilter) {
           distanceFilter.value = "";
           distanceFilter.disabled = true;
@@ -370,7 +452,6 @@
     return div.innerHTML;
   }
 
-  // Toggle shadow on filter bar when sidebar is scrolled
   function initSidebarScroll() {
     var sidebar = document.getElementById("sidebar");
     if (!sidebar) return;
@@ -379,7 +460,6 @@
     });
   }
 
-  // Start
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", function () {
       init();

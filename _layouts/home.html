@@ -1,35 +1,37 @@
+---
+---
+{% assign lang = page.language | default: "en" %}
+{% assign default_country_key = page.default_country | default: "GB" | downcase %}
+{% assign country = site.data.countries[default_country_key] %}
+{% assign i18n = site.data.i18n %}
+{% assign clubs_in_country = site.clubs | where: "country", country.code %}
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="{% if lang == 'de' %}de-DE{% else %}en-GB{% endif %}">
 <head>
   {% include head.html %}
 </head>
 <body>
   <header class="site-header site-header--home">
     <div class="header-inner">
-      <a href="{{ '/' | relative_url }}" class="site-brand">
+      <a href="{% if lang == 'de' %}{{ '/de/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" class="site-brand">
         <img src="{{ '/assets/meeple-map-icon.svg' | relative_url }}" alt="" class="site-logo">
         <div class="site-brand-text">
-          <span class="site-title">BoardGameClubs<span class="site-title-tld">.uk</span></span>
-          <span class="site-tagline">Find your club from over {{ site.clubs.size }}+ clubs across the UK</span>
+          <span class="site-title">BoardGameClubs<span class="site-title-tld">{{ i18n.brand_suffix[lang] }}</span></span>
+          <span class="site-tagline">{{ i18n.tagline[lang] }}</span>
         </div>
       </a>
       <div class="header-search">
         <div class="search-bar">
           <i data-lucide="search" class="search-icon"></i>
-          <input type="text" class="search-input" id="search-input" placeholder="Search by postcode, club name, or location..." autocomplete="off">
+          <input type="text" class="search-input" id="search-input" placeholder="{{ i18n.search_placeholder[lang] }}" autocomplete="off">
           <div class="location-suggestions" id="location-suggestions"></div>
         </div>
         <button class="locate-btn locate-btn--header" id="locate-btn-header" type="button">
           <i data-lucide="crosshair" style="width:14px;height:14px;"></i>
-          <span>Use my location</span>
+          <span>{{ i18n.use_my_location[lang] }}</span>
         </button>
       </div>
-      <nav>
-        <a href="{{ '/' | relative_url }}">Map</a>
-        <a href="{{ '/about' | relative_url }}">About</a>
-        <a href="{{ '/contribute' | relative_url }}" class="nav-cta">+ Add a Club</a>
-        <a href="https://github.com/BoardGameClubs/BoardGameClubs_Web" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub"><i data-lucide="github"></i></a>
-      </nav>
+      {% include nav-links.html lang=lang home_url="/" %}
     </div>
   </header>
   <main class="page-content">
@@ -43,24 +45,24 @@
           <div class="filter-bar-inner">
           <div class="filter-bar-title">
             <i data-lucide="sliders-horizontal"></i>
-            <span>Filter clubs</span>
+            <span>{{ i18n.filter_clubs[lang] }}</span>
           </div>
           <div class="search-row sidebar-search">
             <div class="search-bar">
               <i data-lucide="search" class="search-icon"></i>
-              <input type="text" class="search-input" id="search-input-mobile" placeholder="Search by postcode, club name, or location..." autocomplete="off">
+              <input type="text" class="search-input" id="search-input-mobile" placeholder="{{ i18n.search_placeholder[lang] }}" autocomplete="off">
               <div class="location-suggestions" id="location-suggestions-mobile"></div>
             </div>
-            <button class="locate-btn locate-btn--mobile" id="locate-btn" type="button" aria-label="Use my location">
+            <button class="locate-btn locate-btn--mobile" id="locate-btn" type="button" aria-label="{{ i18n.use_my_location[lang] }}">
               <i data-lucide="crosshair" style="width:16px;height:16px;"></i>
             </button>
           </div>
           <div class="filter-row">
             <div class="multi-select" id="type-filter">
               <button class="multi-select-toggle filter-select" type="button" aria-haspopup="listbox" aria-expanded="false">
-                <span class="multi-select-label">All types</span>
+                <span class="multi-select-label">{{ i18n.filter_all_types[lang] }}</span>
               </button>
-              <div class="multi-select-dropdown" role="listbox" aria-label="Filter by type">
+              <div class="multi-select-dropdown" role="listbox" aria-label="{{ i18n.filter_all_types[lang] }}">
                 <label class="multi-select-option" data-type="Board Games"><input type="checkbox" value="Board Games"><span class="multi-select-check"></span>Board Games</label>
                 <label class="multi-select-option" data-type="RPG"><input type="checkbox" value="RPG"><span class="multi-select-check"></span>RPG</label>
                 <label class="multi-select-option" data-type="Wargames"><input type="checkbox" value="Wargames"><span class="multi-select-check"></span>Wargames</label>
@@ -70,31 +72,27 @@
             </div>
             <div class="multi-select" id="day-filter">
               <button class="multi-select-toggle filter-select" type="button" aria-haspopup="listbox" aria-expanded="false">
-                <span class="multi-select-label">All days</span>
+                <span class="multi-select-label">{{ i18n.filter_all_days[lang] }}</span>
               </button>
-              <div class="multi-select-dropdown" role="listbox" aria-label="Filter by day">
-                <label class="multi-select-option" data-day="Monday"><input type="checkbox" value="Monday"><span class="multi-select-check"></span>Monday</label>
-                <label class="multi-select-option" data-day="Tuesday"><input type="checkbox" value="Tuesday"><span class="multi-select-check"></span>Tuesday</label>
-                <label class="multi-select-option" data-day="Wednesday"><input type="checkbox" value="Wednesday"><span class="multi-select-check"></span>Wednesday</label>
-                <label class="multi-select-option" data-day="Thursday"><input type="checkbox" value="Thursday"><span class="multi-select-check"></span>Thursday</label>
-                <label class="multi-select-option" data-day="Friday"><input type="checkbox" value="Friday"><span class="multi-select-check"></span>Friday</label>
-                <label class="multi-select-option" data-day="Saturday"><input type="checkbox" value="Saturday"><span class="multi-select-check"></span>Saturday</label>
-                <label class="multi-select-option" data-day="Sunday"><input type="checkbox" value="Sunday"><span class="multi-select-check"></span>Sunday</label>
-                <label class="multi-select-option" data-day="Various"><input type="checkbox" value="Various"><span class="multi-select-check"></span>Various</label>
+              <div class="multi-select-dropdown" role="listbox" aria-label="{{ i18n.filter_all_days[lang] }}">
+                <label class="multi-select-option" data-day="Monday"><input type="checkbox" value="Monday"><span class="multi-select-check"></span>{{ i18n.day_monday[lang] }}</label>
+                <label class="multi-select-option" data-day="Tuesday"><input type="checkbox" value="Tuesday"><span class="multi-select-check"></span>{{ i18n.day_tuesday[lang] }}</label>
+                <label class="multi-select-option" data-day="Wednesday"><input type="checkbox" value="Wednesday"><span class="multi-select-check"></span>{{ i18n.day_wednesday[lang] }}</label>
+                <label class="multi-select-option" data-day="Thursday"><input type="checkbox" value="Thursday"><span class="multi-select-check"></span>{{ i18n.day_thursday[lang] }}</label>
+                <label class="multi-select-option" data-day="Friday"><input type="checkbox" value="Friday"><span class="multi-select-check"></span>{{ i18n.day_friday[lang] }}</label>
+                <label class="multi-select-option" data-day="Saturday"><input type="checkbox" value="Saturday"><span class="multi-select-check"></span>{{ i18n.day_saturday[lang] }}</label>
+                <label class="multi-select-option" data-day="Sunday"><input type="checkbox" value="Sunday"><span class="multi-select-check"></span>{{ i18n.day_sunday[lang] }}</label>
+                <label class="multi-select-option" data-day="Various"><input type="checkbox" value="Various"><span class="multi-select-check"></span>{{ i18n.day_various[lang] }}</label>
               </div>
             </div>
             <select class="filter-select" id="distance-filter" disabled>
-              <option value="">Any distance</option>
-              <option value="5">Within 5 miles</option>
-              <option value="10">Within 10 miles</option>
-              <option value="25">Within 25 miles</option>
-              <option value="50">Within 50 miles</option>
+              <option value="">{{ i18n.filter_any_distance[lang] }}</option>
             </select>
           </div>
           <div class="location-pill" id="location-pill" style="display:none;">
             <i data-lucide="map-pin" style="width:12px;height:12px;"></i>
             <span id="location-pill-label"></span>
-            <button type="button" id="location-clear" aria-label="Clear location"><i data-lucide="x" style="width:12px;height:12px;"></i></button>
+            <button type="button" id="location-clear" aria-label="{{ i18n.clear_location[lang] }}"><i data-lucide="x" style="width:12px;height:12px;"></i></button>
           </div>
           </div>
         </div>
@@ -102,7 +100,7 @@
 
         <noscript>
           <div class="club-list">
-            {% for club in site.clubs %}
+            {% for club in clubs_in_country %}
               {% include club-card.html club=club %}
             {% endfor %}
           </div>
@@ -113,7 +111,32 @@
   {% include footer.html %}
 
   <script>
-    window.GameClub = { baseurl: "{{ site.baseurl }}" };
+    window.GameClub = {
+      baseurl: "{{ site.baseurl }}",
+      language: {{ lang | jsonify }},
+      defaultCountryCode: {{ country.code | jsonify }}
+    };
+    window.GameClubCountries = {{ site.data.countries | jsonify }};
+    window.GameClubI18n = {
+      no_results:               {{ i18n.no_results[lang] | jsonify }},
+      showing_n_clubs:          {{ i18n.showing_n_clubs[lang] | jsonify }},
+      showing_n_of_m:           {{ i18n.showing_n_of_m[lang] | jsonify }},
+      sorted_by_nearest:        {{ i18n.sorted_by_nearest[lang] | jsonify }},
+      filter_all_types:         {{ i18n.filter_all_types[lang] | jsonify }},
+      filter_all_days:          {{ i18n.filter_all_days[lang] | jsonify }},
+      filter_any_distance:      {{ i18n.filter_any_distance[lang] | jsonify }},
+      filter_within_distance:   {{ i18n.filter_within_distance[lang] | jsonify }},
+      types_selected:           {{ i18n.types_selected[lang] | jsonify }},
+      days_selected:            {{ i18n.days_selected[lang] | jsonify }},
+      geolocation_unsupported:  {{ i18n.geolocation_unsupported[lang] | jsonify }},
+      geolocation_failed:       {{ i18n.geolocation_failed[lang] | jsonify }},
+      my_location:              {{ i18n.my_location[lang] | jsonify }},
+      search_placeholder:       {{ i18n.search_placeholder[lang] | jsonify }},
+      country_gb:               {{ i18n.country_gb[lang] | jsonify }},
+      country_de:               {{ i18n.country_de[lang] | jsonify }},
+      lang_banner_de:           {{ i18n.lang_banner_de[lang] | jsonify }},
+      lang_banner_dismiss:      {{ i18n.lang_banner_dismiss[lang] | jsonify }}
+    };
     window.GameClub.applyImgBg = function (img) {
       try {
         var c = document.createElement("canvas");
@@ -130,6 +153,7 @@
           integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
           crossorigin=""></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="{{ '/assets/js/country-selector.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
   <script src="{{ '/assets/js/map.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
   <script src="{{ '/assets/js/search.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
   <script src="{{ '/assets/js/location.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

@@ -1,0 +1,246 @@
+# UI string translations, keyed by string name then language code.
+# Templates: {{ site.data.i18n.<key>[country.language] }}
+# JS: serialised into window.GameClubI18n by the layout.
+
+# --- Brand / shared ---
+brand_suffix:
+  en: ".org"
+  de: ".org"
+
+tagline:
+  en: "Community-built. Open source. Find your table."
+  de: "Von der Community gebaut. Open Source. Finde deinen Spieltisch."
+
+# --- Nav ---
+nav_map:
+  en: "Map"
+  de: "Karte"
+
+nav_about:
+  en: "About"
+  de: "Über uns"
+
+nav_contribute:
+  en: "+ Add a Club"
+  de: "+ Club hinzufügen"
+
+nav_country:
+  en: "Country"
+  de: "Land"
+
+country_gb:
+  en: "United Kingdom"
+  de: "Vereinigtes Königreich"
+
+country_de:
+  en: "Germany"
+  de: "Deutschland"
+
+footer_other_countries:
+  en: "Other countries:"
+  de: "Andere Länder:"
+
+lang_banner_de:
+  en: "Looking for clubs in Germany? Visit the German site →"
+  de: "Brettspielclubs in Deutschland? Zur deutschen Seite →"
+
+lang_banner_dismiss:
+  en: "Dismiss"
+  de: "Schließen"
+
+# --- Search & filter ---
+search_placeholder:
+  en: "Search by postcode, club name, or location..."
+  de: "Postleitzahl, Vereinsname oder Ort suchen..."
+
+filter_clubs:
+  en: "Filter clubs"
+  de: "Clubs filtern"
+
+filter_all_types:
+  en: "All types"
+  de: "Alle Typen"
+
+filter_all_days:
+  en: "All days"
+  de: "Alle Tage"
+
+filter_any_distance:
+  en: "Any distance"
+  de: "Beliebige Entfernung"
+
+filter_within_distance:
+  en: "Within %N% %UNIT%"
+  de: "Bis zu %N% %UNIT%"
+
+types_selected:
+  en: "%N% types selected"
+  de: "%N% Typen ausgewählt"
+
+days_selected:
+  en: "%N% days selected"
+  de: "%N% Tage ausgewählt"
+
+use_my_location:
+  en: "Use my location"
+  de: "Meinen Standort verwenden"
+
+# --- Day names (used in filter dropdown labels and tags) ---
+day_monday:
+  en: "Monday"
+  de: "Montag"
+day_tuesday:
+  en: "Tuesday"
+  de: "Dienstag"
+day_wednesday:
+  en: "Wednesday"
+  de: "Mittwoch"
+day_thursday:
+  en: "Thursday"
+  de: "Donnerstag"
+day_friday:
+  en: "Friday"
+  de: "Freitag"
+day_saturday:
+  en: "Saturday"
+  de: "Samstag"
+day_sunday:
+  en: "Sunday"
+  de: "Sonntag"
+day_various:
+  en: "Various"
+  de: "Verschiedene"
+
+# --- Frequency labels (club detail page) ---
+frequency_weekly:
+  en: "Weekly"
+  de: "Wöchentlich"
+frequency_fortnightly:
+  en: "Fortnightly"
+  de: "Alle zwei Wochen"
+frequency_monthly:
+  en: "Monthly"
+  de: "Monatlich"
+frequency_twice_monthly:
+  en: "Twice monthly"
+  de: "Zweimal monatlich"
+frequency_adhoc:
+  en: "Ad-hoc"
+  de: "Unregelmäßig"
+
+# --- Club card / list ---
+no_results:
+  en: "No clubs match your search. Try a different filter or search term."
+  de: "Keine Clubs gefunden. Versuche einen anderen Filter oder Suchbegriff."
+
+showing_n_clubs:
+  en: "Showing %N% clubs"
+  de: "Zeige %N% Clubs"
+
+showing_n_of_m:
+  en: "Showing %N% of %M% clubs"
+  de: "Zeige %N% von %M% Clubs"
+
+sorted_by_nearest:
+  en: "sorted by nearest to %LOCATION%"
+  de: "sortiert nach Entfernung zu %LOCATION%"
+
+clear_location:
+  en: "Clear location"
+  de: "Standort löschen"
+
+# --- Club detail page ---
+club_detail_subtitle:
+  en: "%TYPE% Club in %ADDRESS%"
+  de: "%TYPE%-Club in %ADDRESS%"
+
+club_type_board_games:
+  en: "Board Game"
+  de: "Brettspiel"
+club_type_rpg:
+  en: "RPG"
+  de: "Rollenspiel"
+club_type_wargames:
+  en: "Wargaming"
+  de: "Tabletop"
+club_type_botc:
+  en: "Blood on the Clocktower"
+  de: "Blood on the Clocktower"
+club_type_tcg:
+  en: "TCG"
+  de: "Sammelkartenspiel"
+
+label_type:
+  en: "Type"
+  de: "Typ"
+label_venue:
+  en: "Venue"
+  de: "Veranstaltungsort"
+label_address:
+  en: "Address"
+  de: "Adresse"
+label_day:
+  en: "Day"
+  de: "Tag"
+label_days:
+  en: "Days"
+  de: "Tage"
+label_time:
+  en: "Time"
+  de: "Zeit"
+label_frequency:
+  en: "Frequency"
+  de: "Häufigkeit"
+label_cost:
+  en: "Cost"
+  de: "Kosten"
+label_age_restriction:
+  en: "Age Restriction"
+  de: "Altersbeschränkung"
+
+directions:
+  en: "Directions"
+  de: "Route"
+
+suggest_edit:
+  en: "Suggest an edit"
+  de: "Änderung vorschlagen"
+
+# --- Geolocation errors ---
+geolocation_unsupported:
+  en: "Geolocation is not supported by your browser."
+  de: "Standortbestimmung wird von deinem Browser nicht unterstützt."
+
+geolocation_failed:
+  en: "Unable to retrieve your location."
+  de: "Dein Standort konnte nicht ermittelt werden."
+
+my_location:
+  en: "My location"
+  de: "Mein Standort"
+
+# --- Footer ---
+footer_tagline:
+  en: "Board Game Clubs — a free, community-maintained directory."
+  de: "Board Game Clubs — ein kostenloses, von der Community gepflegtes Verzeichnis."
+
+footer_copyright:
+  en: "Board Game Clubs"
+  de: "Board Game Clubs"
+
+footer_source_under:
+  en: "Source under"
+  de: "Quellcode unter"
+
+footer_about:
+  en: "About"
+  de: "Über uns"
+footer_contribute:
+  en: "Add a club"
+  de: "Club hinzufügen"
+footer_privacy:
+  en: "Privacy"
+  de: "Datenschutz"
+footer_licence:
+  en: "Licence"
+  de: "Lizenz"

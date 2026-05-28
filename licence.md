@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Licence"
-description: "How Board Game Clubs UK is licensed — MIT with a Commons Clause restriction (no commercial selling of the software)."
+description: "How Board Game Clubs is licensed — MIT with a Commons Clause restriction (no commercial selling of the software)."
 permalink: /licence/
 ---
 
@@ -11,7 +11,7 @@ permalink: /licence/
 
 _Last updated: {{ site.time | date: "%-d %B %Y" }}_
 
-Board Game Clubs UK is open source. This page summarises the licence in plain English. The full, legally binding text lives in the [LICENSE file]({% if site.repository %}https://github.com/{{ site.repository }}/blob/main/LICENSE{% endif %}) in the repository — if anything here conflicts with that file, the LICENSE file wins.
+Board Game Clubs is open source. This page summarises the licence in plain English. The full, legally binding text lives in the [LICENSE file]({% if site.repository %}https://github.com/{{ site.repository }}/blob/main/LICENSE{% endif %}) in the repository — if anything here conflicts with that file, the LICENSE file wins.
 
 ## The short version
 

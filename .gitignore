@@ -12,3 +12,9 @@ CLAUDE.md
 .env
 scripts/geocode.rb
 scripts/import_clubs.py
+scripts/scrape_unknowns_de.py
+scripts/promote_drafts.rb
+scripts/reorg_clubs.rb
+scripts/strip_scraper_comments.rb
+_clubs_drafts/
+scripts/__pycache__/

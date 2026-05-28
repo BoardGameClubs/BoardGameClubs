@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Privacy Policy"
-description: "How Board Game Clubs UK handles your data — short version: we don't collect personal information, use cookies, or sell anything."
+description: "How Board Game Clubs handles your data — short version: we don't collect personal information, use cookies, or sell anything."
 permalink: /privacy/
 ---
 
@@ -11,7 +11,7 @@ permalink: /privacy/
 
 _Last updated: {{ site.time | date: "%-d %B %Y" }}_
 
-Board Game Clubs UK is a free, community-maintained directory. We've designed the site to collect as little information about you as possible.
+Board Game Clubs is a free, community-maintained directory. We've designed the site to collect as little information about you as possible.
 
 ## The short version
 
@@ -46,7 +46,7 @@ The following features only run when you choose to use them.
 
 ### Postcode search
 
-When you type a UK postcode into the search box, we send it to [postcodes.io](https://postcodes.io/) to look up the coordinates so we can sort clubs by distance from you. postcodes.io is an open-data service operated by [Ideal Postcodes](https://ideal-postcodes.co.uk/). We do not store the postcode on our servers.
+When you type a postcode into the search box on the UK pages, we send it to [postcodes.io](https://postcodes.io/) to look up the coordinates so we can sort clubs by distance from you. postcodes.io is an open-data service operated by [Ideal Postcodes](https://ideal-postcodes.co.uk/). On the German pages we use [Nominatim](https://nominatim.openstreetmap.org/), the OpenStreetMap geocoding service, to look up German postal codes (PLZ) the same way. We do not store the postcode on our servers.
 
 ### "Use my location"
 

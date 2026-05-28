@@ -1,3 +1,40 @@
+// ─── Language banner (German users on the English site) ───
+.lang-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.55rem 1rem;
+  background: darken($color-accent, 8%);
+  color: #fff;
+  font-size: 0.85rem;
+  border-bottom: 1px solid rgba(#000, 0.1);
+
+  .lang-banner-link {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .lang-banner-dismiss {
+    background: transparent;
+    border: none;
+    color: rgba(#fff, 0.7);
+    cursor: pointer;
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: 0 0.25rem;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
 // ─── Site Header ───
 .site-header {
   background: $color-accent;
@@ -180,6 +217,113 @@
     }
   }
 
+  // ─── Country selector in nav ───
+  // Sized to match the .nav-cta "+ Add a Club" pill (height & vertical rhythm).
+  .nav-country {
+    position: relative;
+    margin-left: 0.4rem;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .nav-country-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.7rem;          // matches .nav-cta padding-y exactly
+    background: rgba(#fff, 0.12);
+    color: #fff;
+    font-size: 0.88rem;               // matches nav link size
+    font-weight: 500;
+    border: 1px solid rgba(#fff, 0.22);
+    border-radius: $border-radius-sm;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    line-height: 1.5;                 // matches .nav-cta line-height
+    letter-spacing: 0.02em;
+    box-sizing: border-box;
+
+    &:hover {
+      background: rgba(#fff, 0.2);
+    }
+
+    svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+      opacity: 0.85;
+    }
+
+    .nav-country-caret {
+      width: 12px;
+      height: 12px;
+    }
+
+    .nav-country-current {
+      font-weight: 600;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  .nav-country-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    min-width: 200px;
+    background: #fff;
+    border: 1px solid rgba(#000, 0.08);
+    border-radius: $border-radius-sm;
+    box-shadow: 0 8px 24px rgba(#000, 0.18);
+    z-index: 1100;
+    overflow: hidden;
+  }
+
+  .nav-country.is-open .nav-country-menu {
+    display: block;
+  }
+
+  .nav-country-option {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    width: 100%;
+    text-align: left;
+    padding: 0.6rem 0.9rem;
+    background: #fff;
+    color: $color-text;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.12s ease;
+
+    .nav-country-code {
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: $color-accent;
+      min-width: 1.5rem;
+      font-size: 0.82rem;
+    }
+
+    .nav-country-name {
+      color: $color-text;
+    }
+
+    &:hover, &:focus {
+      background: rgba($color-accent, 0.08);
+      outline: none;
+    }
+
+    &.is-active {
+      background: rgba($color-accent, 0.12);
+
+      .nav-country-name {
+        font-weight: 600;
+        color: $color-accent;
+      }
+    }
+  }
+
   // ─── Header search (home page only) ───
   .header-search {
     display: none;
@@ -340,6 +484,20 @@
     justify-content: center;
     gap: 1.25rem;
     margin-top: 0.85rem;
+  }
+
+  .footer-countries {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.85rem;
+    margin-top: 0.6rem;
+    font-size: 0.78rem;
+    opacity: 0.75;
+
+    span {
+      color: $color-primary-light;
+    }
   }
 
   a {

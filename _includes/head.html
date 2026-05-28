@@ -1,14 +1,25 @@
+{% comment %}Mirror default.html's lang derivation: club detail pages take
+their UI language from the club's country (DE clubs in German); everything
+else takes it from page.language.{% endcomment %}
+{% if page.layout == "club" and page.country == "DE" %}
+  {% assign lang = "de" %}
+{% elsif page.layout == "club" %}
+  {% assign lang = "en" %}
+{% else %}
+  {% assign lang = page.language | default: "en" %}
+{% endif %}
+{% assign i18n = site.data.i18n %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 {% if page.layout == "club" %}
-  {% assign club_type_label = "Board Game" %}{% if page.type %}{% assign first_type = page.type | first %}{% if first_type == "RPG" %}{% assign club_type_label = "RPG" %}{% elsif first_type == "Wargames" %}{% assign club_type_label = "Wargaming" %}{% elsif first_type == "BOTC" %}{% assign club_type_label = "Blood on the Clocktower" %}{% elsif first_type == "TCG" %}{% assign club_type_label = "TCG" %}{% endif %}{% endif %}
+  {% assign club_type_label = i18n.club_type_board_games[lang] %}{% if page.type %}{% assign first_type = page.type | first %}{% if first_type == "RPG" %}{% assign club_type_label = i18n.club_type_rpg[lang] %}{% elsif first_type == "Wargames" %}{% assign club_type_label = i18n.club_type_wargames[lang] %}{% elsif first_type == "BOTC" %}{% assign club_type_label = i18n.club_type_botc[lang] %}{% elsif first_type == "TCG" %}{% assign club_type_label = i18n.club_type_tcg[lang] %}{% endif %}{% endif %}
   <title>{{ page.name }} | {{ club_type_label }} Club | {{ site.title }}</title>
   <meta name="description" content="{{ page.description | strip_html | truncate: 160 }}">
 {% elsif page.title %}
   <title>{{ page.title }} | {{ site.title }}</title>
 {% else %}
   <title>{{ site.title }} | Find Board Game, RPG, Wargaming &amp; Tabletop Clubs Near You</title>
-  <meta name="description" content="Find your nearest board game, RPG, wargaming, Blood on the Clocktower, and TCG club across the UK. A free, community-maintained directory with an interactive map.">
+  <meta name="description" content="{{ site.description }}">
 {% endif %}
 <link rel="icon" type="image/png" href="{{ '/assets/favico.png' | relative_url }}">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | relative_url }}">
@@ -22,8 +33,30 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
 {% seo title=false %}
+{% comment %}Our authoritative og:locale per page (overrides jekyll-seo-tag's
+en_US default; Facebook/Twitter parsers use the last og:locale tag).{% endcomment %}
+<meta property="og:locale" content="{% if lang == 'de' %}de_DE{% else %}en_GB{% endif %}">
+<meta property="og:locale:alternate" content="{% if lang == 'de' %}en_GB{% else %}de_DE{% endif %}">
 {% if page.layout == "club" and page.location.lat and page.location.lng %}
 <meta name="geo.position" content="{{ page.location.lat }};{{ page.location.lng }}">
 <meta name="geo.placename" content="{{ page.location.address }}">
 <meta name="ICBM" content="{{ page.location.lat }}, {{ page.location.lng }}">
+{% endif %}
+{% comment %}hreflang pairs for translatable static pages{% endcomment %}
+{% if page.url == "/" or page.url == "/de/" %}
+  <link rel="alternate" hreflang="en-GB" href="{{ '/' | absolute_url }}">
+  <link rel="alternate" hreflang="de-DE" href="{{ '/de/' | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+{% elsif page.url == "/about/" or page.url == "/de/about/" %}
+  <link rel="alternate" hreflang="en-GB" href="{{ '/about/' | absolute_url }}">
+  <link rel="alternate" hreflang="de-DE" href="{{ '/de/about/' | absolute_url }}">
+{% elsif page.url == "/contribute/" or page.url == "/de/contribute/" %}
+  <link rel="alternate" hreflang="en-GB" href="{{ '/contribute/' | absolute_url }}">
+  <link rel="alternate" hreflang="de-DE" href="{{ '/de/contribute/' | absolute_url }}">
+{% elsif page.url == "/privacy/" or page.url == "/de/privacy/" %}
+  <link rel="alternate" hreflang="en-GB" href="{{ '/privacy/' | absolute_url }}">
+  <link rel="alternate" hreflang="de-DE" href="{{ '/de/privacy/' | absolute_url }}">
+{% elsif page.url == "/licence/" or page.url == "/de/licence/" %}
+  <link rel="alternate" hreflang="en-GB" href="{{ '/licence/' | absolute_url }}">
+  <link rel="alternate" hreflang="de-DE" href="{{ '/de/licence/' | absolute_url }}">
 {% endif %}

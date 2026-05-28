@@ -1,8 +1,11 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Validates all _clubs/*.md files for correct YAML frontmatter.
-# Requires only Ruby stdlib — no gems needed.
+# Validates all _clubs/<country>/*.md files for correct YAML frontmatter.
+# Country-aware: lat/lng bounds + URL prefix come from _data/countries.yml.
+# Also enforces folder ↔ country agreement (a file at _clubs/de/foo.md must
+# have `country: "DE"`).
+# Requires only Ruby stdlib.
 # Usage: ruby scripts/validate_clubs.rb
 
 require "yaml"
@@ -10,19 +13,45 @@ require "date"
 
 VALID_DAYS = %w[Monday Tuesday Wednesday Thursday Friday Saturday Sunday Various].freeze
 VALID_TYPES = ["Board Games", "RPG", "Wargames", "BOTC", "TCG"].freeze
-LAT_RANGE = (49.0..61.0)
-LNG_RANGE = (-9.0..3.0)
 
-clubs_dir = File.expand_path("../_clubs", __dir__)
+root_dir  = File.expand_path("..", __dir__)
+clubs_dir = File.join(root_dir, "_clubs")
+data_path = File.join(root_dir, "_data", "countries.yml")
+
+unless File.exist?(data_path)
+  puts "ERROR: _data/countries.yml not found at #{data_path}"
+  exit 1
+end
+
+countries   = YAML.safe_load(File.read(data_path), permitted_classes: [Symbol])
+valid_codes = countries.values.map { |c| c["code"] }
+bounds_by_code = countries.values.each_with_object({}) do |c, h|
+  h[c["code"]] = {
+    lat: (c["bounds"]["lat"][0].to_f..c["bounds"]["lat"][1].to_f),
+    lng: (c["bounds"]["lng"][0].to_f..c["bounds"]["lng"][1].to_f),
+  }
+end
+url_prefix_by_code = countries.values.each_with_object({}) do |c, h|
+  h[c["code"]] = c["url_prefix"] || ""
+end
 
 unless Dir.exist?(clubs_dir)
   puts "ERROR: _clubs/ directory not found at #{clubs_dir}"
   exit 1
 end
 
-files = Dir.glob(File.join(clubs_dir, "*.md")).sort
+# Files now live under _clubs/<country>/*.md.
+files = Dir.glob(File.join(clubs_dir, "*", "*.md")).sort
 if files.empty?
-  puts "ERROR: No .md files found in _clubs/"
+  puts "ERROR: No .md files found under _clubs/<country>/"
+  exit 1
+end
+
+# Flat-layout migration check: complain if any clubs remain at the top level.
+stray = Dir.glob(File.join(clubs_dir, "*.md"))
+unless stray.empty?
+  puts "ERROR: #{stray.length} club file(s) still at the top level of _clubs/. Run scripts/reorg_clubs.rb."
+  stray.each { |f| puts "  - #{File.basename(f)}" }
   exit 1
 end
 
@@ -30,46 +59,56 @@ errors = {}
 slugs_seen = {}
 
 files.each do |file|
-  basename = File.basename(file)
-  slug = File.basename(file, ".md")
+  rel        = file.sub("#{clubs_dir}/", "")              # e.g. "gb/aberdeen.md"
+  folder     = File.dirname(rel)                          # "gb"
+  basename   = File.basename(file)
+  slug       = File.basename(file, ".md")
+  file_id    = rel
   file_errors = []
 
-  # Check for duplicate slugs
   if slugs_seen.key?(slug)
     file_errors << "Duplicate slug '#{slug}' (also used by #{slugs_seen[slug]})"
   else
-    slugs_seen[slug] = basename
+    slugs_seen[slug] = rel
   end
 
   content = File.read(file)
 
-  # Extract frontmatter
   unless content.match?(/\A---\s*\n/)
     file_errors << "Missing YAML frontmatter (file must start with ---)"
-    errors[basename] = file_errors
+    errors[file_id] = file_errors
     next
   end
 
   parts = content.split(/^---\s*$/, 3)
   if parts.length < 3
     file_errors << "Invalid frontmatter format (missing closing ---)"
-    errors[basename] = file_errors
+    errors[file_id] = file_errors
     next
   end
 
-  # Parse YAML
   begin
     data = YAML.safe_load(parts[1], permitted_classes: [Date])
   rescue Psych::SyntaxError => e
     file_errors << "Invalid YAML: #{e.message}"
-    errors[basename] = file_errors
+    errors[file_id] = file_errors
     next
   end
 
   unless data.is_a?(Hash)
     file_errors << "Frontmatter must be a YAML mapping, got #{data.class}"
-    errors[basename] = file_errors
+    errors[file_id] = file_errors
     next
+  end
+
+  # country: required, must match the folder it lives in.
+  country_code = data["country"]
+  if !country_code.is_a?(String) || country_code.strip.empty?
+    file_errors << "country: required (one of #{valid_codes.join(', ')})"
+  elsif !valid_codes.include?(country_code)
+    file_errors << "country: must be one of #{valid_codes.join(', ')} (got #{country_code.inspect})"
+  elsif folder.downcase != country_code.downcase
+    file_errors << "country: '#{country_code}' must match folder '#{folder}/' — move the file or change the field"
   end
 
   # name: non-empty string
@@ -77,7 +116,7 @@ files.each do |file|
     file_errors << "name: must be a non-empty string"
   end
 
-  # days: non-empty array of valid day names
+  # days
   if !data["days"].is_a?(Array) || data["days"].empty?
     file_errors << "days: must be a non-empty array of day names (got #{data['days'].inspect})"
   elsif data["days"].is_a?(Array)
@@ -88,7 +127,7 @@ files.each do |file|
     end
   end
 
-  # type: optional, but when present must be non-empty array of valid types
+  # type (optional)
   if data.key?("type")
     if !data["type"].is_a?(Array) || data["type"].empty?
       file_errors << "type: must be a non-empty array of types (got #{data['type'].inspect})"
@@ -101,17 +140,17 @@ files.each do |file|
     end
   end
 
-  # frequency: non-empty string
+  # frequency
   if !data["frequency"].is_a?(String) || data["frequency"].strip.empty?
     file_errors << "frequency: must be a non-empty string"
   end
 
-  # description: non-empty string
+  # description
   if !data["description"].is_a?(String) || data["description"].strip.empty?
     file_errors << "description: must be a non-empty string"
   end
 
-  # location: hash with required fields
+  # location
   loc = data["location"]
   if !loc.is_a?(Hash)
     file_errors << "location: must be a mapping with name, address, lat, lng"
@@ -119,28 +158,37 @@ files.each do |file|
     if !loc["name"].is_a?(String) || loc["name"].strip.empty?
       file_errors << "location.name: must be a non-empty string"
     end
-
     if !loc["address"].is_a?(String) || loc["address"].strip.empty?
       file_errors << "location.address: must be a non-empty string"
     end
 
+    bounds = bounds_by_code[country_code]
     if !loc["lat"].is_a?(Numeric)
       file_errors << "location.lat: must be a number (got #{loc['lat'].inspect})"
-    elsif !LAT_RANGE.cover?(loc["lat"])
-      file_errors << "location.lat: must be between #{LAT_RANGE.min} and #{LAT_RANGE.max} (got #{loc['lat']})"
+    elsif bounds && !bounds[:lat].cover?(loc["lat"])
+      file_errors << "location.lat: must be between #{bounds[:lat].min} and #{bounds[:lat].max} for country #{country_code} (got #{loc['lat']})"
     end
 
     if !loc["lng"].is_a?(Numeric)
       file_errors << "location.lng: must be a number (got #{loc['lng'].inspect})"
-    elsif !LNG_RANGE.cover?(loc["lng"])
-      file_errors << "location.lng: must be between #{LNG_RANGE.min} and #{LNG_RANGE.max} (got #{loc['lng']})"
+    elsif bounds && !bounds[:lng].cover?(loc["lng"])
+      file_errors << "location.lng: must be between #{bounds[:lng].min} and #{bounds[:lng].max} for country #{country_code} (got #{loc['lng']})"
     end
   end
 
-  errors[basename] = file_errors unless file_errors.empty?
+  # permalink: every club must have one matching its country's URL prefix +
+  # slug. Subfolders change Jekyll's default slug (gb/aberdeen instead of
+  # aberdeen) so an explicit permalink is required.
+  if country_code && valid_codes.include?(country_code)
+    expected = "#{url_prefix_by_code[country_code]}/clubs/#{slug}/"
+    if data["permalink"] != expected
+      file_errors << "permalink: must equal '#{expected}' (got #{data['permalink'].inspect})"
+    end
+  end
+
+  errors[file_id] = file_errors unless file_errors.empty?
 end
 
-# Report results
 if errors.empty?
   puts "All #{files.length} club files are valid."
   exit 0
