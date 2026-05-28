@@ -70,6 +70,6 @@ Si la façon dont le site traite les données change, nous mettrons à jour cett
 
 ## Contact
 
-Le site est tenu par des bénévoles. Pour toute question sur la confidentialité, [ouvre une issue sur GitHub](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues) ou contacte-nous via la page de contribution.
+Le site est tenu par des bénévoles. Pour toute question sur la confidentialité, [ouvre une issue sur GitHub](https://github.com/BoardGameClubs/BoardGameClubs/issues) ou contacte-nous via la page de contribution.
 
 </div>

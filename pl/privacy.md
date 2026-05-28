@@ -70,6 +70,6 @@ Jeśli zmieni się sposób, w jaki strona obchodzi się z danymi, zaktualizujemy
 
 ## Kontakt
 
-Strona prowadzona jest przez wolontariuszy. W sprawach prywatności [otwórz issue na GitHubie](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues) lub skontaktuj się z nami przez stronę dla kontrybutorów.
+Strona prowadzona jest przez wolontariuszy. W sprawach prywatności [otwórz issue na GitHubie](https://github.com/BoardGameClubs/BoardGameClubs/issues) lub skontaktuj się z nami przez stronę dla kontrybutorów.
 
 </div>

@@ -16,8 +16,8 @@ Board Game Clubs est maintenu par la communauté et hébergé sur GitHub. N'impo
 Le moyen le plus simple d'ajouter ton club est notre formulaire sur GitHub. Aucune compétence technique n'est requise — remplis simplement les détails, on s'occupe du reste.
 
 <div class="contribute-actions">
-  <a href="https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new?template=add-club.yml" class="contribute-btn contribute-btn--primary">+ Ajouter un club</a>
-  <a href="https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new?template=edit-club.yml" class="contribute-btn contribute-btn--secondary">Modifier un club</a>
+  <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-club.yml" class="contribute-btn contribute-btn--primary">+ Ajouter un club</a>
+  <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml" class="contribute-btn contribute-btn--secondary">Modifier un club</a>
 </div>
 
 ## Ajouter un club par pull request
@@ -26,7 +26,7 @@ Si tu es à l'aise avec GitHub, tu peux ajouter un club directement :
 
 ### 1. Créer un nouveau fichier
 
-[Crée un nouveau fichier](https://github.com/BoardGameClubs/BoardGameClubs_Web/new/main/_clubs) dans le dossier `_clubs/<pays>/` sur GitHub, où `<pays>` est le code ISO 3166-1 alpha-2 en minuscules (`gb`, `de`, `at`, `ch`, `nl`, `be`, `it`, `pl`, `fr`, `dk`, `es`). Nomme le fichier selon le schéma `nom-de-ton-club.md` (minuscules, tirets à la place des espaces). Pour les noms avec caractères spéciaux, utilise leur équivalent ASCII : `à→a`, `é→e`, `î→i`, `ô→o`, `ç→c` etc. (par ex. `cafe-jeux-lyon.md`).
+[Crée un nouveau fichier](https://github.com/BoardGameClubs/BoardGameClubs/new/main/_clubs) dans le dossier `_clubs/<pays>/` sur GitHub, où `<pays>` est le code ISO 3166-1 alpha-2 en minuscules (`gb`, `de`, `at`, `ch`, `nl`, `be`, `it`, `pl`, `fr`, `dk`, `es`). Nomme le fichier selon le schéma `nom-de-ton-club.md` (minuscules, tirets à la place des espaces). Pour les noms avec caractères spéciaux, utilise leur équivalent ASCII : `à→a`, `é→e`, `î→i`, `ô→o`, `ç→c` etc. (par ex. `cafe-jeux-lyon.md`).
 
 ### 2. Copier le modèle
 
@@ -123,14 +123,14 @@ Tu peux aussi utiliser une URL directe vers une image hébergée ailleurs, par e
 
 ### 6. Ouvrir une pull request
 
-Valide ton fichier et [ouvre une pull request](https://github.com/BoardGameClubs/BoardGameClubs_Web/pulls). On la relit et on l'intègre.
+Valide ton fichier et [ouvre une pull request](https://github.com/BoardGameClubs/BoardGameClubs/pulls). On la relit et on l'intègre.
 
 ## Ton pays n'est pas dans la liste ?
 
-Nous référençons actuellement des clubs au Royaume-Uni, en Allemagne, en Autriche, en Suisse, aux Pays-Bas, en Belgique, en Italie, en Pologne, en France, au Danemark et en Espagne. Si ton club est ailleurs, [ouvre une issue](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new) — ajouter un nouveau pays est un petit changement et on le fait volontiers.
+Nous référençons actuellement des clubs au Royaume-Uni, en Allemagne, en Autriche, en Suisse, aux Pays-Bas, en Belgique, en Italie, en Pologne, en France, au Danemark et en Espagne. Si ton club est ailleurs, [ouvre une issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new) — ajouter un nouveau pays est un petit changement et on le fait volontiers.
 
 ## Mettre à jour un club existant
 
-Trouve le fichier du club dans le [dossier `_clubs/` sur GitHub](https://github.com/BoardGameClubs/BoardGameClubs_Web/tree/main/_clubs), fais tes modifications et soumets une pull request. Ou alors **[ouvre simplement une demande de modification](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new?template=edit-club.yml)** et on s'en charge.
+Trouve le fichier du club dans le [dossier `_clubs/` sur GitHub](https://github.com/BoardGameClubs/BoardGameClubs/tree/main/_clubs), fais tes modifications et soumets une pull request. Ou alors **[ouvre simplement une demande de modification](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml)** et on s'en charge.
 
 </div>

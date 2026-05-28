@@ -16,8 +16,8 @@ Board Game Clubs wird von der Community gepflegt und auf GitHub gehostet. Jede:r
 Am einfachsten fügst du deinen Club über unser Formular auf GitHub hinzu. Keine technischen Kenntnisse nötig — fülle einfach die Details aus, den Rest erledigen wir.
 
 <div class="contribute-actions">
-  <a href="https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new?template=add-club.yml" class="contribute-btn contribute-btn--primary">+ Club hinzufügen</a>
-  <a href="https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new?template=edit-club.yml" class="contribute-btn contribute-btn--secondary">Club bearbeiten</a>
+  <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-club.yml" class="contribute-btn contribute-btn--primary">+ Club hinzufügen</a>
+  <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml" class="contribute-btn contribute-btn--secondary">Club bearbeiten</a>
 </div>
 
 ## Club per Pull Request hinzufügen
@@ -26,7 +26,7 @@ Wenn du mit GitHub vertraut bist, kannst du einen Club auch direkt hinzufügen:
 
 ### 1. Neue Datei erstellen
 
-[Erstelle eine neue Datei](https://github.com/BoardGameClubs/BoardGameClubs_Web/new/main/_clubs) im Ordner `_clubs/<land>/` auf GitHub, wobei `<land>` der ISO-3166-1-alpha-2-Code in Kleinbuchstaben ist (`gb`, `de`, `at`, `ch`, `nl`, `be`, `it`, `pl`, `fr`, `dk`, `es`). Benenne die Datei nach dem Schema `dein-club-name.md` (Kleinbuchstaben, Bindestriche statt Leerzeichen). Für Namen mit Sonderzeichen verwende ASCII-Schreibweise: `ä→ae`, `ö→oe`, `ü→ue`, `ß→ss`, `é→e` usw. (z. B. `spieletreff-muenchen.md`).
+[Erstelle eine neue Datei](https://github.com/BoardGameClubs/BoardGameClubs/new/main/_clubs) im Ordner `_clubs/<land>/` auf GitHub, wobei `<land>` der ISO-3166-1-alpha-2-Code in Kleinbuchstaben ist (`gb`, `de`, `at`, `ch`, `nl`, `be`, `it`, `pl`, `fr`, `dk`, `es`). Benenne die Datei nach dem Schema `dein-club-name.md` (Kleinbuchstaben, Bindestriche statt Leerzeichen). Für Namen mit Sonderzeichen verwende ASCII-Schreibweise: `ä→ae`, `ö→oe`, `ü→ue`, `ß→ss`, `é→e` usw. (z. B. `spieletreff-muenchen.md`).
 
 ### 2. Vorlage kopieren
 
@@ -122,14 +122,14 @@ Alternativ kannst du eine direkte URL zu einem extern gehosteten Bild verwenden,
 
 ### 6. Pull Request einreichen
 
-Committe deine Datei und [öffne einen Pull Request](https://github.com/BoardGameClubs/BoardGameClubs_Web/pulls). Wir prüfen ihn und übernehmen ihn.
+Committe deine Datei und [öffne einen Pull Request](https://github.com/BoardGameClubs/BoardGameClubs/pulls). Wir prüfen ihn und übernehmen ihn.
 
 ## Dein Land ist nicht dabei?
 
-Wir listen derzeit Clubs in Großbritannien, Deutschland, Österreich, der Schweiz, den Niederlanden, Belgien, Italien, Polen, Frankreich, Dänemark und Spanien. Ist dein Club woanders, [öffne ein Issue](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new) — ein neues Land hinzuzufügen ist eine kleine Änderung und wir machen das gerne.
+Wir listen derzeit Clubs in Großbritannien, Deutschland, Österreich, der Schweiz, den Niederlanden, Belgien, Italien, Polen, Frankreich, Dänemark und Spanien. Ist dein Club woanders, [öffne ein Issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new) — ein neues Land hinzuzufügen ist eine kleine Änderung und wir machen das gerne.
 
 ## Bestehenden Club aktualisieren
 
-Suche die Datei des Clubs im [Ordner `_clubs/` auf GitHub](https://github.com/BoardGameClubs/BoardGameClubs_Web/tree/main/_clubs), nimm deine Änderungen vor und reiche einen Pull Request ein. Oder **[öffne einfach eine Änderungsanfrage](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new?template=edit-club.yml)**, und wir aktualisieren es für dich.
+Suche die Datei des Clubs im [Ordner `_clubs/` auf GitHub](https://github.com/BoardGameClubs/BoardGameClubs/tree/main/_clubs), nimm deine Änderungen vor und reiche einen Pull Request ein. Oder **[öffne einfach eine Änderungsanfrage](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml)**, und wir aktualisieren es für dich.
 
 </div>

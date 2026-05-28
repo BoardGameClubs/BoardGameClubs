@@ -20,7 +20,7 @@ Board Game Clubs to bezpłatny katalog klubów gier planszowych w całej Europie
 
 ## Prowadzone przez społeczność
 
-Wszystkie dane klubów są zapisywane jako pojedyncze pliki w naszym [repozytorium na GitHubie](https://github.com/BoardGameClubs/BoardGameClubs_Web). Każdy może otworzyć pull request, aby dodać nowy klub lub zaktualizować istniejące informacje. Szczegóły w naszym [poradniku dla kontrybutorów]({{ "/pl/contribute/" | relative_url }}).
+Wszystkie dane klubów są zapisywane jako pojedyncze pliki w naszym [repozytorium na GitHubie](https://github.com/BoardGameClubs/BoardGameClubs). Każdy może otworzyć pull request, aby dodać nowy klub lub zaktualizować istniejące informacje. Szczegóły w naszym [poradniku dla kontrybutorów]({{ "/pl/contribute/" | relative_url }}).
 
 ## Bez kont, z poszanowaniem prywatności
 

@@ -16,8 +16,8 @@ Board Game Clubs è gestito dalla community e ospitato su GitHub. Chiunque può 
 Il modo più semplice per aggiungere il tuo club è il modulo su GitHub. Non servono competenze tecniche — basta compilare i dettagli, al resto pensiamo noi.
 
 <div class="contribute-actions">
-  <a href="https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new?template=add-club.yml" class="contribute-btn contribute-btn--primary">+ Aggiungi un club</a>
-  <a href="https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new?template=edit-club.yml" class="contribute-btn contribute-btn--secondary">Modifica un club</a>
+  <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-club.yml" class="contribute-btn contribute-btn--primary">+ Aggiungi un club</a>
+  <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml" class="contribute-btn contribute-btn--secondary">Modifica un club</a>
 </div>
 
 ## Aggiungere un club tramite pull request
@@ -26,7 +26,7 @@ Se hai dimestichezza con GitHub, puoi aggiungere un club direttamente:
 
 ### 1. Crea un nuovo file
 
-[Crea un nuovo file](https://github.com/BoardGameClubs/BoardGameClubs_Web/new/main/_clubs) nella cartella `_clubs/<paese>/` su GitHub, dove `<paese>` è il codice ISO 3166-1 alpha-2 in minuscolo (`gb`, `de`, `at`, `ch`, `nl`, `be`, `it`, `pl`, `fr`, `dk`, `es`). Nomina il file con lo schema `nome-del-tuo-club.md` (minuscolo, trattini al posto degli spazi). Per nomi con caratteri speciali usa l'equivalente ASCII: `à→a`, `è→e`, `ò→o`, `ù→u` ecc. (per es. `circolo-gioco-milano.md`).
+[Crea un nuovo file](https://github.com/BoardGameClubs/BoardGameClubs/new/main/_clubs) nella cartella `_clubs/<paese>/` su GitHub, dove `<paese>` è il codice ISO 3166-1 alpha-2 in minuscolo (`gb`, `de`, `at`, `ch`, `nl`, `be`, `it`, `pl`, `fr`, `dk`, `es`). Nomina il file con lo schema `nome-del-tuo-club.md` (minuscolo, trattini al posto degli spazi). Per nomi con caratteri speciali usa l'equivalente ASCII: `à→a`, `è→e`, `ò→o`, `ù→u` ecc. (per es. `circolo-gioco-milano.md`).
 
 ### 2. Copia il modello
 
@@ -123,14 +123,14 @@ In alternativa puoi usare un URL diretto a un'immagine ospitata altrove, es. `im
 
 ### 6. Apri una pull request
 
-Esegui il commit del tuo file e [apri una pull request](https://github.com/BoardGameClubs/BoardGameClubs_Web/pulls). La esamineremo e la integreremo.
+Esegui il commit del tuo file e [apri una pull request](https://github.com/BoardGameClubs/BoardGameClubs/pulls). La esamineremo e la integreremo.
 
 ## Il tuo paese non è nell'elenco?
 
-Al momento elenchiamo club in Regno Unito, Germania, Austria, Svizzera, Paesi Bassi, Belgio, Italia, Polonia, Francia, Danimarca e Spagna. Se il tuo club è altrove, [apri un issue](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new) — aggiungere un nuovo paese è una modifica piccola e siamo felici di farla.
+Al momento elenchiamo club in Regno Unito, Germania, Austria, Svizzera, Paesi Bassi, Belgio, Italia, Polonia, Francia, Danimarca e Spagna. Se il tuo club è altrove, [apri un issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new) — aggiungere un nuovo paese è una modifica piccola e siamo felici di farla.
 
 ## Aggiornare un club esistente
 
-Trova il file del club nella [cartella `_clubs/` su GitHub](https://github.com/BoardGameClubs/BoardGameClubs_Web/tree/main/_clubs), fai le tue modifiche e apri una pull request. Oppure **[apri direttamente una richiesta di modifica](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new?template=edit-club.yml)** e lo aggiorneremo noi.
+Trova il file del club nella [cartella `_clubs/` su GitHub](https://github.com/BoardGameClubs/BoardGameClubs/tree/main/_clubs), fai le tue modifiche e apri una pull request. Oppure **[apri direttamente una richiesta di modifica](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml)** e lo aggiorneremo noi.
 
 </div>

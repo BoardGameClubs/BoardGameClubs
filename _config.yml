@@ -5,7 +5,7 @@ description: >-
   interactive maps for the UK, Germany, and other European countries.
 url: "https://boardgameclubs.org"
 baseurl: ""
-repository: "BoardGameClubs/BoardGameClubs_Web"
+repository: "BoardGameClubs/BoardGameClubs"
 og_image: /assets/og.png
 
 collections:

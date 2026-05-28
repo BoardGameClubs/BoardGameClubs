@@ -70,6 +70,6 @@ If we change how the site handles data, we'll update this page and bump the "las
 
 ## Contact
 
-The site is run by volunteers. If you have a question about privacy, please [open an issue on GitHub](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues) or reach out via the contribute page.
+The site is run by volunteers. If you have a question about privacy, please [open an issue on GitHub](https://github.com/BoardGameClubs/BoardGameClubs/issues) or reach out via the contribute page.
 
 </div>

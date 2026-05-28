@@ -70,6 +70,6 @@ Se cambia il modo in cui il sito tratta i dati, aggiorneremo questa pagina e la 
 
 ## Contatti
 
-Il sito è gestito da volontari. Per domande sulla privacy, [apri un issue su GitHub](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues) o contattaci tramite la pagina dei contributi.
+Il sito è gestito da volontari. Per domande sulla privacy, [apri un issue su GitHub](https://github.com/BoardGameClubs/BoardGameClubs/issues) o contattaci tramite la pagina dei contributi.
 
 </div>

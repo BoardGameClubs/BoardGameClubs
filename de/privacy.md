@@ -70,6 +70,6 @@ Wenn sich der Umgang der Website mit Daten ändert, aktualisieren wir diese Seit
 
 ## Kontakt
 
-Die Website wird von Freiwilligen betrieben. Bei Datenschutzfragen [öffne bitte ein Issue auf GitHub](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues) oder erreiche uns über die Beitragsseite.
+Die Website wird von Freiwilligen betrieben. Bei Datenschutzfragen [öffne bitte ein Issue auf GitHub](https://github.com/BoardGameClubs/BoardGameClubs/issues) oder erreiche uns über die Beitragsseite.
 
 </div>

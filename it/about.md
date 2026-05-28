@@ -20,7 +20,7 @@ Board Game Clubs è una directory gratuita, gestita dalla community, dei club di
 
 ## Gestito dalla community
 
-Tutti i dati dei club sono salvati come singoli file nel nostro [repository GitHub](https://github.com/BoardGameClubs/BoardGameClubs_Web). Chiunque può aprire una pull request per aggiungere un nuovo club o aggiornare le informazioni esistenti. Trovi i dettagli nella nostra [guida ai contributi]({{ "/it/contribute/" | relative_url }}).
+Tutti i dati dei club sono salvati come singoli file nel nostro [repository GitHub](https://github.com/BoardGameClubs/BoardGameClubs). Chiunque può aprire una pull request per aggiungere un nuovo club o aggiornare le informazioni esistenti. Trovi i dettagli nella nostra [guida ai contributi]({{ "/it/contribute/" | relative_url }}).
 
 ## Niente account, attento alla privacy
 

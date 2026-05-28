@@ -16,8 +16,8 @@ Board Game Clubs is community-maintained and hosted on GitHub. Anyone can add a 
 The easiest way to add your club is to fill in our form on GitHub. No technical knowledge required - just fill in the details and we'll do the rest.
 
 <div class="contribute-actions">
-  <a href="https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new?template=add-club.yml" class="contribute-btn contribute-btn--primary">+ Add a Club</a>
-  <a href="https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new?template=edit-club.yml" class="contribute-btn contribute-btn--secondary">Edit a Club</a>
+  <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-club.yml" class="contribute-btn contribute-btn--primary">+ Add a Club</a>
+  <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml" class="contribute-btn contribute-btn--secondary">Edit a Club</a>
 </div>
 
 ## Adding a Club via Pull Request
@@ -26,7 +26,7 @@ If you're comfortable with GitHub, you can add a club directly:
 
 ### 1. Create a new file
 
-[Create a new file](https://github.com/BoardGameClubs/BoardGameClubs_Web/new/main/_clubs) in the `_clubs/<country>/` folder on GitHub, where `<country>` is your ISO 3166-1 alpha-2 code in lowercase (`gb`, `de`, `at`, `ch`, `nl`, `be`, `it`, `pl`, `fr`, `dk`, `es`). Name the file using the format `your-club-name.md` (lowercase, hyphens instead of spaces). For names with diacritics, use ASCII-folded versions: `ä→ae`, `ö→oe`, `ü→ue`, `ß→ss`, `é→e`, etc. (e.g. `spieletreff-muenchen.md`).
+[Create a new file](https://github.com/BoardGameClubs/BoardGameClubs/new/main/_clubs) in the `_clubs/<country>/` folder on GitHub, where `<country>` is your ISO 3166-1 alpha-2 code in lowercase (`gb`, `de`, `at`, `ch`, `nl`, `be`, `it`, `pl`, `fr`, `dk`, `es`). Name the file using the format `your-club-name.md` (lowercase, hyphens instead of spaces). For names with diacritics, use ASCII-folded versions: `ä→ae`, `ö→oe`, `ü→ue`, `ß→ss`, `é→e`, etc. (e.g. `spieletreff-muenchen.md`).
 
 ### 2. Copy this template
 
@@ -122,14 +122,14 @@ Alternatively, you can use a direct URL to an image hosted elsewhere, e.g. `imag
 
 ### 6. Submit a pull request
 
-Commit your file and [open a pull request](https://github.com/BoardGameClubs/BoardGameClubs_Web/pulls). We'll review it and merge it in.
+Commit your file and [open a pull request](https://github.com/BoardGameClubs/BoardGameClubs/pulls). We'll review it and merge it in.
 
 ## Don't see your country?
 
-We currently list clubs in the United Kingdom, Germany, Austria, Switzerland, the Netherlands, Belgium, Italy, Poland, France, Denmark, and Spain. If your club is somewhere else, [open an issue](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new) — adding a new country is a small change and we're happy to do it.
+We currently list clubs in the United Kingdom, Germany, Austria, Switzerland, the Netherlands, Belgium, Italy, Poland, France, Denmark, and Spain. If your club is somewhere else, [open an issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new) — adding a new country is a small change and we're happy to do it.
 
 ## Updating an Existing Club
 
-Find the club's file in the [`_clubs/` folder on GitHub](https://github.com/BoardGameClubs/BoardGameClubs_Web/tree/main/_clubs), make your changes, and submit a pull request. Or just **[open an edit request](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new?template=edit-club.yml)** and we'll update it for you.
+Find the club's file in the [`_clubs/` folder on GitHub](https://github.com/BoardGameClubs/BoardGameClubs/tree/main/_clubs), make your changes, and submit a pull request. Or just **[open an edit request](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml)** and we'll update it for you.
 
 </div>

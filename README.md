@@ -14,7 +14,7 @@ A community-built directory powered by an interactive map, covering the UK and E
 [![License: MIT + Commons Clause](https://img.shields.io/badge/License-MIT%20%2B%20Commons%20Clause-green)](#license)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange)](https://boardgameclubs.org/contribute/)
 
-[Live Site](https://boardgameclubs.org) · [Add a Club](https://boardgameclubs.org/contribute/) · [Report a Bug](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new)
+[Live Site](https://boardgameclubs.org) · [Add a Club](https://boardgameclubs.org/contribute/) · [Report a Bug](https://github.com/BoardGameClubs/BoardGameClubs/issues/new)
 
 </div>
 
@@ -35,7 +35,7 @@ BoardGameClubs helps people find board game, RPG, wargaming, and TCG clubs near 
 
 See the [contribute page](https://boardgameclubs.org/contribute/) for a full guide on adding a new club or updating an existing listing.
 
-Not comfortable with GitHub? [Open an issue](https://github.com/BoardGameClubs/BoardGameClubs_Web/issues/new) with your club's details and we'll add it for you.
+Not comfortable with GitHub? [Open an issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new) with your club's details and we'll add it for you.
 
 ## Running locally
 
