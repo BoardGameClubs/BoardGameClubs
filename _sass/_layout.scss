@@ -102,6 +102,18 @@
       font-weight: 400;
       color: rgba(#fff, 0.75);
     }
+
+    @media (max-width: 429px) {
+      font-size: 1.05rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .site-title-tld {
+        font-size: 0.95rem;
+        line-height: 1;
+      }
+    }
   }
 
   .site-brand:hover .site-title {
@@ -562,10 +574,10 @@
   flex-direction: column;
 
   @media (max-width: $bp-lg - 1) {
-    height: calc(100vh - 55px);
+    height: calc(100vh - 64px);
     overflow: hidden;
     position: relative;
-    margin-top: 55px; // offset for fixed header
+    margin-top: 64px; // offset for fixed header
   }
 
   @media (min-width: $bp-lg) {
