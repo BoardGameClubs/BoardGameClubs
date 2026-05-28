@@ -4,6 +4,6 @@ layout: null
 {
   "schemaVersion": 1,
   "label": "Clubs Listed",
-  "message": "{{ site.clubs | size }}",
+  "message": "{{ site.clubs | where: "language", "en" | size }}",
   "color": "dd6b20"
 }
