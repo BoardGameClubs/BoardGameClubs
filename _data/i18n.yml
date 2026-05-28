@@ -156,6 +156,14 @@ country_pt:
   es: "Portugal"
   pl: "Portugalia"
 
+country_ie:
+  en: "Ireland"
+  de: "Irland"
+  it: "Irlanda"
+  fr: "Irlande"
+  es: "Irlanda"
+  pl: "Irlandia"
+
 footer_other_countries:
   en: "Other countries:"
   de: "Andere Länder:"
