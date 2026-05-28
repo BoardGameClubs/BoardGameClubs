@@ -58,6 +58,7 @@ body:
     id: time
     attributes:
       label: Time
+      description: Use whichever clock format is natural for your country.
       placeholder: e.g. 7:00pm - 10:00pm or 19:00 - 22:00
     validations:
       required: true
@@ -99,8 +100,8 @@ body:
   - type: input
     id: address
     attributes:
-      label: Venue address (including postcode)
-      placeholder: e.g. 12 High Street, Leeds, LS1 1AA
+      label: Venue address (including postcode / ZIP)
+      placeholder: Street, city, postcode
     validations:
       required: true
 
@@ -108,8 +109,8 @@ body:
     id: cost
     attributes:
       label: Cost
-      description: 'Examples: "Free", "£2", "£5 (First Session Free)", "€3", "€4,50 pro Person"'
-      placeholder: e.g. Free or £2 or €3
+      description: 'In your local currency. Examples: "Free", "£2", "£5 (first session free)", "€3", "5 zł", "20 kr", "CHF 5".'
+      placeholder: e.g. Free, £2, €3, 5 zł, 20 kr
     validations:
       required: true
 
