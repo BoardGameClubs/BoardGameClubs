@@ -8,7 +8,8 @@
   {% when "pl" %}{% assign url_prefix = "/pl" %}
   {% else %}{% assign url_prefix = "" %}
 {% endcase %}
-{% assign club_count = site.clubs | size %}
+{% assign canonical_clubs = site.clubs | where: "language", "en" %}
+{% assign club_count = canonical_clubs | size %}
 {% assign count_label = i18n.footer_club_count[lang] | replace: "%COUNT%", club_count %}
 <footer class="site-footer">
   <p class="footer-legal">&copy; {{ site.time | date: "%Y" }} {{ i18n.footer_copyright[lang] }} &middot; {{ i18n.footer_source_under[lang] }} <a href="{{ url_prefix | append: '/licence/' | relative_url }}">MIT + Commons Clause</a></p>
