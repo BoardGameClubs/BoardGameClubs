@@ -119,6 +119,13 @@
     window.GameClubCountries = {{ site.data.countries | jsonify }};
     window.GameClubI18n = {
       no_results:               {{ i18n.no_results[lang] | jsonify }},
+      no_results_title:         {{ i18n.no_results_title[lang] | jsonify }},
+      no_results_hint:          {{ i18n.no_results_hint[lang] | jsonify }},
+      no_clubs_in_country_title: {{ i18n.no_clubs_in_country_title[lang] | jsonify }},
+      no_clubs_in_country_hint: {{ i18n.no_clubs_in_country_hint[lang] | jsonify }},
+      add_club_tail_title:      {{ i18n.add_club_tail_title[lang] | jsonify }},
+      add_club_tail_hint:       {{ i18n.add_club_tail_hint[lang] | jsonify }},
+      nav_contribute:           {{ i18n.nav_contribute[lang] | jsonify }},
       showing_n_clubs:          {{ i18n.showing_n_clubs[lang] | jsonify }},
       showing_n_of_m:           {{ i18n.showing_n_of_m[lang] | jsonify }},
       sorted_by_nearest:        {{ i18n.sorted_by_nearest[lang] | jsonify }},

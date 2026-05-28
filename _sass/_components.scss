@@ -424,11 +424,132 @@
   }
 }
 
+// ─── Empty state (no results / no clubs in country) ───
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 1.25rem;
+  color: $color-text-light;
+
+  .empty-state-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba($color-accent, 0.1);
+    color: $color-accent;
+    margin-bottom: 1rem;
+
+    svg {
+      width: 26px;
+      height: 26px;
+      stroke-width: 1.75;
+    }
+  }
+
+  .empty-state-title {
+    margin: 0 0 0.4rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $color-text;
+  }
+
+  .empty-state-hint {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    max-width: 28ch;
+  }
+
+  .empty-state-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1.25rem;
+    padding: 0.55rem 1rem;
+    background: $color-accent;
+    color: #fff;
+    border-radius: $border-radius-sm;
+    font-size: 0.88rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s ease;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      background: darken($color-accent, 6%);
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
 // ─── Club cards ───
 .club-list {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+}
+
+// ─── "Add a club" tail card (shown after short result lists) ───
+.club-card-add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.6rem;
+  padding: 1.1rem 1.1rem;
+  background: rgba($color-accent, 0.04);
+  border: 1px dashed rgba($color-accent, 0.4);
+  border-radius: $border-radius;
+  text-decoration: none;
+  color: $color-text;
+  transition: background 0.15s ease, border-color 0.15s ease;
+
+  &:hover {
+    background: rgba($color-accent, 0.08);
+    border-color: $color-accent;
+    text-decoration: none;
+  }
+
+  .club-card-add-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: $color-accent;
+    color: #fff;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      stroke-width: 2.5;
+    }
+  }
+
+  .club-card-add-title {
+    font-weight: 600;
+    color: $color-accent;
+    font-size: 0.94rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .club-card-add-hint {
+    font-size: 0.82rem;
+    color: $color-text-light;
+    line-height: 1.4;
+  }
 }
 
 .club-card {

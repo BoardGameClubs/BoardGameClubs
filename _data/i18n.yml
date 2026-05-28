@@ -21,8 +21,12 @@ nav_about:
   de: "Über uns"
 
 nav_contribute:
-  en: "+ Add a Club"
-  de: "+ Club hinzufügen"
+  en: "Add a Club"
+  de: "Club hinzufügen"
+
+nav_contribute_short:
+  en: "Add"
+  de: "Neu"
 
 nav_country:
   en: "Country"
@@ -173,6 +177,30 @@ frequency_adhoc:
   de: "Unregelmäßig"
 
 # --- Club card / list ---
+no_results_title:
+  en: "No clubs match your search"
+  de: "Keine Clubs gefunden"
+
+no_results_hint:
+  en: "Try a different filter or search term."
+  de: "Versuche einen anderen Filter oder Suchbegriff."
+
+no_clubs_in_country_title:
+  en: "No clubs listed here yet"
+  de: "Hier sind noch keine Clubs gelistet"
+
+no_clubs_in_country_hint:
+  en: "Know one? Add the first club in %COUNTRY%."
+  de: "Kennst du einen? Füge den ersten Club in %COUNTRY% hinzu."
+
+add_club_tail_title:
+  en: "Know another club in %COUNTRY%?"
+  de: "Kennst du einen weiteren Club in %COUNTRY%?"
+
+add_club_tail_hint:
+  en: "Help grow the directory, it only takes a minute."
+  de: "Hilf, das Verzeichnis zu erweitern, es dauert nur eine Minute."
+
 no_results:
   en: "No clubs match your search. Try a different filter or search term."
   de: "Keine Clubs gefunden. Versuche einen anderen Filter oder Suchbegriff."

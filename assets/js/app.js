@@ -205,9 +205,39 @@
     if (!container) return;
 
     if (clubs.length === 0) {
-      var noResults = i18n.no_results || "No clubs match your search. Try a different filter or search term.";
+      var profileEmpty = getActiveCountry() || {};
+      var countryEmpty = search.allClubs.length === 0;
+      var title, hint, iconName;
+
+      if (countryEmpty) {
+        var countryKey = "country_" + String(profileEmpty.code || "").toLowerCase();
+        var countryName = i18n[countryKey] || profileEmpty.code || "";
+        title = i18n.no_clubs_in_country_title || "No clubs listed here yet";
+        hint = (i18n.no_clubs_in_country_hint || "Know one? Add the first club in %COUNTRY%.")
+                 .replace("%COUNTRY%", countryName);
+        iconName = "map-pinned";
+      } else {
+        title = i18n.no_results_title || "No clubs match your search";
+        hint = i18n.no_results_hint || "Try a different filter or search term.";
+        iconName = "search-x";
+      }
+
+      var langPrefix = window.GameClub && window.GameClub.language === "de" ? "/de" : "";
+      var contributeUrl = baseurl + langPrefix + "/contribute/";
+
       container.innerHTML =
-        '<p style="color:#555;text-align:center;padding:2rem 0;">' + escapeHtml(noResults) + '</p>';
+        '<div class="empty-state">' +
+          '<div class="empty-state-icon"><i data-lucide="' + iconName + '"></i></div>' +
+          '<p class="empty-state-title">' + escapeHtml(title) + '</p>' +
+          '<p class="empty-state-hint">' + escapeHtml(hint) + '</p>' +
+          (countryEmpty
+            ? '<a href="' + contributeUrl + '" class="empty-state-cta">' +
+                '<i data-lucide="plus"></i><span>' + escapeHtml(i18n.nav_contribute || "Add a Club") + '</span>' +
+              '</a>'
+            : '') +
+        '</div>';
+
+      if (window.lucide) lucide.createIcons();
       return;
     }
 
@@ -278,6 +308,25 @@
         );
       })
       .join("");
+
+    if (search.allClubs.length > 0) {
+      var countryKeyTail = "country_" + String(profile.code || "").toLowerCase();
+      var countryNameTail = i18n[countryKeyTail] || profile.code || "";
+      var tailTitle = (i18n.add_club_tail_title || "Know another club in %COUNTRY%?")
+                        .replace("%COUNTRY%", countryNameTail);
+      var tailHint = i18n.add_club_tail_hint || "Help grow the directory.";
+      var tailLangPrefix = window.GameClub && window.GameClub.language === "de" ? "/de" : "";
+      var tailContributeUrl = baseurl + tailLangPrefix + "/contribute/";
+
+      html +=
+        '<a class="club-card club-card-add" href="' + tailContributeUrl + '">' +
+          '<div class="club-card-add-icon"><i data-lucide="plus"></i></div>' +
+          '<div class="club-card-add-text">' +
+            '<div class="club-card-add-title">' + escapeHtml(tailTitle) + '</div>' +
+            '<div class="club-card-add-hint">' + escapeHtml(tailHint) + '</div>' +
+          '</div>' +
+        '</a>';
+    }
 
     container.innerHTML = html;
     if (window.lucide) lucide.createIcons();

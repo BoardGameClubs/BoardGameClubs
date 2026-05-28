@@ -155,7 +155,8 @@
 
     // Frame the map around a specific subset of clubs (e.g. just the active
     // country's clubs) even when the marker layer contains more. Falls back
-    // to country defaults when the subset is empty.
+    // to country defaults when the subset is empty or too small to make a
+    // meaningful bounds (a single pin would zoom in past the country view).
     fitToBounds: function (clubs) {
       var coords = [];
       for (var i = 0; i < clubs.length; i++) {
@@ -164,9 +165,9 @@
           coords.push([c.location.lat, c.location.lng]);
         }
       }
-      if (coords.length === 0) {
-        // No clubs to fit to — fall back to active-country defaults.
-        var profile = (window.GameClubCountry && window.GameClubCountry.getActive()) || null;
+      var profile = (window.GameClubCountry && window.GameClubCountry.getActive()) || null;
+      if (coords.length < 3) {
+        // 0, 1, or 2 clubs: country framing is more useful than a tight zoom.
         if (profile) this.recenterToCountry(profile);
         return;
       }

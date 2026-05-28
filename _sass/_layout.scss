@@ -151,13 +151,22 @@
     }
 
     &.nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
       margin-left: 0.4rem;
-      padding: 0.45rem 0.95rem;
+      padding: 0.45rem 0.85rem 0.45rem 0.7rem;
       background: #fff;
       color: $color-accent;
       font-weight: 600;
       border-radius: $border-radius-sm;
       box-shadow: none;
+
+      svg {
+        width: 16px;
+        height: 16px;
+        stroke-width: 2.5;
+      }
 
       &:hover {
         background: rgba(#fff, 0.92);
