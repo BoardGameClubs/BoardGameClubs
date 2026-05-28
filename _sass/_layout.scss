@@ -332,6 +332,10 @@
     }
   }
 
+  @keyframes nav-scroll-fade-out {
+    to { opacity: 0; }
+  }
+
   .nav-country-list {
     max-height: 320px;
     overflow-y: auto;
@@ -340,8 +344,9 @@
 
     // Fade hint at the bottom so it's clear the list scrolls. Sticky so it
     // stays pinned to the visible bottom edge as the user scrolls; the
-    // negative top margin pulls it back over the last row. Stops at 70%
-    // opacity so the next row peeks through as a "more below" hint.
+    // negative top margin pulls it back over the last row. Stops at 92%
+    // opacity so the next row peeks through. Scroll-driven opacity fades
+    // the hint out as the user nears the end of the list.
     &::after {
       content: "";
       display: block;
@@ -351,6 +356,12 @@
       margin-top: -40px;
       pointer-events: none;
       background: linear-gradient(to bottom, rgba(#fff, 0), rgba(#fff, 0.92));
+
+      @supports (animation-timeline: scroll()) {
+        animation: nav-scroll-fade-out linear both;
+        animation-timeline: scroll(nearest);
+        animation-range: 90% 100%;
+      }
     }
   }
 
