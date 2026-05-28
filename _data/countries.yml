@@ -412,6 +412,31 @@ lt:
   currency_symbol: "€"
   geocode_country_code: "LT"
 
+au:
+  code: "AU"
+  name_en: "Australia"
+  name_de: "Australien"
+  name_it: "Australia"
+  name_fr: "Australie"
+  name_es: "Australia"
+  name_pl: "Australia"
+  url_prefix: "/au"
+  map_center: [-25.3, 133.8]
+  map_zoom: 4
+  bounds:
+    lat: [-44.0, -9.5]
+    lng: [112.0, 154.5]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{4}$"
+  distance_options: [25, 50, 100, 250]
+  currency: "AUD"
+  currency_symbol: "$"
+  geocode_country_code: "AU"
+
 ie:
   code: "IE"
   name_en: "Ireland"
