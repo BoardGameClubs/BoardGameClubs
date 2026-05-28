@@ -61,6 +61,7 @@
         <a href="{{ es_url | relative_url }}" class="nav-lang-option{% if lang == 'es' %} is-active{% endif %}" hreflang="es">ES</a>
         <a href="{{ pl_url | relative_url }}" class="nav-lang-option{% if lang == 'pl' %} is-active{% endif %}" hreflang="pl">PL</a>
       </div>
+      <div class="nav-country-list">
       <button type="button" role="option" data-country="GB" class="nav-country-option" data-label="GB">
         <span class="nav-country-code">GB</span>
         <span class="nav-country-name">{{ i18n.country_gb[lang] }}</span>
@@ -113,6 +114,7 @@
         <span class="nav-country-code">IE</span>
         <span class="nav-country-name">{{ i18n.country_ie[lang] }}</span>
       </button>
+      </div>
     </div>
   </div>
   <a href="https://github.com/BoardGameClubs/BoardGameClubs" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub"><i data-lucide="github"></i></a>
