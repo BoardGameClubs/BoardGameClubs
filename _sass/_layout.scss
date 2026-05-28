@@ -210,6 +210,10 @@
       background: rgba(#fff, 0.15);
       color: #fff;
     }
+
+    @media (max-width: $bp-lg - 1) {
+      display: none;
+    }
   }
 
   // ─── Country selector in nav ───
