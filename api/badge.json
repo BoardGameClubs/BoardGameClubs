@@ -3,7 +3,7 @@ layout: null
 ---
 {
   "schemaVersion": 1,
-  "label": "clubs listed",
+  "label": "Clubs Listed",
   "message": "{{ site.clubs | size }}",
   "color": "dd6b20"
 }

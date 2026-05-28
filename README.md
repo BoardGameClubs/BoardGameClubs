@@ -2,7 +2,7 @@
 
 <img src="assets/meeple-map-icon-orange.svg" alt="BoardGameClubs" width="120">
 
-# BoardGameClubs
+# boardgameclubs.org
 
 **Find your nearest board game club.**
 
