@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspiel-gruppe-herzogenaurach/
 name: "Brettspiel-Gruppe Herzogenaurach"
 days: ["Various"]
 time: ""

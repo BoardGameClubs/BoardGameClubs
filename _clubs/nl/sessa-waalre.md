@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/sessa-waalre/
 name: "Sessa Waalre"
 days: ["Various"]
 time: ""

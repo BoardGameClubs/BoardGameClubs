@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/schoeneberger-spielegruppe-berlin/
 name: "Schöneberger Spielegruppe (Berlin)"
 days: ["Tuesday"]
 time: "18:00:00 - 23:00:00 Uhr"

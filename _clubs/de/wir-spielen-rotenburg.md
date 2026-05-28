@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/wir-spielen-rotenburg/
 name: "W!R spielen (K!R Rotenburg e.V.)"
 days: ["Friday"]
 time: ""

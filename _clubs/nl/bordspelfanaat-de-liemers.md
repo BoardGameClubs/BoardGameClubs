@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/bordspelfanaat-de-liemers/
 name: "Bordspelfanaat De Liemers"
 days: ["Various"]
 time: ""

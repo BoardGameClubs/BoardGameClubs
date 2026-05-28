@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/vorderpfalz-spielt/
 name: "Vorderpfalz spielt!"
 days: ["Various"]
 time: ""

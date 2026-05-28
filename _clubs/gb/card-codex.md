@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/card-codex/
 name: "Card Codex"
 type: ["TCG"]
 days: ["Sunday"]

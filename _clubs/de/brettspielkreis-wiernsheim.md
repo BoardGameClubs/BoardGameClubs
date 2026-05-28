@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielkreis-wiernsheim/
 name: "Brettspielkreis Wiernsheim"
 days: ["Thursday"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/leven-gaming-society/
 name: "Leven Gaming Society"
 type: ["Board Games", "RPG", "Wargames", "TCG"]
 days: ["Saturday"]

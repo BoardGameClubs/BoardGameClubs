@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/headingley-games-club/
 name: "Headingley Games Club"
 days: ["Thursday"]
 time: "Doors 6:30pm, games from 7:00pm, finish ~10:30pm"

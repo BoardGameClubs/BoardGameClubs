@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/bordspellenclub-almere/
 name: "Bordspellenclub Almere"
 days: ["Various"]
 time: ""

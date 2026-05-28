@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/phoenix-roma/
 name: "The Phoenix - Giochi da Tavolo Roma"
 type: ["Board Games"]
 days: ["Various"]

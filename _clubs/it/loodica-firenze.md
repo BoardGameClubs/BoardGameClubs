@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/loodica-firenze/
 name: "Loodica"
 type: ["Board Games"]
 days: ["Tuesday"]

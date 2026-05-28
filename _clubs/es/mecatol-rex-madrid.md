@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/mecatol-rex-madrid/
 name: "Mecatol Rex"
 type: ["Board Games"]
 days: ["Various"]

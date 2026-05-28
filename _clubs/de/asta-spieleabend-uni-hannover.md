@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/asta-spieleabend-uni-hannover/
 name: "AStA-Spieleabend Uni Hannover"
 days: ["Friday"]
 time: "19:30 Uhr"

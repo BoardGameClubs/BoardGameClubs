@@ -1,6 +1,5 @@
 ---
 country: "FR"
-permalink: /fr/clubs/jouatout-merignac/
 name: "Jouatout"
 type: ["Board Games"]
 days: ["Various"]

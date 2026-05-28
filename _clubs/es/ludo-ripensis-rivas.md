@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/ludo-ripensis-rivas/
 name: "Ludo Ripensis"
 type: ["Board Games"]
 days: ["Various"]

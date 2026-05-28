@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/furzedown-board-games/
 name: "Furzedown Board Games"
 days: ["Monday"]
 time: "7:00pm - 10:00pm"

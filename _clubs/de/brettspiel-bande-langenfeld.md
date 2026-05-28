@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspiel-bande-langenfeld/
 name: "Brettspiel Bande (Langenfeld)"
 days: ["Tuesday", "Saturday"]
 time: "12:00 - 22:00 Uhr"

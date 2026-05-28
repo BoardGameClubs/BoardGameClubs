@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/wargames-assocation-of-reading/
 name: "Wargames Assocation of Reading"
 type: ["Board Games", "Wargames"]
 days: ["Wednesday"]

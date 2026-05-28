@@ -1,6 +1,5 @@
 ---
 country: "CH"
-permalink: /ch/clubs/spielegruppe-winterthur/
 name: "Spielegruppe Winterthur"
 days: ["Thursday"]
 time: "7:00pm"

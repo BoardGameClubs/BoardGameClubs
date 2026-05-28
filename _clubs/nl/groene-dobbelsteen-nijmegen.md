@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/groene-dobbelsteen-nijmegen/
 name: "Groene Dobbelsteen Nijmegen"
 days: ["Various"]
 time: ""

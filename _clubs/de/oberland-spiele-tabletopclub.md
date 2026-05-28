@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/oberland-spiele-tabletopclub/
 name: "Oberland Spiele- und Tabletopclub"
 days: ["Various"]
 time: ""

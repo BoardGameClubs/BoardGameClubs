@@ -29,6 +29,18 @@
     return "/" + lang;
   }
 
+  // Rewrite "/clubs/<slug>/" to "/<lang>/clubs/<slug>/" so clicking a
+  // club from a localised home page stays on that language. Every club
+  // exists at every language URL (see _plugins/club_language_clones.rb).
+  function localiseClubUrl(url) {
+    var prefix = langPrefixForCurrentPage();
+    if (!prefix) return url;
+    if (!url) return url;
+    var clubsIdx = url.indexOf("/clubs/");
+    if (clubsIdx === -1) return url;
+    return url.slice(0, clubsIdx) + prefix + url.slice(clubsIdx);
+  }
+
   function init() {
     activeCountry = getActiveCountry();
     map = window.GameClubMap.init(activeCountry);
@@ -293,7 +305,7 @@
 
         return (
           '<a class="club-card" href="' +
-          escapeHtml(club.url) +
+          escapeHtml(localiseClubUrl(club.url)) +
           '">' +
           '<div class="club-card-body">' +
           icon +
@@ -505,6 +517,8 @@
     div.appendChild(document.createTextNode(text));
     return div.innerHTML;
   }
+
+  window.GameClubApp = { localiseClubUrl: localiseClubUrl };
 
   function initSidebarScroll() {
     var sidebar = document.getElementById("sidebar");

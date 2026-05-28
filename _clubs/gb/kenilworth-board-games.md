@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/kenilworth-board-games/
 name: "Kenilworth Board Games"
 days: ["Tuesday"]
 time: "7:00pm"

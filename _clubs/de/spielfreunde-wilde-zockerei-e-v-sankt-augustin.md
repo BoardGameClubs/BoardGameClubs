@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielfreunde-wilde-zockerei-e-v-sankt-augustin/
 name: "Spielfreunde \"Wilde Zockerei e.V.\" (Sankt Augustin)"
 days: ["Thursday"]
 time: ""

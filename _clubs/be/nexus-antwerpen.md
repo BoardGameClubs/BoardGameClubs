@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/nexus-antwerpen/
 name: "Nexus Antwerpen"
 days: ["Various"]
 time: ""

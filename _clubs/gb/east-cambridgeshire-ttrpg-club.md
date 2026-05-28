@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/east-cambridgeshire-ttrpg-club/
 name: "East Cambridgeshire TTRPG Club"
 type: ["RPG"]
 days: ["Thursday"]

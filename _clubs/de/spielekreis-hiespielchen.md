@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielekreis-hiespielchen/
 name: "Spielekreis Hiespielchen"
 days: ["Various"]
 time: ""

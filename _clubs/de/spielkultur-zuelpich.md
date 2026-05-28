@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielkultur-zuelpich/
 name: "Spielkultur Zülpich"
 days: ["Wednesday", "Sunday"]
 time: ""

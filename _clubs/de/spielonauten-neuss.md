@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielonauten-neuss/
 name: "Spielonauten (Neuss)"
 days: ["Monday"]
 time: "18:30 Uhr"

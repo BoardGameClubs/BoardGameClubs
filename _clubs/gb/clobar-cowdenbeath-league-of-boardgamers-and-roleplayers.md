@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/clobar-cowdenbeath-league-of-boardgamers-and-roleplayers/
 name: "CLoBaR (Cowdenbeath League of Boardgamers and Roleplayers)"
 type: ["Board Games", "RPG"]
 days: ["Wednesday", "Saturday"]

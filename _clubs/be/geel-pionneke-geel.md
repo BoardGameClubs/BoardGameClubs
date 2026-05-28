@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/geel-pionneke-geel/
 name: "Geel Pionneke Geel"
 days: ["Various"]
 time: ""

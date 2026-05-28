@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brander-brettspielabend/
 name: "Brander Brettspielabend"
 days: ["Thursday"]
 time: ""

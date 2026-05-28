@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/dice-club-cottbus/
 name: "Dice Club (Cottbus)"
 days: ["Sunday"]
 time: "15:30 Uhr"

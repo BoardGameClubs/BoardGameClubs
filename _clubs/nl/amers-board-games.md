@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/amers-board-games/
 name: "Amers-board Games"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/dietzenbach-spielt/
 name: "Dietzenbach spielt"
 days: ["Saturday"]
 time: "13:00 - 19:00 Uhr"

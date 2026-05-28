@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/pergioco-ragusa/
 name: "peRGioco"
 type: ["Board Games"]
 days: ["Various"]

@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenclub-dieren/
 name: "Spellenclub Dieren"
 days: ["Various"]
 time: ""

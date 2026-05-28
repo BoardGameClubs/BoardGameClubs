@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spelhalla-ranst/
 name: "Spelhalla Ranst"
 days: ["Various"]
 time: ""

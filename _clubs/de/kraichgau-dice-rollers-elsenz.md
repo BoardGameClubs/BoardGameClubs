@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/kraichgau-dice-rollers-elsenz/
 name: "Kraichgau Dice Rollers (Elsenz)"
 days: ["Saturday"]
 time: "13:00 - 22:00 Uhr"

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielgefaehrten-duelmen/
 name: "Brettspielgefährten (Dülmen)"
 days: ["Tuesday", "Saturday"]
 time: ""

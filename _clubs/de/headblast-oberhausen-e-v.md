@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/headblast-oberhausen-e-v/
 name: "Headblast Oberhausen e.V."
 days: ["Monday", "Thursday"]
 time: ""

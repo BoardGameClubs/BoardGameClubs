@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/hochschulgruppe-gaming-erfurt/
 name: "Hochschulgruppe Gaming (Erfurt)"
 days: ["Sunday"]
 time: ""

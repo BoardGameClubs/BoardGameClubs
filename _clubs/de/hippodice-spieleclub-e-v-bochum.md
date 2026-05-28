@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/hippodice-spieleclub-e-v-bochum/
 name: "Hippodice Spieleclub e.V. (Bochum)"
 days: ["Friday"]
 time: "19:00 Uhr"

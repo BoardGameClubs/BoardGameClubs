@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielerclub-worms/
 name: "Spielerclub Worms"
 days: ["Friday"]
 time: "19:00 - 1:00 Uhr"

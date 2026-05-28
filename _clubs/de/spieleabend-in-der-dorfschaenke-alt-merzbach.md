@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleabend-in-der-dorfschaenke-alt-merzbach/
 name: "Spieleabend in der Dorfschänke (Alt Merzbach)"
 days: ["Various"]
 time: ""

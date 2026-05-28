@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/3th-tabletoptreff-hannover/
 name: "3TH - TableTopTreff Hannover e.V."
 type: ["Board Games", "RPG", "Wargames", "TCG"]
 days: ["Various"]

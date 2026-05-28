@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/clandestino-alcobendas/
 name: "Clandestino"
 type: ["Board Games"]
 days: ["Various"]

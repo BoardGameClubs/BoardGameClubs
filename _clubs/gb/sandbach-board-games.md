@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/sandbach-board-games/
 name: "Sandbach Board Games"
 days: ["Saturday"]
 time: ""

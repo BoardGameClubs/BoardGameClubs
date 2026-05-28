@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ali-baba-spieleclub-e-v-chemnitz/
 name: "Ali Baba Spieleclub e.V.  Chemnitz"
 days: ["Tuesday"]
 time: ""

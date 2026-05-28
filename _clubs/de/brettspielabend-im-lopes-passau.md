@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielabend-im-lopes-passau/
 name: "Brettspielabend im  Lopes (Passau)"
 days: ["Wednesday"]
 time: ""

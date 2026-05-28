@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spelmaeckers-beveren-leie/
 name: "Spelmaeckers Beveren-Leie"
 days: ["Various"]
 time: ""

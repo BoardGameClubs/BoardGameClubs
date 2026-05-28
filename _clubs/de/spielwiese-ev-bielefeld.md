@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielwiese-ev-bielefeld/
 name: "Spielwiese e.V. Bielefeld"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/welshpool-board-games/
 name: "Welshpool Board Games"
 days: ["Monday"]
 time: "6:30pm - 10:00pm"

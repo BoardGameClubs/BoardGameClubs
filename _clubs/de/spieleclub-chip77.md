@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleclub-chip77/
 name: "Spieleclub Chip77"
 days: ["Saturday", "Sunday"]
 time: ""

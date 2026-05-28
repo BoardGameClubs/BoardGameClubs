@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-playtime/
 name: "Spieletreff Playtime"
 days: ["Various"]
 time: ""

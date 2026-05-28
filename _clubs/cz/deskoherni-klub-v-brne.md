@@ -1,6 +1,5 @@
 ---
 country: "CZ"
-permalink: /cz/clubs/deskoherni-klub-v-brne/
 name: "Deskoherní klub v Brně"
 type: ["Board Games"]
 days: ["Various"]

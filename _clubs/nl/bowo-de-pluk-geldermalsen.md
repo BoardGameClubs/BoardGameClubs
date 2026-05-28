@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/bowo-de-pluk-geldermalsen/
 name: "BoWo, De Pluk, Geldermalsen"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/ludoteca-di-como/
 name: "Ludoteca di Como - Inn of The Last Home"
 type: ["Board Games"]
 days: ["Various"]

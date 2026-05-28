@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/burley-board-game-hub/
 name: "Burley Board Game Hub"
 days: ["Various"]
 time: "Afternoons"

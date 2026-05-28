@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/midlothian-boardgamer/
 name: "Midlothian Boardgamers"
 type: ["Board Games", "Wargames", "RPG"]
 days: ["Saturday"]

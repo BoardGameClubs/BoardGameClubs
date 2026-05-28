@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/peter-pan-citta-di-castello/
 name: "Peter Pan"
 type: ["Board Games"]
 days: ["Various"]

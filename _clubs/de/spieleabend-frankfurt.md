@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleabend-frankfurt/
 name: "Frankfurter Spieleabend"
 type: ["Board Games"]
 days: ["Thursday"]

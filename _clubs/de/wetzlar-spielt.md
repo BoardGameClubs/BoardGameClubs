@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/wetzlar-spielt/
 name: "Wetzlar spielt"
 days: ["Wednesday"]
 time: ""

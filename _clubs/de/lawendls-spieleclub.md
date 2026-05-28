@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/lawendls-spieleclub/
 name: "Lawendls Spieleclub"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielgesellschaft-buehl/
 name: "Spielgesellschaft Bühl"
 days: ["Various"]
 time: ""

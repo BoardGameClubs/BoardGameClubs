@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/dice-hunters-e-v-heroldsberg/
 name: "Dice-Hunters e.V. (Heroldsberg)"
 days: ["Friday"]
 time: "19:00 Uhr"

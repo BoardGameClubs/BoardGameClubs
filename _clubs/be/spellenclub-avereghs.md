@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spellenclub-avereghs/
 name: "Spellenclub Avereghs"
 days: ["Various"]
 time: ""

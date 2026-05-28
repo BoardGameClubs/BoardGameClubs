@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/hitchin-letchworth-board-games-club/
 name: "Hitchin + Letchworth Board Games Club"
 days: ["Thursday"]
 time: "7pm - 11pm"

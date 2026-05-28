@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/d6-den/
 name: "D6 Den"
 days: ["Tuesday", "Thursday"]
 time: "4:00pm - 9:00pm"

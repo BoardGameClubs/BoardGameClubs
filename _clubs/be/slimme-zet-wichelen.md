@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/slimme-zet-wichelen/
 name: "Slimme Zet Wichelen"
 days: ["Various"]
 time: ""

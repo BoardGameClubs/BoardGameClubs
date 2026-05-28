@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/arena-dei-giochi-montecchio/
 name: "L'Arena Dei Giochi"
 type: ["Board Games"]
 days: ["Various"]

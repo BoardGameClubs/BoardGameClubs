@@ -1,6 +1,5 @@
 ---
 country: "IE"
-permalink: /ie/clubs/tralee-board-knights/
 name: "Tralee Board Knights"
 type: ["Board Games"]
 days: ["Thursday"]

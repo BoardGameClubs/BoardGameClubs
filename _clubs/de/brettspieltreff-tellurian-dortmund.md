@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieltreff-tellurian-dortmund/
 name: "Brettspieltreff Tellurian (Dortmund)"
 days: ["Wednesday", "Thursday"]
 time: ""

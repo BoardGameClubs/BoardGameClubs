@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/thantos-leidschendam/
 name: "Thanatos Leidschendam"
 days: ["Various"]
 time: ""

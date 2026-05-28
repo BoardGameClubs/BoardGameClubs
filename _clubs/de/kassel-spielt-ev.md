@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/kassel-spielt-ev/
 name: "Kassel spielt e.V."
 days: ["Various"]
 time: ""

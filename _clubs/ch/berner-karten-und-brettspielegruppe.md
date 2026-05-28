@@ -1,6 +1,5 @@
 ---
 country: "CH"
-permalink: /ch/clubs/berner-karten-und-brettspielegruppe/
 name: "Berner Karten und Brettspielegruppe"
 type: ["Board Games"]
 days: ["Various"]

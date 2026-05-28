@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/mammoeten-zwijnaarde/
 name: "Mammoeten Zwijnaarde"
 days: ["Various"]
 time: ""

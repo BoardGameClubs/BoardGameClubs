@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/abenteurergilde-siegen/
 name: "Abenteurergilde Siegen"
 days: ["Various"]
 time: ""

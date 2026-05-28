@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/highland-tabletop/
 name: "Highland Tabletop"
 type: ["Board Games", "RPG"]
 days: ["Various"]

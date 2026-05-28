@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/worst-case-saenario-wormer/
 name: "Worst Case Saenario, Wormer"
 days: ["Various"]
 time: ""

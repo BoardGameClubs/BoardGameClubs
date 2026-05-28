@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/gielsdorf-spielt-alfter/
 name: "Gielsdorf spielt (Alfter)"
 days: ["Wednesday"]
 time: "18:00 - 22:00 Uhr"

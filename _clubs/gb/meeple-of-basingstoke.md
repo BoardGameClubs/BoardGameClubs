@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/meeple-of-basingstoke/
 name: "Meeple of Basingstoke"
 days: ["Saturday"]
 time: "6:00pm - 11:00pm"

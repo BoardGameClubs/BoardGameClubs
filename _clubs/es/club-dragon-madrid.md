@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/club-dragon-madrid/
 name: "Club Dragón"
 type: ["Board Games"]
 days: ["Various"]

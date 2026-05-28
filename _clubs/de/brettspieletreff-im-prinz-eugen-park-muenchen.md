@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieletreff-im-prinz-eugen-park-muenchen/
 name: "Brettspieletreff im Prinz Eugen Park (München)"
 days: ["Tuesday", "Thursday"]
 time: "19:30 Uhr"

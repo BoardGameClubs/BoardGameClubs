@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/riverside-vineyard-table-top-games/
 name: "Riverside Vineyard Table Top Games"
 days: ["Friday"]
 time: "7:00pm - 9:30pm"

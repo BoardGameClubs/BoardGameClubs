@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/longrest-boardgame-bar-cafe/
 name: "Longrest Boardgame Bar + Cafe"
 days: ["Monday", "Thursday"]
 time: ""

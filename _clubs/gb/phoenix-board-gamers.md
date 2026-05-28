@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/phoenix-board-gamers/
 name: "Phoenix Board Gamers"
 type: ["Board Games", "Wargames", "TCG"]
 days: ["Friday"]

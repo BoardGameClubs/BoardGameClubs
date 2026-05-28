@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/pietjesbak-mariakerke/
 name: "Pietjesbak Mariakerke"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/bsc-neuenbeken/
 name: "BSC Neuenbeken"
 days: ["Various"]
 time: ""

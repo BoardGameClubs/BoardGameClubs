@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieltreff-bruehl-beurbarung-denzlingen/
 name: "Brettspieltreff Brühl-Beurbarung (Denzlingen)"
 days: ["Thursday"]
 time: ""

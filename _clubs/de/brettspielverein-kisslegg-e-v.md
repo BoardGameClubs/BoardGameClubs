@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielverein-kisslegg-e-v/
 name: "Brettspielverein Kißlegg e.V."
 days: ["Tuesday"]
 time: ""

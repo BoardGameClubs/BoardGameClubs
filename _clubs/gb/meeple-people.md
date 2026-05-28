@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/meeple-people/
 name: "Meeple People"
 type: ["Board Games", "TCG"]
 days: ["Saturday"]

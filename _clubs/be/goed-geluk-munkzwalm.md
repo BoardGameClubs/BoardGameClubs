@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/goed-geluk-munkzwalm/
 name: "Goed Geluk Munkzwalm"
 days: ["Various"]
 time: ""

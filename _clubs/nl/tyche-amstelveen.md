@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/tyche-amstelveen/
 name: "Tyche Amstelveen"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieltreff-kreis-kleve/
 name: "Brettspieltreff Kreis Kleve"
 days: ["Saturday"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "PT"
-permalink: /pt/clubs/lisbon-lets-play/
 name: "Lisbon Let's Play"
 type: ["Board Games"]
 days: ["Various"]

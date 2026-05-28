@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/civitas-mattiacorum/
 name: "Civitas Mattiacorum"
 days: ["Tuesday", "Sunday"]
 time: ""

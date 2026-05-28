@@ -1,6 +1,5 @@
 ---
 country: "IE"
-permalink: /ie/clubs/windmill-players-guild-skerries/
 name: "The Windmill Players' Guild"
 type: ["Board Games"]
 days: ["Various"]

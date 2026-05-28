@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/deepcar-and-stocksbridge-table-top-games-club/
 name: "Deepcar and Stocksbridge Table-Top Games Club"
 type: ["Board Games", "RPG"]
 days: ["Wednesday"]

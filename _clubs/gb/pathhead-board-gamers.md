@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/pathhead-board-gamers/
 name: "Pathhead Board Gamers"
 type: ["Board Games"]
 days: ["Friday"]

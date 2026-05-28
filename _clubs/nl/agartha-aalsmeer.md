@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/agartha-aalsmeer/
 name: "Agartha Aalsmeer"
 days: ["Various"]
 time: ""

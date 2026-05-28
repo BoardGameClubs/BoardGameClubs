@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/club-diogenes-tarragona/
 name: "Club Diògenes Tarragona"
 type: ["Board Games"]
 days: ["Tuesday", "Wednesday", "Friday"]

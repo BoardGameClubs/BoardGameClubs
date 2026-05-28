@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/die-spielbruecke-e-v-marburg/
 name: "Die Spielbrücke e. V. (Marburg)"
 days: ["Wednesday"]
 time: "19:00 Uhr"

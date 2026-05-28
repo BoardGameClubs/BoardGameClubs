@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielen-koeln/
 name: "BrettspieleN (Köln)"
 days: ["Tuesday"]
 time: ""

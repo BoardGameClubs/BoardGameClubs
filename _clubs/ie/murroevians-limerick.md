@@ -1,6 +1,5 @@
 ---
 country: "IE"
-permalink: /ie/clubs/murroevians-limerick/
 name: "Murroevians"
 type: ["Board Games"]
 days: ["Thursday"]

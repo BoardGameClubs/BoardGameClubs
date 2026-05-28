@@ -1,6 +1,5 @@
 ---
 country: "CZ"
-permalink: /cz/clubs/district5/
 name: "District5"
 type: ["Board Games"]
 days: ["Various"]

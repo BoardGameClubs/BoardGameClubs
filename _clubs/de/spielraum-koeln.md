@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielraum-koeln/
 name: "Spielraum Köln"
 type: ["Board Games"]
 days: ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/apsley-roleplaying-club/
 name: "Apsley Roleplaying Club"
 type: ["RPG"]
 days: ["Thursday"]

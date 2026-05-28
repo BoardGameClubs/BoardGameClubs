@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/associazione-ludica-romana/
 name: "Associazione Ludica Romana"
 type: ["Board Games"]
 days: ["Various"]

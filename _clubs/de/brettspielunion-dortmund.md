@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielunion-dortmund/
 name: "BrettspielUnion Dortmund"
 days: ["Friday"]
 time: "19:00 Uhr"

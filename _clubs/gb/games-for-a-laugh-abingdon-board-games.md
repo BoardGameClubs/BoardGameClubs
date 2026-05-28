@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/games-for-a-laugh-abingdon-board-games/
 name: "Games for a Laugh (Abingdon Board Games)"
 days: ["Tuesday"]
 time: "7:30pm"

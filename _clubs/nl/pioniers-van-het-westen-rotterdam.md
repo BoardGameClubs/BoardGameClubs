@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/pioniers-van-het-westen-rotterdam/
 name: "Pioniers van het Westen Rotterdam"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/grimsby-wargames-society/
 name: "Grimsby Wargames Society"
 type: ["Board Games", "Wargames"]
 days: ["Thursday"]

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/augsburger-spielespieler-e-v/
 name: "Augsburger Spielespieler e.V."
 days: ["Tuesday", "Wednesday", "Sunday"]
 time: "19:45 Uhr"

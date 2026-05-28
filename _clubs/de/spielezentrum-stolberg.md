@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielezentrum-stolberg/
 name: "Spielezentrum (Evangelische Kirchengemeinde Stolberg)"
 days: ["Various"]
 time: ""

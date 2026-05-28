@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/el-dado-enroscado-sant-andreu/
 name: "El Dado Enroscado"
 type: ["Board Games"]
 days: ["Various"]

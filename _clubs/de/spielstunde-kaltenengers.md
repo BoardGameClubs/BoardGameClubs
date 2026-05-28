@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielstunde-kaltenengers/
 name: "Spielstunde (Kaltenengers)"
 days: ["Wednesday"]
 time: ""

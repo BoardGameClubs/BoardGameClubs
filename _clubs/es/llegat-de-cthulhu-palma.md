@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/llegat-de-cthulhu-palma/
 name: "Llegat de Cthulhu"
 type: ["Board Games"]
 days: ["Wednesday"]

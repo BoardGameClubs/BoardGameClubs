@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ali-baba-spieleclub-e-v-koeln/
 name: "Ali Baba Spieleclub e.V.  Köln"
 days: ["Wednesday"]
 time: "19:00 Uhr"

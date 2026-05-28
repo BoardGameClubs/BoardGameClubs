@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/cofradia-del-dragon-madrid/
 name: "Cofradía del Dragón"
 type: ["Board Games"]
 days: ["Various"]

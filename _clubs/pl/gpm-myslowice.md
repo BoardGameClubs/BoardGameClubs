@@ -1,6 +1,5 @@
 ---
 country: "PL"
-permalink: /pl/clubs/gpm-myslowice/
 name: "GPM - Gry Planszowe Mysłowice"
 type: ["Board Games"]
 days: ["Various"]

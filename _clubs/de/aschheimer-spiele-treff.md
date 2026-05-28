@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/aschheimer-spiele-treff/
 name: "Aschheimer Spiele-Treff"
 days: ["Tuesday"]
 time: ""

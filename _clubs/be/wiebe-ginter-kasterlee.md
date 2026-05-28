@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/wiebe-ginter-kasterlee/
 name: "Wiebe Ginter, Kasterlee"
 days: ["Various"]
 time: ""

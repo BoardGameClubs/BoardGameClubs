@@ -1,6 +1,5 @@
 ---
 country: "PL"
-permalink: /pl/clubs/klub-gier-planszowych-graczyn/
 name: "Klub Gier Planszowych \"Graczyn\""
 days: ["Various"]
 time: ""

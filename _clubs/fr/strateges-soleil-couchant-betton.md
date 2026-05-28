@@ -1,6 +1,5 @@
 ---
 country: "FR"
-permalink: /fr/clubs/strateges-soleil-couchant-betton/
 name: "Les stratèges du soleil couchant"
 type: ["Board Games"]
 days: ["Various"]

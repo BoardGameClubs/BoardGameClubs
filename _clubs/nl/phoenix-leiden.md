@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/phoenix-leiden/
 name: "Phoenix Leiden"
 days: ["Various"]
 time: ""

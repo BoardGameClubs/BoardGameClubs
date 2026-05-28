@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/tring-wargames-club/
 name: "Tring Wargames Club"
 type: ["Wargames"]
 days: ["Friday"]

@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/playtime-borgerhout/
 name: "Playtime Borgerhout"
 days: ["Various"]
 time: ""

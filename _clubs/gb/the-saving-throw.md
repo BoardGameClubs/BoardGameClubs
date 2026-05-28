@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/the-saving-throw/
 name: "The Saving Throw"
 days: ["Monday", "Tuesday"]
 time: "6:30pm - 10:15pm"

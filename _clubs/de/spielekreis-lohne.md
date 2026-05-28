@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielekreis-lohne/
 name: "Spielekreis Lohne"
 days: ["Thursday"]
 time: "19:30"

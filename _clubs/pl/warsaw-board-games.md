@@ -1,6 +1,5 @@
 ---
 country: "PL"
-permalink: /pl/clubs/warsaw-board-games/
 name: "Warsaw Board Games"
 type: ["Board Games"]
 days: ["Various"]

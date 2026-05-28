@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spelgroeve-aalst/
 name: "Spelgroeve Aalst"
 days: ["Various"]
 time: ""

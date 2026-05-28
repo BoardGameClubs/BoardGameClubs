@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/ely-games-day/
 name: "Ely Games Day"
 days: ["Saturday"]
 time: ""

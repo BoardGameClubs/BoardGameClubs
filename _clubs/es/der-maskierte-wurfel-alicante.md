@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/der-maskierte-wurfel-alicante/
 name: "Der Maskierte Würfel"
 type: ["Board Games"]
 days: ["Various"]

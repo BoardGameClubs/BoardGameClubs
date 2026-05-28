@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/phantastische-gemeinschaft-rodgau/
 name: "Phantastische Gemeinschaft Rodgau e.V."
 days: ["Saturday", "Sunday"]
 time: ""

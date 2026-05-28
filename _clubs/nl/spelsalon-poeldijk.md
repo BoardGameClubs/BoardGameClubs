@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spelsalon-poeldijk/
 name: "Spelsalon Poeldijk"
 days: ["Various"]
 time: ""

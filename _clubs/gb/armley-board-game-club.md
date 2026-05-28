@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/armley-board-game-club/
 name: "Armley Board Game Club"
 type: ["Board Games", "RPG"]
 days: ["Saturday"]

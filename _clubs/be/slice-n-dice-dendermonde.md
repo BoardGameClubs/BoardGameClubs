@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/slice-n-dice-dendermonde/
 name: "Slice n Dice Dendermonde"
 days: ["Various"]
 time: ""

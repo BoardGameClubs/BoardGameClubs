@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/york-garrison-wargaming-club/
 name: "York Garrison Wargaming Club"
 type: ["Wargames"]
 days: ["Wednesday"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/hophack-rpg-group/
 name: "Hophack RPG Group"
 type: ["RPG"]
 days: ["Saturday"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/board-together/
 name: "Board Together"
 days: ["Friday"]
 time: "6:30pm"

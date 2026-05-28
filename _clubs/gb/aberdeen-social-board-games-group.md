@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/aberdeen-social-board-games-group/
 name: "Aberdeen Social Board Games Group"
 days: ["Sunday"]
 time: "6:00pm - 9:30pm"

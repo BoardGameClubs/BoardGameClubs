@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/hochschulgruppe-spieleabend-paderborn/
 name: "Hochschulgruppe Spieleabend Paderborn"
 days: ["Wednesday"]
 time: ""

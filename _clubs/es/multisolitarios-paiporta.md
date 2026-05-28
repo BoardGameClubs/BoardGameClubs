@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/multisolitarios-paiporta/
 name: "Para Multisolitarios no estamos"
 type: ["Board Games"]
 days: ["Various"]

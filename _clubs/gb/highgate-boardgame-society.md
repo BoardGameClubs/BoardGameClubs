@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/highgate-boardgame-society/
 name: "Highgate Boardgame Society"
 days: ["Monday"]
 time: "7:30pm"

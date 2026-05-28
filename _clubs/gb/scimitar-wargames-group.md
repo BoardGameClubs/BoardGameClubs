@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/scimitar-wargames-group/
 name: "Scimitar Wargames Group"
 type: ["Board Games", "Wargames"]
 days: ["Wednesday"]

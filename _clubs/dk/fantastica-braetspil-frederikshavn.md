@@ -1,6 +1,5 @@
 ---
 country: "DK"
-permalink: /dk/clubs/fantastica-braetspil-frederikshavn/
 name: "Fantastica Brætspil Frederikshavn"
 type: ["Board Games"]
 days: ["Tuesday"]

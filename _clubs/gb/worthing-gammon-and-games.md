@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/worthing-gammon-and-games/
 name: "Worthing 'Gammon & Games"
 type: ["Board Games"]
 days: ["Monday"]

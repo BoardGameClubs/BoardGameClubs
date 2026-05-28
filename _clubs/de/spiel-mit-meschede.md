@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spiel-mit-meschede/
 name: "Spiel mit! Spielertreff Meschede"
 days: ["Wednesday"]
 time: "19:00 - 22:30"

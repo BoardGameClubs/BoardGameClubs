@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/birmingham-central-role-players-bcrp/
 name: "Birmingham Central Role Players (BCRP)"
 type: ["RPG"]
 days: ["Thursday"]

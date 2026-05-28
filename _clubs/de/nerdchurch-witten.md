@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/nerdchurch-witten/
 name: "Nerdchurch Witten"
 days: ["Various"]
 time: ""

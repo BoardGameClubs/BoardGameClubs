@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-tecklenburger-land/
 name: "Spieletreff Tecklenburger Land"
 days: ["Friday"]
 time: ""

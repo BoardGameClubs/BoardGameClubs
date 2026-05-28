@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/beyond-monopoly/
 name: "Beyond Monopoly"
 days: ["Saturday", "Friday"]
 time: "10:00am - 9:00pm (1st & 3rd Saturdays; also 2nd & 4th Friday evenings 5pm-9pm)"

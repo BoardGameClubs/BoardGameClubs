@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/muettergeneratenzentrum-karben/
 name: "Müttergeneratenzentrum Karben e.V."
 days: ["Friday"]
 time: "19:00"

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/kirriemuir-wargames-club/
 name: "Kirriemuir Wargames Club"
 type: ["Wargames"]
 days: ["Sunday"]

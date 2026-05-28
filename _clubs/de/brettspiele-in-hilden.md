@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspiele-in-hilden/
 name: "Brettspiele in Hilden"
 days: ["Tuesday"]
 time: "18:00"

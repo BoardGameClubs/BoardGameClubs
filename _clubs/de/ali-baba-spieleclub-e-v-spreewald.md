@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ali-baba-spieleclub-e-v-spreewald/
 name: "Ali Baba Spieleclub e.V. Spreewald"
 days: ["Thursday", "Sunday"]
 time: ""

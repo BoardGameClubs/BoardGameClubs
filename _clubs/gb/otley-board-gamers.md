@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/otley-board-gamers/
 name: "Otley Board Gamers"
 days: ["Monday"]
 time: "From 6:30pm"

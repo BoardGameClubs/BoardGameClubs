@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/da2-madrid/
 name: "da2"
 type: ["Board Games"]
 days: ["Various"]

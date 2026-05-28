@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/zolling-zockt/
 name: "Zolling Zockt"
 days: ["Friday"]
 time: "19:30 Uhr"

@@ -1,6 +1,5 @@
 ---
 country: "CH"
-permalink: /ch/clubs/xeno-flames-of-war/
 name: "Xeno Flames of War Group"
 type: ["Board Games"]
 days: ["Tuesday"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/wickford-board-game-club/
 name: "Wickford Board Game Club"
 days: ["Friday"]
 time: "6:00pm"

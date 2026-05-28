@@ -1,6 +1,5 @@
 ---
 country: "FR"
-permalink: /fr/clubs/caen-joues-tu/
 name: "Caen Joues-Tu"
 type: ["Board Games"]
 days: ["Tuesday"]

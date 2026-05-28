@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/oakham-board-game-and-roleplaying-club/
 name: "Oakham Board Game & Roleplaying Club"
 type: ["Board Games", "RPG"]
 days: ["Wednesday"]

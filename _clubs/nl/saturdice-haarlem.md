@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/saturdice-haarlem/
 name: "Saturdice Haarlem"
 days: ["Various"]
 time: ""

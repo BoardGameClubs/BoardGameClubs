@@ -1,6 +1,5 @@
 ---
 country: "CH"
-permalink: /ch/clubs/le-seigneur-du-jeu/
 name: "Le Seigneur du Jeu"
 type: ["Board Games"]
 days: ["Friday"]

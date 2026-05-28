@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/de-bonte-spellenavond-enkhuizen/
 name: "De Bonte Spellenavond Enkhuizen"
 days: ["Various"]
 time: ""

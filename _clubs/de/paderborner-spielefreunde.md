@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/paderborner-spielefreunde/
 name: "Paderborner Spielefreunde"
 days: ["Wednesday", "Thursday"]
 time: "18:45"

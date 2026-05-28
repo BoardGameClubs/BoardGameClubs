@@ -1,6 +1,5 @@
 ---
 country: "CH"
-permalink: /ch/clubs/boardgame-imperium/
 name: "Boardgame Imperium"
 type: ["Board Games"]
 days: ["Friday"]

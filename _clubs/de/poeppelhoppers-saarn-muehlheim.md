@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/poeppelhoppers-saarn-muehlheim/
 name: "Pöppelhoppers Saarn (Mühlheim)"
 days: ["Friday"]
 time: ""

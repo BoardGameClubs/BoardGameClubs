@@ -176,14 +176,11 @@ files.each do |file|
     end
   end
 
-  # permalink: every club must have one matching its country's URL prefix +
-  # slug. Subfolders change Jekyll's default slug (gb/aberdeen instead of
-  # aberdeen) so an explicit permalink is required.
-  if country_code && valid_codes.include?(country_code)
-    expected = "#{url_prefix_by_code[country_code]}/clubs/#{slug}/"
-    if data["permalink"] != expected
-      file_errors << "permalink: must equal '#{expected}' (got #{data['permalink'].inspect})"
-    end
+  # permalink: must NOT be set. Clubs live at canonical /clubs/<slug>/ and
+  # _plugins/club_language_clones.rb emits per-language copies at
+  # /<lang>/clubs/<slug>/. A hand-written permalink would override that.
+  if data["permalink"]
+    file_errors << "permalink: must not be set (got #{data['permalink'].inspect}); clubs live at /clubs/<slug>/ by default"
   end
 
   errors[file_id] = file_errors unless file_errors.empty?

@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spelletjesavond-teylingen/
 name: "Spelletjesavond Teylingen"
 days: ["Various"]
 time: ""

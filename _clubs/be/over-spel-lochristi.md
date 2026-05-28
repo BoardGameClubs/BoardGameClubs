@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/over-spel-lochristi/
 name: "Over-Spel Lochristi"
 days: ["Various"]
 time: ""

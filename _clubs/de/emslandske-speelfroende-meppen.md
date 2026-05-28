@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/emslandske-speelfroende-meppen/
 name: "Emslandske Speelfroende (Meppen)"
 days: ["Friday"]
 time: "20:00 Uhr"

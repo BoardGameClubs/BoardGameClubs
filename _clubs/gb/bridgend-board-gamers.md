@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/bridgend-board-gamers/
 name: "Bridgend Board Gamers"
 days: ["Various"]
 time: ""

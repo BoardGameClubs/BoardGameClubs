@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/kahl-spielt/
 name: "Kahl spielt"
 days: ["Various"]
 time: ""

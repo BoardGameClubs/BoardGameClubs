@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspiele-fuer-jedermann-erfurt/
 name: "Brettspiele für Jedermann (Erfurt)"
 days: ["Various"]
 time: ""

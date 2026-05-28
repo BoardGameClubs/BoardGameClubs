@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spellenclub-lommel/
 name: "Spellenclub Lommel"
 days: ["Various"]
 time: ""

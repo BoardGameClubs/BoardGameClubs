@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/mid-suffolk-board-gaming/
 name: "Mid Suffolk Board Gaming"
 days: ["Friday"]
 time: "7:00pm"

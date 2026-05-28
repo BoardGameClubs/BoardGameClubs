@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/grafinger-spielbaeren/
 name: "Grafinger Spielbären"
 days: ["Tuesday"]
 time: "18:00 Uhr"

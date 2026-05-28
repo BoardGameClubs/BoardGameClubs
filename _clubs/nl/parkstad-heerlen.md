@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/parkstad-heerlen/
 name: "Parkstad Heerlen"
 days: ["Various"]
 time: ""

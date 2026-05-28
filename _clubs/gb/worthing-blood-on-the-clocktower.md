@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/worthing-blood-on-the-clocktower/
 name: "Worthing Blood on the Clocktower"
 type: ["BOTC"]
 days: ["Sunday"]

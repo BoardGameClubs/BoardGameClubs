@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/m44-brigade-klundert/
 name: "M44 brigade Klundert"
 days: ["Various"]
 time: ""

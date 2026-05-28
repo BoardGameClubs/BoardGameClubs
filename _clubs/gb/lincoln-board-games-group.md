@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/lincoln-board-games-group/
 name: "Lincoln Board Games Group"
 days: ["Tuesday", "Thursday", "Sunday"]
 time: "7:00pm - 11:00pm"

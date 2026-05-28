@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieleclub-neuenbeken/
 name: "Brettspieleclub Neuenbeken"
 days: ["Various"]
 time: "ab 19:00 Uhr"

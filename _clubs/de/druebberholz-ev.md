@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/druebberholz-ev/
 name: "Drübberholz e.V."
 days: ["Various"]
 time: ""

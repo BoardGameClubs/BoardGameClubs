@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/forum-schelle/
 name: "Forum Schelle"
 days: ["Various"]
 time: ""

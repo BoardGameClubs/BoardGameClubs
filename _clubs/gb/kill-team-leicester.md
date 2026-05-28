@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/kill-team-leicester/
 name: "Kill Team Leicester"
 type: ["Wargames"]
 days: ["Wednesday"]

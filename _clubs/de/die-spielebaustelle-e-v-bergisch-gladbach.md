@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/die-spielebaustelle-e-v-bergisch-gladbach/
 name: "Die Spielebaustelle e. V. (Bergisch Gladbach)"
 days: ["Various"]
 time: "19:30 - 24:00 Uhr"

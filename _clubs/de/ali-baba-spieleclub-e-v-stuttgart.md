@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ali-baba-spieleclub-e-v-stuttgart/
 name: "Ali Baba Spieleclub e.V. Stuttgart"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/dice-and-mystics-bochum/
 name: "Dice and Mystics (Bochum)"
 days: ["Wednesday"]
 time: "17:00 - 23:00 Uhr"

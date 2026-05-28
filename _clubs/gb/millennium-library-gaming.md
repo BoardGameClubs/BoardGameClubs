@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/millennium-library-gaming/
 name: "Millennium Library gaming"
 days: ["Saturday"]
 time: "12:30pm - 4:30pm"

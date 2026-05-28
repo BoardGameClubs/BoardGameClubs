@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/tana-dei-goblin-roma/
 name: "La Tana dei Goblin Roma"
 type: ["Board Games"]
 days: ["Various"]

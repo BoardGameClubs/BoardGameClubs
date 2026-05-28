@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielerei-eichstaett/
 name: "Spielerei Eichstätt"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/turriff/
 name: "turriff"
 type: ["Board Games", "RPG"]
 days: ["Wednesday"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/exwick-monthly-board-games-for-grown-ups/
 name: "Exwick Monthly Board Games for Grown Ups"
 days: ["Saturday"]
 time: ""

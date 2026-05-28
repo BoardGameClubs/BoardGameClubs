@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spel-2660-hoboken/
 name: "Spel 2660 Hoboken"
 days: ["Various"]
 time: ""

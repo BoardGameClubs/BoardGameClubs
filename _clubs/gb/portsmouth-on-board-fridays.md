@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/portsmouth-on-board-fridays/
 name: "Portsmouth On Board (Fridays)"
 days: ["Friday"]
 time: "12:00pm"

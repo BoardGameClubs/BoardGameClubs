@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/cornwall-boardgame-playtest-group/
 name: "Cornwall Boardgame Playtest Group"
 days: ["Sunday"]
 time: "2:00pm - 4:00pm"

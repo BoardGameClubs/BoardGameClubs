@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/wallingford-boardgames-society/
 name: "Wallingford Boardgames Society"
 days: ["Wednesday", "Tuesday"]
 time: "6:30pm - 10:00pm"

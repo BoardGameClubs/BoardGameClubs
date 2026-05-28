@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/the-role-play-haven-cardiff-north-branch/
 name: "The Role Play Haven - Cardiff North Branch"
 type: ["RPG"]
 days: ["Wednesday"]

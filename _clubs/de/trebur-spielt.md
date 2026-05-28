@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/trebur-spielt/
 name: "Trebur spielt"
 days: ["Various"]
 time: ""

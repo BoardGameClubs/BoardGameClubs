@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/venner-spieltreff/
 name: "Venner Spieltreff"
 days: ["Wednesday"]
 time: "19:00"

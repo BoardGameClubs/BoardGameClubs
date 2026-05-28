@@ -1,6 +1,5 @@
 ---
 country: "PT"
-permalink: /pt/clubs/boardgamers-viseu/
 name: "Boardgamers Viseu"
 type: ["Board Games"]
 days: ["Monday", "Saturday"]

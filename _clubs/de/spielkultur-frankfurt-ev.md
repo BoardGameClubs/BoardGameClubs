@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielkultur-frankfurt-ev/
 name: "Spielkultur Frankfurt e.V."
 days: ["Tuesday"]
 time: ""

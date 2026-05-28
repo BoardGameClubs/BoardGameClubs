@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/the-blue-meeple-deurne/
 name: "The Blue Meeple, Deurne"
 days: ["Various"]
 time: ""

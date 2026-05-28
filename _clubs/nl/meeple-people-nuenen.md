@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/meeple-people-nuenen/
 name: "Meeple People Nuenen"
 days: ["Various"]
 time: ""

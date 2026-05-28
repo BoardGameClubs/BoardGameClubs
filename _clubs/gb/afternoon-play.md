@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/afternoon-play/
 name: "Afternoon Play"
 days: ["Sunday"]
 time: "2:00pm"

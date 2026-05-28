@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/composteludica-santiago/
 name: "Compostelúdica"
 type: ["Board Games"]
 days: ["Various"]

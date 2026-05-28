@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/wakefield-warriors/
 name: "Wakefield Warriors"
 type: ["Board Games", "Wargames", "RPG", "TCG"]
 days: ["Tuesday"]

@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/vrij-en-blij-landsmeer/
 name: "Vrij en Blij Landsmeer"
 days: ["Various"]
 time: ""

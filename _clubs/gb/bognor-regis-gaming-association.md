@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/bognor-regis-gaming-association/
 name: "Bognor Regis Gaming Association"
 type: ["Board Games", "RPG", "Wargames", "TCG"]
 days: ["Tuesday"]

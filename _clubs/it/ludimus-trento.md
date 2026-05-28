@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/ludimus-trento/
 name: "Ludimus"
 type: ["Board Games"]
 days: ["Various"]

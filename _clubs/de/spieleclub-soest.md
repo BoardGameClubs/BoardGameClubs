@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleclub-soest/
 name: "Spieleclub Soest"
 days: ["Monday"]
 time: "19:30 Uhr"

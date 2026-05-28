@@ -120,8 +120,11 @@
         }
         var daysLine = '<div class="popup-days"><i data-lucide="calendar"></i><span>' + self.escapeHtml(daysText) + '</span></div>';
 
+        var clubHref = window.GameClubApp && window.GameClubApp.localiseClubUrl
+          ? window.GameClubApp.localiseClubUrl(club.url)
+          : club.url;
         var popupContent =
-          '<a class="popup-card" href="' + club.url + '">' +
+          '<a class="popup-card" href="' + clubHref + '">' +
           '<div class="popup-body">' +
           popupIcon +
           '<div class="popup-content">' +

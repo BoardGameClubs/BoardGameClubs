@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/hot-schildesche/
 name: "HOT Schildesche"
 days: ["Various"]
 time: ""

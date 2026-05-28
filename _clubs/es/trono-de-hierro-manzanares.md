@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/trono-de-hierro-manzanares/
 name: "El Trono de Hierro"
 type: ["Board Games"]
 days: ["Various"]

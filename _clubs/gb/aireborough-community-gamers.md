@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/aireborough-community-gamers/
 name: "Aireborough Community Gamers"
 days: ["Saturday"]
 time: "From 1:00pm til late"

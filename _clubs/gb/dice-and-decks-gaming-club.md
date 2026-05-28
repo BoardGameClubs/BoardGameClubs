@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/dice-and-decks-gaming-club/
 name: "Dice and Decks Gaming Club"
 type: ["Wargames", "TCG"]
 days: ["Friday"]

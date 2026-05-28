@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/all-on-board-colchester-board-games-social/
 name: "All On Board - Colchester Board Games Social"
 days: ["Various"]
 time: ""

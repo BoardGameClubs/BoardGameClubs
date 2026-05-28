@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleabend-alt-garbsen/
 name: "Spieleabend Alt-Garbsen"
 days: ["Wednesday"]
 time: "18:00 - 20:00"

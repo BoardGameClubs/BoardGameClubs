@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/frieslandspielt-e-v-jever/
 name: "Frieslandspielt e.V. (Jever)"
 days: ["Friday"]
 time: ""

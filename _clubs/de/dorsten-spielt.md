@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/dorsten-spielt/
 name: "Dorsten-spielt"
 days: ["Wednesday"]
 time: "ab 19:00 Uhr"

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/paper-adventures-ev/
 name: "Paper Adventures e.V."
 days: ["Various"]
 time: ""

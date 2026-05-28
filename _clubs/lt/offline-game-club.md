@@ -1,6 +1,5 @@
 ---
 country: "LT"
-permalink: /lt/clubs/offline-game-club/
 name: "OFFLINE Game Club"
 type: ["Board Games"]
 days: ["Various"]

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brett-spiel-kultur-leipzig/
 name: "brett-spiel-kultur (Leipzig)"
 days: ["Monday", "Friday"]
 time: "18:00 Uhr"

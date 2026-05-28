@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/bordspelers-noord-nederland/
 name: "Bordspelers Noord Nederland"
 days: ["Various"]
 time: ""

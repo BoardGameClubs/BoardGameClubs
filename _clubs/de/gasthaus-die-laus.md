@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/gasthaus-die-laus/
 name: "Gasthaus Die Laus"
 days: ["Various"]
 time: ""

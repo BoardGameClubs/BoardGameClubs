@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/whitehead-board-gamers/
 name: "Whitehead Board Gamers"
 days: ["Monday"]
 time: ""

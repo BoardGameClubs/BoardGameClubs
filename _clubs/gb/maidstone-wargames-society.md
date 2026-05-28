@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/maidstone-wargames-society/
 name: "Maidstone Wargames Society"
 type: ["Wargames"]
 days: ["Saturday"]

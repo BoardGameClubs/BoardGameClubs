@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/speel-mal-mit-eckernfoerde/
 name: "Speel mal mit (Eckernförde)"
 days: ["Friday"]
 time: ""

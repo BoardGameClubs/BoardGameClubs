@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/queimada-nivell-q-barcelona/
 name: "Queimada Nivell Q"
 type: ["Board Games"]
 days: ["Friday"]

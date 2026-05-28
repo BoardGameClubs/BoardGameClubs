@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielfreunde-hildesheim-e-v/
 name: "Brettspielfreunde Hildesheim e. V."
 days: ["Various"]
 time: "ab 19:00 Uhr"

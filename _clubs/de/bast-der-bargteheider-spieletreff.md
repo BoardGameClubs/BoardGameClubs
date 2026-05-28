@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/bast-der-bargteheider-spieletreff/
 name: "BaST: Der Bargteheider Spieletreff"
 days: ["Friday"]
 time: ""

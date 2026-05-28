@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/die-spielkameraden-hankensbuettel/
 name: "Die Spielkameraden (Hankensbüttel)"
 days: ["Monday"]
 time: "19:00 Uhr"

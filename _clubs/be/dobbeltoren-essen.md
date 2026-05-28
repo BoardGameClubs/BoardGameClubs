@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/dobbeltoren-essen/
 name: "Dobbeltoren Essen"
 days: ["Various"]
 time: ""

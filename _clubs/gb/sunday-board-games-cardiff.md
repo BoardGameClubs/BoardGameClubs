@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/sunday-board-games-cardiff/
 name: "Sunday Board Games Cardiff"
 days: ["Sunday"]
 time: "3:00pm"

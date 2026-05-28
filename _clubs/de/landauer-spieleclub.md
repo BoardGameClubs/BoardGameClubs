@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/landauer-spieleclub/
 name: "Landauer Spieleclub"
 days: ["Various"]
 time: ""

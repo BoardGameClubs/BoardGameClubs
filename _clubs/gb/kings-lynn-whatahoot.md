@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/kings-lynn-whatahoot/
 name: "Kings Lynn - whatahoot"
 days: ["Various"]
 time: ""

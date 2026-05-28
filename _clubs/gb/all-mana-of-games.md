@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/all-mana-of-games/
 name: "All Mana of Games"
 type: ["Board Games", "TCG", "RPG", "Wargames"]
 days: ["Wednesday", "Friday", "Saturday"]

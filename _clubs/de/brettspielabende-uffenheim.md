@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielabende-uffenheim/
 name: "Brettspielabende (Uffenheim)"
 days: ["Friday"]
 time: ""

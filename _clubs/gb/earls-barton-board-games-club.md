@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/earls-barton-board-games-club/
 name: "Earls Barton Board Games Club"
 type: ["Board Games"]
 days: ["Sunday"]

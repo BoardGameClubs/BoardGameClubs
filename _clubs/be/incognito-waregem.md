@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/incognito-waregem/
 name: "Incognito Waregem"
 days: ["Various"]
 time: ""

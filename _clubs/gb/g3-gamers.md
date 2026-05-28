@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/g3-gamers/
 name: "G3 Gamers"
 days: ["Tuesday"]
 time: "5:30pm"

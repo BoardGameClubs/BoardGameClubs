@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/bawdrip-board-game-club/
 name: "Bawdrip Board Game Club"
 days: ["Wednesday"]
 time: "7:30pm"

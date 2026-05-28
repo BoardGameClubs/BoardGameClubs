@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielclub-thurnau/
 name: "Brettspielclub Thurnau"
 days: ["Sunday"]
 time: "14:00 - 18:00 Uhr"

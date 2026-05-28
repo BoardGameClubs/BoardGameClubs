@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/prestons-gamers-guild/
 name: "Preston's Gamer's Guild"
 days: ["Tuesday"]
 time: "7:00pm"

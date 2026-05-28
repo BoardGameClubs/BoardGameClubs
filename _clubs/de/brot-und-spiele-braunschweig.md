@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brot-und-spiele-braunschweig/
 name: "Brot und Spiele Braunschweig"
 days: ["Saturday"]
 time: "14:00"

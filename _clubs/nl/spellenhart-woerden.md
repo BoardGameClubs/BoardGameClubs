@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenhart-woerden/
 name: "Spellenhart Woerden"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/the-role-play-haven-archway-branch/
 name: "The Role Play Haven - Archway Branch"
 type: ["RPG"]
 days: ["Tuesday"]

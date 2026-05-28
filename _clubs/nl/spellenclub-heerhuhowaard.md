@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenclub-heerhuhowaard/
 name: "Spellenclub Heerhuhowaard"
 days: ["Various"]
 time: ""

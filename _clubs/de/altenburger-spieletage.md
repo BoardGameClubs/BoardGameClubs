@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/altenburger-spieletage/
 name: "Altenburger Spieletage"
 days: ["Friday"]
 time: "18:00 Uhr"

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielend-ev-neuburg/
 name: "SpielenD e.V."
 days: ["Various"]
 time: ""

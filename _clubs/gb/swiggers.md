@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/swiggers/
 name: "Swiggers"
 days: ["Wednesday"]
 time: ""

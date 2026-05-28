@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenclub-apeldoorn/
 name: "Spellenclub Apeldoorn"
 days: ["Various"]
 time: ""

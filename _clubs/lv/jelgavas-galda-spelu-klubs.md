@@ -1,6 +1,5 @@
 ---
 country: "LV"
-permalink: /lv/clubs/jelgavas-galda-spelu-klubs/
 name: "Jelgavas galda spēļu klubs"
 type: ["Board Games"]
 days: ["Thursday"]

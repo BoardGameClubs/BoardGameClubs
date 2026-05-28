@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/ojo-del-terror-getafe/
 name: "El Ojo del Terror"
 type: ["Board Games"]
 days: ["Various"]

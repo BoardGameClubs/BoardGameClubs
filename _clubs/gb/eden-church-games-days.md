@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/eden-church-games-days/
 name: "Eden Church Games Days"
 days: ["Saturday"]
 time: ""

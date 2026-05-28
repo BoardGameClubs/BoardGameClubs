@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenvereniging-ucp/
 name: "Spellenvereniging UCP"
 days: ["Various"]
 time: ""

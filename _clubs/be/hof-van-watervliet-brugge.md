@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/hof-van-watervliet-brugge/
 name: "Hof van Watervliet Brugge"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/giocatorino/
 name: "GiocaTorino"
 type: ["Board Games"]
 days: ["Various"]

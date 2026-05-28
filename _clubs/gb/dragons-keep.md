@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/dragons-keep/
 name: "Dragons Keep"
 type: ["RPG", "Board Games", "Wargames"]
 days: ["Friday"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/st-albans-boardgames/
 name: "St Albans Board Games Club"
 days: ["Monday", "Wednesday", "Saturday"]
 time: "7:00pm - 11:00pm"

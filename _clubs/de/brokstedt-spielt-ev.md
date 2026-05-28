@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brokstedt-spielt-ev/
 name: "Brokstedt spielt e.V."
 days: ["Wednesday"]
 time: ""

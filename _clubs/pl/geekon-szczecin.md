@@ -1,6 +1,5 @@
 ---
 country: "PL"
-permalink: /pl/clubs/geekon-szczecin/
 name: "GeekON - Gry Planszowe Szczecin"
 type: ["Board Games"]
 days: ["Thursday"]

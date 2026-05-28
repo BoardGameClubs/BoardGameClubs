@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspiel-club-niederrhein-e-v/
 name: "Brettspiel Club Niederrhein e.V."
 days: ["Monday", "Tuesday", "Friday"]
 time: ""

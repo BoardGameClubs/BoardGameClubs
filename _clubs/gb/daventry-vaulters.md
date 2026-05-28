@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/daventry-vaulters/
 name: "Daventry Vaulters"
 days: ["Wednesday"]
 time: "7:00pm - 11:00pm"

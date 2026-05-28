@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielcaf-in-schwelm/
 name: "Brettspielcafé in Schwelm"
 days: ["Saturday"]
 time: ""

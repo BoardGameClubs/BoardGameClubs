@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/gusenburger-brettspieltreff/
 name: "Gusenburger Brettspieltreff"
 days: ["Thursday"]
 time: ""

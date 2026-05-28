@@ -1,6 +1,5 @@
 ---
 country: "FR"
-permalink: /fr/clubs/auberge-ludique-tellancourt/
 name: "L'Auberge Ludique"
 type: ["Board Games"]
 days: ["Various"]

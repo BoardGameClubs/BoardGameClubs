@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/jugendzentrum-deichhaus-siegburg/
 name: "Jugendzentrum Deichhaus (Siegburg)"
 days: ["Various"]
 time: ""

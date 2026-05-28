@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/roll-the-dice-veldhoven/
 name: "Roll the Dice, Veldhoven"
 days: ["Various"]
 time: ""

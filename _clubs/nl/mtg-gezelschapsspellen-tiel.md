@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/mtg-gezelschapsspellen-tiel/
 name: "MTG Gezelschapsspellen Tiel"
 days: ["Various"]
 time: ""

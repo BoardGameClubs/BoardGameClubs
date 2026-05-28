@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/haller-spielegilde-e-v-schwaebisch-hall/
 name: "Haller Spielegilde e.V. (Schwäbisch Hall)"
 days: ["Thursday"]
 time: "18:00 - 23:00 Uhr"

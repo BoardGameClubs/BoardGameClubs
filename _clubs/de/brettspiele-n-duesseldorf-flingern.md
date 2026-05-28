@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspiele-n-duesseldorf-flingern/
 name: "Brettspiele(n)  Düsseldorf - Flingern"
 days: ["Thursday"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/mana-gaming-board-games/
 name: "Mana Gaming (Board Games)"
 type: ["Board Games"]
 days: ["Tuesday", "Thursday", "Various"]

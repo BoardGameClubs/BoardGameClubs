@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/spazio-ludico-san-benedetto/
 name: "Spazio Ludico"
 type: ["Board Games"]
 days: ["Various"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/bugs-birstall-unplugged-gaming-social/
 name: "BUGS - Birstall Unplugged Gaming Social"
 days: ["Monday"]
 time: ""

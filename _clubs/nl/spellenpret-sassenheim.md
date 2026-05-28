@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenpret-sassenheim/
 name: "Spellenpret Sassenheim"
 days: ["Various"]
 time: ""

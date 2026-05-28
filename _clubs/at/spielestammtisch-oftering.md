@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/spielestammtisch-oftering/
 name: "Spielestammtisch"
 days: ["Various"]
 time: ""

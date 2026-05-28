@@ -1,6 +1,5 @@
 ---
 country: "IE"
-permalink: /ie/clubs/cloyne-board-games/
 name: "Cloyne Board Games"
 type: ["Board Games"]
 days: ["Various"]

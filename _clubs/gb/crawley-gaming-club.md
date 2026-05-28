@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/crawley-gaming-club/
 name: "Crawley Gaming Club"
 type: ["Board Games", "Wargames", "RPG", "TCG"]
 days: ["Monday"]

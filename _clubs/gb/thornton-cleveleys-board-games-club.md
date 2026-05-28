@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/thornton-cleveleys-board-games-club/
 name: "Thornton Cleveleys Board Games Club"
 type: ["Board Games", "TCG", "RPG"]
 days: ["Various"]

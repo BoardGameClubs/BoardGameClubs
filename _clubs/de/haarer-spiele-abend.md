@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/haarer-spiele-abend/
 name: "Haarer Spiele-Abend"
 days: ["Tuesday"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/ayr-wargames-club/
 name: "Ayr Wargames Club"
 type: ["Wargames"]
 days: ["Sunday"]

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-erding/
 name: "Spieletreff Erding"
 days: ["Sunday"]
 time: "14:00 Uhr"

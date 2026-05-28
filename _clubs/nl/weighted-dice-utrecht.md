@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/weighted-dice-utrecht/
 name: "Weighted Dice Utrecht"
 days: ["Various"]
 time: ""

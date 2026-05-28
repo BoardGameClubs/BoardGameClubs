@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielfreunde-wf-wolfenbuettel/
 name: "Brettspielfreunde WF (Wolfenbüttel)"
 days: ["Various"]
 time: ""

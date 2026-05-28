@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ansgars-spielhelden/
 name: "Ansgars Spielhelden"
 days: ["Friday"]
 time: "19:30"

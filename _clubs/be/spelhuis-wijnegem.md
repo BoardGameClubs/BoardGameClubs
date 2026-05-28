@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spelhuis-wijnegem/
 name: "Spelhuis Wijnegem"
 days: ["Various"]
 time: ""

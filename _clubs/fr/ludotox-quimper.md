@@ -1,6 +1,5 @@
 ---
 country: "FR"
-permalink: /fr/clubs/ludotox-quimper/
 name: "Ludotox"
 type: ["Board Games"]
 days: ["Various"]

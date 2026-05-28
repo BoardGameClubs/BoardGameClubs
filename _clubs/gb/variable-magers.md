@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/variable-magers/
 name: "Variable Magers"
 days: ["Tuesday"]
 time: "7:30pm"

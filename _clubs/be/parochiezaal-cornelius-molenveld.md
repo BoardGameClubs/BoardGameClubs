@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/parochiezaal-cornelius-molenveld/
 name: "Parochiezaal Cornelius Molenveld"
 days: ["Various"]
 time: ""

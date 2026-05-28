@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spiel-vereint-osterhofen/
 name: "Spiel Verein(t) Osterhofen e.V."
 days: ["Various"]
 time: ""

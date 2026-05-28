@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spionneke-zwijndrecht/
 name: "Spionneke Zwijndrecht"
 days: ["Various"]
 time: ""

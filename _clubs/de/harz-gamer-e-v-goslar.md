@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/harz-gamer-e-v-goslar/
 name: "Harz Gamer e. V. (Goslar)"
 days: ["Friday"]
 time: ""

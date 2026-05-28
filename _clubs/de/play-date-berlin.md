@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/play-date-berlin/
 name: "Play Date Berlin"
 days: ["Various"]
 time: "18:00 - 22:00 Uhr"

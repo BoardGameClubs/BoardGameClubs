@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/crookes-and-crosspool-tabletop-gaming/
 name: "Crookes & Crosspool Tabletop Gaming"
 days: ["Thursday"]
 time: "6:00pm - 11:00pm"

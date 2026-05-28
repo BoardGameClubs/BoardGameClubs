@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/cambridge-board-game-nights-with-morat-games/
 name: "Cambridge board game nights with Morat Games"
 days: ["Various"]
 time: ""

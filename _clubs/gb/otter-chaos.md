@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/otter-chaos/
 name: "Otter Chaos"
 days: ["Tuesday"]
 time: "6:00pm - 11:00pm"

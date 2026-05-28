@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/wiesbaden-spielt-wiesbaden/
 name: "Wiesbaden-spielt  (Wiesbaden)"
 days: ["Tuesday"]
 time: ""

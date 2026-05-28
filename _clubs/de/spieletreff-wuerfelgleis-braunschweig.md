@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-wuerfelgleis-braunschweig/
 name: "Spieletreff Würfelgleis (Braunschweig)"
 days: ["Thursday", "Saturday"]
 time: "17:00 Uhr"

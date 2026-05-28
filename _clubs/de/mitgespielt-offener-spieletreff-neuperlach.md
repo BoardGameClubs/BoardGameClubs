@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/mitgespielt-offener-spieletreff-neuperlach/
 name: "Mitgespielt-Offener Spieletreff (Neuperlach)"
 days: ["Thursday"]
 time: "19:00 Uhr"

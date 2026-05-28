@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/amsterdice-amsterdam/
 name: "Amsterdice Amsterdam"
 days: ["Various"]
 time: ""

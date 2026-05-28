@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ali-baba-spieleclub-e-v-erlangen/
 name: "Ali Baba Spieleclub e.V. Erlangen"
 days: ["Wednesday"]
 time: ""

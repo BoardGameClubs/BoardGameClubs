@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/orizzonte-degli-eventi-piacenza/
 name: "Orizzonte degli Eventi"
 type: ["Board Games"]
 days: ["Various"]

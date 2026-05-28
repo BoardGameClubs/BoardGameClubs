@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/wesel-spielt-ev/
 name: "WESEL spielt e.V."
 days: ["Thursday"]
 time: "18:00 - 23:00"

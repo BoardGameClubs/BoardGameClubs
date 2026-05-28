@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/hei-land-spieler/
 name: "Hei-Land Spieler"
 days: ["Saturday"]
 time: "19:00"

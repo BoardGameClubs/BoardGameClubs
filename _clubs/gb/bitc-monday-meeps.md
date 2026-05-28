@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/bitc-monday-meeps/
 name: "BITC Monday Meeps"
 type: ["Board Games", "BOTC"]
 days: ["Monday"]

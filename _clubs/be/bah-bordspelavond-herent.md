@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/bah-bordspelavond-herent/
 name: "BaH! Bordspelavond Herent"
 days: ["Various"]
 time: ""

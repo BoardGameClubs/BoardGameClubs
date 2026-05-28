@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/runa-madrid/
 name: "Club Runa"
 type: ["Board Games"]
 days: ["Friday"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/ml2-gamers/
 name: "ML2 Gamers"
 days: ["Wednesday"]
 time: "6:00pm"

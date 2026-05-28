@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/cardboard-emperors/
 name: "Cardboard Emperors"
 type: ["Board Games", "Wargames"]
 days: ["Various"]

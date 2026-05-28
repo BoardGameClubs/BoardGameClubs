@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/teen-en-tander/
 name: "Teen en Tander"
 days: ["Various"]
 time: ""

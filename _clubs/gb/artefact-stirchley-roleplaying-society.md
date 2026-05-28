@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/artefact-stirchley-roleplaying-society/
 name: "Artefact - Stirchley Roleplaying Society"
 type: ["RPG"]
 days: ["Wednesday"]

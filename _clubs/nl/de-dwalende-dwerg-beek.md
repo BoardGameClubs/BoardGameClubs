@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/de-dwalende-dwerg-beek/
 name: "De Dwalende Dwerg Beek"
 days: ["Various"]
 time: ""

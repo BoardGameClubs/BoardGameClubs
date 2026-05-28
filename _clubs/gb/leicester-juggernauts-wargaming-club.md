@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/leicester-juggernauts-wargaming-club/
 name: "Leicester Juggernauts Wargaming Club"
 type: ["Wargames"]
 days: ["Tuesday"]

@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/speelanderthalers-beernem/
 name: "Speelanderthalers Beernem"
 days: ["Various"]
 time: ""

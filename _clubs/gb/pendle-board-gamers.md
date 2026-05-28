@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/pendle-board-gamers/
 name: "Pendle Board Gamers"
 days: ["Thursday"]
 time: "7:30pm - 10:30pm"

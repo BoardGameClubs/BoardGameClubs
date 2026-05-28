@@ -1,6 +1,5 @@
 ---
 country: "CZ"
-permalink: /cz/clubs/herni-liga/
 name: "Herní liga"
 type: ["Board Games"]
 days: ["Various"]

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielverein-lingen-ev/
 name: "Brettspielverein Lingen e.V."
 days: ["Friday"]
 time: "19:00"

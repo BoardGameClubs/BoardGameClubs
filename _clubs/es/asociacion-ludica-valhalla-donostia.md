@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/asociacion-ludica-valhalla-donostia/
 name: "Asociación Lúdica Valhalla"
 type: ["Board Games"]
 days: ["Various"]

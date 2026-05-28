@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spelen-op-zolder-zedelgem/
 name: "Spelen op Zolder Zedelgem"
 days: ["Various"]
 time: ""

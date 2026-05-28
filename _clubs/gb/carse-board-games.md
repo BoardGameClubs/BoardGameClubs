@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/carse-board-games/
 name: "Carse Board Games"
 type: ["Board Games"]
 days: ["Various"]

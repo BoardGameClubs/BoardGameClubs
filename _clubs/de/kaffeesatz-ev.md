@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/kaffeesatz-ev/
 name: "KaffeeSatz e.V."
 days: ["Various"]
 time: ""

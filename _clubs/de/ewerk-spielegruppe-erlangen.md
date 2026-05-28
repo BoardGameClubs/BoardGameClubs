@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ewerk-spielegruppe-erlangen/
 name: "E-Werk Spielegruppe Erlangen"
 days: ["Various"]
 time: ""

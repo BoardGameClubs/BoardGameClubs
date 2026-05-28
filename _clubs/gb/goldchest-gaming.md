@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/goldchest-gaming/
 name: "Goldchest Gaming"
 type: ["RPG", "Wargames"]
 days: ["Monday", "Sunday"]

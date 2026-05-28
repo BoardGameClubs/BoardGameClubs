@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielhelden-dresden-e-v/
 name: "Brettspielhelden Dresden e.V."
 days: ["Various"]
 time: ""

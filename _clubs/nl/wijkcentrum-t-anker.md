@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/wijkcentrum-t-anker/
 name: "Wijkcentrum &apos;t Anker"
 days: ["Various"]
 time: ""

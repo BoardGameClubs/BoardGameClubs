@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/offener-spieletreff-da-piero/
 name: "Offener Spieletreff Da Piero"
 days: ["Thursday"]
 time: ""

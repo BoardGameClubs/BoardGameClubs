@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenhuis-den-haag/
 name: "Spellenhuis Den Haag"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/badalona-jugona/
 name: "Badalona Jugona"
 type: ["Board Games"]
 days: ["Various"]

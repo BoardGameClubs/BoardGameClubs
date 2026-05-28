@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/dondersteen-hengelo/
 name: "Dondersteen Hengelo"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/crossfire-gaming-club/
 name: "Crossfire Gaming Club"
 type: ["Wargames"]
 days: ["Thursday"]

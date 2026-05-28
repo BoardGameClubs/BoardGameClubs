@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/die-spieltraeumer-osnabrueck/
 name: "Die Spielträumer (Osnabrück)"
 days: ["Wednesday", "Friday"]
 time: "19:00 Uhr"

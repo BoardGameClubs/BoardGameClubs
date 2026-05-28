@@ -1,6 +1,5 @@
 ---
 country: "IE"
-permalink: /ie/clubs/itcarlow-board-games-society/
 name: "ITCarlow Board Games Society"
 type: ["Board Games"]
 days: ["Wednesday"]

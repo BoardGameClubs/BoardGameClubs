@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spellenclub-klein-brabant/
 name: "Spellenclub Klein-Brabant"
 days: ["Various"]
 time: ""

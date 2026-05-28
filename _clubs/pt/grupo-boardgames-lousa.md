@@ -1,6 +1,5 @@
 ---
 country: "PT"
-permalink: /pt/clubs/grupo-boardgames-lousa/
 name: "Grupo de Board Games da Lousã"
 type: ["Board Games"]
 days: ["Various"]

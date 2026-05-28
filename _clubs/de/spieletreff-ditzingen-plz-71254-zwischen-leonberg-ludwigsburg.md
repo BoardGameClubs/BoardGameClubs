@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-ditzingen-plz-71254-zwischen-leonberg-ludwigsburg/
 name: "Spieletreff Ditzingen (PLZ 71254, zwischen Leonberg + Ludwigsburg)"
 days: ["Thursday"]
 time: "19:30 Uhr"

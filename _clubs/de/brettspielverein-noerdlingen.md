@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielverein-noerdlingen/
 name: "Brettspielverein Nördlingen"
 days: ["Tuesday", "Saturday"]
 time: "19:00 - 23:00 Uhr"

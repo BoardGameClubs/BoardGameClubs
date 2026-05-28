@@ -1,6 +1,5 @@
 ---
 country: "PT"
-permalink: /pt/clubs/clube-boardgamers-leiria/
 name: "Clube de Boardgamers de Leiria"
 type: ["Board Games"]
 days: ["Friday", "Saturday"]

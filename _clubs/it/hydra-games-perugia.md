@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/hydra-games-perugia/
 name: "Hydra Games TdG Perugia"
 type: ["Board Games"]
 days: ["Various"]

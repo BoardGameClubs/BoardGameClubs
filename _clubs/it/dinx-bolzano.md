@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/dinx-bolzano/
 name: "Dinx"
 type: ["Board Games"]
 days: ["Wednesday"]

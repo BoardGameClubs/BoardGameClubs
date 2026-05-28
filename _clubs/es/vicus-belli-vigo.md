@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/vicus-belli-vigo/
 name: "Vicus Belli"
 type: ["Board Games"]
 days: ["Various"]

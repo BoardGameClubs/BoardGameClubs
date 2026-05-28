@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/all-a-board-shipley/
 name: "All A-board - Shipley Games Night"
 days: ["Thursday"]
 time: "7:00pm - 11:00pm"

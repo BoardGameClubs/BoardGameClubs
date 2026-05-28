@@ -1,6 +1,5 @@
 ---
 country: "CH"
-permalink: /ch/clubs/spielclub-2575/
 name: "Spielclub 2575"
 type: ["Board Games"]
 days: ["Various"]

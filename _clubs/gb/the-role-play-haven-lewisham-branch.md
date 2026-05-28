@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/the-role-play-haven-lewisham-branch/
 name: "The Role Play Haven - Lewisham Branch"
 type: ["RPG"]
 days: ["Wednesday"]

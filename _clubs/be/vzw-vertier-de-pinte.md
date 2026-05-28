@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/vzw-vertier-de-pinte/
 name: "VZW Vertier De Pinte"
 days: ["Various"]
 time: ""

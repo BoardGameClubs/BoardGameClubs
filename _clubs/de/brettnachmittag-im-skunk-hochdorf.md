@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettnachmittag-im-skunk-hochdorf/
 name: "Brettnachmittag im SKUNK (Hochdorf )"
 days: ["Thursday"]
 time: "14:30 Uhr"

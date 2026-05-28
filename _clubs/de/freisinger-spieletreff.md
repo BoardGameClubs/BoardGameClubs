@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/freisinger-spieletreff/
 name: "Freisinger Spieletreff"
 days: ["Friday"]
 time: ""

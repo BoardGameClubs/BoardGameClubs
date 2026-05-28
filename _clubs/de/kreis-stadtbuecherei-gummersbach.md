@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/kreis-stadtbuecherei-gummersbach/
 name: "Kreis- und Stadtbücherei Gummersbach"
 days: ["Various"]
 time: ""

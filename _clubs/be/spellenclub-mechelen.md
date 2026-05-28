@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spellenclub-mechelen/
 name: "Spellenclub Mechelen"
 days: ["Various"]
 time: ""

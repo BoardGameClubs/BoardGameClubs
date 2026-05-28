@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/jeugd-en-jongerencentrum-elzenburg/
 name: "Jeugd- en jongerencentrum Elzenburg"
 days: ["Various"]
 time: ""

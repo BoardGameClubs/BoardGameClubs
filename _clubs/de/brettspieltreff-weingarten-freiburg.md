@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieltreff-weingarten-freiburg/
 name: "Brettspieltreff Weingarten (Freiburg)"
 days: ["Monday"]
 time: ""

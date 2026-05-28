@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spiel-mit-schornbach/
 name: "Spiel mit! Spieletreff Schornbach"
 days: ["Various"]
 time: ""

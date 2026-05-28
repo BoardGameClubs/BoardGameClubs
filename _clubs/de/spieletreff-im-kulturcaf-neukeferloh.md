@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-im-kulturcaf-neukeferloh/
 name: "Spieletreff im Kulturcafé (Neukeferloh)"
 days: ["Monday"]
 time: "19:30 Uhr"

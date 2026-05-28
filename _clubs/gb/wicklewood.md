@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/wicklewood/
 name: "Wicklewood"
 type: ["Board Games"]
 days: ["Monday"]

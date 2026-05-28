@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/struikrover-deinze/
 name: "Struikrover Deinze"
 days: ["Various"]
 time: ""

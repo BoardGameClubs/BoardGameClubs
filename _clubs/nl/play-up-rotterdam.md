@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/play-up-rotterdam/
 name: "Play up! Rotterdam"
 days: ["Various"]
 time: ""

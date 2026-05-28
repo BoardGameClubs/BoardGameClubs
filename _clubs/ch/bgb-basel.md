@@ -1,6 +1,5 @@
 ---
 country: "CH"
-permalink: /ch/clubs/bgb-basel/
 name: "BGB"
 type: ["Board Games"]
 days: ["Various"]

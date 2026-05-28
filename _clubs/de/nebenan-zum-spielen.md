@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/nebenan-zum-spielen/
 name: "Nebenan zum Spielen"
 days: ["Various"]
 time: ""

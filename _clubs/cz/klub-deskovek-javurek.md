@@ -1,6 +1,5 @@
 ---
 country: "CZ"
-permalink: /cz/clubs/klub-deskovek-javurek/
 name: "Klub deskovek Javůrek"
 type: ["Board Games"]
 days: ["Various"]

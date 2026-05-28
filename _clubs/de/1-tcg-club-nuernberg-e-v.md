@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/1-tcg-club-nuernberg-e-v/
 name: "1. TCG Club Nürnberg e.V."
 days: ["Tuesday", "Sunday"]
 time: ""

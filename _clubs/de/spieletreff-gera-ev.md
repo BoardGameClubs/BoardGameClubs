@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-gera-ev/
 name: "Spieletreff Gera e.V."
 days: ["Saturday"]
 time: ""

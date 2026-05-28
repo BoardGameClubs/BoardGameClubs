@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/roetteln-spielt/
 name: "Rötteln spielt"
 days: ["Saturday"]
 time: "17:00"

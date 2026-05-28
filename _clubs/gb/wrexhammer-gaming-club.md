@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/wrexhammer-gaming-club/
 name: "Wrexhammer Gaming Club"
 type: ["Wargames"]
 days: ["Wednesday"]

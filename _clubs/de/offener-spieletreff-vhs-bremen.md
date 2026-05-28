@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/offener-spieletreff-vhs-bremen/
 name: "Offener Spieletreff der VHS Bremen"
 days: ["Various"]
 time: ""

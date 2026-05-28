@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/halifax-board-gamers/
 name: "Halifax Board Gamers"
 days: ["Monday"]
 time: "7:00pm - 10:30pm"

@@ -1,6 +1,5 @@
 ---
 country: "CZ"
-permalink: /cz/clubs/becvochovo-hracske-doupe/
 name: "Bečvochovo hráčské doupě"
 type: ["Board Games"]
 days: ["Friday"]

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spiel-mit-mainz-ebersheim/
 name: "SPIEL MIT - Mainz-Ebersheim"
 days: ["Friday"]
 time: ""

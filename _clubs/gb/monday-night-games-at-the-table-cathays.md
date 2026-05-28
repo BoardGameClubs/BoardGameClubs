@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/monday-night-games-at-the-table-cathays/
 name: "Monday Night Games at The Table, Cathays"
 days: ["Monday"]
 time: "7:30pm"

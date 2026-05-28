@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/el-templo-y-la-torre-barcelona/
 name: "El Templo y la Torre"
 type: ["Board Games"]
 days: ["Various"]

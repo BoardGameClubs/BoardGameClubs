@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/boardgames-in-truro/
 name: "Boardgames in Truro"
 days: ["Monday"]
 time: "6:00pm"

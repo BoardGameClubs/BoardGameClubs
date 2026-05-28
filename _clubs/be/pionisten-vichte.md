@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/pionisten-vichte/
 name: "Pionisten Vichte"
 days: ["Various"]
 time: ""

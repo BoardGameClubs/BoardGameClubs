@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/st-ives-tabletop/
 name: "St. Ives Tabletop"
 type: ["Board Games"]
 days: ["Wednesday"]

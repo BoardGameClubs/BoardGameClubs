@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/calderdale-boardgames-and-rpgs/
 name: "Calderdale Boardgames and Role Playing Games"
 type: ["Board Games", "RPG"]
 days: ["Wednesday"]

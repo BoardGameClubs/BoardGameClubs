@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/boardgaming-inc-diepenbeek/
 name: "Boardgaming Inc. Diepenbeek"
 days: ["Various"]
 time: ""

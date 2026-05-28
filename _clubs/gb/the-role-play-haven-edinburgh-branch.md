@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/the-role-play-haven-edinburgh-branch/
 name: "The Role Play Haven - Edinburgh Branch"
 type: ["RPG"]
 days: ["Wednesday"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/the-role-play-haven-hammersmith-branch/
 name: "The Role Play Haven - Hammersmith Branch"
 type: ["RPG"]
 days: ["Thursday"]

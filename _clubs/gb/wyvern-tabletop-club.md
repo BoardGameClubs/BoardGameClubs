@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/wyvern-tabletop-club/
 name: "Wyvern Tabletop Club"
 days: ["Sunday"]
 time: "6:00pm"

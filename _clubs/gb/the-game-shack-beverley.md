@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/the-game-shack-beverley/
 name: "The Game Shack Beverley"
 type: ["Board Games", "BOTC"]
 days: ["Thursday", "Friday", "Saturday", "Sunday"]

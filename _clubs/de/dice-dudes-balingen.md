@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/dice-dudes-balingen/
 name: "Dice Dudes (Balingen)"
 days: ["Wednesday", "Saturday"]
 time: ""

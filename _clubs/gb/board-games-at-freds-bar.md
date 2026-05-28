@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/board-games-at-freds-bar/
 name: "Board Games @Fred's Bar"
 days: ["Sunday"]
 time: "5:00pm - 8:00pm"

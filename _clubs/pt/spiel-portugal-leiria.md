@@ -1,6 +1,5 @@
 ---
 country: "PT"
-permalink: /pt/clubs/spiel-portugal-leiria/
 name: "Spiel Portugal"
 type: ["Board Games"]
 days: ["Saturday", "Sunday"]

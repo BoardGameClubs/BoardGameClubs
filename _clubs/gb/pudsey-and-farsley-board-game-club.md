@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/pudsey-and-farsley-board-game-club/
 name: "Pudsey and Farsley Board Game Club"
 days: ["Friday"]
 time: "6:00pm - 10:00pm"

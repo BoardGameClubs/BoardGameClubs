@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/die-spieler-von-hoehenkirchen/
 name: "Die Spieler von Höhenkirchen"
 days: ["Friday"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielwiese-boennigheim/
 name: "Spielwiese Bönnigheim"
 days: ["Various"]
 time: "13:45 - 18:00"

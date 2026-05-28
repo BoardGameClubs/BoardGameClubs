@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/galadriel-spieletreff-potsdam/
 name: "Galadriel-Spieletreff (Potsdam)"
 days: ["Thursday"]
 time: ""

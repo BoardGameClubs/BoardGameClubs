@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/die-wuerfelschenke-ried/
 name: "Die Würfelschenke"
 days: ["Various"]
 time: ""

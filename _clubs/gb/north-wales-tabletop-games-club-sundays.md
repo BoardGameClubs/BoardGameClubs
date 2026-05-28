@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/north-wales-tabletop-games-club-sundays/
 name: "North Wales Tabletop Games Club (Sundays)"
 days: ["Sunday"]
 time: "9:00am - 6:00pm"

@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/speltafel-gent/
 name: "Speltafel Gent"
 days: ["Various"]
 time: ""

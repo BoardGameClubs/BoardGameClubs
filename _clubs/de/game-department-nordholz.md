@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/game-department-nordholz/
 name: "Game Department (Nordholz)"
 days: ["Friday"]
 time: "19:30 Uhr"

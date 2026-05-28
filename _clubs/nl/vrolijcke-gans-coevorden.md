@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/vrolijcke-gans-coevorden/
 name: "Vrolijcke Gans Coevorden"
 days: ["Various"]
 time: ""

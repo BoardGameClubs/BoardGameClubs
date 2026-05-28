@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/october-wargames-association/
 name: "October wargames association"
 type: ["Board Games", "Wargames"]
 days: ["Tuesday"]

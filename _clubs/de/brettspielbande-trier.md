@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielbande-trier/
 name: "Brettspielbande Trier"
 days: ["Wednesday"]
 time: ""

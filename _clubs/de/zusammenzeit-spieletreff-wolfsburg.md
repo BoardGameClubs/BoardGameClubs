@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/zusammenzeit-spieletreff-wolfsburg/
 name: "ZusammenZeit - Spieletreff (Wolfsburg)"
 days: ["Various"]
 time: ""

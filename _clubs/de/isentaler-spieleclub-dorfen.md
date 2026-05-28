@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/isentaler-spieleclub-dorfen/
 name: "Isentaler Spieleclub (Dorfen)"
 days: ["Friday"]
 time: ""

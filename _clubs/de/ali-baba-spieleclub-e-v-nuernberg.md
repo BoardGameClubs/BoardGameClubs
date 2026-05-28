@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ali-baba-spieleclub-e-v-nuernberg/
 name: "Ali Baba Spieleclub e.V. Nürnberg"
 days: ["Monday", "Friday"]
 time: ""

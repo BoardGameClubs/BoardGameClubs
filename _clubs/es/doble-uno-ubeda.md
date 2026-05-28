@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/doble-uno-ubeda/
 name: "Doble Uno Úbeda"
 type: ["Board Games"]
 days: ["Various"]

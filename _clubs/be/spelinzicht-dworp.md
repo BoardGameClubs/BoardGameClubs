@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spelinzicht-dworp/
 name: "Spelinzicht Dworp"
 days: ["Various"]
 time: ""

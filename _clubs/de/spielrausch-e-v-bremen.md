@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielrausch-e-v-bremen/
 name: "Spielrausch e. V. (Bremen)"
 days: ["Monday"]
 time: ""

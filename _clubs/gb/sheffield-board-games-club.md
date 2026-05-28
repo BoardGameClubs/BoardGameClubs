@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/sheffield-board-games-club/
 name: "Sheffield Board Games Club"
 days: ["Tuesday", "Sunday"]
 time: "7:00pm - 11:00pm"

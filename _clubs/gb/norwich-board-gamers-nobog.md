@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/norwich-board-gamers-nobog/
 name: "Norwich Board Gamers (NOBOG)"
 days: ["Monday", "Tuesday"]
 time: "7:30pm"

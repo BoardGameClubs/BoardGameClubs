@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenbende-culemborg/
 name: "Spellenbende Culemborg"
 days: ["Various"]
 time: ""

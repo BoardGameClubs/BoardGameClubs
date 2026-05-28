@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/lario-ludens-lecco/
 name: "Lario Ludens"
 type: ["Board Games"]
 days: ["Wednesday"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/corsham-board-game-group/
 name: "Corsham Board Game Group"
 days: ["Monday"]
 time: "7:00pm"

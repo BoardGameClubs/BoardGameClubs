@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/filderstadt-bonlanden-brettspieltreff/
 name: "Filderstadt-Bonlanden Brettspieltreff"
 days: ["Saturday"]
 time: "16:00 - 23:00 Uhr"

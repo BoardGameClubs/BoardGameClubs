@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/gkii-e-v-berlin/
 name: "GKII e. V. (Berlin)"
 days: ["Sunday"]
 time: "16:00 Uhr"

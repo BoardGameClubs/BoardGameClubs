@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/troon-tabletop/
 name: "Troon Tabletop"
 days: ["Sunday"]
 time: "1:30pm - 4:00pm"

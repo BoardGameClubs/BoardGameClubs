@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/lostock-hall-roleplay-and-card-games-guild/
 name: "Lostock Hall Roleplay and Card Games Guild"
 type: ["RPG", "TCG"]
 days: ["Wednesday"]

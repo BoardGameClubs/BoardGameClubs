@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/elclubdelosviernes-jerez/
 name: "El Club de los Viernes"
 type: ["Board Games"]
 days: ["Friday"]

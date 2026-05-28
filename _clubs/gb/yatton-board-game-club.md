@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/yatton-board-game-club/
 name: "Yatton Board Game Club"
 days: ["Various"]
 time: ""

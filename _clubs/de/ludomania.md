@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ludomania/
 name: "Ludomania"
 days: ["Various"]
 time: ""

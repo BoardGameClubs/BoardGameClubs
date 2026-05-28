@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spiel-raum-waldenburg/
 name: "Spiel-RAUM Waldenburg"
 days: ["Thursday", "Friday", "Saturday", "Sunday"]
 time: ""

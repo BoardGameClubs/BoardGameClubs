@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/stadtbibliothek-magdeburg/
 name: "Stadtbibliothek Magdeburg"
 days: ["Friday"]
 time: ""

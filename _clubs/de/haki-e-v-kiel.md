@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/haki-e-v-kiel/
 name: "HAKI e.V. (Kiel)"
 days: ["Friday"]
 time: ""

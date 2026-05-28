@@ -1,6 +1,5 @@
 ---
 country: "CZ"
-permalink: /cz/clubs/deskovky-veltrusy/
 name: "Deskovky Veltrusy"
 type: ["Board Games"]
 days: ["Wednesday"]

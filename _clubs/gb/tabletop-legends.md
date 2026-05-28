@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/tabletop-legends/
 name: "Tabletop Legends"
 type: ["Board Games", "RPG", "TCG"]
 days: ["Saturday"]

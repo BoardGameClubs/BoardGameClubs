@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/gilde-der-spieler-e-v-neumuenster/
 name: "Gilde der Spieler e.V. (Neumünster)"
 days: ["Friday"]
 time: ""

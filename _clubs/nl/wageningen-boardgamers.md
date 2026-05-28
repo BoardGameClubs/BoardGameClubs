@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/wageningen-boardgamers/
 name: "Wageningen Boardgamers"
 days: ["Various"]
 time: ""

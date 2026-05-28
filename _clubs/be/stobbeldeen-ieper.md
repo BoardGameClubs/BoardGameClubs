@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/stobbeldeen-ieper/
 name: "Stobbeldeen Ieper"
 days: ["Various"]
 time: ""

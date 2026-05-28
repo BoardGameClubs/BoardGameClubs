@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/die-rollenspielgilde-e-v-paderborn/
 name: "Die Rollenspielgilde e.V. (Paderborn)"
 days: ["Thursday"]
 time: ""

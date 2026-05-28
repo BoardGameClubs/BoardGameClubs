@@ -1,6 +1,5 @@
 ---
 country: "DK"
-permalink: /dk/clubs/slagelse-figur-og-hobbyforening/
 name: "Slagelse Figur- & Hobbyforening"
 type: ["Board Games"]
 days: ["Various"]

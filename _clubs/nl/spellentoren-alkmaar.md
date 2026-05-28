@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellentoren-alkmaar/
 name: "Spellentoren Alkmaar"
 days: ["Various"]
 time: ""

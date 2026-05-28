@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/ballymena-boardgame-group/
 name: "Ballymena Boardgame Group"
 days: ["Thursday"]
 time: "7:00pm - 10:30pm"

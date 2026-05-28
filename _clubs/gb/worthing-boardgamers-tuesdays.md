@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/worthing-boardgamers-tuesdays/
 name: "Worthing Boardgamers (Tuesdays)"
 days: ["Tuesday"]
 time: "7:00pm - 10:00pm"

@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/asociacion-triunvirato-motril/
 name: "Asociación Triunvirato"
 type: ["Board Games"]
 days: ["Various"]

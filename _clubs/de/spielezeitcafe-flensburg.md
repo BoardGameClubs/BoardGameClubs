@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielezeitcafe-flensburg/
 name: "Spielezeitcafé für Generationen und Kulturen e.V."
 days: ["Thursday", "Saturday", "Sunday"]
 time: ""

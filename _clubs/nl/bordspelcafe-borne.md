@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/bordspelcafe-borne/
 name: "Bordspelcafé Borne"
 days: ["Various"]
 time: ""

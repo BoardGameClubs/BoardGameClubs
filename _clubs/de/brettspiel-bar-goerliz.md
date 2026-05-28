@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspiel-bar-goerliz/
 name: "Brettspiel.Bar (Görliz)"
 days: ["Monday"]
 time: ""

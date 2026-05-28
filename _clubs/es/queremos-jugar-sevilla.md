@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/queremos-jugar-sevilla/
 name: "Queremos Jugar!"
 type: ["Board Games"]
 days: ["Various"]

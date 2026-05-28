@@ -1,6 +1,5 @@
 ---
 country: "PL"
-permalink: /pl/clubs/planszowanie-torun/
 name: "Planszowanie"
 type: ["Board Games"]
 days: ["Various"]

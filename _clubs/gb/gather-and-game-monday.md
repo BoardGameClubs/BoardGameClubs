@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/gather-and-game-monday/
 name: "Gather & Game Barnsley (Monday)"
 days: ["Monday"]
 time: "Evenings"

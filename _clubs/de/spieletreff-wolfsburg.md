@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-wolfsburg/
 name: "Spieletreff Wolfsburg"
 days: ["Saturday"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/die-gamechanger/
 name: "Die Gamechanger"
 days: ["Various"]
 time: "14:00"

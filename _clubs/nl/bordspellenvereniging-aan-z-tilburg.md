@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/bordspellenvereniging-aan-z-tilburg/
 name: "Bordspellenvereniging aan Z, Tilburg"
 days: ["Various"]
 time: ""

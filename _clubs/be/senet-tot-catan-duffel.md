@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/senet-tot-catan-duffel/
 name: "Senet tot Catan Duffel"
 days: ["Various"]
 time: ""

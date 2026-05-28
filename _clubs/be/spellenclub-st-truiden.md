@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spellenclub-st-truiden/
 name: "Spellenclub St. Truiden"
 days: ["Various"]
 time: ""

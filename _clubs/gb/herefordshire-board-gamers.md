@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/herefordshire-board-gamers/
 name: "Herefordshire Board Gamers"
 days: ["Thursday", "Sunday"]
 time: ""

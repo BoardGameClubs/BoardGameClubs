@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleclub-pattonville/
 name: "Spieleclub Pattonville"
 days: ["Various"]
 time: ""

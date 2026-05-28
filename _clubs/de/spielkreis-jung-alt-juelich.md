@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielkreis-jung-alt-juelich/
 name: "Spielkreis Jung und Alt Heiliggeist Jülich"
 days: ["Various"]
 time: ""

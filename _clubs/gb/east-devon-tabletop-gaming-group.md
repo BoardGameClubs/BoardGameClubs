@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/east-devon-tabletop-gaming-group/
 name: "East Devon Tabletop Gaming Group"
 type: ["Board Games", "RPG"]
 days: ["Tuesday"]

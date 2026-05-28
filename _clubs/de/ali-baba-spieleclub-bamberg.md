@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ali-baba-spieleclub-bamberg/
 name: "Ali Baba Spieleclub Regionalverband Bamberg"
 days: ["Tuesday"]
 time: "19:30 - 00:00"

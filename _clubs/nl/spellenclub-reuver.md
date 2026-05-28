@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenclub-reuver/
 name: "Spellenclub Reuver"
 days: ["Various"]
 time: ""

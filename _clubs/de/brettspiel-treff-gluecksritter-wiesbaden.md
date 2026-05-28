@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspiel-treff-gluecksritter-wiesbaden/
 name: "Brettspiel-Treff Glücksritter Wiesbaden"
 days: ["Thursday"]
 time: ""

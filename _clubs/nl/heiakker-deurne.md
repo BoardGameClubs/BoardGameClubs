@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/heiakker-deurne/
 name: "Heiakker Deurne"
 days: ["Various"]
 time: ""

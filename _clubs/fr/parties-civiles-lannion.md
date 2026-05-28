@@ -1,6 +1,5 @@
 ---
 country: "FR"
-permalink: /fr/clubs/parties-civiles-lannion/
 name: "Parties Civiles"
 type: ["Board Games"]
 days: ["Various"]

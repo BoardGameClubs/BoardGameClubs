@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenclub-sas-van-gent/
 name: "Spellenclub Sas van Gent"
 days: ["Various"]
 time: ""

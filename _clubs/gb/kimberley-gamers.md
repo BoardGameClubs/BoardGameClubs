@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/kimberley-gamers/
 name: "Kimberley Gamers"
 type: ["Board Games"]
 days: ["Tuesday"]

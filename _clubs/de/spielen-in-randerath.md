@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielen-in-randerath/
 name: "Spielen in Randerath"
 days: ["Sunday"]
 time: "14:00 Uhr"

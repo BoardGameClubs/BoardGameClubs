@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/boardgamesclub-maastricht/
 name: "Boardgamesclub Maastricht"
 days: ["Various"]
 time: ""

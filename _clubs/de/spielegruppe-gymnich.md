@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielegruppe-gymnich/
 name: "Spielegruppe Gymnich St. Kunibert"
 days: ["Various"]
 time: ""

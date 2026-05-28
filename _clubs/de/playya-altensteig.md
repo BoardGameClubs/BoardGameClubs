@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/playya-altensteig/
 name: "Playya Altensteig"
 days: ["Various"]
 time: ""

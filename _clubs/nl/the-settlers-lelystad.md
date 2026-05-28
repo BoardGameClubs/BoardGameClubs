@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/the-settlers-lelystad/
 name: "The Settlers Lelystad"
 days: ["Various"]
 time: ""

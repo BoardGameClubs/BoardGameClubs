@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/meerspel-nieuw-vennep/
 name: "Meerspel Nieuw-Vennep"
 days: ["Various"]
 time: ""

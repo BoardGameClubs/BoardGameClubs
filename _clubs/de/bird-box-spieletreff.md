@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/bird-box-spieletreff/
 name: "Bird-Box Spieletreff"
 days: ["Various"]
 time: "15:00"

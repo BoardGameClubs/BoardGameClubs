@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/cafe-bosco-amsterdam/
 name: "Café Bosco Amsterdam"
 days: ["Various"]
 time: ""

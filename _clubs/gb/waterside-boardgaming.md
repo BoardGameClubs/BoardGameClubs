@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/waterside-boardgaming/
 name: "Waterside Boardgaming"
 days: ["Sunday"]
 time: "2:00pm - 7:00pm"

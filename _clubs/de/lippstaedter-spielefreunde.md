@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/lippstaedter-spielefreunde/
 name: "Lippstädter Spielefreunde"
 days: ["Various"]
 time: ""

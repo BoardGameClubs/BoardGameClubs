@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenhoek-zeeland/
 name: "Spellenhoek Zeeland"
 days: ["Various"]
 time: ""

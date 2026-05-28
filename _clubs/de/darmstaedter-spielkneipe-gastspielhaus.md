@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/darmstaedter-spielkneipe-gastspielhaus/
 name: "Darmstädter Spielkneipe Gastspielhaus"
 days: ["Various"]
 time: ""

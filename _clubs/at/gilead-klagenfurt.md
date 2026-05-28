@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/gilead-klagenfurt/
 name: "Gilead"
 type: ["Board Games", "RPG", "Wargames", "TCG"]
 days: ["Various"]

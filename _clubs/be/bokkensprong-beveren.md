@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/bokkensprong-beveren/
 name: "Bokkensprong Beveren"
 days: ["Various"]
 time: ""

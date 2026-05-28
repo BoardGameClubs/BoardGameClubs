@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/snowdonia-dragons/
 name: "Snowdonia Dragons"
 days: ["Thursday"]
 time: "6:00pm"

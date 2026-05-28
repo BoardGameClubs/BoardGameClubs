@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spellenclub-westerlo/
 name: "Spellenclub Westerlo"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/buurtcentrum-de-zeskanter/
 name: "Buurtcentrum De Zeskanter"
 days: ["Various"]
 time: ""

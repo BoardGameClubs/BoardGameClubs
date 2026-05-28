@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/bayreuther-spielekreis/
 name: "Bayreuther Spielekreis"
 days: ["Monday", "Friday"]
 time: ""

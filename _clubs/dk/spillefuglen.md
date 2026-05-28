@@ -1,6 +1,5 @@
 ---
 country: "DK"
-permalink: /dk/clubs/spillefuglen/
 name: "Spillefuglen"
 type: ["Board Games"]
 days: ["Various"]

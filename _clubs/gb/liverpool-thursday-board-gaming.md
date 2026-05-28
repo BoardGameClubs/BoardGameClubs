@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/liverpool-thursday-board-gaming/
 name: "Liverpool Thursday Board Gaming"
 type: ["Board Games"]
 days: ["Thursday"]

@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/ams-madrid/
 name: "AMS - Asociación Madrileña de Simulación"
 type: ["Board Games"]
 days: ["Various"]

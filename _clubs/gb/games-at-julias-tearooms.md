@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/games-at-julias-tearooms/
 name: "Games @ Julia's Tearooms"
 days: ["Tuesday"]
 time: "6:30pm - late"

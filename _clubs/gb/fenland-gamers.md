@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/fenland-gamers/
 name: "Fenland Gamers"
 type: ["Board Games", "RPG", "TCG"]
 days: ["Friday"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/clubhouse-gaming/
 name: "Clubhouse Gaming"
 type: ["Board Games", "RPG"]
 days: ["Monday", "Tuesday", "Wednesday", "Thursday"]

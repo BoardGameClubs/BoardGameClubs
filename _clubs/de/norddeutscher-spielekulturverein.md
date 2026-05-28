@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/norddeutscher-spielekulturverein/
 name: "Norddeutscher Spielekulturverein"
 days: ["Various"]
 time: ""

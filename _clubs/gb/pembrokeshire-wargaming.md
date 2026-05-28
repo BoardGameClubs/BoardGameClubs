@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/pembrokeshire-wargaming/
 name: "Pembrokeshire Wargaming"
 type: ["Wargames"]
 days: ["Thursday"]

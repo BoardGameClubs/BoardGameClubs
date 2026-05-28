@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spellenclub-kapido-sleidinge/
 name: "Spellenclub Kapido Sleidinge"
 days: ["Various"]
 time: ""

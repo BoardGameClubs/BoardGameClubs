@@ -1,6 +1,5 @@
 ---
 country: "PT"
-permalink: /pt/clubs/boardgamers-coimbra/
 name: "Boardgamers de Coimbra"
 type: ["Board Games"]
 days: ["Thursday"]

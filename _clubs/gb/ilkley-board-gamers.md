@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/ilkley-board-gamers/
 name: "Ilkley Board Gamers"
 days: ["Wednesday", "Sunday"]
 time: "From 7:00pm (18+ only, not wheelchair accessible)"

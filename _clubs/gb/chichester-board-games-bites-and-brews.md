@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/chichester-board-games-bites-and-brews/
 name: "Chichester Board Games, Bites and Brews"
 days: ["Thursday"]
 time: "7:00pm"

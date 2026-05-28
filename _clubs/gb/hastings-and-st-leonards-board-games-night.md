@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/hastings-and-st-leonards-board-games-night/
 name: "Hastings and St Leonard's Board Games Night"
 days: ["Monday"]
 time: "6:30pm - late"

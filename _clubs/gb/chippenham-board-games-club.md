@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/chippenham-board-games-club/
 name: "Chippenham Board Games Club"
 days: ["Thursday"]
 time: "6:30pm - 11:00pm"

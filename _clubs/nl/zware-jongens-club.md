@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/zware-jongens-club/
 name: "Zware Jongens Club"
 days: ["Various"]
 time: ""

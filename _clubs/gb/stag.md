@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/stag/
 name: "STAG"
 days: ["Wednesday"]
 time: "7:15pm"

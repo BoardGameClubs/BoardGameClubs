@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/gweeples/
 name: "Gweeples"
 type: ["Board Games", "RPG"]
 days: ["Tuesday", "Wednesday"]

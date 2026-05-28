@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/playtest-portsmouth/
 name: "Playtest Portsmouth"
 days: ["Sunday"]
 time: "11:00am - 5:00pm"

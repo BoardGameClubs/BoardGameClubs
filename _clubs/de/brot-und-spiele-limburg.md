@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brot-und-spiele-limburg/
 name: "Brot und Spiele Limburg"
 days: ["Thursday"]
 time: "19:30"

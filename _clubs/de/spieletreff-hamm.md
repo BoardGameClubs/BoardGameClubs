@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-hamm/
 name: "Spieletreff Hamm"
 days: ["Tuesday"]
 time: "18:30 Uhr"

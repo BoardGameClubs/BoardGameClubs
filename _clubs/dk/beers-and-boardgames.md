@@ -1,6 +1,5 @@
 ---
 country: "DK"
-permalink: /dk/clubs/beers-and-boardgames/
 name: "Beers & Boardgames"
 type: ["Board Games"]
 days: ["Friday"]

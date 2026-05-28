@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/one-more-game-boom/
 name: "One More Game Boom"
 days: ["Various"]
 time: ""

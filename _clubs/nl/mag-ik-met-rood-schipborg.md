@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/mag-ik-met-rood-schipborg/
 name: "Mag ik met Rood Schipborg"
 days: ["Various"]
 time: ""

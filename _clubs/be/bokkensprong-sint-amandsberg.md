@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/bokkensprong-sint-amandsberg/
 name: "Bokkensprong Sint-Amandsberg"
 days: ["Various"]
 time: ""

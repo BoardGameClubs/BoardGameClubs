@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/game-inn-nieuwerkerk-aan-den-ijssel/
 name: "Game Inn Nieuwerkerk aan den IJssel"
 days: ["Various"]
 time: ""

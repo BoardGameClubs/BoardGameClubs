@@ -1,6 +1,5 @@
 ---
 country: "DK"
-permalink: /dk/clubs/pap-og-drager/
 name: "Pap & Drager"
 type: ["Board Games"]
 days: ["Various"]

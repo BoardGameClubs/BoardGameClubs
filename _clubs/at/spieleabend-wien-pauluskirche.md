@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/spieleabend-wien-pauluskirche/
 name: "spieleabend.wien"
 days: ["Friday"]
 time: "7:00pm"

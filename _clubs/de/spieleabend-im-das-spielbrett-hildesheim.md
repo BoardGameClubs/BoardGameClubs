@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleabend-im-das-spielbrett-hildesheim/
 name: "Spieleabend im Das Spielbrett (Hildesheim)"
 days: ["Thursday"]
 time: "18:30 Uhr"

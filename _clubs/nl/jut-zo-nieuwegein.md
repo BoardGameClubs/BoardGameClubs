@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/jut-zo-nieuwegein/
 name: "Jut & Zo Nieuwegein"
 days: ["Various"]
 time: ""

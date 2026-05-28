@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/kelsterbach-spielt/
 name: "Kelsterbach Spielt (Caritas Kelsterbach)"
 days: ["Thursday"]
 time: "18:00"

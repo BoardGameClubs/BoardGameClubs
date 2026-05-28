@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/anderwelt-verein-fuer-spielkultur-hanau/
 name: "Anderwelt - Verein für Spielkultur (Hanau)"
 days: ["Thursday", "Sunday"]
 time: ""

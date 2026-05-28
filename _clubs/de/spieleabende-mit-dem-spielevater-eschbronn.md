@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleabende-mit-dem-spielevater-eschbronn/
 name: "Spieleabende mit dem Spielevater (Eschbronn)"
 days: ["Thursday"]
 time: "18:00 Uhr"

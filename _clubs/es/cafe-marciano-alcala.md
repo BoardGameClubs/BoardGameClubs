@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/cafe-marciano-alcala/
 name: "Café Marciano"
 type: ["Board Games"]
 days: ["Various"]

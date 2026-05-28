@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleabend-weimar/
 name: "Spieleabend (Weimar)"
 days: ["Various"]
 time: ""

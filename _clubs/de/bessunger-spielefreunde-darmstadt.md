@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/bessunger-spielefreunde-darmstadt/
 name: "Bessunger Spielefreunde (Darmstadt)"
 days: ["Wednesday"]
 time: ""

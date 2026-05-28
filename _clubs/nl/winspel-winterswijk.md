@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/winspel-winterswijk/
 name: "Winspel Winterswijk"
 days: ["Various"]
 time: ""

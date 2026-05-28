@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleabend-unlimited/
 name: "Spieleabend Unlimited"
 days: ["Various"]
 time: ""

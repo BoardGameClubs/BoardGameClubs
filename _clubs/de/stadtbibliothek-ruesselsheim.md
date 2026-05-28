@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/stadtbibliothek-ruesselsheim/
 name: "Stadtbibliothek Rüsselsheim"
 days: ["Various"]
 time: ""

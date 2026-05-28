@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/juz-plaidt/
 name: "JUZ Plaidt"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/thanet-board-games-club/
 name: "Thanet Board Games Club"
 type: ["Board Games", "BOTC"]
 days: ["Monday"]

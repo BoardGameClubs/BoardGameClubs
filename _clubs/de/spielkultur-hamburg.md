@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielkultur-hamburg/
 name: "Spielkultur Hamburg"
 days: ["Monday", "Wednesday", "Friday"]
 time: "18:30 Uhr"

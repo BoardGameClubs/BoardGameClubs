@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/reckenfelder-spieleabend/
 name: "Reckenfelder Spieleabend"
 days: ["Saturday"]
 time: "19:00 Uhr"

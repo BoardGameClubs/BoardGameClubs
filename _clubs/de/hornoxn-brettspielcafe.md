@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/hornoxn-brettspielcafe/
 name: "Hornoxn Brettspielcafé"
 days: ["Various"]
 time: ""

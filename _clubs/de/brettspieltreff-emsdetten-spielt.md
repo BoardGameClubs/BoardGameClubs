@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieltreff-emsdetten-spielt/
 name: "Brettspieltreff \"Emsdetten spielt!\""
 days: ["Tuesday"]
 time: ""

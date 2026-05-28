@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ludo-liubice-ev/
 name: "Ludo Liubice e.V."
 days: ["Various"]
 time: ""

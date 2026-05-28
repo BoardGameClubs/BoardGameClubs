@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/frieslandspielt-e-v-schortens/
 name: "Frieslandspielt e.V. (Schortens)"
 days: ["Saturday", "Sunday"]
 time: "15:30 Uhr"

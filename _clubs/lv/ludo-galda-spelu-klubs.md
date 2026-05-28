@@ -1,6 +1,5 @@
 ---
 country: "LV"
-permalink: /lv/clubs/ludo-galda-spelu-klubs/
 name: "Ludo, Galda Spēļu Klubs"
 type: ["Board Games"]
 days: ["Various"]

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/panke-spieler-berlin/
 name: "Panke-Spieler Berlin"
 days: ["Sunday"]
 time: ""

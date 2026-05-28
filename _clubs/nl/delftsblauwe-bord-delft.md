@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/delftsblauwe-bord-delft/
 name: "Delftsblauwe Bord Delft"
 days: ["Various"]
 time: ""

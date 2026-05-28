@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spellenclub-meeples-gent/
 name: "Spellenclub Meeples Gent"
 days: ["Various"]
 time: ""

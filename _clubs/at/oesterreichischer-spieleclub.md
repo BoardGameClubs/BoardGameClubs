@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/oesterreichischer-spieleclub/
 name: "Österreichischer Spieleclub"
 days: ["Various"]
 time: ""

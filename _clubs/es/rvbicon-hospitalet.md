@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/rvbicon-hospitalet/
 name: "Rvbicon"
 type: ["Board Games"]
 days: ["Friday"]

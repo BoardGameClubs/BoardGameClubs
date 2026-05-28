@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/tabletop-piraten/
 name: "Tabletop-Piraten (Unser Haus e.V.)"
 days: ["Friday"]
 time: ""

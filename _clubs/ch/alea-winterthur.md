@@ -1,6 +1,5 @@
 ---
 country: "CH"
-permalink: /ch/clubs/alea-winterthur/
 name: "ALEA"
 type: ["Board Games"]
 days: ["Various"]

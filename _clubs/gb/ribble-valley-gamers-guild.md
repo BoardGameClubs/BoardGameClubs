@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/ribble-valley-gamers-guild/
 name: "Ribble Valley Gamers Guild"
 type: ["Board Games", "RPG"]
 days: ["Various"]

@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/games-in-english-dos-hermanas/
 name: "Games in English at Dos Hermanas Library"
 type: ["Board Games"]
 days: ["Friday"]

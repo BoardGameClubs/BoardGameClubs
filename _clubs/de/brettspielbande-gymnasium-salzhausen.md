@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielbande-gymnasium-salzhausen/
 name: "Brettspielbande Gymnasium Salzhausen"
 days: ["Various"]
 time: ""

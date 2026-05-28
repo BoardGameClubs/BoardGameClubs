@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/order-of-the-dice/
 name: "Order of the dice"
 days: ["Various"]
 time: ""

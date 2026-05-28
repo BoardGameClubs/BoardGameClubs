@@ -1,6 +1,5 @@
 ---
 country: "FR"
-permalink: /fr/clubs/soirees-jeux-sarreguemines/
 name: "Soirées Jeux Sarreguemines"
 type: ["Board Games"]
 days: ["Thursday"]

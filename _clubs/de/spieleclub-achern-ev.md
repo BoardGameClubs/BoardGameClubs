@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleclub-achern-ev/
 name: "Spieleclub Achern e.V."
 days: ["Thursday"]
 time: "19:30"

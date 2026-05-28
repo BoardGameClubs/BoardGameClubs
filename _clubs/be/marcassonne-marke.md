@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/marcassonne-marke/
 name: "Marcassonne Marke"
 days: ["Various"]
 time: ""

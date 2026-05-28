@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/wakefield-boardgame-meetup/
 name: "Wakefield Boardgame Meetup"
 days: ["Tuesday"]
 time: "5:30pm - 10:00pm"

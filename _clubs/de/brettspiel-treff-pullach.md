@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspiel-treff-pullach/
 name: "Brettspiel-Treff (Pullach)"
 days: ["Friday"]
 time: ""

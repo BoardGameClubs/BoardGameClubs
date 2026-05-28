@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/inverness-board-game-club/
 name: "Inverness Board Game Club"
 type: ["Board Games"]
 days: ["Thursday", "Various"]

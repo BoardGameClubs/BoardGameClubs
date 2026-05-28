@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/meeple-schieber/
 name: "Meeple Schieber"
 days: ["Various"]
 time: ""

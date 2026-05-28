@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieletreff-merzig/
 name: "Brettspieletreff Merzig"
 days: ["Various"]
 time: ""

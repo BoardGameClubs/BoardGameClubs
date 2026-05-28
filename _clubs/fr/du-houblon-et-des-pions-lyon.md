@@ -1,6 +1,5 @@
 ---
 country: "FR"
-permalink: /fr/clubs/du-houblon-et-des-pions-lyon/
 name: "Du houblon et des pions"
 type: ["Board Games"]
 days: ["Various"]

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/der-kleine-krieger-erfurt/
 name: "Der Kleine Krieger (Erfurt​)"
 days: ["Thursday"]
 time: "17:30 Uhr"

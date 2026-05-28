@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/phoenix-capelle-aan-den-ijssel/
 name: "Phoenix Capelle aan den IJssel"
 days: ["Various"]
 time: ""

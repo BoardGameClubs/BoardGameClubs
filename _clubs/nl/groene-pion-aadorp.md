@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/groene-pion-aadorp/
 name: "Groene Pion Aadorp"
 days: ["Various"]
 time: ""

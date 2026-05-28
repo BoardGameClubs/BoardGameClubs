@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/board-in-the-village/
 name: "Board in the Village"
 days: ["Wednesday"]
 time: ""

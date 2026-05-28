@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/around-the-table/
 name: "Around the Table"
 days: ["Friday"]
 time: "7:00pm - 7:45pm"

@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/ronde-stenen-mijdrecht/
 name: "Ronde stenen Mijdrecht"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieltreff-dorsten/
 name: "Brettspieltreff Dorsten"
 days: ["Monday"]
 time: ""

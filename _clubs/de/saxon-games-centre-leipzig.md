@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/saxon-games-centre-leipzig/
 name: "Saxon Games Centre / Toy Library Leipzig"
 days: ["Saturday"]
 time: "19:00 - 02:00"

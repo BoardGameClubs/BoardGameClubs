@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/rugby-on-board/
 name: "Rugby on Board"
 days: ["Tuesday"]
 time: "7:00pm - 10:00pm"

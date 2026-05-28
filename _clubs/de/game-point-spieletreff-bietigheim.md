@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/game-point-spieletreff-bietigheim/
 name: "Game-Point Spieletreff Bietigheim"
 days: ["Friday"]
 time: "19:30 Uhr"

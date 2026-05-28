@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/corbett-gamers/
 name: "Corbett Gamers"
 days: ["Monday", "Thursday"]
 time: "7:30pm - 10:30pm"

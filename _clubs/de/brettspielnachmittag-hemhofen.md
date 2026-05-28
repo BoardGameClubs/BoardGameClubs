@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielnachmittag-hemhofen/
 name: "Brettspielnachmittag (Hemhofen)"
 days: ["Various"]
 time: "15:00 - 23:30 Uhr"

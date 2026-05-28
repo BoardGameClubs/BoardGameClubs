@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/jugar-x-horta-barcelona/
 name: "Jugar x Horta"
 type: ["Board Games"]
 days: ["Various"]

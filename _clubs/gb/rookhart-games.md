@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/rookhart-games/
 name: "RookHart Games"
 days: ["Various"]
 time: ""

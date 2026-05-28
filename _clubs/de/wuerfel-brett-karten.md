@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/wuerfel-brett-karten/
 name: "Würfel, Brett & Karten"
 days: ["Various"]
 time: ""

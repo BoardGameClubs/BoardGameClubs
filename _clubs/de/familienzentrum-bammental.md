@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/familienzentrum-bammental/
 name: "Familienzentrum Bammental"
 days: ["Tuesday"]
 time: "19:30 Uhr"

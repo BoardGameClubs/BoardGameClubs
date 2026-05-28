@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/hpi-spieleclub/
 name: "HPI Spieleclub"
 days: ["Tuesday"]
 time: "18:30"

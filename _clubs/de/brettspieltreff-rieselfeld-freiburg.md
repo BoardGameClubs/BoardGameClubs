@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieltreff-rieselfeld-freiburg/
 name: "Brettspieltreff Rieselfeld (Freiburg)"
 days: ["Saturday"]
 time: ""

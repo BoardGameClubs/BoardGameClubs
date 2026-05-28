@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/shenanigans-koeln/
 name: "Shenanigans Köln"
 days: ["Various"]
 time: ""

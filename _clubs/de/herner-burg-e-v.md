@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/herner-burg-e-v/
 name: "Herner BuRG e. V."
 days: ["Thursday"]
 time: ""

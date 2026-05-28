@@ -1,6 +1,5 @@
 ---
 country: "CH"
-permalink: /ch/clubs/gameinn/
 name: "GameInn"
 type: ["Board Games"]
 days: ["Various"]

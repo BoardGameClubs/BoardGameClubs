@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/tabletop-manchester/
 name: "Tabletop Manchester"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleclub-stadtbibliothek-leimen/
 name: "Spieleclub Stadtbibliothek Leimen"
 days: ["Various"]
 time: "17:30"

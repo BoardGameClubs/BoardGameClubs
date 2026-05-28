@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spiel-gemeinde-wunstorf/
 name: "Spiel!Gemeinde (Wunstorf)"
 days: ["Various"]
 time: ""

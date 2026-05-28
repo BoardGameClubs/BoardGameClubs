@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/vathorst-amersfoort/
 name: "Vathorst Amersfoort"
 days: ["Various"]
 time: ""

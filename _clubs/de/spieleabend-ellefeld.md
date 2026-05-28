@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleabend-ellefeld/
 name: "Spieleabend Ellefeld"
 days: ["Wednesday"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ludothek-muenchen/
 name: "Ludothek München"
 type: ["Board Games"]
 days: ["Wednesday", "Saturday"]

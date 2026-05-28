@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/hobby-workshop-gaming-club/
 name: "Hobby Workshop Gaming Club"
 days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 time: "10:00am - 5:00pm"

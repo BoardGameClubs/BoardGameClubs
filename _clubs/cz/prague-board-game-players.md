@@ -1,6 +1,5 @@
 ---
 country: "CZ"
-permalink: /cz/clubs/prague-board-game-players/
 name: "Prague Board Game Players"
 type: ["Board Games"]
 days: ["Various"]

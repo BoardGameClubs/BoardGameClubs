@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/role-players-guild-birmingham/
 name: "Role Players Guild Birmingham"
 type: ["RPG"]
 days: ["Thursday"]

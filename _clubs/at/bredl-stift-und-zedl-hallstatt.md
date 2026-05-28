@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/bredl-stift-und-zedl-hallstatt/
 name: "Bredl, Stift und Zedl"
 days: ["Various"]
 time: ""

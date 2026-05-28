@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spelrijke-kaprijke/
 name: "Spelrijke Kaprijke"
 days: ["Various"]
 time: ""

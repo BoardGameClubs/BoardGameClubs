@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/dando-juego-albacete/
 name: "Dando Juego Albacete"
 type: ["Board Games"]
 days: ["Various"]

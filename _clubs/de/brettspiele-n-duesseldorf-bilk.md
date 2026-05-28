@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspiele-n-duesseldorf-bilk/
 name: "Brettspiele(n)  Düsseldorf - Bilk"
 days: ["Saturday"]
 time: ""

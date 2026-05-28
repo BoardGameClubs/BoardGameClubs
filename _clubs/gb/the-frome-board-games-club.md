@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/the-frome-board-games-club/
 name: "The Frome Board Games Club"
 type: ["Board Games", "Wargames"]
 days: ["Thursday"]

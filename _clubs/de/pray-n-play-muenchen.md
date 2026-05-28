@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/pray-n-play-muenchen/
 name: "Pray 'n' Play (München)"
 days: ["Wednesday"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/khgaming-nuernberg/
 name: "KHGaming (Nürnberg)"
 days: ["Tuesday"]
 time: ""

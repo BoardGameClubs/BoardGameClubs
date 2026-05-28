@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/ely-tabletop-games/
 name: "Ely Tabletop Games"
 days: ["Monday"]
 time: "6:30pm - 10:00pm"

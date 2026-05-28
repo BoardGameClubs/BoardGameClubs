@@ -1,6 +1,5 @@
 ---
 country: "PL"
-permalink: /pl/clubs/kredens-mdk-gliwice/
 name: "Kredens - Młodzieżowy Dom Kultury"
 type: ["Board Games"]
 days: ["Monday"]

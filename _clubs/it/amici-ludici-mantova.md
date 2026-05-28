@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/amici-ludici-mantova/
 name: "Amici Ludici Mantova"
 type: ["Board Games"]
 days: ["Various"]

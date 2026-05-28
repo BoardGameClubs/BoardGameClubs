@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/sheffield-nerd-collective/
 name: "Sheffield Nerd Collective"
 days: ["Thursday"]
 time: "6:30pm"

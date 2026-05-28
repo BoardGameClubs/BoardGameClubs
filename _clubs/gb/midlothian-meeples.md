@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/midlothian-meeples/
 name: "Midlothian Meeples"
 type: ["Board Games"]
 days: ["Tuesday"]

@@ -1,6 +1,5 @@
 ---
 country: "DK"
-permalink: /dk/clubs/braetspil-holstebro/
 name: "Brætspil Holstebro"
 type: ["Board Games"]
 days: ["Various"]

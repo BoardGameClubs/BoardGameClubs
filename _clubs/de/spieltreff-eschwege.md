@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieltreff-eschwege/
 name: "Spieltreff Eschwege"
 days: ["Wednesday"]
 time: ""

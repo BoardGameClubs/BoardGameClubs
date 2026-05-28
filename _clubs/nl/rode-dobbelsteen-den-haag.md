@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/rode-dobbelsteen-den-haag/
 name: "Rode Dobbelsteen Den Haag"
 days: ["Various"]
 time: ""

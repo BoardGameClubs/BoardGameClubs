@@ -1,6 +1,5 @@
 ---
 country: "DK"
-permalink: /dk/clubs/silkeborg-papstinenser/
 name: "Silkeborg PAPstinenser"
 type: ["Board Games"]
 days: ["Various"]

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ali-baba-spieleclub-e-v-neubrandenburg/
 name: "Ali Baba Spieleclub e.V. Neubrandenburg"
 days: ["Tuesday", "Friday"]
 time: ""

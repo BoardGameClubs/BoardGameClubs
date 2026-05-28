@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/darmstaedter-spieletreff/
 name: "Darmstädter Spieletreff"
 days: ["Tuesday", "Thursday", "Saturday"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/cafe-b-klingenthal/
 name: "Café B Klingenthal"
 days: ["Various"]
 time: ""

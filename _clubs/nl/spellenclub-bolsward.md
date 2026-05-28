@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenclub-bolsward/
 name: "Spellenclub Bolsward"
 days: ["Various"]
 time: ""

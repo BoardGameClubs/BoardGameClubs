@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/club-doble-seis-san-vicente/
 name: "Club Doble Seis"
 type: ["Board Games"]
 days: ["Saturday"]

@@ -1,19 +1,7 @@
-{% comment %}Mirror default.html's lang derivation: club detail pages take
-their UI language from the club's country; everything else takes it from
-page.language.{% endcomment %}
-{% if page.layout == "club" %}
-  {% assign club_country_lc = page.country | default: "GB" | downcase %}
-  {% case club_country_lc %}
-    {% when "de" %}{% assign lang = "de" %}
-    {% when "it" %}{% assign lang = "it" %}
-    {% when "fr" %}{% assign lang = "fr" %}
-    {% when "es" %}{% assign lang = "es" %}
-    {% when "pl" %}{% assign lang = "pl" %}
-    {% else %}{% assign lang = "en" %}
-  {% endcase %}
-{% else %}
-  {% assign lang = page.language | default: "en" %}
-{% endif %}
+{% comment %}Chrome language comes from page.language (set by the scope
+defaults in _config.yml). Club-page body strings are handled in
+_layouts/club.html.{% endcomment %}
+{% assign lang = page.language | default: "en" %}
 {% case lang %}
   {% when "de" %}{% assign og_locale = "de_DE" %}
   {% when "it" %}{% assign og_locale = "it_IT" %}
@@ -99,4 +87,13 @@ the equivalent path in every supported language plus an x-default
   <link rel="alternate" hreflang="fr-FR" href="{{ '/fr/licence/' | absolute_url }}">
   <link rel="alternate" hreflang="es-ES" href="{{ '/es/licence/' | absolute_url }}">
   <link rel="alternate" hreflang="pl-PL" href="{{ '/pl/licence/' | absolute_url }}">
+{% elsif page.layout == "club" %}
+  {% capture canonical_path %}/clubs/{{ page.slug }}/{% endcapture %}
+  <link rel="alternate" hreflang="en-GB" href="{{ canonical_path | absolute_url }}">
+  <link rel="alternate" hreflang="de-DE" href="{{ '/de' | append: canonical_path | absolute_url }}">
+  <link rel="alternate" hreflang="it-IT" href="{{ '/it' | append: canonical_path | absolute_url }}">
+  <link rel="alternate" hreflang="fr-FR" href="{{ '/fr' | append: canonical_path | absolute_url }}">
+  <link rel="alternate" hreflang="es-ES" href="{{ '/es' | append: canonical_path | absolute_url }}">
+  <link rel="alternate" hreflang="pl-PL" href="{{ '/pl' | append: canonical_path | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ canonical_path | absolute_url }}">
 {% endif %}

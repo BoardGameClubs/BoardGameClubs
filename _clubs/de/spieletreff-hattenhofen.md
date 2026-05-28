@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-hattenhofen/
 name: "Spieletreff Hattenhofen"
 days: ["Friday"]
 time: "19:00 - 23:00 Uhr"

@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/bdc-torrelavega/
 name: "BdC"
 type: ["Board Games"]
 days: ["Various"]

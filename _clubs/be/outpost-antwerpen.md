@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/outpost-antwerpen/
 name: "Outpost Antwerpen"
 days: ["Various"]
 time: ""

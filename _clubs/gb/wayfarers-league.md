@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/wayfarers-league/
 name: "Wayfarer's League"
 type: ["RPG"]
 days: ["Thursday"]

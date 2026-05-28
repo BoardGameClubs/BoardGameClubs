@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spelgroep-gouda/
 name: "Spelgroep Gouda"
 days: ["Various"]
 time: ""

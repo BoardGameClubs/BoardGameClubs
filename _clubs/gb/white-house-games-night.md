@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/white-house-games-night/
 name: "White House Games Night"
 type: ["Board Games", "BOTC", "RPG"]
 days: ["Tuesday"]

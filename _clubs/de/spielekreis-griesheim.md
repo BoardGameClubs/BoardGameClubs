@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielekreis-griesheim/
 name: "Spielekreis im Kulturverein Griesheim"
 days: ["Friday"]
 time: "19:00"

@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/snake-eyes-heist-op-den-berg/
 name: "Snake Eyes Heist-Op-Den-Berg"
 days: ["Various"]
 time: ""

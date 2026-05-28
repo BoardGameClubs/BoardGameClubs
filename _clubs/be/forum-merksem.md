@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/forum-merksem/
 name: "Forum Merksem"
 days: ["Various"]
 time: ""

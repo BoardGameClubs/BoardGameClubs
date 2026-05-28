@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brucker-spieletreff-emmering/
 name: "Brucker Spieletreff (Emmering)"
 days: ["Friday"]
 time: ""

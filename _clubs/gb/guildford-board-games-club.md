@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/guildford-board-games-club/
 name: "Guildford Board Games Club"
 days: ["Tuesday", "Saturday"]
 time: "6:30pm - 7:00pm"

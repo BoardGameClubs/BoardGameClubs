@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/zomerlust-tilburg/
 name: "Zomerlust Tilburg"
 days: ["Various"]
 time: ""

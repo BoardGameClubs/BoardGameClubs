@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/volkan-tana-goblin-trento/
 name: "Volkan - La Tana dei Goblin Trento"
 type: ["Board Games"]
 days: ["Various"]

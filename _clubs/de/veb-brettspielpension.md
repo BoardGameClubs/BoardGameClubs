@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/veb-brettspielpension/
 name: "VeB Brettspielpension"
 days: ["Various"]
 time: ""

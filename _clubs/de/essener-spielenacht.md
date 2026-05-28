@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/essener-spielenacht/
 name: "Essener Spielenacht"
 days: ["Sunday"]
 time: "16:00 Uhr"

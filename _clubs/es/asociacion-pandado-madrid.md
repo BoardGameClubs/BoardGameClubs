@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/asociacion-pandado-madrid/
 name: "Asociación PANDADO"
 type: ["Board Games"]
 days: ["Various"]

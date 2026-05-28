@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/kierewiet-okegem/
 name: "Kierewiet Okegem"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/pionne-oostende/
 name: "Pionne Oostende"
 days: ["Various"]
 time: ""

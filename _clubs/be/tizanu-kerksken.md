@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/tizanu-kerksken/
 name: "Tizanu Kerksken"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/east-linton-board-game-club/
 name: "East Linton Board Game Club"
 days: ["Saturday"]
 time: "7:00pm onwards"

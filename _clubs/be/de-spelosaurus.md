@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/de-spelosaurus/
 name: "De Spelosaurus"
 days: ["Various"]
 time: ""

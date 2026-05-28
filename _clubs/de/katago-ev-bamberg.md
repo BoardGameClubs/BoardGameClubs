@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/katago-ev-bamberg/
 name: "KaTaGO e.V. Bamberg"
 days: ["Various"]
 time: ""

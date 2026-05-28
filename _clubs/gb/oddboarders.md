@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/oddboarders/
 name: "Oddboarders"
 days: ["Monday"]
 time: "7:00pm - 11:00pm"

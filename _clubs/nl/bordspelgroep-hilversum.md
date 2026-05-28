@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/bordspelgroep-hilversum/
 name: "Wijkcentrum St. Joseph, Hilversum"
 days: ["Various"]
 time: ""

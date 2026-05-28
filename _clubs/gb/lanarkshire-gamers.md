@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/lanarkshire-gamers/
 name: "Lanarkshire Gamers"
 type: ["Board Games", "Wargames", "RPG"]
 days: ["Saturday"]

@@ -1,6 +1,5 @@
 ---
 country: "FR"
-permalink: /fr/clubs/les-sakavins-annecy/
 name: "Les Sakavins"
 type: ["Board Games"]
 days: ["Various"]

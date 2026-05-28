@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/south-side-board-games/
 name: "South Side Board Games (SSBG)"
 days: ["Monday"]
 time: "7:00pm - 11:00pm"

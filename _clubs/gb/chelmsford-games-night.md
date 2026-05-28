@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/chelmsford-games-night/
 name: "Chelmsford Games Night"
 days: ["Tuesday"]
 time: "6:30pm"

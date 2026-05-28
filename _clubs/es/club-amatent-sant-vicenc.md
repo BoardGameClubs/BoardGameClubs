@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/club-amatent-sant-vicenc/
 name: "Club Amatent"
 type: ["Board Games"]
 days: ["Saturday"]

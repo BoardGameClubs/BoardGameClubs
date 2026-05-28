@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/east-neuk-tabletop/
 name: "East Neuk Tabletop"
 type: ["Board Games", "RPG", "Wargames"]
 days: ["Sunday"]

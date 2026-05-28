@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/burgdorf-spielt/
 name: "Burgdorf spielt!"
 days: ["Saturday"]
 time: "ab 18:00 Uhr"

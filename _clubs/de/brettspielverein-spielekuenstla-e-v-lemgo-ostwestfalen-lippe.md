@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielverein-spielekuenstla-e-v-lemgo-ostwestfalen-lippe/
 name: "Brettspielverein Spielekünstla e.V Lemgo/Ostwestfalen-Lippe"
 days: ["Friday"]
 time: ""

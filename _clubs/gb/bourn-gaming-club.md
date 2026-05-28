@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/bourn-gaming-club/
 name: "Bourn Gaming Club"
 type: ["Wargames", "TCG", "RPG"]
 days: ["Wednesday"]

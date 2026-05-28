@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielekreis-noerdlingen/
 name: "Spielekreis Nördlingen"
 days: ["Saturday"]
 time: "15:00 - 18:00"

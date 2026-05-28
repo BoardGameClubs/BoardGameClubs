@@ -1,6 +1,5 @@
 ---
 country: "EE"
-permalink: /ee/clubs/ludo-lauamanguklubi/
 name: "Ludo Lauamänguklubi"
 type: ["Board Games"]
 days: ["Various"]

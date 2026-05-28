@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/afk-brettspiel-lounge-donauwoerth/
 name: "AFK Brettspiel Lounge (Donauwörth)"
 days: ["Saturday"]
 time: "14:00 Uhr"

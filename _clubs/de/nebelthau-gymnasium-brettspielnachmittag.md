@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/nebelthau-gymnasium-brettspielnachmittag/
 name: "Nebelthau-Gymnasium Brettspielnachmittag"
 days: ["Friday"]
 time: "16:00 - 20:00"

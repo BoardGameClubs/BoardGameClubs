@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/wednesday-night-gaming/
 name: "Wednesday Night Gaming"
 days: ["Wednesday"]
 time: "6:00pm - 11:00pm"

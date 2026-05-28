@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/sants-jocs-barcelona/
 name: "Sants-Jocs"
 type: ["Board Games"]
 days: ["Various"]

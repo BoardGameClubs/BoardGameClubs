@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieletreff-lorch-schorndorf/
 name: "Brettspieletreff Lorch & Schorndorf"
 days: ["Friday"]
 time: "19:00 Uhr"

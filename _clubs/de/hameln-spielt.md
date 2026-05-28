@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/hameln-spielt/
 name: "Hameln Spielt!"
 days: ["Tuesday"]
 time: "ab 19:00 Uhr"

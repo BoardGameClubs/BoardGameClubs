@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/blauw-zwolle/
 name: "Blauw Zwolle"
 days: ["Various"]
 time: ""

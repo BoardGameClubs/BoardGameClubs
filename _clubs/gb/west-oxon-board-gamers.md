@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/west-oxon-board-gamers/
 name: "West Oxon Board Gamers"
 days: ["Various"]
 time: ""

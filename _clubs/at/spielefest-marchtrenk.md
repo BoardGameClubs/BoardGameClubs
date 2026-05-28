@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/spielefest-marchtrenk/
 name: "Spielefest"
 days: ["Tuesday"]
 time: "7:00pm"

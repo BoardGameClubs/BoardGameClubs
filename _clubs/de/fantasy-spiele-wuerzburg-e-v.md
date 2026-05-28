@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/fantasy-spiele-wuerzburg-e-v/
 name: "Fantasy-Spiele Würzburg e.V."
 days: ["Various"]
 time: ""

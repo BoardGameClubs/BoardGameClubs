@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/schachtbrett-spielegruppe/
 name: "Schachtbrett Spielegruppe"
 days: ["Various"]
 time: ""

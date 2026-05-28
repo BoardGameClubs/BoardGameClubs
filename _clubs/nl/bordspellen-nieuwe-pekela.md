@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/bordspellen-nieuwe-pekela/
 name: "Bordspellen Nieuwe Pekela"
 days: ["Various"]
 time: ""

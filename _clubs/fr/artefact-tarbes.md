@@ -1,6 +1,5 @@
 ---
 country: "FR"
-permalink: /fr/clubs/artefact-tarbes/
 name: "ARTEFACT"
 type: ["Board Games"]
 days: ["Saturday", "Sunday"]

@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/dn-draok-s-hertogenbosch/
 name: "d&apos;n Draok &apos;s-Hertogenbosch"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/mediathek-diepholz/
 name: "Mediathek Diepholz"
 days: ["Thursday"]
 time: ""

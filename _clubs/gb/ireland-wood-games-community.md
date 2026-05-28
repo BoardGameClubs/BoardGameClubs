@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/ireland-wood-games-community/
 name: "Ireland Wood Games Community"
 days: ["Monday"]
 time: "7:00pm - 9:45pm"

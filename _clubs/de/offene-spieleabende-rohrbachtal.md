@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/offene-spieleabende-rohrbachtal/
 name: "Offene Spieleabende (Rohrbachtal)"
 days: ["Various"]
 time: "ab 19:00 Uhr"

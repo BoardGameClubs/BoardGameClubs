@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/roll-with-cabs/
 name: "Chapel Allerton Boardgame Society"
 days: ["Wednesday"]
 time: "6:00pm - 10:00pm"

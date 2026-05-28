@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/the-games-table/
 name: "The Games Table"
 type: ["Board Games", "RPG"]
 days: ["Monday", "Wednesday", "Thursday"]

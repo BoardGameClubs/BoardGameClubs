@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/d5games-hulshout/
 name: "D5GAMES, Hulshout"
 days: ["Various"]
 time: ""

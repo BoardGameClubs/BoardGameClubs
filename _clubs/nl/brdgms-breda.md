@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/brdgms-breda/
 name: "BRDGMS Breda"
 days: ["Various"]
 time: ""

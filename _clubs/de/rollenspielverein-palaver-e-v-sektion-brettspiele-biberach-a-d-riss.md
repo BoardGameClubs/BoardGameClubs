@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/rollenspielverein-palaver-e-v-sektion-brettspiele-biberach-a-d-riss/
 name: "Rollenspielverein Palaver e.V. / Sektion Brettspiele (Biberach a.d. Riß)"
 days: ["Tuesday"]
 time: "19:00 Uhr"

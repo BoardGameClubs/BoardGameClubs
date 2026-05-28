@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/barmbeker-brettspielnachmittag/
 name: "Barmbeker Brettspielnachmittag"
 days: ["Sunday"]
 time: ""

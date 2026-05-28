@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/gammertinger-spieletreff/
 name: "Gammertinger Spieletreff"
 days: ["Various"]
 time: ""

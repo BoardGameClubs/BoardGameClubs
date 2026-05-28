@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/southampton-guild-of-roleplayers/
 name: "Southampton Guild of Roleplayers"
 type: ["RPG"]
 days: ["Wednesday"]

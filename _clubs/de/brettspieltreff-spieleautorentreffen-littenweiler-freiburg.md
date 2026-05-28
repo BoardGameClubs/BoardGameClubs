@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieltreff-spieleautorentreffen-littenweiler-freiburg/
 name: "Brettspieltreff & Spieleautorentreffen Littenweiler (Freiburg)"
 days: ["Thursday", "Friday"]
 time: ""

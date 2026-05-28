@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/zot-van-t-spel-gentbrugge/
 name: "Zot van &apos;t Spel Gentbrugge"
 days: ["Various"]
 time: ""

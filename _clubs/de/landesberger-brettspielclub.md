@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/landesberger-brettspielclub/
 name: "Landesberger Brettspielclub"
 days: ["Friday"]
 time: "20:00 Uhr"

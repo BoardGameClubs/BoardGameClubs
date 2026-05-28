@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/brettspielverein-vorarlberg/
 name: "Brettspielverein Vorarlberg"
 days: ["Various"]
 time: ""

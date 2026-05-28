@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/the-friends-of-general-haig/
 name: "The Friends of General Haig"
 type: ["Wargames"]
 days: ["Saturday"]

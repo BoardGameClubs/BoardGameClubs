@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-wunder-voll-wattenbek/
 name: "Spieletreff „WUNDER-voll“ (Wattenbek)"
 days: ["Thursday"]
 time: ""

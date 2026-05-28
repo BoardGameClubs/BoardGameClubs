@@ -1,6 +1,5 @@
 ---
 country: "PT"
-permalink: /pt/clubs/gba-aveiro/
 name: "GBA - Grupo de Boardgamers de Aveiro"
 type: ["Board Games"]
 days: ["Various"]

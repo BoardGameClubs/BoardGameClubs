@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/faringdon-games-club/
 name: "Faringdon Games Club"
 type: ["Board Games", "RPG", "TCG"]
 days: ["Sunday"]

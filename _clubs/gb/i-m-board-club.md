@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/i-m-board-club/
 name: "I’m Board Club"
 days: ["Thursday"]
 time: ""

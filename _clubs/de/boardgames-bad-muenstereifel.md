@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/boardgames-bad-muenstereifel/
 name: "Boardgames Bad Münstereifel"
 days: ["Thursday"]
 time: "18:00 Uhr"

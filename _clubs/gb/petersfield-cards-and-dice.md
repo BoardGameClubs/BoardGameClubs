@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/petersfield-cards-and-dice/
 name: "Petersfield Cards and Dice"
 days: ["Thursday"]
 time: "7:00pm"

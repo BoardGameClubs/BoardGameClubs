@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/giochi-corsari-genova/
 name: "Giochi Corsari"
 type: ["Board Games"]
 days: ["Various"]

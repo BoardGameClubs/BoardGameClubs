@@ -1,6 +1,5 @@
 ---
 country: "PL"
-permalink: /pl/clubs/gramajda-poznan/
 name: "Gramajda"
 type: ["Board Games"]
 days: ["Various"]

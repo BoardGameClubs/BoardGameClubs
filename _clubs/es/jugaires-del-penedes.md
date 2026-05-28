@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/jugaires-del-penedes/
 name: "Jugaires del Penedès"
 type: ["Board Games"]
 days: ["Various"]

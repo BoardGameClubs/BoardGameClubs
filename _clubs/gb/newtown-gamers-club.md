@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/newtown-gamers-club/
 name: "Newtown Gamers Club"
 type: ["Board Games", "RPG"]
 days: ["Wednesday"]

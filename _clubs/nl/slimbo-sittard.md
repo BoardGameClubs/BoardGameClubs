@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/slimbo-sittard/
 name: "Slimbo Sittard"
 days: ["Various"]
 time: ""

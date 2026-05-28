@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielen-bei-luther/
 name: "Spielen bei Luther"
 days: ["Various"]
 time: ""

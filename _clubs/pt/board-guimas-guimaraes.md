@@ -1,6 +1,5 @@
 ---
 country: "PT"
-permalink: /pt/clubs/board-guimas-guimaraes/
 name: "Board Guimas"
 type: ["Board Games"]
 days: ["Wednesday", "Saturday"]

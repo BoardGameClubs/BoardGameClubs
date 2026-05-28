@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/speelse-gezellen-lebbeke/
 name: "Speelse Gezellen Lebbeke"
 days: ["Various"]
 time: ""

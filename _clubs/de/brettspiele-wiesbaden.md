@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspiele-wiesbaden/
 name: "Brettspiele Wiesbaden"
 days: ["Tuesday"]
 time: ""

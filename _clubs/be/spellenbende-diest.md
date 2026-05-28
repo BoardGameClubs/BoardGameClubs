@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spellenbende-diest/
 name: "Spellenbende Diest"
 days: ["Various"]
 time: ""

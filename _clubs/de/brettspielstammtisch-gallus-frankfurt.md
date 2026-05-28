@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielstammtisch-gallus-frankfurt/
 name: "Brettspielstammtisch Gallus (Frankfurt)"
 days: ["Thursday"]
 time: ""

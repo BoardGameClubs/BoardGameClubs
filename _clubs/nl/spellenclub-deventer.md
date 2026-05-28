@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenclub-deventer/
 name: "Spellenclub Deventer"
 days: ["Various"]
 time: ""

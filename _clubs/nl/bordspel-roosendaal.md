@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/bordspel-roosendaal/
 name: "Bordspel Roosendaal"
 days: ["Various"]
 time: ""

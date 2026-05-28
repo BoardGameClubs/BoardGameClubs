@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/meeple4people-oudsbergen/
 name: "Meeple4People Oudsbergen"
 days: ["Various"]
 time: ""

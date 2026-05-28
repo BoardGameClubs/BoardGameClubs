@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/igrajem-verein-der-spielfreunde-e-v-huerth/
 name: "Igrajem   Verein der Spielfreunde e.V. (Hürth)"
 days: ["Friday"]
 time: "18:00 Uhr"

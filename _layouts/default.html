@@ -1,24 +1,14 @@
 ---
 ---
-{% comment %}Club detail pages override language by their country
-(DE clubs in German, GB clubs in English, and so on for any UI language
-we ship strings for). Other pages take their language from frontmatter
-/ scoped defaults. The lang_to_country map mirrors which country a
-language's site defaults to.{% endcomment %}
-{% assign supported_langs = "en,de,it,fr,es,pl" | split: "," %}
+{% comment %}Chrome (nav/footer) takes its language from page.language —
+which comes from the scoped default for the file's path (English for
+/clubs/, French for /fr/, and so on). Club-specific bits inside the
+page body that should follow the club's country (day names, type
+labels) are localised separately in _layouts/club.html.{% endcomment %}
+{% assign lang = page.language | default: "en" %}
 {% if page.layout == "club" %}
-  {% assign club_country_lc = page.country | default: "GB" | downcase %}
-  {% case club_country_lc %}
-    {% when "de" %}{% assign lang = "de" %}
-    {% when "it" %}{% assign lang = "it" %}
-    {% when "fr" %}{% assign lang = "fr" %}
-    {% when "es" %}{% assign lang = "es" %}
-    {% when "pl" %}{% assign lang = "pl" %}
-    {% else %}{% assign lang = "en" %}
-  {% endcase %}
-  {% assign default_country_key = club_country_lc %}
+  {% assign default_country_key = page.country | default: "GB" | downcase %}
 {% else %}
-  {% assign lang = page.language | default: "en" %}
   {% assign default_country_key = page.default_country | default: "GB" | downcase %}
 {% endif %}
 {% assign country = site.data.countries[default_country_key] %}

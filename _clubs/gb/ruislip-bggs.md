@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/ruislip-bggs/
 name: "Ruislip BGGs"
 days: ["Monday", "Wednesday"]
 time: "8:00pm - 11:00pm"

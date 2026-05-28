@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/orange-dwarf-hellevoetsluis/
 name: "Orange Dwarf Hellevoetsluis"
 days: ["Various"]
 time: ""

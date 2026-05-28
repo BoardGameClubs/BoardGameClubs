@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/strateeg-landskouter/
 name: "Strateeg Landskouter"
 days: ["Various"]
 time: ""

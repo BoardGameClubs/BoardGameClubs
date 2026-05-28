@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ahrensburg-spielt/
 name: "Ahrensburg spielt"
 days: ["Various"]
 time: ""

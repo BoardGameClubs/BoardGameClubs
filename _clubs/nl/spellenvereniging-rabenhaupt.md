@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenvereniging-rabenhaupt/
 name: "Spellenvereniging Rabenhaupt"
 days: ["Various"]
 time: ""

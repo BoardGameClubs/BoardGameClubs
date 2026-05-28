@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/tonton-club-amsterdam/
 name: "TonTon Club Amsterdam"
 days: ["Various"]
 time: ""

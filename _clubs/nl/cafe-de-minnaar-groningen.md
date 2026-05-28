@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/cafe-de-minnaar-groningen/
 name: "Café de Minnaar Groningen"
 days: ["Various"]
 time: ""

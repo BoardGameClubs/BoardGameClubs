@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/dau-ferrat-sitges/
 name: "Dau Ferrat"
 type: ["Board Games"]
 days: ["Various"]

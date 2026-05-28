@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/fucine-ludiche-rovereto/
 name: "Fucine Ludiche"
 type: ["Board Games"]
 days: ["Thursday"]

@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/dobbelix-vleuten/
 name: "Dobbelix Vleuten"
 days: ["Various"]
 time: ""

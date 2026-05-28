@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/circulo-de-isengard-alcala/
 name: "A.C. Círculo de Isengard"
 type: ["Board Games"]
 days: ["Thursday", "Saturday"]

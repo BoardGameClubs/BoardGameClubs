@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ali-baba-spieleclub-e-v-nettetal/
 name: "Ali Baba Spieleclub e.V. Nettetal"
 days: ["Thursday", "Sunday"]
 time: "18:00 - 23:00 Uhr"

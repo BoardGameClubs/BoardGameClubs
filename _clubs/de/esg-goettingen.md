@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/esg-goettingen/
 name: "ESG Göttingen"
 days: ["Friday"]
 time: ""

@@ -2,7 +2,8 @@
 layout: null
 ---
 [
-  {% for club in site.clubs %}
+  {% assign canonical_clubs = site.clubs | where: "language", "en" %}
+  {% for club in canonical_clubs %}
   {
     "name": {{ club.name | jsonify }},
     "slug": {{ club.slug | jsonify }},
@@ -28,3 +29,8 @@ layout: null
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
+{% comment %}One entry per club. Site.clubs includes language clones at
+/de/clubs/, /fr/clubs/ etc. emitted by _plugins/club_language_clones.rb —
+we filter to the canonical English-URL version so the map shows each
+club once. The frontend's localiseClubUrl() rewrites the URL to match
+the visitor's language at click time.{% endcomment %}

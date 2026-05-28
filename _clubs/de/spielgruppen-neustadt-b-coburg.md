@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielgruppen-neustadt-b-coburg/
 name: "Spielgruppen (Neustadt b. Coburg)"
 days: ["Tuesday", "Friday"]
 time: "14:00 - 15:30 Uhr"

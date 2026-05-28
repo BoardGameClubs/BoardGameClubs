@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ali-baba-spieleclub-e-v-dormagen/
 name: "Ali Baba Spieleclub e.V. Dormagen"
 days: ["Monday"]
 time: ""

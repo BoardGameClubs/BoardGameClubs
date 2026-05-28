@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/wattenbeker-spieletreff/
 name: "Wattenbeker Spieletreff"
 days: ["Saturday"]
 time: ""

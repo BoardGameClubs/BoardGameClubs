@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/mediathek-muellheim/
 name: "Mediathek Müllheim"
 days: ["Various"]
 time: ""

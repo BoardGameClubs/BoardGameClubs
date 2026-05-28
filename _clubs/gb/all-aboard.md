@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/all-aboard/
 name: "All Aboard"
 days: ["Monday", "Thursday"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/achimer-brettspiele-club-e-v/
 name: "Achimer Brettspiele-Club e. V."
 days: ["Friday"]
 time: "19:30 Uhr"

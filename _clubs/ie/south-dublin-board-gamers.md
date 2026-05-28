@@ -1,6 +1,5 @@
 ---
 country: "IE"
-permalink: /ie/clubs/south-dublin-board-gamers/
 name: "South Dublin Board Gamers"
 type: ["Board Games"]
 days: ["Various"]

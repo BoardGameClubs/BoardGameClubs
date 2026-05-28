@@ -1,6 +1,5 @@
 ---
 country: "PL"
-permalink: /pl/clubs/wodzislawski-klub-gier-planszowych/
 name: "Wodzisławski Klub Gier Planszowych"
 type: ["Board Games"]
 days: ["Various"]

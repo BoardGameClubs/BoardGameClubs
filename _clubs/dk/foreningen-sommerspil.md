@@ -1,6 +1,5 @@
 ---
 country: "DK"
-permalink: /dk/clubs/foreningen-sommerspil/
 name: "Foreningen Sommerspil"
 type: ["Board Games"]
 days: ["Various"]

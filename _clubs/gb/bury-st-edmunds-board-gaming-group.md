@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/bury-st-edmunds-board-gaming-group/
 name: "Bury St Edmunds Board Gaming Group"
 days: ["Thursday"]
 time: "7:00pm"

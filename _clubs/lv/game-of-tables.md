@@ -1,6 +1,5 @@
 ---
 country: "LV"
-permalink: /lv/clubs/game-of-tables/
 name: "Game of Tables"
 type: ["Board Games"]
 days: ["Various"]

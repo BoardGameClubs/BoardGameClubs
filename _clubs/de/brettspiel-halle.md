@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspiel-halle/
 name: "Brettspiel Halle"
 days: ["Monday"]
 time: "19:30 Uhr"

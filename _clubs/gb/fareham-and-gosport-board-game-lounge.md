@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/fareham-and-gosport-board-game-lounge/
 name: "Fareham and Gosport Board Game Lounge"
 days: ["Friday"]
 time: "7:00pm - late"

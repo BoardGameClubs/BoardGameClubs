@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/blood-on-the-clocktower-warrington/
 name: "Wolves of Ravenswood"
 type: ["BOTC"]
 days: ["Monday"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/trawden-board-gamers/
 name: "Trawden Board Gamers"
 days: ["Tuesday"]
 time: "7:00pm - 10:00pm"

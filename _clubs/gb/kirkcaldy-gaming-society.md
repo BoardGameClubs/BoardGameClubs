@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/kirkcaldy-gaming-society/
 name: "Kirkcaldy Gaming Society"
 type: ["Board Games", "RPG", "Wargames"]
 days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Saturday", "Sunday"]

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/alsfeld-spielt/
 name: "Alsfeld spielt…"
 days: ["Thursday", "Saturday"]
 time: ""

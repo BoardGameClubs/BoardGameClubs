@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/dragon-de-madera-granada/
 name: "El Dragón de Madera"
 type: ["Board Games"]
 days: ["Various"]

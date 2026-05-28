@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielwatt-essen-ruettenscheid/
 name: "Spielwatt (Essen-Rüttenscheid)"
 days: ["Monday"]
 time: ""

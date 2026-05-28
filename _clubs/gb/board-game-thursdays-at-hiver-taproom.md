@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/board-game-thursdays-at-hiver-taproom/
 name: "Board Game Thursdays at Hiver Taproom"
 type: ["Board Games", "BOTC"]
 days: ["Thursday"]

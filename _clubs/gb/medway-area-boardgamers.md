@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/medway-area-boardgamers/
 name: "Medway Area Boardgamers"
 days: ["Wednesday"]
 time: "6:30pm - 11:00pm"

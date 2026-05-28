@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/weyher-wuerfel/
 name: "Weyher Würfel"
 days: ["Wednesday"]
 time: "18:30 - 22:00 Uhr"

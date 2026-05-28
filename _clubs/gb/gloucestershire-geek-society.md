@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/gloucestershire-geek-society/
 name: "Gloucestershire Geek Society."
 type: ["Board Games", "RPG"]
 days: ["Various"]

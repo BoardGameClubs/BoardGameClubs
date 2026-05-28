@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/saargamer/
 name: "Saargamer"
 days: ["Various"]
 time: ""

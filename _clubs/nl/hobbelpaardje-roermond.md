@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/hobbelpaardje-roermond/
 name: "Hobbelpaardje Roermond"
 days: ["Various"]
 time: ""

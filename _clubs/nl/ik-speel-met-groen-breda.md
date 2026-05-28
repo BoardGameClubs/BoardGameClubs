@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/ik-speel-met-groen-breda/
 name: "Ik speel met Groen Breda"
 days: ["Various"]
 time: ""

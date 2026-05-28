@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/asociacion-6d6-santiago/
 name: "Asociación 6d6"
 type: ["Board Games"]
 days: ["Various"]

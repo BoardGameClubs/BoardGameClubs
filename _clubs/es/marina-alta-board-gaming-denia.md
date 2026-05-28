@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/marina-alta-board-gaming-denia/
 name: "Marina Alta Board Gaming"
 type: ["Board Games"]
 days: ["Various"]

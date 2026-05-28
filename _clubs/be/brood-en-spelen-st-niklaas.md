@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/brood-en-spelen-st-niklaas/
 name: "Brood en Spelen St. Niklaas"
 days: ["Various"]
 time: ""

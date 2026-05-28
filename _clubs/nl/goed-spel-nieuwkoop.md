@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/goed-spel-nieuwkoop/
 name: "Goed Spel Nieuwkoop"
 days: ["Various"]
 time: ""

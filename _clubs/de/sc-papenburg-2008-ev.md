@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/sc-papenburg-2008-ev/
 name: "SC Papenburg 2008 e.V."
 days: ["Friday"]
 time: "20:00"

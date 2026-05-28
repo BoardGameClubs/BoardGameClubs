@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spellenclub-sint-martens-latem/
 name: "Spellenclub Sint-Martens-Latem"
 days: ["Various"]
 time: ""

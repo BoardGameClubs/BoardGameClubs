@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/bridport-board-game-meet-up/
 name: "Bridport Board Game Meet-up"
 days: ["Saturday"]
 time: "1:00pm - 9:00pm"

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/pennsylvania-exeter-board-games/
 name: "Pennsylvania Exeter Board Games"
 days: ["Wednesday"]
 time: "7:00pm - 10:00pm"

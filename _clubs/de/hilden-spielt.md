@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/hilden-spielt/
 name: "Hilden spielt"
 days: ["Saturday"]
 time: "10:00 - 13:30"

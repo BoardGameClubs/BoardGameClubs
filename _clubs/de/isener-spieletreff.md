@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/isener-spieletreff/
 name: "Isener Spieletreff"
 days: ["Saturday"]
 time: ""

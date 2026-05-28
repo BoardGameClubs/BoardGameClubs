@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/gesellschaft-fuer-historische-simulationen-e-v-ghs-e-v/
 name: "Gesellschaft für historische Simulationen e.V. (GHS e.V.)"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielehaus-e-v/
 name: "Spielehaus e.V."
 days: ["Monday", "Friday", "Saturday", "Sunday"]
 time: ""

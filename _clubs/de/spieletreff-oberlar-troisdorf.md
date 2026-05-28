@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-oberlar-troisdorf/
 name: "Spieletreff Oberlar (Troisdorf)"
 days: ["Friday"]
 time: ""

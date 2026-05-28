@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/offener-brettspiel-treff-emden/
 name: "Offener Brettspiel-Treff Emden"
 days: ["Thursday"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/bordspelgroep-lunetten/
 name: "Bordspelgroep Lunetten"
 days: ["Various"]
 time: ""

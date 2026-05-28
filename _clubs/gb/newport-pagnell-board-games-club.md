@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/newport-pagnell-board-games-club/
 name: "Newport Pagnell Board Games Club"
 days: ["Various"]
 time: "6:00pm - 6:30pm"

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/beeston-board-games-club/
 name: "Beeston Board Games Club"
 type: ["Board Games", "RPG"]
 days: ["Thursday"]

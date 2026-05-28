@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/swansea-wargames-and-boardgames-club/
 name: "Swansea Wargames & Boardgames Club"
 type: ["Board Games", "Wargames"]
 days: ["Monday"]

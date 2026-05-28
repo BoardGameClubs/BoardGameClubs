@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/winning-movez-lokeren/
 name: "Winning Movez Lokeren"
 days: ["Various"]
 time: ""

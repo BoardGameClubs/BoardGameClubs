@@ -1,6 +1,5 @@
 ---
 country: "FR"
-permalink: /fr/clubs/empire-des-rois-joueurs-koenigsmacker/
 name: "L'Empire des Rois Joueurs"
 type: ["Board Games"]
 days: ["Various"]

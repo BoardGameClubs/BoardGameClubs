@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/moaser-spieleclub/
 name: "Moaser Spieleclub"
 days: ["Various"]
 time: ""

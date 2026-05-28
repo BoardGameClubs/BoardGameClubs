@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/gamers-guild-gent/
 name: "Gamers Guild Gent"
 days: ["Various"]
 time: ""

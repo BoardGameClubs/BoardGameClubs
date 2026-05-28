@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/die-brettspielfuechse-ravensburg/
 name: "Die Brettspielfüchse (Ravensburg)"
 days: ["Saturday"]
 time: "19:00 Uhr"

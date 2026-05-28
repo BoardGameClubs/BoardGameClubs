@@ -1,6 +1,5 @@
 ---
 country: "IE"
-permalink: /ie/clubs/tabletop-celbridge/
 name: "Tabletop Dublin / Kildare (Celbridge)"
 type: ["Board Games"]
 days: ["Thursday"]

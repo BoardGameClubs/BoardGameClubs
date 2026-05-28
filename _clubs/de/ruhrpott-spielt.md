@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ruhrpott-spielt/
 name: "Ruhrpott spielt"
 days: ["Saturday", "Sunday"]
 time: "12:00"

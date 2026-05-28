@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-kempen/
 name: "Spieletreff Kempen"
 days: ["Wednesday"]
 time: ""

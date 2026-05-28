@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/rbtk-sportverein-maria-lanzendorf/
 name: "RBTK Sportverein"
 type: ["Board Games", "RPG", "Wargames", "TCG"]
 days: ["Sunday"]

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/foerderkreis-innovatives-spiel-e-v/
 name: "Förderkreis innovatives Spiel e.V."
 days: ["Saturday"]
 time: ""

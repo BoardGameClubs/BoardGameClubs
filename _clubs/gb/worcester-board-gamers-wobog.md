@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/worcester-board-gamers-wobog/
 name: "Worcester Board Gamers (WoBoG)"
 days: ["Wednesday"]
 time: "6:30pm"

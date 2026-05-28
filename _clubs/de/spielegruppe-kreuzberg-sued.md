@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielegruppe-kreuzberg-sued/
 name: "Spielegruppe Kreuzberg-Süd"
 days: ["Friday"]
 time: "18:00 - 23:45"

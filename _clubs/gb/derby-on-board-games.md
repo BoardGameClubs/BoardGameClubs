@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/derby-on-board-games/
 name: "Derby On Board Games"
 type: ["Board Games"]
 days: ["Monday"]

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/juwe-jugendzentrum-west-vellmar/
 name: "JuWe Jugendzentrum West (Vellmar)"
 days: ["Various"]
 time: ""

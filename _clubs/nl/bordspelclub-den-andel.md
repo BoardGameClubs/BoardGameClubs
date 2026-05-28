@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/bordspelclub-den-andel/
 name: "Bordspelclub Den Andel"
 days: ["Various"]
 time: ""

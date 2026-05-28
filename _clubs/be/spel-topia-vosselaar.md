@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spel-topia-vosselaar/
 name: "Spel-Topia Vosselaar"
 days: ["Various"]
 time: ""

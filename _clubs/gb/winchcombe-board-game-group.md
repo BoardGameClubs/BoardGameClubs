@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/winchcombe-board-game-group/
 name: "Winchcombe Board Game Group"
 days: ["Various"]
 time: ""

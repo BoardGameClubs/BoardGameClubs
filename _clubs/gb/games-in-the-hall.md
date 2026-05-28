@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/games-in-the-hall/
 name: "Games in the Hall"
 days: ["Various"]
 time: "6:00pm - 10:00pm"

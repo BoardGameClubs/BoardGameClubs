@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielecafe-generationen-pfarrkirchen/
 name: "Spielecafé der Generationen — Jung und Alt Spielt e.V."
 days: ["Various"]
 time: ""

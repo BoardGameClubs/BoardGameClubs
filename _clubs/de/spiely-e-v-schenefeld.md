@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spiely-e-v-schenefeld/
 name: "Spiely e.V. (Schenefeld)"
 days: ["Wednesday", "Thursday"]
 time: "15:30:00 - 17:30:00 Uhr"

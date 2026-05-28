@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spellenraaf-ravenstein/
 name: "Spellenraaf Ravenstein"
 days: ["Various"]
 time: ""

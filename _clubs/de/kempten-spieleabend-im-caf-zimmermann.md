@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/kempten-spieleabend-im-caf-zimmermann/
 name: "Kempten: Spieleabend im Café Zimmermann"
 days: ["Monday"]
 time: "20:00 Uhr"

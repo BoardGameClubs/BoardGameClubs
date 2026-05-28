@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/gesellschafts-und-brettspiele-landshut/
 name: "Gesellschafts- und Brettspiele Landshut"
 days: ["Saturday", "Sunday"]
 time: ""

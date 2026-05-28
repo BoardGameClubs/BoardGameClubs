@@ -38,12 +38,13 @@
       {% endif %}
       {% if neutral_path == "" %}{% assign neutral_path = "/" %}{% endif %}
       {% if page.layout == "club" %}
-        {% assign en_url = "/" %}
-        {% assign de_url = "/de/" %}
-        {% assign it_url = "/it/" %}
-        {% assign fr_url = "/fr/" %}
-        {% assign es_url = "/es/" %}
-        {% assign pl_url = "/pl/" %}
+        {% capture club_path %}/clubs/{{ page.slug }}/{% endcapture %}
+        {% assign en_url = club_path %}
+        {% capture de_url %}/de{{ club_path }}{% endcapture %}
+        {% capture it_url %}/it{{ club_path }}{% endcapture %}
+        {% capture fr_url %}/fr{{ club_path }}{% endcapture %}
+        {% capture es_url %}/es{{ club_path }}{% endcapture %}
+        {% capture pl_url %}/pl{{ club_path }}{% endcapture %}
       {% else %}
         {% assign en_url = neutral_path %}
         {% capture de_url %}/de{{ neutral_path }}{% endcapture %}

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/dundee-boardgamers/
 name: "Dundee Boardgamers"
 days: ["Thursday"]
 time: "6:00pm - 9:00pm"

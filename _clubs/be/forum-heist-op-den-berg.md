@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/forum-heist-op-den-berg/
 name: "Forum Heist-Op-Den-Berg"
 days: ["Various"]
 time: ""

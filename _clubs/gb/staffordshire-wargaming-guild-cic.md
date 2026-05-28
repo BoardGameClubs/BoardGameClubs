@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/staffordshire-wargaming-guild-cic/
 name: "Staffordshire Wargaming Guild CIC"
 type: ["Wargames"]
 days: ["Tuesday", "Thursday", "Sunday"]

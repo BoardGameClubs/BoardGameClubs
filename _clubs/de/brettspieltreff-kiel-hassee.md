@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieltreff-kiel-hassee/
 name: "Brettspieltreff Kiel-Hassee"
 days: ["Monday"]
 time: "19:30 Uhr"

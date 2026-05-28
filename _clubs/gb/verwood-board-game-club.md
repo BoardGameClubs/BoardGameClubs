@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/verwood-board-game-club/
 name: "Verwood Board Game Club"
 days: ["Wednesday"]
 time: ""

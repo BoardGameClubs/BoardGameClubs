@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/holzkirchner-brettspieltreff/
 name: "Holzkirchner Brettspieltreff"
 days: ["Monday"]
 time: "18:30 Uhr"

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/machynlleth-board-games-club/
 name: "Machynlleth Board Games Club"
 type: ["Board Games"]
 days: ["Wednesday"]

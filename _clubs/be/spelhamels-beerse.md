@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spelhamels-beerse/
 name: "Spelhamels Beerse"
 days: ["Various"]
 time: ""

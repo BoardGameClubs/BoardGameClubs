@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/readshop-spellenhoek-rijnsburg/
 name: "Readshop Spellenhoek Rijnsburg"
 days: ["Various"]
 time: ""

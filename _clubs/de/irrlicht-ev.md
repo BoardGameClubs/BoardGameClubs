@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/irrlicht-ev/
 name: "Irrlicht e.V."
 days: ["Monday", "Friday", "Saturday"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/spelcaroussel-tilburg/
 name: "Spelcaroussel Tilburg"
 days: ["Various"]
 time: ""

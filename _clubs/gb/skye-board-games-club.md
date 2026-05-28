@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/skye-board-games-club/
 name: "Skye Board Games Club"
 type: ["Board Games"]
 days: ["Saturday"]

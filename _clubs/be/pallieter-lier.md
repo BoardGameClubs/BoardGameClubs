@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/pallieter-lier/
 name: "Pallieter Lier"
 days: ["Various"]
 time: ""

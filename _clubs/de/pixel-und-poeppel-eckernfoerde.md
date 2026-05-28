@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/pixel-und-poeppel-eckernfoerde/
 name: "Pixel und Pöppel (Eckernförde)"
 days: ["Thursday"]
 time: "16:00 Uhr"

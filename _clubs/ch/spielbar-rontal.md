@@ -1,6 +1,5 @@
 ---
 country: "CH"
-permalink: /ch/clubs/spielbar-rontal/
 name: "Spielbar Rontal"
 type: ["Board Games"]
 days: ["Various"]

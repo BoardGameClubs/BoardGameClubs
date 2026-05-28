@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieltraum-ev-oldenburg/
 name: "Spieltraum e.V. Oldenburg"
 days: ["Various"]
 time: ""

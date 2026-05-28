@@ -1,6 +1,5 @@
 ---
 country: "FR"
-permalink: /fr/clubs/play-english-board-games-toulouse/
 name: "Play English Board Games in Toulouse"
 type: ["Board Games"]
 days: ["Various"]

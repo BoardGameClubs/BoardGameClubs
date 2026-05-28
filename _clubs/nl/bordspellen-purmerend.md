@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/bordspellen-purmerend/
 name: "Bordspellen Purmerend"
 days: ["Various"]
 time: ""

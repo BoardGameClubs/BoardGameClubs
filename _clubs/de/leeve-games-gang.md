@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/leeve-games-gang/
 name: "Leeve Games Gang"
 days: ["Various"]
 time: ""

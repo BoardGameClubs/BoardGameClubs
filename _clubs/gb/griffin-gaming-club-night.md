@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/griffin-gaming-club-night/
 name: "Griffin Gaming Club Night"
 days: ["Wednesday"]
 time: "6:30pm - 10:00pm"

@@ -1,6 +1,5 @@
 ---
 country: "CH"
-permalink: /ch/clubs/strategiespiele-bern/
 name: "Strategiespiele Bern"
 type: ["Board Games"]
 days: ["Friday"]

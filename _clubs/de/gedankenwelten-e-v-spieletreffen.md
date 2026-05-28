@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/gedankenwelten-e-v-spieletreffen/
 name: "Gedankenwelten e.V. Spieletreffen"
 days: ["Friday", "Saturday"]
 time: ""

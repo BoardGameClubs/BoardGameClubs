@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/het-spectrum-heemskerk/
 name: "Het Spectrum, Heemskerk"
 days: ["Various"]
 time: ""

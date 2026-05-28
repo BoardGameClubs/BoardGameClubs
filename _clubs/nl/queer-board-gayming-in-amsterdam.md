@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/queer-board-gayming-in-amsterdam/
 name: "Queer Board Gayming in Amsterdam"
 days: ["Various"]
 time: ""

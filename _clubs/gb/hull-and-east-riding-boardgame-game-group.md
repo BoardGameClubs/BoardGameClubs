@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/hull-and-east-riding-boardgame-game-group/
 name: "Hull and East Riding Board Game Group"
 days: ["Saturday"]
 time: ""

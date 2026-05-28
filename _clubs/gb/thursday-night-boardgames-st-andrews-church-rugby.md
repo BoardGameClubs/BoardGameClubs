@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/thursday-night-boardgames-st-andrews-church-rugby/
 name: "Thursday night Boardgames St Andrew's Church Rugby"
 days: ["Thursday"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/terra-ludica-coruna/
 name: "Terra Lúdica"
 type: ["Board Games"]
 days: ["Various"]

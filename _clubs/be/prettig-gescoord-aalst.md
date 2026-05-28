@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/prettig-gescoord-aalst/
 name: "Prettig gescoord, Aalst"
 days: ["Various"]
 time: ""

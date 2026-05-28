@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/shrewsbury-wargames-society/
 name: "Shrewsbury Wargames Society"
 type: ["Wargames"]
 days: ["Monday", "Friday"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/nuneaton-model-and-games-club/
 name: "Nuneaton Model and Games Club"
 type: ["Wargames", "TCG"]
 days: ["Saturday"]

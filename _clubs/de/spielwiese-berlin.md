@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielwiese-berlin/
 name: "Die Spielwiese"
 type: ["Board Games"]
 days: ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]

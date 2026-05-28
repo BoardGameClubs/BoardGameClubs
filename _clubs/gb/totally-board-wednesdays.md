@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/totally-board-wednesdays/
 name: "Totally Board (Wednesdays)"
 days: ["Wednesday"]
 time: "7:00pm - 10:00pm"

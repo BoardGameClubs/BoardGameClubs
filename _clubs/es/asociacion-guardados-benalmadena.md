@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/asociacion-guardados-benalmadena/
 name: "Asociación Guardados"
 type: ["Board Games"]
 days: ["Various"]

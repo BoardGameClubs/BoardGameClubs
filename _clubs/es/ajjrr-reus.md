@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/ajjrr-reus/
 name: "Associació de Jugadors i Jugadores de Rol de Reus"
 type: ["Board Games"]
 days: ["Various"]

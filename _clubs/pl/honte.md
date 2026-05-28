@@ -1,6 +1,5 @@
 ---
 country: "PL"
-permalink: /pl/clubs/honte/
 name: "Honte"
 type: ["Board Games"]
 days: ["Various"]

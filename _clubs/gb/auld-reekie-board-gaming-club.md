@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/auld-reekie-board-gaming-club/
 name: "Auld Reekie Board Gaming Club"
 type: ["Board Games", "BOTC"]
 days: ["Tuesday"]

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/club-hannoverschen-tabletopfreunde/
 name: "Club der Hannoverschen Tabletopfreunde"
 days: ["Thursday"]
 time: "18:00"

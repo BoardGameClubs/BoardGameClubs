@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/cheadle-board-room/
 name: "Cheadle Board Room"
 days: ["Saturday"]
 time: "9:30am - 8:00pm"

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/offener-spieletreff-in-duesseldorf/
 name: "Offener Spieletreff in Düsseldorf"
 days: ["Saturday", "Sunday"]
 time: "14:00 - 22:00 Uhr"

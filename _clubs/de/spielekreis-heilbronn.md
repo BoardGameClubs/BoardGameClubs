@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielekreis-heilbronn/
 name: "Spielekreis Heilbronn"
 days: ["Monday", "Thursday"]
 time: "19:15 Uhr"

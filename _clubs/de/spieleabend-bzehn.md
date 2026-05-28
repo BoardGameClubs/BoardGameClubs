@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleabend-bzehn/
 name: "Spieleabend im Jugendkulturzentrum BZehn"
 days: ["Friday"]
 time: "19:00"

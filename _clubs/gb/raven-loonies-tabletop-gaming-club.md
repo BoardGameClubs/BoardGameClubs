@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/raven-loonies-tabletop-gaming-club/
 name: "Raven Loonies Tabletop gaming club"
 days: ["Saturday"]
 time: "7:00pm - 10:00pm"

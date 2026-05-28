@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spellebeenn-oostende/
 name: "Spellebeen&apos;n Oostende"
 days: ["Various"]
 time: ""

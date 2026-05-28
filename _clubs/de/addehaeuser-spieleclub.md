@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/addehaeuser-spieleclub/
 name: "Addehäuser Spieleclub"
 days: ["Various"]
 time: ""

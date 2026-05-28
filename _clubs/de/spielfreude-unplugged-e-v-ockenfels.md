@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielfreude-unplugged-e-v-ockenfels/
 name: "Spielfreude Unplugged e.V. (Ockenfels)"
 days: ["Various"]
 time: ""

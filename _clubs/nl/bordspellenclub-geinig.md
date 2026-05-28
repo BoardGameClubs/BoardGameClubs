@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/bordspellenclub-geinig/
 name: "Bordspellenclub Geinig"
 days: ["Various"]
 time: ""

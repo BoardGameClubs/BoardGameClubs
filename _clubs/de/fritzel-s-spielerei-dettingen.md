@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/fritzel-s-spielerei-dettingen/
 name: "FritZel’s Spielerei (Dettingen)"
 days: ["Saturday"]
 time: ""

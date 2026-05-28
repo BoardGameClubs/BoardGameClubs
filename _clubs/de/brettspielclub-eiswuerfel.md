@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielclub-eiswuerfel/
 name: "Brettspielclub Eiswürfel"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/knobelritter/
 name: "Knobelritter"
 type: ["Board Games"]
 days: ["Wednesday"]

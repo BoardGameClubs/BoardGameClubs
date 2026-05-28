@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/ludocete-albacete/
 name: "Ludocete"
 type: ["Board Games"]
 days: ["Sunday"]

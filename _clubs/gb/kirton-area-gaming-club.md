@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/kirton-area-gaming-club/
 name: "Kirton Area Gaming Club"
 days: ["Sunday"]
 time: "6:00pm - 9:00pm"

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/warfield-board-gamers/
 name: "Warfield Board Gamers"
 days: ["Wednesday", "Friday"]
 time: "7:00pm - 11:00pm"

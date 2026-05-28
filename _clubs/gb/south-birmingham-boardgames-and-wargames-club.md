@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/south-birmingham-boardgames-and-wargames-club/
 name: "South Birmingham Boardgames & Wargames Club"
 type: ["Board Games", "Wargames"]
 days: ["Friday", "Sunday"]

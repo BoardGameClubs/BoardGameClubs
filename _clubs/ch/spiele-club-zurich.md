@@ -1,6 +1,5 @@
 ---
 country: "CH"
-permalink: /ch/clubs/spiele-club-zurich/
 name: "Spiele-Club Zürich"
 type: ["Board Games"]
 days: ["Tuesday"]

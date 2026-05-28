@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielchaos-bad-segeberg/
 name: "Brettspielchaos (Bad Segeberg)"
 days: ["Tuesday"]
 time: "18:00 - 22:00 Uhr"

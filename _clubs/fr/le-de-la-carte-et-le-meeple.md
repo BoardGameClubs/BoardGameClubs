@@ -1,6 +1,5 @@
 ---
 country: "FR"
-permalink: /fr/clubs/le-de-la-carte-et-le-meeple/
 name: "Le Dé, la Carte et le Meeple"
 type: ["Board Games"]
 days: ["Friday"]

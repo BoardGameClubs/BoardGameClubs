@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/der-spielspass-bremerhaven/
 name: "Der Spielspass (Bremerhaven)"
 days: ["Friday"]
 time: "19:00 Uhr"

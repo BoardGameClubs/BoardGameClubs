@@ -1,6 +1,5 @@
 ---
 country: "CH"
-permalink: /ch/clubs/guinness-n-games/
 name: "Guinness 'n' Games"
 type: ["Board Games"]
 days: ["Wednesday"]

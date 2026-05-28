@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielecafe-stuttgart-west/
 name: "Spielecafé Stuttgart-West"
 days: ["Friday"]
 time: "19:00"

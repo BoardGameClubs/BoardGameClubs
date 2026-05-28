@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/boekhandel-riemer-groningen/
 name: "Boekhandel Riemer Groningen"
 days: ["Various"]
 time: ""

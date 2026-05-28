@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/ons-kent-ons-etten-leur/
 name: "Ons Kent Ons Etten-Leur"
 days: ["Various"]
 time: ""

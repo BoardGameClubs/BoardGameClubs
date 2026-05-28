@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/wadebridge-gaming-group/
 name: "Wadebridge Gaming Group"
 type: ["Board Games", "Wargames"]
 days: ["Thursday"]

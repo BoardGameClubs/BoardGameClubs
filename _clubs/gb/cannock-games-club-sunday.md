@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/cannock-games-club-sunday/
 name: "Cannock Games Club (Sunday)"
 type: ["Board Games", "RPG", "Wargames"]
 days: ["Sunday"]

@@ -1,6 +1,5 @@
 ---
 country: "IE"
-permalink: /ie/clubs/defenders-farmhill-manor-sligo/
 name: "Defenders of Farmhill Manor"
 type: ["Board Games"]
 days: ["Various"]

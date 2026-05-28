@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/farnborough-board-games/
 name: "Farnborough Board Games"
 days: ["Thursday"]
 time: "7:00pm - 10:00pm"

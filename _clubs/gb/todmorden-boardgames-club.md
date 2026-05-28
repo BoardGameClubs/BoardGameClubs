@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/todmorden-boardgames-club/
 name: "Todmorden Boardgames Club"
 days: ["Thursday", "Saturday"]
 time: "7:00pm - 11:00pm"

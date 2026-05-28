@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/shuffle-and-roll/
 name: "Shuffle & Roll"
 days: ["Wednesday"]
 time: ""

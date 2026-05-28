@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/ross-on-wye-board-gamers/
 name: "Ross-on-Wye Board Gamers"
 type: ["Board Games"]
 days: ["Friday"]

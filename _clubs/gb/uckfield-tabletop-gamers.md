@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/uckfield-tabletop-gamers/
 name: "Uckfield Tabletop Gamers"
 days: ["Thursday"]
 time: "6:30pm - 10:30pm"

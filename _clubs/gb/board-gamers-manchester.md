@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/board-gamers-manchester/
 name: "BGM - Board Gamers Manchester"
 days: ["Wednesday"]
 time: "6:30pm - 11:30pm"

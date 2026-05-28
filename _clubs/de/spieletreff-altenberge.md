@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-altenberge/
 name: "Spieletreff Altenberge"
 days: ["Monday", "Sunday"]
 time: ""

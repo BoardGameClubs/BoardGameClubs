@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/falkenberger-spieletreff-norderstedt/
 name: "Falkenberger Spieletreff  (Norderstedt)"
 days: ["Friday"]
 time: "18:00 - 22:00 Uhr"

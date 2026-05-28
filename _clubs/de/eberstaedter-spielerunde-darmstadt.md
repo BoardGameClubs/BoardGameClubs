@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/eberstaedter-spielerunde-darmstadt/
 name: "Eberstädter Spielerunde (Darmstadt)"
 days: ["Friday"]
 time: ""

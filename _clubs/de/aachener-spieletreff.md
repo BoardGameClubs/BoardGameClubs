@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/aachener-spieletreff/
 name: "Aachener Spieletreff"
 days: ["Thursday"]
 time: ""

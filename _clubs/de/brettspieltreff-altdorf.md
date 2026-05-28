@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieltreff-altdorf/
 name: "Brettspieltreff Altdorfer Gemeindebücherei"
 days: ["Various"]
 time: ""

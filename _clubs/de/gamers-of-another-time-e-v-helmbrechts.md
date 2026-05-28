@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/gamers-of-another-time-e-v-helmbrechts/
 name: "Gamers Of Another Time e.V. (Helmbrechts)"
 days: ["Monday", "Wednesday", "Friday"]
 time: "19:00 Uhr"

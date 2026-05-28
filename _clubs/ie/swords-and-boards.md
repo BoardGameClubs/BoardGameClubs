@@ -1,6 +1,5 @@
 ---
 country: "IE"
-permalink: /ie/clubs/swords-and-boards/
 name: "Swords and Boards"
 type: ["Board Games"]
 days: ["Various"]

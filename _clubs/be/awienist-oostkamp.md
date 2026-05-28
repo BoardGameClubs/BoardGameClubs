@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/awienist-oostkamp/
 name: "Awienist Oostkamp"
 days: ["Various"]
 time: ""

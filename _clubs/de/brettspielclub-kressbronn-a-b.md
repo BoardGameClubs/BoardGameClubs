@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielclub-kressbronn-a-b/
 name: "Brettspielclub Kressbronn a. B."
 days: ["Wednesday"]
 time: ""

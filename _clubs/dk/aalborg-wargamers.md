@@ -1,6 +1,5 @@
 ---
 country: "DK"
-permalink: /dk/clubs/aalborg-wargamers/
 name: "Aalborg Wargamers"
 type: ["Board Games"]
 days: ["Various"]

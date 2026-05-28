@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/crooked-meeples/
 name: "Crooked Meeples"
 days: ["Monday", "Wednesday"]
 time: "6:30pm"

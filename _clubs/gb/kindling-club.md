@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/kindling-club/
 name: "Kindling Club"
 days: ["Friday"]
 time: "5:00pm - 10:00pm"

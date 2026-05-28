@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/speel-de-lier/
 name: "Speel De Lier"
 days: ["Various"]
 time: ""

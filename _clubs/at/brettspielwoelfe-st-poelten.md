@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/brettspielwoelfe-st-poelten/
 name: "Brettspielwölfe St. Pölten"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/karlsfelder-kornelius-spieleclub/
 name: "Karlsfelder Kornelius Spieleclub"
 days: ["Various"]
 time: ""

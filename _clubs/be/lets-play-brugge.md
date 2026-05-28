@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/lets-play-brugge/
 name: "Let&apos;s Play Brugge"
 days: ["Various"]
 time: ""

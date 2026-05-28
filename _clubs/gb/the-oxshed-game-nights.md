@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/the-oxshed-game-nights/
 name: "The Oxshed Game Nights"
 days: ["Friday"]
 time: "6:30pm - 11:00pm"

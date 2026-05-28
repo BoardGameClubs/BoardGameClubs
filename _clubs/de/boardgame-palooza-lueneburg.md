@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/boardgame-palooza-lueneburg/
 name: "Boardgame Palooza (Lüneburg)"
 days: ["Tuesday"]
 time: ""

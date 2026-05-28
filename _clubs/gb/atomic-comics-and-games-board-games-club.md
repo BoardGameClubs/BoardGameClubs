@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/atomic-comics-and-games-board-games-club/
 name: "Atomic Comics & Games Board Games Club"
 days: ["Thursday"]
 time: "6:00pm - 10:00pm"

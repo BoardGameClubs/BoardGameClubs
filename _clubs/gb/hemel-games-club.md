@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/hemel-games-club/
 name: "Hemel Games club"
 type: ["Board Games", "RPG", "TCG"]
 days: ["Tuesday"]

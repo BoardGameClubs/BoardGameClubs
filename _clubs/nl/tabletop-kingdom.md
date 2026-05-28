@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/tabletop-kingdom/
 name: "Tabletop Kingdom Haarlem"
 days: ["Various"]
 time: ""

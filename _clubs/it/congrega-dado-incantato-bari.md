@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/congrega-dado-incantato-bari/
 name: "La Congrega del Dado Incantato"
 type: ["Board Games"]
 days: ["Various"]

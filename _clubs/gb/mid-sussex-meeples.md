@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/mid-sussex-meeples/
 name: "Mid Sussex Meeples"
 days: ["Sunday"]
 time: "10:00am - 6:00pm"

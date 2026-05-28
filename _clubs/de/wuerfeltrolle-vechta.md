@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/wuerfeltrolle-vechta/
 name: "Würfeltrolle (Vechta)"
 days: ["Thursday"]
 time: ""

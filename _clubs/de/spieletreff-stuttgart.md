@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-stuttgart/
 name: "Spieletreff Stuttgart"
 type: ["Board Games", "RPG"]
 days: ["Friday"]

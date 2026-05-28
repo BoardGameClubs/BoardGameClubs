@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/aiblinger-zockerbande/
 name: "Aiblinger Zockerbande"
 days: ["Various"]
 time: ""

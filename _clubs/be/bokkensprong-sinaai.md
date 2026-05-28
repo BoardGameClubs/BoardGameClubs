@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/bokkensprong-sinaai/
 name: "Bokkensprong Sinaai"
 days: ["Various"]
 time: ""

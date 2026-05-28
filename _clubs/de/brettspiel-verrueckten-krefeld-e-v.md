@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspiel-verrueckten-krefeld-e-v/
 name: "Brettspiel-Verrückten Krefeld e.V."
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/three-spires-gaming/
 name: "Three Spires Gaming"
 type: ["Wargames", "TCG"]
 days: ["Friday"]

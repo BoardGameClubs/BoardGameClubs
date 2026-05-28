@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/weymouth-afternoon-games-club/
 name: "Weymouth Afternoon Games Club"
 type: ["Board Games"]
 days: ["Sunday"]

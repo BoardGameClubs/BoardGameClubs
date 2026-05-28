@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/old-worlde-oostende/
 name: "Old Worlde Oostende"
 days: ["Various"]
 time: ""

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/lancaster-wargamers/
 name: "Lancaster Wargamers"
 type: ["Wargames", "Board Games", "RPG"]
 days: ["Tuesday"]

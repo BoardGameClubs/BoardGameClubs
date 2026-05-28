@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/mister-x-e-v-dueren/
 name: "Mister X e.V. (Düren)"
 days: ["Monday", "Thursday", "Sunday"]
 time: ""

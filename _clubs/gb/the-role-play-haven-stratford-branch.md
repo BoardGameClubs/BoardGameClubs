@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/the-role-play-haven-stratford-branch/
 name: "The Role Play Haven - Stratford Branch"
 type: ["RPG"]
 days: ["Tuesday"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/neutral-ground/
 name: "Neutral Ground"
 type: ["Board Games", "RPG", "Wargames", "TCG"]
 days: ["Monday", "Friday", "Saturday", "Sunday"]

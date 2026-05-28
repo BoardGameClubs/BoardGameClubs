@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/asgard-aschaffenburg-e-v/
 name: "Asgard Aschaffenburg e.V."
 days: ["Thursday"]
 time: ""

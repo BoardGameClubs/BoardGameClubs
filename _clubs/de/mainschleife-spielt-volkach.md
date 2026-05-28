@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/mainschleife-spielt-volkach/
 name: "Mainschleife Spielt (Volkach)"
 days: ["Tuesday"]
 time: ""

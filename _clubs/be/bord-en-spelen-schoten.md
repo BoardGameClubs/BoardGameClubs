@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/bord-en-spelen-schoten/
 name: "Bord en Spelen Schoten"
 days: ["Various"]
 time: ""

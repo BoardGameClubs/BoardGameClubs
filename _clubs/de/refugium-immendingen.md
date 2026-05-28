@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/refugium-immendingen/
 name: "Refugium Immendingen"
 days: ["Various"]
 time: ""

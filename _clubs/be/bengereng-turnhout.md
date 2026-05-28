@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/bengereng-turnhout/
 name: "Bengereng Turnhout"
 days: ["Various"]
 time: ""

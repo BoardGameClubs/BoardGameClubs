@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/senor-pulseras-gandia/
 name: "El Señor de las Pulseras"
 type: ["Board Games"]
 days: ["Various"]

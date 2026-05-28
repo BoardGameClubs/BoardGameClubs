@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/wuerfel-und-zucker-leipzig/
 name: "Würfel & Zucker Leipzig"
 type: ["Board Games"]
 days: ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]

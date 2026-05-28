@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielekreis-darmstadt-ev/
 name: "Spielekreis Darmstadt e.V."
 days: ["Various"]
 time: ""

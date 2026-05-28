@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/dokapi-tienen/
 name: "Dokapi Tienen"
 days: ["Various"]
 time: ""

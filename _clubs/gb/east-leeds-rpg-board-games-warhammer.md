@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/east-leeds-rpg-board-games-warhammer/
 name: "East Leeds RPG, Board Games & Warhammer"
 type: ["Board Games", "RPG", "Wargames"]
 days: ["Tuesday"]

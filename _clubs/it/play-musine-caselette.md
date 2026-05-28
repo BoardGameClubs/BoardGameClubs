@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/play-musine-caselette/
 name: "Play Musinè"
 type: ["Board Games"]
 days: ["Various"]

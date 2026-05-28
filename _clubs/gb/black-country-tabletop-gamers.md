@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/black-country-tabletop-gamers/
 name: "Black Country Tabletop Gamers"
 type: ["Board Games", "RPG", "Wargames", "TCG"]
 days: ["Thursday"]

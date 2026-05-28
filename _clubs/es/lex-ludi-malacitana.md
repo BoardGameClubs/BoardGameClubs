@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/lex-ludi-malacitana/
 name: "Lex Ludi Malacitana"
 type: ["Board Games"]
 days: ["Various"]

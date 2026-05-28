@@ -1,6 +1,5 @@
 ---
 country: "PT"
-permalink: /pt/clubs/grupo-boardgamers-lisboa/
 name: "Grupo de Boardgamers de Lisboa"
 type: ["Board Games"]
 days: ["Various"]

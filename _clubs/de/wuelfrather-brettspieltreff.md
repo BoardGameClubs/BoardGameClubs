@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/wuelfrather-brettspieltreff/
 name: "Wülfrather Brettspieltreff"
 days: ["Various"]
 time: ""

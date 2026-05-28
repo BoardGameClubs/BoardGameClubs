@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-wittenberg/
 name: "SpieleTreff Wittenberg"
 days: ["Thursday"]
 time: "16:00 - 18:00 Uhr"

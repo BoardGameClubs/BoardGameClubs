@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spielerei-duesseldorf/
 name: "Spielerei (Düsseldorf)"
 days: ["Tuesday", "Wednesday", "Friday", "Saturday"]
 time: "17:00 - 20:00 Uhr"

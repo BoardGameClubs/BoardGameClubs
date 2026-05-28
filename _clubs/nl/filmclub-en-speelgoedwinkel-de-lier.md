@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/filmclub-en-speelgoedwinkel-de-lier/
 name: "Filmclub en Speelgoedwinkel De Lier"
 days: ["Various"]
 time: ""

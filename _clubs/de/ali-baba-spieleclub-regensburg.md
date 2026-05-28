@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ali-baba-spieleclub-regensburg/
 name: "Ali Baba Spieleclub e.V. Regensburg"
 days: ["Monday"]
 time: ""

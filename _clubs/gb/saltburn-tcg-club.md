@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/saltburn-tcg-club/
 name: "Saltburn TCG Club"
 type: ["TCG"]
 days: ["Wednesday"]

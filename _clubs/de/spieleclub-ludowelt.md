@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleclub-ludowelt/
 name: "Spieleclub der LudoWelt"
 days: ["Friday"]
 time: ""

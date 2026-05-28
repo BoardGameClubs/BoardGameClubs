@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/witte-ridder-leopoldsburg/
 name: "Witte Ridder Leopoldsburg"
 days: ["Various"]
 time: ""

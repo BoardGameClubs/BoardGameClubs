@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/redditch-tabletop-gamers/
 name: "Redditch Tabletop Gamers"
 days: ["Tuesday"]
 time: "6:30pm - 10:30pm"

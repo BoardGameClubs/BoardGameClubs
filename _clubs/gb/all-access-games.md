@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/all-access-games/
 name: "All-Access Games"
 days: ["Various"]
 time: ""

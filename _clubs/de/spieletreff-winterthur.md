@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-winterthur/
 name: "Spieletreff Winterthur"
 days: ["Thursday"]
 time: ""

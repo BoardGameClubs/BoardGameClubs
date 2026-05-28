@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/spielebegeisterte-bruck/
 name: "Spielebegeisterte Österreich"
 days: ["Various"]
 time: ""

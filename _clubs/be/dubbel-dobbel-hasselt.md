@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/dubbel-dobbel-hasselt/
 name: "Dubbel Dobbel Hasselt"
 days: ["Various"]
 time: ""

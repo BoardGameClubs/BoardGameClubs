@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/frieslandspielt-e-v-wilhelmshaven/
 name: "Frieslandspielt e.V. (Wilhelmshaven)"
 days: ["Friday"]
 time: ""

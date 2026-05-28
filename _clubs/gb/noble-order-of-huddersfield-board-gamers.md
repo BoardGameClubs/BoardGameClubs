@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/noble-order-of-huddersfield-board-gamers/
 name: "Noble Order of Huddersfield Board Gamers"
 days: ["Thursday"]
 time: "7:00pm - 10:30pm"

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/ludothek-pforzheim/
 name: "Ludothek Pforzheim"
 days: ["Tuesday", "Saturday"]
 time: ""

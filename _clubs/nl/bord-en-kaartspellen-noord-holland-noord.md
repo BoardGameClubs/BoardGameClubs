@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/bord-en-kaartspellen-noord-holland-noord/
 name: "Bord- en kaartspellen Noord-Holland Noord"
 days: ["Various"]
 time: ""

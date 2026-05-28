@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/cambridge-city-games-club/
 name: "Cambridge City Games Club"
 type: ["Board Games", "RPG"]
 days: ["Monday"]

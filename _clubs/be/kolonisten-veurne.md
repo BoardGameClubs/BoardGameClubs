@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/kolonisten-veurne/
 name: "Kolonisten Veurne"
 days: ["Various"]
 time: ""

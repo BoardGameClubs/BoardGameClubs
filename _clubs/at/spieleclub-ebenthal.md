@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/spieleclub-ebenthal/
 name: "Spieleclub Ebenthal"
 days: ["Tuesday"]
 time: "6:00pm"

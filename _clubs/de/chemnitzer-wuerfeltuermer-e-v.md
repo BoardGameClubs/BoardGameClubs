@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/chemnitzer-wuerfeltuermer-e-v/
 name: "Chemnitzer Würfeltürmer e.V."
 days: ["Friday"]
 time: ""

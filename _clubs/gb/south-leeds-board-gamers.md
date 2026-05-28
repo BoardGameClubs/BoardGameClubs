@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/south-leeds-board-gamers/
 name: "South Leeds Board Gamers"
 days: ["Tuesday"]
 time: "7:00pm - 11:00pm"

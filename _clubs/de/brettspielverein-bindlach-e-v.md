@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielverein-bindlach-e-v/
 name: "Brettspielverein Bindlach e.V."
 days: ["Thursday"]
 time: ""

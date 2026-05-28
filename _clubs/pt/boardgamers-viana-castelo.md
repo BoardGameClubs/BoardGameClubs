@@ -1,6 +1,5 @@
 ---
 country: "PT"
-permalink: /pt/clubs/boardgamers-viana-castelo/
 name: "Boardgamers Viana do Castelo"
 type: ["Board Games"]
 days: ["Various"]

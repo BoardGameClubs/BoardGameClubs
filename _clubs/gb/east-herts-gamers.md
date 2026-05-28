@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/east-herts-gamers/
 name: "East Herts Gamers"
 type: ["Board Games", "RPG", "Wargames"]
 days: ["Wednesday", "Friday"]

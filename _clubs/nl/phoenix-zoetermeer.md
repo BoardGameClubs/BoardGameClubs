@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/phoenix-zoetermeer/
 name: "Phoenix Zoetermeer"
 days: ["Various"]
 time: ""

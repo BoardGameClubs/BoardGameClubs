@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/aylesbury-board-games-group/
 name: "Aylesbury Board Games Group"
 days: ["Wednesday"]
 time: "7:00pm - 10:30pm"

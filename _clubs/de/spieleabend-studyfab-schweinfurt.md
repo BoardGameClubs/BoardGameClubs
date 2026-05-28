@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieleabend-studyfab-schweinfurt/
 name: "Spieleabend StudyFAB (Schweinfurt)"
 days: ["Tuesday"]
 time: "17:00 - 22:00 Uhr"

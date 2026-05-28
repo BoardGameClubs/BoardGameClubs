@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/gilde-der-fantasy-rollenspieler-e-v/
 name: "Gilde der Fantasy-Rollenspieler e. V."
 days: ["Various"]
 time: ""

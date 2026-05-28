@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/die-traumjaeger-e-v-luedenscheid/
 name: "Die Traumjäger e. V. (Lüdenscheid)"
 days: ["Friday"]
 time: "18:30 Uhr"

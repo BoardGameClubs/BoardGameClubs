@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/whiteley-board-gamers/
 name: "Whiteley Board Gamers"
 days: ["Thursday"]
 time: ""

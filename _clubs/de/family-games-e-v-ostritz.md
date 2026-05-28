@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/family-games-e-v-ostritz/
 name: "Family Games e.V. (Ostritz)"
 days: ["Various"]
 time: ""

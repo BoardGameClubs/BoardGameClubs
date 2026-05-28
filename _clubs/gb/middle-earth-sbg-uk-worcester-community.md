@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/middle-earth-sbg-uk-worcester-community/
 name: "Middle-Earth SBG: UK Worcester Community"
 type: ["Wargames"]
 days: ["Thursday"]

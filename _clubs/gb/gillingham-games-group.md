@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/gillingham-games-group/
 name: "Gillingham Games Group"
 days: ["Thursday"]
 time: "7:00pm"

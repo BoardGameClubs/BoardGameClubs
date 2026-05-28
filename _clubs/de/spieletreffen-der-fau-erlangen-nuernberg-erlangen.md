@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreffen-der-fau-erlangen-nuernberg-erlangen/
 name: "Spieletreffen der FAU Erlangen-Nürnberg (Erlangen)"
 days: ["Various"]
 time: "ab 18:00 Uhr"

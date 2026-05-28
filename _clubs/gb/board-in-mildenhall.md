@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/board-in-mildenhall/
 name: "Board In Mildenhall"
 type: ["Board Games", "RPG"]
 days: ["Various"]

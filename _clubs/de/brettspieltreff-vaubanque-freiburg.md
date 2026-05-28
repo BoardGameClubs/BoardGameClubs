@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspieltreff-vaubanque-freiburg/
 name: "Brettspieltreff Vaubanque (Freiburg)"
 days: ["Tuesday"]
 time: ""

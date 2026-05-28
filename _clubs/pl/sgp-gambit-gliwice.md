@@ -1,6 +1,5 @@
 ---
 country: "PL"
-permalink: /pl/clubs/sgp-gambit-gliwice/
 name: "SGP Gambit"
 type: ["Board Games"]
 days: ["Various"]

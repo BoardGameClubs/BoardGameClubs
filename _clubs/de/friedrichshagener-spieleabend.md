@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/friedrichshagener-spieleabend/
 name: "Friedrichshagener Spieleabend"
 days: ["Monday", "Friday"]
 time: "19:00 - 23:30 Uhr"

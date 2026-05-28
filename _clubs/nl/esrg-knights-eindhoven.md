@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/esrg-knights-eindhoven/
 name: "ESRG Knights Eindhoven"
 days: ["Various"]
 time: ""

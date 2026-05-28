@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/mizzymead-munchkins/
 name: "Mizzymead Munchkins"
 days: ["Thursday"]
 time: "7:30pm"

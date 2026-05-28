@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/denzlinger-spieletreff/
 name: "Denzlinger Spieletreff"
 days: ["Monday"]
 time: ""

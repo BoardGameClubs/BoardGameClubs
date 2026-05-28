@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/spelavond-sint-anna-pede/
 name: "Spelavond Sint-Anna-Pede"
 days: ["Various"]
 time: ""

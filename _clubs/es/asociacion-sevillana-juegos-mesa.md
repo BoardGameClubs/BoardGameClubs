@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/asociacion-sevillana-juegos-mesa/
 name: "Asociación Sevillana de Juegos de Mesa"
 type: ["Board Games"]
 days: ["Various"]

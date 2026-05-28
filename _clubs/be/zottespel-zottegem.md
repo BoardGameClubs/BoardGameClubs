@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/zottespel-zottegem/
 name: "Zottespel Zottegem"
 days: ["Various"]
 time: ""

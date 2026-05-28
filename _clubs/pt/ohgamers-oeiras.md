@@ -1,6 +1,5 @@
 ---
 country: "PT"
-permalink: /pt/clubs/ohgamers-oeiras/
 name: "OhGamers!"
 type: ["Board Games"]
 days: ["Various"]

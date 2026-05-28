@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/leipziger-studentenkeller-e-v/
 name: "Leipziger Studentenkeller e.V."
 days: ["Friday"]
 time: "ab 20:00 Uhr"

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/m-tg-london-at-the-games-club/
 name: "M:TG London @ The Games Club"
 type: ["TCG"]
 days: ["Tuesday"]

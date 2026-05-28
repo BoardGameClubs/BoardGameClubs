@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/bcgc-burwell-community-games-club/
 name: "BCGC - Burwell Community Games Club"
 days: ["Sunday"]
 time: "7:00pm - 10:00pm"

@@ -1,6 +1,5 @@
 ---
 country: "PT"
-permalink: /pt/clubs/boardgamers-porto/
 name: "Boardgamers Porto"
 type: ["Board Games"]
 days: ["Thursday", "Saturday"]

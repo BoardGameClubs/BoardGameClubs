@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/st-aldegundis-saison/
 name: "St. Aldegundis Saison"
 days: ["Various"]
 time: ""

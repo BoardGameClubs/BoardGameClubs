@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/gobinda-spiele-club-bonn/
 name: "Gobinda Spiele-Club (Bonn)"
 days: ["Tuesday"]
 time: "18:30 Uhr"

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/wuerfelhelden-hamburg/
 name: "Würfelhelden Hamburg"
 type: ["Board Games"]
 days: ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]

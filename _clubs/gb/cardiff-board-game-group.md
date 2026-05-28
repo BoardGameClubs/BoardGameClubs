@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/cardiff-board-game-group/
 name: "Cardiff Board Game Group"
 type: ["Board Games"]
 days: ["Tuesday", "Thursday"]

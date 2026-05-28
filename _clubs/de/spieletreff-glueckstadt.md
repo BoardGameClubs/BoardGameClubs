@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-glueckstadt/
 name: "Spieletreff Glückstadt"
 days: ["Various"]
 time: ""

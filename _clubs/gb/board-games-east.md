@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/board-games-east/
 name: "Board Games East (LGBTQ+)"
 type: ["Board Games"]
 days: ["Wednesday"]

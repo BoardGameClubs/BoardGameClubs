@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/brettspielabend-fuer-erwachsene-zwickau/
 name: "Brettspielabend für Erwachsene (Zwickau)"
 days: ["Friday"]
 time: "18:30 - 22:00 Uhr"

@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/offener-brett-und-gesellschaftsspieleabend-augsburg/
 name: "Offener Brett- und Gesellschaftsspieleabend (Augsburg)"
 days: ["Friday"]
 time: "18:00 - 21:00 Uhr"

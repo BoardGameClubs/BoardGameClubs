@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/replay-kortrijk/
 name: "Replay Kortrijk"
 days: ["Various"]
 time: ""

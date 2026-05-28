@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/spieletreff-schweizer-viertel/
 name: "Spieletreff Schweizer Viertel"
 days: ["Thursday", "Sunday"]
 time: "15:00 - 18:00"

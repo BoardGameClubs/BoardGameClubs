@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/west-midlands-wizards/
 name: "West Midlands Wizards"
 days: ["Friday"]
 time: "6:00pm - 11:00pm"

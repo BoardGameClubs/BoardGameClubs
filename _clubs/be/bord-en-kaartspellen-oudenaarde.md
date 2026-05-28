@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/bord-en-kaartspellen-oudenaarde/
 name: "Bord- en kaartspellen Oudenaarde"
 days: ["Various"]
 time: ""

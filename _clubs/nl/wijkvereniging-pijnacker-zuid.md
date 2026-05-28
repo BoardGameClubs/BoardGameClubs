@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/wijkvereniging-pijnacker-zuid/
 name: "Wijkvereniging Pijnacker Zuid"
 days: ["Various"]
 time: ""

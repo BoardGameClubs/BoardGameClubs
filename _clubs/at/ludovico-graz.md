@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/ludovico-graz/
 name: "Ludovico — Verein für Spielkultur, Spiel und Spielpädagogik"
 days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 time: "Mon–Fri 3–7pm, Sat 10am–2pm, Tue also 10am–1pm"

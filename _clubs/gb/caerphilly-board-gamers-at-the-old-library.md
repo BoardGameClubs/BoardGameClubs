@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/caerphilly-board-gamers-at-the-old-library/
 name: "Caerphilly Board Gamers @ The Old Library"
 days: ["Friday", "Wednesday"]
 time: "6:00pm"

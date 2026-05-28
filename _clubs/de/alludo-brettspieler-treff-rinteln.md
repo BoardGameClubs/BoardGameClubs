@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/alludo-brettspieler-treff-rinteln/
 name: "alludo Brettspieler-Treff Rinteln"
 days: ["Friday", "Sunday"]
 time: ""

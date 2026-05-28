@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/la-guarida-de-gordopilo-ciudad-real/
 name: "La Guarida de Gordopilo"
 type: ["Board Games"]
 days: ["Various"]

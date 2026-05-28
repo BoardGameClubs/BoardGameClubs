@@ -1,6 +1,5 @@
 ---
 country: "BE"
-permalink: /be/clubs/forum-mortsel/
 name: "Forum Mortsel"
 days: ["Various"]
 time: ""

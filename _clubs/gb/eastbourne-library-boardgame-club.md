@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/eastbourne-library-boardgame-club/
 name: "Eastbourne Library Boardgame Club"
 type: ["Board Games"]
 days: ["Saturday"]

@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/bury-tabletop-gamers/
 name: "Bury Tabletop Gamers"
 type: ["Board Games", "RPG", "Wargames"]
 days: ["Thursday"]

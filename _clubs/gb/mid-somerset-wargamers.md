@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/mid-somerset-wargamers/
 name: "Mid Somerset Wargamers"
 type: ["Wargames", "Board Games", "RPG"]
 days: ["Thursday"]

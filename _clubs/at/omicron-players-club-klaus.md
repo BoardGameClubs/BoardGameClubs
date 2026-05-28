@@ -1,6 +1,5 @@
 ---
 country: "AT"
-permalink: /at/clubs/omicron-players-club-klaus/
 name: "OMICRON Player's Club"
 days: ["Various"]
 time: ""

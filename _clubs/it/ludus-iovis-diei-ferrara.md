@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/ludus-iovis-diei-ferrara/
 name: "Ludus Iovis Diei"
 type: ["Board Games"]
 days: ["Monday", "Thursday"]

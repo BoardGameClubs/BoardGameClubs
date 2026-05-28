@@ -1,6 +1,5 @@
 ---
 country: "GB"
-permalink: /clubs/board-game-night-piranha-cafe/
 name: "Board Game Night - Piranha Cafe"
 days: ["Saturday"]
 time: "6:00pm - 10:00pm"

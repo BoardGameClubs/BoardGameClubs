@@ -1,6 +1,5 @@
 ---
 country: "ES"
-permalink: /es/clubs/biblioteca-tecla-sala-hospitalet/
 name: "Biblioteca Tecla Sala"
 type: ["Board Games"]
 days: ["Saturday"]

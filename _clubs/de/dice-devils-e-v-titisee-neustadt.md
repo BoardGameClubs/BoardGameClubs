@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/dice-devils-e-v-titisee-neustadt/
 name: "Dice Devils e. V. (Titisee-Neustadt)"
 days: ["Thursday", "Friday"]
 time: "18:00:00 - 20:00:00 Uhr"

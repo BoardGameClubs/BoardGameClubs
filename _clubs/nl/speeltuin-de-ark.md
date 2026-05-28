@@ -1,6 +1,5 @@
 ---
 country: "NL"
-permalink: /nl/clubs/speeltuin-de-ark/
 name: "Speeltuin de Ark"
 days: ["Various"]
 time: ""

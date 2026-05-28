@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/leidhecker-heimspiel-florstadt/
 name: "Leidhecker Heimspiel (Florstadt)"
 days: ["Saturday"]
 time: "19:00 Uhr"

@@ -1,6 +1,5 @@
 ---
 country: "IT"
-permalink: /it/clubs/la-gilda-bologna/
 name: "La Gilda - Cassero Bologna"
 type: ["Board Games"]
 days: ["Sunday"]

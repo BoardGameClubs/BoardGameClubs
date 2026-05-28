@@ -1,6 +1,5 @@
 ---
 country: "DE"
-permalink: /de/clubs/emsdetten-spielt/
 name: "Emsdetten spielt"
 days: ["Tuesday"]
 time: "19:00 Uhr"
