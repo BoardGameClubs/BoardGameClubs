@@ -979,12 +979,19 @@
     a {
       display: inline-flex;
       align-items: center;
-      gap: 0.35rem;
-      font-size: 0.9rem;
+      gap: 0.4rem;
+      padding: 0.4rem 0.85rem;
+      font-size: 0.88rem;
       color: $color-text-light;
+      border: 1px solid $color-border;
+      border-radius: 6px;
+      background: transparent;
+      transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
 
       &:hover {
         color: $color-accent;
+        border-color: $color-accent;
+        background: rgba($color-accent, 0.06);
         text-decoration: none;
       }
     }
