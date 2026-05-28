@@ -14,8 +14,18 @@ body:
       label: Country
       description: Which country's directory should this club be listed in?
       options:
-        - United Kingdom (UK)
+        - United Kingdom (GB)
         - Germany (DE)
+        - Austria (AT)
+        - Switzerland (CH)
+        - Netherlands (NL)
+        - Belgium (BE)
+        - Italy (IT)
+        - Poland (PL)
+        - France (FR)
+        - Denmark (DK)
+        - Spain (ES)
+        - Other (tell us in the description)
     validations:
       required: true
 
@@ -89,8 +99,8 @@ body:
   - type: input
     id: address
     attributes:
-      label: Venue address (including postcode/PLZ)
-      placeholder: e.g. 12 High Street, Leeds, LS1 1AA — or Hauptstr. 1, 10115 Berlin
+      label: Venue address (including postcode)
+      placeholder: e.g. 12 High Street, Leeds, LS1 1AA
     validations:
       required: true
 
