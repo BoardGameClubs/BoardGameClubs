@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/meeple-map-icon-orange.svg" alt="BoardGameClubs" width="120">
+<img src="assets/meeple-map-icon-orange.svg" alt="BoardGameClubs.org" width="120">
 
 # BoardGameClubs.org
 
@@ -22,7 +22,7 @@ A community-built directory powered by an interactive map, covering clubs worldw
 
 ## What is this?
 
-BoardGameClubs helps people find board game, RPG, wargaming, and TCG clubs near them. Search by postcode, browse the map, or filter by day and distance. Every club listing is maintained by the community through GitHub.
+BoardGameClubs.org helps people find board game, RPG, wargaming, and TCG clubs near them. Search by postcode, browse the map, or filter by day and distance. Every club listing is maintained by the community through GitHub.
 
 ## How it works
 
