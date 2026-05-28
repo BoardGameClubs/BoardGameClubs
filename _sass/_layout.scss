@@ -336,6 +336,21 @@
     max-height: 320px;
     overflow-y: auto;
     overscroll-behavior: contain;
+    position: relative;
+
+    // Fade hint at the bottom so it's clear the list scrolls. Sticky so it
+    // stays pinned to the visible bottom edge as the user scrolls; the
+    // negative top margin pulls it back over the last row.
+    &::after {
+      content: "";
+      display: block;
+      position: sticky;
+      bottom: 0;
+      height: 32px;
+      margin-top: -32px;
+      pointer-events: none;
+      background: linear-gradient(to bottom, rgba(#fff, 0), #fff);
+    }
   }
 
   .nav-country-option {
