@@ -1,8 +1,16 @@
 {% assign lang = include.lang %}
 {% assign i18n = site.data.i18n %}
+{% case lang %}
+  {% when "de" %}{% assign brand_home = "/de/" %}
+  {% when "it" %}{% assign brand_home = "/it/" %}
+  {% when "fr" %}{% assign brand_home = "/fr/" %}
+  {% when "es" %}{% assign brand_home = "/es/" %}
+  {% when "pl" %}{% assign brand_home = "/pl/" %}
+  {% else %}{% assign brand_home = "/" %}
+{% endcase %}
 <header class="site-header">
   <div class="header-inner">
-    <a href="{% if lang == 'de' %}{{ '/de/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" class="site-brand">
+    <a href="{{ brand_home | relative_url }}" class="site-brand">
       <img src="{{ '/assets/meeple-map-icon.svg' | relative_url }}" alt="" class="site-logo">
       <div class="site-brand-text">
         <span class="site-title">BoardGameClubs<span class="site-title-tld">{{ i18n.brand_suffix[lang] }}</span></span>

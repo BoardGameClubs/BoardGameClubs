@@ -6,313 +6,677 @@
 brand_suffix:
   en: ".org"
   de: ".org"
+  it: ".org"
+  fr: ".org"
+  es: ".org"
+  pl: ".org"
 
 tagline:
   en: "Community-built. Open source. Find your table."
   de: "Von der Community gebaut. Open Source. Finde deinen Spieltisch."
+  it: "Costruito dalla community. Open source. Trova il tuo tavolo."
+  fr: "Créé par la communauté. Open source. Trouve ta table."
+  es: "Hecho por la comunidad. Código abierto. Encuentra tu mesa."
+  pl: "Tworzone przez społeczność. Open source. Znajdź swój stół."
 
 # --- Nav ---
 nav_map:
   en: "Map"
   de: "Karte"
+  it: "Mappa"
+  fr: "Carte"
+  es: "Mapa"
+  pl: "Mapa"
 
 nav_about:
   en: "About"
   de: "Über uns"
+  it: "Chi siamo"
+  fr: "À propos"
+  es: "Acerca de"
+  pl: "O nas"
 
 nav_contribute:
   en: "Add a Club"
   de: "Club hinzufügen"
+  it: "Aggiungi un club"
+  fr: "Ajouter un club"
+  es: "Añadir un club"
+  pl: "Dodaj klub"
 
 nav_contribute_short:
   en: "Add"
   de: "Neu"
+  it: "Aggiungi"
+  fr: "Ajouter"
+  es: "Añadir"
+  pl: "Dodaj"
 
 nav_country:
   en: "Country"
   de: "Land"
+  it: "Paese"
+  fr: "Pays"
+  es: "País"
+  pl: "Kraj"
 
 country_gb:
   en: "United Kingdom"
   de: "Vereinigtes Königreich"
+  it: "Regno Unito"
+  fr: "Royaume-Uni"
+  es: "Reino Unido"
+  pl: "Wielka Brytania"
 
 country_de:
   en: "Germany"
   de: "Deutschland"
+  it: "Germania"
+  fr: "Allemagne"
+  es: "Alemania"
+  pl: "Niemcy"
 
 country_ch:
   en: "Switzerland"
   de: "Schweiz"
+  it: "Svizzera"
+  fr: "Suisse"
+  es: "Suiza"
+  pl: "Szwajcaria"
 
 country_at:
   en: "Austria"
   de: "Österreich"
+  it: "Austria"
+  fr: "Autriche"
+  es: "Austria"
+  pl: "Austria"
 
 country_it:
   en: "Italy"
   de: "Italien"
+  it: "Italia"
+  fr: "Italie"
+  es: "Italia"
+  pl: "Włochy"
 
 country_pl:
   en: "Poland"
   de: "Polen"
+  it: "Polonia"
+  fr: "Pologne"
+  es: "Polonia"
+  pl: "Polska"
 
 country_nl:
   en: "Netherlands"
   de: "Niederlande"
+  it: "Paesi Bassi"
+  fr: "Pays-Bas"
+  es: "Países Bajos"
+  pl: "Holandia"
 
 country_be:
   en: "Belgium"
   de: "Belgien"
+  it: "Belgio"
+  fr: "Belgique"
+  es: "Bélgica"
+  pl: "Belgia"
 
 country_fr:
   en: "France"
   de: "Frankreich"
+  it: "Francia"
+  fr: "France"
+  es: "Francia"
+  pl: "Francja"
 
 country_dk:
   en: "Denmark"
   de: "Dänemark"
+  it: "Danimarca"
+  fr: "Danemark"
+  es: "Dinamarca"
+  pl: "Dania"
 
 country_es:
   en: "Spain"
   de: "Spanien"
+  it: "Spagna"
+  fr: "Espagne"
+  es: "España"
+  pl: "Hiszpania"
 
 footer_other_countries:
   en: "Other countries:"
   de: "Andere Länder:"
+  it: "Altri paesi:"
+  fr: "Autres pays :"
+  es: "Otros países:"
+  pl: "Inne kraje:"
 
 footer_language:
   en: "Language:"
   de: "Sprache:"
+  it: "Lingua:"
+  fr: "Langue :"
+  es: "Idioma:"
+  pl: "Język:"
 
 footer_club_count:
   en: "%COUNT% clubs listed"
   de: "%COUNT% Clubs gelistet"
+  it: "%COUNT% club elencati"
+  fr: "%COUNT% clubs référencés"
+  es: "%COUNT% clubes listados"
+  pl: "%COUNT% klubów na liście"
 
 lang_banner_de:
   en: "Looking for clubs in Germany? Visit the German site →"
   de: "Brettspielclubs in Deutschland? Zur deutschen Seite →"
+  it: "Cerchi club in Germania? Visita il sito tedesco →"
+  fr: "Tu cherches des clubs en Allemagne ? Visite le site allemand →"
+  es: "¿Buscas clubes en Alemania? Visita el sitio en alemán →"
+  pl: "Szukasz klubów w Niemczech? Odwiedź stronę niemiecką →"
+
+lang_banner_it:
+  en: "Cerchi club in Italia? Vai al sito in italiano →"
+  de: "Suchst du Clubs in Italien? Zur italienischen Seite →"
+  it: "Cerchi club in Italia? Vai al sito in italiano →"
+  fr: "Tu cherches des clubs en Italie ? Visite le site italien →"
+  es: "¿Buscas clubes en Italia? Visita el sitio en italiano →"
+  pl: "Szukasz klubów we Włoszech? Odwiedź stronę włoską →"
+
+lang_banner_fr:
+  en: "Tu cherches des clubs en France ? Visite le site français →"
+  de: "Suchst du Clubs in Frankreich? Zur französischen Seite →"
+  it: "Cerchi club in Francia? Vai al sito in francese →"
+  fr: "Tu cherches des clubs en France ? Visite le site français →"
+  es: "¿Buscas clubes en Francia? Visita el sitio en francés →"
+  pl: "Szukasz klubów we Francji? Odwiedź stronę francuską →"
+
+lang_banner_es:
+  en: "¿Buscas clubes en España? Visita el sitio en español →"
+  de: "Suchst du Clubs in Spanien? Zur spanischen Seite →"
+  it: "Cerchi club in Spagna? Vai al sito in spagnolo →"
+  fr: "Tu cherches des clubs en Espagne ? Visite le site espagnol →"
+  es: "¿Buscas clubes en España? Visita el sitio en español →"
+  pl: "Szukasz klubów w Hiszpanii? Odwiedź stronę hiszpańską →"
+
+lang_banner_pl:
+  en: "Szukasz klubów w Polsce? Wejdź na stronę po polsku →"
+  de: "Suchst du Clubs in Polen? Zur polnischen Seite →"
+  it: "Cerchi club in Polonia? Vai al sito in polacco →"
+  fr: "Tu cherches des clubs en Pologne ? Visite le site polonais →"
+  es: "¿Buscas clubes en Polonia? Visita el sitio en polaco →"
+  pl: "Szukasz klubów w Polsce? Wejdź na stronę po polsku →"
 
 lang_banner_dismiss:
   en: "Dismiss"
   de: "Schließen"
+  it: "Chiudi"
+  fr: "Fermer"
+  es: "Cerrar"
+  pl: "Zamknij"
 
 # --- Search & filter ---
 search_placeholder:
   en: "Search by postcode, club name, or location..."
   de: "Postleitzahl, Vereinsname oder Ort suchen..."
+  it: "Cerca per CAP, nome del club o località..."
+  fr: "Rechercher par code postal, nom de club ou lieu..."
+  es: "Busca por código postal, nombre del club o ubicación..."
+  pl: "Szukaj według kodu pocztowego, nazwy klubu lub miejsca..."
 
 filter_clubs:
   en: "Filter clubs"
   de: "Clubs filtern"
+  it: "Filtra i club"
+  fr: "Filtrer les clubs"
+  es: "Filtrar clubes"
+  pl: "Filtruj kluby"
 
 filter_all_types:
   en: "All types"
   de: "Alle Typen"
+  it: "Tutti i tipi"
+  fr: "Tous les types"
+  es: "Todos los tipos"
+  pl: "Wszystkie typy"
 
 filter_all_days:
   en: "All days"
   de: "Alle Tage"
+  it: "Tutti i giorni"
+  fr: "Tous les jours"
+  es: "Todos los días"
+  pl: "Wszystkie dni"
 
 filter_any_distance:
   en: "Any distance"
   de: "Beliebige Entfernung"
+  it: "Qualsiasi distanza"
+  fr: "Toutes distances"
+  es: "Cualquier distancia"
+  pl: "Dowolna odległość"
 
 filter_within_distance:
   en: "Within %N% %UNIT%"
   de: "Bis zu %N% %UNIT%"
+  it: "Entro %N% %UNIT%"
+  fr: "Moins de %N% %UNIT%"
+  es: "Hasta %N% %UNIT%"
+  pl: "Do %N% %UNIT%"
 
 types_selected:
   en: "%N% types selected"
   de: "%N% Typen ausgewählt"
+  it: "%N% tipi selezionati"
+  fr: "%N% types sélectionnés"
+  es: "%N% tipos seleccionados"
+  pl: "Wybrano %N% typów"
 
 days_selected:
   en: "%N% days selected"
   de: "%N% Tage ausgewählt"
+  it: "%N% giorni selezionati"
+  fr: "%N% jours sélectionnés"
+  es: "%N% días seleccionados"
+  pl: "Wybrano %N% dni"
 
 use_my_location:
   en: "Use my location"
   de: "Standort"
+  it: "Usa la mia posizione"
+  fr: "Ma position"
+  es: "Mi ubicación"
+  pl: "Moja lokalizacja"
 
 # --- Day names (used in filter dropdown labels and tags) ---
 day_monday:
   en: "Monday"
   de: "Montag"
+  it: "Lunedì"
+  fr: "Lundi"
+  es: "Lunes"
+  pl: "Poniedziałek"
 day_tuesday:
   en: "Tuesday"
   de: "Dienstag"
+  it: "Martedì"
+  fr: "Mardi"
+  es: "Martes"
+  pl: "Wtorek"
 day_wednesday:
   en: "Wednesday"
   de: "Mittwoch"
+  it: "Mercoledì"
+  fr: "Mercredi"
+  es: "Miércoles"
+  pl: "Środa"
 day_thursday:
   en: "Thursday"
   de: "Donnerstag"
+  it: "Giovedì"
+  fr: "Jeudi"
+  es: "Jueves"
+  pl: "Czwartek"
 day_friday:
   en: "Friday"
   de: "Freitag"
+  it: "Venerdì"
+  fr: "Vendredi"
+  es: "Viernes"
+  pl: "Piątek"
 day_saturday:
   en: "Saturday"
   de: "Samstag"
+  it: "Sabato"
+  fr: "Samedi"
+  es: "Sábado"
+  pl: "Sobota"
 day_sunday:
   en: "Sunday"
   de: "Sonntag"
+  it: "Domenica"
+  fr: "Dimanche"
+  es: "Domingo"
+  pl: "Niedziela"
 day_various:
   en: "Various"
   de: "Verschiedene"
+  it: "Vari"
+  fr: "Variable"
+  es: "Varios"
+  pl: "Różne"
 
 # --- Frequency labels (club detail page) ---
 frequency_weekly:
   en: "Weekly"
   de: "Wöchentlich"
+  it: "Settimanale"
+  fr: "Hebdomadaire"
+  es: "Semanal"
+  pl: "Co tydzień"
 frequency_fortnightly:
   en: "Fortnightly"
   de: "Alle zwei Wochen"
+  it: "Quindicinale"
+  fr: "Bimensuel"
+  es: "Quincenal"
+  pl: "Co dwa tygodnie"
 frequency_monthly:
   en: "Monthly"
   de: "Monatlich"
+  it: "Mensile"
+  fr: "Mensuel"
+  es: "Mensual"
+  pl: "Co miesiąc"
 frequency_twice_monthly:
   en: "Twice monthly"
   de: "Zweimal monatlich"
+  it: "Due volte al mese"
+  fr: "Deux fois par mois"
+  es: "Dos veces al mes"
+  pl: "Dwa razy w miesiącu"
 frequency_adhoc:
   en: "Ad-hoc"
   de: "Unregelmäßig"
+  it: "Saltuario"
+  fr: "Ponctuel"
+  es: "Ocasional"
+  pl: "Nieregularnie"
 
 # --- Club card / list ---
 no_results_title:
   en: "No clubs match your search"
   de: "Keine Clubs gefunden"
+  it: "Nessun club corrisponde alla tua ricerca"
+  fr: "Aucun club ne correspond à ta recherche"
+  es: "Ningún club coincide con tu búsqueda"
+  pl: "Żaden klub nie pasuje do wyszukiwania"
 
 no_results_hint:
   en: "Try a different filter or search term."
   de: "Versuche einen anderen Filter oder Suchbegriff."
+  it: "Prova un altro filtro o un altro termine di ricerca."
+  fr: "Essaie un autre filtre ou un autre terme de recherche."
+  es: "Prueba con otro filtro u otro término de búsqueda."
+  pl: "Spróbuj innego filtra lub innego hasła."
 
 no_clubs_in_country_title:
   en: "No clubs listed here yet"
   de: "Hier sind noch keine Clubs gelistet"
+  it: "Nessun club ancora elencato qui"
+  fr: "Aucun club référencé ici pour le moment"
+  es: "Aún no hay clubes listados aquí"
+  pl: "Nie ma tu jeszcze żadnych klubów"
 
 no_clubs_in_country_hint:
   en: "Know one? Add the first club in %COUNTRY%."
   de: "Kennst du einen? Füge den ersten Club in %COUNTRY% hinzu."
+  it: "Ne conosci uno? Aggiungi il primo club in %COUNTRY%."
+  fr: "Tu en connais un ? Ajoute le premier club en %COUNTRY%."
+  es: "¿Conoces alguno? Añade el primer club en %COUNTRY%."
+  pl: "Znasz jakiś? Dodaj pierwszy klub w %COUNTRY%."
 
 add_club_tail_title:
   en: "Know another club in %COUNTRY%?"
   de: "Kennst du einen weiteren Club in %COUNTRY%?"
+  it: "Conosci un altro club in %COUNTRY%?"
+  fr: "Tu connais un autre club en %COUNTRY% ?"
+  es: "¿Conoces otro club en %COUNTRY%?"
+  pl: "Znasz inny klub w %COUNTRY%?"
 
 add_club_tail_hint:
   en: "Help grow the directory, it only takes a minute."
   de: "Hilf, das Verzeichnis zu erweitern, es dauert nur eine Minute."
+  it: "Aiutaci a far crescere la directory, ci vuole un minuto."
+  fr: "Aide à enrichir l'annuaire, ça ne prend qu'une minute."
+  es: "Ayuda a hacer crecer el directorio, solo lleva un minuto."
+  pl: "Pomóż rozwijać katalog, to tylko minuta."
 
 no_results:
   en: "No clubs match your search. Try a different filter or search term."
   de: "Keine Clubs gefunden. Versuche einen anderen Filter oder Suchbegriff."
+  it: "Nessun club corrisponde alla tua ricerca. Prova un altro filtro o un altro termine."
+  fr: "Aucun club ne correspond à ta recherche. Essaie un autre filtre ou un autre terme."
+  es: "Ningún club coincide con tu búsqueda. Prueba con otro filtro u otro término."
+  pl: "Żaden klub nie pasuje do wyszukiwania. Spróbuj innego filtra lub hasła."
 
 showing_n_clubs:
   en: "Showing %N% clubs"
   de: "Zeige %N% Clubs"
+  it: "%N% club mostrati"
+  fr: "%N% clubs affichés"
+  es: "Mostrando %N% clubes"
+  pl: "Wyświetlono %N% klubów"
 
 showing_n_of_m:
   en: "Showing %N% of %M% clubs"
   de: "Zeige %N% von %M% Clubs"
+  it: "%N% di %M% club mostrati"
+  fr: "%N% sur %M% clubs affichés"
+  es: "Mostrando %N% de %M% clubes"
+  pl: "Wyświetlono %N% z %M% klubów"
 
 sorted_by_nearest:
   en: "sorted by nearest to %LOCATION%"
   de: "sortiert nach Entfernung zu %LOCATION%"
+  it: "ordinati per vicinanza a %LOCATION%"
+  fr: "triés par proximité de %LOCATION%"
+  es: "ordenados por cercanía a %LOCATION%"
+  pl: "posortowane według odległości od %LOCATION%"
 
 clear_location:
   en: "Clear location"
   de: "Standort löschen"
+  it: "Cancella posizione"
+  fr: "Effacer la position"
+  es: "Borrar ubicación"
+  pl: "Wyczyść lokalizację"
 
 # --- Club detail page ---
 club_detail_subtitle:
   en: "%TYPE% Club in %ADDRESS%"
   de: "%TYPE%-Club in %ADDRESS%"
+  it: "Club di %TYPE% a %ADDRESS%"
+  fr: "Club %TYPE% à %ADDRESS%"
+  es: "Club de %TYPE% en %ADDRESS%"
+  pl: "Klub %TYPE% w %ADDRESS%"
 
 club_type_board_games:
   en: "Board Game"
   de: "Brettspiel"
+  it: "Giochi da tavolo"
+  fr: "Jeux de société"
+  es: "Juegos de mesa"
+  pl: "Gry planszowe"
 club_type_rpg:
   en: "RPG"
   de: "Rollenspiel"
+  it: "GdR"
+  fr: "JdR"
+  es: "Rol"
+  pl: "RPG"
 club_type_wargames:
   en: "Wargaming"
   de: "Tabletop"
+  it: "Wargame"
+  fr: "Wargame"
+  es: "Wargames"
+  pl: "Wargame"
 club_type_botc:
   en: "Blood on the Clocktower"
   de: "Blood on the Clocktower"
+  it: "Blood on the Clocktower"
+  fr: "Blood on the Clocktower"
+  es: "Blood on the Clocktower"
+  pl: "Blood on the Clocktower"
 club_type_tcg:
   en: "TCG"
   de: "Sammelkartenspiel"
+  it: "TCG"
+  fr: "JCC"
+  es: "TCG"
+  pl: "TCG"
 
 label_type:
   en: "Type"
   de: "Typ"
+  it: "Tipo"
+  fr: "Type"
+  es: "Tipo"
+  pl: "Typ"
 label_venue:
   en: "Venue"
   de: "Veranstaltungsort"
+  it: "Sede"
+  fr: "Lieu"
+  es: "Local"
+  pl: "Miejsce"
 label_address:
   en: "Address"
   de: "Adresse"
+  it: "Indirizzo"
+  fr: "Adresse"
+  es: "Dirección"
+  pl: "Adres"
 label_day:
   en: "Day"
   de: "Tag"
+  it: "Giorno"
+  fr: "Jour"
+  es: "Día"
+  pl: "Dzień"
 label_days:
   en: "Days"
   de: "Tage"
+  it: "Giorni"
+  fr: "Jours"
+  es: "Días"
+  pl: "Dni"
 label_time:
   en: "Time"
   de: "Zeit"
+  it: "Orario"
+  fr: "Horaire"
+  es: "Horario"
+  pl: "Godzina"
 label_frequency:
   en: "Frequency"
   de: "Häufigkeit"
+  it: "Frequenza"
+  fr: "Fréquence"
+  es: "Frecuencia"
+  pl: "Częstotliwość"
 label_cost:
   en: "Cost"
   de: "Kosten"
+  it: "Costo"
+  fr: "Coût"
+  es: "Coste"
+  pl: "Koszt"
 label_age_restriction:
   en: "Age Restriction"
   de: "Altersbeschränkung"
+  it: "Limite d'età"
+  fr: "Âge requis"
+  es: "Edad mínima"
+  pl: "Ograniczenie wiekowe"
 
 directions:
   en: "Directions"
   de: "Route"
+  it: "Indicazioni"
+  fr: "Itinéraire"
+  es: "Cómo llegar"
+  pl: "Trasa"
 
 suggest_edit:
   en: "Suggest an edit"
   de: "Änderung vorschlagen"
+  it: "Suggerisci una modifica"
+  fr: "Suggérer une modification"
+  es: "Sugerir un cambio"
+  pl: "Zaproponuj zmianę"
 
 # --- Geolocation errors ---
 geolocation_unsupported:
   en: "Geolocation is not supported by your browser."
   de: "Standortbestimmung wird von deinem Browser nicht unterstützt."
+  it: "La geolocalizzazione non è supportata dal tuo browser."
+  fr: "La géolocalisation n'est pas prise en charge par ton navigateur."
+  es: "Tu navegador no admite la geolocalización."
+  pl: "Twoja przeglądarka nie obsługuje geolokalizacji."
 
 geolocation_failed:
   en: "Unable to retrieve your location."
   de: "Dein Standort konnte nicht ermittelt werden."
+  it: "Impossibile rilevare la tua posizione."
+  fr: "Impossible de récupérer ta position."
+  es: "No se ha podido obtener tu ubicación."
+  pl: "Nie udało się ustalić Twojej lokalizacji."
 
 my_location:
   en: "My location"
   de: "Mein Standort"
+  it: "La mia posizione"
+  fr: "Ma position"
+  es: "Mi ubicación"
+  pl: "Moja lokalizacja"
 
 # --- Footer ---
 footer_tagline:
   en: "Board Game Clubs — a free, community-maintained directory."
   de: "Board Game Clubs — ein kostenloses, von der Community gepflegtes Verzeichnis."
+  it: "Board Game Clubs — una directory gratuita, gestita dalla community."
+  fr: "Board Game Clubs — un annuaire gratuit, maintenu par la communauté."
+  es: "Board Game Clubs — un directorio gratuito, mantenido por la comunidad."
+  pl: "Board Game Clubs — bezpłatny katalog prowadzony przez społeczność."
 
 footer_copyright:
   en: "Board Game Clubs"
   de: "Board Game Clubs"
+  it: "Board Game Clubs"
+  fr: "Board Game Clubs"
+  es: "Board Game Clubs"
+  pl: "Board Game Clubs"
 
 footer_source_under:
   en: "Source under"
   de: "Quellcode unter"
+  it: "Codice sorgente sotto"
+  fr: "Code source sous"
+  es: "Código fuente bajo"
+  pl: "Kod źródłowy na licencji"
 
 footer_about:
   en: "About"
   de: "Über uns"
+  it: "Chi siamo"
+  fr: "À propos"
+  es: "Acerca de"
+  pl: "O nas"
 footer_contribute:
   en: "Add a club"
   de: "Club hinzufügen"
+  it: "Aggiungi un club"
+  fr: "Ajouter un club"
+  es: "Añadir un club"
+  pl: "Dodaj klub"
 footer_privacy:
   en: "Privacy"
   de: "Datenschutz"
+  it: "Privacy"
+  fr: "Confidentialité"
+  es: "Privacidad"
+  pl: "Prywatność"
 footer_licence:
   en: "Licence"
   de: "Lizenz"
+  it: "Licenza"
+  fr: "Licence"
+  es: "Licencia"
+  pl: "Licencja"

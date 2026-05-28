@@ -32,6 +32,26 @@ defaults:
       language: "de"
       default_country: "DE"
   - scope:
+      path: "it"
+    values:
+      language: "it"
+      default_country: "IT"
+  - scope:
+      path: "fr"
+    values:
+      language: "fr"
+      default_country: "FR"
+  - scope:
+      path: "es"
+    values:
+      language: "es"
+      default_country: "ES"
+  - scope:
+      path: "pl"
+    values:
+      language: "pl"
+      default_country: "PL"
+  - scope:
       path: "_clubs"
       type: "clubs"
     values:

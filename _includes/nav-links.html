@@ -1,14 +1,16 @@
 {% assign lang = include.lang %}
 {% assign i18n = site.data.i18n %}
-{% if lang == "de" %}
-  {% assign about_path = "/de/about/" %}
-  {% assign contribute_path = "/de/contribute/" %}
-  {% assign home_path = "/de/" %}
-{% else %}
-  {% assign about_path = "/about/" %}
-  {% assign contribute_path = "/contribute/" %}
-  {% assign home_path = "/" %}
-{% endif %}
+{% case lang %}
+  {% when "de" %}{% assign url_prefix = "/de" %}
+  {% when "it" %}{% assign url_prefix = "/it" %}
+  {% when "fr" %}{% assign url_prefix = "/fr" %}
+  {% when "es" %}{% assign url_prefix = "/es" %}
+  {% when "pl" %}{% assign url_prefix = "/pl" %}
+  {% else %}{% assign url_prefix = "" %}
+{% endcase %}
+{% assign about_path = url_prefix | append: "/about/" %}
+{% assign contribute_path = url_prefix | append: "/contribute/" %}
+{% assign home_path = url_prefix | append: "/" %}
 <nav class="site-nav">
   <a href="{{ home_path | relative_url }}">{{ i18n.nav_map[lang] }}</a>
   <a href="{{ about_path | relative_url }}">{{ i18n.nav_about[lang] }}</a>
@@ -22,24 +24,42 @@
     <div class="nav-country-menu" role="listbox" aria-label="{{ i18n.nav_country[lang] }}">
       {% comment %}
         Build language-swap URLs that stay on the equivalent page.
-        Strip any leading "/de" from page.url to get a language-neutral path,
-        then prefix with the target language.
-        Falls back to the homepage when there is no equivalent (e.g. club
-        detail pages live under a single language).
+        Strip any leading "/<lang>" prefix from page.url to get a
+        language-neutral path, then prefix with each target language.
+        Falls back to the homepage when there is no equivalent (e.g.
+        club detail pages live under a single language).
       {% endcomment %}
-      {% assign neutral_path = page.url | remove_first: "/de" %}
+      {% assign neutral_path = page.url %}
+      {% if neutral_path contains "/de/" or neutral_path == "/de" %}{% assign neutral_path = neutral_path | remove_first: "/de" %}
+      {% elsif neutral_path contains "/it/" or neutral_path == "/it" %}{% assign neutral_path = neutral_path | remove_first: "/it" %}
+      {% elsif neutral_path contains "/fr/" or neutral_path == "/fr" %}{% assign neutral_path = neutral_path | remove_first: "/fr" %}
+      {% elsif neutral_path contains "/es/" or neutral_path == "/es" %}{% assign neutral_path = neutral_path | remove_first: "/es" %}
+      {% elsif neutral_path contains "/pl/" or neutral_path == "/pl" %}{% assign neutral_path = neutral_path | remove_first: "/pl" %}
+      {% endif %}
       {% if neutral_path == "" %}{% assign neutral_path = "/" %}{% endif %}
       {% if page.layout == "club" %}
         {% assign en_url = "/" %}
         {% assign de_url = "/de/" %}
+        {% assign it_url = "/it/" %}
+        {% assign fr_url = "/fr/" %}
+        {% assign es_url = "/es/" %}
+        {% assign pl_url = "/pl/" %}
       {% else %}
         {% assign en_url = neutral_path %}
         {% capture de_url %}/de{{ neutral_path }}{% endcapture %}
+        {% capture it_url %}/it{{ neutral_path }}{% endcapture %}
+        {% capture fr_url %}/fr{{ neutral_path }}{% endcapture %}
+        {% capture es_url %}/es{{ neutral_path }}{% endcapture %}
+        {% capture pl_url %}/pl{{ neutral_path }}{% endcapture %}
       {% endif %}
       <div class="nav-lang-row" role="group" aria-label="{{ i18n.footer_language[lang] }}">
         <span class="nav-lang-label">{{ i18n.footer_language[lang] }}</span>
         <a href="{{ en_url | relative_url }}" class="nav-lang-option{% if lang == 'en' %} is-active{% endif %}" hreflang="en">EN</a>
         <a href="{{ de_url | relative_url }}" class="nav-lang-option{% if lang == 'de' %} is-active{% endif %}" hreflang="de">DE</a>
+        <a href="{{ it_url | relative_url }}" class="nav-lang-option{% if lang == 'it' %} is-active{% endif %}" hreflang="it">IT</a>
+        <a href="{{ fr_url | relative_url }}" class="nav-lang-option{% if lang == 'fr' %} is-active{% endif %}" hreflang="fr">FR</a>
+        <a href="{{ es_url | relative_url }}" class="nav-lang-option{% if lang == 'es' %} is-active{% endif %}" hreflang="es">ES</a>
+        <a href="{{ pl_url | relative_url }}" class="nav-lang-option{% if lang == 'pl' %} is-active{% endif %}" hreflang="pl">PL</a>
       </div>
       <button type="button" role="option" data-country="GB" class="nav-country-option" data-label="GB">
         <span class="nav-country-code">GB</span>

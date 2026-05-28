@@ -5,15 +5,23 @@
 {% assign country = site.data.countries[default_country_key] %}
 {% assign i18n = site.data.i18n %}
 {% assign clubs_in_country = site.clubs | where: "country", country.code %}
+{% case lang %}
+  {% when "de" %}{% assign html_lang = "de-DE" %}{% assign brand_home = "/de/" %}
+  {% when "it" %}{% assign html_lang = "it-IT" %}{% assign brand_home = "/it/" %}
+  {% when "fr" %}{% assign html_lang = "fr-FR" %}{% assign brand_home = "/fr/" %}
+  {% when "es" %}{% assign html_lang = "es-ES" %}{% assign brand_home = "/es/" %}
+  {% when "pl" %}{% assign html_lang = "pl-PL" %}{% assign brand_home = "/pl/" %}
+  {% else %}{% assign html_lang = "en-GB" %}{% assign brand_home = "/" %}
+{% endcase %}
 <!DOCTYPE html>
-<html lang="{% if lang == 'de' %}de-DE{% else %}en-GB{% endif %}">
+<html lang="{{ html_lang }}">
 <head>
   {% include head.html %}
 </head>
 <body>
   <header class="site-header site-header--home">
     <div class="header-inner">
-      <a href="{% if lang == 'de' %}{{ '/de/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" class="site-brand">
+      <a href="{{ brand_home | relative_url }}" class="site-brand">
         <img src="{{ '/assets/meeple-map-icon.svg' | relative_url }}" alt="" class="site-logo">
         <div class="site-brand-text">
           <span class="site-title">BoardGameClubs<span class="site-title-tld">{{ i18n.brand_suffix[lang] }}</span></span>
@@ -151,6 +159,10 @@
       country_dk:               {{ i18n.country_dk[lang] | jsonify }},
       country_es:               {{ i18n.country_es[lang] | jsonify }},
       lang_banner_de:           {{ i18n.lang_banner_de[lang] | jsonify }},
+      lang_banner_it:           {{ i18n.lang_banner_it[lang] | jsonify }},
+      lang_banner_fr:           {{ i18n.lang_banner_fr[lang] | jsonify }},
+      lang_banner_es:           {{ i18n.lang_banner_es[lang] | jsonify }},
+      lang_banner_pl:           {{ i18n.lang_banner_pl[lang] | jsonify }},
       lang_banner_dismiss:      {{ i18n.lang_banner_dismiss[lang] | jsonify }}
     };
     window.GameClub.applyImgBg = function (img) {

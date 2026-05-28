@@ -1,22 +1,38 @@
 ---
 ---
 {% comment %}Club detail pages override language by their country
-(DE clubs in German, GB clubs in English). All other pages get their
-language from frontmatter / scoped defaults.{% endcomment %}
-{% if page.layout == "club" and page.country == "DE" %}
-  {% assign lang = "de" %}
-  {% assign default_country_key = "de" %}
-{% elsif page.layout == "club" %}
-  {% assign lang = "en" %}
-  {% assign default_country_key = "gb" %}
+(DE clubs in German, GB clubs in English, and so on for any UI language
+we ship strings for). Other pages take their language from frontmatter
+/ scoped defaults. The lang_to_country map mirrors which country a
+language's site defaults to.{% endcomment %}
+{% assign supported_langs = "en,de,it,fr,es,pl" | split: "," %}
+{% if page.layout == "club" %}
+  {% assign club_country_lc = page.country | default: "GB" | downcase %}
+  {% case club_country_lc %}
+    {% when "de" %}{% assign lang = "de" %}
+    {% when "it" %}{% assign lang = "it" %}
+    {% when "fr" %}{% assign lang = "fr" %}
+    {% when "es" %}{% assign lang = "es" %}
+    {% when "pl" %}{% assign lang = "pl" %}
+    {% else %}{% assign lang = "en" %}
+  {% endcase %}
+  {% assign default_country_key = club_country_lc %}
 {% else %}
   {% assign lang = page.language | default: "en" %}
   {% assign default_country_key = page.default_country | default: "GB" | downcase %}
 {% endif %}
 {% assign country = site.data.countries[default_country_key] %}
 {% assign i18n = site.data.i18n %}
+{% case lang %}
+  {% when "de" %}{% assign html_lang = "de-DE" %}{% assign og_locale = "de_DE" %}
+  {% when "it" %}{% assign html_lang = "it-IT" %}{% assign og_locale = "it_IT" %}
+  {% when "fr" %}{% assign html_lang = "fr-FR" %}{% assign og_locale = "fr_FR" %}
+  {% when "es" %}{% assign html_lang = "es-ES" %}{% assign og_locale = "es_ES" %}
+  {% when "pl" %}{% assign html_lang = "pl-PL" %}{% assign og_locale = "pl_PL" %}
+  {% else %}{% assign html_lang = "en-GB" %}{% assign og_locale = "en_GB" %}
+{% endcase %}
 <!DOCTYPE html>
-<html lang="{% if lang == 'de' %}de-DE{% else %}en-GB{% endif %}">
+<html lang="{{ html_lang }}">
 <head>
   {% include head.html %}
 </head>
@@ -47,6 +63,10 @@ language from frontmatter / scoped defaults.{% endcomment %}
       country_dk:           {{ i18n.country_dk[lang] | jsonify }},
       country_es:           {{ i18n.country_es[lang] | jsonify }},
       lang_banner_de:       {{ i18n.lang_banner_de[lang] | jsonify }},
+      lang_banner_it:       {{ i18n.lang_banner_it[lang] | jsonify }},
+      lang_banner_fr:       {{ i18n.lang_banner_fr[lang] | jsonify }},
+      lang_banner_es:       {{ i18n.lang_banner_es[lang] | jsonify }},
+      lang_banner_pl:       {{ i18n.lang_banner_pl[lang] | jsonify }},
       lang_banner_dismiss:  {{ i18n.lang_banner_dismiss[lang] | jsonify }}
     };
   </script>

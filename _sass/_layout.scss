@@ -125,8 +125,7 @@
     align-items: center;
     flex-shrink: 0;
 
-    // Hide "Map" and "About" links on mobile
-    a:not(.nav-cta):not(.nav-github) {
+    a:not(.nav-cta):not(.nav-github):not(.nav-lang-option) {
       @media (max-width: $bp-md - 1) {
         display: none;
       }

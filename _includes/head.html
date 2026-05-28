@@ -1,13 +1,27 @@
 {% comment %}Mirror default.html's lang derivation: club detail pages take
-their UI language from the club's country (DE clubs in German); everything
-else takes it from page.language.{% endcomment %}
-{% if page.layout == "club" and page.country == "DE" %}
-  {% assign lang = "de" %}
-{% elsif page.layout == "club" %}
-  {% assign lang = "en" %}
+their UI language from the club's country; everything else takes it from
+page.language.{% endcomment %}
+{% if page.layout == "club" %}
+  {% assign club_country_lc = page.country | default: "GB" | downcase %}
+  {% case club_country_lc %}
+    {% when "de" %}{% assign lang = "de" %}
+    {% when "it" %}{% assign lang = "it" %}
+    {% when "fr" %}{% assign lang = "fr" %}
+    {% when "es" %}{% assign lang = "es" %}
+    {% when "pl" %}{% assign lang = "pl" %}
+    {% else %}{% assign lang = "en" %}
+  {% endcase %}
 {% else %}
   {% assign lang = page.language | default: "en" %}
 {% endif %}
+{% case lang %}
+  {% when "de" %}{% assign og_locale = "de_DE" %}
+  {% when "it" %}{% assign og_locale = "it_IT" %}
+  {% when "fr" %}{% assign og_locale = "fr_FR" %}
+  {% when "es" %}{% assign og_locale = "es_ES" %}
+  {% when "pl" %}{% assign og_locale = "pl_PL" %}
+  {% else %}{% assign og_locale = "en_GB" %}
+{% endcase %}
 {% assign i18n = site.data.i18n %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -35,28 +49,54 @@ else takes it from page.language.{% endcomment %}
 {% seo title=false %}
 {% comment %}Our authoritative og:locale per page (overrides jekyll-seo-tag's
 en_US default; Facebook/Twitter parsers use the last og:locale tag).{% endcomment %}
-<meta property="og:locale" content="{% if lang == 'de' %}de_DE{% else %}en_GB{% endif %}">
-<meta property="og:locale:alternate" content="{% if lang == 'de' %}en_GB{% else %}de_DE{% endif %}">
+<meta property="og:locale" content="{{ og_locale }}">
+{% comment %}List the alternates so the parser sees the full locale set.{% endcomment %}
+{% assign all_locales = "en_GB,de_DE,it_IT,fr_FR,es_ES,pl_PL" | split: "," %}
+{% for alt in all_locales %}{% if alt != og_locale %}
+<meta property="og:locale:alternate" content="{{ alt }}">
+{% endif %}{% endfor %}
 {% if page.layout == "club" and page.location.lat and page.location.lng %}
 <meta name="geo.position" content="{{ page.location.lat }};{{ page.location.lng }}">
 <meta name="geo.placename" content="{{ page.location.address }}">
 <meta name="ICBM" content="{{ page.location.lat }}, {{ page.location.lng }}">
 {% endif %}
-{% comment %}hreflang pairs for translatable static pages{% endcomment %}
-{% if page.url == "/" or page.url == "/de/" %}
+{% comment %}hreflang pairs for translatable static pages. Each block lists
+the equivalent path in every supported language plus an x-default
+(English) where appropriate.{% endcomment %}
+{% if page.url == "/" or page.url == "/de/" or page.url == "/it/" or page.url == "/fr/" or page.url == "/es/" or page.url == "/pl/" %}
   <link rel="alternate" hreflang="en-GB" href="{{ '/' | absolute_url }}">
   <link rel="alternate" hreflang="de-DE" href="{{ '/de/' | absolute_url }}">
+  <link rel="alternate" hreflang="it-IT" href="{{ '/it/' | absolute_url }}">
+  <link rel="alternate" hreflang="fr-FR" href="{{ '/fr/' | absolute_url }}">
+  <link rel="alternate" hreflang="es-ES" href="{{ '/es/' | absolute_url }}">
+  <link rel="alternate" hreflang="pl-PL" href="{{ '/pl/' | absolute_url }}">
   <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
-{% elsif page.url == "/about/" or page.url == "/de/about/" %}
+{% elsif page.url == "/about/" or page.url == "/de/about/" or page.url == "/it/about/" or page.url == "/fr/about/" or page.url == "/es/about/" or page.url == "/pl/about/" %}
   <link rel="alternate" hreflang="en-GB" href="{{ '/about/' | absolute_url }}">
   <link rel="alternate" hreflang="de-DE" href="{{ '/de/about/' | absolute_url }}">
-{% elsif page.url == "/contribute/" or page.url == "/de/contribute/" %}
+  <link rel="alternate" hreflang="it-IT" href="{{ '/it/about/' | absolute_url }}">
+  <link rel="alternate" hreflang="fr-FR" href="{{ '/fr/about/' | absolute_url }}">
+  <link rel="alternate" hreflang="es-ES" href="{{ '/es/about/' | absolute_url }}">
+  <link rel="alternate" hreflang="pl-PL" href="{{ '/pl/about/' | absolute_url }}">
+{% elsif page.url == "/contribute/" or page.url == "/de/contribute/" or page.url == "/it/contribute/" or page.url == "/fr/contribute/" or page.url == "/es/contribute/" or page.url == "/pl/contribute/" %}
   <link rel="alternate" hreflang="en-GB" href="{{ '/contribute/' | absolute_url }}">
   <link rel="alternate" hreflang="de-DE" href="{{ '/de/contribute/' | absolute_url }}">
-{% elsif page.url == "/privacy/" or page.url == "/de/privacy/" %}
+  <link rel="alternate" hreflang="it-IT" href="{{ '/it/contribute/' | absolute_url }}">
+  <link rel="alternate" hreflang="fr-FR" href="{{ '/fr/contribute/' | absolute_url }}">
+  <link rel="alternate" hreflang="es-ES" href="{{ '/es/contribute/' | absolute_url }}">
+  <link rel="alternate" hreflang="pl-PL" href="{{ '/pl/contribute/' | absolute_url }}">
+{% elsif page.url == "/privacy/" or page.url == "/de/privacy/" or page.url == "/it/privacy/" or page.url == "/fr/privacy/" or page.url == "/es/privacy/" or page.url == "/pl/privacy/" %}
   <link rel="alternate" hreflang="en-GB" href="{{ '/privacy/' | absolute_url }}">
   <link rel="alternate" hreflang="de-DE" href="{{ '/de/privacy/' | absolute_url }}">
-{% elsif page.url == "/licence/" or page.url == "/de/licence/" %}
+  <link rel="alternate" hreflang="it-IT" href="{{ '/it/privacy/' | absolute_url }}">
+  <link rel="alternate" hreflang="fr-FR" href="{{ '/fr/privacy/' | absolute_url }}">
+  <link rel="alternate" hreflang="es-ES" href="{{ '/es/privacy/' | absolute_url }}">
+  <link rel="alternate" hreflang="pl-PL" href="{{ '/pl/privacy/' | absolute_url }}">
+{% elsif page.url == "/licence/" or page.url == "/de/licence/" or page.url == "/it/licence/" or page.url == "/fr/licence/" or page.url == "/es/licence/" or page.url == "/pl/licence/" %}
   <link rel="alternate" hreflang="en-GB" href="{{ '/licence/' | absolute_url }}">
   <link rel="alternate" hreflang="de-DE" href="{{ '/de/licence/' | absolute_url }}">
+  <link rel="alternate" hreflang="it-IT" href="{{ '/it/licence/' | absolute_url }}">
+  <link rel="alternate" hreflang="fr-FR" href="{{ '/fr/licence/' | absolute_url }}">
+  <link rel="alternate" hreflang="es-ES" href="{{ '/es/licence/' | absolute_url }}">
+  <link rel="alternate" hreflang="pl-PL" href="{{ '/pl/licence/' | absolute_url }}">
 {% endif %}

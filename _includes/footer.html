@@ -1,10 +1,13 @@
 {% assign lang = page.language | default: "en" %}
 {% assign i18n = site.data.i18n %}
-{% if lang == "de" %}
-  {% assign url_prefix = "/de" %}
-{% else %}
-  {% assign url_prefix = "" %}
-{% endif %}
+{% case lang %}
+  {% when "de" %}{% assign url_prefix = "/de" %}
+  {% when "it" %}{% assign url_prefix = "/it" %}
+  {% when "fr" %}{% assign url_prefix = "/fr" %}
+  {% when "es" %}{% assign url_prefix = "/es" %}
+  {% when "pl" %}{% assign url_prefix = "/pl" %}
+  {% else %}{% assign url_prefix = "" %}
+{% endcase %}
 {% assign club_count = site.clubs | size %}
 {% assign count_label = i18n.footer_club_count[lang] | replace: "%COUNT%", club_count %}
 <footer class="site-footer">

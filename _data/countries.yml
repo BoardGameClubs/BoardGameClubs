@@ -2,8 +2,9 @@
 # scripts/validate_clubs.rb, and scripts/geocode.rb.
 #
 # Two distinct concepts:
-#   - page.language ("en" | "de") drives the UI strings — comes from the URL
-#     (/ = en, /de/ = de). Independent of the active country.
+#   - page.language ("en" | "de" | "it" | "fr" | "es" | "pl") drives the UI
+#     strings — comes from the URL (/ = en, /de/ = de, etc.). Independent of
+#     the active country.
 #   - active country (chosen by URL ?country=, localStorage, or the nav
 #     selector — falling back to default_country_for_language) drives the
 #     dataset, map centre/zoom, units, postcode service, currency.
@@ -15,6 +16,10 @@ gb:
   code: "GB"
   name_en: "United Kingdom"
   name_de: "Vereinigtes Königreich"
+  name_it: "Regno Unito"
+  name_fr: "Royaume-Uni"
+  name_es: "Reino Unido"
+  name_pl: "Wielka Brytania"
   url_prefix: "" # GB clubs live at /clubs/... (no prefix)
   map_center: [54.5, -3.5]
   map_zoom: 6
@@ -36,6 +41,10 @@ de:
   code: "DE"
   name_en: "Germany"
   name_de: "Deutschland"
+  name_it: "Germania"
+  name_fr: "Allemagne"
+  name_es: "Alemania"
+  name_pl: "Niemcy"
   url_prefix: "/de" # DE clubs live at /de/clubs/...
   map_center: [51.16, 10.45]
   map_zoom: 6
@@ -57,6 +66,10 @@ ch:
   code: "CH"
   name_en: "Switzerland"
   name_de: "Schweiz"
+  name_it: "Svizzera"
+  name_fr: "Suisse"
+  name_es: "Suiza"
+  name_pl: "Szwajcaria"
   url_prefix: "/ch"
   map_center: [46.8, 8.2]
   map_zoom: 7
@@ -78,6 +91,10 @@ at:
   code: "AT"
   name_en: "Austria"
   name_de: "Österreich"
+  name_it: "Austria"
+  name_fr: "Autriche"
+  name_es: "Austria"
+  name_pl: "Austria"
   url_prefix: "/at"
   map_center: [47.6, 14.1]
   map_zoom: 7
@@ -99,6 +116,10 @@ it:
   code: "IT"
   name_en: "Italy"
   name_de: "Italien"
+  name_it: "Italia"
+  name_fr: "Italie"
+  name_es: "Italia"
+  name_pl: "Włochy"
   url_prefix: "/it"
   map_center: [42.5, 12.5]
   map_zoom: 6
@@ -120,6 +141,10 @@ pl:
   code: "PL"
   name_en: "Poland"
   name_de: "Polen"
+  name_it: "Polonia"
+  name_fr: "Pologne"
+  name_es: "Polonia"
+  name_pl: "Polska"
   url_prefix: "/pl"
   map_center: [52.0, 19.4]
   map_zoom: 6
@@ -141,6 +166,10 @@ nl:
   code: "NL"
   name_en: "Netherlands"
   name_de: "Niederlande"
+  name_it: "Paesi Bassi"
+  name_fr: "Pays-Bas"
+  name_es: "Países Bajos"
+  name_pl: "Holandia"
   url_prefix: "/nl"
   map_center: [52.2, 5.3]
   map_zoom: 7
@@ -162,6 +191,10 @@ be:
   code: "BE"
   name_en: "Belgium"
   name_de: "Belgien"
+  name_it: "Belgio"
+  name_fr: "Belgique"
+  name_es: "Bélgica"
+  name_pl: "Belgia"
   url_prefix: "/be"
   map_center: [50.6, 4.6]
   map_zoom: 8
@@ -183,6 +216,10 @@ fr:
   code: "FR"
   name_en: "France"
   name_de: "Frankreich"
+  name_it: "Francia"
+  name_fr: "France"
+  name_es: "Francia"
+  name_pl: "Francja"
   url_prefix: "/fr"
   map_center: [46.6, 2.5]
   map_zoom: 6
@@ -204,6 +241,10 @@ dk:
   code: "DK"
   name_en: "Denmark"
   name_de: "Dänemark"
+  name_it: "Danimarca"
+  name_fr: "Danemark"
+  name_es: "Dinamarca"
+  name_pl: "Dania"
   url_prefix: "/dk"
   map_center: [56.0, 10.5]
   map_zoom: 7
@@ -225,6 +266,10 @@ es:
   code: "ES"
   name_en: "Spain"
   name_de: "Spanien"
+  name_it: "Spagna"
+  name_fr: "Espagne"
+  name_es: "España"
+  name_pl: "Hiszpania"
   url_prefix: "/es"
   map_center: [40.0, -3.7]
   map_zoom: 6

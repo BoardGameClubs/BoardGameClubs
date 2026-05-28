@@ -22,6 +22,13 @@
     return ALL_CLUBS.filter(function (c) { return c.country === code; });
   }
 
+  // URL prefix for the current page language: "/de", "/it", "" (English), etc.
+  function langPrefixForCurrentPage() {
+    var lang = (window.GameClub && window.GameClub.language) || "en";
+    if (lang === "en") return "";
+    return "/" + lang;
+  }
+
   function init() {
     activeCountry = getActiveCountry();
     map = window.GameClubMap.init(activeCountry);
@@ -222,8 +229,7 @@
         iconName = "search-x";
       }
 
-      var langPrefix = window.GameClub && window.GameClub.language === "de" ? "/de" : "";
-      var contributeUrl = baseurl + langPrefix + "/contribute/";
+      var contributeUrl = baseurl + langPrefixForCurrentPage() + "/contribute/";
 
       container.innerHTML =
         '<div class="empty-state">' +
@@ -315,8 +321,7 @@
       var tailTitle = (i18n.add_club_tail_title || "Know another club in %COUNTRY%?")
                         .replace("%COUNTRY%", countryNameTail);
       var tailHint = i18n.add_club_tail_hint || "Help grow the directory.";
-      var tailLangPrefix = window.GameClub && window.GameClub.language === "de" ? "/de" : "";
-      var tailContributeUrl = baseurl + tailLangPrefix + "/contribute/";
+      var tailContributeUrl = baseurl + langPrefixForCurrentPage() + "/contribute/";
 
       html +=
         '<a class="club-card club-card-add" href="' + tailContributeUrl + '">' +

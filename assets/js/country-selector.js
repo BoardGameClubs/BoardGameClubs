@@ -74,6 +74,11 @@
     var defaultCode = canonicalise((window.GameClub && window.GameClub.defaultCountryCode) || "GB");
     var fromUrl = readUrlCode();
     if (fromUrl && getProfile(fromUrl)) return fromUrl;
+    // On a localised page (/de/, /it/, …) the URL implies the country choice,
+    // so we ignore any prior localStorage selection and use the page default.
+    // The English root falls back to localStorage as before.
+    var pageLang = (window.GameClub && window.GameClub.language) || "en";
+    if (pageLang !== "en") return defaultCode;
     var fromStorage = readStoredCode();
     if (fromStorage && getProfile(fromStorage)) return fromStorage;
     return defaultCode;
@@ -193,14 +198,23 @@
   }
 
   // ── Language banner ──────────────────────────────────────────────────
-  // Suggests the German site to browsers whose preferred language is German
-  // when they land on a non-/de/ page. One-time dismiss persists in
-  // localStorage. No auto-redirect — bilingual users may genuinely prefer
-  // the English UI.
+  // Suggests a localised site to browsers whose preferred language matches
+  // one of our non-English locales, when they land on a different locale.
+  // One-time dismiss persists in localStorage. No auto-redirect — bilingual
+  // users may genuinely prefer the English UI.
 
   var BANNER_DISMISS_KEY = "gameclub.lang_banner_dismissed";
+  var BANNER_LOCALES = [
+    { code: "de", path: "/de/", hreflang: "de-DE" },
+    { code: "it", path: "/it/", hreflang: "it-IT" },
+    { code: "fr", path: "/fr/", hreflang: "fr-FR" },
+    { code: "es", path: "/es/", hreflang: "es-ES" },
+    { code: "pl", path: "/pl/", hreflang: "pl-PL" }
+  ];
 
-  function browserPrefersGerman() {
+  // Returns the locale entry matching the highest-priority browser language
+  // that is in BANNER_LOCALES, or null. Skips the user's current page lang.
+  function detectBannerLocale(currentPageLang) {
     var langs = [];
     if (navigator.languages && navigator.languages.length) {
       langs = navigator.languages;
@@ -208,31 +222,39 @@
       langs = [navigator.language];
     }
     for (var i = 0; i < langs.length; i++) {
-      if ((langs[i] || "").toLowerCase().indexOf("de") === 0) return true;
+      var prefix = (langs[i] || "").toLowerCase().slice(0, 2);
+      if (!prefix || prefix === currentPageLang) continue;
+      for (var j = 0; j < BANNER_LOCALES.length; j++) {
+        if (BANNER_LOCALES[j].code === prefix) return BANNER_LOCALES[j];
+      }
     }
-    return false;
+    return null;
   }
 
   function maybeShowLangBanner() {
     var pageLang = (window.GameClub && window.GameClub.language) || "en";
-    if (pageLang === "de") return;                       // already on /de/
-    if (window.location.pathname.indexOf("/de/") === 0) return;
-    if (!browserPrefersGerman()) return;
+    var target = detectBannerLocale(pageLang);
+    if (!target) return;
+    if (window.location.pathname.indexOf(target.path) === 0) return;
     try {
       if (localStorage.getItem(BANNER_DISMISS_KEY) === "1") return;
     } catch (e) {}
 
     var i18n = window.GameClubI18n || {};
-    var label = i18n.lang_banner_de || "Looking for clubs in Germany? Visit the German site →";
+    var label = i18n["lang_banner_" + target.code];
+    if (!label) return;
     var dismiss = i18n.lang_banner_dismiss || "Dismiss";
 
     var bar = document.createElement("div");
     bar.className = "lang-banner";
     bar.setAttribute("role", "complementary");
     bar.innerHTML =
-      '<a class="lang-banner-link" href="/de/" hreflang="de-DE"></a>' +
+      '<a class="lang-banner-link"></a>' +
       '<button type="button" class="lang-banner-dismiss" aria-label=""></button>';
-    bar.querySelector(".lang-banner-link").textContent = label;
+    var link = bar.querySelector(".lang-banner-link");
+    link.setAttribute("href", target.path);
+    link.setAttribute("hreflang", target.hreflang);
+    link.textContent = label;
     bar.querySelector(".lang-banner-dismiss").textContent = "×";
     bar.querySelector(".lang-banner-dismiss").setAttribute("aria-label", dismiss);
     bar.querySelector(".lang-banner-dismiss").addEventListener("click", function () {
