@@ -6,7 +6,7 @@
 
 **Find your nearest board game club.**
 
-A community-built directory powered by an interactive map, covering the UK and Europe.
+A community-built directory powered by an interactive map, covering clubs worldwide.
 
 [![Clubs listed](https://img.shields.io/endpoint?url=https%3A%2F%2Fboardgameclubs.org%2Fapi%2Fbadge.json)](https://boardgameclubs.org)
 [![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-blue?logo=github)](https://boardgameclubs.org)
