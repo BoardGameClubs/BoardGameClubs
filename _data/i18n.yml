@@ -148,6 +148,14 @@ country_es:
   es: "España"
   pl: "Hiszpania"
 
+country_pt:
+  en: "Portugal"
+  de: "Portugal"
+  it: "Portogallo"
+  fr: "Portugal"
+  es: "Portugal"
+  pl: "Portugalia"
+
 footer_other_countries:
   en: "Other countries:"
   de: "Andere Länder:"

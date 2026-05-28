@@ -286,3 +286,28 @@ es:
   currency: "EUR"
   currency_symbol: "€"
   geocode_country_code: "ES"
+
+pt:
+  code: "PT"
+  name_en: "Portugal"
+  name_de: "Portugal"
+  name_it: "Portogallo"
+  name_fr: "Portugal"
+  name_es: "Portugal"
+  name_pl: "Portugalia"
+  url_prefix: "/pt"
+  map_center: [39.6, -8.0]
+  map_zoom: 7
+  bounds:
+    lat: [36.9, 42.2]
+    lng: [-9.6, -6.1]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{4}-\\d{3}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "EUR"
+  currency_symbol: "€"
+  geocode_country_code: "PT"
