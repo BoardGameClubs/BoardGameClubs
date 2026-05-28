@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2214"
 description: >-
-  Group of board game enthusiasts in and around Rome. Visitors to the city are welcome to get in touch and meet up.
+  Gruppo di appassionati di giochi da tavolo a Roma e dintorni. Se vi trovate in città, fatevi sentire — siete i benvenuti.
 ---

@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/539"
 description: >-
-  Gaming group based in Turin.
+  Gruppo ludico con sede a Torino. Maggiori informazioni sul sito.
 ---

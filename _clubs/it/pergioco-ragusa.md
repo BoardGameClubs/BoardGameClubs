@@ -19,5 +19,5 @@ facebook: "https://www.facebook.com/groups/2034075990154731/"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3093"
 description: >-
-  Board gaming group in Ragusa, Sicily.
+  Boardgaming group in Ragusa, Sicily.
 ---

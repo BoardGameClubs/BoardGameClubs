@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/81"
 description: >-
-  Every Friday, a large group of board game enthusiasts meet at the Queimada Nivell Q board game bar in Barcelona. Many members are also part of the wider BSK community.
+  Todos los viernes en el Bar Lúdico Queimada Nivell Q se reúne un nutrido grupo de aficionados a los juegos de mesa, muchos de ellos también miembros de la comunidad BSK.
 ---

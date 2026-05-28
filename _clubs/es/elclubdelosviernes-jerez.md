@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3672"
 description: >-
-  Jerez-based Friday games group. Join the club to share game collections and meet other players.
+  Gremio del Club de los Viernes en Jerez. Únete para ver la ludoteca de los integrantes del club y compartir la tuya.
 ---

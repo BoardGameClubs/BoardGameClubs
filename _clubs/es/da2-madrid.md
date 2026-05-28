@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/862"
 description: >-
-  A board games club in the Community of Madrid for anyone tired of playing the same games at home, lacking space to set up boards, or struggling to find other players.
+  Si eres de la Comunidad de Madrid y no encuentras gente con quien jugar, estás cansado de jugar a los mismos juegos, no tienes espacio suficiente para desplegar tableros o no puedes dejar montada una partida durante unos días, este es tu sitio. Únete al club y los inconvenientes desaparecen.
 ---

@@ -19,5 +19,5 @@ facebook: "https://www.facebook.com/stowarzyszeniegierplanszowychgambit/"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2685"
 description: >-
-  Stowarzyszenie Gier Planszowych GAMBIT — a board game association based in Gliwice, meeting at the community centre on ul. Barlickiego (room 18). Check the Facebook page for the latest meeting schedule.
+  Stowarzyszenie Gier Planszowych GAMBIT — gliwicki klub spotykający się w sali 18 przy ulicy Barlickiego 3. Aktualny harmonogram spotkań znajdziecie na Facebooku.
 ---

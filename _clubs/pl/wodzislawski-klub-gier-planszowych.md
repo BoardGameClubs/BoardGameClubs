@@ -19,5 +19,5 @@ facebook: "https://www.facebook.com/wkgppl/"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3040"
 description: >-
-  A board games club originally based at the WCK in Wodzisław Śląski, now meeting in Radlin. Check the Facebook page for the current meeting schedule.
+  Klub gier planszowych pierwotnie działający przy WCK w Wodzisławiu Śląskim — obecnie spotykamy się w Radlinie. Aktualny harmonogram na Facebooku.
 ---

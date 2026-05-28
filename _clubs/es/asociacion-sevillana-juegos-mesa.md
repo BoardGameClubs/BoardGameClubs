@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1480"
 description: >-
-  A legally constituted association based in Seville, dedicated to fostering interest in board games.
+  Asociación legalmente constituida con base en Sevilla, dedicada al fomento de la afición por los juegos de mesa.
 ---

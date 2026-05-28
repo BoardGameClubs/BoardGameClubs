@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3298"
 description: >-
-  Board games group based in the Sants district of Barcelona.
+  Grup de jocs de taula de la zona de Sants, a Barcelona.
 ---

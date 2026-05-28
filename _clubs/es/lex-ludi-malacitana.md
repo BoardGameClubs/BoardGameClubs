@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2914"
 description: >-
-  Founded in Málaga in early 2012, Lex Ludi Malacitana is a cultural association that promotes alternative leisure activities such as board games, role-playing games, and historical and fantasy miniature gaming.
+  La Asociación Cultural Lex Ludi Malacitana nació en Málaga a principios de 2012 con el objetivo de promover formas de ocio alternativo como los juegos de mesa, de rol y de estrategia, así como el miniaturismo histórico y fantástico. La literatura y el cine también figuran entre las aficiones de sus miembros.
 ---

@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1276"
 description: >-
-  Go and board games club based in Poznań. Check the website for current meeting times and details.
+  Klub gry Go i innych gier planszowych w Poznaniu. Szczegóły aktualnych spotkań na stronie klubu.
 ---

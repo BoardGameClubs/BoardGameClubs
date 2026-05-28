@@ -19,5 +19,5 @@ facebook: "https://www.facebook.com/associazionepeterpancdc"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4103"
 description: >-
-  An active group of board game, RPG and miniatures gamers based in Città di Castello, Umbria.
+  Active group of tabletop, RPG and miniatures gamers based in Città di Castello, Umbria.
 ---

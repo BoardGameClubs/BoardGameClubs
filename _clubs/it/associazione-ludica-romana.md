@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1200"
 description: >-
-  A group of friends in Rome who share a passion for games. Members run game explanations, organise tournaments and bring the association to life — all anchored around the gaming table.
+  Un gruppo di amici romani che condividono la passione per il gioco e ne approfittano per incontrarsi, chiacchierare e — perché no — andare a mangiare una pizza insieme. Ognuno porta nell'associazione la propria esperienza: alcuni spiegano nuovi giochi, altri aiutano a organizzare tornei e a gestire l'associazione, altri ancora portano semplicemente allegria e buon umore.
 ---

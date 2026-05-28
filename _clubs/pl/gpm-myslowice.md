@@ -19,5 +19,5 @@ facebook: "https://www.facebook.com/GryPlanszoweMyslowice/"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3228"
 description: >-
-  Board game group meeting in Mysłowice. Check the Facebook page for the current meeting schedule.
+  Grupa miłośników gier planszowych z Mysłowic. Aktualne spotkania ogłaszamy na Facebooku.
 ---

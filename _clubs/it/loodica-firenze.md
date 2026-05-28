@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/598"
 description: >-
-  Board games group meeting every Tuesday on Via Mariti in Florence.
+  Gli amici di boardgame del martedì in Via Mariti, a Firenze.
 ---

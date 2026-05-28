@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3869"
 description: >-
-  Board games club for the Penedès region, based in Vilafranca.
+  Club de jocs de la Vegueria Penedès, situat a Vilafranca del Penedès.
 ---

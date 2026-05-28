@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/575"
 description: >-
-  Board games club that meets every Friday at the Albergue de San Fermín in Madrid. Newcomers always welcome.
+  Club de juegos de mesa Runa. Nos reunimos todos los viernes en el Albergue de San Fermín. Si quieres conocernos, siempre serás bienvenido.
 ---

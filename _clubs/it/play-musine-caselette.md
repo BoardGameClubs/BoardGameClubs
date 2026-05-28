@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4140"
 description: >-
-  Arci cultural circle in Caselette (Turin province) dedicated to board games.
+  Circolo Arci Play Musinè a Caselette (Torino), in via Valdellatorre 264. Spazio dedicato ai giochi da tavolo.
 ---

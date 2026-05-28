@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/758"
 description: >-
-  Founded in 2005 and running regularly since 2006, Der Maskierte Würfel is a home-based, itinerant board games club meeting at least once a month around the province of Alicante. We play everything from classic abstracts like chess and Go to modern board games, wargames and RPGs — with a special focus on modern German-style board games.
+  Creado en octubre de 2005 y en funcionamiento regular desde noviembre de 2006, Der Maskierte Würfel es un club "doméstico" e "itinerante" de juegos de mesa que se reúne al menos una vez al mes en la provincia de Alicante. Está dedicado a todo tipo de juegos —desde clásicos abstractos como el ajedrez o el go hasta wargames y rol—, con especial atención a los juegos de mesa modernos surgidos en Alemania en los años noventa (eurogames).
 ---

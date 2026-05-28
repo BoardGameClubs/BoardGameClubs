@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4560"
 description: >-
-  Board games association based in Gandia (Valencia).
+  Asociación de juegos de mesa de Gandia.
 ---

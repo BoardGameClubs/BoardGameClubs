@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4314"
 description: >-
-  Gaming group based in Paiporta (Valencia), focused on thematic games and low-intensity wargames. Fans of Eklund and similar designers.
+  Grupo de juego de seres humanos antiguos, temáticos y wargameros de baja intensidad. Fans de Eklund y otras movidas desde la beta. Con base en Paiporta (Valencia).
 ---

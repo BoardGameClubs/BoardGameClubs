@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2977"
 description: >-
-  A Szczecin-based group that meets every Thursday at 18:00 at Arete Bistro on Piastów 30. We bring games, explain the rules, hang out and have a good time. We occasionally organise additional events at other venues and we also have games for children.
+  Szczecińska grupa spotykająca się w każdy czwartek o 18:00 w Arete Bistro na Piastów 30. Przynosimy gry, tłumaczymy zasady, dobrze się bawimy. Od czasu do czasu organizujemy dodatkowe wydarzenia w innych miejscach. Mamy też gry dla dzieci.
 ---

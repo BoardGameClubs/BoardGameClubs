@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2533"
 description: >-
-  Cultural gaming association based in Vigo.
+  Asociación cultural lúdica con sede en Vigo.
 ---

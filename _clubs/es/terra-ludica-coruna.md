@@ -19,5 +19,5 @@ facebook: "https://www.facebook.com/pg/terraludica"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3679"
 description: >-
-  Terra Lúdica is a non-profit cultural association created by and for fans of board games, wargames and role-playing games. Based in A Coruña, the association has its own venue managed and maintained by its members.
+  Terra Lúdica es una asociación cultural sin ánimo de lucro creada por y para aficionados a los juegos de mesa, wargames y juegos de rol. Tenemos sede en A Coruña, en un local propio gestionado y mantenido por los socios.
 ---

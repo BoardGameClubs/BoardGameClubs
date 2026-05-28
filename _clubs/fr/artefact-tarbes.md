@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3621"
 description: >-
-  Artefact is the miniature and card games association of Tarbes. Members play a wide variety of games including board games, with Warhammer 40,000 and Age of Sigmar among the most popular miniature systems, and lively Magic: the Gathering Commander/EDH sessions. We meet on Saturday evenings and Sundays on request in our venue provided by the town of Tarbes.
+  Artefact est l'association de jeux de figurines, de cartes et de plateau de Tarbes. Côté figurines, Warhammer 40 000 et Age of Sigmar sont les plus pratiqués. Magic l'Assemblée réunit nos membres autour de parties endiablées de Commander/EDH. Nous nous retrouvons les samedis soirs et les dimanches (à la demande) dans notre salle au 4 rue Alphonse Daudet, mise à notre disposition par la mairie de Tarbes (au fond de la cour de l'ancienne école Jules Ferry). Curieux et futurs membres sont toujours les bienvenus.
 ---

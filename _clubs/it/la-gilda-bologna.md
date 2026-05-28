@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3378"
 description: >-
-  A gaming laboratory project bringing role-players, board gamers and card gamers together under the banner of the Cassero LGBTI+ centre in Bologna. Two Sundays a month, from afternoon into the evening, the centre provides space, games and storytellers. The only rule is to have fun.
+  #LaGilda è un progetto di laboratorio ludico che riunisce giocatori e giocatrici di ruolo, da tavolo e di carte sotto la stessa bandiera, quella del Cassero LGBTI+ center di Bologna. Due domeniche al mese, da pomeriggio a sera, vengono messi a disposizione locali, giochi e narratori. Divertirsi è l'unica regola.
 ---

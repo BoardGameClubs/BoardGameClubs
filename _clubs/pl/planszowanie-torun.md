@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/532"
 description: >-
-  Toruń's card and board games club, founded in February 2007. Meetings take place at the Sobótka community club on Wojska Polskiego 43/45 (pavilion, first floor). Everyone is welcome to come along and spend time over a board game.
+  Toruński klub gier karcianych i planszowych założony 10 lutego 2007 roku. Spotykamy się w osiedlowym klubie Sobótka przy ulicy Wojska Polskiego 43/45 (pawilon, I piętro) w godzinach 16:00–18:30. Cel jest prosty: miłe spędzanie czasu przy stołach pełnych planszówek. Zapraszamy serdecznie!
 ---

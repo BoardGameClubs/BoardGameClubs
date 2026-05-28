@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1535"
 description: >-
-  A wargamers' club in L'Hospitalet near Barcelona with 30+ members. We usually meet every Friday (and some Saturdays and Sundays) to play wargames and historical eurogames. We also take part in local fairs and collaborate with schools and a history museum to teach history through games.
+  Wargamers' club in L'Hospitalet de Llobregat, near Barcelona, with 30+ members and growing. We usually gather every Friday (and some Saturdays and Sundays) to play wargames and what we like to call "historical eurogames". As a local association, we also take part in fairs and other events to introduce children and parents to gaming, and we currently collaborate with schools and a history museum to teach history through games.
 ---

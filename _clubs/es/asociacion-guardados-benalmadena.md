@@ -19,5 +19,5 @@ facebook: "https://www.facebook.com/AsociacionGuardados/"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4093"
 description: >-
-  Asociación Guardados gaming group based in Benalmádena.
+  Juegos de la asociación Guardados y de sus socios más activos, con sede en Benalmádena.
 ---

@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2822"
 description: >-
-  A board games group in Granada with its own dedicated venue. Visit the website for details on meet-ups and how to join.
+  El Dragón de Madera es un grupo de jugadores de juegos de mesa de Granada. Disponemos de local propio; para más información sobre dónde encontrarnos, las actividades que organizamos y cómo formar parte, ponte en contacto con nosotros.
 ---

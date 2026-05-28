@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4068"
 description: >-
-  Open board games and role-playing group at Lluïsos d'Horta in the Horta district of Barcelona.
+  Grup de jocs de taula i rol dels Lluïsos d'Horta, obert a tothom.
 ---

@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1018"
 description: >-
-  A local gaming group in San Vicente del Raspeig (Alicante). Our main monthly gaming meeting is held on the second Saturday of each month, with smaller meetups during the rest of the month.
+  Local gaming group in San Vicente del Raspeig (Alicante). Our main monthly meeting is held on the second Saturday of each month, with smaller meet-ups during the rest of the month. Join the forum to propose new gaming dates.
 ---

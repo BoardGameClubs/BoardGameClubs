@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/443"
 description: >-
-  Gaming association based in Mantua.
+  Associazione ludica con sede a Mantova.
 ---

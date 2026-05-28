@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1577"
 description: >-
-  A non-profit gaming collective in Genoa, active since 2004. Primarily focused on board games. We organise weekly gaming evenings at our venue, plus tournaments, demonstrations and other events.
+  Giochi Corsari è un'associazione ludica genovese attiva dal 2004, che promuove principalmente il gioco da tavolo e in generale il gioco in tutte le sue forme. Organizziamo serate ludiche settimanali presso la nostra sede, tornei, dimostrazioni ed eventi di vario tipo.
 ---

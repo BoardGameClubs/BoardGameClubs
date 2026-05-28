@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4243"
 description: >-
-  L'Auberge Ludique is an association promoting classic and modern board games and role-playing games across all generations. We host friendly gaming evenings and occasional themed events.
+  L'Auberge Ludique est une association qui promeut auprès de toutes les générations le patrimoine ludique des jeux de société classiques et modernes et des jeux de rôle (hors jeux d'argent). Soirées ludiques dans une ambiance conviviale, avec des événements spéciaux à thème organisés ponctuellement.
 ---

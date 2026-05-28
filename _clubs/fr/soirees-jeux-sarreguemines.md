@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3632"
 description: >-
-  Weekly public games evenings in Sarreguemines. Open to everyone, free of charge — board and party games at the Brasserie de la Mairie every Thursday from 20:00. Other weekly meetings are run by partner associations (Les Gardiens du Rêve for RPGs and miniatures on Fridays, Héritiers d'Urza on Saturdays).
+  Guilde locale pour partager les rendez-vous autour des jeux de société modernes à Sarreguemines et en région : soirées jeux, festivals, conventions, etc. Rendez-vous hebdomadaires : jeudis dès 20h à la Brasserie de la Mairie (9 rue du Maire Massing) — soirées jeux publiques, ouvertes à toutes et tous, sans frais. Les vendredis dès 20h30, l'association Les Gardiens du Rêve se réunit au Foyer Culturel (3 rue de l'Abbé Roth) pour des jeux de rôle et de figurines. Les samedis après-midi, les Héritiers d'Urza se retrouvent à la Brasserie de la Mairie pour des jeux de cartes.
 ---

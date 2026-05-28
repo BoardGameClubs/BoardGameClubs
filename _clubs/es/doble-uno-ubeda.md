@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3525"
 description: >-
-  Board games club based in Úbeda, primarily for its members.
+  Página del club de juegos de Úbeda "Doble Uno". Principalmente para sus socios.
 ---

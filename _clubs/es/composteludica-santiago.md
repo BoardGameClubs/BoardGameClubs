@@ -19,5 +19,5 @@ facebook: "https://www.facebook.com/groups/compostelaludica/"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1971"
 description: >-
-  Board games group in Santiago de Compostela. Whether you're passing through, new in town, or local, get in touch — everyone is welcome.
+  Xogos de mesa en Santiago de Compostela. Juegos de mesa en Santiago de Compostela, creciendo día a día. Tanto si estás de paso por la ciudad y te apetece echar una partida, como si te has venido a vivir aquí, o eres de aquí y quieres jugar... no dudes en contactar con nosotros.
 ---

@@ -19,5 +19,5 @@ facebook: "https://www.facebook.com/genxalcala-210509672323753/"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3287"
 description: >-
-  A gaming group that meets at Gen X in Alcalá de Henares. Check the Facebook page for the latest meeting schedule.
+  Grupo de juego que se reúne en Gen X Alcalá de Henares.
 ---

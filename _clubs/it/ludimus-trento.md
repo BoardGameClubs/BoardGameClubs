@@ -19,5 +19,5 @@ facebook: "http://it-it.facebook.com/ludimusTN/"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2831"
 description: >-
-  A gaming club in Trento that promotes modern board games by organising game nights open to everyone.
+  Gaming club based in Trento, raising awareness of modern board games through game nights open to everyone.
 ---

@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/484"
 description: >-
-  Game club based in Piacenza.
+  Club di giochi con sede a Piacenza.
 ---

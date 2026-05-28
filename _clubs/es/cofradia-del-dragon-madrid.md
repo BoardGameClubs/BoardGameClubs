@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3884"
 description: >-
-  A non-profit association from the Moratalaz district of Madrid, founded over 15 years ago by a group who wanted public spaces to share their hobbies. Activities include board games, role-playing games, miniature games, painting and more, held at civic centres provided by the local council.
+  Asociación sin ánimo de lucro del barrio de Moratalaz (Madrid). Nació hace más de 15 años cuando un grupo de chavales se puso manos a la obra para conseguir espacios públicos en los que dar a conocer y realizar actividades lúdicas. Desde entonces se han realizado multitud de actividades en espacios cedidos por la Junta de Moratalaz: juegos de mesa, de rol, miniaturas, presentaciones y eventos.
 ---

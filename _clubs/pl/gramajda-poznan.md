@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/475"
 description: >-
-  Poznań board games group meeting on Aleja Niepodległości (entrance from Taylora). Check the website for the current meeting schedule.
+  Poznańska Grupa Graczy spotykająca się przy Alei Niepodległości 8 (wejście od Taylora). Szczegóły aktualnych spotkań na stronie klubu.
 ---

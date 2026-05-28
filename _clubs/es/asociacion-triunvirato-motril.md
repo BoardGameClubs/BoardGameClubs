@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4169"
 description: >-
-  An association bringing together fans of wargames, board games and role-playing games in Motril (Granada).
+  Triunvirato nace de la unión entre wargames, juegos de mesa y rol, con base en Motril.
 ---

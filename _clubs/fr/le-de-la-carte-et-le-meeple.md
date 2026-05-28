@@ -19,5 +19,5 @@ facebook: "https://www.facebook.com/groups/1795243640760800"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3333"
 description: >-
-  Le Dé, la Carte et le Meeple meets every Friday evening from 20:00 to 23:00 at the town hall of Ferrière-la-Petite for board games in good company. Newcomers welcome, veterans accepted. Bring your games — or just your good mood. The SASS games club of Ferrière-la-Petite.
+  Le Dé, la Carte et le Meeple — le club de jeux SASS de Ferrière-la-Petite — se retrouve chaque vendredi soir de 20h à 23h à la Mairie pour partager des jeux de société entre gens de bonne compagnie. Néophytes bienvenus, vétérans acceptés. Venez avec vos jeux, ou simplement votre bonne humeur.
 ---

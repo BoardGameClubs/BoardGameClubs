@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4403"
 description: >-
-  Modern board games group based in Badalona.
+  Jocs de taula moderns d'un grup d'amics jugant a Badalona.
 ---

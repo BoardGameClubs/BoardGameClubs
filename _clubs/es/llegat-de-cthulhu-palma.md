@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1003"
 description: >-
-  The Llegat de Cthulhu association was founded in 2006 to champion gaming as a leisure activity. We meet every Wednesday between 18:00 and 22:00 at the space provided by the Casal de Llevant in Palma de Mallorca.
+  L'Associació Llegat de Cthulhu va néixer l'any 2006 amb l'objectiu de reivindicar l'oci lúdic. Des de llavors hem anat creixent en nombre, activitats, quantitat de jocs i hores per gaudir-los. Ens pots trobar tots els dimecres entre les 18:00 i les 22:00 a l'espai que ens cedeix el Casal de Llevant.
 ---

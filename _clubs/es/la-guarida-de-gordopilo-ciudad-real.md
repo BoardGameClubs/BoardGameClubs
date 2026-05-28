@@ -19,5 +19,5 @@ facebook: "https://www.facebook.com/LaGuaridadeGordopilo/"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4435"
 description: >-
-  Board games club in Ciudad Real.
+  Club de juegos de mesa de Ciudad Real.
 ---

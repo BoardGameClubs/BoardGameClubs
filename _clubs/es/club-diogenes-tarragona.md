@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3612"
 description: >-
-  Founded in 2012, Club Diògenes Tarragona is a non-profit association promoting gaming culture in Tarragona by introducing people to board games and role-playing games.
+  El Club Diògenes Tarragona és una associació sense ànim de lucre fundada el 2012 amb l'objectiu de fomentar la cultura lúdica a Tarragona, donant a conèixer els jocs de taula i de rol. Rol: dimarts i dimecres de 21:00 a 24:00, divendres de 22:30 a 02:00. Jocs de taula: dimecres i divendres de 19:00 a 21:00 i de 21:00 a 24:00.
 ---

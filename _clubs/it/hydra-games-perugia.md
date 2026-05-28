@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2539"
 description: >-
-  Perugia's Hydra Games association, affiliated to La Tana dei Goblin.
+  Associazione Hydra Games di Perugia, affiliata alla Tana dei Goblin.
 ---

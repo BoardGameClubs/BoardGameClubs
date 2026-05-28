@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2059"
 description: >-
-  Games library and club based in Annecy.
+  Ludothèque des Sakavins, basée à Annecy.
 ---

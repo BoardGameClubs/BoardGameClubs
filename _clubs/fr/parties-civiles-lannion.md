@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3191"
 description: >-
-  Founded in April 2008, this association promotes board gaming across its region.
+  Association créée en avril 2008 pour promouvoir l'expression ludique dans la région de Lannion.
 ---

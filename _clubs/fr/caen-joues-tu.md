@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2061"
 description: >-
-  An association in Caen dedicated to introducing people to modern board games. Sessions run every Tuesday from 20:00 and are open to anyone 18+ (or accompanied by an adult). Annual membership is €15, or pay a €2 table fee per session without joining.
+  Association loi 1901, Caen Joues-Tu a pour vocation de faire découvrir les jeux de société modernes dans une ambiance conviviale. Nos animateurs sauront recommander un jeu adapté à vos envies, que vous soyez curieux ou amateur éclairé. Les soirées se déroulent tous les mardis à partir de 20h00 et sont ouvertes à tous à partir de 18 ans (ou accompagnés d'un adulte). Cotisation annuelle 15€, ou droit de table 2€ par personne sans adhésion.
 ---

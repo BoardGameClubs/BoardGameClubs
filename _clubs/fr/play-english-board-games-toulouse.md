@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3669"
 description: >-
-  A meetup group in Toulouse for people who want to play board games in English. The aim is both to have fun and to provide an opportunity to practise English; native speakers are also welcome. Conversational English (B2 and above) is required as sessions run in English only for full immersion. Two sessions per week — one weekday evening (alternating Tuesday and Thursday) from 19:30 to 21:30, plus another session.
+  A meetup group for people who want to play board games in English in Toulouse. The aim is to have fun and to provide a chance to practise English — native speakers welcome. Conversational English (B2+) is a de facto requirement; sessions run in English only for full immersion. Two sessions per week: one weekday evening (alternating Tuesday/Thursday) from 19:30 to 21:30, plus a Sunday session starting at 14:15 and usually lasting four hours or more. Sessions take place at Blastodice, who charge 2€ per person for game access.
 ---

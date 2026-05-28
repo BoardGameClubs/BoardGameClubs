@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3410"
 description: >-
-  Board games association based in Sitges and the surrounding area.
+  Associació de jocs de taula de Sitges i els seus voltants.
 ---

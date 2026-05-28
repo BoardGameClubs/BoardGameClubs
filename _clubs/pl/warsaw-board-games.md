@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4580"
 description: >-
-  A unique international English-speaking community of board game enthusiasts in Warsaw, organising regular meetups since 2021. Check the website for upcoming events and venues.
+  International English-speaking community of board game enthusiasts in Warsaw, running regular meetups since 2021. Check the website for upcoming events and venues.
 ---

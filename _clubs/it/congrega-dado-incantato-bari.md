@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2640"
 description: >-
-  Game demonstrators and gaming group based in Bari.
+  La Congrega del Dado Incantato: game demonstrators, gamers and funny people, based in Bari.
 ---

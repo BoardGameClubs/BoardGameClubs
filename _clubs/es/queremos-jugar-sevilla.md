@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1554"
 description: >-
-  Non-profit association based in Seville dedicated to board games.
+  Asociación sin ánimo de lucro dedicada a los juegos de mesa, con base en Sevilla.
 ---

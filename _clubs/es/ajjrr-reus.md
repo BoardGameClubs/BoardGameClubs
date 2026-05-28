@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2725"
 description: >-
-  A non-profit association founded in 1994 to promote and practice role-playing and interpretation games, along with related strategy and simulation activities — board games, card games, miniature games and video games.
+  L'Associació de Jugadors i Jugadores de Rol de Reus (AJJRR) és una entitat sense ànim de lucre fundada el 1994 amb la finalitat de promoure i practicar l'activitat lúdica, cultural, educativa i participativa dels jocs de rol i interpretació, així com els jocs d'estratègia i simulació relacionats: jocs de taulell, jocs de cartes, jocs amb miniatures i videojocs.
 ---

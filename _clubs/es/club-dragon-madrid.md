@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1083"
 description: >-
-  The Club Dragón cultural association was founded in 1983 to bring together fans of historical strategy games in Madrid. Today we are over 110 members, with more than 30 tables across 300 m² for our leisure time. We play almost everything — from historical miniature simulation to Scalextric, board games and role-playing games.
+  La Asociación Cultural Club Dragón nació en 1983 para reunir a los aficionados a los juegos de estrategia histórica de Madrid. Hoy somos más de 110 socios en un local de 300 m² con más de 30 mesas para nuestro tiempo de ocio. Nos hemos diversificado hasta convertirnos en un club en el que se juega a casi todo: desde simulación histórica con figuras a Scalextric, pasando por juegos de estrategia, eurogames, cartas y mucho más.
 ---

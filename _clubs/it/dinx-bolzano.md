@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1181"
 description: >-
-  Gaming association in Bolzano, South Tyrol. Open Wednesdays from 15:00 to 20:00.
+  Associazione ludica di Bolzano, Alto Adige. Aperti il mercoledì dalle 15:00 alle 20:00.
 ---

@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4179"
 description: >-
-  A multilingual board gaming group in the Marina Alta region of the Valencian Community. We play tabletop games of all kinds — board, card, role-playing, miniature, party and strategy games. Members speak Spanish, English, German and Russian among other languages.
+  We're a group of people in the Marina Alta region of the Valencian Community who enjoy playing tabletop games of all kinds — board, card, role-playing, miniature, party and strategy games. As a group we speak Spanish, English, German and Russian among other languages. We enjoy meeting people and making new friends.
 ---

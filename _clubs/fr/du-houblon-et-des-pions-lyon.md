@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1070"
 description: >-
-  Board games and a bit of beer in Lyon. Check the blog for upcoming meet-ups.
+  Des jeux et un peu de mousse — soirées jeux à Lyon. Détails sur le blog.
 ---

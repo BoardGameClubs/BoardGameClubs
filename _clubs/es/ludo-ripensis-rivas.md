@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4606"
 description: >-
-  Group of players based in Rivas-Vaciamadrid and the surrounding area.
+  Grupo de jugadoras y jugadores de Rivas-Vaciamadrid y alrededores.
 ---

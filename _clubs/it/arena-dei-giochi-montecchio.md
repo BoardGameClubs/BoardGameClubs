@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3670"
 description: >-
-  The gaming and creative section of the L'Arena sports club, aiming to spread knowledge of board games and create opportunities for people of all ages to meet and socialise.
+  L'Arena dei Giochi è la sezione ludico-creativa della polisportiva L'Arena di Montecchio Emilia, nata con l'obiettivo di diffondere il mondo dei giochi da tavolo e creare occasioni di incontro e socializzazione tra persone di ogni età.
 ---

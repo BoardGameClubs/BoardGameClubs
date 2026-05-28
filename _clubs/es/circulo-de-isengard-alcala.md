@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2129"
 description: >-
-  Founded on 29 September 2000, Círculo de Isengard is a cultural association in Alcalá de Henares dedicated to bringing together friends with shared hobbies. The club has grown into a large, always-open circle of friends who share and promote their passions to anyone interested.
+  Fundado el 29 de septiembre de 2000, el Círculo de Isengard nació con la intención de ampliar el círculo de amistades entre personas con aficiones similares: juegos de mesa, rol, miniaturas y cartas. Hoy somos una asociación abierta en Alcalá de Henares, a 30 km de Madrid. Nos encontramos en nuestra sede de la Casa de la Juventud los jueves de 18:00 a 23:00 y los sábados de 11:00 a 21:00.
 ---

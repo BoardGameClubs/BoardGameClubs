@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/998"
 description: >-
-  Every Saturday, the Tecla Sala public library sets aside a space with six large tables for anyone who wants to come and try out board games. The library also has a small game collection and runs hosted games one Saturday per month.
+  La biblioteca pública Tecla Sala reserva cada dissabte un espai amb 6 taules de grans dimensions per a tothom qui vulgui anar-hi a provar jocs de taula. La biblioteca també té un petit fons de jocs i organitza partides moderades un dissabte al mes.
 ---

@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3680"
 description: >-
-  Weekly board game and RPG meet-up in Lecco. Find us every Wednesday evening from 20:30 at the Circolo Libero Pensiero. Bring your own games or try ours — we'll be there to recommend, teach and play.
+  Incontro settimanale di giochi da tavolo e di ruolo a Lecco. Ci trovate ogni mercoledì sera dalle 20:30 presso il Circolo Libero Pensiero in Via Isidoro Calloni 14. Potete provare i nostri giochi o portare i vostri — saremo lì a consigliarvi e a giocare con voi, magari davanti a una birra.
 ---

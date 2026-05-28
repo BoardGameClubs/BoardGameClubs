@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/625"
 description: >-
-  Board game meetings held every Monday from 15:00 to 20:30 at the Młodzieżowy Dom Kultury (Youth Cultural Centre) in Gliwice, room 41.
+  Spotkania klubu Kredens odbywają się w każdy poniedziałek od 15:00 do 20:30 w Młodzieżowym Domu Kultury w Gliwicach, sala 41.
 ---

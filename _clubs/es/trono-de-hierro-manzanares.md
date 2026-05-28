@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1257"
 description: >-
-  Board game, role-playing and card games club based in Manzanares el Real, meeting at the old youth centre next to the Casa de la Cultura.
+  Club de juegos de tablero, rol y cartas de Manzanares el Real.
 ---

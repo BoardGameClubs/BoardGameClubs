@@ -19,5 +19,5 @@ facebook: "https://www.facebook.com/ludoteca.di.como/"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3230"
 description: >-
-  An association active for over 20 years in the Como area. We run free open game nights for RPGs and board games, plus occasional special events throughout the year.
+  La Ludoteca di Como è un'associazione storica attiva da oltre 20 anni nell'area di Como. Organizziamo serate di gioco libere, gratuite e aperte a tutti, dedicate sia ai giochi da tavolo che ai giochi di ruolo, oltre a eventi speciali nell'arco dell'anno.
 ---

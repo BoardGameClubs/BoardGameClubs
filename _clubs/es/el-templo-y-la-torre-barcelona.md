@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1869"
 description: >-
-  El Templo y la Torre is a non-profit gaming association where you can play your favourite board games. The club offers members and visitors a space to play without time limits or restrictions, a games library with over 150 titles, and a friendly atmosphere for making new friends.
+  El Templo y la Torre es una asociación lúdica sin ánimo de lucro donde podrás jugar a tus juegos de mesa favoritos. Ofrecemos a socios y simpatizantes un espacio donde jugar sin horarios ni restricciones, una ludoteca propia con más de 150 juegos, y un buen ambiente para divertirse y hacer amigos.
 ---

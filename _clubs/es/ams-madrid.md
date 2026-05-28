@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/638"
 description: >-
-  Founded in 1992 in the Salamanca district of Madrid, AMS is an association of people who enjoy playing and discussing games of all kinds, particularly wargames. Activities include miniature games, board wargames, eurogames, painting and scenery workshops, and play-testing of new rules.
+  A.M.S. es una asociación madrileña de personas que gustan de jugar y debatir sobre juegos en general y wargames en particular. Desde 1992 mantiene actividad ininterrumpida en un local del barrio de Salamanca, donde se han desarrollado partidas de figuras, wargames de tablero, eurogames, talleres de pintura y escenografía, y playtest de nuevos reglamentos. Siempre hay un grupo de jugadores dispuestos a hincarle el diente a cualquier juego nuevo que aparezca.
 ---

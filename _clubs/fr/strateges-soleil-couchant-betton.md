@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4354"
 description: >-
-  An association based in Betton, 10 km north of Rennes — the Breton capital. Dedicated to strategy board games.
+  Association ludique basée à Betton (35830), à 10 km au nord de Rennes.
 ---

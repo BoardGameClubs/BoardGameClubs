@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3630"
 description: >-
-  A board games, role-playing, miniatures and wargames association based in Donostia (San Sebastián), Guipúzcoa. We promote these hobbies and run related activities including tournaments, leagues, painting workshops and introductory games.
+  Asociación de juegos de mesa, rol y miniaturas con sede en Donostia (Guipúzcoa). Promovemos este tipo de ocio y organizamos actividades relacionadas como torneos, ligas, talleres de pintura y partidas de iniciación.
 ---

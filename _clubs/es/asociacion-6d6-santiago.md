@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3232"
 description: >-
-  A non-profit association of people of all ages who share an interest in miniature wargames. Based in Santiago de Compostela, we have a rented venue where we regularly meet to play, paint, build scenery and chat over drinks. We also run monthly open activities.
+  Asociación sin ánimo de lucro de gente de todas las edades unida por el interés por los wargames de miniaturas. Estamos en Santiago de Compostela y disponemos de un local alquilado donde nos juntamos habitualmente para jugar, pintar, hacer escenografía o charlar con unas cervezas. Con la ayuda de Bandua Wargames, realizamos actividades mensuales abiertas a cualquiera que quiera visitarnos.
 ---

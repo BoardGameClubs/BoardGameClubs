@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1926"
 description: >-
-  Cantabria gaming group, meeting primarily at the Bar de Carlos in Torrelavega.
+  Grupo de juegos de Cantabria, principalmente reunido en Torrelavega en el Bar de Carlos.
 ---

@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2627"
 description: >-
-  A friendly local gaming group that currently meets on Thursdays in Rovereto (Trento province).
+  Friendly local gaming group currently meeting on Thursdays in Rovereto (Trento province).
 ---

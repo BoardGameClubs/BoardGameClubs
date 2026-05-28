@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/860"
 description: >-
-  Gaming club based in Koenigsmacker (Moselle), 15 km from Luxembourg and Germany.
+  Club de joueurs basé à Koenigsmacker (Moselle), à 15 km du Luxembourg et de l'Allemagne.
 ---

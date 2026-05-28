@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4604"
 description: >-
-  If you want to practise English or are a native speaker looking to meet locals, this is the place to be. On the last Friday of every month at the public library in Dos Hermanas, a casual gaming event runs from 17:00 until closing time.
+  If you want to practise English, or English is your mother tongue and you'd like to meet some locals, this is the place to be. Every last Friday of the month at the public library in Dos Hermanas, we hold a casual event from 17:00 to closing time. Join us!
 ---

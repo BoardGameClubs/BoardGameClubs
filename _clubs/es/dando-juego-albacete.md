@@ -19,5 +19,5 @@ facebook: "https://www.facebook.com/DandojuegoAB"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/3699"
 description: >-
-  A cultural association in Albacete dedicated to promoting board games, role-playing games, miniatures, wargames and Warhammer.
+  Asociación Cultural Dando Juego de Albacete, dedicada a la promoción de los juegos de mesa, de rol, de miniaturas, wargames y Warhammer. ¡Ven a conocernos!
 ---

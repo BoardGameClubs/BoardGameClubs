@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/924"
 description: >-
-  An association based at the Casa de las Asociaciones in Alcobendas, working to become a reference point for alternative leisure in the municipality. Activities include board games, role-playing games, wargames, Magic: the Gathering and video games.
+  Asociación con vocación de convertirse en referencia del ocio alternativo en el municipio de Alcobendas. Formamos parte del Consejo de la Juventud de Alcobendas y participamos activamente en él. Nos gustan todo tipo de juegos de mesa, juegos de rol, wargames, Magic, videojuegos y más.
 ---

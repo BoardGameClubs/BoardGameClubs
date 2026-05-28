@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4415"
 description: >-
-  Trento branch of La Tana dei Goblin, Italy's largest gaming community network.
+  Volkan è la sede di Trento de La Tana dei Goblin.
 ---

@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1326"
 description: >-
-  A group that meets every two weeks on Saturdays at the Biblioteca Les Voltes in Sant Vicenç dels Horts to play and share modern board games. We're an open group — anyone who wants to come along is welcome.
+  Som un grup de gent que ens reunim cada quinze dies, els dissabtes, a la Biblioteca Les Voltes de Sant Vicenç dels Horts per participar i difondre el món dels jocs de taula moderns. Som un grup obert: tothom qui vulgui assistir hi serà ben rebut.
 ---

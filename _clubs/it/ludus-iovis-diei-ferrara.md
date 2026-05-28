@@ -19,5 +19,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/948"
 description: >-
-  A non-profit gaming association founded in 2007 in Ferrara to promote intelligent gaming in all its forms. Main activities are board games, role-playing games, card games and miniature games. Meet-ups are held at the club venue on Via Bentivoglio every Monday and Thursday evening.
+  Associazione ludica senza scopo di lucro nata a Ferrara nel 2007 dal desiderio di promuovere il "gioco intelligente" in ogni sua forma. Le attività principali del club sono giochi da tavolo, di ruolo, di carte e di miniature. Ci trovate nella nostra sede in Via Bentivoglio 215 a Ferrara ogni lunedì e giovedì sera.
 ---
