@@ -2,15 +2,15 @@
 // Near-black charcoal with clean teal accents — polished product feel
 
 // Colors
-$color-primary: #1e293b;        // slate 800 — headings, primary text accents
+$color-primary: #2a2622;        // warm off-black — headings, primary text accents
 $color-primary-dark: #ffffff;   // white — header bar, footer background
-$color-primary-light: #64748b;  // slate 500 — secondary text, hover states
-$color-accent: #ea580c;         // orange 600 — CTA buttons, key accents
-$color-accent-light: #f97316;   // orange 500 — hover states, warm highlights
+$color-primary-light: #6b6259;  // warm slate — secondary text, hover states
+$color-accent: #dd6b20;         // pumpkin — CTA buttons, key accents
+$color-accent-light: #ed8936;   // pumpkin light — hover states, warm highlights
 $color-bg: #fafafa;             // zinc 50 — page background
 $color-surface: #ffffff;        // white — cards, sidebar
-$color-text: #1e293b;           // slate 800 — primary body text
-$color-text-light: #a1a1aa;     // zinc 400 — secondary text, metadata
+$color-text: #2a2622;           // warm off-black — primary body text
+$color-text-light: #a39a91;     // warm light grey — secondary text, metadata
 $color-border: #e4e4e7;         // zinc 200 — borders, dividers
 $color-tag: #f4f4f5;            // zinc 100 — default tag background
 $color-tag-day: #334155;        // slate 700 — day tag background
@@ -37,8 +37,8 @@ $font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 // Layout
 $max-width: 1200px;
 $sidebar-width: 480px;
-$border-radius: 10px;
-$border-radius-sm: 5px;
+$border-radius: 5px;
+$border-radius-sm: 3px;
 
 // Breakpoints
 $bp-sm: 576px;

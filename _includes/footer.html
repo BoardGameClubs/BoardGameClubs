@@ -1,7 +1,11 @@
 <footer class="site-footer">
   <p>Board Game Clubs UK &mdash; a free, community-maintained directory.</p>
+  <p class="footer-legal">&copy; {{ site.time | date: "%Y" }} Board Game Clubs UK &middot; Source under <a href="{{ '/licence' | relative_url }}">MIT + Commons Clause</a></p>
   <p class="footer-links">
+    <a href="{{ '/about' | relative_url }}">About</a>
     <a href="{{ '/contribute' | relative_url }}">Add a club</a>
+    <a href="{{ '/privacy' | relative_url }}">Privacy</a>
+    <a href="{{ '/licence' | relative_url }}">Licence</a>
     {% if site.repository %}<a href="https://github.com/{{ site.repository }}">GitHub</a>{% endif %}
   </p>
 </footer>

@@ -3,18 +3,25 @@
   position: sticky;
   z-index: 10;
   background: $color-surface;
-  padding-bottom: 0.35rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.9rem;
 
-  // Full-width shadow below the filter bar, hidden by default
+  // Inner panel: defines the filter section as its own band — full sidebar width
+  .filter-bar-inner {
+    background: linear-gradient(180deg, rgba($color-accent, 0.04) 0%, rgba($color-accent, 0.015) 100%);
+    border-bottom: 1px solid rgba($color-accent, 0.18);
+    padding: 1rem 1.25rem 0.9rem;
+    margin: 0 -1.25rem;
+  }
+
+  // Soft fade below the filter bar when sidebar is scrolled
   &::after {
     content: "";
     position: absolute;
     left: -1.25rem;
     right: -1.25rem;
     top: 100%;
-    height: 8px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
+    height: 10px;
+    background: linear-gradient(to bottom, rgba($color-accent, 0.08), transparent);
     opacity: 0;
     transition: opacity 0.2s ease;
     pointer-events: none;
@@ -26,16 +33,50 @@
     }
   }
 
+  // The sticky background needs to extend to the sidebar edges so cards
+  // disappearing behind it don't peek out. Use a pseudo-element behind the
+  // panel rather than padding on the sticky element itself.
+  &::before {
+    content: "";
+    position: absolute;
+    left: -1.25rem;
+    right: -1.25rem;
+    top: 0;
+    bottom: 0;
+    background: $color-surface;
+    z-index: -1;
+  }
+
   @media (min-width: $bp-lg) {
-    top: -1.25rem;
-    padding-top: 1.25rem;
-    margin-top: -1.25rem;
+    top: 0;
   }
 
   @media (max-width: $bp-lg - 1) {
     top: 48px; // below drawer handle
-    border-bottom: none;
   }
+}
+
+// Filter-bar section label
+.filter-bar-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $color-accent;
+  margin-bottom: 0.55rem;
+
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+// Tidy spacing inside the filter panel — last child should not push the panel taller
+.filter-bar-inner > *:last-child {
+  margin-bottom: 0;
 }
 
 // ─── Search bar ───
@@ -391,6 +432,7 @@
 }
 
 .club-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
@@ -401,7 +443,7 @@
   border-radius: $border-radius;
   padding: 0.9rem 1rem;
   cursor: pointer;
-  box-shadow: none;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
   transition: box-shadow 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
   animation: fadeSlideIn 0.35s ease both;
 
@@ -414,8 +456,7 @@
 
   @media (min-width: $bp-lg) {
     &:hover {
-      border-color: darken($color-border, 12%);
-      box-shadow: none;
+      border-color: rgba($color-accent, 0.45);
       transform: translateY(-2px);
       text-decoration: none;
 
@@ -437,7 +478,7 @@
     img {
       width: 60px;
       height: 60px;
-      border-radius: 8px;
+      border-radius: $border-radius-sm;
       object-fit: contain;
       display: block;
       border: 1px solid $color-border;
@@ -914,7 +955,7 @@ noscript .club-list {
     img {
       width: 48px;
       height: 48px;
-      border-radius: 6px;
+      border-radius: $border-radius-sm;
       object-fit: contain;
       display: block;
       border: 1px solid $color-border;
