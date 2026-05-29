@@ -1,0 +1,96 @@
+name: Check club links
+
+on:
+  schedule:
+    # Every Monday at 06:00 UTC.
+    - cron: "0 6 * * 1"
+  workflow_dispatch: # allow manual runs from the Actions tab
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-links:
+    name: Check club links and update report issue
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+
+      - name: Run link checker
+        id: check
+        run: |
+          ruby scripts/check_links.rb --json | tee linkcheck.out
+          # Surface the counts to later steps.
+          line=$(grep '^LINKCHECK_RESULT' linkcheck.out || echo "LINKCHECK_RESULT dead=0 suspect=0 checked=0")
+          echo "$line" | sed 's/LINKCHECK_RESULT //; s/ /\n/g' >> "$GITHUB_OUTPUT"
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dead-links-report
+          path: |
+            reports/dead_links.md
+            reports/dead_links.json
+          if-no-files-found: warn
+
+      - name: Update tracking issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('reports/dead_links.md', 'utf8');
+            const dead = ${{ steps.check.outputs.dead || 0 }};
+            const suspect = ${{ steps.check.outputs.suspect || 0 }};
+
+            const MARKER = '<!-- linkcheck-tracking-issue -->';
+            const title = '🔗 Dead / stale club links';
+
+            // GitHub issue bodies cap at 65536 chars; trim defensively.
+            let body = MARKER + '\n\n' + report;
+            if (body.length > 65000) {
+              body = body.slice(0, 64000) +
+                '\n\n_…report truncated. Download the full `dead-links-report` artifact from the workflow run._';
+            }
+
+            // Find our existing tracking issue (by marker in body).
+            const existing = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'link-report',
+              per_page: 100,
+            });
+            const issue = existing.find(i => (i.body || '').includes(MARKER));
+
+            if (dead === 0 && suspect === 0) {
+              // Nothing wrong — close the issue if it exists, otherwise do nothing.
+              if (issue) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner, repo: context.repo.repo,
+                  issue_number: issue.number,
+                  body: 'All checked links responded OK on the latest run. Closing — the workflow will reopen this if links break again.',
+                });
+                await github.rest.issues.update({
+                  owner: context.repo.owner, repo: context.repo.repo,
+                  issue_number: issue.number, state: 'closed',
+                });
+              }
+              return;
+            }
+
+            if (issue) {
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: issue.number, title, body, state: 'open',
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title, body, labels: ['link-report'],
+              });
+            }

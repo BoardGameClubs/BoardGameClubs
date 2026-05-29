@@ -1,0 +1,39 @@
+name: Report a Club
+description: Flag a club that has closed, moved, or whose details (e.g. website) are dead or wrong
+title: "Report club: "
+labels: ["club report", "needs review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Spotted a club that's closed down, moved, or has a broken website or other dead links? Let us know so we can check it and keep the directory accurate.
+
+  - type: input
+    id: club_name
+    attributes:
+      label: Which club?
+      placeholder: e.g. Wakefield Warriors
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What's wrong?
+      options:
+        - Club has closed / no longer meets
+        - Club has moved venue
+        - Website or link is dead / broken
+        - Details are out of date (time, day, etc.)
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Any details?
+      description: Anything that helps us verify - a dead link, a source saying it closed, the new venue, etc.
+      placeholder: The website returns a 404 and their Facebook page hasn't posted since 2023...
+    validations:
+      required: false
