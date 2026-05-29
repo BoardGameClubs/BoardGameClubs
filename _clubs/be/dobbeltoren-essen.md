@@ -11,7 +11,7 @@ location:
   lng: 4.4682317
 cost: "Free"
 image: ""
-website: "https://www.forumfederatie.be/essen.html"
+website: "https://www.forumfederatie.be/spellenclubs/provincie-antwerpen/2910-essen"
 facebook: ""
 discord: ""
 bgg: ""

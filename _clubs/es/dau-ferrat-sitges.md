@@ -12,7 +12,7 @@ location:
   lng: 1.8058987
 cost: "Free"
 image: ""
-website: "http://dauferrat.com"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

@@ -12,7 +12,7 @@ location:
   lng: 24.1316056
 cost: "Free"
 image: ""
-website: "https://www.ludo.lv"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

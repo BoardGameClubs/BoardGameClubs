@@ -12,7 +12,7 @@ location:
   lng: 23.3218675
 cost: "Free"
 image: ""
-website: "https://boardgamemaniacs.com"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

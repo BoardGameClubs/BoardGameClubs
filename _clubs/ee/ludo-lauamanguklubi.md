@@ -12,7 +12,7 @@ location:
   lng: 24.793743
 cost: "Free"
 image: ""
-website: "https://www.ludo.ee/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

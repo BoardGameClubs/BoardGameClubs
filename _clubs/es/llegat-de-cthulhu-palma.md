@@ -12,7 +12,7 @@ location:
   lng: 2.6590563
 cost: "Free"
 image: ""
-website: "http://llegatdecthulhu.site90.com/drupal/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

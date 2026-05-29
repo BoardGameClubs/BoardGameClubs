@@ -11,7 +11,7 @@ location:
   lng: 4.4509705
 cost: "Free"
 image: ""
-website: "https://forumfederatie.be/buizegem.html"
+website: "https://www.forumfederatie.be/spellenclubs/provincie-antwerpen/2550-kontich"
 facebook: ""
 discord: ""
 bgg: ""

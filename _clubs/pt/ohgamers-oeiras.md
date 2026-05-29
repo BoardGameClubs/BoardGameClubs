@@ -12,7 +12,7 @@ location:
   lng: -9.314601399999999
 cost: "Free"
 image: ""
-website: "http://www.rededejogos.com"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

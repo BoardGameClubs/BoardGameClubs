@@ -12,7 +12,7 @@ location:
   lng: -1.8617491
 cost: "Free"
 image: ""
-website: "http://www.ludocete.es"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

@@ -12,7 +12,7 @@ location:
   lng: -0.3796444
 cost: "Free"
 image: ""
-website: "http://www.caenjouestu.net/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

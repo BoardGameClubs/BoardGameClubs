@@ -12,7 +12,7 @@ location:
   lng: 16.9194814
 cost: "Free"
 image: ""
-website: "https://www.gramajda.pl"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

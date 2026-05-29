@@ -12,7 +12,7 @@ location:
   lng: -6.2457942
 cost: "Free"
 image: ""
-website: "https://www.bigtent.com/groups/sdboardgameramers/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

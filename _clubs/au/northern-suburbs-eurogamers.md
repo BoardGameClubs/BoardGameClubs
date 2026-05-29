@@ -12,7 +12,7 @@ location:
   lng: 144.996626
 cost: "Free"
 image: ""
-website: "http://nseg.org.au"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

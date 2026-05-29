@@ -12,7 +12,7 @@ location:
   lng: 0.1076852
 cost: "Free"
 image: ""
-website: "https://www.ideingles.com/tablero/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

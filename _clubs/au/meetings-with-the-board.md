@@ -12,7 +12,7 @@ location:
   lng: 144.959953
 cost: "Free"
 image: ""
-website: "http://www.meetingswiththeboard.com"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

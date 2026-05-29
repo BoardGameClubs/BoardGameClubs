@@ -12,7 +12,7 @@ location:
   lng: 150.4536311
 cost: "Free"
 image: ""
-website: "https://shwarhammer.webs.com/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

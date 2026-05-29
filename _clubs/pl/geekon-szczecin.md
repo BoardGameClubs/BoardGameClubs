@@ -12,7 +12,7 @@ location:
   lng: 14.5321727
 cost: "Free"
 image: ""
-website: "https://geekon.org"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

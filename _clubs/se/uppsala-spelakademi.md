@@ -12,7 +12,7 @@ location:
   lng: 17.6389267
 cost: "Free"
 image: ""
-website: "http://www.uppsalaspelakademi.se"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

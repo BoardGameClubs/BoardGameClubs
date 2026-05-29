@@ -12,7 +12,7 @@ location:
   lng: 11.3482029
 cost: "Free"
 image: ""
-website: "http://sfoh.dk/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

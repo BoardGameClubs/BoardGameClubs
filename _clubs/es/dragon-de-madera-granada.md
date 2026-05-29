@@ -12,7 +12,7 @@ location:
   lng: -3.601167599999999
 cost: "Free"
 image: ""
-website: "http://dragondemadera.es/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

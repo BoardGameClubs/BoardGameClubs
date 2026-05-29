@@ -11,7 +11,7 @@ location:
   lng: 4.5093291
 cost: "Free"
 image: ""
-website: "https://forumfederatie.be/wijnegem.html"
+website: "https://www.forumfederatie.be/spellenclubs/provincie-antwerpen/2110-wijnegem"
 facebook: ""
 discord: ""
 bgg: ""

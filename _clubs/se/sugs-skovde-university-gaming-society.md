@@ -12,7 +12,7 @@ location:
   lng: 13.8461208
 cost: "Free"
 image: ""
-website: "http://sugs.nu"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

@@ -11,7 +11,7 @@ location:
   lng: 4.6721996
 cost: "Free"
 image: ""
-website: "https://forumfederatie.be/heist-o-d-berg.html"
+website: "https://www.forumfederatie.be/spellenclubs/provincie-antwerpen/2220-heist-op-den-berg"
 facebook: ""
 discord: ""
 bgg: ""

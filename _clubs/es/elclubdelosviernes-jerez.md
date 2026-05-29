@@ -12,7 +12,7 @@ location:
   lng: -6.1200046
 cost: "Free"
 image: ""
-website: "https://www.clubdelosviernes.com/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

@@ -12,7 +12,7 @@ location:
   lng: 138.6140965
 cost: "Free"
 image: ""
-website: "https://www.thebiggametheory.com.au"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

@@ -12,7 +12,7 @@ location:
   lng: 14.6118148
 cost: "Free"
 image: ""
-website: "http://www.klub-kind.si/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

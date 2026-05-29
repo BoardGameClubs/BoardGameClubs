@@ -12,7 +12,7 @@ location:
   lng: 11.6079704
 cost: "Free"
 image: ""
-website: "https://www.ludusiovisdiei.it/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

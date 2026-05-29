@@ -12,7 +12,7 @@ location:
   lng: -8.4102573
 cost: "Free"
 image: ""
-website: "http://www.abreojogo.com/boardgamers_coimbra"
+website: ""
 meetup: ""
 facebook: "https://www.facebook.com/groups/188866467823493/"
 discord: ""

@@ -194,7 +194,7 @@ generated = ENV["LINKCHECK_DATE"] || Time.now.utc.strftime("%Y-%m-%d %H:%M UTC")
 lines = []
 lines << "# Potentially dead club links"
 lines << ""
-lines << "_Generated #{generated} by `scripts/check_links.rb`. Maintainer report — not shown on the site._"
+lines << "_Generated #{generated} by `scripts/check_links.rb`._"
 lines << ""
 lines << "Checked **#{targets.length}** links (`website`, `meetup`, `bgg`) across **#{files.length}** clubs."
 lines << "Facebook/Discord links are not auto-checked (they block bots). Use the community **Report a Club** issues for those."

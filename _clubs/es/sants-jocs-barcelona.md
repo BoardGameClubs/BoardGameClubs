@@ -12,7 +12,7 @@ location:
   lng: 2.1355003
 cost: "Free"
 image: ""
-website: "https://sants-jocs.com"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

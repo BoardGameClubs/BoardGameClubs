@@ -12,7 +12,7 @@ location:
   lng: 6.279959
 cost: "Free"
 image: ""
-website: "http://erj.xooit.com/index.php"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

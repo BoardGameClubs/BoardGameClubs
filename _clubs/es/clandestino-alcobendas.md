@@ -12,7 +12,7 @@ location:
   lng: -3.6320754
 cost: "Free"
 image: ""
-website: "http://clandestinoweb.es/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

@@ -11,7 +11,7 @@ location:
   lng: -2.216974496841431
 cost: "Free"
 image: "cheadle-board-room.jpg"
-website: "https://Cheadle.Games"
+website: "https://cheadleboardroom.wixsite.com/cheadleboardroom"
 facebook: ""
 discord: ""
 bgg: ""

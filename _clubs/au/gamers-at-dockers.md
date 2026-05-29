@@ -12,7 +12,7 @@ location:
   lng: 144.9453257
 cost: "Free"
 image: ""
-website: "http://www.gamersatdockers.com/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

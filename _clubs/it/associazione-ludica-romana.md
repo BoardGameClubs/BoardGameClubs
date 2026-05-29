@@ -12,7 +12,7 @@ location:
   lng: 12.5534095
 cost: "Free"
 image: ""
-website: "http://nuke.ludicaromana.it"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

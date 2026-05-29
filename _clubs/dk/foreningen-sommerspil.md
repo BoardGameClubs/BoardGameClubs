@@ -12,7 +12,7 @@ location:
   lng: 12.5683371
 cost: "Free"
 image: ""
-website: "http://foreningensommerspil.dk/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

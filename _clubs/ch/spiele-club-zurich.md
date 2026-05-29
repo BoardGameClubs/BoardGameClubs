@@ -12,7 +12,7 @@ location:
   lng: 8.4725531
 cost: "Free"
 image: ""
-website: "https://www.spiele-club.ch"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

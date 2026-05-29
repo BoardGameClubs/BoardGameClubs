@@ -12,7 +12,7 @@ location:
   lng: 16.5951229
 cost: "Free"
 image: ""
-website: "http://www.deskoherniklub.cz"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

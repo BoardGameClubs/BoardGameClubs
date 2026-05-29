@@ -12,7 +12,7 @@ location:
   lng: 17.9434032
 cost: "Free"
 image: ""
-website: "http://smash.sverok.net/"
+website: ""
 meetup: ""
 facebook: "https://www.facebook.com/SpelforeningenSMASH"
 discord: ""

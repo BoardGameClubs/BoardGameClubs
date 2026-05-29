@@ -12,7 +12,7 @@ location:
   lng: 150.945487
 cost: "Free"
 image: ""
-website: "https://www.goodgames.com.au/stores/nsw/bella-vista.html"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

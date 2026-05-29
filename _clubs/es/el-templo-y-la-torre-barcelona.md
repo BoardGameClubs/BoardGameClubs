@@ -12,7 +12,7 @@ location:
   lng: 2.1757439
 cost: "Free"
 image: ""
-website: "http://www.temploytorre.org/"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

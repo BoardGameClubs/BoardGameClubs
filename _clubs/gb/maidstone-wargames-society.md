@@ -12,7 +12,7 @@ location:
   lng: 0.51057
 cost: "Free"
 image: "maidstone-wargames-society.jpg"
-website: "https://www.maidstone-wargamers.org.uk"
+website: "https://www.brigademodels.co.uk/mws/"
 facebook: ""
 discord: ""
 bgg: ""

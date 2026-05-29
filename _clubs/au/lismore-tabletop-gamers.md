@@ -12,7 +12,7 @@ location:
   lng: 153.2995772
 cost: "Free"
 image: ""
-website: "https://lismoretabletopgamers.org.au"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

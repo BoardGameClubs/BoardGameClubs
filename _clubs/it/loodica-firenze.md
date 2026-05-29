@@ -12,7 +12,7 @@ location:
   lng: 11.2360842
 cost: "Free"
 image: ""
-website: "http://www.loodica.com"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

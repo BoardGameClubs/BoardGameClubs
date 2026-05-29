@@ -12,7 +12,7 @@ location:
   lng: 7.6868552
 cost: "Free"
 image: ""
-website: "https://www.giocatorino.it"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""

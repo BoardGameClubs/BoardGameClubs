@@ -12,7 +12,7 @@ location:
   lng: -8.620941199999999
 cost: "Free"
 image: ""
-website: "http://www.abreojogo.com/boardgamers_porto"
+website: ""
 meetup: ""
 facebook: ""
 discord: ""
