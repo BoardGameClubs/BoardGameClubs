@@ -60,6 +60,14 @@ nav_country:
   es: "País"
   pl: "Kraj"
 
+nav_menu:
+  en: "Menu"
+  de: "Menü"
+  it: "Menu"
+  fr: "Menu"
+  es: "Menú"
+  pl: "Menu"
+
 country_gb:
   en: "United Kingdom"
   de: "Vereinigtes Königreich"
@@ -235,6 +243,13 @@ country_hu:
   fr: "Hongrie"
   es: "Hungría"
   pl: "Węgry"
+country_si:
+  en: "Slovenia"
+  de: "Slowenien"
+  it: "Slovenia"
+  fr: "Slovénie"
+  es: "Eslovenia"
+  pl: "Słowenia"
 
 footer_other_countries:
   en: "Other countries:"

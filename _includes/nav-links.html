@@ -12,9 +12,15 @@
 {% assign contribute_path = url_prefix | append: "/contribute/" %}
 {% assign home_path = url_prefix | append: "/" %}
 <nav class="site-nav">
-  <a href="{{ home_path | relative_url }}">{{ i18n.nav_map[lang] }}</a>
-  <a href="{{ about_path | relative_url }}">{{ i18n.nav_about[lang] }}</a>
-  <a href="{{ contribute_path | relative_url }}" class="nav-cta"><i data-lucide="plus"></i><span class="nav-cta-full">{{ i18n.nav_contribute[lang] }}</span><span class="nav-cta-short">{{ i18n.nav_contribute_short[lang] | default: "Add" }}</span></a>
+  <button type="button" class="nav-burger" id="nav-burger" aria-haspopup="true" aria-expanded="false" aria-controls="nav-menu" aria-label="{{ i18n.nav_menu[lang] | default: 'Menu' }}">
+    <i data-lucide="menu"></i>
+  </button>
+  <div class="nav-menu" id="nav-menu">
+    <a href="{{ home_path | relative_url }}">{{ i18n.nav_map[lang] }}</a>
+    <a href="{{ about_path | relative_url }}">{{ i18n.nav_about[lang] }}</a>
+    <a href="{{ contribute_path | relative_url }}" class="nav-cta"><i data-lucide="plus"></i><span class="nav-cta-full">{{ i18n.nav_contribute[lang] }}</span><span class="nav-cta-short">{{ i18n.nav_contribute_short[lang] | default: "Add" }}</span></a>
+    <a href="https://github.com/BoardGameClubs/BoardGameClubs" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub"><i data-lucide="github"></i><span class="nav-github-label">GitHub</span></a>
+  </div>
   <div class="nav-country" id="nav-country" data-label-country="{{ i18n.nav_country[lang] }}">
     <button type="button" class="nav-country-toggle" id="nav-country-toggle" aria-haspopup="listbox" aria-expanded="false" title="{{ i18n.nav_country[lang] }}">
       <i data-lucide="globe"></i>
@@ -151,8 +157,11 @@
         <span class="nav-country-code">HU</span>
         <span class="nav-country-name">{{ i18n.country_hu[lang] }}</span>
       </button>
+      <button type="button" role="option" data-country="SI" class="nav-country-option" data-label="SI">
+        <span class="nav-country-code">SI</span>
+        <span class="nav-country-name">{{ i18n.country_si[lang] }}</span>
+      </button>
       </div>
     </div>
   </div>
-  <a href="https://github.com/BoardGameClubs/BoardGameClubs" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub"><i data-lucide="github"></i></a>
 </nav>

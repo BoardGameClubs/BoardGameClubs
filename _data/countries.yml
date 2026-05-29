@@ -561,3 +561,28 @@ hu:
   currency: "HUF"
   currency_symbol: "Ft"
   geocode_country_code: "HU"
+
+si:
+  code: "SI"
+  name_en: "Slovenia"
+  name_de: "Slowenien"
+  name_it: "Slovenia"
+  name_fr: "Slovénie"
+  name_es: "Eslovenia"
+  name_pl: "Słowenia"
+  url_prefix: "/si"
+  map_center: [46.15, 14.99]
+  map_zoom: 7
+  bounds:
+    lat: [45.4, 46.9]
+    lng: [13.3, 16.7]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{4}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "EUR"
+  currency_symbol: "€"
+  geocode_country_code: "SI"
