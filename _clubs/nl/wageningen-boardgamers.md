@@ -5,8 +5,8 @@ days: ["Various"]
 time: ""
 frequency: "Weekly"
 location:
-  name: "Wageningen"
-  address: "Studentencafé De SPOT op de Wageningen Campus!, Wageningen"
+  name: "Varies (see website)"
+  address: "Varies (see website), Wageningen"
   lat: 51.985283
   lng: 5.6610597
 cost: "Free"
