@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables" as *;
+
 // ─── Language banner (German users on the English site) ───
 .lang-banner {
   display: flex;
@@ -5,7 +8,7 @@
   justify-content: center;
   gap: 1rem;
   padding: 0.55rem 1rem;
-  background: darken($color-accent, 8%);
+  background: color.adjust($color-accent, $lightness: -8%);
   color: #fff;
   font-size: 0.85rem;
   border-bottom: 1px solid rgba(#000, 0.1);
@@ -42,7 +45,7 @@
   padding: 0.85rem 1.25rem;
   position: relative;
   z-index: 1010;
-  border-bottom: 1px solid darken($color-accent, 6%);
+  border-bottom: 1px solid color.adjust($color-accent, $lightness: -6%);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.04);
 
   @media (max-width: $bp-lg - 1) {

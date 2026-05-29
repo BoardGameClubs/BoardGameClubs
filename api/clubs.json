@@ -23,7 +23,6 @@ layout: null
     "website": {{ club.website | jsonify }},
     "meetup": {{ club.meetup | jsonify }},
     "facebook": {{ club.facebook | jsonify }},
-    "description": {{ club.description | markdownify | strip_html | normalize_whitespace | jsonify }},
     "image": {{ club.image | jsonify }},
     "type": {% if club.type %}{{ club.type | jsonify }}{% else %}["Board Games"]{% endif %}
   }{% unless forloop.last %},{% endunless %}

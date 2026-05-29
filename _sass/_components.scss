@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables" as *;
+
 // ─── Filter bar ───
 .filter-bar {
   position: sticky;
@@ -485,7 +488,7 @@
     }
 
     &:hover {
-      background: darken($color-accent, 6%);
+      background: color.adjust($color-accent, $lightness: -6%);
       color: #fff;
       text-decoration: none;
     }
@@ -1199,9 +1202,9 @@ noscript .club-list {
 }
 
 .marker-cluster-medium div {
-  background-color: darken($color-accent, 5%);
+  background-color: color.adjust($color-accent, $lightness: -5%);
 }
 
 .marker-cluster-large div {
-  background-color: darken($color-accent, 10%);
+  background-color: color.adjust($color-accent, $lightness: -10%);
 }

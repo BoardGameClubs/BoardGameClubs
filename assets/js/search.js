@@ -118,7 +118,6 @@
             club.name,
             club.location.name,
             club.location.address,
-            club.description,
             club.days.join(" "),
             (club.type || []).join(" "),
           ]
