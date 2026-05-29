@@ -212,6 +212,14 @@ country_fi:
   es: "Finlandia"
   pl: "Finlandia"
 
+country_se:
+  en: "Sweden"
+  de: "Schweden"
+  it: "Svezia"
+  fr: "Suède"
+  es: "Suecia"
+  pl: "Szwecja"
+
 footer_other_countries:
   en: "Other countries:"
   de: "Andere Länder:"

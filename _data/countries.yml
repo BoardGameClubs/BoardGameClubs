@@ -486,3 +486,28 @@ fi:
   currency: "EUR"
   currency_symbol: "€"
   geocode_country_code: "FI"
+
+se:
+  code: "SE"
+  name_en: "Sweden"
+  name_de: "Schweden"
+  name_it: "Svezia"
+  name_fr: "Suède"
+  name_es: "Suecia"
+  name_pl: "Szwecja"
+  url_prefix: "/se"
+  map_center: [62.0, 16.5]
+  map_zoom: 5
+  bounds:
+    lat: [55.0, 69.2]
+    lng: [10.8, 24.3]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{3} ?\\d{2}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "SEK"
+  currency_symbol: "kr"
+  geocode_country_code: "SE"
