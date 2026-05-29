@@ -666,6 +666,14 @@ suggest_edit:
   es: "Sugerir un cambio"
   pl: "Zaproponuj zmianę"
 
+external_disclaimer:
+  en: "Links lead to external sites we don't control. We're not responsible for their content."
+  de: "Links führen zu externen Seiten, die wir nicht kontrollieren. Für deren Inhalte sind wir nicht verantwortlich."
+  it: "I link rimandano a siti esterni che non gestiamo. Non siamo responsabili dei loro contenuti."
+  fr: "Les liens mènent à des sites externes que nous ne contrôlons pas. Nous ne sommes pas responsables de leur contenu."
+  es: "Los enlaces llevan a sitios externos que no controlamos. No somos responsables de su contenido."
+  pl: "Linki prowadzą do zewnętrznych stron, których nie kontrolujemy. Nie odpowiadamy za ich treść."
+
 # --- Geolocation errors ---
 geolocation_unsupported:
   en: "Geolocation is not supported by your browser."
