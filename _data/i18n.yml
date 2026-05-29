@@ -264,6 +264,13 @@ country_ro:
   fr: "Roumanie"
   es: "Rumanía"
   pl: "Rumunia"
+country_bg:
+  en: "Bulgaria"
+  de: "Bulgarien"
+  it: "Bulgaria"
+  fr: "Bulgarie"
+  es: "Bulgaria"
+  pl: "Bułgaria"
 
 footer_other_countries:
   en: "Other countries:"

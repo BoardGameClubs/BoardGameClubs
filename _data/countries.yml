@@ -635,3 +635,27 @@ ro:
   currency: "RON"
   currency_symbol: "lei"
   geocode_country_code: "RO"
+bg:
+  code: "BG"
+  name_en: "Bulgaria"
+  name_de: "Bulgarien"
+  name_it: "Bulgaria"
+  name_fr: "Bulgarie"
+  name_es: "Bulgaria"
+  name_pl: "Bułgaria"
+  url_prefix: "/bg"
+  map_center: [42.7, 25.3]
+  map_zoom: 7
+  bounds:
+    lat: [41.2, 44.2]
+    lng: [22.3, 28.6]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{4}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "BGN"
+  currency_symbol: "лв"
+  geocode_country_code: "BG"
