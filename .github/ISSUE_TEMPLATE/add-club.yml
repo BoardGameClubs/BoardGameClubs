@@ -25,6 +25,7 @@ body:
         - France (FR)
         - Denmark (DK)
         - Spain (ES)
+        - Finland (FI)
         - Other (tell us in the description)
     validations:
       required: true

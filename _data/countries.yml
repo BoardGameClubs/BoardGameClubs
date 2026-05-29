@@ -461,3 +461,28 @@ ie:
   currency: "EUR"
   currency_symbol: "€"
   geocode_country_code: "IE"
+
+fi:
+  code: "FI"
+  name_en: "Finland"
+  name_de: "Finnland"
+  name_it: "Finlandia"
+  name_fr: "Finlande"
+  name_es: "Finlandia"
+  name_pl: "Finlandia"
+  url_prefix: "/fi"
+  map_center: [64.5, 26.0]
+  map_zoom: 5
+  bounds:
+    lat: [59.5, 70.2]
+    lng: [19.0, 31.7]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{5}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "EUR"
+  currency_symbol: "€"
+  geocode_country_code: "FI"
