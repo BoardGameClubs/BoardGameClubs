@@ -586,3 +586,28 @@ si:
   currency: "EUR"
   currency_symbol: "€"
   geocode_country_code: "SI"
+
+hr:
+  code: "HR"
+  name_en: "Croatia"
+  name_de: "Kroatien"
+  name_it: "Croazia"
+  name_fr: "Croatie"
+  name_es: "Croacia"
+  name_pl: "Chorwacja"
+  url_prefix: "/hr"
+  map_center: [45.1, 16.0]
+  map_zoom: 7
+  bounds:
+    lat: [42.3, 46.6]
+    lng: [13.4, 19.5]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{5}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "EUR"
+  currency_symbol: "€"
+  geocode_country_code: "HR"

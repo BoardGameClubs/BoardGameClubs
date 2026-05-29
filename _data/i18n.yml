@@ -250,6 +250,13 @@ country_si:
   fr: "Slovénie"
   es: "Eslovenia"
   pl: "Słowenia"
+country_hr:
+  en: "Croatia"
+  de: "Kroatien"
+  it: "Croazia"
+  fr: "Croatie"
+  es: "Croacia"
+  pl: "Chorwacja"
 
 footer_other_countries:
   en: "Other countries:"

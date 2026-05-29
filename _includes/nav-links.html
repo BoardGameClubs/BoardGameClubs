@@ -19,7 +19,7 @@
     <a href="{{ home_path | relative_url }}">{{ i18n.nav_map[lang] }}</a>
     <a href="{{ about_path | relative_url }}">{{ i18n.nav_about[lang] }}</a>
     <a href="{{ contribute_path | relative_url }}" class="nav-cta"><i data-lucide="plus"></i><span class="nav-cta-full">{{ i18n.nav_contribute[lang] }}</span><span class="nav-cta-short">{{ i18n.nav_contribute_short[lang] | default: "Add" }}</span></a>
-    <a href="https://github.com/BoardGameClubs/BoardGameClubs" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub"><i data-lucide="github"></i><span class="nav-github-label">GitHub</span></a>
+    <a href="https://github.com/BoardGameClubs/BoardGameClubs" target="_blank" rel="noopener" class="nav-github nav-github-menu" aria-label="GitHub"><i data-lucide="github"></i><span class="nav-github-label">GitHub</span></a>
   </div>
   <div class="nav-country" id="nav-country" data-label-country="{{ i18n.nav_country[lang] }}">
     <button type="button" class="nav-country-toggle" id="nav-country-toggle" aria-haspopup="listbox" aria-expanded="false" title="{{ i18n.nav_country[lang] }}">
@@ -161,7 +161,12 @@
         <span class="nav-country-code">SI</span>
         <span class="nav-country-name">{{ i18n.country_si[lang] }}</span>
       </button>
+      <button type="button" role="option" data-country="HR" class="nav-country-option" data-label="HR">
+        <span class="nav-country-code">HR</span>
+        <span class="nav-country-name">{{ i18n.country_hr[lang] }}</span>
+      </button>
       </div>
     </div>
   </div>
+  <a href="https://github.com/BoardGameClubs/BoardGameClubs" target="_blank" rel="noopener" class="nav-github nav-github-desktop" aria-label="GitHub"><i data-lucide="github"></i></a>
 </nav>
