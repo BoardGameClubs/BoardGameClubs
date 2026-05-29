@@ -536,3 +536,28 @@ no:
   currency: "NOK"
   currency_symbol: "kr"
   geocode_country_code: "NO"
+
+hu:
+  code: "HU"
+  name_en: "Hungary"
+  name_de: "Ungarn"
+  name_it: "Ungheria"
+  name_fr: "Hongrie"
+  name_es: "Hungría"
+  name_pl: "Węgry"
+  url_prefix: "/hu"
+  map_center: [47.16, 19.5]
+  map_zoom: 7
+  bounds:
+    lat: [45.5, 48.7]
+    lng: [16.0, 23.0]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{4}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "HUF"
+  currency_symbol: "Ft"
+  geocode_country_code: "HU"

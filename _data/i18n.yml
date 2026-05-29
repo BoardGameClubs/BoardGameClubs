@@ -228,6 +228,14 @@ country_no:
   es: "Noruega"
   pl: "Norwegia"
 
+country_hu:
+  en: "Hungary"
+  de: "Ungarn"
+  it: "Ungheria"
+  fr: "Hongrie"
+  es: "Hungría"
+  pl: "Węgry"
+
 footer_other_countries:
   en: "Other countries:"
   de: "Andere Länder:"
