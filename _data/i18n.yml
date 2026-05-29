@@ -220,6 +220,14 @@ country_se:
   es: "Suecia"
   pl: "Szwecja"
 
+country_no:
+  en: "Norway"
+  de: "Norwegen"
+  it: "Norvegia"
+  fr: "Norvège"
+  es: "Noruega"
+  pl: "Norwegia"
+
 footer_other_countries:
   en: "Other countries:"
   de: "Andere Länder:"

@@ -511,3 +511,28 @@ se:
   currency: "SEK"
   currency_symbol: "kr"
   geocode_country_code: "SE"
+
+no:
+  code: "NO"
+  name_en: "Norway"
+  name_de: "Norwegen"
+  name_it: "Norvegia"
+  name_fr: "Norvège"
+  name_es: "Noruega"
+  name_pl: "Norwegia"
+  url_prefix: "/no"
+  map_center: [64.5, 13.0]
+  map_zoom: 5
+  bounds:
+    lat: [57.5, 71.5]
+    lng: [4.0, 31.5]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{4}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "NOK"
+  currency_symbol: "kr"
+  geocode_country_code: "NO"
