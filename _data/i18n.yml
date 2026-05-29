@@ -257,6 +257,13 @@ country_hr:
   fr: "Croatie"
   es: "Croacia"
   pl: "Chorwacja"
+country_ro:
+  en: "Romania"
+  de: "Rumänien"
+  it: "Romania"
+  fr: "Roumanie"
+  es: "Rumanía"
+  pl: "Rumunia"
 
 footer_other_countries:
   en: "Other countries:"

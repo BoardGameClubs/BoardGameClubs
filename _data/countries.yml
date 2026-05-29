@@ -611,3 +611,27 @@ hr:
   currency: "EUR"
   currency_symbol: "€"
   geocode_country_code: "HR"
+ro:
+  code: "RO"
+  name_en: "Romania"
+  name_de: "Rumänien"
+  name_it: "Romania"
+  name_fr: "Roumanie"
+  name_es: "Rumanía"
+  name_pl: "Rumunia"
+  url_prefix: "/ro"
+  map_center: [45.9, 25.0]
+  map_zoom: 6
+  bounds:
+    lat: [43.6, 48.3]
+    lng: [20.2, 29.7]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{6}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "RON"
+  currency_symbol: "lei"
+  geocode_country_code: "RO"
