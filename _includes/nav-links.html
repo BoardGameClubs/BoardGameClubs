@@ -16,8 +16,8 @@
     <i data-lucide="menu"></i>
   </button>
   <div class="nav-menu" id="nav-menu">
-    <a href="{{ home_path | relative_url }}">{{ i18n.nav_map[lang] }}</a>
-    <a href="{{ about_path | relative_url }}">{{ i18n.nav_about[lang] }}</a>
+    <a href="{{ home_path | relative_url }}"><i data-lucide="map" class="nav-link-icon"></i>{{ i18n.nav_map[lang] }}</a>
+    <a href="{{ about_path | relative_url }}"><i data-lucide="info" class="nav-link-icon"></i>{{ i18n.nav_about[lang] }}</a>
     <a href="{{ contribute_path | relative_url }}" class="nav-cta"><i data-lucide="plus"></i><span class="nav-cta-full">{{ i18n.nav_contribute[lang] }}</span><span class="nav-cta-short">{{ i18n.nav_contribute_short[lang] | default: "Add" }}</span></a>
     <a href="https://github.com/BoardGameClubs/BoardGameClubs" target="_blank" rel="noopener" class="nav-github nav-github-menu" aria-label="GitHub"><i data-lucide="github"></i><span class="nav-github-label">GitHub</span></a>
   </div>

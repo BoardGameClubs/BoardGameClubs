@@ -197,6 +197,46 @@
     if (active) updateNavLabel(active);
   }
 
+  // ── Burger menu wiring ───────────────────────────────────────────────
+  // Mobile-only dropdown holding the nav links, Add CTA and GitHub link.
+  // The panel and burger are always in the DOM; CSS shows them only below
+  // $bp-md. Toggling .is-open here is harmless on desktop where the panel
+  // is laid out inline regardless.
+
+  function wireBurger() {
+    var burger = document.getElementById("nav-burger");
+    var menu = document.getElementById("nav-menu");
+    if (!burger || !menu) return;
+
+    function close() {
+      menu.classList.remove("is-open");
+      burger.setAttribute("aria-expanded", "false");
+    }
+
+    burger.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var isOpen = menu.classList.toggle("is-open");
+      burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    // Close when a menu item is chosen (links navigate, but the panel should
+    // not linger if the target is the current page or opens in a new tab).
+    var links = menu.querySelectorAll("a");
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener("click", close);
+    }
+
+    document.addEventListener("click", function (e) {
+      if (!menu.contains(e.target) && e.target !== burger && !burger.contains(e.target)) {
+        close();
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") close();
+    });
+  }
+
   // ── Language banner ──────────────────────────────────────────────────
   // Suggests a localised site to browsers whose preferred language matches
   // one of our non-English locales, when they land on a different locale.
@@ -282,6 +322,7 @@
     // choice gets a ?country= param for bookmarking).
     writeUrlCode(activeCode, true);
     wireNav();
+    wireBurger();
     maybeShowLangBanner();
   }
 

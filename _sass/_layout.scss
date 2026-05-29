@@ -136,10 +136,150 @@
     gap: 0.25rem;
     align-items: center;
     flex-shrink: 0;
+    position: relative;
+  }
 
-    a:not(.nav-cta):not(.nav-github):not(.nav-lang-option) {
-      @media (max-width: $bp-md - 1) {
+  $nav-btn-height: calc(0.88rem * 1.5 + 1rem);
+
+  // ─── Burger menu (mobile) ───
+  // Holds the nav links, Add CTA and GitHub link. On desktop the burger is
+  // hidden and .nav-menu lays its children out inline (as the nav did before).
+  // Below $bp-md the burger appears and .nav-menu collapses into a dropdown.
+  .nav-burger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: $nav-btn-height;
+    height: $nav-btn-height;
+    padding: 0;
+    background: rgba(#fff, 0.12);
+    color: #fff;
+    border: 1px solid rgba(#fff, 0.22);
+    border-radius: $border-radius-sm;
+    cursor: pointer;
+    transition: background 0.15s ease;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    &:hover {
+      background: rgba(#fff, 0.2);
+    }
+
+    @media (max-width: $bp-md - 1) {
+      display: inline-flex;
+    }
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    .nav-github-label {
+      display: none;
+    }
+
+    // Map/About icons show in the burger dropdown only; the desktop bar
+    // keeps these links text-only.
+    .nav-link-icon {
+      @media (min-width: $bp-md) {
         display: none;
+      }
+    }
+
+    @media (max-width: $bp-md - 1) {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      right: 0;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.15rem;
+      min-width: 200px;
+      padding: 0.4rem;
+      background: #fff;
+      border: 1px solid rgba(#000, 0.08);
+      border-radius: $border-radius-sm;
+      box-shadow: 0 8px 24px rgba(#000, 0.18);
+      z-index: 1100;
+
+      &.is-open {
+        display: flex;
+      }
+
+      // Inside the dropdown every item reads as a left-aligned dark-on-white
+      // row, overriding the white-on-slate header styling.
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        width: 100%;
+        margin: 0;
+        padding: 0.6rem 0.7rem;
+        color: $color-text;
+        font-weight: 500;
+        border-radius: $border-radius-sm;
+
+        &:hover {
+          background: rgba($color-accent, 0.08);
+          color: $color-accent;
+        }
+      }
+
+      .nav-link-icon {
+        display: inline-flex;
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        opacity: 0.7;
+      }
+
+      a.nav-cta {
+        background: $color-accent;
+        color: #fff;
+        font-weight: 600;
+        margin: 0;                        // reset desktop margin-left; gap handles spacing
+        padding: 0.6rem 0.7rem;           // match the other rows
+        justify-content: flex-start;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+
+        .nav-cta-short { display: none; }
+        .nav-cta-full { display: inline; }
+
+        &:hover {
+          background: $color-accent;
+          color: #fff;
+        }
+      }
+
+      a.nav-github {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        color: $color-text;
+
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+
+        .nav-github-label {
+          display: inline;
+          font-weight: 500;
+        }
+
+        &:hover {
+          background: rgba($color-accent, 0.08);
+          color: $color-accent;
+        }
       }
     }
   }
@@ -200,8 +340,6 @@
 
   }
 
-  $nav-btn-height: calc(0.88rem * 1.5 + 1rem);
-
   .nav-github {
     display: inline-flex;
     align-items: center;
@@ -224,6 +362,23 @@
     }
 
     @media (max-width: $bp-lg - 1) {
+      display: none;
+    }
+  }
+
+  // Two GitHub links share .nav-github styling but appear at different sizes:
+  //  • .nav-github-desktop sits after the country selector (icon only),
+  //    inheriting the ≥992px visibility above.
+  //  • .nav-github-menu lives inside the burger dropdown for mobile only.
+  // Hide each outside its own breakpoint.
+  .nav-github-menu {
+    @media (min-width: $bp-md) {
+      display: none;
+    }
+  }
+
+  .nav-github-desktop {
+    @media (max-width: $bp-md - 1) {
       display: none;
     }
   }
