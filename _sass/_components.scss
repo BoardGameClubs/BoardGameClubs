@@ -502,6 +502,26 @@
   gap: 0.6rem;
 }
 
+// ─── Location lookup spinner ───
+.location-suggestion-loading {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  color: $color-text-light;
+
+  .location-spinner-ring {
+    flex: 0 0 auto;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba($color-accent, 0.25);
+    border-top-color: $color-accent;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+}
+
 // ─── "Add a club" tail card (shown after short result lists) ───
 .club-card-add {
   display: flex;

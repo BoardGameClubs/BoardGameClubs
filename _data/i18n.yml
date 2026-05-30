@@ -353,6 +353,14 @@ search_placeholder:
   es: "Busca por código postal, nombre del club o ubicación..."
   pl: "Szukaj według kodu pocztowego, nazwy klubu lub miejsca..."
 
+searching:
+  en: "Searching…"
+  de: "Suche läuft…"
+  it: "Ricerca in corso…"
+  fr: "Recherche…"
+  es: "Buscando…"
+  pl: "Wyszukiwanie…"
+
 filter_clubs:
   en: "Filter clubs"
   de: "Clubs filtern"

@@ -116,6 +116,8 @@
           return;
         }
 
+        self.showLoadingIn(suggestionsEl);
+
         var delay = isPostcode ? self.debounceMs : 1100; // Nominatim ~1 req/s
         self.debounceTimer = setTimeout(function () {
           if (isPostcode) {
@@ -147,6 +149,7 @@
           if (!self.detectCountryFromQuery(query) && self.isPlaceLikeQuery(query)) {
             e.preventDefault();
             clearTimeout(self.debounceTimer);
+            self.showLoadingIn(suggestionsEl);
             self.fetchPlaceName(query, suggestionsEl, input);
           }
         }
@@ -326,6 +329,18 @@
         .catch(function () {
           self.hideSuggestionsEl(suggestionsEl);
         });
+    },
+
+    showLoadingIn: function (suggestionsEl) {
+      if (!suggestionsEl) return;
+      if (suggestionsEl.querySelector(".location-suggestion-loading")) return;
+      var i18n = window.GameClubI18n || {};
+      suggestionsEl.innerHTML =
+        '<div class="location-suggestion-loading" role="status" aria-live="polite">' +
+          '<span class="location-spinner-ring"></span>' +
+          '<span>' + this.escapeHtml(i18n.searching || "Searching…") + '</span>' +
+        '</div>';
+      suggestionsEl.classList.add("is-visible");
     },
 
     showSuggestionsIn: function (suggestions, suggestionsEl, input) {

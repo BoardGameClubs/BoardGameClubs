@@ -40,17 +40,13 @@
 
 // ─── Site Header ───
 .site-header {
-  background: $color-accent;
-  color: #fff;
+  background: $color-surface;
+  color: $color-text;
   padding: 0.85rem 1.25rem;
   position: relative;
   z-index: 1010;
-  border-bottom: 1px solid color.adjust($color-accent, $lightness: -6%);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.04);
-
-  @media (max-width: $bp-lg - 1) {
-    border-bottom: none;
-  }
+  border-bottom: 3px solid $color-accent;
+  box-shadow: 0 2px 0 rgba($color-accent, 0.25), 0 4px 16px rgba(0, 0, 0, 0.06);
 
   // Fix header in place on mobile home page so it doesn't scroll away
   // when browser shifts viewport on input focus
@@ -75,11 +71,11 @@
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
-    color: #fff;
+    color: $color-text;
 
     &:hover {
       text-decoration: none;
-      color: #fff;
+      color: $color-text;
     }
   }
 
@@ -97,13 +93,13 @@
     font-family: $font-body;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #fff;
+    color: $color-text;
     letter-spacing: -0.02em;
     line-height: 1.2;
 
     .site-title-tld {
       font-weight: 400;
-      color: rgba(#fff, 0.75);
+      color: $color-accent;
     }
 
     @media (max-width: 429px) {
@@ -120,12 +116,12 @@
   }
 
   .site-brand:hover .site-title {
-    color: rgba(#fff, 0.9);
+    color: $color-accent;
   }
 
   .site-tagline {
     font-size: 0.68rem;
-    color: rgba(#fff, 0.78);
+    color: $color-text-light;
     letter-spacing: 0.01em;
     line-height: 1.2;
 
@@ -155,12 +151,12 @@
     width: $nav-btn-height;
     height: $nav-btn-height;
     padding: 0;
-    background: rgba(#fff, 0.12);
-    color: #fff;
-    border: 1px solid rgba(#fff, 0.22);
+    background: $color-tag;
+    color: $color-text;
+    border: 1px solid $color-border;
     border-radius: $border-radius-sm;
     cursor: pointer;
-    transition: background 0.15s ease;
+    transition: background 0.15s ease, border-color 0.15s ease;
 
     svg {
       width: 18px;
@@ -168,7 +164,8 @@
     }
 
     &:hover {
-      background: rgba(#fff, 0.2);
+      background: rgba($color-accent, 0.1);
+      border-color: rgba($color-accent, 0.35);
     }
 
     @media (max-width: $bp-md - 1) {
@@ -289,7 +286,7 @@
 
   nav a {
     position: relative;
-    color: #fff;
+    color: $color-text;
     padding: 0.5rem 0.9rem;
     font-size: 0.88rem;
     font-weight: 500;
@@ -299,8 +296,8 @@
     transition: background 0.15s ease, color 0.15s ease;
 
     &:hover {
-      color: #fff;
-      background: rgba(#fff, 0.15);
+      color: $color-accent;
+      background: rgba($color-accent, 0.08);
       text-decoration: none;
     }
 
@@ -310,8 +307,8 @@
       gap: 0.3rem;
       margin-left: 0.4rem;
       padding: 0.45rem 0.85rem 0.45rem 0.7rem;
-      background: #fff;
-      color: $color-accent;
+      background: $color-accent;
+      color: #fff;
       font-weight: 600;
       border-radius: $border-radius-sm;
       box-shadow: none;
@@ -323,8 +320,8 @@
       }
 
       &:hover {
-        background: rgba(#fff, 0.92);
-        color: $color-accent;
+        background: $color-accent-light;
+        color: #fff;
       }
 
       .nav-cta-short {
@@ -351,7 +348,7 @@
     height: $nav-btn-height;
     padding: 0;
     background: transparent;
-    color: #fff;
+    color: $color-text;
     border-radius: $border-radius-sm;
 
     svg {
@@ -360,8 +357,8 @@
     }
 
     &:hover {
-      background: rgba(#fff, 0.15);
-      color: #fff;
+      background: rgba($color-accent, 0.08);
+      color: $color-accent;
     }
 
     @media (max-width: $bp-lg - 1) {
@@ -400,20 +397,21 @@
     align-items: center;
     gap: 0.4rem;
     padding: 0.45rem 0.7rem;          // matches .nav-cta padding-y exactly
-    background: rgba(#fff, 0.12);
-    color: #fff;
+    background: $color-tag;
+    color: $color-text;
     font-size: 0.88rem;               // matches nav link size
     font-weight: 500;
-    border: 1px solid rgba(#fff, 0.22);
+    border: 1px solid $color-border;
     border-radius: $border-radius-sm;
     cursor: pointer;
-    transition: background 0.15s ease;
+    transition: background 0.15s ease, border-color 0.15s ease;
     line-height: 1.5;                 // matches .nav-cta line-height
     letter-spacing: 0.02em;
     box-sizing: border-box;
 
     &:hover {
-      background: rgba(#fff, 0.2);
+      background: rgba($color-accent, 0.1);
+      border-color: rgba($color-accent, 0.35);
     }
 
     svg {
@@ -584,30 +582,27 @@
     }
 
     .search-input {
-      background: rgba(#fff, 0.16);
-      border: 1px solid rgba(#fff, 0.28);
-      color: #fff;
+      background: $color-bg;
+      border: 1px solid $color-border;
+      color: $color-text;
       padding: 0.55rem 2.25rem 0.55rem 1rem;
       font-size: 0.9rem;
       border-radius: $border-radius;
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
       transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 
       &::placeholder {
-        color: rgba(#fff, 0.78);
+        color: $color-text-light;
       }
 
       &:hover {
-        background: rgba(#fff, 0.22);
-        border-color: rgba(#fff, 0.4);
+        border-color: rgba($color-accent, 0.4);
       }
 
       &:focus {
-        background: #fff;
-        border-color: #fff;
+        background: $color-surface;
+        border-color: $color-accent;
         color: $color-text;
-        box-shadow: 0 0 0 4px rgba(#fff, 0.22);
+        box-shadow: 0 0 0 3px rgba($color-accent, 0.12);
 
         &::placeholder {
           color: $color-text-light;
@@ -616,34 +611,32 @@
     }
 
     .search-icon {
-      color: rgba(#fff, 0.78);
+      color: $color-text-light;
       transition: color 0.2s ease;
     }
 
     .search-bar:focus-within .search-icon {
-      color: $color-text-light;
+      color: $color-accent;
     }
 
     .locate-btn--header {
-      background: rgba(#fff, 0.16);
-      border: 1px solid rgba(#fff, 0.28);
-      color: #fff;
+      background: $color-bg;
+      border: 1px solid $color-border;
+      color: $color-text;
       border-radius: $border-radius;
       padding: 0.55rem 0.95rem;
       font-size: 0.9rem;
       font-weight: 500;
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
       transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
 
       svg {
-        color: #fff;
+        color: $color-accent;
       }
 
       &:hover {
-        background: rgba(#fff, 0.24);
-        border-color: rgba(#fff, 0.45);
-        box-shadow: 0 0 0 3px rgba(#fff, 0.12);
+        background: $color-surface;
+        border-color: rgba($color-accent, 0.45);
+        box-shadow: 0 0 0 3px rgba($color-accent, 0.1);
         transform: translateY(-1px);
       }
     }

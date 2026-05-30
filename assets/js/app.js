@@ -53,7 +53,7 @@
         search = window.GameClubSearch.init(scoped, activeCountry);
         populateDistanceOptions(activeCountry);
         restoreFromUrl();
-        update();
+        update(true);
         bindEvents();
         initialised = true;
         if (window.GameClubCountry) {
@@ -87,7 +87,7 @@
     // — that gives a tighter, more useful view than the static map_center +
     // map_zoom defaults. The defaults are only used as a fallback when no
     // clubs are visible (e.g. an empty result set).
-    update();
+    update(true);
   }
 
   function populateDistanceOptions(profile) {
@@ -201,7 +201,7 @@
     history.replaceState(null, "", newUrl);
   }
 
-  function update() {
+  function update(fitMap) {
     var filteredForList = search.getFiltered();
     // Map shows pins from every country (same text/type/day filters applied,
     // distance filter intentionally skipped) so users browsing one country
@@ -209,7 +209,7 @@
     // country to keep units/sort/postcode-search behaviour coherent.
     var pinsForMap = search.getMapPins(ALL_CLUBS);
     map.addClubs(pinsForMap);
-    if (!map.userMarker) {
+    if (fitMap && !map.userMarker) {
       // Fit to the active country's clubs, not the global pins — otherwise
       // the map would zoom out to span the whole continent on first load.
       map.fitToBounds(filteredForList);
@@ -415,8 +415,8 @@
       debounceTimer = setTimeout(function () {
         if (other) other.value = source.value;
         search.setQuery(source.value);
-        update();
-      }, 200);
+        update(false);
+      }, 500);
     }
 
     if (searchInput) {
@@ -484,7 +484,7 @@
     if (distanceFilter) {
       distanceFilter.addEventListener("change", function () {
         search.setMaxDistance(distanceFilter.value);
-        update();
+        update(true);
       });
     }
 
@@ -496,7 +496,7 @@
         search.setUserLocation(lat, lng);
         map.showUserLocation(lat, lng);
         if (distanceFilter) distanceFilter.disabled = false;
-        update();
+        update(true);
       },
       function () {
         search.clearUserLocation();
@@ -506,7 +506,7 @@
           distanceFilter.value = "";
           distanceFilter.disabled = true;
         }
-        update();
+        update(true);
       }
     );
   }
