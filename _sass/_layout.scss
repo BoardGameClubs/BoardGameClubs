@@ -989,3 +989,71 @@ body:has(.home-layout) {
     }
   }
 }
+
+// Embed builder (/embed-builder/). Reuses .filter-select / .locate-btn from
+// _components.scss for inputs and the copy button.
+.embed-builder {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  max-width: 860px;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    align-items: start;
+  }
+
+  .embed-field {
+    display: block;
+    margin-bottom: 1.25rem;
+    border: none;
+    padding: 0;
+  }
+
+  .embed-field-label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: $color-primary;
+
+    small {
+      font-weight: 400;
+      color: $color-text-light;
+    }
+  }
+
+  fieldset.embed-field label {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 0.35rem;
+    font-size: 0.92rem;
+    cursor: pointer;
+  }
+
+  .embed-field-size {
+    display: flex;
+    gap: 1rem;
+
+    .embed-field { flex: 1; margin-bottom: 0; }
+  }
+
+  select.filter-select,
+  input.filter-select {
+    width: 100%;
+  }
+
+  .embed-snippet {
+    width: 100%;
+    font-family: $font-mono;
+    font-size: 0.8rem;
+    padding: 0.75rem;
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+    resize: vertical;
+    margin-bottom: 0.75rem;
+    background: $color-tag;
+    color: $color-primary;
+  }
+}

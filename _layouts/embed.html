@@ -1,0 +1,71 @@
+---
+permalink: /embed/
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Board Game Clubs Map</title>
+  <link rel="icon" type="image/png" href="{{ '/assets/favico.png' | relative_url }}">
+  {% comment %}Clicking a club opens the full site in the embedder's parent context,
+  not inside the iframe.{% endcomment %}
+  <base target="_blank">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+  <style>
+    html, body { height: 100%; margin: 0; }
+    .embed-wrap { display: flex; flex-direction: column; height: 100%; }
+    .embed-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex: 0 0 auto;
+      padding: 0.55rem 0.85rem;
+      background: #dd6b20;
+      border-bottom: 1px solid #c75f1c;
+      text-decoration: none;
+      box-sizing: border-box;
+    }
+    .embed-header img { height: 26px; width: auto; display: block; }
+    .embed-header .embed-title {
+      font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+    .embed-header .embed-title-tld { font-weight: 400; color: rgba(255,255,255,0.8); }
+    #map { flex: 1 1 auto; width: 100%; min-height: 0; }
+  </style>
+</head>
+<body>
+  <div class="embed-wrap">
+    <a class="embed-header" href="{{ '/' | absolute_url }}" target="_blank" rel="noopener">
+      <img src="{{ '/assets/meeple-map-icon.svg' | relative_url }}" alt="">
+      <span class="embed-title">BoardGameClubs<span class="embed-title-tld">.org</span></span>
+    </a>
+    <div id="map"></div>
+  </div>
+
+  <script>
+    window.GameClub = { baseurl: "{{ site.baseurl }}" };
+    window.GameClubCountries = {{ site.data.countries | jsonify }};
+  </script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script src="{{ '/assets/js/map.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+  <script src="{{ '/assets/js/search.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+  <script src="{{ '/assets/js/embed.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+  <script src="https://unpkg.com/lucide@0.293.0"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

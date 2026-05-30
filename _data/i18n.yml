@@ -820,3 +820,10 @@ footer_licence:
   fr: "Licence"
   es: "Licencia"
   pl: "Licencja"
+embed_map:
+  en: "Embed"
+  de: "Einbetten"
+  it: "Incorpora"
+  fr: "Intégrer"
+  es: "Insertar"
+  pl: "Osadź"
