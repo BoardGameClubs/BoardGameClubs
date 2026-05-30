@@ -1,10 +1,10 @@
 ---
 country: "GB"
-name: "Saltburn TCG Club"
+name: "Saltburn TCG Club (Wednesdays)"
 type: ["TCG"]
 days: ["Wednesday"]
 time: "6:00pm - 8:30pm"
-frequency: "Weekly"
+frequency: "Fortnightly"
 location:
   name: "Lune Street Social Club"
   address: "Lune Street Social Club, Saltburn-by-the-Sea, TS12 1JU"
