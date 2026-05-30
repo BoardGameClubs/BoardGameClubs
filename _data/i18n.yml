@@ -271,6 +271,34 @@ country_bg:
   fr: "Bulgarie"
   es: "Bulgaria"
   pl: "Bułgaria"
+country_us:
+  en: "United States"
+  de: "Vereinigte Staaten"
+  it: "Stati Uniti"
+  fr: "États-Unis"
+  es: "Estados Unidos"
+  pl: "Stany Zjednoczone"
+country_ca:
+  en: "Canada"
+  de: "Kanada"
+  it: "Canada"
+  fr: "Canada"
+  es: "Canadá"
+  pl: "Kanada"
+country_br:
+  en: "Brazil"
+  de: "Brasilien"
+  it: "Brasile"
+  fr: "Brésil"
+  es: "Brasil"
+  pl: "Brazylia"
+country_nz:
+  en: "New Zealand"
+  de: "Neuseeland"
+  it: "Nuova Zelanda"
+  fr: "Nouvelle-Zélande"
+  es: "Nueva Zelanda"
+  pl: "Nowa Zelandia"
 
 footer_other_countries:
   en: "Other countries:"

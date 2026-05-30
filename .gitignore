@@ -19,3 +19,4 @@ scripts/strip_scraper_comments.rb
 _clubs_drafts/
 scripts/__pycache__/
 reports/
+guild-urls-*.txt

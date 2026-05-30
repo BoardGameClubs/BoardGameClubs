@@ -659,3 +659,103 @@ bg:
   currency: "BGN"
   currency_symbol: "лв"
   geocode_country_code: "BG"
+
+us:
+  code: "US"
+  name_en: "United States"
+  name_de: "Vereinigte Staaten"
+  name_it: "Stati Uniti"
+  name_fr: "États-Unis"
+  name_es: "Estados Unidos"
+  name_pl: "Stany Zjednoczone"
+  url_prefix: "/us"
+  map_center: [39.5, -98.35]
+  map_zoom: 4
+  bounds:
+    lat: [24.0, 49.5]
+    lng: [-125.0, -66.5]
+  units: "miles"
+  unit_label: "mi"
+  earth_radius: 3959
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{5}(-\\d{4})?$"
+  distance_options: [25, 50, 100, 250]
+  currency: "USD"
+  currency_symbol: "$"
+  geocode_country_code: "US"
+
+ca:
+  code: "CA"
+  name_en: "Canada"
+  name_de: "Kanada"
+  name_it: "Canada"
+  name_fr: "Canada"
+  name_es: "Canadá"
+  name_pl: "Kanada"
+  url_prefix: "/ca"
+  map_center: [56.1, -96.0]
+  map_zoom: 4
+  bounds:
+    lat: [41.5, 70.0]
+    lng: [-141.0, -52.5]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^[A-Z]\\d[A-Z] ?\\d[A-Z]\\d$"
+  distance_options: [25, 50, 100, 250]
+  currency: "CAD"
+  currency_symbol: "$"
+  geocode_country_code: "CA"
+
+br:
+  code: "BR"
+  name_en: "Brazil"
+  name_de: "Brasilien"
+  name_it: "Brasile"
+  name_fr: "Brésil"
+  name_es: "Brasil"
+  name_pl: "Brazylia"
+  url_prefix: "/br"
+  map_center: [-14.2, -51.9]
+  map_zoom: 4
+  bounds:
+    lat: [-34.0, 5.5]
+    lng: [-74.0, -34.0]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{5}-?\\d{3}$"
+  distance_options: [25, 50, 100, 250]
+  currency: "BRL"
+  currency_symbol: "R$"
+  geocode_country_code: "BR"
+
+nz:
+  code: "NZ"
+  name_en: "New Zealand"
+  name_de: "Neuseeland"
+  name_it: "Nuova Zelanda"
+  name_fr: "Nouvelle-Zélande"
+  name_es: "Nueva Zelanda"
+  name_pl: "Nowa Zelandia"
+  url_prefix: "/nz"
+  map_center: [-41.0, 173.0]
+  map_zoom: 5
+  bounds:
+    lat: [-47.5, -34.0]
+    lng: [166.0, 179.0]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{4}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "NZD"
+  currency_symbol: "$"
+  geocode_country_code: "NZ"
