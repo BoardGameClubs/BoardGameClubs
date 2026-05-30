@@ -238,8 +238,8 @@
       }
 
       a.nav-cta {
-        background: $color-accent;
-        color: #fff;
+        background: transparent;
+        color: $color-accent;
         font-weight: 600;
         margin: 0;                        // reset desktop margin-left; gap handles spacing
         padding: 0.6rem 0.7rem;           // match the other rows
@@ -254,8 +254,8 @@
         .nav-cta-full { display: inline; }
 
         &:hover {
-          background: $color-accent;
-          color: #fff;
+          background: rgba($color-accent, 0.08);
+          color: $color-accent;
         }
       }
 
