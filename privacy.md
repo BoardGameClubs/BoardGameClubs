@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Privacy Policy"
-description: "How Board Game Clubs handles your data — short version: we don't collect personal information, use cookies, or sell anything."
+description: "How Board Game Clubs handles your data. The short version: we don't collect personal information, use cookies, or sell anything."
 permalink: /privacy/
 ---
 
@@ -50,7 +50,7 @@ When you type a postcode into the search box on the UK pages, we send it to [pos
 
 ### "Use my location"
 
-If you click "Use my location", your browser asks for your permission and (if granted) provides your approximate coordinates to the page so we can sort clubs by distance. Your location is used only in your browser — it is **not** sent to our servers or any third party. It is cleared when you close or reload the page.
+If you click "Use my location", your browser asks for your permission and (if granted) provides your approximate coordinates to the page so we can sort clubs by distance. Your location is used only in your browser. It is **not** sent to our servers or any third party. It is cleared when you close or reload the page.
 
 ### Map tiles
 

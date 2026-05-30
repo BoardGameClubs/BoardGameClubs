@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "About Board Game Clubs"
-description: "Board Game Clubs is a free, community-maintained directory helping you find board game clubs near you across Europe."
+description: "Board Game Clubs is a free, community-maintained directory helping you find board game clubs near you, anywhere in the world."
 permalink: /about/
 ---
 
@@ -9,7 +9,7 @@ permalink: /about/
 
 # About Board Game Clubs
 
-Board Game Clubs is a free, community-maintained directory of board game clubs across Europe. The site is bilingual: English at the root and German at [boardgameclubs.org/de/]({{ "/de/" | relative_url }}). Use the country switcher in the top nav to change which country's clubs you see on the map. We connect people with local clubs, making it easy to discover where and when groups meet near you.
+Board Game Clubs is a free, community-maintained directory of board game clubs around the world. Use the country switcher in the top nav to change which country's clubs you see on the map. We connect people with local clubs, making it easy to discover where and when groups meet near you.
 
 ## How It Works
 
@@ -24,7 +24,7 @@ All club data is stored as individual files in our [GitHub repository](https://g
 
 ## No Accounts, Privacy Friendly
 
-Board Game Clubs is a static website hosted on GitHub Pages. There are no user accounts and no cookies. We use [GoatCounter](https://www.goatcounter.com/) for basic, privacy-friendly analytics — it collects no personal data, uses no cookies, and is fully open source. The interactive map uses OpenStreetMap, which is free and open source.
+Board Game Clubs is a static website hosted on GitHub Pages. There are no user accounts and no cookies. We use [GoatCounter](https://www.goatcounter.com/) for basic, privacy-friendly analytics. It collects no personal data, uses no cookies, and is fully open source. The interactive map uses OpenStreetMap, which is free and open source.
 
 ## Get Involved
 

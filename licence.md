@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Licence"
-description: "How Board Game Clubs is licensed — MIT with a Commons Clause restriction (no commercial selling of the software)."
+description: "How Board Game Clubs is licensed: MIT with a Commons Clause restriction (no commercial selling of the software)."
 permalink: /licence/
 ---
 
@@ -11,7 +11,7 @@ permalink: /licence/
 
 _Last updated: {{ site.time | date: "%-d %B %Y" }}_
 
-Board Game Clubs is open source. This page summarises the licence in plain English. The full, legally binding text lives in the [LICENSE file]({% if site.repository %}https://github.com/{{ site.repository }}/blob/main/LICENSE{% endif %}) in the repository — if anything here conflicts with that file, the LICENSE file wins.
+Board Game Clubs is open source. This page summarises the licence in plain English. The full, legally binding text lives in the [LICENSE file]({% if site.repository %}https://github.com/{{ site.repository }}/blob/main/LICENSE{% endif %}) in the repository. If anything here conflicts with that file, the LICENSE file wins.
 
 ## The short version
 
@@ -29,7 +29,7 @@ The MIT License is one of the most permissive open-source licences in common use
 - Use the software, for any purpose.
 - Copy and distribute it.
 - Modify it and distribute modified versions.
-- Include it in larger works (including commercial ones — subject to the Commons Clause below).
+- Include it in larger works (including commercial ones, subject to the Commons Clause below).
 - Sublicense it.
 
 The only condition: the copyright notice and the licence text must be included with any copies or substantial portions of the software.
@@ -38,7 +38,7 @@ The only condition: the copyright notice and the licence text must be included w
 
 The Commons Clause adds **one** restriction on top of MIT: you cannot **Sell** the software.
 
-In the licence's words, "Sell" means using the rights granted by the MIT License to provide the software to others **for a fee or other consideration** — including hosting it for paying customers, or selling consulting / support services whose value comes substantially from this software.
+In the licence's words, "Sell" means using the rights granted by the MIT License to provide the software to others **for a fee or other consideration**, including hosting it for paying customers, or selling consulting / support services whose value comes substantially from this software.
 
 In practical terms:
 
@@ -47,11 +47,11 @@ In practical terms:
 - Embedding small pieces in a larger project: fine.
 - Spinning up a paid, hosted version of this directory and charging users or clubs to be listed: not allowed without permission.
 
-The Commons Clause is a [published, standard text](https://commonsclause.com/) maintained by Fossa. It's intentionally narrow — it only restricts selling, not using or modifying.
+The Commons Clause is a [published, standard text](https://commonsclause.com/) maintained by Fossa. It's intentionally narrow: it only restricts selling, not using or modifying.
 
 ## A note about club data
 
-The club listings in this directory are contributed by the community. Each club's information (name, venue, days, description, etc.) is added by volunteers and represents publicly-available information about that club. If you'd like to use the club listings themselves for another project, please [open an issue]({% if site.repository %}https://github.com/{{ site.repository }}/issues{% endif %}) so we can talk through what makes sense — the data is here for the community's benefit, and we want to keep it that way.
+The club listings in this directory are contributed by the community. Each club's information (name, venue, days, description, etc.) is added by volunteers and represents publicly-available information about that club. If you'd like to use the club listings themselves for another project, please [open an issue]({% if site.repository %}https://github.com/{{ site.repository }}/issues{% endif %}) so we can talk through what makes sense. The data is here for the community's benefit, and we want to keep it that way.
 
 If you're a club organiser and want to update or remove your listing, see the [contribute page]({{ "/contribute" | relative_url }}) or open a GitHub issue.
 

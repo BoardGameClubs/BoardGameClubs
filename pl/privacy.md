@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Prywatność"
-description: "Jak Board Game Clubs obchodzi się z Twoimi danymi — w skrócie: nie zbieramy danych osobowych, nie używamy cookies i niczego nie sprzedajemy."
+description: "Jak Board Game Clubs obchodzi się z Twoimi danymi. W skrócie: nie zbieramy danych osobowych, nie używamy cookies i niczego nie sprzedajemy."
 permalink: /pl/privacy/
 ---
 
@@ -19,7 +19,7 @@ Board Game Clubs to bezpłatny katalog prowadzony przez społeczność. Zaprojek
 - Nie używamy plików cookie do śledzenia ani reklam.
 - Nie sprzedajemy, nie udostępniamy ani nie wynajmujemy danych.
 - Korzystamy z narzędzia analitycznego przyjaznego prywatności, które nie identyfikuje pojedynczych odwiedzających.
-- Niektóre funkcje (wyszukiwanie po kodzie pocztowym, „Moja lokalizacja") wysyłają dane do usług zewnętrznych — ale tylko wtedy, gdy z nich aktywnie korzystasz.
+- Niektóre funkcje (wyszukiwanie po kodzie pocztowym, „Moja lokalizacja") wysyłają dane do usług zewnętrznych, ale tylko wtedy, gdy z nich aktywnie korzystasz.
 
 ## Co zbieramy
 
@@ -50,7 +50,7 @@ Jeśli wpiszesz kod pocztowy w polu wyszukiwania, wyślemy go do [Nominatim](htt
 
 ### „Moja lokalizacja"
 
-Jeśli klikniesz „Moja lokalizacja", przeglądarka poprosi Cię o zgodę i (jeśli ją wyrazisz) udostępni stronie Twoje przybliżone współrzędne, abyśmy mogli posortować kluby według odległości. Twoja lokalizacja jest używana wyłącznie w przeglądarce — **nie** jest wysyłana na nasze serwery ani do osób trzecich. Jest usuwana po zamknięciu lub przeładowaniu strony.
+Jeśli klikniesz „Moja lokalizacja", przeglądarka poprosi Cię o zgodę i (jeśli ją wyrazisz) udostępni stronie Twoje przybliżone współrzędne, abyśmy mogli posortować kluby według odległości. Twoja lokalizacja jest używana wyłącznie w przeglądarce. **Nie** jest wysyłana na nasze serwery ani do osób trzecich. Jest usuwana po zamknięciu lub przeładowaniu strony.
 
 ### Kafelki mapy
 

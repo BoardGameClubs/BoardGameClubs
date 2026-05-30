@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "O Board Game Clubs"
-description: "Board Game Clubs to bezpłatny katalog prowadzony przez społeczność, który pomaga znaleźć kluby gier planszowych w pobliżu w całej Europie."
+description: "Board Game Clubs to bezpłatny katalog prowadzony przez społeczność, który pomaga znaleźć kluby gier planszowych w pobliżu, na całym świecie."
 permalink: /pl/about/
 ---
 
@@ -9,7 +9,7 @@ permalink: /pl/about/
 
 # O Board Game Clubs
 
-Board Game Clubs to bezpłatny katalog klubów gier planszowych w całej Europie, prowadzony przez społeczność. Strona jest wielojęzyczna: wersja angielska znajduje się na [boardgameclubs.org]({{ "/" | absolute_url }}), a stamtąd można przełączyć się na inne języki. Użyj przełącznika kraju u góry nawigacji, aby zmienić kraj wyświetlany na mapie. Łączymy ludzi z lokalnymi klubami, dzięki czemu łatwo dowiesz się, gdzie i kiedy spotykają się grupy w Twojej okolicy.
+Board Game Clubs to bezpłatny katalog klubów gier planszowych na całym świecie, prowadzony przez społeczność. Użyj przełącznika kraju u góry nawigacji, aby zmienić kraj wyświetlany na mapie. Łączymy ludzi z lokalnymi klubami, dzięki czemu łatwo dowiesz się, gdzie i kiedy spotykają się grupy w Twojej okolicy.
 
 ## Jak to działa
 
@@ -24,7 +24,7 @@ Wszystkie dane klubów są zapisywane jako pojedyncze pliki w naszym [repozytori
 
 ## Bez kont, z poszanowaniem prywatności
 
-Board Game Clubs to statyczna strona hostowana na GitHub Pages. Nie ma kont użytkowników ani plików cookie. Do anonimowych statystyk odwiedzin używamy [GoatCounter](https://www.goatcounter.com/) — nie zbiera danych osobowych, nie używa cookie i jest w pełni open source. Interaktywna mapa korzysta z OpenStreetMap, który również jest darmowy i open source.
+Board Game Clubs to statyczna strona hostowana na GitHub Pages. Nie ma kont użytkowników ani plików cookie. Do anonimowych statystyk odwiedzin używamy [GoatCounter](https://www.goatcounter.com/). Nie zbiera danych osobowych, nie używa cookie i jest w pełni open source. Interaktywna mapa korzysta z OpenStreetMap, który również jest darmowy i open source.
 
 ## Dołącz
 

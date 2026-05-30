@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Añade tu club de juegos de mesa a nuestro directorio"
-description: "Registra tu club de juegos de mesa en Board Game Clubs. Nuestro directorio gratuito, mantenido por la comunidad, ayuda a las personas a encontrar clubes de juegos de mesa cerca de ellas por toda Europa."
+description: "Registra tu club de juegos de mesa en Board Game Clubs. Nuestro directorio gratuito, mantenido por la comunidad, ayuda a las personas a encontrar clubes de juegos de mesa cerca de ellas, en cualquier parte del mundo."
 permalink: /es/contribute/
 ---
 
@@ -13,7 +13,7 @@ Board Game Clubs lo mantiene la comunidad y está alojado en GitHub. Cualquiera 
 
 ## Enviar a través de nuestro formulario
 
-La forma más sencilla de añadir tu club es el formulario en GitHub. No hace falta saber nada técnico — rellena los datos y nosotros nos encargamos del resto.
+La forma más sencilla de añadir tu club es el formulario en GitHub. No hace falta saber nada técnico: rellena los datos y nosotros nos encargamos del resto.
 
 <div class="contribute-actions">
   <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-club.yml" class="contribute-btn contribute-btn--primary">+ Añadir un club</a>
@@ -82,11 +82,11 @@ Los clubes británicos usan `permalink: /clubs/nombre-de-tu-club/`. Los clubes d
 | `facebook` | Enlace a la página o grupo de Facebook |
 | `discord` | Enlace de invitación a Discord |
 | `bgg` | Enlace al gremio o grupo de BoardGameGeek |
-| `description` | Texto libre. Se admite Markdown sencillo — líneas en blanco separan párrafos, líneas que empiezan con `-` se convierten en listas. Ver ejemplos abajo. |
+| `description` | Texto libre. Se admite Markdown sencillo: líneas en blanco separan párrafos, líneas que empiezan con `-` se convierten en listas. Ver ejemplos abajo. |
 
 ### Formatear la descripción
 
-El campo `description` se renderiza como Markdown, así que puedes usar párrafos y listas. Mantén la sangría de dos espacios del block scalar YAML — si no, Jekyll se queja.
+El campo `description` se renderiza como Markdown, así que puedes usar párrafos y listas. Mantén la sangría de dos espacios del block scalar YAML; si no, Jekyll se queja.
 
 ```yaml
 description: |
@@ -101,7 +101,7 @@ description: |
 
 ```
 
-La notación `>-` de la plantilla une los saltos de línea en un solo párrafo — bien para una descripción corta. Cambia a `|` (como arriba) si quieres conservar párrafos y listas.
+La notación `>-` de la plantilla une los saltos de línea en un solo párrafo: bien para una descripción corta. Cambia a `|` (como arriba) si quieres conservar párrafos y listas.
 
 ### 4. Encontrar las coordenadas
 
@@ -127,7 +127,7 @@ Haz commit de tu archivo y [abre una pull request](https://github.com/BoardGameC
 
 ## ¿Tu país no está en la lista?
 
-Actualmente listamos clubes en Reino Unido, Alemania, Austria, Suiza, Países Bajos, Bélgica, Italia, Polonia, Francia, Dinamarca y España. Si tu club está en otro sitio, [abre un issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new) — añadir un nuevo país es un cambio pequeño y lo hacemos con gusto.
+Actualmente listamos clubes en Reino Unido, Alemania, Austria, Suiza, Países Bajos, Bélgica, Italia, Polonia, Francia, Dinamarca y España. Si tu club está en otro sitio, [abre un issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new). Añadir un nuevo país es un cambio pequeño y lo hacemos con gusto.
 
 ## Actualizar un club existente
 

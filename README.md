@@ -50,4 +50,4 @@ Then visit `http://localhost:4000`.
 
 This project's source code is licensed under the [MIT License with the Commons Clause](LICENSE) condition. In short: you're free to use, modify, and run your own copy, but you can't sell it as a paid product or service. See the [licence page](https://boardgameclubs.org/licence/) for a plain-English summary.
 
-Club data is contributed by the community and is available under [Creative Commons Attribution 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) — you can share and adapt the data as long as you give appropriate credit.
+Club data is contributed by the community and is available under [Creative Commons Attribution 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/): you can share and adapt the data as long as you give appropriate credit.

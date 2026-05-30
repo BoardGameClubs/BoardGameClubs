@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Privacidad"
-description: "Cómo gestiona Board Game Clubs tus datos — en pocas palabras: no recopilamos información personal, no usamos cookies y no vendemos nada."
+description: "Cómo gestiona Board Game Clubs tus datos. En pocas palabras: no recopilamos información personal, no usamos cookies y no vendemos nada."
 permalink: /es/privacy/
 ---
 
@@ -19,7 +19,7 @@ Board Game Clubs es un directorio gratuito, mantenido por la comunidad. Hemos di
 - No usamos cookies para rastreo ni publicidad.
 - No vendemos, compartimos ni alquilamos datos.
 - Usamos una herramienta de analítica respetuosa con la privacidad que no identifica a los visitantes.
-- Algunas funciones (búsqueda por código postal, "Mi ubicación") envían datos a servicios de terceros — pero solo si las usas activamente.
+- Algunas funciones (búsqueda por código postal, "Mi ubicación") envían datos a servicios de terceros, pero solo si las usas activamente.
 
 ## Lo que recopilamos
 
@@ -50,7 +50,7 @@ Si introduces un código postal en la búsqueda, lo enviamos a [Nominatim](https
 
 ### "Mi ubicación"
 
-Si pulsas "Mi ubicación", tu navegador te pide permiso y (si lo concedes) facilita a la página tus coordenadas aproximadas, para que ordenemos los clubes por distancia. Tu ubicación se usa solo en tu navegador — **no** se envía a nuestros servidores ni a terceros. Se descarta al cerrar o recargar la página.
+Si pulsas "Mi ubicación", tu navegador te pide permiso y (si lo concedes) facilita a la página tus coordenadas aproximadas, para que ordenemos los clubes por distancia. Tu ubicación se usa solo en tu navegador: **no** se envía a nuestros servidores ni a terceros. Se descarta al cerrar o recargar la página.
 
 ### Teselas del mapa
 

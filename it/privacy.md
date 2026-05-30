@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Privacy"
-description: "Come Board Game Clubs gestisce i tuoi dati — in breve: non raccogliamo informazioni personali, non usiamo cookie e non vendiamo nulla."
+description: "Come Board Game Clubs gestisce i tuoi dati. In breve: non raccogliamo informazioni personali, non usiamo cookie e non vendiamo nulla."
 permalink: /it/privacy/
 ---
 
@@ -19,7 +19,7 @@ Board Game Clubs è una directory gratuita, gestita dalla community. Abbiamo pro
 - Non usiamo cookie per tracciamento o pubblicità.
 - Non vendiamo, condividiamo o noleggiamo dati.
 - Usiamo uno strumento di analisi rispettoso della privacy che non identifica i singoli visitatori.
-- Alcune funzionalità (ricerca per CAP, "Usa la mia posizione") inviano dati a servizi terzi — ma solo se le usi attivamente.
+- Alcune funzionalità (ricerca per CAP, "Usa la mia posizione") inviano dati a servizi terzi, ma solo se le usi attivamente.
 
 ## Cosa raccogliamo
 
@@ -50,7 +50,7 @@ Se inserisci un CAP nel campo di ricerca, lo inviamo a [Nominatim](https://nomin
 
 ### "Usa la mia posizione"
 
-Se clicchi "Usa la mia posizione", il browser chiede la tua autorizzazione e (se concessa) fornisce alla pagina le tue coordinate approssimative, così possiamo ordinare i club per distanza. La tua posizione viene usata solo nel tuo browser — **non** viene inviata ai nostri server né a terze parti. Viene cancellata quando chiudi o ricarichi la pagina.
+Se clicchi "Usa la mia posizione", il browser chiede la tua autorizzazione e (se concessa) fornisce alla pagina le tue coordinate approssimative, così possiamo ordinare i club per distanza. La tua posizione viene usata solo nel tuo browser. **Non** viene inviata ai nostri server né a terze parti. Viene cancellata quando chiudi o ricarichi la pagina.
 
 ### Tile della mappa
 

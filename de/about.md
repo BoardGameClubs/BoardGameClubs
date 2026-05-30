@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Über Board Game Clubs"
-description: "Board Game Clubs ist ein kostenloses, von der Community gepflegtes Verzeichnis, das dir hilft, Brettspielclubs in deiner Nähe in ganz Europa zu finden."
+description: "Board Game Clubs ist ein kostenloses, von der Community gepflegtes Verzeichnis, das dir hilft, Brettspielclubs in deiner Nähe weltweit zu finden."
 permalink: /de/about/
 ---
 
@@ -9,7 +9,7 @@ permalink: /de/about/
 
 # Über Board Game Clubs
 
-Board Game Clubs ist ein kostenloses, von der Community gepflegtes Verzeichnis von Brettspielclubs in ganz Europa. Die Seite ist zweisprachig: Englisch unter [boardgameclubs.org]({{ "/" | absolute_url }}) und Deutsch hier. Mit dem Länderschalter oben in der Navigation kannst du wechseln, welches Land auf der Karte angezeigt wird. Wir verbinden Menschen mit lokalen Clubs, damit du leicht herausfinden kannst, wo und wann sich Gruppen in deiner Nähe treffen.
+Board Game Clubs ist ein kostenloses, von der Community gepflegtes Verzeichnis von Brettspielclubs auf der ganzen Welt. Mit dem Länderschalter oben in der Navigation kannst du wechseln, welches Land auf der Karte angezeigt wird. Wir verbinden Menschen mit lokalen Clubs, damit du leicht herausfinden kannst, wo und wann sich Gruppen in deiner Nähe treffen.
 
 ## So funktioniert es
 
@@ -24,7 +24,7 @@ Alle Clubdaten liegen als einzelne Dateien in unserem [GitHub-Repository](https:
 
 ## Keine Konten, datenschutzfreundlich
 
-Board Game Clubs ist eine statische Website, gehostet auf GitHub Pages. Es gibt keine Benutzerkonten und keine Cookies. Für anonyme Besucherstatistiken nutzen wir [GoatCounter](https://www.goatcounter.com/) — es sammelt keine persönlichen Daten, verwendet keine Cookies und ist vollständig Open Source. Die interaktive Karte basiert auf OpenStreetMap, das ebenfalls kostenlos und Open Source ist.
+Board Game Clubs ist eine statische Website, gehostet auf GitHub Pages. Es gibt keine Benutzerkonten und keine Cookies. Für anonyme Besucherstatistiken nutzen wir [GoatCounter](https://www.goatcounter.com/). Es sammelt keine persönlichen Daten, verwendet keine Cookies und ist vollständig Open Source. Die interaktive Karte basiert auf OpenStreetMap, das ebenfalls kostenlos und Open Source ist.
 
 ## Mitmachen
 

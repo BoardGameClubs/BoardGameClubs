@@ -769,12 +769,12 @@ my_location:
 
 # --- Footer ---
 footer_tagline:
-  en: "Board Game Clubs — a free, community-maintained directory."
-  de: "Board Game Clubs — ein kostenloses, von der Community gepflegtes Verzeichnis."
-  it: "Board Game Clubs — una directory gratuita, gestita dalla community."
-  fr: "Board Game Clubs — un annuaire gratuit, maintenu par la communauté."
-  es: "Board Game Clubs — un directorio gratuito, mantenido por la comunidad."
-  pl: "Board Game Clubs — bezpłatny katalog prowadzony przez społeczność."
+  en: "Board Game Clubs: a free, community-maintained directory."
+  de: "Board Game Clubs: ein kostenloses, von der Community gepflegtes Verzeichnis."
+  it: "Board Game Clubs: una directory gratuita, gestita dalla community."
+  fr: "Board Game Clubs: un annuaire gratuit, maintenu par la communauté."
+  es: "Board Game Clubs: un directorio gratuito, mantenido por la comunidad."
+  pl: "Board Game Clubs: bezpłatny katalog prowadzony przez społeczność."
 
 footer_copyright:
   en: "Board Game Clubs"

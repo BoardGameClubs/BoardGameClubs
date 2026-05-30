@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Dodaj swój klub gier planszowych do naszego katalogu"
-description: "Zgłoś swój klub gier planszowych do Board Game Clubs. Nasz bezpłatny katalog prowadzony przez społeczność pomaga ludziom znaleźć kluby gier planszowych w pobliżu w całej Europie."
+description: "Zgłoś swój klub gier planszowych do Board Game Clubs. Nasz bezpłatny katalog prowadzony przez społeczność pomaga ludziom znaleźć kluby gier planszowych w pobliżu, na całym świecie."
 permalink: /pl/contribute/
 ---
 
@@ -13,7 +13,7 @@ Board Game Clubs jest prowadzony przez społeczność i hostowany na GitHubie. K
 
 ## Zgłoś przez nasz formularz
 
-Najprostszym sposobem dodania klubu jest formularz na GitHubie. Nie potrzeba wiedzy technicznej — wystarczy wypełnić dane, resztą zajmiemy się my.
+Najprostszym sposobem dodania klubu jest formularz na GitHubie. Nie potrzeba wiedzy technicznej, wystarczy wypełnić dane, resztą zajmiemy się my.
 
 <div class="contribute-actions">
   <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-club.yml" class="contribute-btn contribute-btn--primary">+ Dodaj klub</a>
@@ -82,11 +82,11 @@ Kluby brytyjskie używają `permalink: /clubs/nazwa-twojego-klubu/`. Kluby ze ws
 | `facebook` | Link do strony lub grupy na Facebooku |
 | `discord` | Link zapraszający na Discorda |
 | `bgg` | Link do gildii lub grupy na BoardGameGeek |
-| `description` | Tekst dowolny. Obsługiwany jest prosty Markdown — puste linie oddzielają akapity, linie zaczynające się od `-` stają się listami. Zobacz przykłady poniżej. |
+| `description` | Tekst dowolny. Obsługiwany jest prosty Markdown: puste linie oddzielają akapity, linie zaczynające się od `-` stają się listami. Zobacz przykłady poniżej. |
 
 ### Formatowanie opisu
 
-Pole `description` jest renderowane jako Markdown, więc możesz używać akapitów i list. Pamiętaj, by zachować dwie spacje wcięcia w block scalar YAML — inaczej Jekyll będzie protestował.
+Pole `description` jest renderowane jako Markdown, więc możesz używać akapitów i list. Pamiętaj, by zachować dwie spacje wcięcia w block scalar YAML, inaczej Jekyll będzie protestował.
 
 ```yaml
 description: |
@@ -101,7 +101,7 @@ description: |
 
 ```
 
-Zapis `>-` z szablonu łączy linie w jeden akapit — dobry do krótkiego opisu. Przełącz na `|` (jak wyżej), jeśli chcesz zachować akapity i listy.
+Zapis `>-` z szablonu łączy linie w jeden akapit, dobry do krótkiego opisu. Przełącz na `|` (jak wyżej), jeśli chcesz zachować akapity i listy.
 
 ### 4. Znajdź współrzędne
 
@@ -127,10 +127,10 @@ Zatwierdź swój plik i [otwórz pull request](https://github.com/BoardGameClubs
 
 ## Nie ma Twojego kraju?
 
-Aktualnie wymieniamy kluby z Wielkiej Brytanii, Niemiec, Austrii, Szwajcarii, Holandii, Belgii, Włoch, Polski, Francji, Danii i Hiszpanii. Jeśli Twój klub jest gdzie indziej, [otwórz issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new) — dodanie nowego kraju to drobna zmiana i robimy to z chęcią.
+Aktualnie wymieniamy kluby z Wielkiej Brytanii, Niemiec, Austrii, Szwajcarii, Holandii, Belgii, Włoch, Polski, Francji, Danii i Hiszpanii. Jeśli Twój klub jest gdzie indziej, [otwórz issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new). Dodanie nowego kraju to drobna zmiana i robimy to z chęcią.
 
 ## Aktualizacja istniejącego klubu
 
-Znajdź plik klubu w [folderze `_clubs/` na GitHubie](https://github.com/BoardGameClubs/BoardGameClubs/tree/main/_clubs), wprowadź zmiany i wyślij pull request. Albo po prostu **[otwórz prośbę o zmianę](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml)** — zaktualizujemy go za Ciebie.
+Znajdź plik klubu w [folderze `_clubs/` na GitHubie](https://github.com/BoardGameClubs/BoardGameClubs/tree/main/_clubs), wprowadź zmiany i wyślij pull request. Albo po prostu **[otwórz prośbę o zmianę](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml)**, a zaktualizujemy go za Ciebie.
 
 </div>

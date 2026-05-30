@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Licencia"
-description: "Cómo está licenciado Board Game Clubs — MIT con una restricción de Commons Clause (sin venta comercial del software)."
+description: "Cómo está licenciado Board Game Clubs: MIT con una restricción de Commons Clause (sin venta comercial del software)."
 permalink: /es/licence/
 ---
 
@@ -11,7 +11,7 @@ permalink: /es/licence/
 
 _Última actualización: {{ site.time | date: "%-d de %B de %Y" }}_
 
-Board Game Clubs es código abierto. Esta página resume la licencia en lenguaje sencillo. El texto completo y legalmente vinculante está en el [archivo LICENSE]({% if site.repository %}https://github.com/{{ site.repository }}/blob/main/LICENSE{% endif %}) del repositorio — en caso de conflicto prevalece el archivo LICENSE.
+Board Game Clubs es código abierto. Esta página resume la licencia en lenguaje sencillo. El texto completo y legalmente vinculante está en el [archivo LICENSE]({% if site.repository %}https://github.com/{{ site.repository }}/blob/main/LICENSE{% endif %}) del repositorio. En caso de conflicto prevalece el archivo LICENSE.
 
 ## La versión corta
 
@@ -29,7 +29,7 @@ La MIT License es una de las licencias de código abierto más permisivas. Bajo 
 - Usar el software para cualquier propósito.
 - Copiarlo y distribuirlo.
 - Modificarlo y distribuir versiones modificadas.
-- Incluirlo en proyectos más grandes (incluso comerciales — sujeto a la Commons Clause de abajo).
+- Incluirlo en proyectos más grandes (incluso comerciales, sujeto a la Commons Clause de abajo).
 - Sublicenciarlo.
 
 Única condición: el aviso de copyright y el texto de la licencia deben acompañar a cualquier copia o porción sustancial del software.
@@ -38,7 +38,7 @@ La MIT License es una de las licencias de código abierto más permisivas. Bajo 
 
 La Commons Clause añade **una** restricción a la MIT License: no puedes **vender** el software.
 
-En los términos de la licencia, "vender" significa usar los derechos concedidos por la MIT License para entregar el software a otros **a cambio de una tarifa u otra contraprestación** — incluido alojarlo para clientes que paguen, o vender consultoría/soporte cuyo valor proceda sustancialmente de este software.
+En los términos de la licencia, "vender" significa usar los derechos concedidos por la MIT License para entregar el software a otros **a cambio de una tarifa u otra contraprestación**, incluido alojarlo para clientes que paguen, o vender consultoría/soporte cuyo valor proceda sustancialmente de este software.
 
 En la práctica esto significa:
 
@@ -47,11 +47,11 @@ En la práctica esto significa:
 - Integrar pequeñas partes en un proyecto más grande: bien.
 - Montar una versión alojada de pago de este directorio y cobrar a usuarios o clubes por aparecer: no permitido sin autorización.
 
-La Commons Clause es un [texto estandarizado y publicado](https://commonsclause.com/), mantenido por Fossa. Es deliberadamente de alcance limitado — solo restringe la venta, no el uso ni la modificación.
+La Commons Clause es un [texto estandarizado y publicado](https://commonsclause.com/), mantenido por Fossa. Es deliberadamente de alcance limitado: solo restringe la venta, no el uso ni la modificación.
 
 ## Nota sobre los datos de los clubes
 
-Las fichas de los clubes de este directorio las aporta la comunidad. La información de cada club (nombre, local, días, descripción, etc.) la añaden voluntarios y constituye información pública sobre ese club. Si quieres usar las fichas en sí para otro proyecto, [abre un issue]({% if site.repository %}https://github.com/{{ site.repository }}/issues{% endif %}) para que veamos qué tiene sentido — los datos están para el bien de la comunidad, y así debe seguir.
+Las fichas de los clubes de este directorio las aporta la comunidad. La información de cada club (nombre, local, días, descripción, etc.) la añaden voluntarios y constituye información pública sobre ese club. Si quieres usar las fichas en sí para otro proyecto, [abre un issue]({% if site.repository %}https://github.com/{{ site.repository }}/issues{% endif %}) para que veamos qué tiene sentido. Los datos están para el bien de la comunidad, y así debe seguir.
 
 Si organizas un club y quieres actualizar o retirar tu ficha, consulta la [página de contribución]({{ "/es/contribute/" | relative_url }}) o abre un issue en GitHub.
 

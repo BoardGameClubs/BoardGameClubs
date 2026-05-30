@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Confidentialité"
-description: "Comment Board Game Clubs gère tes données — en bref : nous ne collectons pas d'informations personnelles, n'utilisons pas de cookies et ne vendons rien."
+description: "Comment Board Game Clubs gère tes données. En bref : nous ne collectons pas d'informations personnelles, n'utilisons pas de cookies et ne vendons rien."
 permalink: /fr/privacy/
 ---
 
@@ -19,7 +19,7 @@ Board Game Clubs est un annuaire gratuit, maintenu par la communauté. Nous avon
 - Nous n'utilisons pas de cookies pour le suivi ou la publicité.
 - Nous ne vendons, ne partageons ni ne louons de données.
 - Nous utilisons un outil d'analyse respectueux de la vie privée qui n'identifie pas les visiteurs.
-- Certaines fonctionnalités (recherche par code postal, « Ma position ») envoient des données à des services tiers — mais uniquement si tu les utilises activement.
+- Certaines fonctionnalités (recherche par code postal, « Ma position ») envoient des données à des services tiers, mais uniquement si tu les utilises activement.
 
 ## Ce que nous collectons
 
@@ -50,7 +50,7 @@ Si tu saisis un code postal dans le champ de recherche, nous l'envoyons à [Nomi
 
 ### « Ma position »
 
-Si tu cliques sur « Ma position », ton navigateur te demande la permission et (si tu l'accordes) fournit à la page tes coordonnées approximatives, pour que nous puissions trier les clubs par distance. Ta position est utilisée uniquement dans ton navigateur — elle **n'est pas** envoyée à nos serveurs ni à des tiers. Elle est supprimée quand tu fermes ou rechargers la page.
+Si tu cliques sur « Ma position », ton navigateur te demande la permission et (si tu l'accordes) fournit à la page tes coordonnées approximatives, pour que nous puissions trier les clubs par distance. Ta position est utilisée uniquement dans ton navigateur : elle **n'est pas** envoyée à nos serveurs ni à des tiers. Elle est supprimée quand tu fermes ou rechargers la page.
 
 ### Tuiles de carte
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Füge deinen Brettspielclub zu unserem Verzeichnis hinzu"
-description: "Trage deinen Brettspielclub bei Board Game Clubs ein. Unser kostenloses, von der Community gepflegtes Verzeichnis hilft Menschen, Brettspielclubs in ihrer Nähe in ganz Europa zu finden."
+description: "Trage deinen Brettspielclub bei Board Game Clubs ein. Unser kostenloses, von der Community gepflegtes Verzeichnis hilft Menschen, Brettspielclubs in ihrer Nähe weltweit zu finden."
 permalink: /de/contribute/
 ---
 
@@ -13,7 +13,7 @@ Board Game Clubs wird von der Community gepflegt und auf GitHub gehostet. Jede:r
 
 ## Über unser Formular einreichen
 
-Am einfachsten fügst du deinen Club über unser Formular auf GitHub hinzu. Keine technischen Kenntnisse nötig — fülle einfach die Details aus, den Rest erledigen wir.
+Am einfachsten fügst du deinen Club über unser Formular auf GitHub hinzu. Keine technischen Kenntnisse nötig, fülle einfach die Details aus, den Rest erledigen wir.
 
 <div class="contribute-actions">
   <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-club.yml" class="contribute-btn contribute-btn--primary">+ Club hinzufügen</a>
@@ -82,11 +82,11 @@ Britische Clubs verwenden `permalink: /clubs/dein-club-name/`. Clubs in allen an
 | `facebook` | Link zur Facebook-Seite oder -Gruppe |
 | `discord` | Discord-Einladungslink |
 | `bgg` | BoardGameGeek-Gilden- oder -Gruppenlink |
-| `description` | Freitext. Einfaches Markdown wird unterstützt — Leerzeilen trennen Absätze, Zeilen mit `-` werden zur Aufzählung. Siehe Beispiele unten. |
+| `description` | Freitext. Einfaches Markdown wird unterstützt: Leerzeilen trennen Absätze, Zeilen mit `-` werden zur Aufzählung. Siehe Beispiele unten. |
 
 ### Beschreibung formatieren
 
-Das Feld `description` wird als Markdown gerendert. Du kannst also Absätze und Aufzählungen verwenden. Achte darauf, dass jede Zeile die zwei Leerzeichen Einrückung des YAML-Block-Scalars behält — sonst meckert Jekyll.
+Das Feld `description` wird als Markdown gerendert. Du kannst also Absätze und Aufzählungen verwenden. Achte darauf, dass jede Zeile die zwei Leerzeichen Einrückung des YAML-Block-Scalars behält, sonst meckert Jekyll.
 
 ```yaml
 description: |
@@ -100,7 +100,7 @@ description: |
   - Genug Pausen und Zeit zum Quatschen
 ```
 
-Die `>-`-Schreibweise aus der Vorlage fasst Zeilenumbrüche zu einem Absatz zusammen — gut für eine kurze Beschreibung. Wechsle zu `|` (wie oben), wenn Absätze und Listen erhalten bleiben sollen.
+Die `>-`-Schreibweise aus der Vorlage fasst Zeilenumbrüche zu einem Absatz zusammen, gut für eine kurze Beschreibung. Wechsle zu `|` (wie oben), wenn Absätze und Listen erhalten bleiben sollen.
 
 ### 4. Koordinaten finden
 
@@ -126,7 +126,7 @@ Committe deine Datei und [öffne einen Pull Request](https://github.com/BoardGam
 
 ## Dein Land ist nicht dabei?
 
-Wir listen derzeit Clubs in Großbritannien, Deutschland, Österreich, der Schweiz, den Niederlanden, Belgien, Italien, Polen, Frankreich, Dänemark und Spanien. Ist dein Club woanders, [öffne ein Issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new) — ein neues Land hinzuzufügen ist eine kleine Änderung und wir machen das gerne.
+Wir listen derzeit Clubs in Großbritannien, Deutschland, Österreich, der Schweiz, den Niederlanden, Belgien, Italien, Polen, Frankreich, Dänemark und Spanien. Ist dein Club woanders, [öffne ein Issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new). Ein neues Land hinzuzufügen ist eine kleine Änderung und wir machen das gerne.
 
 ## Bestehenden Club aktualisieren
 

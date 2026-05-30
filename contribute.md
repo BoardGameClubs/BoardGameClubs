@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Add Your Board Game Club to Our Directory"
-description: "Submit your board game club to Board Game Clubs. Our free, community-maintained directory helps people find board game clubs near them across Europe."
+description: "Submit your board game club to Board Game Clubs. Our free, community-maintained directory helps people find board game clubs near them, anywhere in the world."
 permalink: /contribute/
 ---
 
@@ -82,11 +82,11 @@ UK clubs use `permalink: /clubs/your-club-slug/`. Clubs in every other country u
 | `facebook` | Link to your club's Facebook page or group |
 | `discord` | Discord invite link |
 | `bgg` | BoardGameGeek guild or group link |
-| `description` | Free text. Basic Markdown is supported — blank lines split paragraphs, and lines starting with `-` become a bulleted list. See examples below. |
+| `description` | Free text. Basic Markdown is supported: blank lines split paragraphs, and lines starting with `-` become a bulleted list. See examples below. |
 
 ### Formatting the description
 
-The `description` field is rendered as Markdown, so you can use paragraphs and bulleted lists. Keep the YAML block-scalar indentation (two spaces) on every line — that's what keeps Jekyll happy.
+The `description` field is rendered as Markdown, so you can use paragraphs and bulleted lists. Keep the YAML block-scalar indentation (two spaces) on every line. That's what keeps Jekyll happy.
 
 ```yaml
 description: |
@@ -100,7 +100,7 @@ description: |
   - Plenty of breaks and chat
 ```
 
-The `>-` style from the template collapses line breaks into one paragraph — useful for a single short description. Switch to `|` (as above) when you want to keep paragraph breaks and lists.
+The `>-` style from the template collapses line breaks into one paragraph, useful for a single short description. Switch to `|` (as above) when you want to keep paragraph breaks and lists.
 
 ### 4. Find your coordinates
 
@@ -126,7 +126,7 @@ Commit your file and [open a pull request](https://github.com/BoardGameClubs/Boa
 
 ## Don't see your country?
 
-We currently list clubs in the United Kingdom, Germany, Austria, Switzerland, the Netherlands, Belgium, Italy, Poland, France, Denmark, and Spain. If your club is somewhere else, [open an issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new) — adding a new country is a small change and we're happy to do it.
+We currently list clubs in the United Kingdom, Germany, Austria, Switzerland, the Netherlands, Belgium, Italy, Poland, France, Denmark, and Spain. If your club is somewhere else, [open an issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new). Adding a new country is a small change and we're happy to do it.
 
 ## Updating an Existing Club
 

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Chi siamo — Board Game Clubs"
-description: "Board Game Clubs è una directory gratuita, gestita dalla community, che ti aiuta a trovare club di giochi da tavolo vicino a te in tutta Europa."
+title: "Chi siamo: Board Game Clubs"
+description: "Board Game Clubs è una directory gratuita, gestita dalla community, che ti aiuta a trovare club di giochi da tavolo vicino a te, ovunque nel mondo."
 permalink: /it/about/
 ---
 
@@ -9,7 +9,7 @@ permalink: /it/about/
 
 # Chi siamo
 
-Board Game Clubs è una directory gratuita, gestita dalla community, dei club di giochi da tavolo in tutta Europa. Il sito è multilingua: la versione in inglese si trova su [boardgameclubs.org]({{ "/" | absolute_url }}) e da lì puoi passare alle altre lingue. Usa il selettore di paese in alto nella navigazione per cambiare quale paese vedi sulla mappa. Mettiamo in contatto le persone con i club locali, così è facile scoprire dove e quando si incontrano i gruppi vicino a te.
+Board Game Clubs è una directory gratuita, gestita dalla community, dei club di giochi da tavolo in tutto il mondo. Usa il selettore di paese in alto nella navigazione per cambiare quale paese vedi sulla mappa. Mettiamo in contatto le persone con i club locali, così è facile scoprire dove e quando si incontrano i gruppi vicino a te.
 
 ## Come funziona
 
@@ -24,7 +24,7 @@ Tutti i dati dei club sono salvati come singoli file nel nostro [repository GitH
 
 ## Niente account, attento alla privacy
 
-Board Game Clubs è un sito statico ospitato su GitHub Pages. Non ci sono account utente né cookie. Per le statistiche anonime di visita usiamo [GoatCounter](https://www.goatcounter.com/) — non raccoglie dati personali, non usa cookie ed è completamente open source. La mappa interattiva usa OpenStreetMap, anch'essa gratuita e open source.
+Board Game Clubs è un sito statico ospitato su GitHub Pages. Non ci sono account utente né cookie. Per le statistiche anonime di visita usiamo [GoatCounter](https://www.goatcounter.com/). Non raccoglie dati personali, non usa cookie ed è completamente open source. La mappa interattiva usa OpenStreetMap, anch'essa gratuita e open source.
 
 ## Partecipa
 

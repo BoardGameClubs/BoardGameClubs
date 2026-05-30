@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Datenschutz"
-description: "Wie Board Game Clubs mit deinen Daten umgeht — kurz gesagt: wir sammeln keine persönlichen Informationen, nutzen keine Cookies und verkaufen nichts."
+description: "Wie Board Game Clubs mit deinen Daten umgeht. Kurz gesagt: wir sammeln keine persönlichen Informationen, nutzen keine Cookies und verkaufen nichts."
 permalink: /de/privacy/
 ---
 
@@ -19,7 +19,7 @@ Board Game Clubs ist ein kostenloses, von der Community gepflegtes Verzeichnis. 
 - Wir verwenden keine Cookies für Tracking oder Werbung.
 - Wir verkaufen, teilen oder vermieten keine Daten.
 - Wir nutzen ein datenschutzfreundliches Analyse-Tool, das einzelne Besucher:innen nicht identifiziert.
-- Einige Funktionen (Postleitzahlsuche, „Meinen Standort verwenden") senden Daten an Drittanbieter — aber nur, wenn du sie aktiv nutzt.
+- Einige Funktionen (Postleitzahlsuche, „Meinen Standort verwenden") senden Daten an Drittanbieter, aber nur, wenn du sie aktiv nutzt.
 
 ## Was wir sammeln
 
@@ -50,7 +50,7 @@ Wenn du eine Postleitzahl in das Suchfeld eingibst, senden wir sie an [Nominatim
 
 ### „Meinen Standort verwenden"
 
-Wenn du auf „Meinen Standort verwenden" klickst, fragt dein Browser nach deiner Erlaubnis und stellt (falls erteilt) der Seite deine ungefähren Koordinaten zur Verfügung, damit wir Clubs nach Entfernung sortieren können. Dein Standort wird ausschließlich in deinem Browser verwendet — er wird **nicht** an unsere Server oder Drittanbieter gesendet. Er wird gelöscht, wenn du die Seite schließt oder neu lädst.
+Wenn du auf „Meinen Standort verwenden" klickst, fragt dein Browser nach deiner Erlaubnis und stellt (falls erteilt) der Seite deine ungefähren Koordinaten zur Verfügung, damit wir Clubs nach Entfernung sortieren können. Dein Standort wird ausschließlich in deinem Browser verwendet. Er wird **nicht** an unsere Server oder Drittanbieter gesendet. Er wird gelöscht, wenn du die Seite schließt oder neu lädst.
 
 ### Kartenkacheln
 
