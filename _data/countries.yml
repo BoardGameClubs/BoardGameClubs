@@ -512,7 +512,7 @@ se:
   currency_symbol: "kr"
   geocode_country_code: "SE"
 
-no:
+"no":
   code: "NO"
   name_en: "Norway"
   name_de: "Norwegen"

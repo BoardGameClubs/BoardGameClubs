@@ -8,6 +8,11 @@ baseurl: ""
 repository: "BoardGameClubs/BoardGameClubs"
 og_image: /assets/og.png
 
+# Cache unchanged pages between dev rebuilds so chrome/SCSS/JS edits rebuild in
+# a fraction of the ~45-50s full build. Affects `jekyll serve` only; CI/Pages
+# builds are full builds.
+incremental: true
+
 collections:
   clubs:
     output: true
