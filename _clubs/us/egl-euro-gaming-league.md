@@ -2,11 +2,11 @@
 country: "US"
 name: "EGL (Euro Gaming League)"
 type: ["Board Games"]
-days: ["Various"]
+days: ["Monday"]
 time: ""
 frequency: "Weekly"
 location:
-  name: "San Francisco"
+  name: "The Game Parlour"
   address: "San Francisco, California"
   lat: 37.7749295
   lng: -122.4194155
