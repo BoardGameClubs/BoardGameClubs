@@ -58,6 +58,12 @@
         initialised = true;
         if (window.GameClubCountry) {
           window.GameClubCountry.onChange(handleCountryChange);
+          // Apply a country that async geo-detection resolved before the
+          // listener was registered.
+          var current = window.GameClubCountry.getActive();
+          if (current && current.code !== activeCountry.code) {
+            handleCountryChange(current);
+          }
         }
       })
       .catch(function (err) {

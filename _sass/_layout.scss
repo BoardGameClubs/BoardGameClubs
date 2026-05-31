@@ -547,6 +547,21 @@
       color: $color-text;
     }
 
+    // Club-count badge, pushed to the right edge of the row.
+    .nav-country-count {
+      margin-left: auto;
+      flex-shrink: 0;
+      min-width: 1.6rem;
+      padding: 0.05rem 0.4rem;
+      border-radius: 999px;
+      background: rgba($color-text, 0.08);
+      color: rgba($color-text, 0.7);
+      font-size: 0.72rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      text-align: center;
+    }
+
     &:hover, &:focus {
       background: rgba($color-accent, 0.08);
       outline: none;
@@ -557,6 +572,11 @@
 
       .nav-country-name {
         font-weight: 600;
+        color: $color-accent;
+      }
+
+      .nav-country-count {
+        background: rgba($color-accent, 0.18);
         color: $color-accent;
       }
     }

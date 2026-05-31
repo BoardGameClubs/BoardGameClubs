@@ -70,18 +70,42 @@
     }
   }
 
+  var resolvedFromExplicitSignal = false;
+
   function resolveInitial() {
     var defaultCode = canonicalise((window.GameClub && window.GameClub.defaultCountryCode) || "GB");
     var fromUrl = readUrlCode();
-    if (fromUrl && getProfile(fromUrl)) return fromUrl;
+    if (fromUrl && getProfile(fromUrl)) { resolvedFromExplicitSignal = true; return fromUrl; }
     // On a localised page (/de/, /it/, …) the URL implies the country choice,
     // so we ignore any prior localStorage selection and use the page default.
     // The English root falls back to localStorage as before.
     var pageLang = (window.GameClub && window.GameClub.language) || "en";
-    if (pageLang !== "en") return defaultCode;
+    if (pageLang !== "en") { resolvedFromExplicitSignal = true; return defaultCode; }
     var fromStorage = readStoredCode();
-    if (fromStorage && getProfile(fromStorage)) return fromStorage;
+    if (fromStorage && getProfile(fromStorage)) { resolvedFromExplicitSignal = true; return fromStorage; }
     return defaultCode;
+  }
+
+  // First-load IP geolocation for a fresh visitor with no explicit country
+  // signal. Never blocks first paint: re-scopes only if we support the
+  // detected country; otherwise stays on the default.
+  var GEO_ENDPOINT = "https://ipapi.co/json/";
+
+  function maybeDetectCountry() {
+    if (resolvedFromExplicitSignal) return;
+    if (!window.fetch) return;
+    fetch(GEO_ENDPOINT)
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (data) {
+        if (!data) return;
+        var code = canonicalise(data.country_code || data.country || "");
+        if (!code) return;
+        if (resolvedFromExplicitSignal) return;
+        if (code === activeCode) return;
+        if (!getProfile(code)) return;
+        setActive(code, { persist: false, updateUrl: true, replaceUrl: true });
+      })
+      .catch(function () {});
   }
 
   var activeCode = null;
@@ -324,6 +348,7 @@
     wireNav();
     wireBurger();
     maybeShowLangBanner();
+    maybeDetectCountry();
   }
 
   if (document.readyState === "loading") {
