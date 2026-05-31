@@ -52,7 +52,7 @@
       var center = profile.map_center || [53.8, -1.58];
       var zoom = profile.map_zoom || 9;
 
-      this.map = L.map("map").setView(center, zoom);
+      this.map = L.map("map", { worldCopyJump: true }).setView(center, zoom);
 
       L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
         attribution:
