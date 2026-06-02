@@ -1,11 +1,12 @@
 (function () {
   "use strict";
 
-  // Resolves and manages the *active* country (independent of page language).
-  // Active country drives the dataset, map centre, units, postcode service.
-  // Resolution order: ?country= URL param > localStorage > page default.
+  // Resolves and manages the active country, separate from the page language.
+  // The active country drives the dataset, map centre, units and postcode
+  // service. Resolution order: ?country= URL param, then localStorage, then
+  // the page default.
   //
-  // Other modules subscribe via GameClubCountry.onChange(cb). Callbacks fire
+  // Other modules subscribe via GameClubCountry.onChange(cb); callbacks fire
   // with the new country profile object.
 
   var STORAGE_KEY = "gameclub.country";
@@ -19,7 +20,6 @@
     var countries = getCountries();
     var key = (code || "").toLowerCase();
     if (countries[key]) return countries[key];
-    // Match by uppercase code as well, just in case.
     for (var k in countries) {
       if (countries[k] && countries[k].code === code) return countries[k];
     }
@@ -87,8 +87,8 @@
   }
 
   // First-load IP geolocation for a fresh visitor with no explicit country
-  // signal. Never blocks first paint: re-scopes only if we support the
-  // detected country; otherwise stays on the default.
+  // signal. Never blocks first paint, and only re-scopes if we support the
+  // detected country; otherwise it stays on the default.
   var GEO_ENDPOINT = "https://ipapi.co/json/";
 
   function maybeDetectCountry() {
@@ -186,6 +186,23 @@
     }
   }
 
+  // Close any other open nav menu/dropdown before opening this one, so only
+  // one is ever open at a time on mobile.
+  function closeOtherMenus(keep) {
+    if (keep !== "country") {
+      var country = document.getElementById("nav-country");
+      var countryToggle = document.getElementById("nav-country-toggle");
+      if (country) country.classList.remove("is-open");
+      if (countryToggle) countryToggle.setAttribute("aria-expanded", "false");
+    }
+    if (keep !== "burger") {
+      var menu = document.getElementById("nav-menu");
+      var burger = document.getElementById("nav-burger");
+      if (menu) menu.classList.remove("is-open");
+      if (burger) burger.setAttribute("aria-expanded", "false");
+    }
+  }
+
   function wireNav() {
     var container = document.getElementById("nav-country");
     if (!container) return;
@@ -196,6 +213,7 @@
       toggle.addEventListener("click", function (e) {
         e.stopPropagation();
         var isOpen = container.classList.toggle("is-open");
+        if (isOpen) closeOtherMenus("country");
         toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
       });
     }
@@ -216,16 +234,15 @@
       }
     });
 
-    // Initial label sync.
     var active = getActive();
     if (active) updateNavLabel(active);
   }
 
   // ── Burger menu wiring ───────────────────────────────────────────────
   // Mobile-only dropdown holding the nav links, Add CTA and GitHub link.
-  // The panel and burger are always in the DOM; CSS shows them only below
-  // $bp-md. Toggling .is-open here is harmless on desktop where the panel
-  // is laid out inline regardless.
+  // The panel and burger are always in the DOM; CSS only shows them below
+  // $bp-md. Toggling .is-open here does nothing on desktop, where the panel
+  // is laid out inline anyway.
 
   function wireBurger() {
     var burger = document.getElementById("nav-burger");
@@ -240,6 +257,7 @@
     burger.addEventListener("click", function (e) {
       e.stopPropagation();
       var isOpen = menu.classList.toggle("is-open");
+      if (isOpen) closeOtherMenus("burger");
       burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
 
@@ -264,8 +282,8 @@
   // ── Language banner ──────────────────────────────────────────────────
   // Suggests a localised site to browsers whose preferred language matches
   // one of our non-English locales, when they land on a different locale.
-  // One-time dismiss persists in localStorage. No auto-redirect — bilingual
-  // users may genuinely prefer the English UI.
+  // A dismiss persists in localStorage. We don't auto-redirect, since
+  // bilingual users may genuinely prefer the English UI.
 
   var BANNER_DISMISS_KEY = "gameclub.lang_banner_dismissed";
   var BANNER_LOCALES = [
@@ -339,7 +357,6 @@
     getCountryLabel: getCountryLabel
   };
 
-  // Initialise: resolve active code, sync URL to canonical form, wire UI.
   function bootstrap() {
     activeCode = resolveInitial();
     // Ensure URL reflects the resolved code (so a localStorage-resolved

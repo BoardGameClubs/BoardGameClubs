@@ -131,15 +131,12 @@
       });
     }
 
-    // Touch
     handle.addEventListener('touchstart', onTouchStart, { passive: true });
     handle.addEventListener('touchmove', onTouchMove, { passive: false });
     handle.addEventListener('touchend', onTouchEnd);
 
-    // Mouse
     handle.addEventListener('mousedown', onMouseDown);
 
-    // Click (tap cycle)
     handle.addEventListener('click', onHandleClick);
 
     mql.addEventListener('change', function () {

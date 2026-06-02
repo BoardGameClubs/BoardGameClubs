@@ -1,11 +1,10 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Validates all _clubs/<country>/*.md files for correct YAML frontmatter.
-# Country-aware: lat/lng bounds + URL prefix come from _data/countries.yml.
-# Also enforces folder ↔ country agreement (a file at _clubs/de/foo.md must
-# have `country: "DE"`).
-# Requires only Ruby stdlib.
+# Validates the YAML frontmatter of every _clubs/<country>/*.md file.
+# lat/lng bounds and URL prefix come from _data/countries.yml. The folder a
+# file lives in has to match its country field (_clubs/de/foo.md needs
+# country: "DE"). Uses only the Ruby stdlib.
 # Usage: ruby scripts/validate_clubs.rb
 
 require "yaml"
@@ -40,7 +39,6 @@ unless Dir.exist?(clubs_dir)
   exit 1
 end
 
-# Files now live under _clubs/<country>/*.md.
 files = Dir.glob(File.join(clubs_dir, "*", "*.md")).sort
 if files.empty?
   puts "ERROR: No .md files found under _clubs/<country>/"
@@ -101,7 +99,7 @@ files.each do |file|
     next
   end
 
-  # country: required, must match the folder it lives in.
+  # country is required and has to match the folder the file lives in.
   country_code = data["country"]
   if !country_code.is_a?(String) || country_code.strip.empty?
     file_errors << "country: required (one of #{valid_codes.join(', ')})"
@@ -111,12 +109,10 @@ files.each do |file|
     file_errors << "country: '#{country_code}' must match folder '#{folder}/' — move the file or change the field"
   end
 
-  # name: non-empty string
   if !data["name"].is_a?(String) || data["name"].strip.empty?
     file_errors << "name: must be a non-empty string"
   end
 
-  # days
   if !data["days"].is_a?(Array) || data["days"].empty?
     file_errors << "days: must be a non-empty array of day names (got #{data['days'].inspect})"
   elsif data["days"].is_a?(Array)
@@ -140,17 +136,14 @@ files.each do |file|
     end
   end
 
-  # frequency
   if !data["frequency"].is_a?(String) || data["frequency"].strip.empty?
     file_errors << "frequency: must be a non-empty string"
   end
 
-  # description
   if !data["description"].is_a?(String) || data["description"].strip.empty?
     file_errors << "description: must be a non-empty string"
   end
 
-  # location
   loc = data["location"]
   if !loc.is_a?(Hash)
     file_errors << "location: must be a mapping with name, address, lat, lng"
@@ -176,7 +169,7 @@ files.each do |file|
     end
   end
 
-  # permalink: must NOT be set. Clubs live at canonical /clubs/<slug>/ and
+  # permalink must not be set. Clubs live at /clubs/<slug>/ and
   # _plugins/club_language_clones.rb emits per-language copies at
   # /<lang>/clubs/<slug>/. A hand-written permalink would override that.
   if data["permalink"]

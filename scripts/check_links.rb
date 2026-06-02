@@ -2,17 +2,17 @@
 # frozen_string_literal: true
 
 # Checks club website / meetup / bgg links for signs of being dead and writes a
-# maintainer-only report. This is NOT shown on the site — it's a tool for
-# spotting stale clubs in a community-maintained directory where links go bad.
+# maintainer-only report. It never appears on the site; it just helps spot
+# stale clubs in a community-maintained directory where links go bad.
 #
 # What it flags:
 #   - DNS failure (domain no longer resolves)
 #   - Connection refused / timeout (server gone)
 #   - 404 / 410 (page removed)
 #   - 5xx (server broken)
-# What it does NOT flag (too noisy / unreliable to check from a bot):
-#   - facebook / discord links — these return 403/429 to non-browser clients
-#     regardless of whether the club exists, so auto-checking them is meaningless.
+# What it skips (too noisy to check from a bot):
+#   - facebook / discord links. These return 403/429 to non-browser clients
+#     whether or not the club exists, so checking them tells us nothing.
 #
 # Usage:
 #   ruby scripts/check_links.rb                 # check everything, write reports/dead_links.md
@@ -20,7 +20,7 @@
 #   ruby scripts/check_links.rb --json          # also write reports/dead_links.json
 #   ruby scripts/check_links.rb gb              # only clubs in a given country folder
 #
-# Requires only Ruby stdlib. Exit code is always 0 (it's a report, not a gate)
+# Uses only the Ruby stdlib. Exit code is always 0 (it's a report, not a gate)
 # unless something goes structurally wrong.
 
 require "yaml"
@@ -132,7 +132,7 @@ def check_url(raw_url)
     else [:suspect, "HTTP #{code}"]
     end
   rescue SocketError
-    # DNS / host resolution failure — strongest signal of a dead domain.
+    # DNS / host resolution failure: the strongest signal of a dead domain.
     [:dead, "Domain does not resolve (DNS)"]
   rescue Net::OpenTimeout, Net::ReadTimeout
     retry if attempt <= RETRIES

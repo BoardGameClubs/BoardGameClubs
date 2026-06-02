@@ -8,13 +8,12 @@
 #   /es/clubs/<slug>/     (Spanish)
 #   /pl/clubs/<slug>/     (Polish)
 #
-# The visitor's site language is determined by URL prefix; the map/sidebar
-# JS links to the matching language clone so navigation never flips lang.
-# Body strings (day names, table labels) follow page.language for
-# consistency with the chrome.
+# The URL prefix sets the visitor's site language; the map/sidebar JS links to
+# the matching language clone so navigation never flips lang. Body strings (day
+# names, table labels) follow page.language to match the chrome.
 #
-# Requires Pages to deploy via GitHub Actions — plugin generators aren't on
-# the GitHub Pages whitelist.
+# Pages has to deploy via GitHub Actions for this to run, since plugin
+# generators aren't on the GitHub Pages whitelist.
 
 module GameClub
   class ClubLanguageClones < Jekyll::Generator

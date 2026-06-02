@@ -3,10 +3,10 @@
 
   // Standalone orchestrator for the embeddable /embed/ map. Reuses
   // window.GameClubMap (Leaflet renderer) and window.GameClubSearch
-  // (text/type/day filtering) with none of the home-page chrome —
-  // no sidebar, location, drawer or country selector. Scope is a
-  // single country chosen via ?country=, with optional ?type=, ?days=,
-  // ?q= pre-filters that the embedder bakes into the iframe src.
+  // (text/type/day filtering) with none of the home-page chrome: no
+  // sidebar, location, drawer or country selector. It covers a single
+  // country chosen via ?country=, with optional ?type=, ?days= and ?q=
+  // pre-filters that the embedder bakes into the iframe src.
 
   var baseurl = window.GameClub ? window.GameClub.baseurl : "";
   var countries = window.GameClubCountries || {};

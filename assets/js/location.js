@@ -65,8 +65,8 @@
     },
 
     // Given a user-typed string, return the country profile whose postcode
-    // regex matches it — or null. Lets us auto-switch country (e.g. UK user
-    // types "10115" on / and we should look it up against DE/Nominatim).
+    // regex matches it, or null. Lets us auto-switch country: a UK user who
+    // types "10115" on / gets the lookup run against DE/Nominatim.
     detectCountryFromQuery: function (query) {
       var countries = window.GameClubCountries || {};
       for (var k in countries) {
@@ -218,8 +218,8 @@
         });
     },
 
-    // Heuristic: query is a plausible place name — has a letter and is long
-    // enough to be worth a geocoder hit. Avoids triggering on "1", "ab", etc.
+    // Heuristic for a plausible place name: has a letter and is long enough
+    // to be worth a geocoder hit. Avoids triggering on "1", "ab" and so on.
     isPlaceLikeQuery: function (query) {
       if (!query || query.length < 3) return false;
       return /[A-Za-zÀ-ÿ]/.test(query);

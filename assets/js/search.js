@@ -21,7 +21,7 @@
     setCountry: function (profile) {
       if (!profile) return;
       this.earthRadius = profile.earth_radius || this.earthRadius;
-      // Recompute distances since the radius changed (if a user location is set).
+      // The radius changed, so recompute distances if a user location is set.
       if (this.userLat !== null && this.userLng !== null) {
         var self = this;
         this.allClubs.forEach(function (club) {
@@ -79,16 +79,15 @@
       });
     },
 
-    // Active-country result set used by the sidebar list — applies all
-    // filters (text, type, day, distance) and sorts by distance.
+    // Active-country result set for the sidebar list. Applies every filter
+    // (text, type, day, distance) and sorts by distance.
     getFiltered: function () {
       return this.filterClubs(this.allClubs, { applyDistance: true, sortByDistance: true });
     },
 
-    // Cross-country pass for the map: same text/type/day filters, but
-    // distance filter and distance sort intentionally skipped so off-country
-    // markers stay visible even when the user has set a location in the
-    // active country.
+    // Cross-country pass for the map: same text/type/day filters, but no
+    // distance filter or distance sort, so off-country markers stay visible
+    // even when the user has set a location in the active country.
     getMapPins: function (allClubsGlobal) {
       return this.filterClubs(allClubsGlobal, { applyDistance: false, sortByDistance: false });
     },

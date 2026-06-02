@@ -1,7 +1,7 @@
 # Tallies clubs per country once per build into site.data["country_counts"],
-# keyed by uppercase ISO code, so the country dropdown (rendered on every
-# page) reads a precomputed count instead of scanning the clubs collection.
-# Counts only language == "en" docs to avoid double-counting language clones.
+# keyed by uppercase ISO code, so the country dropdown (on every page) reads a
+# precomputed count instead of scanning the clubs collection. Only counts
+# language == "en" docs so the language clones don't get counted twice.
 
 module GameClub
   class CountryCounts < Jekyll::Generator

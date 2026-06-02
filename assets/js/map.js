@@ -76,7 +76,6 @@
       return this;
     },
 
-    // Recentre to a country profile (e.g. after the user switches country).
     recenterToCountry: function (profile) {
       if (!this.map || !profile) return;
       this.map.setView(profile.map_center, profile.map_zoom, { animate: true });
@@ -156,10 +155,10 @@
       }
     },
 
-    // Frame the map around a specific subset of clubs (e.g. just the active
-    // country's clubs) even when the marker layer contains more. Falls back
-    // to country defaults when the subset is empty or too small to make a
-    // meaningful bounds (a single pin would zoom in past the country view).
+    // Frame the map around a subset of clubs (e.g. just the active country's)
+    // even when the marker layer holds more. Falls back to country defaults
+    // when the subset is empty or too small to make meaningful bounds, since
+    // a single pin would zoom in past the country view.
     fitToBounds: function (clubs) {
       var coords = [];
       for (var i = 0; i < clubs.length; i++) {

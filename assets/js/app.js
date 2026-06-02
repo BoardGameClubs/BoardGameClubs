@@ -76,23 +76,20 @@
     activeCountry = profile;
     var scoped = clubsForCountry(profile.code);
 
-    // Re-init search with the new dataset + earth radius.
     search.allClubs = scoped;
     search.setCountry(profile);
 
-    // Tell location.js about the new postcode service / debounce.
     if (window.GameClubLocation && window.GameClubLocation.setCountry) {
       window.GameClubLocation.setCountry(profile);
     }
     updateSearchPlaceholder(profile);
 
-    // Distance dropdown ranges change between countries.
     populateDistanceOptions(profile);
 
-    // update() will call map.fitToMarkers() to frame the new country's clubs
-    // — that gives a tighter, more useful view than the static map_center +
-    // map_zoom defaults. The defaults are only used as a fallback when no
-    // clubs are visible (e.g. an empty result set).
+    // update() calls map.fitToMarkers() to frame the new country's clubs,
+    // which gives a tighter view than the static map_center + map_zoom
+    // defaults. Those defaults only kick in when no clubs are visible
+    // (e.g. an empty result set).
     update(true);
   }
 
@@ -110,16 +107,12 @@
         "</option>";
     });
     distanceFilter.innerHTML = html;
-    // If the previous value is still valid in the new set, keep it.
     if (currentValue && options.indexOf(parseInt(currentValue, 10)) !== -1) {
       distanceFilter.value = currentValue;
     }
   }
 
   function updateSearchPlaceholder(profile) {
-    // Placeholder lives at the search input. The current label depends on
-    // the active postcode service: keep the localised string but make it
-    // clear what format is expected.
     var placeholder = i18n.search_placeholder || "";
     var inputs = [
       document.getElementById("search-input"),
@@ -209,15 +202,15 @@
 
   function update(fitMap) {
     var filteredForList = search.getFiltered();
-    // Map shows pins from every country (same text/type/day filters applied,
-    // distance filter intentionally skipped) so users browsing one country
-    // still see clubs in others. The sidebar list stays scoped to the active
-    // country to keep units/sort/postcode-search behaviour coherent.
+    // The map shows pins from every country (same text/type/day filters, but
+    // no distance filter) so users browsing one country still see clubs in
+    // others. The sidebar list stays scoped to the active country to keep
+    // units, sort and postcode search behaving consistently.
     var pinsForMap = search.getMapPins(ALL_CLUBS);
     map.addClubs(pinsForMap);
     if (fitMap && !map.userMarker) {
-      // Fit to the active country's clubs, not the global pins — otherwise
-      // the map would zoom out to span the whole continent on first load.
+      // Fit to the active country's clubs, not the global pins, or the map
+      // would zoom out to span the whole continent on first load.
       map.fitToBounds(filteredForList);
     }
     renderCards(filteredForList);
