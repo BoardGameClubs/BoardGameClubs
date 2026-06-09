@@ -55,7 +55,7 @@ jobs:
               exit 1
             end
 
-            required_keys = %w[name slug url days frequency location description]
+            required_keys = %w[name slug url days frequency location]
             errors = []
 
             clubs.each_with_index do |club, i|
