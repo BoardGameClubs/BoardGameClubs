@@ -2,13 +2,13 @@
 country: "GB"
 name: "Farnborough Board Games"
 days: ["Thursday"]
-time: "7:00pm - 10:00pm"
+time: "7:00pm - 10:30pm"
 frequency: "Weekly"
 location:
-  name: "Monkey Puzzle (Brewer's Fayre)"
-  address: "Monkey Puzzle (Brewer's Fayre), Farnborough, GU14 0LE"
-  lat: 51.288782720425026
-  lng: -0.7786554104110263
+  name: "The Gloster"
+  address: "The Gloster, O'Gorman Ave, Farnborough GU14 7DL"
+  lat: 51.28487775403996
+  lng: -0.7548685112457548
 cost: "Free"
 image: ""
 website: ""
