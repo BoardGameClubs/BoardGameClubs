@@ -3,7 +3,7 @@ country: "CH"
 name: "Strategiespiele Bern"
 type: ["Board Games"]
 days: ["Friday"]
-time: "20:00"
+time: "19:00"
 frequency: "Weekly"
 location:
   name: "Villa Stucki"
@@ -18,5 +18,5 @@ facebook: ""
 discord: ""
 bgg: "https://boardgamegeek.com/guild/2469"
 description: >-
-  Wir sind eine Gruppe von Brettspielern, die längere Strategiespiele mögen. Neue Mitspieler willkommen. Wir treffen uns regelmässig am Freitagabend von 20:00 bis Spielende (meistens zwischen 23:30 Uhr und 01:30 Uhr). Mitmachen ist einfach: auf unserer Website anmelden, damit wir wissen, dass noch jemand kommt, und dann pünktlich um 20 Uhr in der Villa Stucki auftauchen.
+  Wir sind eine Gruppe von Brettspielern, die längere Strategiespiele mögen. Neue Mitspieler willkommen. Wir treffen uns regelmässig am Freitagabend von 19:00 bis Spielende (meistens zwischen 23:30 Uhr und 01:30 Uhr). Mitmachen ist einfach: auf unserer Website anmelden, damit wir wissen, dass noch jemand kommt, und dann pünktlich um 19 Uhr in der Villa Stucki auftauchen.
 ---
