@@ -1,9 +1,9 @@
 ---
 country: "GB"
-name: "East Leeds RPG, Board Games & Warhammer"
-type: ["Board Games", "RPG", "Wargames"]
+name: "East Leeds Board Gamers"
+type: ["Board Games"]
 days: ["Tuesday"]
-time: "6:00pm - 11:00pm"
+time: "7:00pm - 11:00pm"
 frequency: "Weekly"
 location:
   name: "The Brown Cow"
@@ -13,10 +13,9 @@ location:
 cost: "Free"
 age_restriction: ""
 image: "east_leeds.png"
-website: ""
+website: "https://www.elbg.co.uk"
 facebook: "https://www.facebook.com/groups/950975131702269"
 description: >-
-  Board games, RPGs, and Warhammer with dedicated battlefields and scenery.
-  Games range from gateway titles to heavier euros and thematic games. Bar
-  and food available.
+  Weekly game night, starting at 7pm and running till 11pm. Drinks, meals,snacks and parking are available at the venue.
+  We are in the function room upstairs.
 ---
