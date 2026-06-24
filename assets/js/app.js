@@ -58,6 +58,13 @@
         initialised = true;
         if (window.GameClubCountry) {
           window.GameClubCountry.onChange(handleCountryChange);
+          // A no-signal visitor we couldn't place in a supported country: the
+          // map shows every country's pins anyway, so just frame the globe.
+          if (window.GameClubCountry.onWorldView) {
+            window.GameClubCountry.onWorldView(function () {
+              if (map) map.fitWorld();
+            });
+          }
           // Apply a country that async geo-detection resolved before the
           // listener was registered.
           var current = window.GameClubCountry.getActive();

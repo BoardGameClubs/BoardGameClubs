@@ -88,24 +88,53 @@
 
   // First-load IP geolocation for a fresh visitor with no explicit country
   // signal. Never blocks first paint, and only re-scopes if we support the
-  // detected country; otherwise it stays on the default.
+  // detected country. When detection fails or lands on a country we don't
+  // cover, we ask the map to frame the whole world rather than leaving the
+  // visitor parked on an arbitrary page default they never chose.
   var GEO_ENDPOINT = "https://ipapi.co/json/";
+
+  // Subscribers (the map) that want to fall back to a global view when we
+  // can't place a no-signal visitor in a supported country.
+  var worldViewListeners = [];
+  // Latch: IP detection can resolve before app.js registers its listener, so
+  // remember a pending request and replay it to late subscribers.
+  var worldViewRequested = false;
+
+  function onWorldView(cb) {
+    worldViewListeners.push(cb);
+    if (worldViewRequested) {
+      try { cb(); } catch (e) { console.error(e); }
+    }
+    return function unsubscribe() {
+      var idx = worldViewListeners.indexOf(cb);
+      if (idx !== -1) worldViewListeners.splice(idx, 1);
+    };
+  }
+
+  function requestWorldView() {
+    // Only meaningful for a visitor who gave us no explicit country signal;
+    // anyone who picked a country (URL, storage, localised page) keeps it.
+    if (resolvedFromExplicitSignal) return;
+    worldViewRequested = true;
+    for (var i = 0; i < worldViewListeners.length; i++) {
+      try { worldViewListeners[i](); } catch (e) { console.error(e); }
+    }
+  }
 
   function maybeDetectCountry() {
     if (resolvedFromExplicitSignal) return;
-    if (!window.fetch) return;
+    if (!window.fetch) { requestWorldView(); return; }
     fetch(GEO_ENDPOINT)
       .then(function (res) { return res.ok ? res.json() : null; })
       .then(function (data) {
-        if (!data) return;
-        var code = canonicalise(data.country_code || data.country || "");
-        if (!code) return;
         if (resolvedFromExplicitSignal) return;
+        var code = data ? canonicalise(data.country_code || data.country || "") : "";
+        // No usable country, or one we don't cover: show the whole globe.
+        if (!code || !getProfile(code)) { requestWorldView(); return; }
         if (code === activeCode) return;
-        if (!getProfile(code)) return;
         setActive(code, { persist: false, updateUrl: true, replaceUrl: true });
       })
-      .catch(function () {});
+      .catch(function () { requestWorldView(); });
   }
 
   var activeCode = null;
@@ -354,6 +383,7 @@
     getProfile: getProfile,
     setActive: setActive,
     onChange: onChange,
+    onWorldView: onWorldView,
     getCountryLabel: getCountryLabel
   };
 

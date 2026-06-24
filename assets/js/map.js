@@ -155,6 +155,14 @@
       }
     },
 
+    // Zoom right out to the whole world. Used as the first-load fallback for a
+    // visitor we couldn't place in a supported country, so they see the global
+    // map rather than an arbitrary country default.
+    fitWorld: function () {
+      if (this.userMarker) return;
+      this.map.setView([20, 0], 2);
+    },
+
     // Frame the map around a subset of clubs (e.g. just the active country's)
     // even when the marker layer holds more. Falls back to country defaults
     // when the subset is empty or too small to make meaningful bounds, since

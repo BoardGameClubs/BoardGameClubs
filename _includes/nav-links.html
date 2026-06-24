@@ -74,13 +74,18 @@
         precomputed in site.data.country_counts (_plugins/country_counts.rb).
         Liquid can't sort by a number, so sort zero-padded "count|code|count"
         keys as strings and reverse.
+
+        NB: this loop binds `nav_country`, not `country`. `{% include %}` shares
+        the parent layout's scope, so assigning to `country` would clobber
+        home.html's `country` (the active-default profile) and leave it on the
+        last iterated entry — which previously made defaultCountryCode = NZ.
       {% endcomment %}
       {% assign country_keys = "" | split: "" %}
       {% for entry in site.data.countries %}
-        {% assign country = entry[1] %}
-        {% assign count = site.data.country_counts[country.code] | default: 0 %}
+        {% assign nav_country = entry[1] %}
+        {% assign count = site.data.country_counts[nav_country.code] | default: 0 %}
         {% assign padded = count | prepend: "0000" | slice: -4, 4 %}
-        {% capture key %}{{ padded }}|{{ country.code }}|{{ count }}{% endcapture %}
+        {% capture key %}{{ padded }}|{{ nav_country.code }}|{{ count }}{% endcapture %}
         {% assign country_keys = country_keys | push: key %}
       {% endfor %}
       {% assign country_keys = country_keys | sort | reverse %}
