@@ -856,6 +856,13 @@ footer_licence:
   fr: "Licence"
   es: "Licencia"
   pl: "Licencja"
+footer_coffee:
+  en: "Buy me a coffee"
+  de: "Spendier mir einen Kaffee"
+  it: "Offrimi un caffè"
+  fr: "Offrez-moi un café"
+  es: "Invítame a un café"
+  pl: "Postaw mi kawę"
 embed_map:
   en: "Embed"
   de: "Einbetten"

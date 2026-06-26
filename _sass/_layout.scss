@@ -749,7 +749,19 @@
   .footer-links {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 1.25rem;
+  }
+
+  .footer-coffee {
+    color: $color-accent;
+    font-weight: 600;
+
+    &:hover {
+      color: $color-accent;
+      text-decoration: underline;
+    }
   }
 
   a {

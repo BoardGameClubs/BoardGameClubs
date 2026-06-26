@@ -16,6 +16,10 @@ A community-built directory powered by an interactive map, covering clubs worldw
 
 [Live Site](https://boardgameclubs.org) · [Add a Club](https://boardgameclubs.org/contribute/) · [Report a Bug](https://github.com/BoardGameClubs/BoardGameClubs/issues/new)
 
+<br>
+
+<a href="https://www.buymeacoffee.com/kkjdaniel" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 </div>
 
 <br>
@@ -45,6 +49,10 @@ bundle exec jekyll serve
 ```
 
 Then visit `http://localhost:4000`.
+
+## Support
+
+This is a free, community-run project. If you find it useful, you can [buy me a coffee](https://www.buymeacoffee.com/kkjdaniel) ☕ to help keep it going.
 
 ## License
 

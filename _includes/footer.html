@@ -20,6 +20,7 @@
     <a href="{{ url_prefix | append: '/licence/' | relative_url }}">{{ i18n.footer_licence[lang] }}</a>
     <a href="{{ '/embed-builder/' | relative_url }}">{{ i18n.embed_map[lang] }}</a>
     {% if site.repository %}<a href="https://github.com/{{ site.repository }}">GitHub</a>{% endif %}
+    <a class="footer-coffee" href="https://www.buymeacoffee.com/kkjdaniel" target="_blank" rel="noopener">☕ {{ i18n.footer_coffee[lang] }}</a>
   </p>
   <p class="footer-count"><a href="{{ url_prefix | append: '/' | relative_url }}">{{ count_label }}</a></p>
 </footer>
