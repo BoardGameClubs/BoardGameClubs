@@ -50,13 +50,11 @@ bundle exec jekyll serve
 
 Then visit `http://localhost:4000`.
 
-Jekyll is slow (~45–60s full build). For faster local dev, use [rustkyll](https://github.com/alexeygrigorev/rustkyll), a drop-in replacement:
+Jekyll is slow (~45–60s full build). For faster local dev, use our [rustkyll fork](https://github.com/BoardGameClubs/rustkyll), a drop-in Rust replacement that also emulates this site's custom `_plugins/` (language clones, country counts):
 
 ```bash
-uvx rustkyll serve
+uvx --from git+https://github.com/BoardGameClubs/rustkyll rustkyll serve
 ```
-
-> **Note:** rustkyll can't run the custom `_plugins/` (language clones, country counts), so use Jekyll for the full localised build and deploy.
 
 ## Support
 
