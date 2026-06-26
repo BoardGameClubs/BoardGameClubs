@@ -56,7 +56,7 @@ Jekyll is slow (~45–60s full build). For faster local dev, use [rustkyll](http
 uvx rustkyll serve
 ```
 
-It can't run the custom `_plugins/` (language clones, country counts), so use Jekyll for the full localised build and deploy.
+> **Note:** rustkyll can't run the custom `_plugins/` (language clones, country counts), so use Jekyll for the full localised build and deploy.
 
 ## Support
 
