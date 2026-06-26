@@ -50,6 +50,21 @@ bundle exec jekyll serve
 
 Then visit `http://localhost:4000`.
 
+### Faster builds with rustkyll
+
+A full Jekyll build renders ~8,400 pages and takes ~45–60s, which makes iterating
+on chrome/SCSS/JS slow. For faster local dev, use [rustkyll](https://github.com/alexeygrigorev/rustkyll),
+a drop-in Jekyll replacement written in Rust that reads the same source files and
+builds the site in a fraction of the time:
+
+```bash
+uvx rustkyll serve
+```
+
+Note: the multi-language clones and per-country counts come from custom Ruby
+`_plugins/`, which rustkyll can't run — use `bundle exec jekyll build` when you
+need the full localised output (and for the production deploy).
+
 ## Support
 
 This is a free, community-run project. If you find it useful, you can [buy me a coffee](https://www.buymeacoffee.com/kkjdaniel) ☕ to help keep it going.
