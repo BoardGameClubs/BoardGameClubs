@@ -1,17 +1,19 @@
 ---
 country: "GB"
 name: "Afternoon Play"
+type: ["Board Games"]
 days: ["Sunday"]
 time: "2:00pm"
 frequency: "Monthly"
 location:
-  name: "Waterside Tap, 46 Gas St, Birmingham"
-  address: "Waterside Tap, 46 Gas St, Birmingham, Birmingham, B1 2JT"
-  lat: 52.47688
-  lng: -1.90943
-cost: "Free (but please patronise the bar)"
+  name: "Gas Street Social"
+  address: "166–168 Wharfside Street, The Mailbox, Birmingham, B1 1RL"
+  lat: 52.4752926
+  lng: -1.9063321
+cost: "Free (but please patronize the bar)"
 image: "afternoon-play.png"
 website: "https://afternoonplay.co.uk/"
+meetup: "https://www.meetup.com/board-and-card-game-enthusiasts-birmingham/"
 facebook: "https://www.facebook.com/afternoonplay/"
 discord: "https://discord.gg/NyjUBhe"
 bgg: "https://boardgamegeek.com/guild/982"
