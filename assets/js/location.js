@@ -64,19 +64,34 @@
       this.debounceMs = this.postcodeService === "nominatim" ? 1100 : 300;
     },
 
-    // Given a user-typed string, return the country profile whose postcode
-    // regex matches it, or null. Lets us auto-switch country: a UK user who
-    // types "10115" on / gets the lookup run against DE/Nominatim.
-    detectCountryFromQuery: function (query) {
+    // Given a user-typed string, return the country profiles whose postcode
+    // regex matches it. Postcode formats aren't unique — a 5-digit US ZIP is
+    // also a valid DE/IT/FR/ES/… code — so:
+    // - if the active country's format matches, return only the active
+    //   profile: a valid local code must never switch the country;
+    // - otherwise return every match. One match → the caller auto-switches
+    //   (e.g. a UK user typing a Canadian code). Several → the caller looks
+    //   the code up in all of them and lets the user pick.
+    detectCountriesFromQuery: function (query) {
       var countries = window.GameClubCountries || {};
+      var activeCode = window.GameClubCountry &&
+        window.GameClubCountry.getActiveCode &&
+        window.GameClubCountry.getActiveCode();
+      var active = activeCode && countries[activeCode.toLowerCase()];
+      if (active && active.postcode && active.postcode.regex) {
+        try {
+          if (new RegExp(active.postcode.regex, "i").test(query)) return [active];
+        } catch (e) {}
+      }
+      var matches = [];
       for (var k in countries) {
         var p = countries[k];
         if (!p || !p.postcode || !p.postcode.regex) continue;
         try {
-          if (new RegExp(p.postcode.regex, "i").test(query)) return p;
+          if (new RegExp(p.postcode.regex, "i").test(query)) matches.push(p);
         } catch (e) {}
       }
-      return null;
+      return matches;
     },
 
     bindInputEvents: function (input, suggestionsEl) {
@@ -91,16 +106,19 @@
           return;
         }
 
-        var matchingProfile = self.detectCountryFromQuery(query);
-        var isPostcode = !!matchingProfile;
+        var matchingProfiles = self.detectCountriesFromQuery(query);
+        var isPostcode = matchingProfiles.length > 0;
+        var isAmbiguous = matchingProfiles.length > 1;
 
-        // If the typed query matches a different country's postcode, switch.
-        // The country-change callback in app.js re-initialises us with the
-        // new profile; we then run the lookup against the new service.
-        if (isPostcode) {
+        // Unambiguous foreign postcode: switch country. The country-change
+        // callback in app.js re-initialises us with the new profile; we then
+        // run the lookup against the new service. An ambiguous format (shared
+        // by several countries) doesn't switch — we look it up everywhere it
+        // could be and the picked suggestion decides (selectSuggestion).
+        if (isPostcode && !isAmbiguous) {
           var activeCode = window.GameClubCountry && window.GameClubCountry.getActiveCode();
-          if (matchingProfile.code !== activeCode) {
-            window.GameClubCountry.setActive(matchingProfile.code, {
+          if (matchingProfiles[0].code !== activeCode) {
+            window.GameClubCountry.setActive(matchingProfiles[0].code, {
               persist: false,        // don't clobber the user's saved choice
               updateUrl: true,
               replaceUrl: false
@@ -118,9 +136,13 @@
 
         self.showLoadingIn(suggestionsEl);
 
-        var delay = isPostcode ? self.debounceMs : 1100; // Nominatim ~1 req/s
+        // Everything except the single-country postcodes.io path hits
+        // Nominatim (~1 req/s policy).
+        var delay = (isPostcode && !isAmbiguous) ? self.debounceMs : 1100;
         self.debounceTimer = setTimeout(function () {
-          if (isPostcode) {
+          if (isAmbiguous) {
+            self.fetchPostcodeMulti(query, matchingProfiles, suggestionsEl, input);
+          } else if (isPostcode) {
             self.fetchSuggestionsFor(query, suggestionsEl, input);
           } else {
             self.fetchPlaceName(query, suggestionsEl, input);
@@ -146,7 +168,7 @@
           // Otherwise force a place-name lookup so typing "Berlin"+Enter
           // sets a location even if no dropdown was shown yet (e.g. the
           // user hit Enter inside the debounce window).
-          if (!self.detectCountryFromQuery(query) && self.isPlaceLikeQuery(query)) {
+          if (self.detectCountriesFromQuery(query).length === 0 && self.isPlaceLikeQuery(query)) {
             e.preventDefault();
             clearTimeout(self.debounceTimer);
             self.showLoadingIn(suggestionsEl);
@@ -197,6 +219,64 @@
       } else {
         this.fetchPostcodesIo(query, suggestionsEl, input);
       }
+    },
+
+    // A postcode format shared by several countries (none of them the active
+    // one): look it up in all of them at once and label each hit with its
+    // country. Picking a suggestion switches the active country via the
+    // countryCode handling in selectSuggestion.
+    fetchPostcodeMulti: function (query, profiles, suggestionsEl, input) {
+      var self = this;
+      var codes = [];
+      for (var i = 0; i < profiles.length; i++) {
+        var c = profiles[i].geocode_country_code || profiles[i].code;
+        if (c) codes.push(c.toLowerCase());
+      }
+      var url = "https://nominatim.openstreetmap.org/search" +
+        "?postalcode=" + encodeURIComponent(query) +
+        "&countrycodes=" + encodeURIComponent(codes.join(",")) +
+        "&format=json&limit=8&addressdetails=1";
+      fetch(url, {
+        headers: { "Accept": "application/json" }
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (results) {
+          if (!Array.isArray(results) || results.length === 0) {
+            self.hideSuggestionsEl(suggestionsEl);
+            return;
+          }
+          var seen = {};
+          var suggestions = [];
+          for (var i = 0; i < results.length; i++) {
+            var r = results[i];
+            var lat = parseFloat(r.lat);
+            var lng = parseFloat(r.lon);
+            if (isNaN(lat) || isNaN(lng)) continue;
+            var addr = r.address || {};
+            var country = (addr.country_code || "").toUpperCase();
+            var place = addr.city || addr.town || addr.village ||
+                        addr.municipality || addr.county || "";
+            var label = query + (place ? " · " + place : "") +
+                        (country ? " (" + country + ")" : "");
+            if (seen[label]) continue;
+            seen[label] = true;
+            suggestions.push({
+              label: label,
+              lookup: null,
+              lat: lat,
+              lng: lng,
+              countryCode: country
+            });
+          }
+          if (suggestions.length === 0) {
+            self.hideSuggestionsEl(suggestionsEl);
+            return;
+          }
+          self.showSuggestionsIn(suggestions, suggestionsEl, input);
+        })
+        .catch(function () {
+          self.hideSuggestionsEl(suggestionsEl);
+        });
     },
 
     fetchPostcodesIo: function (query, suggestionsEl, input) {

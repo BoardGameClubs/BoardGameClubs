@@ -888,6 +888,20 @@
   }
 
 
+  .club-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.88rem;
+    color: $color-text-light;
+
+    &:hover {
+      color: $color-accent;
+      text-decoration: none;
+    }
+  }
+
   .detail-map {
     width: 100%;
     height: 280px;

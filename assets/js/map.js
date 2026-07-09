@@ -76,6 +76,22 @@
       return this;
     },
 
+    getView: function () {
+      if (!this.map) return null;
+      var c = this.map.getCenter();
+      return { lat: c.lat, lng: c.lng, zoom: this.map.getZoom() };
+    },
+
+    setView: function (lat, lng, zoom) {
+      if (!this.map) return;
+      this.map.setView([lat, lng], zoom);
+    },
+
+    // Fires after any pan/zoom settles (user drag or programmatic fit).
+    onViewChange: function (cb) {
+      if (this.map) this.map.on("moveend", cb);
+    },
+
     recenterToCountry: function (profile) {
       if (!this.map || !profile) return;
       this.map.setView(profile.map_center, profile.map_zoom, { animate: true });

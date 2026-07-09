@@ -680,6 +680,7 @@ us:
   postcode:
     service: "nominatim"
     regex: "^\\d{5}(-\\d{4})?$"
+    term: "zip"
   distance_options: [25, 50, 100, 250]
   currency: "USD"
   currency_symbol: "$"
@@ -705,6 +706,7 @@ ca:
   postcode:
     service: "nominatim"
     regex: "^[A-Z]\\d[A-Z] ?\\d[A-Z]\\d$"
+    term: "postal_code"
   distance_options: [25, 50, 100, 250]
   currency: "CAD"
   currency_symbol: "$"

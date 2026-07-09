@@ -12,6 +12,12 @@
   var search;
   var debounceTimer;
   var initialised = false;
+  // The picked location pin ({lat, lng, label}), mirrored into the URL so
+  // navigating to a club page and back restores it.
+  var userLocation = null;
+  // Set when a map viewport was restored from the URL: the next fit-to-country
+  // in update() must not stomp the restored view.
+  var suppressNextFit = false;
 
   function getActiveCountry() {
     if (window.GameClubCountry) return window.GameClubCountry.getActive();
@@ -52,10 +58,18 @@
         var scoped = clubsForCountry(activeCountry.code);
         search = window.GameClubSearch.init(scoped, activeCountry);
         populateDistanceOptions(activeCountry);
+        updateSearchPlaceholder(activeCountry);
         restoreFromUrl();
-        update(true);
         bindEvents();
+        restoreLocationFromUrl();
+        restoreMapViewFromUrl();
+        update(true);
         initialised = true;
+        // Keep the URL's map view current so back/forward and reload land
+        // where the user left the map, wherever in the world that was.
+        map.onViewChange(function () {
+          if (initialised) writeUrlParams();
+        });
         if (window.GameClubCountry) {
           window.GameClubCountry.onChange(handleCountryChange);
           // A no-signal visitor we couldn't place in a supported country: the
@@ -120,7 +134,11 @@
   }
 
   function updateSearchPlaceholder(profile) {
-    var placeholder = i18n.search_placeholder || "";
+    // Countries can name their postcode differently (US "ZIP code",
+    // CA "postal code") via postcode.term in countries.yml.
+    var term = profile && profile.postcode && profile.postcode.term;
+    var placeholder = (term && i18n["search_placeholder_" + term]) ||
+      i18n.search_placeholder || "";
     var inputs = [
       document.getElementById("search-input"),
       document.getElementById("search-input-mobile")
@@ -165,6 +183,42 @@
     }
   }
 
+  // Restore a location pin (postcode/place/geolocate pick) from the URL.
+  // Runs after bindEvents so GameClubLocation is initialised (the pill
+  // element only exists to setActive on after init).
+  function restoreLocationFromUrl() {
+    var params = new URLSearchParams(window.location.search);
+    var lat = parseFloat(params.get("lat"));
+    var lng = parseFloat(params.get("lng"));
+    if (isNaN(lat) || isNaN(lng)) return;
+    var label = params.get("loc") || i18n.my_location || "My location";
+
+    userLocation = { lat: lat, lng: lng, label: label };
+    search.setUserLocation(lat, lng);
+    map.showUserLocation(lat, lng);
+    var distanceFilter = document.getElementById("distance-filter");
+    if (distanceFilter) distanceFilter.disabled = false;
+    if (window.GameClubLocation && window.GameClubLocation.setActive) {
+      window.GameClubLocation.setActive(label);
+    }
+  }
+
+  // Restore the map viewport ("map=lat,lng,zoom") from the URL. Runs after
+  // restoreLocationFromUrl on purpose: the saved viewport is where the user
+  // actually left the map, which may be nowhere near their location pin
+  // (e.g. browsing DE clubs, then panning to the US).
+  function restoreMapViewFromUrl() {
+    var params = new URLSearchParams(window.location.search);
+    var parts = (params.get("map") || "").split(",");
+    if (parts.length !== 3) return;
+    var lat = parseFloat(parts[0]);
+    var lng = parseFloat(parts[1]);
+    var zoom = parseInt(parts[2], 10);
+    if (isNaN(lat) || isNaN(lng) || isNaN(zoom)) return;
+    map.setView(lat, lng, zoom);
+    suppressNextFit = true;
+  }
+
   function readUrlParams() {
     var params = new URLSearchParams(window.location.search);
     var daysStr = params.get("days") || "";
@@ -202,6 +256,15 @@
     if (types) params.set("type", types);
     if (days) params.set("days", days);
     if (distance) params.set("distance", distance);
+    if (userLocation) {
+      params.set("lat", userLocation.lat.toFixed(5));
+      params.set("lng", userLocation.lng.toFixed(5));
+      params.set("loc", userLocation.label);
+    }
+    var view = map && map.getView ? map.getView() : null;
+    if (view) {
+      params.set("map", view.lat.toFixed(5) + "," + view.lng.toFixed(5) + "," + view.zoom);
+    }
 
     var newUrl = window.location.pathname + (params.toString() ? "?" + params.toString() : "");
     history.replaceState(null, "", newUrl);
@@ -215,10 +278,13 @@
     // units, sort and postcode search behaving consistently.
     var pinsForMap = search.getMapPins(ALL_CLUBS);
     map.addClubs(pinsForMap);
-    if (fitMap && !map.userMarker) {
-      // Fit to the active country's clubs, not the global pins, or the map
-      // would zoom out to span the whole continent on first load.
-      map.fitToBounds(filteredForList);
+    if (fitMap) {
+      if (!map.userMarker && !suppressNextFit) {
+        // Fit to the active country's clubs, not the global pins, or the map
+        // would zoom out to span the whole continent on first load.
+        map.fitToBounds(filteredForList);
+      }
+      suppressNextFit = false;
     }
     renderCards(filteredForList);
     updateResultCount(filteredForList.length, search.allClubs.length);
@@ -496,6 +562,7 @@
 
     window.GameClubLocation.init(
       function (lat, lng, label) {
+        userLocation = { lat: lat, lng: lng, label: label };
         search.setQuery("");
         if (searchInput) searchInput.value = "";
         if (searchInputMobile) searchInputMobile.value = "";
@@ -505,6 +572,7 @@
         update(true);
       },
       function () {
+        userLocation = null;
         search.clearUserLocation();
         search.setMaxDistance(0);
         map.removeUserLocation();

@@ -374,12 +374,30 @@ lang_banner_dismiss:
 
 # --- Search & filter ---
 search_placeholder:
-  en: "Search by postcode, club name, or location..."
-  de: "Postleitzahl, Vereinsname oder Ort suchen..."
-  it: "Cerca per CAP, nome del club o località..."
-  fr: "Rechercher par code postal, nom de club ou lieu..."
-  es: "Busca por código postal, nombre del club o ubicación..."
-  pl: "Szukaj według kodu pocztowego, nazwy klubu lub miejsca..."
+  en: "Search by postcode, location, or club name..."
+  de: "Postleitzahl, Ort oder Vereinsname suchen..."
+  it: "Cerca per CAP, località o nome del club..."
+  fr: "Rechercher par code postal, lieu ou nom de club..."
+  es: "Busca por código postal, ubicación o nombre del club..."
+  pl: "Szukaj według kodu pocztowego, miejsca lub nazwy klubu..."
+
+# Placeholder variants for countries whose postcode goes by another name
+# (selected via postcode.term in countries.yml; falls back to search_placeholder).
+search_placeholder_zip:
+  en: "Search by ZIP code, location, or club name..."
+  de: "ZIP-Code, Ort oder Vereinsname suchen..."
+  it: "Cerca per codice ZIP, località o nome del club..."
+  fr: "Rechercher par code ZIP, lieu ou nom de club..."
+  es: "Busca por código ZIP, ubicación o nombre del club..."
+  pl: "Szukaj według kodu ZIP, miejsca lub nazwy klubu..."
+
+search_placeholder_postal_code:
+  en: "Search by postal code, location, or club name..."
+  de: "Postleitzahl, Ort oder Vereinsname suchen..."
+  it: "Cerca per codice postale, località o nome del club..."
+  fr: "Rechercher par code postal, lieu ou nom de club..."
+  es: "Busca por código postal, ubicación o nombre del club..."
+  pl: "Szukaj według kodu pocztowego, miejsca lub nazwy klubu..."
 
 searching:
   en: "Searching…"
@@ -753,6 +771,14 @@ directions:
   fr: "Itinéraire"
   es: "Cómo llegar"
   pl: "Trasa"
+
+back_to_results:
+  en: "Back to results"
+  de: "Zurück zu den Ergebnissen"
+  it: "Torna ai risultati"
+  fr: "Retour aux résultats"
+  es: "Volver a los resultados"
+  pl: "Powrót do wyników"
 
 suggest_edit:
   en: "Suggest an edit"
