@@ -45,8 +45,8 @@
   padding: 0.85rem 1.25rem;
   position: relative;
   z-index: 1010;
-  border-bottom: 3px solid $color-accent;
-  box-shadow: 0 2px 0 rgba($color-accent, 0.25), 0 4px 16px rgba(0, 0, 0, 0.06);
+  border-bottom: 2px solid $color-accent;
+  box-shadow: 0 1px 0 rgba($color-accent, 0.25), 0 4px 16px rgba(0, 0, 0, 0.06);
 
   // Fix header in place on mobile home page so it doesn't scroll away
   // when browser shifts viewport on input focus

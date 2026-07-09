@@ -37,7 +37,10 @@ labels) are localised separately in _layouts/club.html.{% endcomment %}
     window.GameClub = {
       baseurl: "{{ site.baseurl }}",
       language: {{ lang | jsonify }},
-      defaultCountryCode: {{ country.code | jsonify }}
+      defaultCountryCode: {{ country.code | jsonify }},
+      // Club pages imply their country (the club's own), like localised
+      // pages do — a saved country choice must not override it.
+      countryImplied: {% if page.layout == "club" %}true{% else %}false{% endif %}
     };
     window.GameClubCountries = {{ site.data.countries | jsonify }};
     window.GameClubI18n = {

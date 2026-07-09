@@ -56,7 +56,17 @@
   function writeUrlCode(code, replace) {
     var params = new URLSearchParams(window.location.search);
     var defaultCode = canonicalise((window.GameClub && window.GameClub.defaultCountryCode) || "GB");
-    if (code === defaultCode) {
+    // Only drop the param when a param-less URL would resolve to the same
+    // country anyway. On English pages localStorage outranks the page
+    // default, so if a different saved choice exists (e.g. DE saved,
+    // postcode-switched to GB with persist:false) the param must stay or
+    // reload/back would silently revert to the saved country. Localised
+    // and club pages ignore localStorage (see resolveInitial), so only
+    // the default matters there.
+    var pageLang = (window.GameClub && window.GameClub.language) || "en";
+    var countryImplied = !!(window.GameClub && window.GameClub.countryImplied);
+    var storedCode = (pageLang === "en" && !countryImplied) ? readStoredCode() : null;
+    if (code === defaultCode && (!storedCode || storedCode === code)) {
       params.delete(URL_PARAM);
     } else {
       params.set(URL_PARAM, code);
@@ -77,10 +87,12 @@
     var fromUrl = readUrlCode();
     if (fromUrl && getProfile(fromUrl)) { resolvedFromExplicitSignal = true; return fromUrl; }
     // On a localised page (/de/, /it/, …) the URL implies the country choice,
-    // so we ignore any prior localStorage selection and use the page default.
+    // and a club page implies its club's country — either way any prior
+    // localStorage selection is ignored in favour of the page default.
     // The English root falls back to localStorage as before.
     var pageLang = (window.GameClub && window.GameClub.language) || "en";
-    if (pageLang !== "en") { resolvedFromExplicitSignal = true; return defaultCode; }
+    var countryImplied = !!(window.GameClub && window.GameClub.countryImplied);
+    if (pageLang !== "en" || countryImplied) { resolvedFromExplicitSignal = true; return defaultCode; }
     var fromStorage = readStoredCode();
     if (fromStorage && getProfile(fromStorage)) { resolvedFromExplicitSignal = true; return fromStorage; }
     return defaultCode;

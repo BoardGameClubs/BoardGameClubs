@@ -548,8 +548,6 @@
       if (this.pill) {
         this.pill.style.display = "none";
       }
-      var focusTarget = this.input && this.input.offsetParent !== null ? this.input : this.inputMobile;
-      if (focusTarget) focusTarget.focus();
       if (this.onLocationClear) {
         this.onLocationClear();
       }

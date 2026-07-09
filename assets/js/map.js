@@ -139,7 +139,7 @@
           ? window.GameClubApp.localiseClubUrl(club.url)
           : club.url;
         var popupContent =
-          '<a class="popup-card" href="' + clubHref + '">' +
+          '<a class="popup-card" href="' + clubHref + '" data-club-country="' + self.escapeHtml(club.country || "") + '">' +
           '<div class="popup-body">' +
           popupIcon +
           '<div class="popup-content">' +
@@ -221,8 +221,7 @@
       });
 
       this.userMarker = L.marker([lat, lng], { icon: icon, zIndexOffset: 1000 })
-        .addTo(this.map)
-        .bindPopup("You are here");
+        .addTo(this.map);
 
       var bounds = this.markers.getBounds();
       if (bounds.isValid()) {

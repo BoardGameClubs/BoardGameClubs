@@ -70,6 +70,27 @@
         map.onViewChange(function () {
           if (initialised) writeUrlParams();
         });
+        // Clicking through to a club in another country is a statement of
+        // intent: the visitor is browsing THAT country now. Rewrite this
+        // page's history entry to the club's country just before leaving,
+        // so pressing back on the club page restores that context (map
+        // position is already in the URL; the dataset follows).
+        document.addEventListener("click", function (e) {
+          if (!e.target || !e.target.closest) return;
+          // Modifier/middle clicks open a new tab — this page isn't being
+          // left, so its history entry must stay as-is.
+          if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+          var link = e.target.closest("a[data-club-country]");
+          if (!link) return;
+          var code = link.getAttribute("data-club-country");
+          var active = window.GameClubCountry && window.GameClubCountry.getActiveCode
+            ? window.GameClubCountry.getActiveCode()
+            : null;
+          if (!code || code === active) return;
+          var params = new URLSearchParams(window.location.search);
+          params.set("country", code);
+          history.replaceState(null, "", window.location.pathname + "?" + params.toString());
+        });
         if (window.GameClubCountry) {
           window.GameClubCountry.onChange(handleCountryChange);
           // A no-signal visitor we couldn't place in a supported country: the
@@ -241,11 +262,16 @@
     var searchInput = document.getElementById("search-input");
     var distanceFilter = document.getElementById("distance-filter");
 
-    var params = new URLSearchParams(window.location.search);
-    // Preserve `country` if present (set by the country-selector module).
-    var preservedCountry = params.get("country");
-    params = new URLSearchParams();
-    if (preservedCountry) params.set("country", preservedCountry);
+    var params = new URLSearchParams();
+    // Always stamp the ACTIVE country, never merely preserve an existing
+    // param: the active country can come from sources that never wrote the
+    // URL (postcode/place auto-switch, geo-detect), and a home URL carrying
+    // a location pin but no country resolves to the wrong dataset on
+    // back/reload/share.
+    var activeProfile = getActiveCountry();
+    if (activeProfile && activeProfile.code) {
+      params.set("country", activeProfile.code);
+    }
 
     var q = searchInput ? searchInput.value.trim() : "";
     var days = search.dayFilters.join(",");
@@ -378,7 +404,7 @@
         return (
           '<a class="club-card" href="' +
           escapeHtml(localiseClubUrl(club.url)) +
-          '">' +
+          '" data-club-country="' + escapeHtml(club.country || "") + '">' +
           '<div class="club-card-body">' +
           icon +
           '<div class="club-card-content">' +
