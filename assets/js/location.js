@@ -543,13 +543,16 @@
       }
     },
 
-    clearLocation: function () {
+    // opts are passed through to onLocationClear so programmatic callers
+    // (e.g. dismissal when the map pans out of the country) can ask the
+    // app not to re-fit the map.
+    clearLocation: function (opts) {
       this.activeLabel = null;
       if (this.pill) {
         this.pill.style.display = "none";
       }
       if (this.onLocationClear) {
-        this.onLocationClear();
+        this.onLocationClear(opts || {});
       }
     },
 

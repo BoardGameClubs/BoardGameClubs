@@ -68,7 +68,9 @@
         // Keep the URL's map view current so back/forward and reload land
         // where the user left the map, wherever in the world that was.
         map.onViewChange(function () {
-          if (initialised) writeUrlParams();
+          if (!initialised) return;
+          dismissLocationIfPannedAway();
+          writeUrlParams();
         });
         // Clicking through to a club in another country is a statement of
         // intent: the visitor is browsing THAT country now. Rewrite this
@@ -221,6 +223,24 @@
     if (distanceFilter) distanceFilter.disabled = false;
     if (window.GameClubLocation && window.GameClubLocation.setActive) {
       window.GameClubLocation.setActive(label);
+    }
+  }
+
+  // A location pin only means something near where it was set. When the map
+  // centre leaves the active country's bounds entirely (panned off to browse
+  // another country), the pin and its distance filter are stale context —
+  // dismiss them rather than sorting a faraway list against them.
+  function dismissLocationIfPannedAway() {
+    if (!userLocation) return;
+    var profile = getActiveCountry();
+    var b = profile && profile.bounds;
+    var view = map.getView();
+    if (!b || !b.lat || !b.lng || !view) return;
+    if (view.lat < b.lat[0] || view.lat > b.lat[1] ||
+        view.lng < b.lng[0] || view.lng > b.lng[1]) {
+      if (window.GameClubLocation && window.GameClubLocation.clearLocation) {
+        window.GameClubLocation.clearLocation({ keepView: true });
+      }
     }
   }
 
@@ -597,7 +617,7 @@
         if (distanceFilter) distanceFilter.disabled = false;
         update(true);
       },
-      function () {
+      function (opts) {
         userLocation = null;
         search.clearUserLocation();
         search.setMaxDistance(0);
@@ -606,7 +626,9 @@
           distanceFilter.value = "";
           distanceFilter.disabled = true;
         }
-        update(true);
+        // keepView: the user is mid-pan somewhere else — don't re-fit the
+        // map back to the active country's clubs under them.
+        update(!(opts && opts.keepView));
       }
     );
   }
