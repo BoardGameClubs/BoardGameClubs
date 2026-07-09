@@ -46,7 +46,7 @@ The following features only run when you choose to use them.
 
 ### Postcode search
 
-When you type a postcode into the search box on the UK pages, we send it to [postcodes.io](https://postcodes.io/) to look up the coordinates so we can sort clubs by distance from you. postcodes.io is an open-data service operated by [Ideal Postcodes](https://ideal-postcodes.co.uk/). On the German pages we use [Nominatim](https://nominatim.openstreetmap.org/), the OpenStreetMap geocoding service, to look up German postal codes (PLZ) the same way. We do not store the postcode on our servers.
+When you type a postcode into the search box while browsing UK clubs, we send it to [postcodes.io](https://postcodes.io/) to look up the coordinates so we can sort clubs by distance from you. postcodes.io is an open-data service operated by [Ideal Postcodes](https://ideal-postcodes.co.uk/). For every other country we use [Nominatim](https://nominatim.openstreetmap.org/), the OpenStreetMap geocoding service, to look up postal codes and place names the same way. We do not store the postcode on our servers.
 
 ### "Use my location"
 
