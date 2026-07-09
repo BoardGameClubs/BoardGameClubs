@@ -763,12 +763,20 @@ suggest_edit:
   pl: "Zaproponuj zmianę"
 
 report_club:
-  en: "Report closed or out of date"
-  de: "Geschlossen oder veraltet melden"
-  it: "Segnala chiuso o non aggiornato"
-  fr: "Signaler fermé ou obsolète"
-  es: "Reportar cerrado o desactualizado"
-  pl: "Zgłoś zamknięcie lub nieaktualność"
+  en: "Report issue"
+  de: "Problem melden"
+  it: "Segnala un problema"
+  fr: "Signaler un problème"
+  es: "Reportar un problema"
+  pl: "Zgłoś problem"
+
+label_links:
+  en: "Links"
+  de: "Links"
+  it: "Link"
+  fr: "Liens"
+  es: "Enlaces"
+  pl: "Linki"
 
 external_disclaimer:
   en: "Links lead to external sites we don't control. We're not responsible for their content."

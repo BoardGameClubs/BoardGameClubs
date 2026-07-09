@@ -968,11 +968,20 @@
     }
   }
 
+  .club-links-heading {
+    margin: 2rem 0 0;
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: $color-text-light;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
   .club-links {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-    margin-top: 2rem;
+    margin-top: 0.75rem;
 
     a {
       display: inline-flex;
