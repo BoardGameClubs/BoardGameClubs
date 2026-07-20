@@ -1,20 +1,20 @@
 ---
 country: "DE"
 name: "Gammertinger Spieletreff"
-days: ["Various"]
-time: ""
-frequency: "Monthly"
+days: ["Friday"]
+time: "18:00 - 22:00"
+frequency: "Fortnightly"
 location:
-  name: "Café Fair und mehr"
-  address: "72501 Gammertingen"
-  lat: 48.2562276
-  lng: 9.2546176
+  name: "Evangelisches Gemeindehaus"
+  address: "Roter Dill 13, 72501 Gammertingen"
+  lat: 48.2483829
+  lng: 9.2153251
 cost: ""
 image: ""
-website: "https://www.mariaberg.de/cafe-fair-und-mehr"
+website: "https://spieletreff-gammertingen.de"
 facebook: ""
 discord: ""
 bgg: ""
 description: >-
-  Der Gammertinger Spieletreff findet einmal im Monat im "Café Fair und mehr" statt. Jeder ist willkommen. Gerne können eigene Spiele mitgebracht werden.
+  Der Gammertinger Spieletreff findet vierzehntägig freitags im evangelischen Gemeindehaus statt. Jeder ist willkommen. Gerne können eigene Spiele mitgebracht werden.
 ---
