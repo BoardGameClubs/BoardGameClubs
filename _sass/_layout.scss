@@ -879,7 +879,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 14px 0 10px;
+    padding: 7px 0 5px;
     margin: 0 -1.25rem;
     cursor: grab;
     touch-action: none;
@@ -898,8 +898,8 @@
     user-select: none;
 
     .drawer-chevron {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
       color: $color-accent;
       transition: transform 0.3s ease;
     }
