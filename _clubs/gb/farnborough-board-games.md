@@ -11,7 +11,7 @@ location:
   lng: -0.7548685112457548
 cost: "Free"
 image: ""
-website: ""
+website: "https://farnborough.carrd.co"
 meetup: "https://www.meetup.com/farnborough-board-games-club/"
 facebook: "https://www.facebook.com/groups/farnboroughboardgames/"
 discord: ""
