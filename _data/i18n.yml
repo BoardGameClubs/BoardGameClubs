@@ -299,6 +299,13 @@ country_nz:
   fr: "Nouvelle-Zélande"
   es: "Nueva Zelanda"
   pl: "Nowa Zelandia"
+country_tr:
+  en: "Turkey"
+  de: "Türkei"
+  it: "Turchia"
+  fr: "Turquie"
+  es: "Turquía"
+  pl: "Turcja"
 
 footer_other_countries:
   en: "Other countries:"

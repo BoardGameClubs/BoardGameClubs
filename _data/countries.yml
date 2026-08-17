@@ -737,6 +737,31 @@ br:
   currency_symbol: "R$"
   geocode_country_code: "BR"
 
+tr:
+  code: "TR"
+  name_en: "Turkey"
+  name_de: "Türkei"
+  name_it: "Turchia"
+  name_fr: "Turquie"
+  name_es: "Turquía"
+  name_pl: "Turcja"
+  url_prefix: "/tr"
+  map_center: [39.0, 35.2]
+  map_zoom: 5
+  bounds:
+    lat: [35.8, 42.3]
+    lng: [25.5, 45.0]
+  units: "km"
+  unit_label: "km"
+  earth_radius: 6371
+  postcode:
+    service: "nominatim"
+    regex: "^\\d{5}$"
+  distance_options: [10, 25, 50, 100]
+  currency: "TRY"
+  currency_symbol: "₺"
+  geocode_country_code: "TR"
+
 nz:
   code: "NZ"
   name_en: "New Zealand"
