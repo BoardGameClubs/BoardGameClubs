@@ -1,6 +1,7 @@
 ---
 country: "GB"
 name: "Woking Board Game Club"
+type: ["Board Games"]
 days: ["Tuesday"]
 time: "6:30pm"
 frequency: "Weekly"
@@ -10,7 +11,7 @@ location:
   lat: 51.3149124
   lng: -0.559885
 cost: "Free"
-image: ""
+image: "woking_board_game_club.png"
 website: ""
 facebook: "https://www.facebook.com/groups/1495797070725191"
 discord: ""
