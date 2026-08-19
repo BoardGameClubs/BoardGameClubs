@@ -591,7 +591,7 @@
       align-items: center;
       gap: 0.5rem;
       flex: 1;
-      max-width: 580px;
+      max-width: 660px;
       position: relative;
       z-index: 1001;
     }
@@ -602,7 +602,7 @@
     }
 
     .search-input {
-      background: $color-bg;
+      background: $color-surface;
       border: 1px solid $color-border;
       color: $color-text;
       padding: 0.55rem 2.25rem 0.55rem 1rem;
@@ -635,24 +635,24 @@
     }
 
     .locate-btn--header {
-      background: $color-bg;
+      background: $color-surface;
       border: 1px solid $color-border;
       color: $color-text;
       border-radius: $border-radius;
       padding: 0.55rem 0.95rem;
       font-size: 0.9rem;
       font-weight: 500;
-      transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+      transition: background 0.15s ease, border-color 0.15s ease;
 
       svg {
         color: $color-accent;
       }
 
       &:hover {
-        background: $color-surface;
-        border-color: rgba($color-accent, 0.45);
-        box-shadow: 0 0 0 3px rgba($color-accent, 0.1);
-        transform: translateY(-1px);
+        background: rgba($color-accent, 0.1);
+        border-color: rgba($color-accent, 0.35);
+        box-shadow: none;               // cancel base .locate-btn:hover glow/lift
+        transform: none;
       }
     }
   }
@@ -873,8 +873,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3px 0;
-    margin: 0 -1.25rem;
+    padding: 5px 0 1px;               // total height must stay 32px — the sticky
+    margin: 0 -1.25rem;               // filter bar offsets below it (components.scss)
     cursor: grab;
     touch-action: none;
     position: sticky;
