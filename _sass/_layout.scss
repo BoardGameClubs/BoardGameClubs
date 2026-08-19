@@ -90,15 +90,15 @@
   }
 
   .site-title {
-    font-family: $font-body;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-family: $font-brand;
+    font-size: 1.25rem;
+    font-weight: 700;
     color: $color-text;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
     line-height: 1.2;
 
     .site-title-tld {
-      font-weight: 400;
+      font-weight: 600;
       color: $color-accent;
     }
 
@@ -117,17 +117,6 @@
 
   .site-brand:hover .site-title {
     color: $color-accent;
-  }
-
-  .site-tagline {
-    font-size: 0.68rem;
-    color: $color-text-light;
-    letter-spacing: 0.01em;
-    line-height: 1.2;
-
-    @media (max-width: $bp-sm - 1) {
-      display: none;
-    }
   }
 
   nav {

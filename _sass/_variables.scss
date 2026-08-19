@@ -19,7 +19,7 @@ $color-tag-cost-bg: #2ecc71;    // flat green
 
 // Type colors (flat UI palette)
 $color-type-board-games: #fff;
-$color-type-board-games-bg: #3498db;
+$color-type-board-games-bg: #dd6b20;
 $color-type-rpg: #fff;
 $color-type-rpg-bg: #9b59b6;
 $color-type-wargames: #fff;
@@ -27,11 +27,12 @@ $color-type-wargames-bg: #e74c3c;
 $color-type-botc: #fff;
 $color-type-botc-bg: #e91e63;
 $color-type-tcg: #fff;
-$color-type-tcg-bg: #f39c12;
+$color-type-tcg-bg: #3498db;
 
 // Typography
 $font-body: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 $font-heading: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$font-brand: "Gabarito", "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 $font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 
 // Layout
