@@ -14,6 +14,11 @@
 #
 # Pages has to deploy via GitHub Actions for this to run, since plugin
 # generators aren't on the GitHub Pages whitelist.
+#
+# Set EN_ONLY=1 to skip the clones entirely (English pages only) — cuts the
+# build from ~8,400 pages to ~1,400 for local styling/JS work:
+#   EN_ONLY=1 bundle exec jekyll serve --incremental
+# The /de/, /fr/, … club URLs will 404 while the flag is set.
 
 module GameClub
   class ClubLanguageClones < Jekyll::Generator
@@ -23,6 +28,11 @@ module GameClub
     LANGUAGES = %w[de it fr es pl].freeze
 
     def generate(site)
+      if ENV["EN_ONLY"] == "1"
+        Jekyll.logger.info "ClubLanguageClones:", "EN_ONLY=1 — skipping language clones"
+        return
+      end
+
       originals = site.collections["clubs"].docs.dup
       Jekyll.logger.info "ClubLanguageClones:", "cloning #{originals.size} clubs x #{LANGUAGES.size} languages"
       originals.each do |doc|

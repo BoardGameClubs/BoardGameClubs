@@ -440,6 +440,7 @@
           '<div class="club-tags">' +
           tags +
           "</div>" +
+          '<i data-lucide="chevron-right" class="club-card-chevron"></i>' +
           "</a>"
         );
       })
