@@ -12,12 +12,12 @@ brand_suffix:
   pl: ".org"
 
 tagline:
-  en: "Community-built. Open source. Find your table."
-  de: "Von der Community gebaut. Open Source. Finde deinen Spieltisch."
-  it: "Costruito dalla community. Open source. Trova il tuo tavolo."
-  fr: "Créé par la communauté. Open source. Trouve ta table."
-  es: "Hecho por la comunidad. Código abierto. Encuentra tu mesa."
-  pl: "Tworzone przez społeczność. Open source. Znajdź swój stół."
+  en: "There's a games night near you."
+  de: "In deiner Nähe gibt es einen Spieleabend."
+  it: "C'è una serata giochi vicino a te."
+  fr: "Il y a une soirée jeux près de chez toi."
+  es: "Hay una noche de juegos cerca de ti."
+  pl: "Niedaleko ciebie jest wieczór planszówek."
 
 # --- Nav ---
 nav_map:

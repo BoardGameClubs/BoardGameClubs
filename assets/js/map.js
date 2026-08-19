@@ -2,7 +2,7 @@
   "use strict";
 
   var typeColors = {
-    "Board Games": "#dd6b20",
+    "Board Games": "#ed8936",
     "RPG": "#8b5cf6",
     "Wargames": "#ef4444",
     "BOTC": "#ec4899",
