@@ -592,7 +592,7 @@
   transition: background 0.2s ease;
   animation: fadeSlideIn 0.35s ease both;
 
-  & + & {
+  & + &:not(.club-card-add) {
     border-top: 1px solid rgba($color-border, 0.7);
   }
 
@@ -631,9 +631,16 @@
     transition: color 0.2s ease, opacity 0.2s ease;
   }
 
-  // The "Add a club" tail card has no chevron — keep its padding symmetric
+  // The "Add a club" tail card has no chevron — keep its padding symmetric.
+  // Re-assert the dashed border here so the card-divider rule above can't
+  // override the top edge with a solid line.
   &.club-card-add {
     padding: 1.1rem;
+    border: 1px dashed rgba($color-accent, 0.4);
+
+    &:hover {
+      border-color: $color-accent;
+    }
   }
 
   .club-card-body {
