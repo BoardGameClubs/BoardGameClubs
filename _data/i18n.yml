@@ -381,30 +381,30 @@ lang_banner_dismiss:
 
 # --- Search & filter ---
 search_placeholder:
-  en: "Search by postcode, location, or club name..."
-  de: "Postleitzahl, Ort oder Vereinsname suchen..."
-  it: "Cerca per CAP, località o nome del club..."
-  fr: "Rechercher par code postal, lieu ou nom de club..."
-  es: "Busca por código postal, ubicación o nombre del club..."
-  pl: "Szukaj według kodu pocztowego, miejsca lub nazwy klubu..."
+  en: "Postcode, place or club…"
+  de: "PLZ, Ort oder Verein…"
+  it: "CAP, località o club…"
+  fr: "Code postal, lieu ou club…"
+  es: "Código postal, lugar o club…"
+  pl: "Kod pocztowy, miejsce lub klub…"
 
 # Placeholder variants for countries whose postcode goes by another name
 # (selected via postcode.term in countries.yml; falls back to search_placeholder).
 search_placeholder_zip:
-  en: "Search by ZIP code, location, or club name..."
-  de: "ZIP-Code, Ort oder Vereinsname suchen..."
-  it: "Cerca per codice ZIP, località o nome del club..."
-  fr: "Rechercher par code ZIP, lieu ou nom de club..."
-  es: "Busca por código ZIP, ubicación o nombre del club..."
-  pl: "Szukaj według kodu ZIP, miejsca lub nazwy klubu..."
+  en: "ZIP, place or club…"
+  de: "ZIP, Ort oder Verein…"
+  it: "ZIP, località o club…"
+  fr: "Code ZIP, lieu ou club…"
+  es: "Código ZIP, lugar o club…"
+  pl: "Kod ZIP, miejsce lub klub…"
 
 search_placeholder_postal_code:
-  en: "Search by postal code, location, or club name..."
-  de: "Postleitzahl, Ort oder Vereinsname suchen..."
-  it: "Cerca per codice postale, località o nome del club..."
-  fr: "Rechercher par code postal, lieu ou nom de club..."
-  es: "Busca por código postal, ubicación o nombre del club..."
-  pl: "Szukaj według kodu pocztowego, miejsca lub nazwy klubu..."
+  en: "Postal code, place or club…"
+  de: "PLZ, Ort oder Verein…"
+  it: "CAP, località o club…"
+  fr: "Code postal, lieu ou club…"
+  es: "Código postal, lugar o club…"
+  pl: "Kod pocztowy, miejsce lub klub…"
 
 searching:
   en: "Searching…"
