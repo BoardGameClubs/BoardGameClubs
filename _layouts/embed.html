@@ -54,6 +54,7 @@
 
   <script>
     window.GameClub = { baseurl: "{{ site.baseurl }}" };
+    window.GameClubCartoKey = {{ site.carto_api_key | default: "" | jsonify }};
     window.GameClubCountries = {{ site.data.countries | jsonify }};
   </script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"

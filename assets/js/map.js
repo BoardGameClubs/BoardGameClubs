@@ -54,7 +54,11 @@
 
       this.map = L.map("map", { worldCopyJump: true }).setView(center, zoom);
 
-      L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
+      var tileUrl = "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png";
+      if (window.GameClubCartoKey) {
+        tileUrl += "?key=" + encodeURIComponent(window.GameClubCartoKey);
+      }
+      L.tileLayer(tileUrl, {
         attribution:
           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
         maxZoom: 19,

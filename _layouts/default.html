@@ -42,6 +42,7 @@ labels) are localised separately in _layouts/club.html.{% endcomment %}
       // pages do — a saved country choice must not override it.
       countryImplied: {% if page.layout == "club" %}true{% else %}false{% endif %}
     };
+    window.GameClubCartoKey = {{ site.carto_api_key | default: "" | jsonify }};
     window.GameClubCountries = {{ site.data.countries | jsonify }};
     window.GameClubI18n = {
       country_gb:           {{ i18n.country_gb[lang] | jsonify }},

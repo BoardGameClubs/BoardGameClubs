@@ -124,6 +124,7 @@
       language: {{ lang | jsonify }},
       defaultCountryCode: {{ country.code | jsonify }}
     };
+    window.GameClubCartoKey = {{ site.carto_api_key | default: "" | jsonify }};
     window.GameClubCountries = {{ site.data.countries | jsonify }};
     window.GameClubI18n = {
       no_results:               {{ i18n.no_results[lang] | jsonify }},
