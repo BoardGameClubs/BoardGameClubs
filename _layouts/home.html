@@ -76,6 +76,7 @@
                 <label class="multi-select-option" data-type="Wargames"><input type="checkbox" value="Wargames"><span class="multi-select-check"></span>Wargames</label>
                 <label class="multi-select-option" data-type="BOTC"><input type="checkbox" value="BOTC"><span class="multi-select-check"></span>BOTC</label>
                 <label class="multi-select-option" data-type="TCG"><input type="checkbox" value="TCG"><span class="multi-select-check"></span>TCG</label>
+                <label class="multi-select-option" data-type="Events"><input type="checkbox" value="Events"><span class="multi-select-check"></span>{{ i18n.club_type_events[lang] }}</label>
               </div>
             </div>
             <div class="multi-select" id="day-filter">
@@ -186,6 +187,7 @@
           crossorigin=""></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script src="{{ '/assets/js/country-selector.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
+  <script src="{{ '/assets/js/events.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
   <script src="{{ '/assets/js/map.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
   <script src="{{ '/assets/js/search.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>
   <script src="{{ '/assets/js/location.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

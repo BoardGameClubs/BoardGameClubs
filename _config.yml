@@ -19,6 +19,9 @@ collections:
   clubs:
     output: true
     permalink: /clubs/:slug/
+  events:
+    output: true
+    permalink: /events/:slug/
 
 defaults:
   - scope:
@@ -26,6 +29,13 @@ defaults:
       type: "clubs"
     values:
       layout: "club"
+      language: "en"
+      default_country: "GB"
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
       language: "en"
       default_country: "GB"
   - scope:
@@ -61,6 +71,12 @@ defaults:
   - scope:
       path: "_clubs"
       type: "clubs"
+    values:
+      language: "en"
+      default_country: "GB"
+  - scope:
+      path: "_events"
+      type: "events"
     values:
       language: "en"
       default_country: "GB"

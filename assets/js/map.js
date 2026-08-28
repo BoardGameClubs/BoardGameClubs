@@ -6,7 +6,8 @@
     "RPG": "#8b5cf6",
     "Wargames": "#ef4444",
     "BOTC": "#ec4899",
-    "TCG": "#3b82f6"
+    "TCG": "#3b82f6",
+    "Events": "#0d9488"
   };
 
   var typeIcons = {
@@ -14,7 +15,8 @@
     "RPG": '<path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72Z"/><path d="m14 7 3 3"/><path d="M5 6v4"/><path d="M19 14v4"/><path d="M10 2v2"/><path d="M7 8H3"/><path d="M21 16h-4"/><path d="M11 3H9"/>',
     "Wargames": '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>',
     "BOTC": '<path d="m12.5 17-.5-1-.5 1h1z"/><path d="M15 22a1 1 0 0 0 1-1v-1a2 2 0 0 0 1.56-3.25 8 8 0 1 0-11.12 0A2 2 0 0 0 8 20v1a1 1 0 0 0 1 1z"/><circle cx="15" cy="12" r="1"/><circle cx="9" cy="12" r="1"/>',
-    "TCG": '<path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/>'
+    "TCG": '<path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/>',
+    "Events": '<path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/>'
   };
 
   function getTypeColor(club) {
@@ -110,14 +112,20 @@
         if (!club.location.lat || !club.location.lng) return;
 
         var tags = "";
-        var clubTypes = club.type || ["Board Games"];
+        // Events keep type ["Events"] for the filter; their own focus tags
+        // (Board Games, RPG, …) live in eventTypes and show in the popup.
+        var clubTypes = club._kind === "event" && club.eventTypes && club.eventTypes.length
+          ? club.eventTypes
+          : (club.type || ["Board Games"]);
         clubTypes.forEach(function (t) {
           var cls = "tag tag-type tag-type-" + t.toLowerCase().replace(/ /g, "-");
           tags += '<span class="' + cls + '">' + self.escapeHtml(t) + "</span>";
         });
 
-        if (club.cost) {
-          tags += '<span class="tag tag-cost">' + self.escapeHtml(club.cost) + "</span>";
+        var isEvent = club._kind === "event";
+        var cost = isEvent ? club.price : club.cost;
+        if (cost) {
+          tags += '<span class="tag tag-cost">' + self.escapeHtml(cost) + "</span>";
         }
 
         var popupIcon = "";
@@ -125,7 +133,7 @@
           var baseurl = window.GameClub ? window.GameClub.baseurl : "";
           var imgSrc = club.image.indexOf("://") !== -1
             ? self.escapeHtml(club.image)
-            : baseurl + "/assets/images/clubs/" + encodeURIComponent(club.image);
+            : baseurl + "/assets/images/" + (isEvent ? "events" : "clubs") + "/" + encodeURIComponent(club.image);
           popupIcon = '<div class="popup-icon-wrap"><img src="' + imgSrc + '" alt="" onload="window.GameClub.applyImgBg(this)"></div>';
         }
 
@@ -133,9 +141,18 @@
           ? '<div class="popup-venue"><i data-lucide="map-pin"></i><span>' + self.escapeHtml(club.location.name) + '</span></div>'
           : '';
 
-        var daysText = club.days.join(", ");
-        if (club.frequency && club.frequency !== "Weekly") {
-          daysText += " · " + club.frequency;
+        var daysText;
+        if (isEvent) {
+          daysText = window.GameClubEvents && window.GameClubEvents.formatDateRange
+            ? window.GameClubEvents.formatDateRange(club.start_date, club.end_date, false)
+            : (club.end_date && club.end_date !== club.start_date
+                ? club.start_date + " - " + club.end_date
+                : club.start_date);
+        } else {
+          daysText = club.days.join(", ");
+          if (club.frequency && club.frequency !== "Weekly") {
+            daysText += " · " + club.frequency;
+          }
         }
         var daysLine = '<div class="popup-days"><i data-lucide="calendar"></i><span>' + self.escapeHtml(daysText) + '</span></div>';
 

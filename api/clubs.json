@@ -29,7 +29,7 @@ layout: null
   {% endfor %}
 ]
 {% comment %}One entry per club. Site.clubs includes language clones at
-/de/clubs/, /fr/clubs/ etc. emitted by _plugins/club_language_clones.rb —
+/de/clubs/, /fr/clubs/ etc. emitted by _plugins/language_clones.rb —
 we filter to the canonical English-URL version so the map shows each
 club once. The frontend's localiseClubUrl() rewrites the URL to match
 the visitor's language at click time.{% endcomment %}

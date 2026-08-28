@@ -9,6 +9,7 @@
   {% else %}{% assign url_prefix = "" %}
 {% endcase %}
 {% assign about_path = url_prefix | append: "/about/" %}
+{% assign events_path = url_prefix | append: "/events/" %}
 {% assign contribute_path = url_prefix | append: "/contribute/" %}
 {% assign home_path = url_prefix | append: "/" %}
 <nav class="site-nav">
@@ -17,6 +18,7 @@
   </button>
   <div class="nav-menu" id="nav-menu">
     <a href="{{ home_path | relative_url }}"><i data-lucide="map" class="nav-link-icon"></i>{{ i18n.nav_map[lang] }}</a>
+    <a href="{{ events_path | relative_url }}"><i data-lucide="calendar-days" class="nav-link-icon"></i>{{ i18n.nav_events[lang] }}</a>
     <a href="{{ about_path | relative_url }}"><i data-lucide="info" class="nav-link-icon"></i>{{ i18n.nav_about[lang] }}</a>
     <a href="{{ contribute_path | relative_url }}" class="nav-cta"><i data-lucide="plus"></i><span class="nav-cta-full">{{ i18n.nav_contribute[lang] }}</span><span class="nav-cta-short">{{ i18n.nav_contribute_short[lang] | default: "Add" }}</span></a>
     <a href="https://github.com/BoardGameClubs/BoardGameClubs" target="_blank" rel="noopener" class="nav-github nav-github-menu" aria-label="GitHub"><i data-lucide="github"></i><span class="nav-github-label">GitHub</span></a>
@@ -43,8 +45,8 @@
       {% elsif neutral_path contains "/pl/" or neutral_path == "/pl" %}{% assign neutral_path = neutral_path | remove_first: "/pl" %}
       {% endif %}
       {% if neutral_path == "" %}{% assign neutral_path = "/" %}{% endif %}
-      {% if page.layout == "club" %}
-        {% capture club_path %}/clubs/{{ page.slug }}/{% endcapture %}
+      {% if page.collection == "clubs" or page.collection == "events" %}
+        {% capture club_path %}/{{ page.collection }}/{{ page.slug }}/{% endcapture %}
         {% assign en_url = club_path %}
         {% capture de_url %}/de{{ club_path }}{% endcapture %}
         {% capture it_url %}/it{{ club_path }}{% endcapture %}

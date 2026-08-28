@@ -92,6 +92,27 @@
       return this.filterClubs(allClubsGlobal, { applyDistance: false, sortByDistance: false });
     },
 
+    // Shape /api/events.json entries so they can share the map pipeline with
+    // clubs: tagged as the "Events" type (so the type filter toggles them),
+    // no days (the day filter skips them), a namespaced slug so markerMap
+    // keys can't collide with a club, and past events dropped.
+    normaliseEvents: function (events) {
+      var d = new Date();
+      var m = d.getMonth() + 1;
+      var day = d.getDate();
+      var today = d.getFullYear() + "-" + (m < 10 ? "0" : "") + m + "-" + (day < 10 ? "0" : "") + day;
+      return (events || []).filter(function (ev) {
+        return ev && ev.location && (ev.end_date || ev.start_date || "") >= today;
+      }).map(function (ev) {
+        ev._kind = "event";
+        ev.eventTypes = ev.type || [];
+        ev.type = ["Events"];
+        ev.days = [];
+        ev.slug = "event-" + ev.slug;
+        return ev;
+      });
+    },
+
     filterClubs: function (clubs, options) {
       options = options || {};
       var self = this;
@@ -117,8 +138,10 @@
             club.name,
             club.location.name,
             club.location.address,
-            club.days.join(" "),
+            (club.days || []).join(" "),
             (club.type || []).join(" "),
+            club.start_date,
+            club.end_date,
           ]
             .filter(Boolean)
             .join(" ")
@@ -138,7 +161,9 @@
           if (!matchesType) return false;
         }
 
-        if (self.dayFilters.length > 0) {
+        // Events have concrete dates, not weekdays: the day filter is a
+        // club concept, so they pass it untouched.
+        if (self.dayFilters.length > 0 && club._kind !== "event") {
           var matchesDay = false;
           for (var i = 0; i < self.dayFilters.length; i++) {
             if (club.days.indexOf(self.dayFilters[i]) !== -1) {

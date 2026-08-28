@@ -1,20 +1,21 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Validates the YAML frontmatter of every _clubs/<country>/*.md file.
+# Validates the YAML frontmatter of every _events/<country>/*.md file.
 # lat/lng bounds and URL prefix come from _data/countries.yml. The folder a
-# file lives in has to match its country field (_clubs/de/foo.md needs
+# file lives in has to match its country field (_events/de/foo.md needs
 # country: "DE"). Uses only the Ruby stdlib.
-# Usage: ruby scripts/validate_clubs.rb
+# Usage: ruby scripts/validate_events.rb
 
 require "yaml"
 require "date"
 
-VALID_DAYS = %w[Monday Tuesday Wednesday Thursday Friday Saturday Sunday Various].freeze
-VALID_TYPES = ["Board Games", "RPG", "Wargames", "BOTC", "TCG"].freeze
+VALID_TYPES = ["Board Games", "RPG", "Wargames", "TCG", "BOTC"].freeze
+VALID_FORMATS = ["Convention", "Game Day", "Tournament"].freeze
+
 
 root_dir  = File.expand_path("..", __dir__)
-clubs_dir = File.join(root_dir, "_clubs")
+events_dir = File.join(root_dir, "_events")
 data_path = File.join(root_dir, "_data", "countries.yml")
 
 unless File.exist?(data_path)
@@ -34,30 +35,22 @@ url_prefix_by_code = countries.values.each_with_object({}) do |c, h|
   h[c["code"]] = c["url_prefix"] || ""
 end
 
-unless Dir.exist?(clubs_dir)
-  puts "ERROR: _clubs/ directory not found at #{clubs_dir}"
+unless Dir.exist?(events_dir)
+  puts "ERROR: _events/ directory not found at #{events_dir}"
   exit 1
 end
 
-files = Dir.glob(File.join(clubs_dir, "*", "*.md")).sort
+files = Dir.glob(File.join(events_dir, "*", "*.md")).sort
 if files.empty?
-  puts "ERROR: No .md files found under _clubs/<country>/"
-  exit 1
-end
-
-# Flat-layout migration check: complain if any clubs remain at the top level.
-stray = Dir.glob(File.join(clubs_dir, "*.md"))
-unless stray.empty?
-  puts "ERROR: #{stray.length} club file(s) still at the top level of _clubs/. Run scripts/reorg_clubs.rb."
-  stray.each { |f| puts "  - #{File.basename(f)}" }
-  exit 1
+  puts "No event files found under _events/<country>/ — nothing to validate."
+  exit 0
 end
 
 errors = {}
 slugs_seen = {}
 
 files.each do |file|
-  rel        = file.sub("#{clubs_dir}/", "")              # e.g. "gb/aberdeen.md"
+  rel        = file.sub("#{events_dir}/", "")              # e.g. "gb/aberdeen.md"
   folder     = File.dirname(rel)                          # "gb"
   basename   = File.basename(file)
   slug       = File.basename(file, ".md")
@@ -113,21 +106,22 @@ files.each do |file|
     file_errors << "name: must be a non-empty string"
   end
 
-  if !data["days"].is_a?(Array) || data["days"].empty?
-    file_errors << "days: must be a non-empty array of day names (got #{data['days'].inspect})"
-  elsif data["days"].is_a?(Array)
-    data["days"].each_with_index do |d, i|
-      unless d.is_a?(String) && VALID_DAYS.include?(d)
-        file_errors << "days[#{i}]: must be one of #{VALID_DAYS.join(', ')} (got #{d.inspect})"
-      end
-    end
+  # start_date / end_date: ISO dates (YAML parses unquoted YYYY-MM-DD as Date).
+  start_date = data["start_date"]
+  end_date   = data.key?("end_date") ? data["end_date"] : start_date
+  if !start_date.is_a?(Date)
+    file_errors << "start_date: must be an ISO date (YYYY-MM-DD, unquoted), got #{start_date.inspect}"
+  end
+  if !end_date.is_a?(Date)
+    file_errors << "end_date: must be an ISO date (YYYY-MM-DD, unquoted), got #{end_date.inspect}"
+  elsif start_date.is_a?(Date) && end_date < start_date
+    file_errors << "end_date: #{end_date} is before start_date #{start_date}"
   end
 
-  # type (optional)
   if data.key?("type")
     if !data["type"].is_a?(Array) || data["type"].empty?
       file_errors << "type: must be a non-empty array of types (got #{data['type'].inspect})"
-    elsif data["type"].is_a?(Array)
+    else
       data["type"].each_with_index do |t, i|
         unless t.is_a?(String) && VALID_TYPES.include?(t)
           file_errors << "type[#{i}]: must be one of #{VALID_TYPES.join(', ')} (got #{t.inspect})"
@@ -136,12 +130,18 @@ files.each do |file|
     end
   end
 
-  if !data["frequency"].is_a?(String) || data["frequency"].strip.empty?
-    file_errors << "frequency: must be a non-empty string"
+  if data.key?("format") && !data["format"].nil? && !VALID_FORMATS.include?(data["format"])
+    file_errors << "format: must be one of #{VALID_FORMATS.join(', ')} (got #{data['format'].inspect})"
   end
 
-  if !data["description"].is_a?(String) || data["description"].strip.empty?
-    file_errors << "description: must be a non-empty string"
+  %w[price tickets website facebook discord bgg image].each do |key|
+    if data.key?(key) && !data[key].nil? && !data[key].is_a?(String)
+      file_errors << "#{key}: must be a string (got #{data[key].inspect})"
+    end
+  end
+
+  if data.key?("description") && !data["description"].nil? && !data["description"].is_a?(String)
+    file_errors << "description: must be a string (got #{data['description'].inspect})"
   end
 
   loc = data["location"]
@@ -169,18 +169,18 @@ files.each do |file|
     end
   end
 
-  # permalink must not be set. Clubs live at /clubs/<slug>/ and
+  # permalink must not be set. Events live at /events/<slug>/ and
   # _plugins/language_clones.rb emits per-language copies at
-  # /<lang>/clubs/<slug>/. A hand-written permalink would override that.
+  # /<lang>/events/<slug>/. A hand-written permalink would override that.
   if data["permalink"]
-    file_errors << "permalink: must not be set (got #{data['permalink'].inspect}); clubs live at /clubs/<slug>/ by default"
+    file_errors << "permalink: must not be set (got #{data['permalink'].inspect}); events live at /events/<slug>/ by default"
   end
 
   errors[file_id] = file_errors unless file_errors.empty?
 end
 
 if errors.empty?
-  puts "All #{files.length} club files are valid."
+  puts "All #{files.length} event files are valid."
   exit 0
 else
   puts "Validation failed!\n\n"

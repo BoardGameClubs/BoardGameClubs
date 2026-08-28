@@ -6,7 +6,7 @@ which comes from the scoped default for the file's path (English for
 page body that should follow the club's country (day names, type
 labels) are localised separately in _layouts/club.html.{% endcomment %}
 {% assign lang = page.language | default: "en" %}
-{% if page.layout == "club" %}
+{% if page.layout == "club" or page.layout == "event" %}
   {% assign default_country_key = page.country | default: "GB" | downcase %}
 {% else %}
   {% assign default_country_key = page.default_country | default: "GB" | downcase %}
@@ -38,9 +38,9 @@ labels) are localised separately in _layouts/club.html.{% endcomment %}
       baseurl: "{{ site.baseurl }}",
       language: {{ lang | jsonify }},
       defaultCountryCode: {{ country.code | jsonify }},
-      // Club pages imply their country (the club's own), like localised
-      // pages do — a saved country choice must not override it.
-      countryImplied: {% if page.layout == "club" %}true{% else %}false{% endif %}
+      // Club and event pages imply their country (the listing's own), like
+      // localised pages do — a saved country choice must not override it.
+      countryImplied: {% if page.layout == "club" or page.layout == "event" %}true{% else %}false{% endif %}
     };
     window.GameClubCartoKey = {{ site.carto_api_key | default: "" | jsonify }};
     window.GameClubCountries = {{ site.data.countries | jsonify }};

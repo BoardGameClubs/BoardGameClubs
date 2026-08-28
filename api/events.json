@@ -1,0 +1,32 @@
+---
+layout: null
+---
+[
+  {% assign canonical_events = site.events | where: "language", "en" | sort: "start_date" %}
+  {% for event in canonical_events %}
+  {
+    "name": {{ event.name | jsonify }},
+    "slug": {{ event.slug | jsonify }},
+    "url": {{ event.url | relative_url | jsonify }},
+    "country": {{ event.country | jsonify }},
+    "start_date": {{ event.start_date | date: "%Y-%m-%d" | jsonify }},
+    "end_date": {{ event.end_date | default: event.start_date | date: "%Y-%m-%d" | jsonify }},
+    "location": {
+      "name": {{ event.location.name | jsonify }},
+      "address": {{ event.location.address | jsonify }},
+      "lat": {{ event.location.lat }},
+      "lng": {{ event.location.lng }}
+    },
+    "price": {{ event.price | jsonify }},
+    "tickets": {{ event.tickets | jsonify }},
+    "website": {{ event.website | jsonify }},
+    "image": {{ event.image | jsonify }},
+    "type": {% if event.type %}{{ event.type | jsonify }}{% else %}[]{% endif %},
+    "format": {{ event.format | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
+{% comment %}One entry per event, sorted by start date. site.events includes
+language clones at /de/events/ etc. emitted by _plugins/language_clones.rb —
+we filter to the canonical English-URL version. The frontend's localiseUrl()
+rewrites the URL to match the visitor's language at click time.{% endcomment %}

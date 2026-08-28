@@ -39,6 +39,9 @@ jobs:
             clubs = JSON.parse(File.read("_site/api/clubs.json"))
             raise "Expected array" unless clubs.is_a?(Array)
             puts "clubs.json OK (#{clubs.length} clubs)"
+            events = JSON.parse(File.read("_site/api/events.json"))
+            raise "Expected array" unless events.is_a?(Array)
+            puts "events.json OK (#{events.length} events)"
           '
 
       - uses: actions/upload-pages-artifact@v3

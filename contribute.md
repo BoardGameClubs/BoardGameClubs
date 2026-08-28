@@ -18,6 +18,7 @@ The easiest way to add your club is to fill in our form on GitHub. No technical 
 <div class="contribute-actions">
   <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-club.yml" class="contribute-btn contribute-btn--primary">+ Add a Club</a>
   <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml" class="contribute-btn contribute-btn--secondary">Edit a Club</a>
+  <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-event.yml" class="contribute-btn contribute-btn--secondary">Add an Event</a>
 </div>
 
 ## Adding a Club via Pull Request
@@ -123,6 +124,35 @@ Alternatively, you can use a direct URL to an image hosted elsewhere, e.g. `imag
 ### 6. Submit a pull request
 
 Commit your file and [open a pull request](https://github.com/BoardGameClubs/BoardGameClubs/pulls). We'll review it and merge it in.
+
+## Adding an Event via Pull Request
+
+Conventions, games fairs and one-off events live in `_events/<country>/` and appear on the [events calendar]({{ "/events/" | relative_url }}). The easiest route is the **[Add an Event form](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-event.yml)**; if you'd rather open a pull request, create `_events/<country>/your-event-slug.md` with:
+
+```yaml
+---
+country: "GB"
+name: "Your Event Name"
+start_date: 2027-06-04     # YYYY-MM-DD, unquoted
+end_date: 2027-06-06       # same as start_date for a one-day event
+location:
+  name: "Venue Name"
+  address: "Full Address, Town, Postcode"
+  lat: 52.4530
+  lng: -1.7180
+price: "Ticketed"          # or "Free", "£15/day", "€20"
+tickets: ""                # link to buy tickets
+website: ""
+facebook: ""
+discord: ""
+bgg: ""
+image: ""                  # URL or filename in assets/images/events/
+description: >-
+  What happens at the event, who it's for, and anything visitors should know.
+---
+```
+
+Do not set `permalink`; events live at `/events/<slug>/` automatically. Past events drop off the calendar on their own once the end date has passed.
 
 ## Don't see your country?
 

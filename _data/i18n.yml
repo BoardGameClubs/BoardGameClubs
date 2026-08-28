@@ -911,3 +911,172 @@ embed_map:
   fr: "Intégrer"
   es: "Insertar"
   pl: "Osadź"
+
+# --- Events ---
+nav_events:
+  en: "Events"
+  de: "Events"
+  it: "Eventi"
+  fr: "Événements"
+  es: "Eventos"
+  pl: "Wydarzenia"
+
+events_title:
+  en: "Board Game Conventions & Events"
+  de: "Brettspiel-Conventions & Events"
+  it: "Convention ed eventi di giochi da tavolo"
+  fr: "Conventions et événements de jeux de société"
+  es: "Convenciones y eventos de juegos de mesa"
+  pl: "Konwenty i wydarzenia planszówkowe"
+
+events_intro:
+  en: "Find board game conventions, game days, tournaments and one-off tabletop events near you, with dates, venues and ticket links."
+  de: "Finde Brettspiel-Conventions, Spieletage, Turniere und einmalige Tabletop-Events in deiner Nähe – mit Terminen, Veranstaltungsorten und Ticket-Links."
+  it: "Trova convention di giochi da tavolo, giornate di gioco, tornei ed eventi da tavolo una tantum vicino a te, con date, sedi e link per i biglietti."
+  fr: "Trouve des conventions de jeux de société, journées jeux, tournois et événements ponctuels près de chez toi, avec dates, lieux et liens billetterie."
+  es: "Encuentra convenciones de juegos de mesa, jornadas de juego, torneos y eventos puntuales cerca de ti, con fechas, sedes y enlaces para entradas."
+  pl: "Znajdź konwenty planszówkowe, dni gier, turnieje i jednorazowe wydarzenia w pobliżu – z terminami, miejscami i linkami do biletów."
+
+events_add:
+  en: "Add an event"
+  de: "Event hinzufügen"
+  it: "Aggiungi un evento"
+  fr: "Ajouter un événement"
+  es: "Añadir un evento"
+  pl: "Dodaj wydarzenie"
+
+events_none:
+  en: "No upcoming events listed here yet."
+  de: "Hier sind noch keine kommenden Events eingetragen."
+  it: "Nessun evento in programma al momento."
+  fr: "Aucun événement à venir n'est encore répertorié ici."
+  es: "Aún no hay eventos próximos aquí."
+  pl: "Brak nadchodzących wydarzeń."
+
+events_none_hint:
+  en: "Know of a convention or games fair? Add it and we'll list it here."
+  de: "Du kennst eine Convention oder Spielemesse? Trag sie ein und wir listen sie hier."
+  it: "Conosci una convention o una fiera del gioco? Aggiungila e la elencheremo qui."
+  fr: "Tu connais une convention ou un salon du jeu ? Ajoute-le et on l'affichera ici."
+  es: "¿Conoces una convención o feria de juegos? Añádela y la mostraremos aquí."
+  pl: "Znasz konwent lub targi gier? Dodaj je, a wyświetlimy je tutaj."
+
+events_past:
+  en: "Past events"
+  de: "Vergangene Events"
+  it: "Eventi passati"
+  fr: "Événements passés"
+  es: "Eventos pasados"
+  pl: "Minione wydarzenia"
+
+events_past_notice:
+  en: "This event has already taken place."
+  de: "Dieses Event hat bereits stattgefunden."
+  it: "Questo evento si è già svolto."
+  fr: "Cet événement a déjà eu lieu."
+  es: "Este evento ya ha tenido lugar."
+  pl: "To wydarzenie już się odbyło."
+
+events_loading:
+  en: "Loading events…"
+  de: "Events werden geladen…"
+  it: "Caricamento eventi…"
+  fr: "Chargement des événements…"
+  es: "Cargando eventos…"
+  pl: "Ładowanie wydarzeń…"
+
+event_title_suffix:
+  en: "Event"
+  de: "Event"
+  it: "Evento"
+  fr: "Événement"
+  es: "Evento"
+  pl: "Wydarzenie"
+
+label_dates:
+  en: "Dates"
+  de: "Termin"
+  it: "Date"
+  fr: "Dates"
+  es: "Fechas"
+  pl: "Termin"
+
+label_price:
+  en: "Price"
+  de: "Preis"
+  it: "Prezzo"
+  fr: "Prix"
+  es: "Precio"
+  pl: "Cena"
+
+get_tickets:
+  en: "Get tickets"
+  de: "Tickets kaufen"
+  it: "Acquista i biglietti"
+  fr: "Billetterie"
+  es: "Comprar entradas"
+  pl: "Kup bilety"
+
+tickets:
+  en: "Tickets"
+  de: "Tickets"
+  it: "Biglietti"
+  fr: "Billets"
+  es: "Entradas"
+  pl: "Bilety"
+
+back_to_events:
+  en: "Back to events"
+  de: "Zurück zu den Events"
+  it: "Torna agli eventi"
+  fr: "Retour aux événements"
+  es: "Volver a los eventos"
+  pl: "Wróć do wydarzeń"
+
+report_event:
+  en: "Report issue"
+  de: "Problem melden"
+  it: "Segnala un problema"
+  fr: "Signaler un problème"
+  es: "Reportar un problema"
+  pl: "Zgłoś problem"
+
+club_type_events:
+  en: "Events"
+  de: "Events"
+  it: "Eventi"
+  fr: "Événements"
+  es: "Eventos"
+  pl: "Wydarzenia"
+
+events_cta:
+  en: "Know of a convention or event we're missing?"
+  de: "Kennst du eine Convention oder ein Event, das uns fehlt?"
+  it: "Conosci una convention o un evento che ci manca?"
+  fr: "Tu connais une convention ou un événement qui manque ?"
+  es: "¿Conoces una convención o evento que nos falta?"
+  pl: "Znasz konwent lub wydarzenie, którego nam brakuje?"
+
+event_format_convention:
+  en: "Convention"
+  de: "Convention"
+  it: "Convention"
+  fr: "Convention"
+  es: "Convención"
+  pl: "Konwent"
+
+event_format_game_day:
+  en: "Game Day"
+  de: "Spieletag"
+  it: "Giornata di gioco"
+  fr: "Journée jeux"
+  es: "Jornada de juego"
+  pl: "Dzień gier"
+
+event_format_tournament:
+  en: "Tournament"
+  de: "Turnier"
+  it: "Torneo"
+  fr: "Tournoi"
+  es: "Torneo"
+  pl: "Turniej"

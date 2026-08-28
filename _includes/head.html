@@ -17,6 +17,13 @@ _layouts/club.html.{% endcomment %}
   {% assign club_type_label = i18n.club_type_board_games[lang] %}{% if page.type %}{% assign first_type = page.type | first %}{% if first_type == "RPG" %}{% assign club_type_label = i18n.club_type_rpg[lang] %}{% elsif first_type == "Wargames" %}{% assign club_type_label = i18n.club_type_wargames[lang] %}{% elsif first_type == "BOTC" %}{% assign club_type_label = i18n.club_type_botc[lang] %}{% elsif first_type == "TCG" %}{% assign club_type_label = i18n.club_type_tcg[lang] %}{% endif %}{% endif %}
   <title>{{ page.name }} | {{ club_type_label }} Club | {{ site.title }}</title>
   <meta name="description" content="{{ page.description | strip_html | truncate: 160 }}">
+{% elsif page.layout == "event" %}
+  <title>{{ page.name }} | {{ i18n.event_title_suffix[lang] }} | {{ site.title }}</title>
+  {% if page.description and page.description != "" %}
+  <meta name="description" content="{{ page.description | strip_html | truncate: 160 }}">
+  {% else %}
+  <meta name="description" content="{{ page.name }}, {{ page.start_date | date: '%-d %b %Y' }}{% if page.end_date and page.end_date != page.start_date %} - {{ page.end_date | date: '%-d %b %Y' }}{% endif %}, {{ page.location.name }}. {{ i18n.event_title_suffix[lang] }} | {{ site.title }}">
+  {% endif %}
 {% elsif page.title %}
   <title>{{ page.title }} | {{ site.title }}</title>
 {% else %}
@@ -43,11 +50,11 @@ en_US default; Facebook/Twitter parsers use the last og:locale tag).{% endcommen
 {% for alt in all_locales %}{% if alt != og_locale %}
 <meta property="og:locale:alternate" content="{{ alt }}">
 {% endif %}{% endfor %}
-{% if page.layout == "club" and page.location.lat and page.location.lng %}
+{% if page.collection == "clubs" or page.collection == "events" %}{% if page.location.lat and page.location.lng %}
 <meta name="geo.position" content="{{ page.location.lat }};{{ page.location.lng }}">
 <meta name="geo.placename" content="{{ page.location.address }}">
 <meta name="ICBM" content="{{ page.location.lat }}, {{ page.location.lng }}">
-{% endif %}
+{% endif %}{% endif %}
 {% comment %}hreflang pairs for translatable static pages. Each block lists
 the equivalent path in every supported language plus an x-default
 (English) where appropriate.{% endcomment %}
@@ -73,6 +80,14 @@ the equivalent path in every supported language plus an x-default
   <link rel="alternate" hreflang="fr-FR" href="{{ '/fr/contribute/' | absolute_url }}">
   <link rel="alternate" hreflang="es-ES" href="{{ '/es/contribute/' | absolute_url }}">
   <link rel="alternate" hreflang="pl-PL" href="{{ '/pl/contribute/' | absolute_url }}">
+{% elsif page.url == "/events/" or page.url == "/de/events/" or page.url == "/it/events/" or page.url == "/fr/events/" or page.url == "/es/events/" or page.url == "/pl/events/" %}
+  <link rel="alternate" hreflang="en-GB" href="{{ '/events/' | absolute_url }}">
+  <link rel="alternate" hreflang="de-DE" href="{{ '/de/events/' | absolute_url }}">
+  <link rel="alternate" hreflang="it-IT" href="{{ '/it/events/' | absolute_url }}">
+  <link rel="alternate" hreflang="fr-FR" href="{{ '/fr/events/' | absolute_url }}">
+  <link rel="alternate" hreflang="es-ES" href="{{ '/es/events/' | absolute_url }}">
+  <link rel="alternate" hreflang="pl-PL" href="{{ '/pl/events/' | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ '/events/' | absolute_url }}">
 {% elsif page.url == "/privacy/" or page.url == "/de/privacy/" or page.url == "/it/privacy/" or page.url == "/fr/privacy/" or page.url == "/es/privacy/" or page.url == "/pl/privacy/" %}
   <link rel="alternate" hreflang="en-GB" href="{{ '/privacy/' | absolute_url }}">
   <link rel="alternate" hreflang="de-DE" href="{{ '/de/privacy/' | absolute_url }}">
@@ -87,8 +102,8 @@ the equivalent path in every supported language plus an x-default
   <link rel="alternate" hreflang="fr-FR" href="{{ '/fr/licence/' | absolute_url }}">
   <link rel="alternate" hreflang="es-ES" href="{{ '/es/licence/' | absolute_url }}">
   <link rel="alternate" hreflang="pl-PL" href="{{ '/pl/licence/' | absolute_url }}">
-{% elsif page.layout == "club" %}
-  {% capture canonical_path %}/clubs/{{ page.slug }}/{% endcapture %}
+{% elsif page.collection == "clubs" or page.collection == "events" %}
+  {% capture canonical_path %}/{{ page.collection }}/{{ page.slug }}/{% endcapture %}
   <link rel="alternate" hreflang="en-GB" href="{{ canonical_path | absolute_url }}">
   <link rel="alternate" hreflang="de-DE" href="{{ '/de' | append: canonical_path | absolute_url }}">
   <link rel="alternate" hreflang="it-IT" href="{{ '/it' | append: canonical_path | absolute_url }}">

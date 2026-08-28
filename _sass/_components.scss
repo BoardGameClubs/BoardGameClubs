@@ -1041,12 +1041,11 @@
       font-size: 0.88rem;
       color: $color-text;
       background: $color-surface;
-      transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+      transition: border-color 0.2s, color 0.2s;
 
       &:hover {
         border-color: $color-accent;
-        box-shadow: 0 0 0 3px rgba($color-accent, 0.1);
-        transform: translateY(-1px);
+        color: $color-accent;
         text-decoration: none;
       }
     }

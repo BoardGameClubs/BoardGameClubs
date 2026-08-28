@@ -18,6 +18,7 @@ Le moyen le plus simple d'ajouter ton club est notre formulaire sur GitHub. Aucu
 <div class="contribute-actions">
   <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-club.yml" class="contribute-btn contribute-btn--primary">+ Ajouter un club</a>
   <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml" class="contribute-btn contribute-btn--secondary">Modifier un club</a>
+  <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-event.yml" class="contribute-btn contribute-btn--secondary">Ajouter un événement</a>
 </div>
 
 ## Ajouter un club par pull request

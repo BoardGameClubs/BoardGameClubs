@@ -1,0 +1,26 @@
+name: Edit or Report an Event
+description: Update, correct or flag an event listed on the events calendar
+title: "Edit event: "
+labels: ["event update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Let us know what needs changing - new dates, a new venue, updated ticket links, or an event that's been cancelled - and we'll update it.
+
+  - type: input
+    id: event_name
+    attributes:
+      label: Which event?
+      placeholder: e.g. UK Games Expo
+    validations:
+      required: true
+
+  - type: textarea
+    id: changes
+    attributes:
+      label: What needs updating?
+      description: Tell us what's changed - dates, venue, tickets link, cancellation, etc.
+      placeholder: The 2027 dates have been announced...
+    validations:
+      required: true

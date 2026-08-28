@@ -7,6 +7,9 @@
   // All clubs across all countries (global JSON). Country filtering happens
   // in JS based on the active country.
   var ALL_CLUBS = [];
+  // Upcoming events across all countries (map pins only — the sidebar list
+  // stays clubs-only so units, sort and result counts keep meaning "clubs").
+  var ALL_EVENTS = [];
   var activeCountry = null;
   var map;
   var search;
@@ -35,26 +38,36 @@
     return "/" + lang;
   }
 
-  // Rewrite "/clubs/<slug>/" to "/<lang>/clubs/<slug>/" so clicking a
-  // club from a localised home page stays on that language. Every club
-  // exists at every language URL (see _plugins/club_language_clones.rb).
+  // Rewrite "/clubs/<slug>/" to "/<lang>/clubs/<slug>/" (and likewise
+  // "/events/<slug>/") so clicking through from a localised home page stays
+  // on that language. Every club and event exists at every language URL
+  // (see _plugins/language_clones.rb).
   function localiseClubUrl(url) {
     var prefix = langPrefixForCurrentPage();
     if (!prefix) return url;
     if (!url) return url;
-    var clubsIdx = url.indexOf("/clubs/");
-    if (clubsIdx === -1) return url;
-    return url.slice(0, clubsIdx) + prefix + url.slice(clubsIdx);
+    var idx = url.indexOf("/clubs/");
+    if (idx === -1) idx = url.indexOf("/events/");
+    if (idx === -1) return url;
+    return url.slice(0, idx) + prefix + url.slice(idx);
+  }
+
+  function fetchJson(path) {
+    return fetch(baseurl + path).then(function (res) { return res.json(); });
   }
 
   function init() {
     activeCountry = getActiveCountry();
     map = window.GameClubMap.init(activeCountry);
 
-    fetch(baseurl + "/api/clubs.json")
-      .then(function (res) { return res.json(); })
-      .then(function (clubs) {
-        ALL_CLUBS = clubs;
+    Promise.all([
+      fetchJson("/api/clubs.json"),
+      // A missing or broken events feed must never take the club map down.
+      fetchJson("/api/events.json").catch(function () { return []; })
+    ])
+      .then(function (results) {
+        ALL_CLUBS = results[0];
+        ALL_EVENTS = window.GameClubSearch.normaliseEvents(results[1]);
         var scoped = clubsForCountry(activeCountry.code);
         search = window.GameClubSearch.init(scoped, activeCountry);
         populateDistanceOptions(activeCountry);
@@ -320,9 +333,10 @@
     var filteredForList = search.getFiltered();
     // The map shows pins from every country (same text/type/day filters, but
     // no distance filter) so users browsing one country still see clubs in
-    // others. The sidebar list stays scoped to the active country to keep
-    // units, sort and postcode search behaving consistently.
-    var pinsForMap = search.getMapPins(ALL_CLUBS);
+    // others, plus upcoming events as their own pin type. The sidebar list
+    // stays scoped to the active country's clubs to keep units, sort and
+    // postcode search behaving consistently.
+    var pinsForMap = search.getMapPins(ALL_CLUBS.concat(ALL_EVENTS));
     map.addClubs(pinsForMap);
     if (fitMap) {
       if (!map.userMarker && !suppressNextFit) {

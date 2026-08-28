@@ -1,0 +1,151 @@
+name: Add an Event
+description: Submit a convention, games fair or one-off tabletop event to the events calendar
+title: "Add event: "
+labels: ["new event"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting an event! Fill in as much as you can and we'll take care of the rest. Events appear on the calendar at boardgameclubs.org/events/ and get their own page.
+
+  - type: dropdown
+    id: country
+    attributes:
+      label: Country
+      description: Which country's calendar should this event be listed in?
+      options:
+        - United Kingdom (GB)
+        - Germany (DE)
+        - Austria (AT)
+        - Switzerland (CH)
+        - Netherlands (NL)
+        - Belgium (BE)
+        - Italy (IT)
+        - Poland (PL)
+        - France (FR)
+        - Denmark (DK)
+        - Spain (ES)
+        - Finland (FI)
+        - Turkey (TR)
+        - Other (tell us in the description)
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Event name
+      placeholder: e.g. UK Games Expo
+    validations:
+      required: true
+
+  - type: input
+    id: start_date
+    attributes:
+      label: Start date
+      description: Use the format YYYY-MM-DD.
+      placeholder: e.g. 2027-06-04
+    validations:
+      required: true
+
+  - type: input
+    id: end_date
+    attributes:
+      label: End date
+      description: YYYY-MM-DD. For a one-day event, use the same date as the start.
+      placeholder: e.g. 2027-06-06
+    validations:
+      required: true
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: What kind of event is it?
+      options:
+        - Convention (multi-day or large event with exhibitors, open gaming, etc.)
+        - Game Day (a one-off open gaming day or meetup)
+        - Tournament (competitive event for a specific game)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: What does it cover?
+      description: Select all that apply. Leave blank for a general board game event.
+      multiple: true
+      options:
+        - Board Games
+        - RPG
+        - Wargames
+        - BOTC
+        - TCG
+
+  - type: input
+    id: venue_name
+    attributes:
+      label: Venue name
+      placeholder: e.g. NEC Birmingham
+    validations:
+      required: true
+
+  - type: input
+    id: address
+    attributes:
+      label: Venue address (including postcode / ZIP)
+      placeholder: Street, city, postcode
+    validations:
+      required: true
+
+  - type: input
+    id: price
+    attributes:
+      label: Price
+      description: 'In your local currency. Examples: "Free", "£15/day", "€20 weekend", "Ticketed".'
+      placeholder: e.g. Free, £15/day, €20
+
+  - type: input
+    id: tickets
+    attributes:
+      label: Tickets link
+      description: Where people can buy or reserve tickets.
+      placeholder: https://
+
+  - type: input
+    id: website
+    attributes:
+      label: Website
+      placeholder: https://
+
+  - type: input
+    id: facebook
+    attributes:
+      label: Facebook page or event
+      placeholder: https://facebook.com/...
+
+  - type: input
+    id: discord
+    attributes:
+      label: Discord invite link
+      placeholder: https://discord.gg/...
+
+  - type: input
+    id: bgg
+    attributes:
+      label: BoardGameGeek link
+      placeholder: https://boardgamegeek.com/...
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happens at the event? Who is it for? Anything visitors should know?
+      placeholder: A weekend of open gaming, exhibitors, tournaments and demos...
+    validations:
+      required: true
+
+  - type: textarea
+    id: image
+    attributes:
+      label: Event logo or image
+      description: Drag and drop an image here, or paste a URL. PNG or JPG, ideally square.

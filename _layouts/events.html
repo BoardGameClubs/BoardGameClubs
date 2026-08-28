@@ -1,0 +1,47 @@
+---
+layout: default
+---
+{% assign lang = page.language | default: "en" %}
+{% assign i18n = site.data.i18n %}
+{% assign default_country_key = page.default_country | default: "GB" | downcase %}
+{% assign country = site.data.countries[default_country_key] %}
+{% assign country_name_key = "name_" | append: lang %}
+{% comment %}The list is rendered client-side by assets/js/events.js from
+/api/events.json, scoped to the active country (window.GameClubCountry) and
+re-rendered in place when the nav globe changes country. The country label
+below is the build-time default and is rewritten by the JS to match. It is a
+separate element rather than "events in %COUNTRY%" because articles and
+prepositions vary per country and language ("the United States").{% endcomment %}
+<div class="content-page events-page">
+  <div class="events-header">
+    <div class="events-country" id="events-country"><i data-lucide="globe" style="width:14px;height:14px;"></i><span>{{ country[country_name_key] }}</span></div>
+    <h1>{{ i18n.events_title[lang] }}</h1>
+    <p class="events-intro">{{ i18n.events_intro[lang] }}</p>
+    <div class="events-cta" id="events-cta" hidden>
+      <i data-lucide="calendar-plus" class="events-cta-icon"></i>
+      <span class="events-cta-text">{{ i18n.events_cta[lang] }}</span>
+      <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-event.yml" target="_blank" rel="noopener" class="events-add-link">{{ i18n.events_add[lang] }} <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></a>
+    </div>
+  </div>
+
+  {{ content }}
+
+  <div id="events-list" class="events-list" aria-live="polite">
+    <p class="events-loading">{{ i18n.events_loading[lang] }}</p>
+  </div>
+</div>
+
+<script>
+  window.GameClubEventsI18n = {
+    events_title:     {{ i18n.events_title[lang] | jsonify }},
+    events_none:      {{ i18n.events_none[lang] | jsonify }},
+    events_none_hint: {{ i18n.events_none_hint[lang] | jsonify }},
+    events_add:       {{ i18n.events_add[lang] | jsonify }},
+    events_past:      {{ i18n.events_past[lang] | jsonify }},
+    tickets:          {{ i18n.tickets[lang] | jsonify }},
+    event_format_convention: {{ i18n.event_format_convention[lang] | jsonify }},
+    event_format_game_day:   {{ i18n.event_format_game_day[lang] | jsonify }},
+    event_format_tournament: {{ i18n.event_format_tournament[lang] | jsonify }}
+  };
+</script>
+<script src="{{ '/assets/js/events.js' | relative_url }}?v={{ site.time | date: '%s' }}"></script>

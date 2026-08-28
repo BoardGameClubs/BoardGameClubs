@@ -1,0 +1,341 @@
+@use "sass:color";
+@use "variables" as *;
+
+// ─── Events calendar (/events/) and event detail extras ───
+
+.events-page {
+  max-width: 800px;
+}
+
+.events-header {
+  margin-bottom: 1.75rem;
+
+  h1 {
+    margin-bottom: 0.4rem;
+  }
+}
+
+.events-country {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0 0 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: rgba($color-type-events-bg, 0.12);
+  color: color.adjust($color-type-events-bg, $lightness: -8%);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.events-intro {
+  color: $color-primary-light;
+  margin: 0;
+}
+
+.events-cta {
+  display: flex;
+
+  &[hidden] {
+    display: none;
+  }
+
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  margin-top: 1.1rem;
+  padding: 0.7rem 0.95rem;
+  border-radius: $border-radius;
+  background: rgba($color-accent, 0.05);
+  border: 1px solid rgba($color-accent, 0.18);
+  font-size: 0.88rem;
+}
+
+.events-cta-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: $color-accent;
+}
+
+.events-cta-text {
+  color: $color-primary-light;
+  flex: 1;
+  min-width: 12rem;
+}
+
+.events-add-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 600;
+  color: $color-accent;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $color-accent-light;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}
+
+.events-loading {
+  color: $color-text-light;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.events-month {
+  margin-bottom: 1.75rem;
+  animation: fadeSlideIn 0.35s ease both;
+}
+
+.events-month-heading {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-primary-light;
+  margin: 0 0 0.6rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid $color-border;
+}
+
+.events-month-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.event-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 2.4rem 0.9rem 0.9rem;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  color: $color-text;
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+
+  @media (min-width: $bp-lg) {
+    &:hover {
+      text-decoration: none;
+      border-color: $color-accent;
+
+      .event-card-name,
+      .club-card-chevron {
+        color: $color-accent;
+      }
+
+      .club-card-chevron {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.event-card-past {
+    opacity: 0.6;
+
+    .event-card-date {
+      background: $color-tag;
+      color: $color-primary-light;
+    }
+  }
+
+  .club-card-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    font-size: 0.78rem;
+    color: $color-text-light;
+    min-width: 0;
+    margin-top: 0.15rem;
+
+    svg {
+      width: 12px;
+      height: 12px;
+      flex-shrink: 0;
+      opacity: 0.6;
+    }
+  }
+
+  .club-venue,
+  .club-days {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    min-width: 0;
+
+    span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .club-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 0.4rem;
+  }
+
+  .club-card-chevron {
+    position: absolute;
+    right: 0.85rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    color: $color-text-light;
+    opacity: 0.5;
+    transition: color 0.2s ease, opacity 0.2s ease;
+  }
+}
+
+.event-card-date {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // Fixed width so a column of cards lines up whether the block holds
+  // "4", "11-14" or "30-2 / DEC-JAN"; ranges use a smaller size to fit.
+  width: 72px;
+  height: 60px;
+  border-radius: $border-radius;
+  background: $color-accent;
+  color: #fff;
+  line-height: 1;
+  white-space: nowrap;
+
+  &.event-card-date-multi .event-card-day {
+    font-size: 1.15rem;
+  }
+}
+
+.event-card-day {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.event-card-month {
+  font-size: 0.68rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.2rem;
+}
+
+.event-card-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: $border-radius-sm;
+  border: 1px solid $color-border;
+  overflow: hidden;
+  background: $color-surface;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  @media (max-width: $bp-sm - 1px) {
+    display: none;
+  }
+}
+
+.event-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.event-card-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: $color-primary;
+  transition: color 0.2s ease;
+}
+
+.tag-tickets {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: rgba($color-type-events-bg, 0.12);
+  color: color.adjust($color-type-events-bg, $lightness: -8%);
+
+  svg {
+    width: 11px;
+    height: 11px;
+  }
+}
+
+.events-past {
+  margin-top: 2rem;
+
+  summary {
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $color-text-light;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid $color-border;
+    margin-bottom: 0.6rem;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::before {
+      content: "▸";
+      display: inline-block;
+      margin-right: 0.4rem;
+      transition: transform 0.2s ease;
+    }
+  }
+
+  &[open] summary::before {
+    transform: rotate(90deg);
+  }
+}
+
+// ─── Event detail page ───
+
+.event-past-notice {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 1rem 0 0;
+  padding: 0.5rem 0.85rem;
+  border-radius: $border-radius;
+  background: $color-tag;
+  color: $color-primary-light;
+  font-size: 0.85rem;
+}
+
+.event-tickets-cta {
+  margin-top: 1rem;
+
+  .contribute-btn {
+    gap: 0.45rem;
+    padding: 0.6rem 1.35rem;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: $bp-md - 1px) {
+    text-align: center;
+  }
+}

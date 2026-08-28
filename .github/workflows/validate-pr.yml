@@ -18,6 +18,9 @@ jobs:
       - name: Validate club frontmatter
         run: ruby scripts/validate_clubs.rb
 
+      - name: Validate event frontmatter
+        run: ruby scripts/validate_events.rb
+
   build:
     name: Jekyll build & JSON check
     runs-on: ubuntu-latest
@@ -82,4 +85,56 @@ jobs:
             end
 
             puts "clubs.json is valid: #{clubs.length} clubs with all required fields."
+          '
+
+      - name: Validate events.json
+        run: |
+          ruby -e '
+            require "json"
+
+            path = "_site/api/events.json"
+            unless File.exist?(path)
+              puts "ERROR: #{path} not found"
+              exit 1
+            end
+
+            begin
+              events = JSON.parse(File.read(path))
+            rescue JSON::ParserError => e
+              puts "ERROR: Invalid JSON in #{path}: #{e.message}"
+              exit 1
+            end
+
+            unless events.is_a?(Array)
+              puts "ERROR: Expected an array, got #{events.class}"
+              exit 1
+            end
+
+            required_keys = %w[name slug url country start_date end_date location]
+            errors = []
+
+            events.each_with_index do |event, i|
+              required_keys.each do |key|
+                if event[key].nil?
+                  errors << "Event ##{i} (#{event["name"] || "unknown"}): missing \"#{key}\""
+                end
+              end
+
+              loc = event["location"]
+              if loc.is_a?(Hash)
+                %w[name address lat lng].each do |key|
+                  if loc[key].nil?
+                    errors << "Event ##{i} (#{event["name"] || "unknown"}): missing \"location.#{key}\""
+                  end
+                end
+              end
+            end
+
+            if errors.any?
+              puts "events.json validation failed!\n\n"
+              errors.each { |e| puts "  - #{e}" }
+              exit 1
+            end
+
+            puts "events.json is valid: #{events.length} events with all required fields."
           '
