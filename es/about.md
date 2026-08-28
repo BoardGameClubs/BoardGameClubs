@@ -1,15 +1,15 @@
 ---
 layout: default
-title: "Acerca de Board Game Clubs"
-description: "Board Game Clubs es un directorio gratuito, mantenido por la comunidad, que te ayuda a encontrar clubes de juegos de mesa cerca de ti, en cualquier parte del mundo."
+title: "Sobre nosotros"
+description: "BoardGameClubs.org es un directorio gratuito, mantenido por la comunidad, que te ayuda a encontrar clubes de juegos de mesa cerca de ti, en cualquier parte del mundo."
 permalink: /es/about/
 ---
 
 <div class="content-page" markdown="1">
 
-# Acerca de Board Game Clubs
+# Sobre nosotros
 
-Board Game Clubs es un directorio gratuito, mantenido por la comunidad, de clubes de juegos de mesa de todo el mundo. Usa el selector de país en la parte superior de la navegación para cambiar qué país ves en el mapa. Conectamos a personas con clubes locales para que sea fácil descubrir dónde y cuándo se reúnen grupos cerca de ti.
+BoardGameClubs.org es un directorio gratuito, mantenido por la comunidad, de clubes de juegos de mesa de todo el mundo. Usa el selector de país en la parte superior de la navegación para cambiar qué país ves en el mapa. Conectamos a personas con clubes locales para que sea fácil descubrir dónde y cuándo se reúnen grupos cerca de ti.
 
 También hay un [calendario de eventos]({{ "/es/events/" | relative_url }}) con convenciones, jornadas de juego y torneos.
 

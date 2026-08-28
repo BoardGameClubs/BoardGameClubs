@@ -1,15 +1,15 @@
 ---
 layout: default
-title: "About Board Game Clubs"
-description: "Board Game Clubs is a free, community-maintained directory helping you find board game clubs near you, anywhere in the world."
+title: "About"
+description: "BoardGameClubs.org is a free, community-maintained directory helping you find board game clubs near you, anywhere in the world."
 permalink: /about/
 ---
 
 <div class="content-page" markdown="1">
 
-# About Board Game Clubs
+# About
 
-Board Game Clubs is a free, community-maintained directory of board game clubs around the world. We connect people with local clubs, making it easy to discover where and when groups meet near you.
+BoardGameClubs.org is a free, community-maintained directory of board game clubs around the world. We connect people with local clubs, making it easy to discover where and when groups meet near you.
 
 There's also an [events calendar]({{ "/events/" | relative_url }}) of conventions, game days and tournaments. Use the country switcher in the top nav to change which country's clubs and events you see.
 
