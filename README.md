@@ -4,7 +4,7 @@
 
 # BoardGameClubs.org
 
-**Find your nearest board game club — and the next convention.**
+**Find board game clubs and events near you.**
 
 A community-built directory powered by an interactive map, covering clubs worldwide, plus a calendar of conventions, game days and tournaments.
 

@@ -939,11 +939,11 @@ events_title:
 
 events_intro:
   en: "Find board game conventions, game days, tournaments and one-off tabletop events near you, with dates, venues and ticket links."
-  de: "Finde Brettspiel-Conventions, Spieletage, Turniere und einmalige Tabletop-Events in deiner Nähe – mit Terminen, Veranstaltungsorten und Ticket-Links."
+  de: "Finde Brettspiel-Conventions, Spieletage, Turniere und einmalige Tabletop-Events in deiner Nähe, mit Terminen, Veranstaltungsorten und Ticket-Links."
   it: "Trova convention di giochi da tavolo, giornate di gioco, tornei ed eventi da tavolo una tantum vicino a te, con date, sedi e link per i biglietti."
   fr: "Trouve des conventions de jeux de société, journées jeux, tournois et événements ponctuels près de chez toi, avec dates, lieux et liens billetterie."
   es: "Encuentra convenciones de juegos de mesa, jornadas de juego, torneos y eventos puntuales cerca de ti, con fechas, sedes y enlaces para entradas."
-  pl: "Znajdź konwenty planszówkowe, dni gier, turnieje i jednorazowe wydarzenia w pobliżu – z terminami, miejscami i linkami do biletów."
+  pl: "Znajdź konwenty planszówkowe, dni gier, turnieje i jednorazowe wydarzenia w pobliżu, z terminami, miejscami i linkami do biletów."
 
 events_add:
   en: "Add an event"

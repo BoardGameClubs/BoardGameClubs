@@ -4,7 +4,7 @@
   // Derived from the page origin so the local dev preview stays local and
   // the production page emits production URLs. (This file used to be an
   // inline script in embed-builder.md, but markdown renderers can mangle
-  // inline script content — rustkyll parsed `a || b` as a table — so it
+  // inline script content (rustkyll parsed `a || b` as a table), so it
   // lives as a static asset instead.)
   var EMBED_BASE = window.location.origin + "/embed/";
 

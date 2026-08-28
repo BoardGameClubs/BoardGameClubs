@@ -65,8 +65,8 @@
     },
 
     // Given a user-typed string, return the country profiles whose postcode
-    // regex matches it. Postcode formats aren't unique — a 5-digit US ZIP is
-    // also a valid DE/IT/FR/ES/… code — so:
+    // regex matches it. Postcode formats aren't unique (a 5-digit US ZIP is
+    // also a valid DE/IT/FR/ES/... code), so:
     // - if the active country's format matches, return only the active
     //   profile: a valid local code must never switch the country;
     // - otherwise return every match. One match → the caller auto-switches
@@ -113,7 +113,7 @@
         // Unambiguous foreign postcode: switch country. The country-change
         // callback in app.js re-initialises us with the new profile; we then
         // run the lookup against the new service. An ambiguous format (shared
-        // by several countries) doesn't switch — we look it up everywhere it
+        // by several countries) doesn't switch; we look it up everywhere it
         // could be and the picked suggestion decides (selectSuggestion).
         if (isPostcode && !isAmbiguous) {
           var activeCode = window.GameClubCountry && window.GameClubCountry.getActiveCode();
@@ -321,7 +321,7 @@
     fetchPlaceName: function (query, suggestionsEl, input) {
       var self = this;
       // Nominatim rejects 'q' combined with structured filters like 'country',
-      // so don't pre-filter by country — drop unsupported countries client-side
+      // so don't pre-filter by country; drop unsupported countries client-side
       // and let selection switch the active country if needed.
       var url = "https://nominatim.openstreetmap.org/search" +
         "?q=" + encodeURIComponent(query) +

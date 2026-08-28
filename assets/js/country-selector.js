@@ -87,7 +87,7 @@
     var fromUrl = readUrlCode();
     if (fromUrl && getProfile(fromUrl)) { resolvedFromExplicitSignal = true; return fromUrl; }
     // On a localised page (/de/, /it/, …) the URL implies the country choice,
-    // and a club page implies its club's country — either way any prior
+    // and a club page implies its club's country; either way any prior
     // localStorage selection is ignored in favour of the page default.
     // The English root falls back to localStorage as before.
     var pageLang = (window.GameClub && window.GameClub.language) || "en";

@@ -7,7 +7,7 @@
   // All clubs across all countries (global JSON). Country filtering happens
   // in JS based on the active country.
   var ALL_CLUBS = [];
-  // Upcoming events across all countries (map pins only — the sidebar list
+  // Upcoming events across all countries (map pins only; the sidebar list
   // stays clubs-only so units, sort and result counts keep meaning "clubs").
   var ALL_EVENTS = [];
   var activeCountry = null;
@@ -92,7 +92,7 @@
         // position is already in the URL; the dataset follows).
         document.addEventListener("click", function (e) {
           if (!e.target || !e.target.closest) return;
-          // Modifier/middle clicks open a new tab — this page isn't being
+          // Modifier/middle clicks open a new tab; this page isn't being
           // left, so its history entry must stay as-is.
           if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
           var link = e.target.closest("a[data-club-country]");
@@ -241,7 +241,7 @@
 
   // A location pin only means something near where it was set. When the map
   // centre leaves the active country's bounds entirely (panned off to browse
-  // another country), the pin and its distance filter are stale context —
+  // another country), the pin and its distance filter are stale context;
   // dismiss them rather than sorting a faraway list against them.
   function dismissLocationIfPannedAway() {
     if (!userLocation) return;
@@ -641,7 +641,7 @@
           distanceFilter.value = "";
           distanceFilter.disabled = true;
         }
-        // keepView: the user is mid-pan somewhere else — don't re-fit the
+        // keepView: the user is mid-pan somewhere else, so don't re-fit the
         // map back to the active country's clubs under them.
         update(!(opts && opts.keepView));
       }

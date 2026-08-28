@@ -3,10 +3,10 @@
 #
 # Two distinct concepts:
 #   - page.language ("en" | "de" | "it" | "fr" | "es" | "pl") drives the UI
-#     strings — comes from the URL (/ = en, /de/ = de, etc.). Independent of
+#     strings, and comes from the URL (/ = en, /de/ = de, etc.). Independent of
 #     the active country.
 #   - active country (chosen by URL ?country=, localStorage, or the nav
-#     selector — falling back to default_country_for_language) drives the
+#     selector, falling back to default_country_for_language) drives the
 #     dataset, map centre/zoom, units, postcode service, currency.
 #
 # Add a new country by adding a key here (ISO 3166-1 alpha-2, lowercase) and

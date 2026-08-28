@@ -1,6 +1,6 @@
 ---
 ---
-{% comment %}Chrome (nav/footer) takes its language from page.language —
+{% comment %}Chrome (nav/footer) takes its language from page.language;
 which comes from the scoped default for the file's path (English for
 /clubs/, French for /fr/, and so on). Club-specific bits inside the
 page body that should follow the club's country (day names, type
@@ -39,7 +39,7 @@ labels) are localised separately in _layouts/club.html.{% endcomment %}
       language: {{ lang | jsonify }},
       defaultCountryCode: {{ country.code | jsonify }},
       // Club and event pages imply their country (the listing's own), like
-      // localised pages do — a saved country choice must not override it.
+      // localised pages do: a saved country choice must not override it.
       countryImplied: {% if page.layout == "club" or page.layout == "event" %}true{% else %}false{% endif %}
     };
     window.GameClubCartoKey = {{ site.carto_api_key | default: "" | jsonify }};

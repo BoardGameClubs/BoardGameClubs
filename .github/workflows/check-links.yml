@@ -68,12 +68,12 @@ jobs:
             const issue = existing.find(i => (i.body || '').includes(MARKER));
 
             if (dead === 0 && suspect === 0) {
-              // Nothing wrong — close the issue if it exists, otherwise do nothing.
+              // Nothing wrong. Close the issue if it exists, otherwise do nothing.
               if (issue) {
                 await github.rest.issues.createComment({
                   owner: context.repo.owner, repo: context.repo.repo,
                   issue_number: issue.number,
-                  body: 'All checked links responded OK on the latest run. Closing — the workflow will reopen this if links break again.',
+                  body: 'All checked links responded OK on the latest run. Closing this; the workflow will reopen this if links break again.',
                 });
                 await github.rest.issues.update({
                   owner: context.repo.owner, repo: context.repo.repo,

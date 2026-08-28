@@ -80,7 +80,7 @@
         NB: this loop binds `nav_country`, not `country`. `{% include %}` shares
         the parent layout's scope, so assigning to `country` would clobber
         home.html's `country` (the active-default profile) and leave it on the
-        last iterated entry — which previously made defaultCountryCode = NZ.
+        last iterated entry, which previously made defaultCountryCode = NZ.
       {% endcomment %}
       {% assign country_keys = "" | split: "" %}
       {% for entry in site.data.countries %}

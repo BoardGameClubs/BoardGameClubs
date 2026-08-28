@@ -5,7 +5,7 @@
   //
   // The calendar fetches /api/events.json once, scopes it to the active
   // country (window.GameClubCountry) and re-renders in place when the nav
-  // globe changes country — country changes never navigate. Dates are ISO
+  // globe changes country; country changes never navigate. Dates are ISO
   // "YYYY-MM-DD" strings; Intl.DateTimeFormat renders month names in the
   // page language so there are no per-language month tables.
 
