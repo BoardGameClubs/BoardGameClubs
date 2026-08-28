@@ -4,13 +4,13 @@ name: "Mecatol Rex"
 type: ["Board Games"]
 days: ["Various"]
 time: ""
-frequency: "Weekly"
+frequency: "Daily"
 location:
   name: "Mecatol Rex"
-  address: "C/ Matilde Hernández 36, Madrid"
-  lat: 40.3911161
-  lng: -3.7338841
-cost: "Free"
+  address: "C/ de la Tórtola 10 3-B, Madrid "
+  lat: 40.390795
+  lng: -3.734912
+cost: "20€/mes"
 image: ""
 website: "http://www.mecatolrex.com"
 meetup: ""
