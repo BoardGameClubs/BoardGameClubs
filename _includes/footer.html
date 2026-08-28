@@ -10,11 +10,14 @@
 {% endcase %}
 {% assign canonical_clubs = site.clubs | where: "language", "en" %}
 {% assign club_count = canonical_clubs | size %}
-{% assign count_label = i18n.footer_club_count[lang] | replace: "%COUNT%", club_count %}
+{% assign event_count = site.data.event_count | default: 0 %}
+{% assign club_count_label = i18n.footer_club_count[lang] | replace: "%COUNT%", club_count %}
+{% assign event_count_label = i18n.footer_event_count[lang] | replace: "%COUNT%", event_count %}
 <footer class="site-footer">
   <p class="footer-legal">&copy; {{ site.time | date: "%Y" }} {{ i18n.footer_copyright[lang] }} &middot; {{ i18n.footer_source_under[lang] }} <a href="{{ url_prefix | append: '/licence/' | relative_url }}">MIT + Commons Clause</a></p>
   <p class="footer-links">
     <a href="{{ url_prefix | append: '/about/' | relative_url }}">{{ i18n.footer_about[lang] }}</a>
+    <a href="{{ url_prefix | append: '/events/' | relative_url }}">{{ i18n.nav_events[lang] }}</a>
     <a href="{{ url_prefix | append: '/contribute/' | relative_url }}">{{ i18n.footer_contribute[lang] }}</a>
     <a href="{{ url_prefix | append: '/privacy/' | relative_url }}">{{ i18n.footer_privacy[lang] }}</a>
     <a href="{{ url_prefix | append: '/licence/' | relative_url }}">{{ i18n.footer_licence[lang] }}</a>
@@ -22,5 +25,5 @@
     {% if site.repository %}<a href="https://github.com/{{ site.repository }}">GitHub</a>{% endif %}
     <a class="footer-coffee" href="https://www.buymeacoffee.com/kkjdaniel" target="_blank" rel="noopener">☕ {{ i18n.footer_coffee[lang] }}</a>
   </p>
-  <p class="footer-count"><a href="{{ url_prefix | append: '/' | relative_url }}">{{ count_label }}</a></p>
+  <p class="footer-count"><a href="{{ url_prefix | append: '/' | relative_url }}">{{ club_count_label }}</a> &middot; <a href="{{ url_prefix | append: '/events/' | relative_url }}">{{ event_count_label }}</a></p>
 </footer>

@@ -11,12 +11,15 @@ permalink: /pl/about/
 
 Board Game Clubs to bezpłatny katalog klubów gier planszowych na całym świecie, prowadzony przez społeczność. Użyj przełącznika kraju u góry nawigacji, aby zmienić kraj wyświetlany na mapie. Łączymy ludzi z lokalnymi klubami, dzięki czemu łatwo dowiesz się, gdzie i kiedy spotykają się grupy w Twojej okolicy.
 
+Jest też [kalendarz wydarzeń]({{ "/pl/events/" | relative_url }}) z konwentami, dniami gier i turniejami.
+
 ## Jak to działa
 
 - Przeglądaj [mapę]({{ "/pl/" | relative_url }}), aby znaleźć kluby w pobliżu
 - Filtruj po dniu tygodnia lub szukaj według nazwy i lokalizacji
 - Kliknij klub, aby zobaczyć wszystkie szczegóły: miejsce, godzinę, koszt i linki
 - Użyj „Moja lokalizacja", aby posortować kluby według odległości
+- Sprawdź [kalendarz wydarzeń]({{ "/pl/events/" | relative_url }}), aby znaleźć nadchodzące konwenty, dni gier i turnieje z terminami, miejscami i linkami do biletów
 
 ## Prowadzone przez społeczność
 
@@ -24,7 +27,7 @@ Wszystkie dane klubów są zapisywane jako pojedyncze pliki w naszym [repozytori
 
 ## Bez kont, z poszanowaniem prywatności
 
-Board Game Clubs to statyczna strona hostowana na GitHub Pages. Nie ma kont użytkowników ani plików cookie. Do anonimowych statystyk odwiedzin używamy [GoatCounter](https://www.goatcounter.com/). Nie zbiera danych osobowych, nie używa cookie i jest w pełni open source. Interaktywna mapa korzysta z OpenStreetMap, który również jest darmowy i open source.
+Nie ma kont użytkowników ani plików cookie. Do anonimowych statystyk odwiedzin używamy [GoatCounter](https://www.goatcounter.com/). Nie zbiera danych osobowych, nie używa cookie i jest w pełni open source. Interaktywna mapa korzysta z OpenStreetMap, który również jest darmowy i open source.
 
 ## Dołącz
 

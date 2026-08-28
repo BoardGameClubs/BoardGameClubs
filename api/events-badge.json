@@ -1,0 +1,9 @@
+---
+layout: null
+---
+{
+  "schemaVersion": 1,
+  "label": "Upcoming Events",
+  "message": "{{ site.data.event_count | default: 0 }}",
+  "color": "0d9488"
+}

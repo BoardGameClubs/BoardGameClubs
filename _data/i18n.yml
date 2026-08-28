@@ -331,6 +331,14 @@ footer_club_count:
   es: "%COUNT% clubes listados"
   pl: "%COUNT% klubów na liście"
 
+footer_event_count:
+  en: "%COUNT% upcoming events"
+  de: "%COUNT% kommende Events"
+  it: "%COUNT% eventi in programma"
+  fr: "%COUNT% événements à venir"
+  es: "%COUNT% próximos eventos"
+  pl: "%COUNT% nadchodzących wydarzeń"
+
 lang_banner_de:
   en: "Looking for clubs in Germany? Visit the German site →"
   de: "Brettspielclubs in Deutschland? Zur deutschen Seite →"
@@ -922,12 +930,12 @@ nav_events:
   pl: "Wydarzenia"
 
 events_title:
-  en: "Board Game Conventions & Events"
-  de: "Brettspiel-Conventions & Events"
-  it: "Convention ed eventi di giochi da tavolo"
-  fr: "Conventions et événements de jeux de société"
-  es: "Convenciones y eventos de juegos de mesa"
-  pl: "Konwenty i wydarzenia planszówkowe"
+  en: "Conventions & Events"
+  de: "Conventions & Events"
+  it: "Convention ed eventi"
+  fr: "Conventions et événements"
+  es: "Convenciones y eventos"
+  pl: "Konwenty i wydarzenia"
 
 events_intro:
   en: "Find board game conventions, game days, tournaments and one-off tabletop events near you, with dates, venues and ticket links."

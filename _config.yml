@@ -1,8 +1,8 @@
 title: BoardGameClubs.org
 description: >-
   Find your nearest board game, RPG, wargaming, Blood on the Clocktower, and TCG
-  club. A free, community-maintained directory of tabletop gaming clubs with
-  interactive maps.
+  club, plus a calendar of upcoming conventions, game days and tournaments. A
+  free, community-maintained directory of tabletop gaming with interactive maps.
 url: "https://boardgameclubs.org"
 baseurl: ""
 repository: "BoardGameClubs/BoardGameClubs"
