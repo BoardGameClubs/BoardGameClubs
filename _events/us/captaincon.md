@@ -6,10 +6,10 @@ end_date: 2027-02-07
 type: ["Board Games"]
 format: "Convention"
 location:
-  name: "Warwick, RI"
-  address: "Warwick, RI, USA"
-  lat: 41.70527
-  lng: -71.41839
+  name: "Crowne Plaza Providence-Warwick (Airport)"
+  address: "801 Greenwich Ave, Warwick, RI 02886"
+  lat: 41.7149879
+  lng: -71.4675375
 price: ""
 tickets: ""
 website: "https://tabletop.events/conventions/captaincon-2026"
