@@ -935,9 +935,7 @@
       text-decoration: none;
     }
 
-    // Mobile: a full-width strip flush under the header rather than a
-    // stray left-aligned link above the centred heading. Negative margins
-    // pull it out of .club-detail's padding.
+    // Full-width strip flush under the header on mobile.
     @media (max-width: $bp-md - 1) {
       display: flex;
       margin: -2.5rem -1.25rem 1.75rem;
