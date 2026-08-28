@@ -934,6 +934,24 @@
       color: $color-accent;
       text-decoration: none;
     }
+
+    // Mobile: a full-width strip flush under the header rather than a
+    // stray left-aligned link above the centred heading. Negative margins
+    // pull it out of .club-detail's padding.
+    @media (max-width: $bp-md - 1) {
+      display: flex;
+      margin: -2.5rem -1.25rem 1.75rem;
+      padding: 0.7rem 1.25rem;
+      gap: 0.25rem;
+      font-size: 0.9rem;
+      color: $color-text;
+      background: $color-tag;
+      border-bottom: 1px solid $color-border;
+
+      &:active {
+        background: $color-border;
+      }
+    }
   }
 
   .detail-map {

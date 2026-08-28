@@ -48,7 +48,7 @@ names follow the page language; the Liquid text is the English fallback.{% endco
 </script>
 
 <div class="club-detail event-detail">
-  <a href="{{ site.baseurl }}/{% if lang != 'en' %}{{ lang }}/{% endif %}events/?country={{ country.code }}" class="club-back-link" id="club-back-link"><i data-lucide="arrow-left" style="width:18px;height:18px;"></i> {{ i18n.back_to_events[lang] }}</a>
+  <a href="{{ site.baseurl }}/{% if lang != 'en' %}{{ lang }}/{% endif %}events/?country={{ country.code }}" class="club-back-link" id="club-back-link"><i data-lucide="chevron-left" style="width:18px;height:18px;"></i> {{ i18n.back_to_events[lang] }}</a>
 
   {% if end_iso < today_iso %}
   <div class="event-past-notice"><i data-lucide="history" style="width:16px;height:16px;"></i> {{ i18n.events_past_notice[lang] }}</div>
