@@ -6,10 +6,10 @@ end_date: 2026-10-25
 type: ["Board Games"]
 format: "Convention"
 location:
-  name: "Seekonk, MA"
-  address: "Seekonk, MA 02771, USA"
-  lat: 41.80843
-  lng: -71.337
+  name: "Ramada by Wyndham Seekonk"
+  address: "213 Taunton Avenue, Seekonk, MA 02771"
+  lat: 41.824198
+  lng: -71.3367089
 price: ""
 tickets: ""
 website: "https://www.armourcon.net/"
