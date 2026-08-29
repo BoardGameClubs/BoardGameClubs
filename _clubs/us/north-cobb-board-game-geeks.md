@@ -7,9 +7,9 @@ time: ""
 frequency: "Ad-hoc"
 location:
   name: "Hobby Town"
-  address: "Kennesaw, Georgia 30144-1647"
-  lat: 34.0234337
-  lng: -84.6154897
+  address: "840 Ernest W Barrett Pkwy NW Ste 650, Kennesaw, GA 30144"
+  lat: 34.0096753
+  lng: -84.5748755
 cost: "Free"
 image: ""
 website: ""

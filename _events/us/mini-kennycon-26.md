@@ -7,9 +7,9 @@ type: ["Board Games"]
 format: "Convention"
 location:
   name: "Marietta, GA"
-  address: "Marietta, GA, USA"
-  lat: 33.95325
-  lng: -84.54994
+  address: "1245 Villa Rica Rd, Marietta, GA 30064"
+  lat: 33.9219105
+  lng: -84.6530377
 price: ""
 tickets: ""
 website: "https://www.kennycon.net/"
