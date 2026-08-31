@@ -15,6 +15,7 @@ body:
       description: Which country's directory should this club be listed in?
       options:
         - United Kingdom (GB)
+        - United States (US)
         - Germany (DE)
         - Austria (AT)
         - Switzerland (CH)
