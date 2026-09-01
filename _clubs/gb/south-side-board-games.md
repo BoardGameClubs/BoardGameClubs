@@ -5,7 +5,7 @@ days: ["Monday"]
 time: "7:00pm - 11:00pm"
 frequency: "Weekly"
 location:
-  name: "The Ivory Hotel"
+  name: "The Ivory Hotel, Shawlands, Glasgow"
   address: "2-4 Camphill Ave, Shawlands, Glasgow, G41 3AY"
   lat: 55.8285708
   lng: -4.2737004
