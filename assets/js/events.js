@@ -168,6 +168,21 @@
     );
   }
 
+  // Pill links that jump to later month sections. The first month is always
+  // in view already, so it gets no link; with a single month there's no nav
+  // at all. Labels show the year only once it differs from the first month's.
+  function renderMonthNav(months) {
+    if (months.length < 2) return "";
+    var firstYear = months[0].slice(0, 4);
+    var links = months.slice(1).map(function (month) {
+      var p = month.split("-");
+      var d = new Date(parseInt(p[0], 10), parseInt(p[1], 10) - 1, 1);
+      var opts = month.slice(0, 4) === firstYear ? { month: "short" } : { month: "short", year: "numeric" };
+      return '<a href="#events-month-' + month + '" data-month-target="events-month-' + month + '">' + escapeHtml(fmt(d, opts)) + "</a>";
+    });
+    return '<nav class="events-month-nav" aria-label="' + escapeHtml(i18n.events_jump || "Jump to month") + '">' + links.join("") + "</nav>";
+  }
+
   function renderEmpty(code) {
     return (
       '<div class="empty-state">' +
@@ -205,17 +220,20 @@
     if (upcoming.length === 0) {
       html += renderEmpty(code);
     } else {
+      var months = [];
       var currentMonth = null;
       upcoming.forEach(function (ev) {
         var month = ev.start_date.slice(0, 7);
         if (month !== currentMonth) {
           if (currentMonth !== null) html += "</div></section>";
           currentMonth = month;
-          html += '<section class="events-month"><h2 class="events-month-heading">' + escapeHtml(formatMonthHeading(month)) + '</h2><div class="events-month-list">';
+          months.push(month);
+          html += '<section class="events-month" id="events-month-' + month + '"><h2 class="events-month-heading">' + escapeHtml(formatMonthHeading(month)) + '</h2><div class="events-month-list">';
         }
         html += renderCard(ev, false);
       });
       html += "</div></section>";
+      html = renderMonthNav(months) + html;
     }
 
     if (past.length > 0) {
@@ -234,6 +252,16 @@
   function initCalendar() {
     var container = document.getElementById("events-list");
     if (!container) return;
+
+    // Delegated so the links keep working across country-change re-renders.
+    container.addEventListener("click", function (e) {
+      var link = e.target.closest ? e.target.closest("[data-month-target]") : null;
+      if (!link) return;
+      var target = document.getElementById(link.getAttribute("data-month-target"));
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
 
     fetch(baseurl + "/api/events.json")
       .then(function (res) { return res.json(); })

@@ -87,8 +87,35 @@
   padding: 2rem 0;
 }
 
+.events-month-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+
+  a {
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    background: $color-tag;
+    color: $color-primary-light;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s ease, color 0.15s ease;
+
+    @media (min-width: $bp-lg) {
+      &:hover {
+        background: rgba($color-accent, 0.12);
+        color: $color-accent;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 .events-month {
   margin-bottom: 1.75rem;
+  scroll-margin-top: 1rem;
   animation: fadeSlideIn 0.35s ease both;
 }
 

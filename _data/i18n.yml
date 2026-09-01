@@ -970,6 +970,14 @@ events_past:
   es: "Eventos pasados"
   pl: "Minione wydarzenia"
 
+events_jump:
+  en: "Jump to month"
+  de: "Zu Monat springen"
+  it: "Vai al mese"
+  fr: "Aller au mois"
+  es: "Ir al mes"
+  pl: "Przejdź do miesiąca"
+
 events_past_notice:
   en: "This event has already taken place."
   de: "Dieses Event hat bereits stattgefunden."
