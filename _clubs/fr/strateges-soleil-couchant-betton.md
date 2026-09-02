@@ -1,7 +1,7 @@
 ---
 country: "FR"
 name: "Les stratèges du soleil couchant"
-type: ["Board Games"]
+type: ["Wargames"]
 days: ["Various"]
 time: ""
 frequency: "Weekly"
