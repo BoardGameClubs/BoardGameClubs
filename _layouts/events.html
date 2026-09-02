@@ -14,7 +14,7 @@ separate element rather than "events in %COUNTRY%" because articles and
 prepositions vary per country and language ("the United States").{% endcomment %}
 <div class="content-page events-page">
   <div class="events-header">
-    <div class="events-country" id="events-country"><i data-lucide="globe" style="width:14px;height:14px;"></i><span>{{ country[country_name_key] }}</span></div>
+    <div class="events-country" id="events-country"><i data-lucide="map-pin" style="width:14px;height:14px;"></i><span>{{ country[country_name_key] }}</span></div>
     <h1>{{ i18n.events_title[lang] }}</h1>
     <p class="events-intro">{{ i18n.events_intro[lang] }}</p>
     <div class="events-cta" id="events-cta" hidden>
@@ -39,6 +39,7 @@ prepositions vary per country and language ("the United States").{% endcomment %
     events_add:       {{ i18n.events_add[lang] | jsonify }},
     events_past:      {{ i18n.events_past[lang] | jsonify }},
     events_jump:      {{ i18n.events_jump[lang] | jsonify }},
+    events_jump_label: {{ i18n.events_jump_label[lang] | jsonify }},
     tickets:          {{ i18n.tickets[lang] | jsonify }},
     event_format_convention: {{ i18n.event_format_convention[lang] | jsonify }},
     event_format_game_day:   {{ i18n.event_format_game_day[lang] | jsonify }},

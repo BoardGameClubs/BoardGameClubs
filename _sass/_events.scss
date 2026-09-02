@@ -43,7 +43,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem 0.75rem;
-  margin-top: 1.1rem;
+  margin-bottom: 1.5rem;
   padding: 0.7rem 0.95rem;
   border-radius: $border-radius;
   background: rgba($color-accent, 0.05);
@@ -85,6 +85,15 @@
   color: $color-text-light;
   text-align: center;
   padding: 2rem 0;
+}
+
+.events-month-nav-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-text-light;
+  margin-bottom: 0.4rem;
 }
 
 .events-month-nav {
@@ -131,17 +140,23 @@
 }
 
 .events-month-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 0.6rem;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .event-card {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
   align-items: center;
-  gap: 1rem;
-  padding: 0.9rem 2.4rem 0.9rem 0.9rem;
+  gap: 0.6rem 1rem;
+  padding: 0 0.9rem 0.9rem;
   background: $color-surface;
   border: 1px solid $color-border;
   border-radius: $border-radius;
@@ -154,13 +169,8 @@
       text-decoration: none;
       border-color: $color-accent;
 
-      .event-card-name,
-      .club-card-chevron {
+      .event-card-name {
         color: $color-accent;
-      }
-
-      .club-card-chevron {
-        opacity: 1;
       }
     }
   }
@@ -211,39 +221,23 @@
     gap: 0.3rem;
     margin-top: 0.4rem;
   }
-
-  .club-card-chevron {
-    position: absolute;
-    right: 0.85rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 18px;
-    height: 18px;
-    color: $color-text-light;
-    opacity: 0.5;
-    transition: color 0.2s ease, opacity 0.2s ease;
-  }
 }
 
+// Full-width banner across the top of the card, bleeding over its side
+// padding to reach the edges
 .event-card-date {
-  flex-shrink: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
-  // Fixed width so a column of cards lines up whether the block holds
-  // "4", "11-14" or "30-2 / DEC-JAN"; ranges use a smaller size to fit.
-  width: 72px;
-  height: 60px;
-  border-radius: $border-radius;
-  background: $color-accent;
-  color: #fff;
+  gap: 0.4rem;
+  width: calc(100% + 1.8rem);
+  margin: 0 -0.9rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: calc(#{$border-radius} - 1px) calc(#{$border-radius} - 1px) 0 0;
+  background: rgba($color-accent, 0.1);
+  color: color.adjust($color-accent, $lightness: -10%);
   line-height: 1;
   white-space: nowrap;
-
-  &.event-card-date-multi .event-card-day {
-    font-size: 1.15rem;
-  }
 }
 
 .event-card-day {
@@ -258,7 +252,6 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-top: 0.2rem;
 }
 
 .event-card-icon {
@@ -275,10 +268,6 @@
     height: 100%;
     object-fit: contain;
     display: block;
-  }
-
-  @media (max-width: $bp-sm - 1px) {
-    display: none;
   }
 }
 
@@ -329,6 +318,9 @@
     &::before {
       content: "▸";
       display: inline-block;
+      font-size: 1.1rem;
+      line-height: 1;
+      vertical-align: -0.1em;
       margin-right: 0.4rem;
       transition: transform 0.2s ease;
     }
@@ -341,11 +333,13 @@
 
 // ─── Event detail page ───
 
+// Block-level so it always lands on its own line under the back link
 .event-past-notice {
-  display: inline-flex;
+  display: flex;
+  width: fit-content;
   align-items: center;
   gap: 0.45rem;
-  margin: 1rem 0 0;
+  margin: 0 0 1.25rem;
   padding: 0.5rem 0.85rem;
   border-radius: $border-radius;
   background: $color-tag;

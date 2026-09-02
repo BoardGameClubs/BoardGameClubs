@@ -978,6 +978,22 @@ events_jump:
   es: "Ir al mes"
   pl: "Przejdź do miesiąca"
 
+add_to_calendar:
+  en: "Add to calendar"
+  de: "Zum Kalender hinzufügen"
+  it: "Aggiungi al calendario"
+  fr: "Ajouter au calendrier"
+  es: "Añadir al calendario"
+  pl: "Dodaj do kalendarza"
+
+events_jump_label:
+  en: "Jump to"
+  de: "Springe zu"
+  it: "Vai a"
+  fr: "Aller à"
+  es: "Ir a"
+  pl: "Przejdź do"
+
 events_past_notice:
   en: "This event has already taken place."
   de: "Dieses Event hat bereits stattgefunden."
@@ -1059,12 +1075,12 @@ club_type_events:
   pl: "Wydarzenia"
 
 events_cta:
-  en: "Know of a convention or event we're missing?"
-  de: "Kennst du eine Convention oder ein Event, das uns fehlt?"
-  it: "Conosci una convention o un evento che ci manca?"
-  fr: "Tu connais une convention ou un événement qui manque ?"
-  es: "¿Conoces una convención o evento que nos falta?"
-  pl: "Znasz konwent lub wydarzenie, którego nam brakuje?"
+  en: "Missing an event?"
+  de: "Fehlt ein Event?"
+  it: "Manca un evento?"
+  fr: "Un événement manque ?"
+  es: "¿Falta algún evento?"
+  pl: "Brakuje wydarzenia?"
 
 event_format_convention:
   en: "Convention"

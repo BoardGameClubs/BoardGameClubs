@@ -46,7 +46,7 @@
   position: relative;
   z-index: 1010;
   border-bottom: 2px solid $color-border;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
 
   // Fix header in place on mobile home page so it doesn't scroll away
   // when browser shifts viewport on input focus
@@ -922,6 +922,10 @@ body:has(.home-layout) {
   margin: 0 auto;
   padding: 2.5rem 1rem;
   animation: fadeSlideIn 0.5s ease both;
+
+  @media (max-width: $bp-md - 1) {
+    padding-top: 1.5rem;
+  }
 
   h1 {
     margin-bottom: 1rem;

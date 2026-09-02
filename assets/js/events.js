@@ -163,16 +163,16 @@
           '<div class="club-card-meta">' + venue + dates + "</div>" +
           (tags ? '<div class="club-tags">' + tags + "</div>" : "") +
         "</div>" +
-        '<i data-lucide="chevron-right" class="club-card-chevron"></i>' +
       "</a>"
     );
   }
 
   // Pill links that jump to later month sections. The first month is always
-  // in view already, so it gets no link; with a single month there's no nav
-  // at all. Labels show the year only once it differs from the first month's.
+  // in view already, so it gets no link; the nav only appears once there are
+  // at least three months. Labels show the year only once it differs from
+  // the first month's.
   function renderMonthNav(months) {
-    if (months.length < 2) return "";
+    if (months.length < 3) return "";
     var firstYear = months[0].slice(0, 4);
     var links = months.slice(1).map(function (month) {
       var p = month.split("-");
@@ -180,7 +180,10 @@
       var opts = month.slice(0, 4) === firstYear ? { month: "short" } : { month: "short", year: "numeric" };
       return '<a href="#events-month-' + month + '" data-month-target="events-month-' + month + '">' + escapeHtml(fmt(d, opts)) + "</a>";
     });
-    return '<nav class="events-month-nav" aria-label="' + escapeHtml(i18n.events_jump || "Jump to month") + '">' + links.join("") + "</nav>";
+    return (
+      '<div class="events-month-nav-label" aria-hidden="true">' + escapeHtml(i18n.events_jump_label || "Jump to") + "</div>" +
+      '<nav class="events-month-nav" aria-label="' + escapeHtml(i18n.events_jump || "Jump to month") + '">' + links.join("") + "</nav>"
+    );
   }
 
   function renderEmpty(code) {
@@ -246,6 +249,16 @@
     }
 
     container.innerHTML = html;
+    // The CTA lives in the header markup but is shown below the month nav;
+    // re-render wipes the container, so re-insert the node each time.
+    if (cta) {
+      var nav = container.querySelector(".events-month-nav");
+      if (nav) {
+        nav.insertAdjacentElement("afterend", cta);
+      } else {
+        container.insertBefore(cta, container.firstChild);
+      }
+    }
     if (window.lucide) lucide.createIcons();
   }
 
@@ -284,8 +297,53 @@
       });
   }
 
+  // "Add to calendar" link on event detail pages: builds an all-day .ics
+  // (DTEND is exclusive, so it's the day after the event ends) and downloads
+  // it via a temporary object URL.
+  function initIcsLink() {
+    var el = document.querySelector("[data-event-ics]");
+    if (!el || !window.Blob || !window.URL || !URL.createObjectURL) return;
+
+    function icsText(s) {
+      return (s || "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n");
+    }
+
+    el.addEventListener("click", function (e) {
+      e.preventDefault();
+      var start = el.getAttribute("data-start");
+      var end = el.getAttribute("data-end") || start;
+      var p = end.split("-");
+      var endEx = new Date(Date.UTC(parseInt(p[0], 10), parseInt(p[1], 10) - 1, parseInt(p[2], 10) + 1))
+        .toISOString().slice(0, 10);
+      var slug = window.location.pathname.replace(/\/$/, "").split("/").pop() || "event";
+      var ics =
+        "BEGIN:VCALENDAR\r\n" +
+        "VERSION:2.0\r\n" +
+        "PRODID:-//boardgameclubs.org//EN\r\n" +
+        "BEGIN:VEVENT\r\n" +
+        "UID:" + slug + "@boardgameclubs.org\r\n" +
+        "DTSTAMP:" + new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z\r\n" +
+        "DTSTART;VALUE=DATE:" + start.replace(/-/g, "") + "\r\n" +
+        "DTEND;VALUE=DATE:" + endEx.replace(/-/g, "") + "\r\n" +
+        "SUMMARY:" + icsText(el.getAttribute("data-name")) + "\r\n" +
+        "LOCATION:" + icsText(el.getAttribute("data-location")) + "\r\n" +
+        "URL:" + window.location.href.split("#")[0] + "\r\n" +
+        "END:VEVENT\r\n" +
+        "END:VCALENDAR\r\n";
+      var blobUrl = URL.createObjectURL(new Blob([ics], { type: "text/calendar;charset=utf-8" }));
+      var a = document.createElement("a");
+      a.href = blobUrl;
+      a.download = slug + ".ics";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(function () { URL.revokeObjectURL(blobUrl); }, 1000);
+    });
+  }
+
   function boot() {
     localiseDateSpans();
+    initIcsLink();
     initCalendar();
   }
 

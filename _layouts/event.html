@@ -96,7 +96,7 @@ names follow the page language; the Liquid text is the English fallback.{% endco
 
   <dl class="detail-info">
     <dt>{{ i18n.label_dates[lang] }}</dt>
-    <dd><span data-event-dates data-start="{{ start_iso }}" data-end="{{ end_iso }}" data-long="1">{{ dates_fallback }}</span></dd>
+    <dd><span data-event-dates data-start="{{ start_iso }}" data-end="{{ end_iso }}" data-long="1">{{ dates_fallback }}</span> {% if end_iso >= today_iso %}<a href="#" class="directions-link" data-event-ics data-name="{{ page.name | escape }}" data-start="{{ start_iso }}" data-end="{{ end_iso }}" data-location="{{ page.location.name | escape }}, {{ page.location.address | escape }}"><i data-lucide="calendar-plus" style="width:13px;height:13px;"></i> {{ i18n.add_to_calendar[lang] }}</a>{% endif %}</dd>
 
     <dt>{{ i18n.label_venue[lang] }}</dt>
     <dd>{{ page.location.name }}</dd>
