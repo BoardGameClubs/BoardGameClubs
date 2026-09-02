@@ -297,9 +297,7 @@
       });
   }
 
-  // "Add to calendar" link on event detail pages: builds an all-day .ics
-  // (DTEND is exclusive, so it's the day after the event ends) and downloads
-  // it via a temporary object URL.
+  // DTEND is exclusive for all-day events, so it's the day after the end date.
   function initIcsLink() {
     var el = document.querySelector("[data-event-ics]");
     if (!el || !window.Blob || !window.URL || !URL.createObjectURL) return;

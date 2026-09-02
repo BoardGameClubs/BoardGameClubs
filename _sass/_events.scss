@@ -223,8 +223,6 @@
   }
 }
 
-// Full-width banner across the top of the card, bleeding over its side
-// padding to reach the edges
 .event-card-date {
   display: flex;
   align-items: baseline;
@@ -333,7 +331,6 @@
 
 // ─── Event detail page ───
 
-// Block-level so it always lands on its own line under the back link
 .event-past-notice {
   display: flex;
   width: fit-content;
