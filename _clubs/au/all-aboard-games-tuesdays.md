@@ -1,8 +1,8 @@
 ---
 country: "AU"
-name: "All Aboard Games (Thursdays)"
+name: "All Aboard Games (Tuesdays)"
 type: ["Board Games"]
-days: ["Thursday"]
+days: ["Tuesday"]
 time: "6:00pm - 11:00pm"
 frequency: "Weekly"
 location:
@@ -18,7 +18,7 @@ facebook: ""
 discord: ""
 bgg: ""
 description: |
-  Welcome to Thursday Game Night with All Aboard Games in Melbourne's western suburbs! Whether you're a total beginner, a casual player, or a seasoned board game tragic, this night is all about good games, good people, and a relaxed, welcoming vibe.
+  Tuesday game night with All Aboard Games in Melbourne's western suburbs! Whether you're a total beginner, a casual player, or a seasoned board game tragic, this night is all about good games, good people, and a relaxed, welcoming vibe.
 
   Feel free to BYO board games - many of our regulars bring games they love and are always happy to teach, so you never need to worry about knowing the rules. You're also welcome to just turn up and jump into whatever's being played.
 
@@ -38,5 +38,5 @@ description: |
 
   Good game night etiquette: ask others if they'd like to play your game (please don't assume by setting it up early), be considerate, friendly, and welcoming, and feel free to post in the event if there's a game you'd love to play to build interest. Most importantly, come along, meet great people, and have fun! All aboard!
 
-  The group also runs a weekly Tuesday game night at the same venue.
+  The group also runs a weekly Thursday game night at the same venue.
 ---
