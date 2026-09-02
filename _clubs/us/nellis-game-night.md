@@ -2,7 +2,7 @@
 country: "US"
 name: "Nellis Game Night"
 type: ["Board Games"]
-days: ["Friday"]
+days: ["Sunday"]
 time: "6:00pm - 9:00pm"
 frequency: "Fortnightly"
 location:
@@ -14,9 +14,9 @@ cost: "Free"
 image: ""
 website: ""
 meetup: ""
-facebook: ""
+facebook: "https://www.facebook.com/groups/515494654771355/"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/4439"
 description: >-
-  A family board game night on Nellis AFB held every 2nd and 4th Friday, hosted by Hunt Housing at the community center (hospital side) from 6:00pm-9:00pm. New and veteran gamers are welcome; base access is required. Kids and teens interested in playing family games are welcome too.
+  A family board game night on Nellis AFB held every 2nd and 4th Sunday, hosted by Hunt Housing at the community center (hospital side) from 6:00pm-9:00pm. New and veteran gamers are welcome; base access is required. DOD members, retirees, and AD personnel can join too, and kids and teens interested in playing family games are welcome.
 ---
