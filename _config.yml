@@ -89,7 +89,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - CONTRIBUTING.md
   - initial_club_data.md
   - vendor
   - node_modules

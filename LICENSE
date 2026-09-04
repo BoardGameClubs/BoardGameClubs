@@ -1,9 +1,25 @@
+This repository contains two kinds of material, licensed separately:
+
+1. The software (templates, stylesheets, JavaScript, plugins, scripts and
+   documentation) is licensed under the MIT License, subject to the Commons
+   Clause License Condition v1.0. Both texts are in the "Software License"
+   section below.
+
+2. The club and event data (everything under _clubs/ and _events/, and the
+   JSON feeds generated from it under api/) is licensed under the Creative
+   Commons Attribution 4.0 International License (CC BY 4.0). See the "Data
+   License" section at the end of this file.
+
+----------------------------------------------------------------------
+SOFTWARE LICENSE
+----------------------------------------------------------------------
+
 The Software is provided under the following license, subject to the
 Commons Clause License Condition v1.0 below.
 
 MIT License
 
-Copyright (c) 2025 Board Game Clubs UK
+Copyright (c) 2025 Board Game Clubs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -40,6 +56,35 @@ whose value derives, entirely or substantially, from the functionality of
 the Software. Any license notice or attribution required by the License must
 also include this Commons Clause License Condition notice.
 
-Licensor: Board Game Clubs UK
-Software: Board Game Clubs UK
+Licensor: Board Game Clubs
+Software: Board Game Clubs
 License: MIT License
+
+----------------------------------------------------------------------
+DATA LICENSE
+----------------------------------------------------------------------
+
+The club and event listings in this repository (the files under _clubs/
+and _events/, and the JSON feeds generated from them under api/) are
+contributed by the community and licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0).
+
+You are free to share and adapt the data for any purpose, including
+commercially, provided you give appropriate credit, link to the license,
+and indicate if changes were made. Suggested attribution:
+
+  Club and event data from BoardGameClubs.org
+  (https://boardgameclubs.org), licensed under CC BY 4.0.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+By submitting or editing a listing (via a GitHub issue form, a pull
+request, or any other route) you agree that your contribution is licensed
+under CC BY 4.0.
+
+The Commons Clause condition above applies to the Software only and does
+not restrict use of the data.
+
+Club and event logos under assets/images/ are supplied by their owners and
+remain the property of the respective clubs and organisers. They are not
+covered by either license.

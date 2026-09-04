@@ -10,9 +10,12 @@ A community-built directory powered by an interactive map, covering clubs worldw
 
 [![Clubs listed](https://img.shields.io/endpoint?url=https%3A%2F%2Fboardgameclubs.org%2Fapi%2Fbadge.json)](https://boardgameclubs.org)
 [![Upcoming events](https://img.shields.io/endpoint?url=https%3A%2F%2Fboardgameclubs.org%2Fapi%2Fevents-badge.json)](https://boardgameclubs.org/events/)
+
 [![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-blue?logo=github)](https://boardgameclubs.org)
 [![Built with Jekyll](https://img.shields.io/badge/Built%20with-Jekyll-cc0000?logo=jekyll)](https://jekyllrb.com/)
-[![License: MIT + Commons Clause](https://img.shields.io/badge/License-MIT%20%2B%20Commons%20Clause-green)](#license)
+
+[![Code: MIT + Commons Clause](https://img.shields.io/badge/Code-MIT%20%2B%20Commons%20Clause-green)](#license)
+[![Data: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-green)](#license)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange)](https://boardgameclubs.org/contribute/)
 
 [Live Site](https://boardgameclubs.org) · [Events](https://boardgameclubs.org/events/) · [Add a Club](https://boardgameclubs.org/contribute/) · [Add an Event](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-event.yml) · [Report a Bug](https://github.com/BoardGameClubs/BoardGameClubs/issues/new)
@@ -68,4 +71,4 @@ This is a free, community-run project. If you find it useful, you can [buy me a 
 
 This project's source code is licensed under the [MIT License with the Commons Clause](LICENSE) condition. In short: you're free to use, modify, and run your own copy, but you can't sell it as a paid product or service. See the [licence page](https://boardgameclubs.org/licence/) for a plain-English summary.
 
-Club and event data is contributed by the community and is available under [Creative Commons Attribution 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/): you can share and adapt the data as long as you give appropriate credit.
+Club and event data (`_clubs/`, `_events/` and the JSON feeds under `api/`) is contributed by the community and licensed separately under [Creative Commons Attribution 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/): you can share and adapt the data, commercially or not, as long as you credit BoardGameClubs.org and link to the licence. The Commons Clause does not apply to the data. Club and event logos remain the property of their owners. Full terms are in the [LICENSE](LICENSE) file.

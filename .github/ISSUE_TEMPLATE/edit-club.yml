@@ -12,7 +12,7 @@ body:
     id: club_name
     attributes:
       label: Which club?
-      placeholder: e.g. Wakefield Warriors
+      placeholder: Club name as listed on the site
     validations:
       required: true
 
@@ -21,6 +21,5 @@ body:
     attributes:
       label: What needs updating?
       description: Tell us what's changed - new time, new venue, updated links, etc.
-      placeholder: We've moved to a new venue...
     validations:
       required: true

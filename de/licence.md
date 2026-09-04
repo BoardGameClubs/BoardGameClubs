@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Lizenz"
-description: "Wie Board Game Clubs lizenziert ist: MIT mit einer Commons-Clause-Einschränkung (kein kommerzieller Verkauf der Software)."
+description: "Wie Board Game Clubs lizenziert ist: MIT mit Commons-Clause-Einschränkung für den Code und CC BY 4.0 für die Club- und Eventdaten."
 permalink: /de/licence/
 ---
 
@@ -21,6 +21,7 @@ Der Quellcode der Website steht unter der **MIT License** mit zusätzlicher **Co
 - **Du darfst nicht** sie als Produkt oder Dienstleistung verkaufen. Sie gegen Gebühr zu hosten oder andere dafür bezahlen zu lassen, dass sie sie für dich betreiben, ist nicht erlaubt.
 - **Du musst** den Copyright- und Lizenzhinweis in allen Kopien oder Ableitungen beibehalten.
 - **Es gibt keine Gewährleistung.** Die Software wird „wie sie ist" bereitgestellt.
+- **Die Club- und Eventdaten sind getrennt lizenziert.** Sie stehen unter [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de): Jede:r darf sie weiterverwenden, solange BoardGameClubs.org als Quelle genannt wird.
 
 ## Was die MIT License erlaubt
 
@@ -49,9 +50,23 @@ Praktisch heißt das:
 
 Die Commons Clause ist ein [veröffentlichter, standardisierter Text](https://commonsclause.com/), gepflegt von Fossa. Sie ist absichtlich eng gefasst: Sie beschränkt nur den Verkauf, nicht die Nutzung oder Veränderung.
 
-## Hinweis zu den Clubdaten
+## Club- und Eventdaten
 
-Die Clubeinträge in diesem Verzeichnis werden von der Community beigetragen. Die Informationen jedes Clubs (Name, Veranstaltungsort, Tage, Beschreibung usw.) werden von Freiwilligen hinzugefügt und stellen öffentlich zugängliche Informationen über diesen Club dar. Wenn du die Clubeinträge selbst für ein anderes Projekt nutzen möchtest, [öffne bitte ein Issue]({% if site.repository %}https://github.com/{{ site.repository }}/issues{% endif %}), damit wir besprechen können, was sinnvoll ist. Die Daten sind für das Wohl der Community da, und das soll so bleiben.
+Die Club- und Eventeinträge (die Dateien in `_clubs/` und `_events/` sowie die JSON-Feeds unter `/api/clubs.json` und `/api/events.json`) werden von der Community beigetragen und sind getrennt vom Code lizenziert, unter [Creative Commons Namensnennung 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.de).
+
+Das heißt, du darfst die Einträge für jeden Zweck kopieren, teilen und anpassen, auch kommerziell, solange du:
+
+- **Die Quelle nennst.** Nenne BoardGameClubs.org als Quelle und verlinke auf die Website.
+- **Auf die Lizenz verlinkst.** Verweise auf CC BY 4.0.
+- **Änderungen kennzeichnest.** Gib an, wenn du die Daten bearbeitet hast.
+
+Vorgeschlagene Namensnennung: „Club- und Eventdaten von [BoardGameClubs.org](https://boardgameclubs.org), lizenziert unter [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.de)."
+
+Die Commons Clause oben gilt nur für die Software. Sie schränkt die Nutzung der Daten nicht ein.
+
+Mit dem Einreichen oder Bearbeiten eines Eintrags, ob per GitHub-Formular, Pull Request oder auf anderem Weg, erklärst du dich damit einverstanden, dass dein Beitrag unter CC BY 4.0 veröffentlicht wird.
+
+Club- und Eventlogos in `assets/images/` gehören den jeweiligen Clubs und Veranstaltern und fallen unter keine der beiden Lizenzen.
 
 Wenn du Club-Organisator:in bist und deinen Eintrag aktualisieren oder entfernen lassen möchtest, siehe die [Beitragsseite]({{ "/de/contribute/" | relative_url }}) oder öffne ein GitHub-Issue.
 

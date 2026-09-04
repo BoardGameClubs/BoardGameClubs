@@ -9,6 +9,7 @@ layout: null
     "slug": {{ club.slug | jsonify }},
     "url": {{ club.url | relative_url | jsonify }},
     "country": {{ club.country | jsonify }},
+    "license": "CC-BY-4.0",
     "days": {{ club.days | jsonify }},
     "time": {{ club.time | jsonify }},
     "frequency": {{ club.frequency | jsonify }},

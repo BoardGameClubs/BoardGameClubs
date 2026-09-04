@@ -1009,4 +1009,64 @@ body:has(.home-layout) {
       border-bottom: none;
     }
   }
+
+  details.reveal {
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+    background: $color-surface;
+    margin-bottom: 1rem;
+
+    summary {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.9rem 1.1rem;
+      cursor: pointer;
+      list-style: none;
+      font-family: $font-heading;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: $color-primary;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &::before {
+        content: "▸";
+        font-size: 1.1rem;
+        line-height: 1;
+        color: $color-accent;
+        transition: transform 0.2s ease;
+      }
+
+      @media (min-width: $bp-lg) {
+        &:hover {
+          background: $color-tag;
+        }
+      }
+    }
+
+    &[open] summary {
+      border-bottom: 1px solid $color-border;
+      border-radius: $border-radius $border-radius 0 0;
+
+      &::before {
+        transform: rotate(90deg);
+      }
+    }
+
+    > :not(summary) {
+      margin-left: 1.1rem;
+      margin-right: 1.1rem;
+    }
+
+    > summary + * {
+      margin-top: 1rem;
+    }
+
+    > :last-child {
+      margin-bottom: 1.1rem;
+    }
+  }
 }

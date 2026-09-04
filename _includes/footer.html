@@ -14,7 +14,7 @@
 {% assign club_count_label = i18n.footer_club_count[lang] | replace: "%COUNT%", club_count %}
 {% assign event_count_label = i18n.footer_event_count[lang] | replace: "%COUNT%", event_count %}
 <footer class="site-footer">
-  <p class="footer-legal">&copy; {{ site.time | date: "%Y" }} {{ i18n.footer_copyright[lang] }} &middot; {{ i18n.footer_source_under[lang] }} <a href="{{ url_prefix | append: '/licence/' | relative_url }}">MIT + Commons Clause</a></p>
+  <p class="footer-legal">&copy; {{ site.time | date: "%Y" }} {{ i18n.footer_copyright[lang] }} &middot; {{ i18n.footer_source_under[lang] }} <a href="{{ url_prefix | append: '/licence/' | relative_url }}">MIT + Commons Clause</a> &middot; {{ i18n.footer_data_under[lang] }} <a href="{{ url_prefix | append: '/licence/' | relative_url }}">CC BY 4.0</a></p>
   <p class="footer-links">
     <a href="{{ url_prefix | append: '/about/' | relative_url }}">{{ i18n.footer_about[lang] }}</a>
     <a href="{{ url_prefix | append: '/events/' | relative_url }}">{{ i18n.nav_events[lang] }}</a>

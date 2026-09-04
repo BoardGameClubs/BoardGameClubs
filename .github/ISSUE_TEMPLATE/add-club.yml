@@ -53,7 +53,6 @@ body:
     id: name
     attributes:
       label: Club name
-      placeholder: e.g. Wakefield Warriors
     validations:
       required: true
 
@@ -113,7 +112,6 @@ body:
     id: venue_name
     attributes:
       label: Venue name
-      placeholder: e.g. The King's Arms
     validations:
       required: true
 
@@ -169,7 +167,6 @@ body:
     attributes:
       label: Description
       description: Tell us about your club. What games do you play? Are newcomers welcome?
-      placeholder: We're a friendly group who play a wide range of board games...
     validations:
       required: true
 

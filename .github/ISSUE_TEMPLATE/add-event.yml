@@ -53,7 +53,6 @@ body:
     id: name
     attributes:
       label: Event name
-      placeholder: e.g. UK Games Expo
     validations:
       required: true
 
@@ -62,7 +61,7 @@ body:
     attributes:
       label: Start date
       description: Use the format YYYY-MM-DD.
-      placeholder: e.g. 2027-06-04
+      placeholder: YYYY-MM-DD
     validations:
       required: true
 
@@ -71,7 +70,7 @@ body:
     attributes:
       label: End date
       description: YYYY-MM-DD. For a one-day event, use the same date as the start.
-      placeholder: e.g. 2027-06-06
+      placeholder: YYYY-MM-DD
     validations:
       required: true
 
@@ -103,7 +102,6 @@ body:
     id: venue_name
     attributes:
       label: Venue name
-      placeholder: e.g. NEC Birmingham
     validations:
       required: true
 
@@ -158,7 +156,6 @@ body:
     attributes:
       label: Description
       description: What happens at the event? Who is it for? Anything visitors should know?
-      placeholder: A weekend of open gaming, exhibitors, tournaments and demos...
     validations:
       required: true
 

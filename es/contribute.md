@@ -1,15 +1,15 @@
 ---
 layout: default
-title: "Añade tu club de juegos de mesa a nuestro directorio"
-description: "Registra tu club de juegos de mesa en Board Game Clubs. Nuestro directorio gratuito, mantenido por la comunidad, ayuda a las personas a encontrar clubes de juegos de mesa cerca de ellas, en cualquier parte del mundo."
+title: "Añadir un club o un evento"
+description: "Registra tu club de juegos de mesa o tu evento en Board Game Clubs. Nuestro directorio gratuito, mantenido por la comunidad, ayuda a las personas a encontrar clubes y eventos de juegos de mesa cerca de ellas, en cualquier parte del mundo."
 permalink: /es/contribute/
 ---
 
 <div class="content-page" markdown="1">
 
-# Añadir un club de juegos de mesa
+# Añadir un club o un evento
 
-Board Game Clubs lo mantiene la comunidad y está alojado en GitHub. Cualquiera puede añadir un nuevo club o actualizar información existente.
+Board Game Clubs lo mantiene la comunidad y está alojado en GitHub. Cualquiera puede añadir un club o un evento, o actualizar una ficha existente.
 
 ## Enviar a través de nuestro formulario
 
@@ -21,22 +21,24 @@ La forma más sencilla de añadir tu club es el formulario en GitHub. No hace fa
   <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-event.yml" class="contribute-btn contribute-btn--secondary">Añadir un evento</a>
 </div>
 
-## Añadir un club mediante pull request
+## ¿Prefieres una pull request?
 
-Si te manejas con GitHub, puedes añadir un club directamente:
+Si te manejas con GitHub, puedes añadir un club directamente. Despliega la sección para ver la guía paso a paso.
+
+<details class="reveal" markdown="1">
+<summary>Añadir un club</summary>
 
 ### 1. Crear un nuevo archivo
 
-[Crea un nuevo archivo](https://github.com/BoardGameClubs/BoardGameClubs/new/main/_clubs) en la carpeta `_clubs/<país>/` en GitHub, donde `<país>` es el código ISO 3166-1 alpha-2 en minúsculas (`gb`, `de`, `at`, `ch`, `nl`, `be`, `it`, `pl`, `fr`, `dk`, `es`). Nombra el archivo según el esquema `nombre-de-tu-club.md` (minúsculas, guiones en lugar de espacios). Para nombres con caracteres especiales, usa equivalentes ASCII: `á→a`, `é→e`, `í→i`, `ñ→n`, `ó→o`, `ú→u` etc. (por ejemplo, `club-juegos-madrid.md`).
+[Crea un nuevo archivo](https://github.com/BoardGameClubs/BoardGameClubs/new/main/_clubs) en la carpeta `_clubs/<país>/` en GitHub, donde `<país>` es el código ISO 3166-1 alpha-2 en minúsculas (que coincida con una de las carpetas existentes en `_clubs/`). Nombra el archivo según el esquema `nombre-de-tu-club.md` (minúsculas, guiones en lugar de espacios). Para nombres con caracteres especiales, usa equivalentes ASCII: `á→a`, `é→e`, `í→i`, `ñ→n`, `ó→o`, `ú→u` etc. (por ejemplo, `club-juegos-madrid.md`).
 
 ### 2. Copiar la plantilla
 
-Pega lo siguiente en tu nuevo archivo y rellena los detalles. Ajusta `country` y `permalink` para que coincidan con la carpeta.
+Pega lo siguiente en tu nuevo archivo y rellena los detalles. Ajusta `country` para que coincida con la carpeta.
 
 ```yaml
 ---
-country: "ES"          # ISO 3166-1 alpha-2: GB, DE, AT, CH, NL, BE, IT, PL, FR, DK, ES
-permalink: /es/clubs/nombre-de-tu-club/   # Para GB: /clubs/nombre-de-tu-club/
+country: "ES"          # ISO 3166-1 alpha-2, en mayúsculas, coincidiendo con la carpeta
 name: "Nombre de tu club"
 type: ["Board Games"]
 days: ["Thursday"]
@@ -61,14 +63,13 @@ description: >-
 ---
 ```
 
-Los clubes británicos usan `permalink: /clubs/nombre-de-tu-club/`. Los clubes del resto de países usan `/<país>/clubs/nombre-de-tu-club/`, por ejemplo `/es/clubs/...`, `/de/clubs/...`, `/fr/clubs/...`.
+No establezcas `permalink`. La página del club se genera automáticamente en `/clubs/<nombre-de-archivo>/`, con una copia bajo cada prefijo de idioma (`/es/clubs/...`, `/de/clubs/...`, etc.).
 
 ### 3. Rellenar los campos
 
 | Campo | Descripción |
 |------|-------------|
-| `country` | Código ISO 3166-1 alpha-2: `GB`, `DE`, `AT`, `CH`, `NL`, `BE`, `IT`, `PL`, `FR`, `DK`, `ES` |
-| `permalink` | `/clubs/slug-de-tu-club/` para GB; `/<país>/clubs/slug-de-tu-club/` para el resto |
+| `country` | Código ISO 3166-1 alpha-2, en mayúsculas, coincidiendo con la carpeta |
 | `name` | Nombre completo del club |
 | `type` | Array de tipos, p. ej. `["Board Games"]`. Opciones: "Board Games", "RPG", "Wargames", "TCG", "BOTC" |
 | `days` | Días de reunión (en inglés), p. ej. `["Thursday"]` o `["Monday", "Friday"]` |
@@ -126,12 +127,16 @@ También puedes usar una URL directa a una imagen alojada externamente, p. ej. `
 
 Haz commit de tu archivo y [abre una pull request](https://github.com/BoardGameClubs/BoardGameClubs/pulls). La revisaremos y la integraremos.
 
+</details>
+
 ## ¿Tu país no está en la lista?
 
-Actualmente listamos clubes en Reino Unido, Alemania, Austria, Suiza, Países Bajos, Bélgica, Italia, Polonia, Francia, Dinamarca y España. Si tu club está en otro sitio, [abre un issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new). Añadir un nuevo país es un cambio pequeño y lo hacemos con gusto.
+El menú de países de la cabecera del sitio muestra todos los países que cubrimos actualmente. Si tu club está en otro sitio, [abre un issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new). Añadir un nuevo país es un cambio pequeño y lo hacemos con gusto.
 
-## Actualizar un club existente
+## Actualizar una ficha existente
 
-Encuentra el archivo del club en la [carpeta `_clubs/` en GitHub](https://github.com/BoardGameClubs/BoardGameClubs/tree/main/_clubs), haz tus cambios y envía una pull request. O bien **[abre directamente una solicitud de cambio](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml)** y lo actualizamos nosotros.
+Encuentra el archivo del club en la [carpeta `_clubs/` en GitHub](https://github.com/BoardGameClubs/BoardGameClubs/tree/main/_clubs), haz tus cambios y envía una pull request. O bien **[abre directamente una solicitud de cambio](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml)** y lo actualizamos nosotros. Para eventos, [abre una solicitud de cambio](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-event.yml) o edita el archivo en `_events/`.
+
+Las fichas se publican bajo [CC BY 4.0]({{ "/es/licence/" | relative_url }}).
 
 </div>

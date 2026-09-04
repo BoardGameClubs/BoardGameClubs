@@ -9,6 +9,7 @@ layout: null
     "slug": {{ event.slug | jsonify }},
     "url": {{ event.url | relative_url | jsonify }},
     "country": {{ event.country | jsonify }},
+    "license": "CC-BY-4.0",
     "start_date": {{ event.start_date | date: "%Y-%m-%d" | jsonify }},
     "end_date": {{ event.end_date | default: event.start_date | date: "%Y-%m-%d" | jsonify }},
     "location": {

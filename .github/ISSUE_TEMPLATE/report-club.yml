@@ -12,7 +12,7 @@ body:
     id: club_name
     attributes:
       label: Which club?
-      placeholder: e.g. Wakefield Warriors
+      placeholder: Club name as listed on the site
     validations:
       required: true
 
@@ -34,6 +34,5 @@ body:
     attributes:
       label: Any details?
       description: Anything that helps us verify - a dead link, a source saying it closed, the new venue, etc.
-      placeholder: The website returns a 404 and their Facebook page hasn't posted since 2023...
     validations:
       required: false

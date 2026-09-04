@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Licence"
-description: "How Board Game Clubs is licensed: MIT with a Commons Clause restriction (no commercial selling of the software)."
+description: "How Board Game Clubs is licensed: MIT with a Commons Clause restriction for the code, and CC BY 4.0 for the club and event data."
 permalink: /licence/
 ---
 
@@ -21,6 +21,7 @@ The site's source code is licensed under the **MIT License** with the **Commons 
 - **You can't** sell it as a product or service. Hosting it for a fee or charging others to use it on your behalf isn't allowed.
 - **You must** keep the copyright and licence notice in any copies or derivatives.
 - **There's no warranty.** The software is provided "as is".
+- **The club and event data is separate.** It's licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/): anyone can reuse it as long as they credit BoardGameClubs.org.
 
 ## What the MIT License gives you
 
@@ -49,9 +50,23 @@ In practical terms:
 
 The Commons Clause is a [published, standard text](https://commonsclause.com/) maintained by Fossa. It's intentionally narrow: it only restricts selling, not using or modifying.
 
-## A note about club data
+## Club and event data
 
-The club listings in this directory are contributed by the community. Each club's information (name, venue, days, description, etc.) is added by volunteers and represents publicly-available information about that club. If you'd like to use the club listings themselves for another project, please [open an issue]({% if site.repository %}https://github.com/{{ site.repository }}/issues{% endif %}) so we can talk through what makes sense. The data is here for the community's benefit, and we want to keep it that way.
+The club and event listings (the files in `_clubs/` and `_events/`, and the JSON feeds at `/api/clubs.json` and `/api/events.json`) are contributed by the community and licensed separately from the code, under [Creative Commons Attribution 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+That means you can copy, share, and adapt the listings for any purpose, including commercial ones, as long as you:
+
+- **Give credit.** Name BoardGameClubs.org as the source and link back to the site.
+- **Link to the licence.** Point to CC BY 4.0.
+- **Say if you changed anything.** Note any edits you made to the data.
+
+A suggested attribution: "Club and event data from [BoardGameClubs.org](https://boardgameclubs.org), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)."
+
+The Commons Clause above applies to the software only. It does not restrict use of the data.
+
+By submitting or editing a listing, whether through a GitHub form, a pull request, or any other route, you agree that your contribution is published under CC BY 4.0.
+
+Club and event logos in `assets/images/` belong to their respective clubs and organisers and are not covered by either licence.
 
 If you're a club organiser and want to update or remove your listing, see the [contribute page]({{ "/contribute" | relative_url }}) or open a GitHub issue.
 

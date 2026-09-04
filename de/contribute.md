@@ -1,15 +1,15 @@
 ---
 layout: default
-title: "Füge deinen Brettspielclub zu unserem Verzeichnis hinzu"
-description: "Trage deinen Brettspielclub bei Board Game Clubs ein. Unser kostenloses, von der Community gepflegtes Verzeichnis hilft Menschen, Brettspielclubs in ihrer Nähe weltweit zu finden."
+title: "Club oder Event hinzufügen"
+description: "Trage deinen Brettspielclub oder dein Event bei Board Game Clubs ein. Unser kostenloses, von der Community gepflegtes Verzeichnis hilft Menschen, Brettspielclubs und Events in ihrer Nähe weltweit zu finden."
 permalink: /de/contribute/
 ---
 
 <div class="content-page" markdown="1">
 
-# Brettspielclub hinzufügen
+# Club oder Event hinzufügen
 
-Board Game Clubs wird von der Community gepflegt und auf GitHub gehostet. Jede:r kann einen neuen Club hinzufügen oder bestehende Informationen aktualisieren.
+Board Game Clubs wird von der Community gepflegt und auf GitHub gehostet. Jede:r kann einen Club oder ein Event hinzufügen oder einen bestehenden Eintrag aktualisieren.
 
 ## Über unser Formular einreichen
 
@@ -21,22 +21,24 @@ Am einfachsten fügst du deinen Club über unser Formular auf GitHub hinzu. Kein
   <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-event.yml" class="contribute-btn contribute-btn--secondary">Event hinzufügen</a>
 </div>
 
-## Club per Pull Request hinzufügen
+## Lieber per Pull Request?
 
-Wenn du mit GitHub vertraut bist, kannst du einen Club auch direkt hinzufügen:
+Wenn du mit GitHub vertraut bist, kannst du einen Club auch direkt hinzufügen. Klappe den Abschnitt für die Schritt-für-Schritt-Anleitung auf.
+
+<details class="reveal" markdown="1">
+<summary>Club hinzufügen</summary>
 
 ### 1. Neue Datei erstellen
 
-[Erstelle eine neue Datei](https://github.com/BoardGameClubs/BoardGameClubs/new/main/_clubs) im Ordner `_clubs/<land>/` auf GitHub, wobei `<land>` der ISO-3166-1-alpha-2-Code in Kleinbuchstaben ist (`gb`, `de`, `at`, `ch`, `nl`, `be`, `it`, `pl`, `fr`, `dk`, `es`). Benenne die Datei nach dem Schema `dein-club-name.md` (Kleinbuchstaben, Bindestriche statt Leerzeichen). Für Namen mit Sonderzeichen verwende ASCII-Schreibweise: `ä→ae`, `ö→oe`, `ü→ue`, `ß→ss`, `é→e` usw. (z. B. `spieletreff-muenchen.md`).
+[Erstelle eine neue Datei](https://github.com/BoardGameClubs/BoardGameClubs/new/main/_clubs) im Ordner `_clubs/<land>/` auf GitHub, wobei `<land>` der ISO-3166-1-alpha-2-Code in Kleinbuchstaben ist (passend zu einem der vorhandenen Ordner in `_clubs/`). Benenne die Datei nach dem Schema `dein-club-name.md` (Kleinbuchstaben, Bindestriche statt Leerzeichen). Für Namen mit Sonderzeichen verwende ASCII-Schreibweise: `ä→ae`, `ö→oe`, `ü→ue`, `ß→ss`, `é→e` usw. (z. B. `spieletreff-muenchen.md`).
 
 ### 2. Vorlage kopieren
 
-Füge das Folgende in deine neue Datei ein und ergänze die Details. Setze `country` und `permalink` passend zum Ordner.
+Füge das Folgende in deine neue Datei ein und ergänze die Details. Setze `country` passend zum Ordner.
 
 ```yaml
 ---
-country: "DE"          # ISO 3166-1 alpha-2: GB, DE, AT, CH, NL, BE, IT, PL, FR, DK, ES
-permalink: /de/clubs/dein-club-name/   # Für GB: /clubs/dein-club-name/
+country: "DE"          # ISO 3166-1 alpha-2, Großbuchstaben, passend zum Ordner
 name: "Dein Clubname"
 type: ["Board Games"]
 days: ["Donnerstag"]
@@ -61,14 +63,13 @@ description: >-
 ---
 ```
 
-Britische Clubs verwenden `permalink: /clubs/dein-club-name/`. Clubs in allen anderen Ländern verwenden `/<land>/clubs/dein-club-name/`, z. B. `/de/clubs/...`, `/at/clubs/...`, `/fr/clubs/...`.
+Setze kein `permalink`. Die Seite des Clubs wird automatisch unter `/clubs/<dateiname>/` erzeugt, mit einer Kopie unter jedem Sprachpräfix (`/de/clubs/...`, `/fr/clubs/...` usw.).
 
 ### 3. Felder ausfüllen
 
 | Feld | Beschreibung |
 |------|--------------|
-| `country` | ISO-3166-1-alpha-2-Code: `GB`, `DE`, `AT`, `CH`, `NL`, `BE`, `IT`, `PL`, `FR`, `DK`, `ES` |
-| `permalink` | `/clubs/dein-club-slug/` für GB; `/<land>/clubs/dein-club-slug/` für alle anderen |
+| `country` | ISO-3166-1-alpha-2-Code, Großbuchstaben, passend zum Ordner |
 | `name` | Vollständiger Clubname |
 | `type` | Array der Typen, z. B. `["Board Games"]`. Optionen: "Board Games", "RPG", "Wargames", "TCG", "BOTC" |
 | `days` | Treffen-Wochentage (Englisch), z. B. `["Thursday"]` oder `["Monday", "Friday"]` |
@@ -125,12 +126,16 @@ Alternativ kannst du eine direkte URL zu einem extern gehosteten Bild verwenden,
 
 Committe deine Datei und [öffne einen Pull Request](https://github.com/BoardGameClubs/BoardGameClubs/pulls). Wir prüfen ihn und übernehmen ihn.
 
+</details>
+
 ## Dein Land ist nicht dabei?
 
-Wir listen derzeit Clubs in Großbritannien, Deutschland, Österreich, der Schweiz, den Niederlanden, Belgien, Italien, Polen, Frankreich, Dänemark und Spanien. Ist dein Club woanders, [öffne ein Issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new). Ein neues Land hinzuzufügen ist eine kleine Änderung und wir machen das gerne.
+Das Ländermenü in der Kopfzeile der Website zeigt alle Länder, die wir derzeit abdecken. Ist dein Club woanders, [öffne ein Issue](https://github.com/BoardGameClubs/BoardGameClubs/issues/new). Ein neues Land hinzuzufügen ist eine kleine Änderung und wir machen das gerne.
 
-## Bestehenden Club aktualisieren
+## Bestehenden Eintrag aktualisieren
 
-Suche die Datei des Clubs im [Ordner `_clubs/` auf GitHub](https://github.com/BoardGameClubs/BoardGameClubs/tree/main/_clubs), nimm deine Änderungen vor und reiche einen Pull Request ein. Oder **[öffne einfach eine Änderungsanfrage](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml)**, und wir aktualisieren es für dich.
+Suche die Datei des Clubs im [Ordner `_clubs/` auf GitHub](https://github.com/BoardGameClubs/BoardGameClubs/tree/main/_clubs), nimm deine Änderungen vor und reiche einen Pull Request ein. Oder **[öffne einfach eine Änderungsanfrage](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-club.yml)**, und wir aktualisieren es für dich. Für Events [öffne eine Änderungsanfrage](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-event.yml) oder bearbeite die Datei in `_events/`.
+
+Einträge werden unter [CC BY 4.0]({{ "/de/licence/" | relative_url }}) veröffentlicht.
 
 </div>
