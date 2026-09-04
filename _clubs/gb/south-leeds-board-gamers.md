@@ -11,7 +11,7 @@ location:
   lng: -1.6236668
 cost: "Free"
 age_restriction: ""
-image: "slbg.png"
+image: "slbg.jpg"
 website: "https://www.slbg.club"
 facebook: "https://www.facebook.com/groups/973046293469333"
 discord: "https://discord.gg/vEvyCPNguJ"
