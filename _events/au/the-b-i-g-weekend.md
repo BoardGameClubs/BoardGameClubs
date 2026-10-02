@@ -6,12 +6,12 @@ end_date: 2026-11-01
 type: ["Board Games"]
 format: "Convention"
 location:
-  name: "Bendigo, VIC"
-  address: "Bendigo VIC 3550, Australia"
-  lat: -36.75962
-  lng: 144.27858
-price: ""
-tickets: ""
+  name: "The Bendigo Club"
+  address: "22 Park St, Strathdale, Bendigo VIC 3550"
+  lat: -36.7616463
+  lng: 144.3118316
+price: "$25 day / $50 weekend"
+tickets: "https://events.humanitix.com/the-b-i-g-weekend-26"
 website: "https://thebigweekend.games/"
 facebook: ""
 discord: ""

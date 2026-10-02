@@ -6,10 +6,10 @@ days: ["Saturday"]
 time: ""
 frequency: "Monthly"
 location:
-  name: "Ringtail Games"
-  address: "High Street, Kyneton VIC 3444"
-  lat: -37.2560506
-  lng: 144.4657168
+  name: "Kyneton Community House"
+  address: "35 High Street, Kyneton VIC 3444"
+  lat: -37.249713
+  lng: 144.454597
 cost: "Free"
 image: ""
 website: "https://ringtail.games/"
