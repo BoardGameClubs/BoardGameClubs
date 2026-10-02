@@ -1,32 +1,24 @@
-<div align="center">
-
-<img src="assets/meeple-map-icon-orange.svg" alt="BoardGameClubs.org" width="120">
-
-# BoardGameClubs.org
-
-**Find board game clubs and events near you.**
+<a href="https://boardgameclubs.org"><img src="assets/readme-banner.png" alt="BoardGameClubs.org: find board game clubs and events near you" width="100%"></a>
 
 A community-built directory powered by an interactive map, covering clubs worldwide, plus a calendar of conventions, game days and tournaments.
 
 [![Clubs listed](https://img.shields.io/endpoint?url=https%3A%2F%2Fboardgameclubs.org%2Fapi%2Fbadge.json)](https://boardgameclubs.org)
 [![Upcoming events](https://img.shields.io/endpoint?url=https%3A%2F%2Fboardgameclubs.org%2Fapi%2Fevents-badge.json)](https://boardgameclubs.org/events/)
-
 [![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-blue?logo=github)](https://boardgameclubs.org)
 [![Built with Jekyll](https://img.shields.io/badge/Built%20with-Jekyll-cc0000?logo=jekyll)](https://jekyllrb.com/)
-
 [![Code: MIT + Commons Clause](https://img.shields.io/badge/Code-MIT%20%2B%20Commons%20Clause-green)](#license)
 [![Data: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-green)](#license)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange)](https://boardgameclubs.org/contribute/)
 
-[Live Site](https://boardgameclubs.org) · [Events](https://boardgameclubs.org/events/) · [Add a Club](https://boardgameclubs.org/contribute/) · [Add an Event](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-event.yml) · [Report a Bug](https://github.com/BoardGameClubs/BoardGameClubs/issues/new)
+- **[Live site](https://boardgameclubs.org)**: browse clubs on the map
+- **[Events](https://boardgameclubs.org/events/)**: upcoming conventions, game days and tournaments
+- **[Add a club](https://boardgameclubs.org/contribute/)**: list your club or update an existing one
+- **[Add an event](https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=add-event.yml)**: submit a convention, game day or tournament
+- **[Report a bug](https://github.com/BoardGameClubs/BoardGameClubs/issues/new)**: tell us what's broken
 
-<br>
+BoardGameClubs.org is free and community-run. If you find it useful, you can help keep it going:
 
-<a href="https://www.buymeacoffee.com/kkjdaniel" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
-</div>
-
-<br>
+<a href="https://www.buymeacoffee.com/kkjdaniel" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40"></a>
 
 ## What is this?
 
