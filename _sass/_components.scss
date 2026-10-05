@@ -14,7 +14,7 @@
     margin: 0 -1.25rem;
 
     .search-row {
-      margin: 0.5rem 0 0;
+      margin: 0.5rem 0 0.75rem;
       padding: 3px 1.25rem 0;
     }
   }
@@ -62,9 +62,10 @@
   }
 }
 
-// Full-bleed header row that expands the tabbed filter section
+// Full-bleed header row that expands the tabbed filter section (desktop);
+// on mobile the icon button in the search row takes over.
 .filter-toggle {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 0.55rem;
   width: 100%;
@@ -97,6 +98,8 @@
   }
 
   @media (min-width: $bp-lg) {
+    display: flex;
+
     &:hover {
       background: $color-bg;
     }
@@ -171,6 +174,20 @@
 
   &::placeholder {
     color: $color-text-light;
+  }
+}
+
+.filter-toggle-mobile {
+  position: relative;
+
+  &[aria-expanded="true"] {
+    border-color: $color-accent;
+  }
+
+  .filter-toggle-count {
+    position: absolute;
+    top: -6px;
+    right: -6px;
   }
 }
 

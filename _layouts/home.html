@@ -60,11 +60,15 @@
             <button class="locate-btn locate-btn--mobile" id="locate-btn" type="button" aria-label="{{ i18n.use_my_location[lang] }}">
               <i data-lucide="crosshair" style="width:16px;height:16px;"></i>
             </button>
+            <button class="locate-btn locate-btn--mobile filter-toggle-mobile" type="button" data-filter-toggle aria-controls="filter-section" aria-expanded="false" aria-label="{{ i18n.filter_clubs[lang] }}">
+              <i data-lucide="sliders-horizontal" style="width:16px;height:16px;"></i>
+              <span class="filter-tab-count filter-toggle-count"></span>
+            </button>
           </div>
-          <button class="filter-toggle" id="filter-toggle" type="button" aria-controls="filter-section" aria-expanded="false">
+          <button class="filter-toggle" type="button" data-filter-toggle aria-controls="filter-section" aria-expanded="false">
             <i data-lucide="sliders-horizontal"></i>
             <span>{{ i18n.filter_clubs[lang] }}</span>
-            <span class="filter-tab-count" id="filter-toggle-count"></span>
+            <span class="filter-tab-count filter-toggle-count"></span>
             <i data-lucide="chevron-down" class="filter-toggle-chevron"></i>
           </button>
           <div class="active-filters" id="active-filters">

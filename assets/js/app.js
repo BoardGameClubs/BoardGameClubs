@@ -540,8 +540,8 @@
         container.appendChild(buildFilterTag(kind, value, labels[value] || fallback));
       });
     });
-    var totalCount = document.getElementById("filter-toggle-count");
-    if (totalCount) totalCount.textContent = total || "";
+    var totalCounts = document.querySelectorAll(".filter-toggle-count");
+    for (var c = 0; c < totalCounts.length; c++) totalCounts[c].textContent = total || "";
     if (window.lucide) lucide.createIcons();
   }
 
@@ -578,7 +578,7 @@
   function bindEvents() {
     var searchInput = document.getElementById("search-input");
     var searchInputMobile = document.getElementById("search-input-mobile");
-    var filterToggle = document.getElementById("filter-toggle");
+    var filterToggles = document.querySelectorAll("[data-filter-toggle]");
     var filterSection = document.getElementById("filter-section");
     var filterTabs = document.querySelectorAll(".filter-tab");
     var activeFilters = document.getElementById("active-filters");
@@ -603,11 +603,16 @@
       });
     }
 
-    if (filterToggle && filterSection) {
-      filterToggle.addEventListener("click", function () {
-        filterSection.hidden = !filterSection.hidden;
-        filterToggle.setAttribute("aria-expanded", filterSection.hidden ? "false" : "true");
-      });
+    function onFilterToggle() {
+      filterSection.hidden = !filterSection.hidden;
+      for (var k = 0; k < filterToggles.length; k++) {
+        filterToggles[k].setAttribute("aria-expanded", filterSection.hidden ? "false" : "true");
+      }
+    }
+    if (filterSection) {
+      for (var f = 0; f < filterToggles.length; f++) {
+        filterToggles[f].addEventListener("click", onFilterToggle);
+      }
     }
 
     for (var t = 0; t < filterTabs.length; t++) {
