@@ -150,23 +150,26 @@
     update(true);
   }
 
+  function distanceLabel(n, unit) {
+    return (i18n.filter_within_distance || "Within %N% %UNIT%")
+      .replace("%N%", n).replace("%UNIT%", unit);
+  }
+
   function populateDistanceOptions(profile) {
-    var distanceFilter = document.getElementById("distance-filter");
-    if (!distanceFilter) return;
+    var panel = document.getElementById("distance-filter");
+    if (!panel) return;
     var unit = profile.unit_label || "mi";
     var options = profile.distance_options || [5, 10, 25, 50];
-    var template = i18n.filter_within_distance || "Within %N% %UNIT%";
-    var currentValue = distanceFilter.value;
-    var html = '<option value="">' + escapeHtml(i18n.filter_any_distance || "Any distance") + "</option>";
+    var html = "";
     options.forEach(function (n) {
-      html += '<option value="' + n + '">' +
-        escapeHtml(template.replace("%N%", n).replace("%UNIT%", unit)) +
-        "</option>";
+      html += '<label class="filter-option"><input type="checkbox" value="' + n + '"><span>' +
+        escapeHtml(distanceLabel(n, unit)) + "</span></label>";
     });
-    distanceFilter.innerHTML = html;
-    if (currentValue && options.indexOf(parseInt(currentValue, 10)) !== -1) {
-      distanceFilter.value = currentValue;
+    panel.innerHTML = html;
+    if (search.maxDistance && options.indexOf(search.maxDistance) === -1) {
+      search.setMaxDistance(0);
     }
+    syncFilterUi();
   }
 
   function updateSearchPlaceholder(profile) {
@@ -186,37 +189,16 @@
     var params = readUrlParams();
     var searchInput = document.getElementById("search-input");
     var searchInputMobile = document.getElementById("search-input-mobile");
-    var distanceFilter = document.getElementById("distance-filter");
 
     if (params.q) {
       search.setQuery(params.q);
       if (searchInput) searchInput.value = params.q;
       if (searchInputMobile) searchInputMobile.value = params.q;
     }
-    if (params.type && params.type.length > 0) {
-      search.setTypeFilters(params.type);
-      var typeCheckboxes = document.querySelectorAll("#type-filter input[type='checkbox']");
-      for (var i = 0; i < typeCheckboxes.length; i++) {
-        if (params.type.indexOf(typeCheckboxes[i].value) !== -1) {
-          typeCheckboxes[i].checked = true;
-        }
-      }
-      updateTypeFilterLabel();
-    }
-    if (params.days && params.days.length > 0) {
-      search.setDayFilters(params.days);
-      var checkboxes = document.querySelectorAll("#day-filter input[type='checkbox']");
-      for (var i = 0; i < checkboxes.length; i++) {
-        if (params.days.indexOf(checkboxes[i].value) !== -1) {
-          checkboxes[i].checked = true;
-        }
-      }
-      updateDayFilterLabel();
-    }
-    if (params.distance) {
-      search.setMaxDistance(params.distance);
-      if (distanceFilter) distanceFilter.value = params.distance;
-    }
+    if (params.type && params.type.length > 0) search.setTypeFilters(params.type);
+    if (params.days && params.days.length > 0) search.setDayFilters(params.days);
+    if (params.distance) search.setMaxDistance(params.distance);
+    syncFilterUi();
   }
 
   // Restore a location pin (postcode/place/geolocate pick) from the URL.
@@ -232,8 +214,7 @@
     userLocation = { lat: lat, lng: lng, label: label };
     search.setUserLocation(lat, lng);
     map.showUserLocation(lat, lng);
-    var distanceFilter = document.getElementById("distance-filter");
-    if (distanceFilter) distanceFilter.disabled = false;
+    setDistanceEnabled(true);
     if (window.GameClubLocation && window.GameClubLocation.setActive) {
       window.GameClubLocation.setActive(label);
     }
@@ -293,7 +274,6 @@
 
   function writeUrlParams() {
     var searchInput = document.getElementById("search-input");
-    var distanceFilter = document.getElementById("distance-filter");
 
     var params = new URLSearchParams();
     // Always stamp the ACTIVE country, never merely preserve an existing
@@ -309,7 +289,7 @@
     var q = searchInput ? searchInput.value.trim() : "";
     var days = search.dayFilters.join(",");
     var types = search.typeFilters.join(",");
-    var distance = distanceFilter ? distanceFilter.value : "";
+    var distance = search.maxDistance ? String(search.maxDistance) : "";
 
     if (q) params.set("q", q);
     if (types) params.set("type", types);
@@ -506,42 +486,102 @@
     el.textContent = text;
   }
 
-  function updateDayFilterLabel() {
-    var label = document.querySelector("#day-filter .multi-select-label");
-    if (!label) return;
-    var days = search.dayFilters;
-    if (days.length === 0) {
-      label.textContent = i18n.filter_all_days || "All days";
-    } else if (days.length === 1) {
-      label.textContent = days[0];
+  var FILTER_PANELS = { type: "type-filter", day: "day-filter", distance: "distance-filter" };
+
+  function selectedFilterValues(kind) {
+    if (kind === "type") return search.typeFilters;
+    if (kind === "day") return search.dayFilters;
+    return search.maxDistance ? [String(search.maxDistance)] : [];
+  }
+
+  function buildFilterTag(kind, value, label) {
+    var tag = document.createElement("span");
+    tag.className = "tag filter-tag";
+    if (kind === "type") tag.className += " tag-type tag-type-" + value.toLowerCase().replace(/ /g, "-");
+    if (kind === "day") tag.className += " tag-day";
+    tag.appendChild(document.createTextNode(label));
+
+    var remove = document.createElement("button");
+    remove.type = "button";
+    remove.className = "filter-tag-remove";
+    remove.setAttribute("data-filter", kind);
+    remove.setAttribute("data-value", value);
+    remove.setAttribute("aria-label", (i18n.remove_filter || "Remove filter") + ": " + label);
+    remove.innerHTML = '<i data-lucide="x"></i>';
+    tag.appendChild(remove);
+    return tag;
+  }
+
+  // Search state is the source of truth: the option chips, tab counts and
+  // removable tags are all redrawn from it.
+  function syncFilterUi() {
+    var container = document.getElementById("active-filters");
+    if (!container) return;
+    var stale = container.querySelectorAll(".filter-tag");
+    for (var i = 0; i < stale.length; i++) container.removeChild(stale[i]);
+
+    var total = 0;
+    Object.keys(FILTER_PANELS).forEach(function (kind) {
+      var panelId = FILTER_PANELS[kind];
+      var selected = selectedFilterValues(kind);
+      var labels = {};
+      var inputs = document.querySelectorAll("#" + panelId + " input[type='checkbox']");
+      for (var j = 0; j < inputs.length; j++) {
+        inputs[j].checked = selected.indexOf(inputs[j].value) !== -1;
+        labels[inputs[j].value] = inputs[j].nextElementSibling.textContent;
+      }
+      var count = document.querySelector('.filter-tab[data-panel="' + panelId + '"] .filter-tab-count');
+      if (count) count.textContent = selected.length || "";
+      total += selected.length;
+      selected.forEach(function (value) {
+        var fallback = kind === "distance"
+          ? distanceLabel(value, (getActiveCountry() || {}).unit_label || "mi")
+          : value;
+        container.appendChild(buildFilterTag(kind, value, labels[value] || fallback));
+      });
+    });
+    var totalCount = document.getElementById("filter-toggle-count");
+    if (totalCount) totalCount.textContent = total || "";
+    if (window.lucide) lucide.createIcons();
+  }
+
+  function toggleFilter(kind, value) {
+    if (kind === "type") {
+      search.toggleTypeFilter(value);
+    } else if (kind === "day") {
+      search.toggleDayFilter(value);
     } else {
-      label.textContent = (i18n.days_selected || "%N% days selected").replace("%N%", days.length);
+      search.setMaxDistance(search.maxDistance === parseFloat(value) ? 0 : value);
+    }
+    syncFilterUi();
+    update(kind === "distance");
+  }
+
+  function activateFilterTab(active) {
+    var tabs = document.querySelectorAll(".filter-tab");
+    for (var i = 0; i < tabs.length; i++) {
+      var panel = document.getElementById(tabs[i].getAttribute("data-panel"));
+      tabs[i].setAttribute("aria-selected", tabs[i] === active ? "true" : "false");
+      if (panel) panel.hidden = tabs[i] !== active;
     }
   }
 
-  function updateTypeFilterLabel() {
-    var label = document.querySelector("#type-filter .multi-select-label");
-    if (!label) return;
-    var types = search.typeFilters;
-    if (types.length === 0) {
-      label.textContent = i18n.filter_all_types || "All types";
-    } else if (types.length === 1) {
-      label.textContent = types[0];
-    } else {
-      label.textContent = (i18n.types_selected || "%N% types selected").replace("%N%", types.length);
+  function setDistanceEnabled(enabled) {
+    var tab = document.querySelector('.filter-tab[data-panel="distance-filter"]');
+    if (!tab) return;
+    tab.disabled = !enabled;
+    if (!enabled && tab.getAttribute("aria-selected") === "true") {
+      activateFilterTab(document.querySelector(".filter-tab"));
     }
   }
 
   function bindEvents() {
     var searchInput = document.getElementById("search-input");
     var searchInputMobile = document.getElementById("search-input-mobile");
-    var typeFilterEl = document.getElementById("type-filter");
-    var typeToggle = typeFilterEl ? typeFilterEl.querySelector(".multi-select-toggle") : null;
-    var typeCheckboxes = typeFilterEl ? typeFilterEl.querySelectorAll("input[type='checkbox']") : [];
-    var dayFilterEl = document.getElementById("day-filter");
-    var dayToggle = dayFilterEl ? dayFilterEl.querySelector(".multi-select-toggle") : null;
-    var dayCheckboxes = dayFilterEl ? dayFilterEl.querySelectorAll("input[type='checkbox']") : [];
-    var distanceFilter = document.getElementById("distance-filter");
+    var filterToggle = document.getElementById("filter-toggle");
+    var filterSection = document.getElementById("filter-section");
+    var filterTabs = document.querySelectorAll(".filter-tab");
+    var activeFilters = document.getElementById("active-filters");
 
     function onSearchInput(source, other) {
       clearTimeout(debounceTimer);
@@ -563,61 +603,31 @@
       });
     }
 
-    if (typeToggle) {
-      typeToggle.addEventListener("click", function (e) {
-        e.stopPropagation();
-        if (dayFilterEl) {
-          dayFilterEl.classList.remove("is-open");
-          if (dayToggle) dayToggle.setAttribute("aria-expanded", "false");
-        }
-        var isOpen = typeFilterEl.classList.toggle("is-open");
-        typeToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    if (filterToggle && filterSection) {
+      filterToggle.addEventListener("click", function () {
+        filterSection.hidden = !filterSection.hidden;
+        filterToggle.setAttribute("aria-expanded", filterSection.hidden ? "false" : "true");
       });
     }
 
-    for (var t = 0; t < typeCheckboxes.length; t++) {
-      typeCheckboxes[t].addEventListener("change", function () {
-        search.toggleTypeFilter(this.value);
-        updateTypeFilterLabel();
-        update();
+    for (var t = 0; t < filterTabs.length; t++) {
+      filterTabs[t].addEventListener("click", function () {
+        activateFilterTab(this);
       });
     }
 
-    if (dayToggle) {
-      dayToggle.addEventListener("click", function (e) {
-        e.stopPropagation();
-        if (typeFilterEl) {
-          typeFilterEl.classList.remove("is-open");
-          if (typeToggle) typeToggle.setAttribute("aria-expanded", "false");
-        }
-        var isOpen = dayFilterEl.classList.toggle("is-open");
-        dayToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    Object.keys(FILTER_PANELS).forEach(function (kind) {
+      var panel = document.getElementById(FILTER_PANELS[kind]);
+      if (!panel) return;
+      panel.addEventListener("change", function (e) {
+        toggleFilter(kind, e.target.value);
       });
-    }
-
-    for (var i = 0; i < dayCheckboxes.length; i++) {
-      dayCheckboxes[i].addEventListener("change", function () {
-        search.toggleDayFilter(this.value);
-        updateDayFilterLabel();
-        update();
-      });
-    }
-
-    document.addEventListener("click", function (e) {
-      if (typeFilterEl && !typeFilterEl.contains(e.target)) {
-        typeFilterEl.classList.remove("is-open");
-        if (typeToggle) typeToggle.setAttribute("aria-expanded", "false");
-      }
-      if (dayFilterEl && !dayFilterEl.contains(e.target)) {
-        dayFilterEl.classList.remove("is-open");
-        if (dayToggle) dayToggle.setAttribute("aria-expanded", "false");
-      }
     });
 
-    if (distanceFilter) {
-      distanceFilter.addEventListener("change", function () {
-        search.setMaxDistance(distanceFilter.value);
-        update(true);
+    if (activeFilters) {
+      activeFilters.addEventListener("click", function (e) {
+        var remove = e.target.closest ? e.target.closest(".filter-tag-remove") : null;
+        if (remove) toggleFilter(remove.getAttribute("data-filter"), remove.getAttribute("data-value"));
       });
     }
 
@@ -629,7 +639,7 @@
         if (searchInputMobile) searchInputMobile.value = "";
         search.setUserLocation(lat, lng);
         map.showUserLocation(lat, lng);
-        if (distanceFilter) distanceFilter.disabled = false;
+        setDistanceEnabled(true);
         update(true);
       },
       function (opts) {
@@ -637,10 +647,8 @@
         search.clearUserLocation();
         search.setMaxDistance(0);
         map.removeUserLocation();
-        if (distanceFilter) {
-          distanceFilter.value = "";
-          distanceFilter.disabled = true;
-        }
+        setDistanceEnabled(false);
+        syncFilterUi();
         // keepView: the user is mid-pan somewhere else, so don't re-fit the
         // map back to the active country's clubs under them.
         update(!(opts && opts.keepView));

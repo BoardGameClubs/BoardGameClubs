@@ -11,8 +11,12 @@
   .filter-bar-inner {
     background: $color-surface;
     border-bottom: 1px solid $color-border;
-    padding: 1rem 1.25rem 0.9rem;
     margin: 0 -1.25rem;
+
+    .search-row {
+      margin: 0.5rem 0 0;
+      padding: 3px 1.25rem 0;
+    }
   }
 
   // Soft fade below the filter bar when sidebar is scrolled
@@ -58,27 +62,45 @@
   }
 }
 
-// Filter-bar section label
-.filter-bar-title {
+// Full-bleed header row that expands the tabbed filter section
+.filter-toggle {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.7rem;
+  gap: 0.55rem;
+  width: 100%;
+  padding: 0.9rem 1.25rem;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 0.95rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: $color-accent;
-  margin-bottom: 0.55rem;
+  color: $color-text;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s;
 
   svg {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
+    color: $color-accent;
+    flex-shrink: 0;
   }
-}
 
-// Tidy spacing inside the filter panel — last child should not push the panel taller
-.filter-bar-inner > *:last-child {
-  margin-bottom: 0;
+  .filter-toggle-chevron {
+    margin-left: auto;
+    color: $color-primary-light;
+    transition: transform 0.2s;
+  }
+
+  &[aria-expanded="true"] .filter-toggle-chevron {
+    transform: rotate(180deg);
+  }
+
+  @media (min-width: $bp-lg) {
+    &:hover {
+      background: $color-bg;
+    }
+  }
 }
 
 // ─── Search bar ───
@@ -152,134 +174,175 @@
   }
 }
 
-// ─── Filter row ───
-.filter-row {
+// ─── Active filter tags ───
+// Children carry the bottom margin so the row collapses to nothing when no
+// tag is showing (location.js toggles the pill with an inline display).
+.active-filters {
   display: flex;
-  gap: 0.4rem;
+  flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 0.5rem;
+  column-gap: 0.35rem;
+  padding: 0 1.25rem;
 
-  @media (max-width: 991px) {
-    flex-wrap: nowrap;
+  > * {
+    margin-bottom: 0.6rem;
   }
 }
 
-// ─── Multi-select dropdown ───
-.multi-select {
-  position: relative;
-  flex: 1.4;
-  min-width: 0;
-}
-
-.multi-select-toggle {
-  width: 100%;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.multi-select-label {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.multi-select-dropdown {
-  display: none;
-  position: absolute;
-  top: calc(100% + 4px);
-  left: 0;
-  right: 0;
-  z-index: 100;
-  background: $color-surface;
-  border: 1px solid $color-border;
-  border-radius: $border-radius;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
-  padding: 0.25rem 0;
-
-  .multi-select.is-open & {
-    display: block;
-  }
-}
-
-.multi-select-option {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  width: 100%;
-  padding: 0.5rem 0.75rem;
-  font-size: 0.82rem;
-  color: $color-text;
-  cursor: pointer;
-  transition: background 0.15s;
-  user-select: none;
-
-  &:hover {
-    background: $color-tag;
-  }
-
-  input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-  }
-}
-
-.multi-select-check {
+// Doubled selector: must win over the base .tag rules declared further down.
+.tag.filter-tag {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  border: 1px solid $color-border;
-  border-radius: 3px;
-  flex-shrink: 0;
-  transition: background 0.15s, border-color 0.15s;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  padding: 0.35rem 0.5rem 0.35rem 0.65rem;
+  border: 1px solid transparent;
 
-  input:checked + & {
-    background: $color-tag-day;
-    border-color: $color-tag-day;
+  &:not(.tag-type):not(.tag-day) {
+    border-color: $color-border;
+    color: $color-primary;
+  }
+}
 
-    &::after {
-      content: "";
-      display: block;
-      width: 4px;
-      height: 7px;
-      border: solid #fff;
-      border-width: 0 1px 1px 0;
-      transform: rotate(45deg) translate(-0.5px, -0.5px);
+.filter-tag-remove {
+  display: inline-flex;
+  padding: 0;
+  background: none;
+  border: none;
+  color: inherit;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.15s;
+
+  svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  @media (min-width: $bp-lg) {
+    &:hover {
+      opacity: 1;
     }
   }
 }
 
-.filter-select {
-  padding: 0.45rem 2rem 0.45rem 0.6rem;
-  border: 1px solid $color-border;
-  border-radius: $border-radius;
-  font-size: 0.8rem;
-  color: $color-text;
-  background: $color-surface;
-  outline: none;
-  cursor: pointer;
-  transition: border-color 0.2s;
-  flex: 1;
-  min-width: 0;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23a1a1aa' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 0.6rem center;
-  background-size: 12px;
+// ─── Filter tabs ───
+.filter-section {
+  padding: 0.9rem 1.25rem 1rem;
+  background: $color-bg;
+  border-top: 1px solid $color-border;
+}
 
-  &:focus {
-    border-color: $color-accent;
+// Segmented control
+.filter-tabs {
+  display: flex;
+  gap: 3px;
+  padding: 3px;
+  background: $color-border;
+  border-radius: $border-radius;
+}
+
+.filter-tab {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.5rem;
+  background: none;
+  border: none;
+  border-radius: $border-radius-sm;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: $color-primary-light;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+
+  &[aria-selected="true"] {
+    background: $color-surface;
+    color: $color-text;
+    font-weight: 600;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
   }
 
   &:disabled {
     opacity: 0.45;
     cursor: not-allowed;
+  }
+
+  @media (min-width: $bp-lg) {
+    &:hover:not(:disabled) {
+      color: $color-text;
+    }
+  }
+}
+
+.filter-tab-count {
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: $color-accent;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: center;
+
+  &:empty {
+    display: none;
+  }
+}
+
+.filter-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  padding-top: 0.8rem;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.filter-option {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  span {
+    display: inline-block;
+    padding: 0.35rem 0.8rem;
+    background: $color-surface;
+    border: 1px solid $color-border;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    color: $color-text;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+
+  input:checked + span {
+    background: $color-tag-day;
+    border-color: $color-tag-day;
+    color: #fff;
+  }
+
+  input:focus-visible + span {
+    border-color: $color-accent;
+    box-shadow: 0 0 0 3px rgba($color-accent, 0.12);
+  }
+
+  @media (min-width: $bp-lg) {
+    &:hover input:not(:checked) + span {
+      border-color: rgba($color-accent, 0.4);
+    }
   }
 }
 
@@ -406,7 +469,6 @@
   border-radius: 999px;
   font-size: 0.8rem;
   color: $color-primary;
-  margin-bottom: 0.25rem;
   border: 1px solid $color-border;
 
   svg {
@@ -793,6 +855,11 @@
 .tag-type-tcg {
   background: $color-type-tcg-bg;
   color: $color-type-tcg;
+}
+
+.tag-type-events {
+  background: $color-type-events-bg;
+  color: $color-type-events;
 }
 
 // ─── Map pin icon ───

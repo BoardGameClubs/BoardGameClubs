@@ -12,12 +12,12 @@ brand_suffix:
   pl: ".org"
 
 tagline:
-  en: "There's a games night near you."
-  de: "In deiner Nähe gibt es einen Spieleabend."
-  it: "C'è una serata giochi vicino a te."
-  fr: "Il y a une soirée jeux près de chez toi."
-  es: "Hay una noche de juegos cerca de ti."
-  pl: "Niedaleko ciebie jest wieczór planszówek."
+  en: "Find your table."
+  de: "Finde deinen Spieltisch."
+  it: "Trova il tuo tavolo."
+  fr: "Trouve ta table."
+  es: "Encuentra tu mesa."
+  pl: "Znajdź swój stół."
 
 # --- Nav ---
 nav_map:
@@ -430,29 +430,21 @@ filter_clubs:
   es: "Filtrar clubes"
   pl: "Filtruj kluby"
 
-filter_all_types:
-  en: "All types"
-  de: "Alle Typen"
-  it: "Tutti i tipi"
-  fr: "Tous les types"
-  es: "Todos los tipos"
-  pl: "Wszystkie typy"
+filter_distance:
+  en: "Distance"
+  de: "Entfernung"
+  it: "Distanza"
+  fr: "Distance"
+  es: "Distancia"
+  pl: "Odległość"
 
-filter_all_days:
-  en: "All days"
-  de: "Alle Tage"
-  it: "Tutti i giorni"
-  fr: "Tous les jours"
-  es: "Todos los días"
-  pl: "Wszystkie dni"
-
-filter_any_distance:
-  en: "Any distance"
-  de: "Beliebige Entfernung"
-  it: "Qualsiasi distanza"
-  fr: "Toutes distances"
-  es: "Cualquier distancia"
-  pl: "Dowolna odległość"
+remove_filter:
+  en: "Remove filter"
+  de: "Filter entfernen"
+  it: "Rimuovi filtro"
+  fr: "Retirer le filtre"
+  es: "Quitar filtro"
+  pl: "Usuń filtr"
 
 filter_within_distance:
   en: "Within %N% %UNIT%"
@@ -461,22 +453,6 @@ filter_within_distance:
   fr: "Moins de %N% %UNIT%"
   es: "Hasta %N% %UNIT%"
   pl: "Do %N% %UNIT%"
-
-types_selected:
-  en: "%N% types selected"
-  de: "%N% Typen ausgewählt"
-  it: "%N% tipi selezionati"
-  fr: "%N% types sélectionnés"
-  es: "%N% tipos seleccionados"
-  pl: "Wybrano %N% typów"
-
-days_selected:
-  en: "%N% days selected"
-  de: "%N% Tage ausgewählt"
-  it: "%N% giorni selezionati"
-  fr: "%N% jours sélectionnés"
-  es: "%N% días seleccionados"
-  pl: "Wybrano %N% dni"
 
 use_my_location:
   en: "Use my location"
@@ -913,13 +889,6 @@ footer_licence:
   fr: "Licence"
   es: "Licencia"
   pl: "Licencja"
-footer_coffee:
-  en: "Buy me a coffee"
-  de: "Spendier mir einen Kaffee"
-  it: "Offrimi un caffè"
-  fr: "Offrez-moi un café"
-  es: "Invítame a un café"
-  pl: "Postaw mi kawę"
 
 # --- Events ---
 nav_events:

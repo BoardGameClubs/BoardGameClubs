@@ -51,10 +51,6 @@
         <div class="drawer-handle" id="drawer-handle"><i data-lucide="chevron-up" class="drawer-chevron"></i></div>
         <div class="filter-bar">
           <div class="filter-bar-inner">
-          <div class="filter-bar-title">
-            <i data-lucide="sliders-horizontal"></i>
-            <span>{{ i18n.filter_clubs[lang] }}</span>
-          </div>
           <div class="search-row sidebar-search">
             <div class="search-bar">
               <i data-lucide="search" class="search-icon"></i>
@@ -65,43 +61,44 @@
               <i data-lucide="crosshair" style="width:16px;height:16px;"></i>
             </button>
           </div>
-          <div class="filter-row">
-            <div class="multi-select" id="type-filter">
-              <button class="multi-select-toggle filter-select" type="button" aria-haspopup="listbox" aria-expanded="false">
-                <span class="multi-select-label">{{ i18n.filter_all_types[lang] }}</span>
-              </button>
-              <div class="multi-select-dropdown" role="listbox" aria-label="{{ i18n.filter_all_types[lang] }}">
-                <label class="multi-select-option" data-type="Board Games"><input type="checkbox" value="Board Games"><span class="multi-select-check"></span>Board Games</label>
-                <label class="multi-select-option" data-type="RPG"><input type="checkbox" value="RPG"><span class="multi-select-check"></span>RPG</label>
-                <label class="multi-select-option" data-type="Wargames"><input type="checkbox" value="Wargames"><span class="multi-select-check"></span>Wargames</label>
-                <label class="multi-select-option" data-type="BOTC"><input type="checkbox" value="BOTC"><span class="multi-select-check"></span>BOTC</label>
-                <label class="multi-select-option" data-type="TCG"><input type="checkbox" value="TCG"><span class="multi-select-check"></span>TCG</label>
-                <label class="multi-select-option" data-type="Events"><input type="checkbox" value="Events"><span class="multi-select-check"></span>{{ i18n.club_type_events[lang] }}</label>
-              </div>
+          <button class="filter-toggle" id="filter-toggle" type="button" aria-controls="filter-section" aria-expanded="false">
+            <i data-lucide="sliders-horizontal"></i>
+            <span>{{ i18n.filter_clubs[lang] }}</span>
+            <span class="filter-tab-count" id="filter-toggle-count"></span>
+            <i data-lucide="chevron-down" class="filter-toggle-chevron"></i>
+          </button>
+          <div class="active-filters" id="active-filters">
+            <div class="location-pill" id="location-pill" style="display:none;">
+              <i data-lucide="map-pin" style="width:12px;height:12px;"></i>
+              <span id="location-pill-label"></span>
+              <button type="button" id="location-clear" aria-label="{{ i18n.clear_location[lang] }}"><i data-lucide="x" style="width:12px;height:12px;"></i></button>
             </div>
-            <div class="multi-select" id="day-filter">
-              <button class="multi-select-toggle filter-select" type="button" aria-haspopup="listbox" aria-expanded="false">
-                <span class="multi-select-label">{{ i18n.filter_all_days[lang] }}</span>
-              </button>
-              <div class="multi-select-dropdown" role="listbox" aria-label="{{ i18n.filter_all_days[lang] }}">
-                <label class="multi-select-option" data-day="Monday"><input type="checkbox" value="Monday"><span class="multi-select-check"></span>{{ i18n.day_monday[lang] }}</label>
-                <label class="multi-select-option" data-day="Tuesday"><input type="checkbox" value="Tuesday"><span class="multi-select-check"></span>{{ i18n.day_tuesday[lang] }}</label>
-                <label class="multi-select-option" data-day="Wednesday"><input type="checkbox" value="Wednesday"><span class="multi-select-check"></span>{{ i18n.day_wednesday[lang] }}</label>
-                <label class="multi-select-option" data-day="Thursday"><input type="checkbox" value="Thursday"><span class="multi-select-check"></span>{{ i18n.day_thursday[lang] }}</label>
-                <label class="multi-select-option" data-day="Friday"><input type="checkbox" value="Friday"><span class="multi-select-check"></span>{{ i18n.day_friday[lang] }}</label>
-                <label class="multi-select-option" data-day="Saturday"><input type="checkbox" value="Saturday"><span class="multi-select-check"></span>{{ i18n.day_saturday[lang] }}</label>
-                <label class="multi-select-option" data-day="Sunday"><input type="checkbox" value="Sunday"><span class="multi-select-check"></span>{{ i18n.day_sunday[lang] }}</label>
-                <label class="multi-select-option" data-day="Various"><input type="checkbox" value="Various"><span class="multi-select-check"></span>{{ i18n.day_various[lang] }}</label>
-              </div>
-            </div>
-            <select class="filter-select" id="distance-filter" disabled>
-              <option value="">{{ i18n.filter_any_distance[lang] }}</option>
-            </select>
           </div>
-          <div class="location-pill" id="location-pill" style="display:none;">
-            <i data-lucide="map-pin" style="width:12px;height:12px;"></i>
-            <span id="location-pill-label"></span>
-            <button type="button" id="location-clear" aria-label="{{ i18n.clear_location[lang] }}"><i data-lucide="x" style="width:12px;height:12px;"></i></button>
+          <div class="filter-section" id="filter-section" hidden>
+          <div class="filter-tabs" role="tablist">
+            <button class="filter-tab" type="button" role="tab" data-panel="type-filter" aria-controls="type-filter" aria-selected="true">{{ i18n.label_type[lang] }}<span class="filter-tab-count"></span></button>
+            <button class="filter-tab" type="button" role="tab" data-panel="day-filter" aria-controls="day-filter" aria-selected="false">{{ i18n.label_days[lang] }}<span class="filter-tab-count"></span></button>
+            <button class="filter-tab" type="button" role="tab" data-panel="distance-filter" aria-controls="distance-filter" aria-selected="false" disabled>{{ i18n.filter_distance[lang] }}<span class="filter-tab-count"></span></button>
+          </div>
+          <div class="filter-panel" id="type-filter" role="tabpanel">
+            <label class="filter-option"><input type="checkbox" value="Board Games"><span>Board Games</span></label>
+            <label class="filter-option"><input type="checkbox" value="RPG"><span>RPG</span></label>
+            <label class="filter-option"><input type="checkbox" value="Wargames"><span>Wargames</span></label>
+            <label class="filter-option"><input type="checkbox" value="BOTC"><span>BOTC</span></label>
+            <label class="filter-option"><input type="checkbox" value="TCG"><span>TCG</span></label>
+            <label class="filter-option"><input type="checkbox" value="Events"><span>{{ i18n.club_type_events[lang] }}</span></label>
+          </div>
+          <div class="filter-panel" id="day-filter" role="tabpanel" hidden>
+            <label class="filter-option"><input type="checkbox" value="Monday"><span>{{ i18n.day_monday[lang] }}</span></label>
+            <label class="filter-option"><input type="checkbox" value="Tuesday"><span>{{ i18n.day_tuesday[lang] }}</span></label>
+            <label class="filter-option"><input type="checkbox" value="Wednesday"><span>{{ i18n.day_wednesday[lang] }}</span></label>
+            <label class="filter-option"><input type="checkbox" value="Thursday"><span>{{ i18n.day_thursday[lang] }}</span></label>
+            <label class="filter-option"><input type="checkbox" value="Friday"><span>{{ i18n.day_friday[lang] }}</span></label>
+            <label class="filter-option"><input type="checkbox" value="Saturday"><span>{{ i18n.day_saturday[lang] }}</span></label>
+            <label class="filter-option"><input type="checkbox" value="Sunday"><span>{{ i18n.day_sunday[lang] }}</span></label>
+            <label class="filter-option"><input type="checkbox" value="Various"><span>{{ i18n.day_various[lang] }}</span></label>
+          </div>
+          <div class="filter-panel" id="distance-filter" role="tabpanel" hidden></div>
           </div>
           </div>
         </div>
@@ -139,12 +136,8 @@
       showing_n_clubs:          {{ i18n.showing_n_clubs[lang] | jsonify }},
       showing_n_of_m:           {{ i18n.showing_n_of_m[lang] | jsonify }},
       sorted_by_nearest:        {{ i18n.sorted_by_nearest[lang] | jsonify }},
-      filter_all_types:         {{ i18n.filter_all_types[lang] | jsonify }},
-      filter_all_days:          {{ i18n.filter_all_days[lang] | jsonify }},
-      filter_any_distance:      {{ i18n.filter_any_distance[lang] | jsonify }},
       filter_within_distance:   {{ i18n.filter_within_distance[lang] | jsonify }},
-      types_selected:           {{ i18n.types_selected[lang] | jsonify }},
-      days_selected:            {{ i18n.days_selected[lang] | jsonify }},
+      remove_filter:            {{ i18n.remove_filter[lang] | jsonify }},
       geolocation_unsupported:  {{ i18n.geolocation_unsupported[lang] | jsonify }},
       geolocation_failed:       {{ i18n.geolocation_failed[lang] | jsonify }},
       my_location:              {{ i18n.my_location[lang] | jsonify }},

@@ -33,4 +33,8 @@ There are no user accounts and no cookies. We use [GoatCounter](https://www.goat
 
 Know a board game club or event that's not listed? [Add it to the directory]({{ "/contribute" | relative_url }}) by submitting a pull request on GitHub. It only takes a few minutes.
 
+## Support the Project
+
+This is a free, community-run project. If you find it useful, you can [buy me a coffee](https://www.buymeacoffee.com/kkjdaniel) ☕ to help keep it going.
+
 </div>

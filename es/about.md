@@ -33,4 +33,8 @@ No hay cuentas de usuario ni cookies. Para estadísticas anónimas de visitas us
 
 ¿Conoces algún club de juegos de mesa que no aparezca? [Añádelo al directorio]({{ "/es/contribute/" | relative_url }}) enviando una pull request en GitHub. Solo lleva unos minutos.
 
+## Apoya el proyecto
+
+Este es un proyecto gratuito y mantenido por la comunidad. Si te resulta útil, puedes [invitarme a un café](https://www.buymeacoffee.com/kkjdaniel) ☕ para ayudar a mantenerlo en marcha.
+
 </div>

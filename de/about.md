@@ -33,4 +33,8 @@ Es gibt keine Benutzerkonten und keine Cookies. Für anonyme Besucherstatistiken
 
 Kennst du einen Brettspielclub, der noch nicht gelistet ist? [Füge ihn dem Verzeichnis hinzu]({{ "/de/contribute/" | relative_url }}), indem du einen Pull Request auf GitHub einreichst. Das dauert nur wenige Minuten.
 
+## Projekt unterstützen
+
+Dies ist ein kostenloses, von der Community getragenes Projekt. Wenn es dir nützt, kannst du [mir einen Kaffee spendieren](https://www.buymeacoffee.com/kkjdaniel) ☕ und so helfen, es am Laufen zu halten.
+
 </div>

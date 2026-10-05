@@ -33,4 +33,8 @@ Il n'y a ni compte utilisateur ni cookies. Pour des statistiques de visite anony
 
 Tu connais un club de jeux de société qui n'est pas répertorié ? [Ajoute-le à l'annuaire]({{ "/fr/contribute/" | relative_url }}) en soumettant une pull request sur GitHub. Ça ne prend que quelques minutes.
 
+## Soutenir le projet
+
+Ce projet est gratuit et géré par la communauté. S'il t'est utile, tu peux [m'offrir un café](https://www.buymeacoffee.com/kkjdaniel) ☕ pour aider à le faire vivre.
+
 </div>

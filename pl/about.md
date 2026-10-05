@@ -33,4 +33,8 @@ Nie ma kont użytkowników ani plików cookie. Do anonimowych statystyk odwiedzi
 
 Znasz klub gier planszowych, którego jeszcze nie ma na liście? [Dodaj go do katalogu]({{ "/pl/contribute/" | relative_url }}), wysyłając pull request na GitHubie. Zajmie to tylko kilka minut.
 
+## Wesprzyj projekt
+
+To darmowy projekt prowadzony przez społeczność. Jeśli jest dla ciebie przydatny, możesz [postawić mi kawę](https://www.buymeacoffee.com/kkjdaniel) ☕, aby pomóc w jego utrzymaniu.
+
 </div>
