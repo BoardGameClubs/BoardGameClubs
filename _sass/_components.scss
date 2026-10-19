@@ -99,9 +99,10 @@
 
   @media (min-width: $bp-lg) {
     display: flex;
+    background: $color-tag;
 
     &:hover {
-      background: $color-bg;
+      background: color.adjust($color-tag, $lightness: -3%);
     }
   }
 }
