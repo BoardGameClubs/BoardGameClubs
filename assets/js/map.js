@@ -111,22 +111,7 @@
       clubs.forEach(function (club) {
         if (!club.location.lat || !club.location.lng) return;
 
-        var tags = "";
-        // Events keep type ["Events"] for the filter; their own focus tags
-        // (Board Games, RPG, …) live in eventTypes and show in the popup.
-        var clubTypes = club._kind === "event" && club.eventTypes && club.eventTypes.length
-          ? club.eventTypes
-          : (club.type || ["Board Games"]);
-        clubTypes.forEach(function (t) {
-          var cls = "tag tag-type tag-type-" + t.toLowerCase().replace(/ /g, "-");
-          tags += '<span class="' + cls + '">' + self.escapeHtml(t) + "</span>";
-        });
-
         var isEvent = club._kind === "event";
-        var cost = isEvent ? club.price : club.cost;
-        if (cost) {
-          tags += '<span class="tag tag-cost">' + self.escapeHtml(cost) + "</span>";
-        }
 
         var popupIcon = "";
         if (club.image) {
@@ -135,6 +120,10 @@
             ? self.escapeHtml(club.image)
             : baseurl + "/assets/images/" + (isEvent ? "events" : "clubs") + "/" + encodeURIComponent(club.image);
           popupIcon = '<div class="popup-icon-wrap"><img src="' + imgSrc + '" alt="" onload="window.GameClub.applyImgBg(this)"></div>';
+        } else {
+          popupIcon = '<div class="popup-icon-wrap popup-icon-placeholder">' +
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+            getTypeIcon(club) + "</svg></div>";
         }
 
         var venue = club.location && club.location.name
@@ -170,9 +159,6 @@
           venue +
           daysLine +
           "</div>" +
-          "</div>" +
-          '<div class="popup-tags">' +
-          tags +
           "</div>" +
           "</a>";
 

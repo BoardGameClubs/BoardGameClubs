@@ -867,6 +867,77 @@
 }
 
 // ─── Club detail page ───
+// ─── Club page map banner ───
+.club-hero {
+  position: relative;
+  isolation: isolate;               // keep Leaflet's pane z-indexes inside the banner
+  height: 300px;
+  background: $color-tag;
+
+  @media (max-width: $bp-md - 1) {
+    height: 220px;
+  }
+
+  .club-hero-map {
+    position: absolute;
+    inset: 0;
+  }
+
+  .leaflet-tile-pane {
+    filter: saturate(0.7) sepia(0.12);
+  }
+
+  // Fade the map into the page so the heading card can sit across the edge.
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 45%;
+    background: linear-gradient(to bottom, rgba($color-bg, 0), $color-bg);
+    z-index: 450;                   // above Leaflet tiles (400), below controls (800)
+    pointer-events: none;
+  }
+}
+
+.club-hero-inner {
+  position: relative;
+  z-index: 900;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 0;
+  pointer-events: none;
+}
+
+.club-hero-back {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.45rem 0.9rem 0.45rem 0.55rem;
+  background: rgba($color-surface, 0.94);
+  border-radius: 999px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: $color-text;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  span {
+    text-box: trim-both cap alphabetic;
+  }
+
+  &:hover {
+    color: $color-accent;
+    text-decoration: none;
+  }
+}
+
 .club-detail {
   max-width: 720px;
   margin: 0 auto;
@@ -910,6 +981,24 @@
     &:hover {
       color: $color-accent;
       text-decoration-color: currentColor;
+    }
+  }
+
+  &.club-detail--hero {
+    position: relative;
+    margin-top: -88px;
+    padding-top: 0;
+
+    @media (max-width: $bp-md - 1) {
+      margin-top: -64px;
+    }
+
+    .club-detail-heading {
+      padding: 1.5rem;
+      background: $color-surface;
+      border: 1px solid $color-border;
+      border-radius: $border-radius;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
     }
   }
 
@@ -1007,33 +1096,63 @@
     overflow: hidden;
   }
 
+  // A table of rows: icon + label on the left, value on the right.
   .detail-info {
-    margin-bottom: 2rem;
-    background: $color-tag;
-    border-radius: $border-radius;
-    padding: 1.25rem 1.5rem;
+    margin: 0.75rem 0 0;
+    padding: 0 1.5rem;
+    background: $color-surface;
     border: 1px solid $color-border;
+    border-radius: $border-radius;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+
+    @media (max-width: $bp-md - 1) {
+      padding: 0 1rem;
+    }
+
+    .detail-item {
+      display: grid;
+      grid-template-columns: 9.5rem 1fr;
+      gap: 1rem;
+      align-items: baseline;
+      padding: 0.9rem 0;
+
+      & + .detail-item {
+        border-top: 1px solid $color-border;
+      }
+
+      @media (max-width: $bp-md - 1) {
+        grid-template-columns: 7.75rem 1fr;
+        gap: 0.75rem;
+      }
+    }
 
     dt {
-      font-weight: 600;
-      font-size: 0.75rem;
-      color: $color-text-light;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      margin-top: 1.15rem;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: $color-primary-light;
+    }
 
-      &:first-child {
-        margin-top: 0;
+    .detail-icon {
+      display: inline-block;
+      margin-right: 0.5rem;
+      color: $color-accent;
+      vertical-align: -0.2em;
+
+      svg {
+        display: block;
+        width: 16px;
+        height: 16px;
       }
     }
 
     dd {
-      margin: 0.25rem 0 0 0;
+      margin: 0;
       color: $color-text;
     }
   }
 
   .club-description {
+    font-size: 1.05rem;
     line-height: 1.75;
     color: $color-text;
 
@@ -1082,16 +1201,35 @@
     margin: 2rem 0 0;
     font-weight: 600;
     font-size: 0.75rem;
-    color: $color-text-light;
+    color: $color-accent;
     text-transform: uppercase;
     letter-spacing: 0.06em;
+  }
+
+  .club-links-box {
+    margin-top: 0.75rem;
+    padding: 1.25rem 1.5rem;
+    background: $color-surface;
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+
+    // Mobile: the link rows fill the card edge to edge, so no inner border.
+    @media (max-width: $bp-md - 1) {
+      padding: 0;
+      overflow: hidden;
+
+      .club-links {
+        border: none;
+        border-radius: 0;
+      }
+    }
   }
 
   .club-links {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75rem;
-    margin-top: 0.75rem;
 
     a {
       display: inline-flex;
@@ -1104,6 +1242,10 @@
       color: $color-text;
       background: $color-surface;
       transition: color 0.2s;
+
+      svg:first-child {
+        color: $color-accent;
+      }
 
       // Trim the label to cap height so flex centring lines the icon up with
       // the letters rather than DM Sans's uneven ascender/descender space.
@@ -1160,11 +1302,10 @@
   }
 
   .club-links-disclaimer {
-    margin-top: 0.85rem;
+    margin-top: 0.6rem;
     margin-bottom: 0;
-    font-size: 0.78rem;
-    color: $color-text-light;
-    opacity: 0.75;
+    font-size: 0.8rem;
+    color: $color-primary-light;
   }
 
   .club-suggest-edit {
@@ -1328,6 +1469,24 @@ noscript .club-list {
     }
   }
 
+  .popup-icon-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: $border-radius-sm;
+    border: 1px solid $color-border;
+    background: $color-tag;
+    color: $color-primary-light;
+
+    svg {
+      width: 22px;
+      height: 22px;
+      opacity: 0.7;
+    }
+  }
+
   .popup-content {
     flex: 1;
     min-width: 0;
@@ -1364,11 +1523,6 @@ noscript .club-list {
     }
   }
 
-  .popup-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.2rem;
-  }
 }
 
 // ─── Marker cluster overrides ───

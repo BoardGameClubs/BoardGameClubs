@@ -787,6 +787,14 @@ label_links:
   es: "Enlaces"
   pl: "Linki"
 
+label_details:
+  en: "Details"
+  de: "Details"
+  it: "Dettagli"
+  fr: "Détails"
+  es: "Detalles"
+  pl: "Szczegóły"
+
 external_disclaimer:
   en: "Links lead to external sites we don't control. We're not responsible for their content."
   de: "Links führen zu externen Seiten, die wir nicht kontrollieren. Für deren Inhalte sind wir nicht verantwortlich."
