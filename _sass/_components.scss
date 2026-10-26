@@ -877,6 +877,7 @@
     color: $color-primary;
     margin-bottom: 0.5rem;
     font-size: 2.1rem;
+    text-wrap: balance;
   }
 
   .club-location-subtitle {
@@ -884,9 +885,32 @@
     font-family: $font-body;
     font-size: 0.45em;
     font-weight: 400;
+    line-height: 1.5;
     color: $color-text-light;
     margin-top: 0.2rem;
     letter-spacing: 0.01em;
+    text-wrap: balance;
+
+    @media (max-width: $bp-md - 1) {
+      margin-top: 0.5rem;
+    }
+
+    @media (min-width: $bp-md) {
+      max-width: 48ch;
+    }
+  }
+
+  .club-address-link {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgba($color-text-light, 0.4);
+    text-underline-offset: 0.15em;
+    transition: color 0.15s, text-decoration-color 0.15s;
+
+    &:hover {
+      color: $color-accent;
+      text-decoration-color: currentColor;
+    }
   }
 
   .club-detail-heading {
@@ -898,6 +922,7 @@
     @media (max-width: $bp-md - 1) {
       flex-direction: column;
       align-items: center;
+      gap: 1rem;
       text-align: center;
     }
   }
@@ -914,8 +939,8 @@
       border: 1px solid $color-border;
 
       @media (max-width: $bp-md - 1) {
-        width: 140px;
-        height: 140px;
+        width: 112px;
+        height: 112px;
       }
     }
   }
@@ -1072,18 +1097,64 @@
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
-      padding: 0.6rem 1.15rem;
+      padding: 0.8rem 1.15rem;
       border: 1px solid $color-border;
       border-radius: $border-radius;
       font-size: 0.88rem;
       color: $color-text;
       background: $color-surface;
-      transition: border-color 0.2s, color 0.2s;
+      transition: color 0.2s;
+
+      // Trim the label to cap height so flex centring lines the icon up with
+      // the letters rather than DM Sans's uneven ascender/descender space.
+      span {
+        text-box: trim-both cap alphabetic;
+      }
 
       &:hover {
-        border-color: $color-accent;
         color: $color-accent;
         text-decoration: none;
+      }
+    }
+
+    .club-link-ext {
+      display: none;
+      width: 16px;
+      height: 16px;
+    }
+
+    // Mobile: one grouped list of full-width rows instead of wrapping buttons.
+    @media (max-width: $bp-md - 1) {
+      flex-direction: column;
+      gap: 0;
+      border: 1px solid $color-border;
+      border-radius: $border-radius;
+      overflow: hidden;
+
+      a {
+        gap: 0.7rem;
+        padding: 1.05rem 1rem;
+        border: none;
+        border-radius: 0;
+        font-size: 0.95rem;
+
+        & + a {
+          border-top: 1px solid $color-border;
+        }
+
+        svg:first-child {
+          color: $color-accent;
+        }
+
+        &:active {
+          background: $color-tag;
+        }
+      }
+
+      .club-link-ext {
+        display: block;
+        margin-left: auto;
+        color: $color-text-light;
       }
     }
   }
@@ -1107,13 +1178,17 @@
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
-      padding: 0.4rem 0.85rem;
+      padding: 0.6rem 0.85rem;
       font-size: 0.88rem;
       color: $color-text-light;
       border: 1px solid $color-border;
       border-radius: 6px;
       background: transparent;
       transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+
+      span {
+        text-box: trim-both cap alphabetic;
+      }
 
       &:hover {
         color: $color-accent;

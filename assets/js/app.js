@@ -357,7 +357,7 @@
           '<p class="empty-state-hint">' + escapeHtml(hint) + '</p>' +
           (countryEmpty
             ? '<a href="' + contributeUrl + '" class="empty-state-cta">' +
-                '<i data-lucide="plus"></i><span>' + escapeHtml(i18n.nav_contribute || "Add a Club") + '</span>' +
+                '<i data-lucide="plus"></i><span>' + escapeHtml(i18n.nav_contribute || "Add Club") + '</span>' +
               '</a>'
             : '') +
         '</div>';
