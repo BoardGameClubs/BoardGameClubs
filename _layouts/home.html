@@ -28,17 +28,6 @@
           <span class="site-tagline">{{ i18n.tagline[lang] }}</span>
         </div>
       </a>
-      <div class="header-search">
-        <div class="search-bar">
-          <i data-lucide="search" class="search-icon"></i>
-          <input type="text" class="search-input" id="search-input" placeholder="{{ i18n.search_placeholder[lang] }}" autocomplete="off">
-          <div class="location-suggestions" id="location-suggestions"></div>
-        </div>
-        <button class="locate-btn locate-btn--header" id="locate-btn-header" type="button">
-          <i data-lucide="crosshair" style="width:14px;height:14px;"></i>
-          <span>{{ i18n.use_my_location[lang] }}</span>
-        </button>
-      </div>
       {% include nav-links.html lang=lang home_url="/" %}
     </div>
   </header>
@@ -51,26 +40,20 @@
         <div class="drawer-handle" id="drawer-handle"><i data-lucide="chevron-up" class="drawer-chevron"></i></div>
         <div class="filter-bar">
           <div class="filter-bar-inner">
-          <div class="search-row sidebar-search">
+          <div class="search-row">
             <div class="search-bar">
               <i data-lucide="search" class="search-icon"></i>
-              <input type="text" class="search-input" id="search-input-mobile" placeholder="{{ i18n.search_placeholder[lang] }}" autocomplete="off">
-              <div class="location-suggestions" id="location-suggestions-mobile"></div>
+              <input type="text" class="search-input" id="search-input" placeholder="{{ i18n.search_placeholder[lang] }}" autocomplete="off">
+              <div class="location-suggestions" id="location-suggestions"></div>
             </div>
-            <button class="locate-btn locate-btn--mobile" id="locate-btn" type="button" aria-label="{{ i18n.use_my_location[lang] }}">
+            <button class="locate-btn locate-btn--icon" id="locate-btn" type="button" aria-label="{{ i18n.use_my_location[lang] }}" title="{{ i18n.use_my_location[lang] }}">
               <i data-lucide="crosshair" style="width:16px;height:16px;"></i>
             </button>
-            <button class="locate-btn locate-btn--mobile filter-toggle-mobile" type="button" data-filter-toggle aria-controls="filter-section" aria-expanded="false" aria-label="{{ i18n.filter_clubs[lang] }}">
+            <button class="locate-btn locate-btn--icon filter-toggle" id="filter-toggle" type="button" aria-controls="filter-section" aria-expanded="false" aria-label="{{ i18n.filter_clubs[lang] }}" title="{{ i18n.filter_clubs[lang] }}">
               <i data-lucide="sliders-horizontal" style="width:16px;height:16px;"></i>
               <span class="filter-tab-count filter-toggle-count"></span>
             </button>
           </div>
-          <button class="filter-toggle" type="button" data-filter-toggle aria-controls="filter-section" aria-expanded="false">
-            <i data-lucide="sliders-horizontal"></i>
-            <span>{{ i18n.filter_clubs[lang] }}</span>
-            <span class="filter-tab-count filter-toggle-count"></span>
-            <i data-lucide="chevron-down" class="filter-toggle-chevron"></i>
-          </button>
           <div class="active-filters" id="active-filters">
             <div class="location-pill" id="location-pill" style="display:none;">
               <i data-lucide="map-pin" style="width:12px;height:12px;"></i>

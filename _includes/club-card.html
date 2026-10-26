@@ -5,19 +5,5 @@
   <div class="club-card-meta">
     <div class="club-days"><i data-lucide="calendar"></i><span>{{ club.days | join: ", " }}{% if club.frequency and club.frequency != "Weekly" %} · {{ club.frequency }}{% endif %}</span></div>
   </div>
-  <div class="club-tags">
-    {% assign club_types = club.type | default: nil %}
-    {% if club_types %}
-      {% for t in club_types %}
-        {% assign type_slug = t | downcase | replace: ' ', '-' %}
-        <span class="tag tag-type tag-type-{{ type_slug }}">{{ t }}</span>
-      {% endfor %}
-    {% else %}
-      <span class="tag tag-type tag-type-board-games">Board Games</span>
-    {% endif %}
-    {% if club.cost and club.cost != "" %}
-      <span class="tag tag-cost">{{ club.cost }}</span>
-    {% endif %}
-  </div>
   <i data-lucide="chevron-right" class="club-card-chevron"></i>
 </a>

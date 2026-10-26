@@ -13,9 +13,11 @@
     border-bottom: 1px solid $color-border;
     margin: 0 -1.25rem;
 
+    // Padding, not margin: a top margin collapses out of the sticky bar and
+    // the gap vanishes once it sticks.
     .search-row {
-      margin: 0.5rem 0 0.75rem;
-      padding: 3px 1.25rem 0;
+      margin: 0;
+      padding: 0.75rem 1.25rem;
     }
   }
 
@@ -62,62 +64,10 @@
   }
 }
 
-// Full-bleed header row that expands the tabbed filter section (desktop);
-// on mobile the icon button in the search row takes over.
-.filter-toggle {
-  display: none;
-  align-items: center;
-  gap: 0.55rem;
-  width: 100%;
-  padding: 0.9rem 1.25rem;
-  background: none;
-  border: none;
-  font-family: inherit;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: $color-text;
-  text-align: left;
-  cursor: pointer;
-  transition: background 0.15s;
-
-  svg {
-    width: 16px;
-    height: 16px;
-    color: $color-accent;
-    flex-shrink: 0;
-  }
-
-  .filter-toggle-chevron {
-    margin-left: auto;
-    color: $color-primary-light;
-    transition: transform 0.2s;
-  }
-
-  &[aria-expanded="true"] .filter-toggle-chevron {
-    transform: rotate(180deg);
-  }
-
-  @media (min-width: $bp-lg) {
-    display: flex;
-    background: $color-tag;
-
-    &:hover {
-      background: color.adjust($color-tag, $lightness: -3%);
-    }
-  }
-}
-
 // ─── Search bar ───
 .search-bar {
   position: relative;
   margin-bottom: 0.5rem;
-}
-
-// Sidebar search: visible on mobile only (header search takes over on desktop)
-.sidebar-search {
-  @media (min-width: 992px) {
-    display: none;
-  }
 }
 
 .search-icon {
@@ -132,19 +82,12 @@
   z-index: 1;
 }
 
-// Search + locate row on mobile
 .search-row {
   display: flex;
   align-items: stretch;
   gap: 0.4rem;
   margin-bottom: 0.5rem;
   padding-top: 3px;
-
-  &.sidebar-search {
-    @media (min-width: $bp-lg) {
-      display: none;
-    }
-  }
 
   .search-bar {
     flex: 1;
@@ -178,7 +121,7 @@
   }
 }
 
-.filter-toggle-mobile {
+.filter-toggle {
   position: relative;
 
   &[aria-expanded="true"] {
@@ -397,8 +340,8 @@
   }
 }
 
-// Mobile locate button (icon-only, next to search bar)
-.locate-btn--mobile {
+// Icon-only buttons next to the search bar
+.locate-btn--icon {
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
@@ -410,25 +353,6 @@
 
   &:hover {
     transform: none;
-  }
-
-  @media (min-width: $bp-lg) {
-    display: none;
-  }
-}
-
-// Header locate button (desktop only, next to search bar)
-.locate-btn--header {
-  display: none;
-
-  @media (min-width: $bp-lg) {
-    display: inline-flex;
-    margin-left: 0;
-    flex-shrink: 0;
-    // Match header search input height exactly
-    padding: 0.5rem 0.85rem;
-    font-size: 0.85rem;
-    border-width: 1px;
   }
 }
 
@@ -742,6 +666,24 @@
     }
   }
 
+  .club-icon-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: $border-radius-sm;
+    border: 1px solid $color-border;
+    background: $color-tag;
+    color: $color-primary-light;
+
+    svg {
+      width: 26px;
+      height: 26px;
+      opacity: 0.7;
+    }
+  }
+
   .club-card-content {
     flex: 1;
     min-width: 0;
@@ -815,12 +757,6 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
-  }
-
-  .club-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
   }
 }
 

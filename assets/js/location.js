@@ -3,14 +3,11 @@
 
   var GameClubLocation = {
     input: null,
-    inputMobile: null,
     suggestions: null,
-    suggestionsMobile: null,
     pill: null,
     pillLabel: null,
     clearBtn: null,
     locateBtn: null,
-    locateBtnHeader: null,
     debounceTimer: null,
     onLocationSet: null,
     onLocationClear: null,
@@ -30,16 +27,13 @@
       this.setCountry(profile);
 
       this.input = document.getElementById("search-input");
-      this.inputMobile = document.getElementById("search-input-mobile");
       this.suggestions = document.getElementById("location-suggestions");
-      this.suggestionsMobile = document.getElementById("location-suggestions-mobile");
       this.pill = document.getElementById("location-pill");
       this.pillLabel = document.getElementById("location-pill-label");
       this.clearBtn = document.getElementById("location-clear");
       this.locateBtn = document.getElementById("locate-btn");
-      this.locateBtnHeader = document.getElementById("locate-btn-header");
 
-      if (!this.input && !this.inputMobile) return this;
+      if (!this.input) return this;
 
       this.bindEvents();
       return this;
@@ -192,7 +186,6 @@
       var self = this;
 
       this.bindInputEvents(this.input, this.suggestions);
-      this.bindInputEvents(this.inputMobile, this.suggestionsMobile);
 
       if (this.clearBtn) {
         this.clearBtn.addEventListener("click", function () {
@@ -202,12 +195,6 @@
 
       if (this.locateBtn) {
         this.locateBtn.addEventListener("click", function () {
-          self.geolocate();
-        });
-      }
-
-      if (this.locateBtnHeader) {
-        this.locateBtnHeader.addEventListener("click", function () {
           self.geolocate();
         });
       }
@@ -455,13 +442,11 @@
 
     hideAllSuggestions: function () {
       this.hideSuggestionsEl(this.suggestions);
-      this.hideSuggestionsEl(this.suggestionsMobile);
     },
 
     selectSuggestion: function (suggestion) {
       var self = this;
       if (this.input) this.input.value = "";
-      if (this.inputMobile) this.inputMobile.value = "";
       this.hideAllSuggestions();
 
       if (suggestion.lat !== undefined && suggestion.lng !== undefined && suggestion.lat !== null) {
@@ -502,7 +487,6 @@
 
     setLocateBtnsDisabled: function (disabled) {
       if (this.locateBtn) this.locateBtn.disabled = disabled;
-      if (this.locateBtnHeader) this.locateBtnHeader.disabled = disabled;
     },
 
     geolocate: function () {

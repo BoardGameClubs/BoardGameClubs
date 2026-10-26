@@ -178,22 +178,17 @@
     var term = profile && profile.postcode && profile.postcode.term;
     var placeholder = (term && i18n["search_placeholder_" + term]) ||
       i18n.search_placeholder || "";
-    var inputs = [
-      document.getElementById("search-input"),
-      document.getElementById("search-input-mobile")
-    ];
-    inputs.forEach(function (el) { if (el) el.placeholder = placeholder; });
+    var input = document.getElementById("search-input");
+    if (input) input.placeholder = placeholder;
   }
 
   function restoreFromUrl() {
     var params = readUrlParams();
     var searchInput = document.getElementById("search-input");
-    var searchInputMobile = document.getElementById("search-input-mobile");
 
     if (params.q) {
       search.setQuery(params.q);
       if (searchInput) searchInput.value = params.q;
-      if (searchInputMobile) searchInputMobile.value = params.q;
     }
     if (params.type && params.type.length > 0) search.setTypeFilters(params.type);
     if (params.days && params.days.length > 0) search.setDayFilters(params.days);
@@ -376,17 +371,6 @@
 
     var html = clubs
       .map(function (club) {
-        var tags = "";
-        var clubTypes = club.type || ["Board Games"];
-        clubTypes.forEach(function (t) {
-          var cls = "tag tag-type tag-type-" + t.toLowerCase().replace(/ /g, "-");
-          tags += '<span class="' + cls + '">' + escapeHtml(t) + "</span>";
-        });
-
-        if (club.cost) {
-          tags += '<span class="tag tag-cost">' + escapeHtml(club.cost) + "</span>";
-        }
-
         var distanceBadge = "";
         if (club._distance !== undefined) {
           distanceBadge =
@@ -401,6 +385,13 @@
             ? escapeHtml(club.image)
             : baseurl + "/assets/images/clubs/" + encodeURIComponent(club.image);
           icon = '<div class="club-icon-wrap"><img src="' + imgSrc + '" alt="" loading="lazy" onload="window.GameClub.applyImgBg(this)"></div>';
+        } else {
+          var typeIcons = (window.GameClubMap && window.GameClubMap.typeIcons) || {};
+          var primaryType = (club.type || ["Board Games"])[0];
+          icon = '<div class="club-icon-wrap club-icon-placeholder">' +
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+            (typeIcons[primaryType] || typeIcons["Board Games"] || "") +
+            "</svg></div>";
         }
 
         var venue = club.location && club.location.name
@@ -430,9 +421,6 @@
           "</div>" +
           meta +
           "</div>" +
-          "</div>" +
-          '<div class="club-tags">' +
-          tags +
           "</div>" +
           '<i data-lucide="chevron-right" class="club-card-chevron"></i>' +
           "</a>"
@@ -540,8 +528,8 @@
         container.appendChild(buildFilterTag(kind, value, labels[value] || fallback));
       });
     });
-    var totalCounts = document.querySelectorAll(".filter-toggle-count");
-    for (var c = 0; c < totalCounts.length; c++) totalCounts[c].textContent = total || "";
+    var totalCount = document.querySelector(".filter-toggle-count");
+    if (totalCount) totalCount.textContent = total || "";
     if (window.lucide) lucide.createIcons();
   }
 
@@ -577,42 +565,26 @@
 
   function bindEvents() {
     var searchInput = document.getElementById("search-input");
-    var searchInputMobile = document.getElementById("search-input-mobile");
-    var filterToggles = document.querySelectorAll("[data-filter-toggle]");
+    var filterToggle = document.getElementById("filter-toggle");
     var filterSection = document.getElementById("filter-section");
     var filterTabs = document.querySelectorAll(".filter-tab");
     var activeFilters = document.getElementById("active-filters");
 
-    function onSearchInput(source, other) {
-      clearTimeout(debounceTimer);
-      debounceTimer = setTimeout(function () {
-        if (other) other.value = source.value;
-        search.setQuery(source.value);
-        update(false);
-      }, 500);
-    }
-
     if (searchInput) {
       searchInput.addEventListener("input", function () {
-        onSearchInput(searchInput, searchInputMobile);
-      });
-    }
-    if (searchInputMobile) {
-      searchInputMobile.addEventListener("input", function () {
-        onSearchInput(searchInputMobile, searchInput);
+        clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(function () {
+          search.setQuery(searchInput.value);
+          update(false);
+        }, 500);
       });
     }
 
-    function onFilterToggle() {
-      filterSection.hidden = !filterSection.hidden;
-      for (var k = 0; k < filterToggles.length; k++) {
-        filterToggles[k].setAttribute("aria-expanded", filterSection.hidden ? "false" : "true");
-      }
-    }
-    if (filterSection) {
-      for (var f = 0; f < filterToggles.length; f++) {
-        filterToggles[f].addEventListener("click", onFilterToggle);
-      }
+    if (filterToggle && filterSection) {
+      filterToggle.addEventListener("click", function () {
+        filterSection.hidden = !filterSection.hidden;
+        filterToggle.setAttribute("aria-expanded", filterSection.hidden ? "false" : "true");
+      });
     }
 
     for (var t = 0; t < filterTabs.length; t++) {
@@ -641,7 +613,6 @@
         userLocation = { lat: lat, lng: lng, label: label };
         search.setQuery("");
         if (searchInput) searchInput.value = "";
-        if (searchInputMobile) searchInputMobile.value = "";
         search.setUserLocation(lat, lng);
         map.showUserLocation(lat, lng);
         setDistanceEnabled(true);
