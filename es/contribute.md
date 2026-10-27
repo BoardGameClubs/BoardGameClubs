@@ -56,6 +56,7 @@ website: ""
 meetup: ""
 facebook: ""
 discord: ""
+aftergame: ""
 bgg: ""
 description: >-
   Una breve descripción de tu club. ¿A qué juegan?
@@ -83,6 +84,7 @@ No establezcas `permalink`. La página del club se genera automáticamente en `/
 | `meetup` | Enlace al grupo de Meetup |
 | `facebook` | Enlace a la página o grupo de Facebook |
 | `discord` | Enlace de invitación a Discord |
+| `aftergame` | Enlace al grupo de Aftergame |
 | `bgg` | Enlace al gremio o grupo de BoardGameGeek |
 | `description` | Texto libre. Se admite Markdown sencillo: líneas en blanco separan párrafos, líneas que empiezan con `-` se convierten en listas. Ver ejemplos abajo. |
 

@@ -157,6 +157,12 @@ body:
       placeholder: https://discord.gg/...
 
   - type: input
+    id: aftergame
+    attributes:
+      label: Aftergame group
+      placeholder: https://aftergame.app/groups/...
+
+  - type: input
     id: bgg
     attributes:
       label: BoardGameGeek link

@@ -12,10 +12,11 @@ location:
   lng: -0.0993561
 cost: "Free"
 image: "haringey_board_game_club.jpg"
-website: "https://aftergame.app/groups/hbgc/"
+website: ""
 meetup: ""
 facebook: "https://www.facebook.com/groups/haringayboardgameclub"
 discord: "https://discord.gg/ccE4bw5Pgw"
+aftergame: "https://aftergame.app/groups/hbgc/"
 bgg: "https://boardgamegeek.com/guild/3564"
 description: >-
   A North London game club meeting in Haringey to play modern boardgames.
