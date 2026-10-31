@@ -85,7 +85,7 @@
     display: block;
     height: 36px;
     width: auto;
-    transition: transform 0.15s ease, filter 0.15s ease;
+    transition: filter 0.15s ease;
 
     @media (max-width: $bp-lg - 1) {
       height: 34px;
@@ -96,33 +96,16 @@
     }
   }
 
-  // filter: drop-shadow (not box-shadow) so the shadow follows the die-cut
-  // outline around the pin instead of the image's rectangle.
+  // The logo is an <img>, so its fill can't be recoloured directly. This
+  // filter turns the badge's $color-accent into ~$color-accent-light (the
+  // primary-button hover colour) and leaves the white lettering white.
   .site-brand:focus-visible .site-logo {
-    transform: translateY(-2px);
-    filter: drop-shadow(0 4px 5px rgba($color-accent, 0.35));
+    filter: brightness(1.2) saturate(0.84);
   }
 
   @media (min-width: $bp-lg) {
     .site-brand:hover .site-logo {
-      transform: translateY(-2px);
-      filter: drop-shadow(0 4px 5px rgba($color-accent, 0.35));
-    }
-
-    .site-brand:active .site-logo {
-      transform: translateY(0);
-      filter: drop-shadow(0 1px 2px rgba($color-accent, 0.3));
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .site-logo {
-      transition: none;
-    }
-
-    .site-brand:hover .site-logo,
-    .site-brand:focus-visible .site-logo {
-      transform: none;
+      filter: brightness(1.2) saturate(0.84);
     }
   }
 
