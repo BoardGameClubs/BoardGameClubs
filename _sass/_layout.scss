@@ -97,8 +97,8 @@
   }
 
   // The logo is an <img>, so its fill can't be recoloured directly. This
-  // filter turns the badge's $color-accent into ~$color-accent-light (the
-  // primary-button hover colour) and leaves the white lettering white.
+  // filter turns the pin's $color-accent into ~$color-accent-light (the
+  // primary-button hover colour) and barely shifts the dark lettering.
   .site-brand:focus-visible .site-logo {
     filter: brightness(1.2) saturate(0.84);
   }
