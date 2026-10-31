@@ -79,17 +79,50 @@
     }
   }
 
+  // Keep the logo no taller than $nav-btn-height: the fixed-header offsets
+  // below (64px etc.) assume the nav buttons set the header height.
   .site-logo {
     display: block;
-    height: 34px;
+    height: 36px;
     width: auto;
+    transition: transform 0.15s ease, filter 0.15s ease;
 
     @media (max-width: $bp-lg - 1) {
-      height: 32px;
+      height: 34px;
     }
 
     @media (max-width: 429px) {
-      height: 28px;
+      height: 30px;
+    }
+  }
+
+  // filter: drop-shadow (not box-shadow) so the shadow follows the die-cut
+  // outline around the pin instead of the image's rectangle.
+  .site-brand:focus-visible .site-logo {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 4px 5px rgba($color-accent, 0.35));
+  }
+
+  @media (min-width: $bp-lg) {
+    .site-brand:hover .site-logo {
+      transform: translateY(-2px);
+      filter: drop-shadow(0 4px 5px rgba($color-accent, 0.35));
+    }
+
+    .site-brand:active .site-logo {
+      transform: translateY(0);
+      filter: drop-shadow(0 1px 2px rgba($color-accent, 0.3));
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .site-logo {
+      transition: none;
+    }
+
+    .site-brand:hover .site-logo,
+    .site-brand:focus-visible .site-logo {
+      transform: none;
     }
   }
 
