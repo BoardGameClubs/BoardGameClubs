@@ -55,6 +55,8 @@ image: ""
 website: ""
 meetup: ""
 facebook: ""
+instagram: ""
+bluesky: ""
 discord: ""
 aftergame: ""
 bgg: ""
@@ -83,6 +85,8 @@ Nie ustawiaj `permalink`. Strona klubu jest generowana automatycznie pod `/clubs
 | `website` | Link do strony klubu |
 | `meetup` | Link do grupy na Meetup |
 | `facebook` | Link do strony lub grupy na Facebooku |
+| `instagram` | Link do profilu na Instagramie |
+| `bluesky` | Link do profilu na Bluesky |
 | `discord` | Link zapraszający na Discorda |
 | `aftergame` | Link do grupy na Aftergame |
 | `bgg` | Link do gildii lub grupy na BoardGameGeek |
