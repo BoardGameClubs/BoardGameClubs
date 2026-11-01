@@ -1,20 +1,22 @@
 ---
 country: "ES"
 name: "Mecatol Rex"
-type: ["Board Games"]
+type: ["Board Games", "Wargames", "RPG", "BOTC"]
 days: ["Various"]
 time: ""
-frequency: "Daily"
+frequency: "Ad-hoc"
 location:
   name: "Mecatol Rex"
-  address: "C/ de la Tórtola 10 3-B, Madrid "
+  address: "C/ de la Tórtola 10 3-B, Madrid"
   lat: 40.390795
   lng: -3.734912
 cost: "20€/mes"
-image: ""
-website: "http://www.mecatolrex.com"
+image: "mecatol_rex.png"
+website: "https://www.mecatolrex.com"
 meetup: ""
-facebook: ""
+facebook: "https://www.facebook.com/ClubMecatolRex"
+instagram: "https://www.instagram.com/mecatol_rex"
+bluesky: "https://bsky.app/profile/mecatolrex.com"
 discord: ""
 bgg: "https://boardgamegeek.com/guild/1445"
 description: >-
