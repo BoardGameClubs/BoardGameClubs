@@ -1003,6 +1003,14 @@ label_dates:
   es: "Fechas"
   pl: "Termin"
 
+label_format:
+  en: "Format"
+  de: "Format"
+  it: "Formato"
+  fr: "Format"
+  es: "Formato"
+  pl: "Format"
+
 label_price:
   en: "Price"
   de: "Preis"

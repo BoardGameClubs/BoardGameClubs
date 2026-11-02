@@ -47,12 +47,20 @@ names follow the page language; the Liquid text is the English fallback.{% endco
 }
 </script>
 
+{% if page.location.lat and page.location.lng %}{% capture directions_dest %}{{ page.location.lat }},{{ page.location.lng }}{% endcapture %}{% else %}{% assign directions_dest = page.location.address | url_encode %}{% endif %}
+{% capture back_href %}{{ site.baseurl }}/{% if lang != 'en' %}{{ lang }}/{% endif %}events/?country={{ country.code }}{% endcapture %}
+{% if page.location.lat and page.location.lng %}
+<div class="club-hero">
+  <div class="club-hero-map" id="detail-map"></div>
+  <div class="club-hero-inner">
+    <a href="{{ back_href }}" class="club-hero-back" id="club-back-link"><i data-lucide="chevron-left"></i><span>{{ i18n.back_to_events[lang] }}</span></a>
+  </div>
+</div>
+<div class="club-detail club-detail--hero event-detail">
+{% else %}
 <div class="club-detail event-detail">
-  <a href="{{ site.baseurl }}/{% if lang != 'en' %}{{ lang }}/{% endif %}events/?country={{ country.code }}" class="club-back-link" id="club-back-link"><i data-lucide="chevron-left" style="width:18px;height:18px;"></i> {{ i18n.back_to_events[lang] }}</a>
-
-  {% if end_iso < today_iso %}
-  <div class="event-past-notice"><i data-lucide="history" style="width:16px;height:16px;"></i> {{ i18n.events_past_notice[lang] }}</div>
-  {% endif %}
+  <a href="{{ back_href }}" class="club-back-link" id="club-back-link"><i data-lucide="chevron-left" style="width:18px;height:18px;"></i> {{ i18n.back_to_events[lang] }}</a>
+{% endif %}
 
   <div class="club-detail-heading">
     {% if page.image and page.image != "" %}
@@ -65,23 +73,7 @@ names follow the page language; the Liquid text is the English fallback.{% endco
     </div>
     {% endif %}
     <div class="club-detail-heading-text">
-      <h1>{{ page.name }} <span class="club-location-subtitle"><span data-event-dates data-start="{{ start_iso }}" data-end="{{ end_iso }}">{{ dates_fallback }}</span> · {{ page.location.name }}, {{ page.location.address }}</span></h1>
-      <div class="club-detail-meta">
-        {% if page.format %}
-          {% assign format_key = "event_format_" | append: page.format | downcase | replace: ' ', '_' %}
-          <span class="tag tag-format">{{ i18n[format_key][lang] | default: page.format }}</span>
-        {% endif %}
-        {% if page.type %}
-          {% for t in page.type %}
-            {% assign type_slug = t | downcase | replace: ' ', '-' %}
-            <span class="tag tag-type tag-type-{{ type_slug }}">{{ t }}</span>
-          {% endfor %}
-        {% endif %}
-        <span class="tag tag-day"><span data-event-dates data-start="{{ start_iso }}" data-end="{{ end_iso }}">{{ dates_fallback }}</span></span>
-        {% if page.price and page.price != "" %}
-          <span class="tag tag-cost">{{ page.price }}</span>
-        {% endif %}
-      </div>
+      <h1>{{ page.name }} <span class="club-location-subtitle"><span data-event-dates data-start="{{ start_iso }}" data-end="{{ end_iso }}">{{ dates_fallback }}</span> · <a href="https://www.google.com/maps/dir/?api=1&destination={{ directions_dest }}" target="_blank" rel="noopener" class="club-address-link">{{ page.location.name }}, {{ page.location.address }}</a></span></h1>
       {% if page.tickets and page.tickets != "" %}
       <div class="event-tickets-cta">
         <a href="{{ page.tickets }}" target="_blank" rel="noopener" class="contribute-btn contribute-btn--primary"><i data-lucide="ticket" style="width:16px;height:16px;"></i> {{ i18n.get_tickets[lang] }}</a>
@@ -90,25 +82,9 @@ names follow the page language; the Liquid text is the English fallback.{% endco
     </div>
   </div>
 
-  {% if page.location.lat and page.location.lng %}
-  <div class="detail-map" id="detail-map"></div>
+  {% if end_iso < today_iso %}
+  <div class="event-past-notice"><i data-lucide="history" style="width:16px;height:16px;"></i> {{ i18n.events_past_notice[lang] }}</div>
   {% endif %}
-
-  <dl class="detail-info">
-    <dt>{{ i18n.label_dates[lang] }}</dt>
-    <dd><span data-event-dates data-start="{{ start_iso }}" data-end="{{ end_iso }}" data-long="1">{{ dates_fallback }}</span> {% if end_iso >= today_iso %}<a href="#" class="directions-link" data-event-ics data-name="{{ page.name | escape }}" data-start="{{ start_iso }}" data-end="{{ end_iso }}" data-location="{{ page.location.name | escape }}, {{ page.location.address | escape }}"><i data-lucide="calendar-plus" style="width:13px;height:13px;"></i> {{ i18n.add_to_calendar[lang] }}</a>{% endif %}</dd>
-
-    <dt>{{ i18n.label_venue[lang] }}</dt>
-    <dd>{{ page.location.name }}</dd>
-
-    <dt>{{ i18n.label_address[lang] }}</dt>
-    <dd>{{ page.location.address }} {% if page.location.lat and page.location.lng %}<a href="https://www.google.com/maps/dir/?api=1&destination={{ page.location.lat }},{{ page.location.lng }}" target="_blank" rel="noopener" class="directions-link"><i data-lucide="navigation" style="width:13px;height:13px;"></i> {{ i18n.directions[lang] }}</a>{% endif %}</dd>
-
-    {% if page.price and page.price != "" %}
-    <dt>{{ i18n.label_price[lang] }}</dt>
-    <dd>{{ page.price }}</dd>
-    {% endif %}
-  </dl>
 
   {% assign body = content | strip %}
   {% if page.description and page.description != "" or body != "" %}
@@ -118,41 +94,70 @@ names follow the page language; the Liquid text is the English fallback.{% endco
   </div>
   {% endif %}
 
-  {% assign has_links = false %}
-  {% if page.tickets and page.tickets != "" %}{% assign has_links = true %}{% endif %}
-  {% if page.website and page.website != "" %}{% assign has_links = true %}{% endif %}
-  {% if page.facebook and page.facebook != "" %}{% assign has_links = true %}{% endif %}
-  {% if page.discord and page.discord != "" %}{% assign has_links = true %}{% endif %}
-  {% if page.bgg and page.bgg != "" %}{% assign has_links = true %}{% endif %}
-
-  {% if has_links %}
-  <h2 class="club-links-heading">{{ i18n.label_links[lang] }}:</h2>
-  {% endif %}
-  <div class="club-links">
-    {% if page.tickets and page.tickets != "" %}
-      <a href="{{ page.tickets }}" target="_blank" rel="noopener"><i data-lucide="ticket" style="width:16px;height:16px;"></i> {{ i18n.tickets[lang] }}</a>
-    {% endif %}
-    {% if page.website and page.website != "" %}
-      <a href="{{ page.website }}" target="_blank" rel="noopener"><i data-lucide="globe" style="width:16px;height:16px;"></i> Website</a>
-    {% endif %}
-    {% if page.facebook and page.facebook != "" %}
-      <a href="{{ page.facebook }}" target="_blank" rel="noopener"><i data-lucide="facebook" style="width:16px;height:16px;"></i> Facebook</a>
-    {% endif %}
-    {% if page.discord and page.discord != "" %}
-      <a href="{{ page.discord }}" target="_blank" rel="noopener"><i data-lucide="message-circle" style="width:16px;height:16px;"></i> Discord</a>
-    {% endif %}
-    {% if page.bgg and page.bgg != "" %}
-      <a href="{{ page.bgg }}" target="_blank" rel="noopener"><i data-lucide="dice-5" style="width:16px;height:16px;"></i> BGG</a>
-    {% endif %}
+  <h2 class="club-links-heading">{{ i18n.label_links[lang] }}</h2>
+  <div class="club-links-box">
+    <div class="club-links">
+      {% if page.tickets and page.tickets != "" %}
+        <a href="{{ page.tickets }}" target="_blank" rel="noopener"><i data-lucide="ticket" style="width:16px;height:16px;"></i><span>{{ i18n.tickets[lang] }}</span><i data-lucide="arrow-up-right" class="club-link-ext"></i></a>
+      {% endif %}
+      <a href="https://www.google.com/maps/dir/?api=1&destination={{ directions_dest }}" target="_blank" rel="noopener"><i data-lucide="navigation" style="width:16px;height:16px;"></i><span>{{ i18n.directions[lang] }}</span><i data-lucide="arrow-up-right" class="club-link-ext"></i></a>
+      {% if end_iso >= today_iso %}
+        <a href="#" data-event-ics data-name="{{ page.name | escape }}" data-start="{{ start_iso }}" data-end="{{ end_iso }}" data-location="{{ page.location.name | escape }}, {{ page.location.address | escape }}"><i data-lucide="calendar-plus" style="width:16px;height:16px;"></i><span>{{ i18n.add_to_calendar[lang] }}</span><i data-lucide="download" class="club-link-ext"></i></a>
+      {% endif %}
+      {% if page.website and page.website != "" %}
+        <a href="{{ page.website }}" target="_blank" rel="noopener"><i data-lucide="globe" style="width:16px;height:16px;"></i><span>Website</span><i data-lucide="arrow-up-right" class="club-link-ext"></i></a>
+      {% endif %}
+      {% if page.facebook and page.facebook != "" %}
+        <a href="{{ page.facebook }}" target="_blank" rel="noopener"><i data-lucide="facebook" style="width:16px;height:16px;"></i><span>Facebook</span><i data-lucide="arrow-up-right" class="club-link-ext"></i></a>
+      {% endif %}
+      {% if page.discord and page.discord != "" %}
+        <a href="{{ page.discord }}" target="_blank" rel="noopener"><i data-lucide="message-circle" style="width:16px;height:16px;"></i><span>Discord</span><i data-lucide="arrow-up-right" class="club-link-ext"></i></a>
+      {% endif %}
+      {% if page.bgg and page.bgg != "" %}
+        <a href="{{ page.bgg }}" target="_blank" rel="noopener"><i data-lucide="dice-5" style="width:16px;height:16px;"></i><span>BGG</span><i data-lucide="arrow-up-right" class="club-link-ext"></i></a>
+      {% endif %}
+    </div>
   </div>
-
-  {% if has_links %}
   <p class="club-links-disclaimer">{{ i18n.external_disclaimer[lang] }}</p>
-  {% endif %}
+
+  <h2 class="club-links-heading">{{ i18n.label_details[lang] }}</h2>
+  <dl class="detail-info">
+    <div class="detail-item">
+      <dt><span class="detail-icon"><i data-lucide="calendar"></i></span>{{ i18n.label_dates[lang] }}</dt>
+      <dd><span data-event-dates data-start="{{ start_iso }}" data-end="{{ end_iso }}" data-long="1">{{ dates_fallback }}</span></dd>
+    </div>
+    {% if page.format and page.format != "" %}
+    {% assign format_key = "event_format_" | append: page.format | downcase | replace: ' ', '_' %}
+    <div class="detail-item">
+      <dt><span class="detail-icon"><i data-lucide="tent"></i></span>{{ i18n.label_format[lang] }}</dt>
+      <dd>{{ i18n[format_key][lang] | default: page.format }}</dd>
+    </div>
+    {% endif %}
+    {% if page.type %}
+    <div class="detail-item">
+      <dt><span class="detail-icon"><i data-lucide="dices"></i></span>{{ i18n.label_type[lang] }}</dt>
+      <dd>{{ page.type | join: ", " }}</dd>
+    </div>
+    {% endif %}
+    {% if page.price and page.price != "" %}
+    <div class="detail-item">
+      <dt><span class="detail-icon"><i data-lucide="ticket"></i></span>{{ i18n.label_price[lang] }}</dt>
+      <dd>{{ page.price }}</dd>
+    </div>
+    {% endif %}
+    <div class="detail-item">
+      <dt><span class="detail-icon"><i data-lucide="map-pin"></i></span>{{ i18n.label_venue[lang] }}</dt>
+      <dd>{{ page.location.name }}</dd>
+    </div>
+    <div class="detail-item">
+      <dt><span class="detail-icon"><i data-lucide="compass"></i></span>{{ i18n.label_address[lang] }}</dt>
+      <dd><a href="https://www.google.com/maps/dir/?api=1&destination={{ directions_dest }}" target="_blank" rel="noopener" class="club-address-link">{{ page.location.address }}</a></dd>
+    </div>
+  </dl>
 
   <div class="club-suggest-edit">
-    <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-event.yml&title=Edit+event:+{{ page.name | url_encode }}" target="_blank" rel="noopener"><i data-lucide="pencil" style="width:14px;height:14px;"></i> {{ i18n.suggest_edit[lang] }}</a>
-    <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-event.yml&title=Report+event:+{{ page.name | url_encode }}" target="_blank" rel="noopener"><i data-lucide="flag" style="width:14px;height:14px;"></i> {{ i18n.report_event[lang] }}</a>
+    <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-event.yml&title=Edit+event:+{{ page.name | url_encode }}" target="_blank" rel="noopener"><i data-lucide="pencil" style="width:14px;height:14px;"></i><span>{{ i18n.suggest_edit[lang] }}</span></a>
+    <a href="https://github.com/BoardGameClubs/BoardGameClubs/issues/new?template=edit-event.yml&title=Report+event:+{{ page.name | url_encode }}" target="_blank" rel="noopener"><i data-lucide="flag" style="width:14px;height:14px;"></i><span>{{ i18n.report_event[lang] }}</span></a>
   </div>
 </div>
 
@@ -179,16 +184,28 @@ names follow the page language; the Liquid text is the English fallback.{% endco
       iconAnchor: [15, 46],
       popupAnchor: [1, -38]
     });
-    var map = L.map('detail-map').setView([{{ page.location.lat }}, {{ page.location.lng }}], 15);
+    // Decorative banner: no panning or zooming, so it never traps page scroll.
+    var map = L.map('detail-map', {
+      zoomControl: false,
+      dragging: false,
+      scrollWheelZoom: false,
+      doubleClickZoom: false,
+      touchZoom: false,
+      boxZoom: false,
+      keyboard: false,
+      attributionControl: false
+    }).setView([{{ page.location.lat }}, {{ page.location.lng }}], 16);
+    // The heading card overlaps the bottom of the banner; lift the pin into the visible part.
+    map.panBy([0, window.innerWidth < 768 ? 12 : 22], { animate: false });
     var tileUrl = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
     {% if site.carto_api_key and site.carto_api_key != "" %}tileUrl += '?key=' + encodeURIComponent({{ site.carto_api_key | jsonify }});{% endif %}
+    L.control.attribution({ position: 'topright', prefix: false }).addTo(map);
     L.tileLayer(tileUrl, {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
       maxZoom: 19,
       subdomains: 'abcd'
     }).addTo(map);
-    L.marker([{{ page.location.lat }}, {{ page.location.lng }}], { icon: pinIcon }).addTo(map)
-      .bindPopup('<strong>{{ page.location.name | escape }}</strong><br>{{ page.location.address | escape }}');
+    L.marker([{{ page.location.lat }}, {{ page.location.lng }}], { icon: pinIcon, interactive: false }).addTo(map);
   })();
 </script>
 {% endif %}
