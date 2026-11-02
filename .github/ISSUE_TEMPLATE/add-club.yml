@@ -151,6 +151,18 @@ body:
       placeholder: https://facebook.com/...
 
   - type: input
+    id: instagram
+    attributes:
+      label: Instagram profile
+      placeholder: https://instagram.com/...
+
+  - type: input
+    id: bluesky
+    attributes:
+      label: Bluesky profile
+      placeholder: https://bsky.app/profile/...
+
+  - type: input
     id: discord
     attributes:
       label: Discord invite link
