@@ -217,26 +217,10 @@
       }
 
       a.nav-cta {
-        background: transparent;
-        color: $color-accent;
-        font-weight: 600;
-        margin: 0;                        // reset desktop margin-left; gap handles spacing
-        padding: 0.6rem 0.7rem;           // match the other rows
-        border: none;
-        justify-content: flex-start;
-
-        svg {
-          width: 16px;
-          height: 16px;
-        }
+        gap: 0.5rem;
 
         .nav-cta-short { display: none; }
         .nav-cta-full { display: inline; }
-
-        &:hover {
-          background: rgba($color-accent, 0.08);
-          color: $color-accent;
-        }
       }
 
       a.nav-github {
@@ -285,24 +269,13 @@
       display: inline-flex;
       align-items: center;
       gap: 0.3rem;
-      margin-left: 0.4rem;
-      padding: 0.45rem 0.85rem 0.45rem 0.7rem;
-      color: #fff;
+      color: $color-accent;
       font-weight: 600;
-      background: $color-accent;
-      border: 1px solid $color-accent;
-      border-radius: $border-radius-sm;
 
       svg {
         width: 16px;
         height: 16px;
         stroke-width: 2.5;
-      }
-
-      &:hover {
-        color: #fff;
-        background: color.adjust($color-accent, $lightness: -6%);
-        border-color: color.adjust($color-accent, $lightness: -6%);
       }
 
       .nav-cta-short {
@@ -365,7 +338,6 @@
   }
 
   // ─── Country selector in nav ───
-  // Sized to match the .nav-cta "+ Add a Club" pill (height & vertical rhythm).
   .nav-country {
     position: relative;
     margin-left: 0.25rem;
@@ -377,7 +349,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    padding: 0.45rem 0.7rem;          // matches .nav-cta padding-y exactly
+    padding: 0.45rem 0.7rem;
     background: $color-tag;
     color: $color-text;
     font-size: 0.88rem;               // matches nav link size
@@ -386,7 +358,7 @@
     border-radius: $border-radius-sm;
     cursor: pointer;
     transition: background 0.15s ease, border-color 0.15s ease;
-    line-height: 1.5;                 // matches .nav-cta line-height
+    line-height: 1.5;
     letter-spacing: 0.02em;
     box-sizing: border-box;
 
