@@ -666,22 +666,17 @@
     }
   }
 
-  .club-icon-placeholder {
+  .club-icon-initials {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 60px;
     height: 60px;
     border-radius: $border-radius-sm;
-    border: 1px solid $color-border;
-    background: $color-tag;
-    color: $color-primary-light;
-
-    svg {
-      width: 26px;
-      height: 26px;
-      opacity: 0.7;
-    }
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1;
   }
 
   .club-card-content {
@@ -1450,6 +1445,19 @@ noscript .club-list {
       height: 22px;
       opacity: 0.7;
     }
+  }
+
+  .popup-icon-initials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: $border-radius-sm;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    line-height: 1;
   }
 
   .popup-content {

@@ -29,6 +29,65 @@
     return typeIcons[types[0]] || typeIcons["Board Games"];
   }
 
+  var tilePalette = [
+    ["#ffedd5", "#c2410c"],
+    ["#fef3c7", "#b45309"],
+    ["#ecfccb", "#4d7c0f"],
+    ["#dcfce7", "#15803d"],
+    ["#ccfbf1", "#0f766e"],
+    ["#e0f2fe", "#0369a1"],
+    ["#dbeafe", "#1d4ed8"],
+    ["#ede9fe", "#6d28d9"],
+    ["#fae8ff", "#a21caf"],
+    ["#ffe4e6", "#be123c"],
+    ["#e2e8f0", "#334155"]
+  ];
+
+  var initialsStopWords = {
+    "the": 1, "a": 1, "an": 1, "of": 1, "and": 1, "for": 1, "at": 1, "in": 1,
+    "de": 1, "der": 1, "die": 1, "das": 1, "den": 1, "des": 1, "du": 1,
+    "la": 1, "le": 1, "les": 1, "el": 1, "los": 1, "las": 1, "del": 1,
+    "di": 1, "da": 1, "il": 1, "lo": 1, "i": 1, "e": 1, "y": 1, "et": 1,
+    "und": 1, "im": 1, "am": 1, "zum": 1, "zur": 1, "het": 1, "van": 1,
+    "op": 1, "en": 1, "och": 1, "og": 1, "af": 1, "w": 1, "z": 1, "na": 1,
+    "v": 1
+  };
+
+  // A character "is a letter" when it has case, which covers accented Latin,
+  // Greek and Cyrillic without ES2018 Unicode property escapes.
+  function firstLetter(word) {
+    for (var i = 0; i < word.length; i++) {
+      var c = word.charAt(i);
+      if (c.toUpperCase() !== c.toLowerCase() || /[0-9]/.test(c)) return c.toUpperCase();
+    }
+    return "";
+  }
+
+  function clubInitials(name) {
+    var words = (name || "").replace(/\([^)]*\)/g, " ").split(/[\s\/\-@.&+_]+/)
+      .filter(function (w) { return w; });
+    if (words.length === 1) {
+      words = words[0].replace(/([a-z])([A-Z][a-z])/g, "$1 $2").split(" ");
+    }
+    var initials = "";
+    for (var i = 0; i < words.length && initials.length < 2; i++) {
+      var word = words[i].replace(/^[ldj]['’]/i, "");
+      if (initialsStopWords[word.toLowerCase()]) continue;
+      initials += firstLetter(word);
+    }
+    return initials || firstLetter(name || "") || "?";
+  }
+
+  function initialsTile(name, className) {
+    var hash = 0;
+    for (var i = 0; i < (name || "").length; i++) {
+      hash = (hash * 31 + name.charCodeAt(i)) | 0;
+    }
+    var colours = tilePalette[Math.abs(hash) % tilePalette.length];
+    return '<div class="' + className + '" style="background:' + colours[0] + ';color:' + colours[1] + '" aria-hidden="true">' +
+      clubInitials(name) + "</div>";
+  }
+
   function createPinIcon(color, iconSvg) {
     var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="31" height="46" viewBox="0 0 31 46">' +
       '<path d="M15.5 0C6.9 0 0 6.9 0 15.5C0 27.1 15.5 46 15.5 46S31 27.1 31 15.5C31 6.9 24.1 0 15.5 0z" fill="' + color + '"/>' +
@@ -120,6 +179,8 @@
             ? self.escapeHtml(club.image)
             : baseurl + "/assets/images/" + (isEvent ? "events" : "clubs") + "/" + encodeURIComponent(club.image);
           popupIcon = '<div class="popup-icon-wrap"><img src="' + imgSrc + '" alt="" onload="window.GameClub.applyImgBg(this)"></div>';
+        } else if (!isEvent) {
+          popupIcon = initialsTile(club.name, "popup-icon-wrap popup-icon-initials");
         } else {
           popupIcon = '<div class="popup-icon-wrap popup-icon-placeholder">' +
             '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
@@ -257,4 +318,5 @@
   window.GameClubMap.createPinIcon = createPinIcon;
   window.GameClubMap.typeColors = typeColors;
   window.GameClubMap.typeIcons = typeIcons;
+  window.GameClubMap.initialsTile = initialsTile;
 })();

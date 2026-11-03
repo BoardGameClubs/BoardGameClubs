@@ -386,12 +386,7 @@
             : baseurl + "/assets/images/clubs/" + encodeURIComponent(club.image);
           icon = '<div class="club-icon-wrap"><img src="' + imgSrc + '" alt="" loading="lazy" onload="window.GameClub.applyImgBg(this)"></div>';
         } else {
-          var typeIcons = (window.GameClubMap && window.GameClubMap.typeIcons) || {};
-          var primaryType = (club.type || ["Board Games"])[0];
-          icon = '<div class="club-icon-wrap club-icon-placeholder">' +
-            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
-            (typeIcons[primaryType] || typeIcons["Board Games"] || "") +
-            "</svg></div>";
+          icon = window.GameClubMap.initialsTile(club.name, "club-icon-wrap club-icon-initials");
         }
 
         var venue = club.location && club.location.name
