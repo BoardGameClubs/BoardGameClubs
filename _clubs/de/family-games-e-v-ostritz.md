@@ -11,7 +11,7 @@ location:
   lng: 14.9328575
 cost: ""
 image: ""
-website: "http://www.familygames.de/home.html"
+website: "http://www.familygames.de/"
 facebook: ""
 discord: ""
 bgg: ""
