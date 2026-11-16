@@ -10,7 +10,7 @@ location:
   address: "The Bennett Centre (St John the Baptist Church Hall on Vicarage Street), Frome, BA11 1PU"
   lat: 51.229567129077935
   lng: -2.3196637634828225
-cost: "£1"
+cost: "£2"
 image: "the-frome-board-games-club.gif"
 website: "https://sites.google.com/site/wassailgamesclub"
 facebook: "https://www.facebook.com/FromeBoardGamesClub"
