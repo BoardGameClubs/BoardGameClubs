@@ -25,4 +25,6 @@ description: |
   One indie table explores a completely different game every week, while the other rotates through a selection of favourite systems. Whether you enjoy long-running campaigns, investigative horror or discovering something entirely new, there's plenty to explore.
 
   £5 per night or £5 for the month, and your first session is free.
+
+  Contact: ApsleyRPG@outlook.com
 ---
