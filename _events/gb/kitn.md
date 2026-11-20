@@ -1,8 +1,8 @@
 ---
 country: "GB"
 name: "KITN"
-start_date: 2026-10-24
-end_date: 2026-10-25
+start_date: 2027-10-30
+end_date: 2027-10-31
 type: ["Wargames"]
 format: "Tournament"
 location:
