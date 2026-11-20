@@ -6,10 +6,10 @@ end_date: 2026-10-11
 type: ["Board Games", "TCG"]
 format: "Convention"
 location:
-  name: "Camas, WA"
-  address: "Camas, WA, USA"
-  lat: 45.5857
-  lng: -122.40267
+  name: "Camas Meadows Bible Camp"
+  address: "Camas Meadows Bible Camp, Leavenworth, WA, USA"
+  lat: 47.59623
+  lng: -120.66148
 price: ""
 tickets: ""
 website: "https://www.camasmeadows.org/camascon"
